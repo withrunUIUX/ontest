@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>한글 키득키득</title>
+
+    <link rel="stylesheet" href="/css/common.css">
+</head>
+
+<body>
+
+<style>
+    h2{margin:5rem auto 2rem; width:90%;font-size:2rem}
+    .stwrap {display: flex;gap:2rem;flex-wrap: wrap;justify-content: flex-start;width:90%;margin:0 auto;padding:5rem;background:#fff;border:1px solid #eee;}
+</style>
+
+<h2>table</h2>
+<div class="stwrap">
+<table class="tbl_basic center table-hover">
+    <caption>키득키득 한글 진단검사 현황을 안내하는 표입니다. 차시별, 학생수, 검사완료, 미해득, 다문화로 나뉘어 자료를 제공하고 있습니다.</caption>
+    <colgroup>                      
+    </colgroup>
+    <thead>
+        <tr>
+            <th scope="col"><span class="sr-only">차시별</span></th>
+            <th scope="col">학생순</th>
+            <th scope="col">검사완료</th>
+            <th scope="col">미해득</th>
+            <th scope="col">다문화</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <th scope="row"><span class="step1">1차</span></th>
+            <td>24</td>
+            <td><span class="test-end">24</span></td>
+            <td>24</td>
+            <td>24</td> 
+        </tr>
+        <tr>
+            <th scope="row"><span class="step2">2차</span></th>
+            <td>24</td>
+            <td><span class="test-end">24</span></td>
+            <td>24</td>
+            <td>24</td> 
+        </tr>
+        <tr>
+            <th scope="row"><span class="step3">3차</span></th>
+            <td>24</td>
+            <td><span class="test-end">24</span></td>
+            <td>24</td>
+            <td>24</td> 
+        </tr>
+    </tbody>
+</table>
+</div>
+
+<h2> 팝업레이어 버튼그룹</h2>
+<div class="stwrap">
+<div class="etcwrap">
+    <button>프린트하기</button>
+    <button>저장하기</button>
+</div>
+</div>
+<h2> 팝업레이어 닫기버튼</h2>
+<div class="stwrap">
+    <button type="button" class="bn_close"><span class="sr-only">닫기</span></button>
+    <button type="button" class="bn_close bk"><span class="sr-only">닫기</span></button>
+</div>
+
+<h2> n차 진단</h2>
+<div class="stwrap">
+    <span class="step sp1">1차진단</span>
+    <span class="step sp2">2차진단</span>
+    <span class="step sp3">3차진단</span>
+</div>
+
+<h2> 진단결과 - 텍스트형</h2>
+<div class="stwrap">
+    <span class="txout ing_learn"><i class="state learn"></i>해득</span>
+    <span class="txout ing_miss"><i class="state miss"></i>미해득</span>
+    <span class="txout ing_more"><i class="state tx more">보충</i></span>
+</div>
+
+<h2> stat 아이콘형</h2>
+<div class="stwrap">
+    <i class="state test">테스트시작</i><!-- 테스트하기 모니터 -->
+    <i class="state learn">해득</i><!-- 해득 -->
+    <i class="state miss">미해득</i><!-- 미해득 -->
+    <i class="state basket">삭제</i><!-- 휴지통 -->
+    <i class="state download">다운로드</i><!-- 다운로드 -->
+    <i class="state modify">수정</i><!-- 수정 -->
+    <i class="state save">저장</i><!-- 저장 -->
+    <i class="multi ico_o">해당있음</i><!-- 해당있음 -->
+    <i class="multi ico_x">해당없음</i><!-- 해당없음 -->
+</div>
+
+<h2> stat 텍스트형</h2>
+<div class="stwrap">
+    <i class="state tx more">보충</i><!-- 보충 텍스트형-->
+    <i class="state tx end">완료</i><!-- 보충 텍스트형-->
+    <i class="state tx ing">학습중</i><!-- 보충 텍스트형-->
+    <i class="state tx study">학습하기</i><!-- 보충 텍스트형-->
+</div>
+
+<h2>탭</h2>
+<div class="stwrap" style="background: #F5F7FB;">
+<div class="tabs">
+    <div class="tab-header">
+        <button class="active">탭버튼1</button>
+        <button>탭버튼2</button>
+    </div>
+    <div class="tab-body">
+        <div class="active">탭1</div>
+        <div>탭2</div>
+    </div>
+</div>
+</div>
+<script type="text/javascript" src="js/contents.js"></script>
+</body>
+</html>
+
+<h2>list</h2>
+<div class="stwrap">
+<ol class="list_ol">
+    <li></li>
+    <li></li>
+    <li></li>
+</ol>
+<ul class="list_kor">
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+<ul class="list_kor2">
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+</div>
