@@ -238,147 +238,116 @@
 
 <h2>TABLE</h2>
 <div class="stwrap">
-	<h3>SIGN 테이블</h3>
-	<table class="tbl_lst center table-hover">
-		<caption>학습코칭 확인서를 순서, 교육날짜, 교육시간, 학년, 반, 코칭내용, 관심군 학생 특이사항으로 나누어 자료를 제공하고 있습니다.</caption>
+	<h3>기본 테이블</h3>
+	<table class="tbl_basic center table-hover">
+		<caption>개요</caption>
 		<colgroup>
-			<col style="width:6%"/>
+			<col style="width:5%"/>
+			<col style="width:5%"/>
+			<col style="width:5%"/>
+			<col style="width:8%"/>
 			<col style="width:10%"/>
 			<col style="width:10%"/>
-			<col style="width:8%"/>
-			<col style="width:8%"/>
-			<col style="width:30%"/>
-			<col style="width:30%"/>
+			<col style="width:10%"/>
+            <col style="width:10%"/>
+            <col style="width:10%"/>
 		</colgroup>
 		<thead>
 			<tr>
-				<th scope="col">순서</th>
-				<th scope="col">교육날짜</th>
-				<th scope="col">교육시간</th>
 				<th scope="col">학년</th>
 				<th scope="col">반</th>
-				<th scope="col">코칭내용</th>
-				<th scope="col">관심군 학생 특이사항</th>
+				<th scope="col">번호</th>
+				<th scope="col">이름</th>
+				<th scope="col" class="th_deep">국어</th>
+				<th scope="col" class="th_deep">수학</th>
+				<th scope="col" class="th_deep">사회</th>
+                <th scope="col" class="th_deep">과학</th>
+				<th scope="col" class="th_deep">영어</th>
 			</tr>
 		</thead>
 		<tbody>
 			<tr>
-				<th scope="row">1</th>
-				<td>12.09</td>
-				<td>2시간</td>
-				<td>1학년</td>
-				<td>1반</td>
-				<td><textarea placeholder="코칭 내용을 입력해주세요.">한글해득</textarea></td>
-				<td><textarea placeholder="관심군 학생 특이사항을 입력해주세요.">특이사항없음</textarea></td>
+				<th scope="row">5</th>
+				<td>1</td>
+				<td>1</td>
+				<td>홍길동</td>
+				<td></td>
+				<td></td>
+				<td></td>
+                <td></td>
+                <td></td>
 			</tr>
 			<tr>
-				<th scope="row">2</th>
-				<td>12.09</td>
-				<td>2시간</td>
-				<td>1학년</td>
-				<td>1반</td>
-				<td><textarea placeholder="코칭 내용을 입력해주세요."></textarea></td>
-				<td><textarea placeholder="관심군 학생 특이사항을 입력해주세요."></textarea></td>
-			</tr>
-			<tr class="total">
-				<th scope="row" colspan="2">학습코칭 결과</th>
-				<td colspan="6"><textarea placeholder="학습코칭결과를 입력해주세요.">자음, 모음 해득.</textarea></td>
-			</tr>
-			<tr class="total sign_wrapper">
-				<th scope="row" colspan="2">학습코칭 제공자</th>
-				<td colspan="6">
-					<div class="sign_wrap">
-						<div class="sign_wrap_left">
-							<div class="sign_box">
-								<div class="signDiv"><img src="/adm/images/common/sign_img.png"></div>
-								<span>학습코칭단 서명<i class="state icosign"></i></span>
-							</div>
-						</div>
-						<div class="sign_wrap_right">
-							<dl>
-								<dt>교사</dt>
-								<dd>
-									<div class="sign_box">
-										<div class="signDiv"></div>
-										<span>서명/인<i class="state icosign"></i></span>
-									</div>
-								</dd>
-							</dl>
-							<dl>
-								<dt>교감</dt>
-								<dd>
-									<div class="sign_box">
-										<div class="signDiv"></div>
-										<span>서명/인<i class="state icosign"></i></span>
-									</div>
-								</dd>
-							</dl>
-						</div>
-					</div>
-				</td>
+				<th scope="row">5</th>
+				<td>1</td>
+				<td>2</td>
+				<td>김충남</td>
+				<td></td>
+				<td></td>
+				<td></td>
+                <td></td>
+                <td></td>
 			</tr>
 		</tbody>
 	</table>
 
-	<h3>LIST 테이블</h3>
-	<table class="tbl_lst type2 center table-hover">
-		<caption>학습코칭 지도비, 교통비 지급 세부내역을 순서, 항복, 지급내역(지도일시, 교욱시간:소속교, 성명, 지급액:지도시간, 강사비), 근무일수(교통비)로 나누어 자료를 제공하고 있습니다.</caption>
-		<colgroup></colgroup>
+	<h3>결과 테이블</h3>
+	<table class="tbl_basic type2 center table-hover">
+		<caption>개요</caption>
+		<colgroup>
+			<col />
+			<col style="width:10%"/>
+			<col style="width:10%"/>
+			<col style="width:8%"/>
+			<col style="width:12%"/>
+			<col style="width:12%"/>
+		</colgroup>
 		<thead>
 			<tr>
-				<th scope="col" rowspan="3">순서</th>
-				<th scope="col" rowspan="3">항목</th>
-				<th scope="col" colspan="5">지급내역</th>
-				<th scope="col" rowspan="3">근무일수(교통비)</th>
-			</tr>
-			<tr>
-				<th scope="col" rowspan="2">지도일시<span class="block">(날짜순으로 기재)</span></th>
-				<th scope="col" colspan="2">교육시간</th>
-				<th scope="col" colspan="2">지급액</th>
-			</tr>
-			<tr>
-				<th scope="col" class="has-children">소속교</th>
-				<th scope="col" class="has-children">성명</th>
-				<th scope="col" class="has-children">지도시간</th>
-				<th scope="col" class="has-children">강사비</th>
+				<th scope="col">성취기준</th>
+				<th scope="col">정답률</th>
+				<th scope="col">전체 정답률</th>
+				<th scope="col">난이도</th>
+				<th scope="col">정답률</th>
+				<th scope="col">전체 정답률</th>
 			</tr>
 		</thead>
 		<tbody>
 			<tr>
-				<th scope="row">1</th>
-				<td>학습코칭 지도비와교통비</td>
-				<td>12.11</td>
-				<td>당진초등학교</td>
-				<td>온이슬</td>
-				<td>2시간</td>
-				<td>30,000원 </td>
-				<td>15,000원</td>
+				<th scope="row" rowspan="3" class="td_left">[6국05-03] 비유적 표현의 특성과 효과를 살려 생각과 느낌을 다양하게 표현한다.</th>
+				<td rowspan="3">75%</td>
+				<td rowspan="3">80%</td>
+				<td>상</td>
+				<td>60</td>
+				<td>70</td>
 			</tr>
 			<tr>
-				<th scope="row">2</th>
-				<td>학습코칭 지도비와교통비</td>
-				<td>12.11</td>
-				<td>당진초등학교</td>
-				<td>온이슬</td>
-				<td>2시간</td>
-				<td>30,000원 </td>
-				<td>15,000원</td>
+				<td>중</td>
+				<td>60</td>
+				<td>70</td>
+			</tr>
+            <tr>
+				<td>하</td>
+				<td>60</td>
+				<td>70</td>
+			</tr>
+            <tr>
+				<th scope="row" rowspan="3" class="td_left">[6국05-01] 문학은 가치 있는 내용을 언어로 표현하여 아름다움을 느끼게 하는 활동임을 이해하고 문학 활동을 한다.</th>
+				<td rowspan="3">75%</td>
+				<td rowspan="3">80%</td>
+				<td>상</td>
+				<td>60</td>
+				<td>70</td>
 			</tr>
 			<tr>
-				<th scope="row">3</th>
-				<td>학습코칭 지도비와교통비</td>
-				<td>12.11</td>
-				<td>당진초등학교</td>
-				<td>온이슬</td>
-				<td>2시간</td>
-				<td>30,000원 </td>
-				<td>15,000원</td>
+				<td>중</td>
+				<td>60</td>
+				<td>70</td>
 			</tr>
-			<tr class="total">
-				<th scope="row" colspan="5">합계</th>
-				<td>6시간</td>
-				<td>90,000원</td>
-				<td>45,000원</td>
+            <tr>
+				<td>하</td>
+				<td>60</td>
+				<td>70</td>
 			</tr>
 		</tbody>
 	</table>
