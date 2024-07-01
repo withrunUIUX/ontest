@@ -36,7 +36,7 @@ html,body,div,span,object,h1,h2,h3,h4,h5,h6,p,a,abbr,address,cite,em,img,strong,
 }
 
 /* BUTTON  - _button.css */
-a {text-decoration: none;color: #333;}
+a {text-decoration: none;color:var(--gray_90);}
 button {border: 0; background: none; cursor: pointer;}
 
 /* display */
@@ -153,31 +153,6 @@ select:focus, .select:focus {border-color:#aaa;box-shadow:0 0 1px 3px rgba(59, 1
 select:disabled, .select:disabled{opacity:0.5;}
 select.no-line, .select.no-line {border:none;}
 
-/* TABLE */
-table {display:table;width:100%;font-weight: 400; margin-bottom:10px;border-top: 3px solid #667FB8;}
-table caption {text-indent:-100000px;font-size:0;line-height:0}
-table caption p{margin:0;line-height:0;font-size:0;}
-table.center tbody tr td{text-align:center;}
-table th,
-table td {margin-left:-1px;padding:.7rem .3rem;border-left:1px solid #C6D3F0;border-bottom:1px solid #C6D3F0;vertical-align:middle;word-wrap:break-word;word-break:keep-all;color:var(--c_gray_60)}
-table th:first-child, 
-table td:first-child {border-left:none;}
-table th:last-child, 
-table td:last-child {border-right:none;}
-table tr:not(:first-child) th[rowspan]:first-child {border-left:1px solid #C6D3F0;}
-table.center tbody tr td[rowspan] {border-right:1px solid #C6D3F0;}
-table.center tbody tr td[rowspan]:last-child {border-right:0;}
-
-table thead th.trw{border-right:1px solid var(--c_gray_30)}
-table th.tlw,
-table td.tlw {border-left:1px solid #E3EEF3!important}
-table tbody th,
-table thead th {vertical-align:middle}
-table thead th {font-weight:700;}
-table tbody th,
-table tfoot th {background-image:none}
-table td img {vertical-align:middle}
-
 /* stat ico*/
 .state {display:inline-block;width:32px;height:32px;margin:auto;background-repeat:no-repeat;background-position:50%;text-indent:-999px;font-size:0;overflow:hidden;}
 .state.disabled {filter:brightness(2) grayscale(1);pointer-events:none;}
@@ -197,3 +172,41 @@ table td img {vertical-align:middle}
 .hico.person.wt {background-image:url('/adm/images/common/ico_person_b.svg');}
 .hico.record {background-image:url('/adm/images/common/ico_record.svg');}
 .hico.school {background-image:url('/adm/images/common/ico_school.svg');background-color:var(--c_primary_m2);}
+
+/* TABLE */
+table {display:table;width:100%;font-weight:500; margin-bottom:10px;}
+table caption {text-indent:-100000px;font-size:0;line-height:0}
+table caption p{margin:0;line-height:0;font-size:0;}
+table.center tbody tr td{text-align:center;}
+
+table th,
+table td {margin-left:-1px;padding:.9rem .4rem;border-left:1px solid var(--gray_40);border-bottom:1px solid var(--gray_40);vertical-align:middle;word-wrap:break-word;word-break:keep-all;color:var(--gray_100)}
+table th:first-child, 
+table td:first-child {border-left:none;}
+table th:last-child, 
+table td:last-child {border-right:none;}
+table tr:not(:first-child) th[rowspan]:first-child {border-left:1px solid var(--gray_40);}
+table.center tbody tr td[rowspan] {border-right:1px solid var(--gray_40);}
+table.center tbody tr td[rowspan]:last-child {border-right:0;}
+
+table thead th.trw{border-right:1px solid var(--gray_40)}
+table th.tlw,
+table td.tlw {border-left:1px solid var(--gray_40)!important}
+table tbody th,
+table thead th {vertical-align:middle}
+table thead th {font-weight:600;}
+table tbody th,
+table tfoot th {background-image:none}
+table td img {vertical-align:middle}
+
+table thead th {color:#fff;border-color:var(--gray_30);background:var(--gray_70);}
+table thead th.th_deep {background:var(--gray_90);}
+table thead th:first-child {border-radius: 10px 0 0 0;}
+table thead th:last-child {border-radius: 0 10px 0 0;}
+
+.tbl_basic.type2 {}
+.tbl_basic.type2 thead th {background:var(--blue_120);}
+.tbl_basic.type2 tbody .td_left {padding:.9rem;border-left:0 !important;text-align:left;line-height: 1.5;}
+
+
+
