@@ -1,0 +1,85 @@
+@charset "UTF-8";
+
+
+/* main */
+/* intro */
+#intro {position: relative; background:url(../images/main/main_bg.png) no-repeat center; background-color:#F6F6F6;}
+
+/* header*/
+#intro header {text-align: center; padding: 11vh 20px 0;}
+#intro header h1 {margin-bottom: 20px;}
+#intro header p {font-size:2rem; font-weight: 800;}
+#intro header p span {color:#fff; font-size:1.8rem;}
+#intro header p span.box {display: inline-block; background:#757575; padding:0 10px; border-radius: 3px; line-height: 31px;}
+
+#intro .container {width:100%; padding:0; background: transparent; display: initial;}
+#intro .container .con_wrap.num1 {text-align: center;}
+#intro .container .con_wrap.num2 {text-align: center; margin-bottom: 80px;}
+#intro .container .con_wrap.num3 {background: var(--c_deepblue); position: relative; z-index: 20;}
+
+/* link*/
+#intro .btn__card {position: relative;padding: 6.5vh 0; text-align: center; font-family:var(--f_nsR); z-index: 9;}
+#intro .btn__card ul {display: flex; justify-content: center; align-items: center; gap:30px}
+#intro .btn__card ul li.arr {width: 36px; height: 36px;}
+#intro .btn__card ul li a {display: block; width: 100%; height: 100%; overflow: hidden; border-radius: 40px; box-shadow: 13px 13px 5px 0 #d7d7d7;}
+#intro .btn__card ul li a:hover {transform: translateY(-10px); transition: var(--ani_time);}
+#intro .btn__card ul li .card__item {display: block; float: left; width: 270px; height: 300px; border-radius:40px; padding: 2.5rem;}
+#intro .btn__card ul li .number {display: block; text-align: left; font-size: 2.2rem; font-weight: 900; color: rgba(255, 255, 255, 0.5);}
+#intro .btn__card ul li p {font-size: 2.4rem; font-weight: 800; color: #fff;}
+
+#intro .btn__card ul .card__item.num1 {background: var(--c_mint); border:13px solid #3dab9b;}
+#intro .btn__card ul .card__item.num2 {background: var(--c_blue); border:13px solid #377de0;}
+#intro .btn__card ul .card__item.num3 {background: var(--c_pink); border:13px solid #ff68af;}
+#intro .btn__card ul .card__item.num4 {background: var(--c_orange); border:13px solid #ff623b;}
+
+/* link_icon*/
+#intro .btn__card ul .card__item i {display: block; width:100px; height: 100px; margin: 10px auto 20px;}
+#intro .btn__card ul .card__item.num1 i {background: url(../images/main/ico_menu_01.svg) no-repeat center;}
+#intro .btn__card ul .card__item.num2 i {background: url(../images/main/ico_menu_02.svg) no-repeat center;}
+#intro .btn__card ul .card__item.num3 i {background: url(../images/main/ico_menu_03.svg) no-repeat center;}
+#intro .btn__card ul .card__item.num4 i {background: url(../images/main/ico_menu_04.svg) no-repeat center;}
+
+/* 소개*/
+#intro .txt span {display: block;}
+#intro .txt .intro__txt {margin-top:10px; font-weight: 400; color:#555;}
+
+/* 하단 버튼*/
+#intro .btns {overflow: hidden; padding: 6vh 21%; text-align: center;}
+#intro .btns ul {display: flex; justify-content: space-between;}
+#intro .btns ul li {display: flex;}
+#intro .btns ul li p {font-size: 2.1rem; font-weight: 700; color: #fff; letter-spacing:0;line-height: 52px;}
+#intro .btns ul li p span {color: #6DA9E0;}
+#intro .btns ul .item i {display: block; width:52px; height:52px; margin-right: 10px;}
+#intro .btns ul .item:nth-child(1) i {background: url(../images/main/btn_btm_01.svg) no-repeat center;}
+#intro .btns ul .item:nth-child(2) i {background: url(../images/main/btn_btm_02.svg) no-repeat center;}
+#intro .btns ul .item:nth-child(3) i {background: url(../images/main/btn_btm_03.svg) no-repeat center;}
+
+/* intro - footer*/
+footer .intro_ft {padding: 3vh 0;}
+footer .intro_ft p {color:#fff;}
+
+/* bg_object*/
+.bg_object {position: absolute; bottom: 150px; overflow: hidden;}
+.bg_object.num1 {z-index: 10; width:400px; height:300px; right: 160px;}
+.bg_object.num2 {width: 550px; height: 330px; left: 80px;}
+
+.bg_object .character {position: absolute;}
+.bg_object .character.num1 {width:284px; height:330px; left: -30px; top: 15px; background: url(../images/main/character_01.png) no-repeat;}
+.bg_object .character.num2 {width:200px; height:270px; right: 0; top: 120px; background: url(../images/main/character_02.png) no-repeat;}
+.bg_object .character.num3 {width:260px; height:390px; top: -38px; left: -16px; background: url(../images/main/character_03.png) no-repeat;}
+.bg_object .character.num4 {width:330px; height:320px; left: 80px; top: 85px; background: url(../images/main/character_04.png) no-repeat;}
+.bg_object .character.num5 {width:185px; height:240px; right: 0; top: 150px; background: url(../images/main/character_05.png) no-repeat;}
+
+/* 캐릭터 애니메이션*/
+.bg_object .character.num1 {animation: character1 0.5s; animation-delay:0.1s; animation-iteration-count:3;}
+.bg_object .character.num2 {animation: character1 0.5s; animation-delay:0.3s; animation-iteration-count:1;}
+.bg_object .character.num3 {animation: character1 0.5s; animation-delay:1.2s; animation-iteration-count:1;}
+.bg_object .character.num4 {animation: character1 0.5s; animation-delay:0.9s; animation-iteration-count:2;}
+.bg_object .character.num5 {animation: character1 0.5s; animation-delay:0.6s; animation-iteration-count:1;}
+ 
+@keyframes character1 {
+    0%, 100% {transform: translateY(0);}
+    50% {transform: translateY(-15px);}
+}
+
+/* ---------------------main 끝 */
