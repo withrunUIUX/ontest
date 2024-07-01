@@ -1,0 +1,98 @@
+@charset "UTF-8";
+:root {
+	/* Blue - color */
+	--blue_10 : #F7FAFE;
+	--blue_20 : #EFF5FF;
+	--blue_30 : #DEEBFF;
+	--blue_40 : #BCD1FC;
+	--blue_50 : #94B5FC;
+	--blue_60 : #6D9CFA;
+	--blue_70 : #5189FA;
+	--blue_80 : #4876EB;
+	--blue_90 : #2D65F2;
+	--blue_100 : #3157DD;
+	--blue_110 : #1632A6;
+	--blue_120 : #15276F;
+	--blue_130 : #0D1C57;
+
+	/* Green - color */
+	--green_10 : #F3FFFD;
+	--green_20 : #EBFFFC;
+	--green_30 : #DEFAF6;
+	--green_40 : #AFF4E5;
+	--green_50 : #7BEED8;
+	--green_60 : #4FE5C7;
+	--green_70 : #00DEB3;
+	--green_80 : #00D3AB;
+	--green_90 : #11BE9A;
+	--green_100 : #17A187;
+	--green_110 : #2A7C6D;
+	--green_120 : #286258;
+
+	/* Coral - color */
+	--coral_10 : #FFFAFA;
+	--coral_20 : #FFF5F7;
+	--coral_30 : #FCE6E6;
+	--coral_40 : #FEC5C5;
+	--coral_50 : #FEA4A3;
+	--coral_60 : #FF837E;
+	--coral_70 : #FF7A72;
+	--coral_80 : #FF6D6A;
+	--coral_90 : #FF5656;
+	--coral_100 : #EB413F;
+	--coral_110 : #D63131;
+	--coral_120 : #B81D1D;
+
+	/* Gray - color */
+	--gray_10 : #F8FAFC;
+	--gray_20 : #F4F6FA;
+	--gray_30 : #EAEDF4;
+	--gray_40 : #D7DCE5;
+	--gray_50 : #B4C0D3;
+	--gray_60 : #96A0B5;
+	--gray_70 : #8491A7;
+	--gray_80 : #67738E;
+	--gray_90 : #5C667B;
+	--gray_100 : #475067;
+	--gray_110 : #373F57;
+	--gray_120 : #292E41;
+	--gray_130 : #151822;
+
+	/* Theme - color */
+	--point : #FF1286;
+	--pink : #FF94A7;
+	--pink_10 : #FFF2F4;
+	--pink_m : #FE617E;
+	--yelliw_10 : #FFF1DA;
+	--yelliw_m : #FFB83E;
+	--orange : #FF7754;
+	--orange_m : #ED562F;
+	--violet : #742FE3;
+	--violet_10 : #F7F1FF;
+	--violet_40 : #B188F3;
+
+	/* Default - color */
+    --c_white: #fff;
+    --c_black: #000;
+
+	/* font */
+	--f_ptd: 'Pretendard';
+	--f_scd: 'score';
+
+	/* ani */
+	--ani_time:.3s;
+	--load_time:3s;	
+}
+
+.c_blue {color:var(--c_blue);} /* 적용예시 */
+
+.f36 {font-size:36px; line-height: 1;font-weight:800} /* h2 */
+.f24 {font-size: 24px; line-height: 1;font-weight:800} /* h3 */
+.f20 {font-size: 20px; line-height: 1;font-weight:800}
+.f16 {font-size: 16px; line-height: 1;font-weight:800}
+.f15 {font-size: 15px; line-height: 1;font-weight:800}
+
+.f16_r {font-size: 16px; line-height: 1;font-weight:400}
+.f15_r {font-size: 15px; line-height: 1;font-weight:400}
+
+.f15_p {font-size: 15px; line-height:150%;font-weight:400}
