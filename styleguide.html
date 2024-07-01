@@ -4,139 +4,622 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>한글 키득키득</title>
+    <title>스타일가이드</title>
 
     <link rel="stylesheet" href="/css/common.css">
+
+    <script type="text/javascript" src="/js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="/js/jquery-latest.min.js"></script>
+
 </head>
 
-<body>
-
 <style>
-    h2{margin:5rem auto 2rem; width:90%;font-size:2rem}
-    .stwrap {display: flex;gap:2rem;flex-wrap: wrap;justify-content: flex-start;width:90%;margin:0 auto;padding:5rem;background:#fff;border:1px solid #eee;}
+	.style_wrap {width:100%;max-width:1300px;margin:0 auto;}
+	.style_wrap > section {padding:80px 0;}
+	.style_wrap h2 {font-size:1.18rem;margin-bottom:1rem;}
+	.style_wrap h3 {margin:0;}
+	.stwrap {display:flex;gap:2rem;flex-wrap:wrap;justify-content:flex-start;width:100%;margin:0 auto;padding:50px;background:#fff;border:1px solid #eee;}
+	.stwrap .styleguide_box {display:flex;flex-direction:column;gap:32px;width:100%;}
+	.stwrap .group {display: flex;gap: 32px;}
+	.stwrap .gr_tit {width: 100px;font-weight:700;}
+	.stwrap .group > .wrap {display: flex;flex-direction: column;gap: 20px;width: calc(100% - 100px);}
+	.stwrap .group > .wrap .grap {display:flex;flex-wrap:wrap;gap:4px;}
+	.stwrap .group > .wrap .grap .tit {width:100%;margin-bottom:8px}
 </style>
 
-<h2>table</h2>
+<body class="style_wrap">
+<section>
+
+<h2>BUTTON</h2>
 <div class="stwrap">
-<table class="tbl_basic center table-hover">
-    <caption>키득키득 한글 진단검사 현황을 안내하는 표입니다. 차시별, 학생수, 검사완료, 미해득, 다문화로 나뉘어 자료를 제공하고 있습니다.</caption>
-    <colgroup>                      
-    </colgroup>
-    <thead>
-        <tr>
-            <th scope="col"><span class="sr-only">차시별</span></th>
-            <th scope="col">학생순</th>
-            <th scope="col">검사완료</th>
-            <th scope="col">미해득</th>
-            <th scope="col">다문화</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <th scope="row"><span class="step1">1차</span></th>
-            <td>24</td>
-            <td><span class="test-end">24</span></td>
-            <td>24</td>
-            <td>24</td> 
-        </tr>
-        <tr>
-            <th scope="row"><span class="step2">2차</span></th>
-            <td>24</td>
-            <td><span class="test-end">24</span></td>
-            <td>24</td>
-            <td>24</td> 
-        </tr>
-        <tr>
-            <th scope="row"><span class="step3">3차</span></th>
-            <td>24</td>
-            <td><span class="test-end">24</span></td>
-            <td>24</td>
-            <td>24</td> 
-        </tr>
-    </tbody>
-</table>
+	<div class="pad-ver styleguide_box">
+		<div class="group">
+			<strong class="gr_tit" id="docs-ui-button1">State</strong>
+			<ul class="wrap heading">
+				<li class="grap">
+					<div class="tit"><b>Enable</b></div>
+					<a class="btn btn-ani btn-primary" href="#">Primary</a>
+					<a class="btn btn-ani btn-outline-primary" href="#">Primary</a>
+					<a class="btn btn-ani btn-secondary" href="#">Secondary</a>
+					<a class="btn btn-ani btn-outline-secondary" href="#">Secondary</a>
+					<a class="btn btn-ani btn-tertiary" href="#">Tertiary</a>
+					<a class="btn btn-ani btn-outline-tertiary" href="#">Tertiary</a>
+					<a class="btn btn-ani btn-quaternary" href="#">quaternary</a>
+					<a class="btn btn-ani btn-outline-quaternary" href="#">quaternary</a>
+					<a class="btn btn-ani btn-text" href="#">btn-text</a>
+					<a class="btn btn-ani btn-blank" href="#" target="_blank">btn-text</a>
+				</li>
+				<li class="grap">
+					<div class="tit"><b>hover/active</b></div>
+					<a class="btn btn-ani btn-primary hover" href="#">Primary</a>
+					<a class="btn btn-ani btn-outline-primary hover" href="#">Primary</a>
+					<a class="btn btn-ani btn-secondary hover" href="#">Secondary</a>
+					<a class="btn btn-ani btn-outline-secondary hover" href="#">Secondary</a>
+					<a class="btn btn-ani btn-tertiary hover" href="#">Tertiary</a>
+					<a class="btn btn-ani btn-outline-tertiary hover" href="#">Tertiary</a>
+					<a class="btn btn-ani btn-quaternary hover" href="#">quaternary</a>
+					<a class="btn btn-ani btn-outline-quaternary hover" href="#">quaternary</a>
+					<a class="btn btn-ani btn-text hover" href="#">btn-text</a>
+					<a class="btn btn-ani btn-blank hover" href="#" target="_blank">btn-text</a>
+				</li>
+				<li class="grap">
+					<div class="tit"><b>Focus</b></div>
+					<a class="btn btn-ani btn-primary focus" href="#">Primary</a>
+					<a class="btn btn-ani btn-outline-primary focus" href="#">Primary</a>
+					<a class="btn btn-ani btn-secondary focus" href="#">Secondary</a>
+					<a class="btn btn-ani btn-outline-secondary focus" href="#">Secondary</a>
+					<a class="btn btn-ani btn-tertiary focus" href="#">Tertiary</a>
+					<a class="btn btn-ani btn-outline-tertiary focus" href="#">Tertiary</a>
+					<a class="btn btn-ani btn-quaternary focus" href="#">quaternary</a>
+					<a class="btn btn-ani btn-outline-quaternary focus" href="#">quaternary</a>
+					<a class="btn btn-ani btn-text focus" href="#">btn-text</a>
+					<a class="btn btn-ani btn-blank focus" href="#" target="_blank">btn-text</a>
+				</li>
+				<li class="grap">
+					<div class="tit"><b>Disable</b></div>
+					<a class="btn btn-ani btn-primary disabled" href="#">Primary</a>
+					<a class="btn btn-ani btn-outline-primary disabled" href="#">Primary</a>
+					<a class="btn btn-ani btn-secondary disabled" href="#">Secondary</a>
+					<a class="btn btn-ani btn-outline-secondary disabled" href="#">Secondary</a>
+					<a class="btn btn-ani btn-tertiary disabled" href="#">Tertiary</a>
+					<a class="btn btn-ani btn-outline-tertiary disabled" href="#">Tertiary</a>
+					<a class="btn btn-ani btn-quaternary disabled" href="#">quaternary</a>
+					<a class="btn btn-ani btn-outline-quaternary disabled" href="#">quaternary</a>
+					<a class="btn btn-ani btn-text disabled" href="#">btn-text</a>
+					<a class="btn btn-ani btn-blank disabled" href="#" target="_blank">btn-text</a>
+				</li>
+			</ul>
+		</div>
+		<div class="group">
+			<strong class="gr_tit" id="docs-ui-button2">Size</strong>
+			<ul class="wrap heading">
+				<li class="grap">
+					<div class="tit"><b>sm</b></div>
+					<a class="btn btn-ani btn-primary sm" href="#">Primary</a>
+					<a class="btn btn-ani btn-outline-primary sm" href="#">Primary</a>
+					<a class="btn btn-ani btn-primary sm" href="#">
+						Primary
+						<i class="ico ico-arrow" aria-hidden="true"></i>
+					</a>
+				</li>
+				<li class="grap">
+					<div class="tit"><b>md</b></div>
+					<a class="btn btn-ani btn-primary" href="#">Primary</a>
+					<a class="btn btn-ani btn-outline-primary" href="#">Primary</a>
+					<a class="btn btn-ani btn-primary" href="#">
+						Primary
+						<i class="ico ico-arrow" aria-hidden="true"></i>
+					</a>
+				</li>
+				<li class="grap">
+					<div class="tit"><b>lg</b></div>
+					<a class="btn btn-ani btn-primary lg" href="#">Primary</a>
+					<a class="btn btn-ani btn-outline-primary lg" href="#">Primary</a>
+					<a class="btn btn-ani btn-primary lg" href="#">
+						Primary
+						<i class="ico ico-arrow" aria-hidden="true"></i>
+					</a>
+				</li>
+				<li>*** btn-text, btn-ico 버튼은 Md만 사용</li>
+			</ul>
+		</div>
+		<div class="group">
+			<strong class="gr_tit" id="docs-ui-button3">Type / Hierarchy</strong>
+			<ul class="wrap heading">
+				<li class="grap">
+					<div class="tit"><b>Defualt Button</b></div>
+					<a class="btn btn-ani btn-primary" href="#">Primary</a>
+					&gt;
+					<a class="btn btn-ani btn-outline-primary" href="#">Primary</a>
+					&gt;
+					<a class="btn btn-ani btn-text" href="#">
+						btn-text
+					</a>
+				</li>
+				<li class="grap">
+					<div class="tit"><b>with ico Button</b></div>
+					<a class="btn btn-ani btn-primary" href="#">
+						Primary
+						<i class="ico ico-arrow" aria-hidden="true"></i>
+					</a>
+					&gt;
+					<a class="btn btn-ani btn-outline-primary" href="#">
+						Primary
+						<i class="ico ico-arrow" aria-hidden="true"></i>
+					</a>
+					&gt;
+					<a class="btn btn-ani btn-primary btn-ico" href="#">
+						<span class="skip">Primary</span>
+						<i class="ico ico-arrow" aria-hidden="true"></i>
+					</a>
+					<a class="btn btn-ani btn-outline-primary btn-ico" href="#">
+						<span class="skip">Primary</span>
+						<i class="ico ico-arrow" aria-hidden="true"></i>
+					</a>
+					&gt;
+					<a class="btn btn-ani btn-text" href="#">
+						btn-text
+						<i class="ico ico-arrow" aria-hidden="true"></i>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="group wide">
+			<strong class="gr_tit" id="docs-ui-button4">Case</strong>
+			<ul class="wrap heading">
+				<li class="grap">
+					<div class="tit"><b>단일 사용시</b></div>
+					<a class="btn btn-ani btn-primary" href="#">Primary</a>
+				</li>
+				<li class="grap">
+					<div class="tit"><b>레벨 차이 두개 이상 버튼 나열 시</b></div>
+					<div class="btnwrap">
+						<a class="btn btn-ani btn-primary" href="#">Primary</a>
+						<a class="btn btn-ani btn-secondary" href="#">Secondary</a>
+					</div>
+				</li>
+				<li class="grap">
+					<div class="tit"><b>같은 레벨 두개 이상 버튼 나열 시</b></div>
+					<div class="btnwrap">
+						<a class="btn btn-ani btn-outline-primary" href="#">Primary</a>
+						<a class="btn btn-ani btn-outline-primary" href="#">Primary</a>
+						<a class="btn btn-ani btn-outline-primary" href="#">Primary</a>
+						<a class="btn btn-ani btn-outline-primary" href="#">Primary</a>
+						<a class="btn btn-ani btn-outline-primary" href="#">Primary</a>
+					</div>
+				</li>
+				<li class="grap">
+					<div class="tit"><b>문장과 같이 사용시</b></div>
+					<p>
+					문장사이에 링크안내를 해줘야 할 경우 Text Button을 사용합니다.
+					<a class="btn btn-ani btn-text" href="#">
+						btn-text
+						<i class="ico ico-arrow" aria-hidden="true"></i>
+					</a>
+					</p>
+				</li>
+				<li class="grap">
+					<div class="tit"><b>테이블 안에 버튼을 넣어야 할 경우</b></div>
+					<table class="tbl_basic tx_center">
+						<caption>
+						<strong>table button</strong>
+						<p>table button이 들어가는 경우에 사용합니다.</p>
+						</caption>
+						<thead>
+							<tr>
+								<th scope="col">thead</th>
+								<th scope="col">thead</th>
+								<th scope="col">thead</th>
+							</tr>
+						</thead>
+						<tbody>
+						<tr>
+							<th scope="row">th </th>
+							<td>td</td>
+							<td>
+								<a class="btn btn-ani btn-outline-primary sm" href="#">Primary</a>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">th </th>
+							<td>td</td>
+							<td>
+								<a class="btn btn-ani btn-outline-primary sm" href="#">Primary</a>
+							</td>
+						</tr>
+						</tbody>
+					</table>
+				</li>
+			</ul>
+		</div>
+	</div>
 </div>
 
-<h2> 팝업레이어 버튼그룹</h2>
+
+<h2>TABLE</h2>
 <div class="stwrap">
-<div class="etcwrap">
-    <button>프린트하기</button>
-    <button>저장하기</button>
+	<h3>SIGN 테이블</h3>
+	<table class="tbl_lst center table-hover">
+		<caption>학습코칭 확인서를 순서, 교육날짜, 교육시간, 학년, 반, 코칭내용, 관심군 학생 특이사항으로 나누어 자료를 제공하고 있습니다.</caption>
+		<colgroup>
+			<col style="width:6%"/>
+			<col style="width:10%"/>
+			<col style="width:10%"/>
+			<col style="width:8%"/>
+			<col style="width:8%"/>
+			<col style="width:30%"/>
+			<col style="width:30%"/>
+		</colgroup>
+		<thead>
+			<tr>
+				<th scope="col">순서</th>
+				<th scope="col">교육날짜</th>
+				<th scope="col">교육시간</th>
+				<th scope="col">학년</th>
+				<th scope="col">반</th>
+				<th scope="col">코칭내용</th>
+				<th scope="col">관심군 학생 특이사항</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th scope="row">1</th>
+				<td>12.09</td>
+				<td>2시간</td>
+				<td>1학년</td>
+				<td>1반</td>
+				<td><textarea placeholder="코칭 내용을 입력해주세요.">한글해득</textarea></td>
+				<td><textarea placeholder="관심군 학생 특이사항을 입력해주세요.">특이사항없음</textarea></td>
+			</tr>
+			<tr>
+				<th scope="row">2</th>
+				<td>12.09</td>
+				<td>2시간</td>
+				<td>1학년</td>
+				<td>1반</td>
+				<td><textarea placeholder="코칭 내용을 입력해주세요."></textarea></td>
+				<td><textarea placeholder="관심군 학생 특이사항을 입력해주세요."></textarea></td>
+			</tr>
+			<tr class="total">
+				<th scope="row" colspan="2">학습코칭 결과</th>
+				<td colspan="6"><textarea placeholder="학습코칭결과를 입력해주세요.">자음, 모음 해득.</textarea></td>
+			</tr>
+			<tr class="total sign_wrapper">
+				<th scope="row" colspan="2">학습코칭 제공자</th>
+				<td colspan="6">
+					<div class="sign_wrap">
+						<div class="sign_wrap_left">
+							<div class="sign_box">
+								<div class="signDiv"><img src="/adm/images/common/sign_img.png"></div>
+								<span>학습코칭단 서명<i class="state icosign"></i></span>
+							</div>
+						</div>
+						<div class="sign_wrap_right">
+							<dl>
+								<dt>교사</dt>
+								<dd>
+									<div class="sign_box">
+										<div class="signDiv"></div>
+										<span>서명/인<i class="state icosign"></i></span>
+									</div>
+								</dd>
+							</dl>
+							<dl>
+								<dt>교감</dt>
+								<dd>
+									<div class="sign_box">
+										<div class="signDiv"></div>
+										<span>서명/인<i class="state icosign"></i></span>
+									</div>
+								</dd>
+							</dl>
+						</div>
+					</div>
+				</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<h3>LIST 테이블</h3>
+	<table class="tbl_lst type2 center table-hover">
+		<caption>학습코칭 지도비, 교통비 지급 세부내역을 순서, 항복, 지급내역(지도일시, 교욱시간:소속교, 성명, 지급액:지도시간, 강사비), 근무일수(교통비)로 나누어 자료를 제공하고 있습니다.</caption>
+		<colgroup></colgroup>
+		<thead>
+			<tr>
+				<th scope="col" rowspan="3">순서</th>
+				<th scope="col" rowspan="3">항목</th>
+				<th scope="col" colspan="5">지급내역</th>
+				<th scope="col" rowspan="3">근무일수(교통비)</th>
+			</tr>
+			<tr>
+				<th scope="col" rowspan="2">지도일시<span class="block">(날짜순으로 기재)</span></th>
+				<th scope="col" colspan="2">교육시간</th>
+				<th scope="col" colspan="2">지급액</th>
+			</tr>
+			<tr>
+				<th scope="col" class="has-children">소속교</th>
+				<th scope="col" class="has-children">성명</th>
+				<th scope="col" class="has-children">지도시간</th>
+				<th scope="col" class="has-children">강사비</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th scope="row">1</th>
+				<td>학습코칭 지도비와교통비</td>
+				<td>12.11</td>
+				<td>당진초등학교</td>
+				<td>온이슬</td>
+				<td>2시간</td>
+				<td>30,000원 </td>
+				<td>15,000원</td>
+			</tr>
+			<tr>
+				<th scope="row">2</th>
+				<td>학습코칭 지도비와교통비</td>
+				<td>12.11</td>
+				<td>당진초등학교</td>
+				<td>온이슬</td>
+				<td>2시간</td>
+				<td>30,000원 </td>
+				<td>15,000원</td>
+			</tr>
+			<tr>
+				<th scope="row">3</th>
+				<td>학습코칭 지도비와교통비</td>
+				<td>12.11</td>
+				<td>당진초등학교</td>
+				<td>온이슬</td>
+				<td>2시간</td>
+				<td>30,000원 </td>
+				<td>15,000원</td>
+			</tr>
+			<tr class="total">
+				<th scope="row" colspan="5">합계</th>
+				<td>6시간</td>
+				<td>90,000원</td>
+				<td>45,000원</td>
+			</tr>
+		</tbody>
+	</table>
+
 </div>
+
+<h2>stat 아이콘형</h2>
+<div class="stwrap">
+    <i class="state learn">이수</i>
+    <i class="state miss">미이수</i>
+    <i class="state disable">비활성 완료</i>
+    <i class="state basket">삭제</i>
+    <i class="state download">다운로드</i>
+    <i class="state modify">수정</i>
+    <i class="state icosign">사인</i>
+	<i class="state icosign disabled">사인완료</i>
 </div>
-<h2> 팝업레이어 닫기버튼</h2>
+
+<h2>헤딩 아이콘</h2>
+<div class="stwrap" style="background:#d5dcdf">
+	<i class="hico person bk">정보</i>
+    <i class="hico person wt">정보</i> 
+	<i class="hico record">이력</i>
+	<i class="hico school"></i>
+</div>
+
+
+<h2>tab</h2>
+<div class="stwrap">
+	<div class="tabs">
+		<div class="tab-header">
+			<button rel="tab1" class="active">탭버튼1</button>
+			<button rel="tab2">탭버튼2</button>
+		</div>
+		<div class="tab-body" id="tab1" class="active">탭1</div>
+		<div class="tab-body" id="tab2">탭2</div>
+	</div>
+</div>
+
+
+<h2>닫기버튼</h2>
 <div class="stwrap">
     <button type="button" class="bn_close"><span class="sr-only">닫기</span></button>
     <button type="button" class="bn_close bk"><span class="sr-only">닫기</span></button>
 </div>
 
-<h2> n차 진단</h2>
+<h2>form 태그</h2>
 <div class="stwrap">
-    <span class="step sp1">1차진단</span>
-    <span class="step sp2">2차진단</span>
-    <span class="step sp3">3차진단</span>
+	<div class="styleguide_box">
+	 <div class="group">
+		<strong class="gr_tit">select</strong>
+		<ul class="wrap">
+			<li class="grap">
+				<div class="select_wrap">
+					<label for="select" class="required">검색조건<em>필수입력</em></label>
+					<select class="select" id="select">
+						  <option selected>선택</option>
+						  <option value="">선택1</option>
+						  <option value="">선택2</option>
+						  <option value="">선택3</option>
+						  <option value="">선택4</option>
+						  <option value="">선택5</option>
+					</select>
+				</div>
+				<select class="select no-line">
+					  <option selected>선택</option>
+					  <option value="">선택1</option>
+					  <option value="">선택2</option>
+					  <option value="">선택3</option>
+					  <option value="">선택4</option>
+					  <option value="">선택5</option>
+				</select>
+				<select class="select" disabled>
+					  <option disabled>선택</option>
+					  <option value="" selected>선택1</option>
+					  <option value="">선택2</option>
+					  <option value="">선택3</option>
+					  <option value="">선택4</option>
+					  <option value="">선택5</option>
+				</select>
+			</li>
+		</ul>
+	 </div>
+
+	 <div class="group">
+		<strong class="gr_tit">input text</strong>
+		<ul class="wrap">
+			<li class="grap">
+				<input type="text" placeholder="입력하세요"/>
+				<input type="text" disabled value="input 비활성 상태"/>
+				<input type="password" placeholder="비밀번호를 입력하세요"/>
+			</li>
+		</ul>
+	 </div>
+
+	 <div class="group">
+		<strong class="gr_tit">intput time</strong>
+		<ul class="wrap">
+			<li class="grap">
+				<input type="time" name="time"/>
+			</li>
+		</ul>
+	 </div>
+
+	 <div class="group">
+		<strong class="gr_tit">intput date</strong>
+		<ul class="wrap">
+			<li class="grap">
+				<div class="date_wrap">
+					<label for="date1">기간</label><input type="date" name="date" id="date1"/>
+					<span> ~ </span>
+					<label for="date2" class="sr-only">마지막날짜 입력</label><input type="date" name="date" id="date2"/>
+				</div>
+			</li>
+		</ul>
+	 </div>
+
+	 <div class="group">
+		<strong class="gr_tit">radio</strong>
+		<ul class="wrap">
+			<li class="grap">
+				<input type="radio" id="radio1" name="radio" checked/><label for="radio1">선택1</label>
+				<input type="radio" id="radio2" name="radio"/><label for="radio2">선택2</label>
+			</li>
+		</ul>
+	 </div>
+
+	 <div class="group">
+		<strong class="gr_tit">checkbox</strong>
+		<ul class="wrap">
+			<li class="grap">
+				<input type="checkbox" id="check1" name="check" checked/><label for="check1">체크박스1</label>
+				<input type="checkbox" id="check2" name="check"/><label for="check2">체크박스2</label>
+			</li>
+		</ul>
+	 </div>
+
+	 <div class="group">
+		<strong class="gr_tit">textarea</strong>
+		<ul class="wrap">
+			<li class="grap">
+				<textarea placeholder="입력하세요"/></textarea>
+				<textarea disabled/>특이사항없음</textarea>
+			</li>
+		</ul>
+	 </div>
+	</div><!--//styleguide_box-->
 </div>
 
-<h2> 진단결과 - 텍스트형</h2>
+<h2>필터버튼</h2>
 <div class="stwrap">
-    <span class="txout ing_learn"><i class="state learn"></i>해득</span>
-    <span class="txout ing_miss"><i class="state miss"></i>미해득</span>
-    <span class="txout ing_more"><i class="state tx more">보충</i></span>
+<div class="styleguide_box" id="filterstyle">
+	 <div class="group">
+		<strong class="gr_tit">radio 태그</strong>
+		<ul class="wrap">
+			<li class="grap">
+			<div class="designRadio filter">
+				<input type="radio" id="dradio1" name="radio1" checked/><label for="dradio1">월별</label>
+				<input type="radio" id="dradio2" name="radio1"/><label for="dradio2">일자별</label>
+			</div>
+			</li>
+		</ul>
+	 </div>
+	 <div class="group">
+		<strong class="gr_tit">a 태그</strong>
+		<ul class="wrap">
+			<li class="grap">
+			<div class="btn_box filter">
+				<a href="#filterstyle" class="btn on">월별</a>
+				<a href="#filterstyle" class="btn">일자별</a>
+			</div>
+			</li>
+		</ul>
+	 </div>
+	 <div class="group">
+		<strong class="gr_tit">button 태그</strong>
+		<ul class="wrap">
+			<li class="grap">
+			<div class="btn_box filter">
+				<button type="button" class="btn">월별</button>
+				<button type="button" class="btn on">일자별</button>
+			</div>
+			</li>
+		</ul>
+	 </div>
+</div>
 </div>
 
-<h2> stat 아이콘형</h2>
+<h2>디자인 select</h2>
 <div class="stwrap">
-    <i class="state test">테스트시작</i><!-- 테스트하기 모니터 -->
-    <i class="state learn">해득</i><!-- 해득 -->
-    <i class="state miss">미해득</i><!-- 미해득 -->
-    <i class="state basket">삭제</i><!-- 휴지통 -->
-    <i class="state download">다운로드</i><!-- 다운로드 -->
-    <i class="state modify">수정</i><!-- 수정 -->
-    <i class="state save">저장</i><!-- 저장 -->
-    <i class="multi ico_o">해당있음</i><!-- 해당있음 -->
-    <i class="multi ico_x">해당없음</i><!-- 해당없음 -->
+	<h2 class="select_tt">
+	2023 학습코칭 확인서
+	<div class="designSelect" id="designSelect">
+		<div class="lay">
+			<strong><a>12</a></strong>
+		</div>
+		<div class="lists">
+			<ul>
+				<li><a href="#designSelect">12</a></li>
+				<li><a href="#designSelect">11</a></li>
+				<li><a href="#designSelect">10</a></li>
+				<li><a href="#designSelect">09</a></li>
+			</ul>
+		</div>                  
+	</div>
+	월
+	</h2>
 </div>
 
-<h2> stat 텍스트형</h2>
+<h2>info box</h2>
 <div class="stwrap">
-    <i class="state tx more">보충</i><!-- 보충 텍스트형-->
-    <i class="state tx end">완료</i><!-- 보충 텍스트형-->
-    <i class="state tx ing">학습중</i><!-- 보충 텍스트형-->
-    <i class="state tx study">학습하기</i><!-- 보충 텍스트형-->
+	<div class="info_wrap">
+		<div class="tt_wrap">
+			<i class="hico person bk">정보</i>
+			<span>강사명 : 홍길동 </span>
+		</div>
+		<div class="tt_wrap">
+			<span>당진 교육지원청</span>
+		</div>
+	</div>
+
+	<div class="info_wrap">
+		<div class="tt_wrap">
+			<i class="hico person bk">정보</i>
+			<span>강사명 : 홍길동 </span>
+		</div>
+		<div class="btn_wrap">
+			<a class="btn btn-ani btn-primary" href="#">학생추가</a>
+			<a class="btn btn-ani btn-secondary" href="#">출석부 작성</a>
+		</div>
+	</div>
 </div>
 
-<h2>탭</h2>
-<div class="stwrap" style="background: #F5F7FB;">
-<div class="tabs">
-    <div class="tab-header">
-        <button class="active">탭버튼1</button>
-        <button>탭버튼2</button>
-    </div>
-    <div class="tab-body">
-        <div class="active">탭1</div>
-        <div>탭2</div>
-    </div>
+<h2>text color</h2>
+<div class="stwrap">
+	<p>2023<span class="red">학습코칭</span>확인서</p>
+	<p>2023<span class="blue">학습코칭</span>확인서</p>
 </div>
-</div>
-<script type="text/javascript" src="js/contents.js"></script>
+
+
+</section>
 </body>
-</html>
 
-<h2>list</h2>
-<div class="stwrap">
-<ol class="list_ol">
-    <li></li>
-    <li></li>
-    <li></li>
-</ol>
-<ul class="list_kor">
-    <li></li>
-    <li></li>
-    <li></li>
-</ul>
-<ul class="list_kor2">
-    <li></li>
-    <li></li>
-    <li></li>
-</ul>
-</div>
+</html>
