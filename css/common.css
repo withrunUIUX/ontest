@@ -3,6 +3,7 @@
 @import url(_reset.css);
 @import url(_font.css);
 @import url(_button.css);
+@import url(layout.css);
 
 * {
 	margin:0;
@@ -35,8 +36,8 @@ html,body,div,span,object,h1,h2,h3,h4,h5,h6,p,a,abbr,address,cite,em,img,strong,
 	.block {display:inline;}
 }
 
-/* BUTTON  - _button.css */
-a {text-decoration: none;color:var(--gray_90);}
+/* BUTTON  */
+a, a:active, a:visited {text-decoration:none;color:var(--gray_90);}
 button {border: 0; background: none; cursor: pointer;}
 
 /* display */
@@ -120,6 +121,11 @@ input[type="checkbox"] + label{position:relative;display:inline-block;line-heigh
 input[type="checkbox"] + label:before{content:'';position:absolute;left:0;top:50%;transform:translateY(-55%);display:block;width:16px;height:16px;background-image:url('../images/common/checkbox.svg');background-repeat:no-repeat;background-position:50%;}
 input[type="checkbox"]:checked + label:before{background-image:url('../images/common/check_on.svg');}
 input[type="checkbox"]:disabled + label:before{background-image:url('../images/common/check_disable.svg');}
+
+/* 테이블 안에 checkbox */
+table input[type="checkbox"] {display:none;vertical-align:baseline;}
+table input[type="checkbox"] + label {margin:0 auto;padding:0;display:inline-flex;align-items:center;vertical-align:middle}
+table input[type="checkbox"] + label:before {position:static;transform:inherit;;}
 
 /* radio 기본 */
 input[type="radio"]{position:absolute;opacity:0;cursor:pointer;}
@@ -211,72 +217,87 @@ table thead th:last-child {border-radius: 0 10px 0 0;}
 /* 아이콘 32*32 */
 .micon {display:inline-block;width:32px;height:32px;margin:auto;background-repeat:no-repeat;background-position:50%;text-indent:-999px;font-size:0;overflow:hidden;}
 .micon.disabled {filter:brightness(2) grayscale(1);pointer-events:none;}
-.micon.ico1 {background-image: url('../images/common/mico_01.svg');}
-.micon.ico2 {background-image: url('../images/common/mico_02.svg');}
-.micon.ico3 {background-image: url('../images/common/mico_03.svg');}
-.micon.ico4 {background-image: url('../images/common/mico_04.svg');}
-.micon.ico5 {background-image: url('../images/common/mico_05.svg');}
-.micon.ico6 {background-image: url('../images/common/mico_06.svg');}
-.micon.ico7 {background-image: url('../images/common/mico_07.svg');}
-.micon.ico8 {background-image: url('../images/common/mico_08.svg');}
-.micon.ico9 {background-image: url('../images/common/mico_09.svg');}
-.micon.ico10 {background-image: url('../images/common/mico_10.svg');}
-.micon.ico11 {background-image: url('../images/common/mico_11.svg');}
-.micon.ico12 {background-image: url('../images/common/mico_12.svg');}
+.micon.ico1 {background-image:url('../images/common/mico_01.svg');}
+.micon.ico2 {background-image:url('../images/common/mico_02.svg');}
+.micon.ico3 {background-image:url('../images/common/mico_03.svg');}
+.micon.ico4 {background-image:url('../images/common/mico_04.svg');}
+.micon.ico5 {background-image:url('../images/common/mico_05.svg');}
+.micon.ico6 {background-image:url('../images/common/mico_06.svg');}
+.micon.ico7 {background-image:url('../images/common/mico_07.svg');}
+.micon.ico8 {background-image:url('../images/common/mico_08.svg');}
+.micon.ico9 {background-image:url('../images/common/mico_09.svg');}
+.micon.ico10 {background-image:url('../images/common/mico_10.svg');}
+.micon.ico11 {background-image:url('../images/common/mico_11.svg');}
+.micon.ico12 {background-image:url('../images/common/mico_12.svg');}
 
 /* 아이콘 20*20 */
 .sicon {display:inline-block;width:20px;height:20px;margin:auto;background-repeat:no-repeat;background-position:50%;text-indent:-999px;font-size:0;overflow:hidden;}
 .sicon.disabled {filter:brightness(2) grayscale(1);pointer-events:none;}
-.sicon.ico1 {background-image: url('../images/common/sico_01.svg');}
-.sicon.ico2 {background-image: url('../images/common/sico_02.svg');}
-.sicon.ico3 {background-image: url('../images/common/sico_03.svg');}
-.sicon.ico4 {background-image: url('../images/common/sico_05.svg');}
-.sicon.ico5 {background-image: url('../images/common/sico_06.svg');}
-.sicon.ico6 {background-image: url('../images/common/sico_07.svg');}
-.sicon.ico7 {background-image: url('../images/common/sico_08.svg');}
+.sicon.ico1 {background-image:url('../images/common/sico_01.svg');}
+.sicon.ico2 {background-image:url('../images/common/sico_02.svg');}
+.sicon.ico3 {background-image:url('../images/common/sico_03.svg');}
+.sicon.ico4 {background-image:url('../images/common/sico_05.svg');}
+.sicon.ico5 {background-image:url('../images/common/sico_06.svg');}
+.sicon.ico6 {background-image:url('../images/common/sico_07.svg');}
+.sicon.ico7 {background-image:url('../images/common/sico_08.svg');}
 
-.sicon.close {background-image: url('../images/common/ico_close.svg');}
-.sicon.ico_info {background-image: url('../images/common/ico_info.svg');}
+.sicon.close {background-image:url('../images/common/ico_close.svg');}
+.sicon.close_w {background-image:url('../images/common/ico_close_w.svg');}
+.sicon.ico_info {background-image:url('../images/common/ico_info.svg');}
 
-.sicon.ico_o {background-image: url('../images/common/ico_o.svg');}
-.sicon.ico_x {background-image: url('../images/common/ico_x.svg');}
+.sicon.ico_o {background-image:url('../images/common/ico_o.svg');}
+.sicon.ico_x {background-image:url('../images/common/ico_x.svg');}
 
-.sicon.ico_print {background-image: url('../images/common/sico_print.svg');}
-.sicon.ico_save {background-image: url('../images/common/sico_save.svg');}
+.sicon.ico_print {background-image:url('../images/common/sico_print.svg');}
+.sicon.ico_save {background-image:url('../images/common/sico_save.svg');}
 
-.sicon.ico_calender {background-image: url('../images/common/ico_calender.svg');}
-.sicon.ico_time {background-image: url('../images/common/ico_time.svg');}
+.sicon.ico_calender {background-image:url('../images/common/ico_calender.svg');}
+.sicon.ico_time {background-image:url('../images/common/ico_time.svg');}
 
 /* 네비게이션 아이콘 */
 .nicon {display:inline-block;width:20px;height:20px;margin:auto;background-repeat:no-repeat;background-position:50%;text-indent:-999px;font-size:0;overflow:hidden;}
-.nicon.ico1 {background-image: url('../images/common/ico_navi01.svg');}
-.nicon.ico2 {background-image: url('../images/common/ico_navi02.svg');}
-.nicon.ico3 {background-image: url('../images/common/ico_navi03.svg');}
-.nicon.ico4 {background-image: url('../images/common/ico_navi04.svg');}
+.nicon.ico1 {background-image:url('../images/common/ico_navi01.svg');}
+.nicon.ico2 {background-image:url('../images/common/ico_navi02.svg');}
+.nicon.ico3 {background-image:url('../images/common/ico_navi03.svg');}
+.nicon.ico4 {background-image:url('../images/common/ico_navi04.svg');}
 
 /* 기타아이콘 */
 .icon {display:inline-block;margin:auto;background-repeat:no-repeat;background-position:50%;text-indent:-999px;font-size:0;overflow:hidden;}
-.icon.arr_s {width:10px;height:10px;background-image: url('../images/common/arr_s.svg');}
-.icon.arr_m {width:13px;height:13px;background-image: url('../images/common/arr_m.svg');}
-.icon.arr_b {width:24px;height:24px;background-image: url('../images/common/arr_b.svg');}
-.icon.arr_selet {width:14px;height:8px;background-image: url('../images/common/arr_selet.svg');}
-.icon.arr_blue {width:17px;height:17px;background-image: url('../images/common/arr_blue.svg');}
-.icon.arr_check {width:9px;height:9px;background-image: url('../images/common/arr_check.svg');}
-.icon.arr_heading {width:14px;height:14px;background-image: url('../images/common/arr_heading.svg');}
-.icon.ico_minus {width:14px;height:14px;background-image: url('../images/common/ico_minus.svg');}
-.icon.ico_plus {width:14px;height:14px;background-image: url('../images/common/ico_plus.svg');}
+.icon.arr_s {width:10px;height:10px;background-image:url('../images/common/arr_s.svg');}
+.icon.arr_m {width:13px;height:13px;background-image:url('../images/common/arr_m.svg');}
+.icon.arr_b {width:24px;height:24px;background-image:url('../images/common/arr_b.svg');}
+.icon.arr_selet {width:14px;height:8px;background-image:url('../images/common/arr_selet.svg');}
+.icon.arr_blue {width:17px;height:17px;background-image:url('../images/common/arr_blue.svg');}
+.icon.arr_check {width:9px;height:9px;background-image:url('../images/common/arr_check.svg');}
+.icon.arr_heading {width:14px;height:14px;background-image:url('../images/common/arr_heading.svg');}
+.icon.ico_minus {width:14px;height:14px;background-image:url('../images/common/ico_minus.svg');}
+.icon.ico_plus {width:14px;height:14px;background-image:url('../images/common/ico_plus.svg');}
 
 /* 그래픽 아이콘 */
 .gicon {display:inline-block;margin:auto;background-repeat:no-repeat;background-position:50%;text-indent:-999px;font-size:0;overflow:hidden;}
-.gicon.ico1 {width:86px;height:65px;background-image: url('../images/common/subject_ico1.png');}
-.gicon.ico2 {width:87px;height:77px;background-image: url('../images/common/subject_ico2.png');}
-.gicon.ico3 {width:56px;height:73px;background-image: url('../images/common/subject_ico3.png');}
-.gicon.ico4 {width:58px;height:74px;background-image: url('../images/common/subject_ico4.png');}
-.gicon.ico5 {width:80px;height:74px;background-image: url('../images/common/subject_ico5.png');}
-.gicon.ico6 {width:57px;height:43px;background-image: url('../images/common/graphic_ico1.svg');}
-.gicon.ico7 {width:66px;height:51px;background-image: url('../images/common/graphic_ico2.svg');}
+.gicon.ico1 {width:86px;height:65px;background-image:url('../images/common/subject_ico1.png');}
+.gicon.ico2 {width:87px;height:77px;background-image:url('../images/common/subject_ico2.png');}
+.gicon.ico3 {width:56px;height:73px;background-image:url('../images/common/subject_ico3.png');}
+.gicon.ico4 {width:58px;height:74px;background-image:url('../images/common/subject_ico4.png');}
+.gicon.ico5 {width:80px;height:74px;background-image:url('../images/common/subject_ico5.png');}
+.gicon.ico6 {width:57px;height:43px;background-image:url('../images/common/graphic_ico1.svg');}
+.gicon.ico7 {width:66px;height:51px;background-image:url('../images/common/graphic_ico2.svg');}
 
 /* 채점 이미지 */
 .grade {display:inline-block;width:200px;height:152px;margin:auto;background-repeat:no-repeat;background-position:50%;text-indent:-999px;font-size:0;overflow:hidden;}
-.grade.grade1 {background-image: url('../images/common/img_grade1.svg');}
-.grade.grade2 {background-image: url('../images/common/img_grade2.svg');}
+.grade.grade1 {background-image:url('../images/common/img_grade1.svg');}
+.grade.grade2 {background-image:url('../images/common/img_grade2.svg');}
+
+/* 닫기 버튼 */
+.bn_close {width:36px;height:36px;border-radius:20rem;border:2px solid var(--gray_90);background:#fff url('../images/common/ico_close.svg') no-repeat 50% 50%;}
+.bn_close.bk {background:var(--gray_90) url('../images/common/ico_close_w.svg') no-repeat 50% 50%; transition: var(--ani_time);}
+.bn_close.bk:hover {border:2px solid var(--gray_110);background-color: var(--gray_110);}
+
+/* 로고 */
+.ico_logo  {display:inline-block;width:102px;height:43px;margin:auto;background-repeat:no-repeat;background-position:50%;text-indent:-999px;font-size:0;overflow:hidden;}
+.ico_logo.type1 {background-image:url('../images/common/logo.svg');}
+.ico_logo.type2 {background-image:url('../images/common/logo_w.svg');}
+.ico_logo.type3 {background-image:url('../images/common/logo_w2.svg');}
+
+/* 박스형태 */
+.line_box {padding:70px 60px;border:1px solid var(--gray_40);border-radius:10px;} /* 라인 박스 */
