@@ -10,6 +10,7 @@
 
     <script type="text/javascript" src="/js/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="/js/jquery-latest.min.js"></script>
+	<script type="text/javascript" src="/js/contents.js"></script>
 
 </head>
 
@@ -355,7 +356,7 @@
 </div>
 
 <h2>아이콘 32*32</h2>
-<div class="stwrap" style="background:#a1afc5">
+<div class="stwrap" style="background:#d0e6e2">
     <i class="micon ico1">학생 추가 아이콘</i>
 	<i class="micon ico2">학급관리 아이콘</i>
 	<i class="micon ico3">자동생성</i>
@@ -371,36 +372,68 @@
 </div>
 
 <h2>아이콘 20*20</h2>
-<div class="stwrap" style="background:#a1afc5">
-	<i class="sicon ico1">접속 아이콘</i>
-	<i class="sicon ico2">일괄수정 버튼</i>
-	<i class="sicon ico3">선택삭제 버튼</i>
-	<i class="sicon ico4">달력 아이콘</i>
-	<i class="sicon ico5">로케이션 홈 아이콘</i>
-	<i class="sicon ico6">로그아웃 아이콘</i>
-	<i class="sicon ico7">삭제 아이콘</i>
-	<i class="sicon ico8">경고 아이콘</i>
-	<i class="sicon close">팝업닫기</i>
+<div class="stwrap" style="background:#d0e6e2">
+	<i class="sicon ico1">접속</i>
+	<i class="sicon ico2">일괄수정</i>
+	<i class="sicon ico3">선택삭제</i>
+	<i class="sicon ico4">로케이션 홈</i>
+	<i class="sicon ico5">로그아웃</i>
+	<i class="sicon ico6">삭제</i>
+	<i class="sicon ico7">경고</i>
+
+	<i class="sicon close">닫기</i>
+
+	<i class="sicon ico_info">정보</i>
+
 	<i class="sicon ico_o">정답</i>
 	<i class="sicon ico_x">오답</i>
+
 	<i class="sicon ico_print">인쇄하기</i>
 	<i class="sicon ico_save">저장하기</i>
+
+	<i class="sicon ico_calender">달력</i>
+	<i class="sicon ico_time">시계</i>
+
 	<i class="nicon ico1">학급관리</i>
 	<i class="nicon ico2">문제은행</i>
 	<i class="nicon ico3">Ai</i>
 	<i class="nicon ico4">통계</i>
 </div>
 
-<h2>아이콘 etc</h2>
-<div class="stwrap" style="background:#a1afc5">
-	<i class="arr_s">작은 화살표</i>
-	<i class="arr_m">중간 화살표</i>
-	<i class="arr_b">큰 화살표</i>
-	<i class="arr_blue">블루 화살표</i>
-	<i class="arr_check">체크용 화살표</i>
-	<i class="arr_heading">헤딩용 화살표</i>
-	<i class="ico_minus">빼기</i>
-	<i class="ico_plus">더하기</i>
+<h2>기타 아이콘</h2>
+<div class="stwrap" style="background:#000">
+	<i class="icon arr_s">작은 화살표</i>
+	<i class="icon arr_m">중간 화살표</i>
+	<i class="icon arr_b">큰 화살표</i>
+	<i class="icon arr_selet">선택박스 화살표</i>
+	<i class="icon arr_blue">블루 화살표</i>
+	<i class="icon arr_check">체크용 화살표</i>
+	<i class="icon arr_heading">헤딩용 화살표</i>
+	<i class="icon ico_minus">빼기</i>
+	<i class="icon ico_plus">더하기</i>
+</div>
+
+<h2>그래픽 아이콘</h2>
+<div class="stwrap">
+	<i class="gicon ico1">국어</i>
+	<i class="gicon ico2">수학</i>
+	<i class="gicon ico3">사회</i>
+	<i class="gicon ico4">과학</i>
+	<i class="gicon ico5">영어</i>
+	<i class="gicon ico6">그래픽 아이콘1</i>
+	<i class="gicon ico7">그래픽 아이콘2</i>
+</div>
+
+<h2>채점 이미지</h2>
+<div class="stwrap">
+	<i class="grade grade1">정답</i>
+	<i class="grade grade2">오답</i>
+</div>
+
+<h2>닫기버튼</h2>
+<div class="stwrap">
+    <button type="button" class="bn_close"><span class="sr-only">닫기</span></button>
+    <button type="button" class="bn_close bk"><span class="sr-only">닫기</span></button>
 </div>
 
 <h2>tab</h2>
@@ -415,13 +448,6 @@
 	</div>
 </div>
 
-
-<h2>닫기버튼</h2>
-<div class="stwrap">
-    <button type="button" class="bn_close"><span class="sr-only">닫기</span></button>
-    <button type="button" class="bn_close bk"><span class="sr-only">닫기</span></button>
-</div>
-
 <h2>form 태그</h2>
 <div class="stwrap">
 	<div class="styleguide_box">
@@ -430,7 +456,7 @@
 		<ul class="wrap">
 			<li class="grap">
 				<div class="select_wrap">
-					<label for="select" class="required">검색조건<em>필수입력</em></label>
+					<label for="select">검색조건<em class="required"><span class="sr-only">필수입력</span></em></label>
 					<select class="select" id="select">
 						  <option selected>선택</option>
 						  <option value="">선택1</option>
@@ -512,108 +538,10 @@
 			</li>
 		</ul>
 	 </div>
-
-	 <div class="group">
-		<strong class="gr_tit">textarea</strong>
-		<ul class="wrap">
-			<li class="grap">
-				<textarea placeholder="입력하세요"/></textarea>
-				<textarea disabled/>특이사항없음</textarea>
-			</li>
-		</ul>
-	 </div>
-	</div><!--//styleguide_box-->
-</div>
-
-<h2>필터버튼</h2>
-<div class="stwrap">
-<div class="styleguide_box" id="filterstyle">
-	 <div class="group">
-		<strong class="gr_tit">radio 태그</strong>
-		<ul class="wrap">
-			<li class="grap">
-			<div class="designRadio filter">
-				<input type="radio" id="dradio1" name="radio1" checked/><label for="dradio1">월별</label>
-				<input type="radio" id="dradio2" name="radio1"/><label for="dradio2">일자별</label>
-			</div>
-			</li>
-		</ul>
-	 </div>
-	 <div class="group">
-		<strong class="gr_tit">a 태그</strong>
-		<ul class="wrap">
-			<li class="grap">
-			<div class="btn_box filter">
-				<a href="#filterstyle" class="btn on">월별</a>
-				<a href="#filterstyle" class="btn">일자별</a>
-			</div>
-			</li>
-		</ul>
-	 </div>
-	 <div class="group">
-		<strong class="gr_tit">button 태그</strong>
-		<ul class="wrap">
-			<li class="grap">
-			<div class="btn_box filter">
-				<button type="button" class="btn">월별</button>
-				<button type="button" class="btn on">일자별</button>
-			</div>
-			</li>
-		</ul>
-	 </div>
-</div>
-</div>
-
-<h2>디자인 select</h2>
-<div class="stwrap">
-	<h2 class="select_tt">
-	2023 학습코칭 확인서
-	<div class="designSelect" id="designSelect">
-		<div class="lay">
-			<strong><a>12</a></strong>
-		</div>
-		<div class="lists">
-			<ul>
-				<li><a href="#designSelect">12</a></li>
-				<li><a href="#designSelect">11</a></li>
-				<li><a href="#designSelect">10</a></li>
-				<li><a href="#designSelect">09</a></li>
-			</ul>
-		</div>                  
-	</div>
-	월
-	</h2>
-</div>
-
-<h2>info box</h2>
-<div class="stwrap">
-	<div class="info_wrap">
-		<div class="tt_wrap">
-			<i class="hico person bk">정보</i>
-			<span>강사명 : 홍길동 </span>
-		</div>
-		<div class="tt_wrap">
-			<span>당진 교육지원청</span>
-		</div>
-	</div>
-
-	<div class="info_wrap">
-		<div class="tt_wrap">
-			<i class="hico person bk">정보</i>
-			<span>강사명 : 홍길동 </span>
-		</div>
-		<div class="btn_wrap">
-			<a class="btn btn-ani btn-primary" href="#">학생추가</a>
-			<a class="btn btn-ani btn-secondary" href="#">출석부 작성</a>
-		</div>
 	</div>
 </div>
 
-<h2>text color</h2>
-<div class="stwrap">
-	<p>2023<span class="red">학습코칭</span>확인서</p>
-	<p>2023<span class="blue">학습코칭</span>확인서</p>
-</div>
+
 
 
 </section>
