@@ -153,26 +153,6 @@ select:focus, .select:focus {border-color:#aaa;box-shadow:0 0 1px 3px rgba(59, 1
 select:disabled, .select:disabled{opacity:0.5;}
 select.no-line, .select.no-line {border:none;}
 
-/* stat ico*/
-.state {display:inline-block;width:32px;height:32px;margin:auto;background-repeat:no-repeat;background-position:50%;text-indent:-999px;font-size:0;overflow:hidden;}
-.state.disabled {filter:brightness(2) grayscale(1);pointer-events:none;}
-.state.learn {background-image: url('/adm/images/common/ico_learn.svg');}/* 완료 */
-.state.miss {background-image: url('/adm/images/common/ico_miss.svg');}/* 미완료 */
-.state.disable {background-image: url('/adm/images/common/ico_disable.svg');}/* 비활성 완료 */
-.state.basket {background-image: url('/adm/images/common/ico_basket.svg');} /* 삭제 */
-.state.download {background-image: url('/adm/images/common/ico_download.svg')} /* 다운로드 */
-.state.modify {background-image:url('/adm/images/common/ico_modify.svg');} /* 수정 */
-.state.icosign {border-radius:32px;background-image: url('/adm/images/common/ico_sign.svg');background-color:var(--c_primary_m2);} /* 수정2 */
-.state.icosign.disabled {background-image: url('/adm/images/common/ico_sign.svg');background-color:var(--c_gray_40);filter:initial;}
-
-/* 헤딩 아이콘 */
-.hico {display:inline-block;width:35px;height:35px;margin:auto;border-radius:35px;text-indent:-999px;overflow:hidden;background-repeat:no-repeat;background-position:50%;background-color:var(--c_white);}
-.hico.disabled {filter:brightness(2) grayscale(1);pointer-events:none;}
-.hico.person.bk {background-image:url('/adm/images/common/ico_person_w.svg');background-color:var(--c_primary_m2);}
-.hico.person.wt {background-image:url('/adm/images/common/ico_person_b.svg');}
-.hico.record {background-image:url('/adm/images/common/ico_record.svg');}
-.hico.school {background-image:url('/adm/images/common/ico_school.svg');background-color:var(--c_primary_m2);}
-
 /* TABLE */
 table {display:table;width:100%;font-weight:500; margin-bottom:10px;}
 table caption {text-indent:-100000px;font-size:0;line-height:0}
@@ -210,3 +190,62 @@ table thead th:last-child {border-radius: 0 10px 0 0;}
 
 
 
+/* stat ico*/
+.state {display:inline-block;width:32px;height:32px;margin:auto;background-repeat:no-repeat;background-position:50%;text-indent:-999px;font-size:0;overflow:hidden;}
+.state.disabled {filter:brightness(2) grayscale(1);pointer-events:none;}
+.state.learn {background-image: url('/adm/images/common/ico_learn.svg');}/* 완료 */
+.state.miss {background-image: url('/adm/images/common/ico_miss.svg');}/* 미완료 */
+.state.disable {background-image: url('/adm/images/common/ico_disable.svg');}/* 비활성 완료 */
+.state.basket {background-image: url('/adm/images/common/ico_basket.svg');} /* 삭제 */
+.state.download {background-image: url('/adm/images/common/ico_download.svg')} /* 다운로드 */
+.state.modify {background-image:url('/adm/images/common/ico_modify.svg');} /* 수정 */
+.state.icosign {border-radius:32px;background-image: url('/adm/images/common/ico_sign.svg');background-color:var(--c_primary_m2);} /* 수정2 */
+.state.icosign.disabled {background-image: url('/adm/images/common/ico_sign.svg');background-color:var(--c_gray_40);filter:initial;}
+
+/* 헤딩 아이콘 */
+.hico {display:inline-block;width:35px;height:35px;margin:auto;border-radius:35px;text-indent:-999px;overflow:hidden;background-repeat:no-repeat;background-position:50%;background-color:var(--c_white);}
+.hico.disabled {filter:brightness(2) grayscale(1);pointer-events:none;}
+.hico.person.bk {background-image:url('/adm/images/common/ico_person_w.svg');background-color:var(--c_primary_m2);}
+.hico.person.wt {background-image:url('/adm/images/common/ico_person_b.svg');}
+.hico.record {background-image:url('/adm/images/common/ico_record.svg');}
+.hico.school {background-image:url('/adm/images/common/ico_school.svg');background-color:var(--c_primary_m2);}
+
+/* 아이콘 32*32 */
+.micon {display:inline-block;width:32px;height:32px;margin:auto;background-repeat:no-repeat;background-position:50%;text-indent:-999px;font-size:0;overflow:hidden;}
+.micon.disabled {filter:brightness(2) grayscale(1);pointer-events:none;}
+.micon.ico1 {background-image: url('../images/common/mico_01.svg');}
+.micon.ico2 {background-image: url('../images/common/mico_02.svg');}
+.micon.ico3 {background-image: url('../images/common/mico_03.svg');}
+.micon.ico4 {background-image: url('../images/common/mico_04.svg');}
+.micon.ico5 {background-image: url('../images/common/mico_05.svg');}
+.micon.ico6 {background-image: url('../images/common/mico_06.svg');}
+.micon.ico7 {background-image: url('../images/common/mico_07.svg');}
+.micon.ico8 {background-image: url('../images/common/mico_08.svg');}
+.micon.ico9 {background-image: url('../images/common/mico_09.svg');}
+.micon.ico10 {background-image: url('../images/common/mico_10.svg');}
+.micon.ico11 {background-image: url('../images/common/mico_11.svg');}
+.micon.ico12 {background-image: url('../images/common/mico_12.svg');}
+
+/* 아이콘 20*20 */
+.sicon {display:inline-block;width:20px;height:20px;margin:auto;background-repeat:no-repeat;background-position:50%;text-indent:-999px;font-size:0;overflow:hidden;}
+.sicon.disabled {filter:brightness(2) grayscale(1);pointer-events:none;}
+.sicon.ico1 {background-image: url('../images/common/sico_01.svg');}
+.sicon.ico2 {background-image: url('../images/common/sico_02.svg');}
+.sicon.ico3 {background-image: url('../images/common/sico_03.svg');}
+.sicon.ico4 {background-image: url('../images/common/sico_04.svg');}
+.sicon.ico5 {background-image: url('../images/common/sico_05.svg');}
+.sicon.ico6 {background-image: url('../images/common/sico_06.svg');}
+.sicon.ico7 {background-image: url('../images/common/sico_07.svg');}
+.sicon.ico8 {background-image: url('../images/common/sico_08.svg');}
+.sicon.close {background-image: url('../images/common/ico_close.svg');}
+.sicon.ico_o {background-image: url('../images/common/ico_o.svg');}
+.sicon.ico_x {background-image: url('../images/common/ico_x.svg');}
+.sicon.ico_print {background-image: url('../images/common/ico_print.svg');}
+.sicon.ico_save {background-image: url('../images/common/ico_save.svg');}
+
+/* 네비게이션 아이콘 */
+.nicon {display:inline-block;width:20px;height:20px;margin:auto;background-repeat:no-repeat;background-position:50%;text-indent:-999px;font-size:0;overflow:hidden;}
+.nicon.ico1 {background-image: url('../images/common/ico_navi01.svg');}
+.nicon.ico2 {background-image: url('../images/common/ico_navi02.svg');}
+.nicon.ico3 {background-image: url('../images/common/ico_navi03.svg');}
+.nicon.ico4 {background-image: url('../images/common/ico_navi04.svg');}
