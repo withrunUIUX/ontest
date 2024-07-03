@@ -3,8 +3,12 @@
 /* 문제은행 > 생성하기 */
 .create {}
 .create_wrap {display:flex;gap:2rem;}
-.create_wrap .line_box {width:70%;}
-.create_wrap .table_wrap {width:30%;}
+.create_wrap .line_box {width:70%;max-height:1092px;}
+
+.create_wrap .table_wrap {width:30%;max-height:1092px;overflow-y:auto;}
+.create_wrap .table_wrap::-webkit-scrollbar {width:8px;}
+.create_wrap .table_wrap::-webkit-scrollbar-thumb {border-radius:8px;background:var(--gray_50);}
+.create_wrap .table_wrap table {margin:0;}
 
 .create_box {display:flex;flex-direction:column;gap:2rem;}
 .create_box .create__item {display:flex;align-items:flex-start;gap:2rem;}
@@ -26,48 +30,60 @@
 
 .subject__select {display:flex;gap:1rem;}
 .subject__select li {position:relative;}
-.create_box .publisher_select {display:flex;align-items:center;gap:1rem;border:.1rem solid var(--blue_40);border-radius:.4rem;overflow:hidden;}
+.create_box .publisher_select {overflow:hidden;display:flex;align-items:center;gap:1rem;border:.1rem solid var(--blue_40);border-radius:.4rem;}
 .create_box .publisher_select  > span {padding:1.2rem 1.5rem;font-weight:700;color:var(--blue_120);background:var(--blue_20);}
 .create_box .publisher_select  > span > .required {color:var(--blue_100);} 
 .create_box .publisher_select  > span > .required::after {top:3px;}
 .create_box .publisher_select > ul {display:flex;gap:1rem;padding:0 1rem;}
 
-.unit__select {overflow-y:scroll;display:flex;flex-direction:column;gap:.5rem;width:100%;max-height:450px;padding-right:1.5rem;padding-bottom:2rem;}
-.unit__select::-webkit-scrollbar {width:8px;}
+
+.create_box .create__item .item__box {gap:.5rem}
+.unit__select_wrap {padding:1.5rem;border-radius:10px;background:var(--blue_20);}
+.unit__select_wrap .empty_tt {display:inline-flex;justify-content:center;align-items:center;gap:.2rem;width:100%;font-size:20px;color:var(--blue_110);font-weight:800;}
+.unit__select_wrap .empty_tt > i {display:inline-block;width:32px;height:32px;mask:url('../images/common/mico_10.svg'); background-color:var(--blue_110);}
+.unit__select {overflow-y:scroll;display:flex;flex-direction:column;gap:.5rem;width:100%;max-height:392px;padding-right:1.5rem;padding-bottom:1rem;}
+.unit__select::-webkit-scrollbar {width:8px;}   
 .unit__select::-webkit-scrollbar-thumb {border-radius:8px;background:var(--gray_60);}
 .unit__select li {position:relative;}
-.unit__select .unit_btn {display:flex;align-items:center;justify-content:space-between;width:100%;margin:0;padding: 0 1rem 0 0;border:.1rem solid var(--gray_50);border-radius:.4rem;overflow:hidden;}
+.unit__select .unit_btn {overflow:hidden;display:flex;align-items:center;justify-content:space-between;width:100%;margin:0;padding: 0 1rem 0 0;border:.1rem solid var(--gray_50);border-radius:.4rem;background:#fff;}
 .unit__select .unit_btn::before {display:none;}
 .unit__select .unit_btn::after {content:'';display:inline-block;width:18px;height:18px;border-radius:18px;background:var(--gray_60) url(../images/common/arr_check.svg) no-repeat 50%;}
 .unit__select .unit_btn span {width:100%;}
 .unit__select .unit_btn span > em {display:inline-block;min-width:90px;margin-right:1rem;padding:.8rem 1rem;background:var(--gray_20);}
-.unit__select input[type="checkbox"]:checked ~ .unit_btn {border-color:var(--blue_40);}
+.unit__select input[type="checkbox"]:checked ~ .unit_btn {border-color:var(--blue_60);}
 .unit__select input[type="checkbox"]:checked ~ .unit_btn::after {background-image:url(../images/common/arr_check.svg);background-color:var(--blue_90);}
 .unit__select input[type="checkbox"]:checked ~ .unit_btn span {color:var(--blue_90);font-weight:600;}
 .unit__select input[type="checkbox"]:checked ~ .unit_btn span > em {color:var(--blue_90);font-weight:600;background-color:var(--blue_20);}
 
-.diffic_select {display:flex;align-items:center;gap:1rem;}
-.diffic_select::after {content:'';}
+.diffic_select {display:flex;align-items:center;gap:2rem;margin-right:1rem;}
+.diffic_select::after {content:'';width:2px;height:100%;background:var(--gray_40);}
 .diffic_select li {display:flex;align-items:center;gap:.5rem;}
 .diffic_item {display:flex;border:.1rem solid var(--gray_40);border-radius:.4rem;overflow:hidden;}
 .diffic_item > span {line-height:1.5;padding:.5rem 1rem;font-weight:600;background:var(--gray_20);}
+.diffic_item .select {min-width:90px;}
 .diffic_item .select:focus {box-shadow:none;}
 .diffic_item:has(.select:focus) {box-shadow:0 0 1px 3px rgba(59, 153, 252, .5);}
 .pertt {color:var(--gray_60) !important;font-weight:600;}
 
 .diffic_total {display:flex;align-items:center;gap:.5rem;}
-.diffic_total input {max-width:60px;font-weight:600;}
+.diffic_total input {max-width:80px;font-weight:600;}
 
 /* 문제은행 > 생성하기 > 평가지선택확인 */
-.create .totla_wrap {margin-top:3rem;}
-.create .totla_wrap > span {}
-.create .totla_wrap .totla__item {}
+.create .totla_wrap {display:flex;align-items:flex-start;gap:3rem;margin-top:2rem;}
+.create .totla_wrap > span {display:flex;align-items:center;width:160px;font-size:18px;color:var(--gray_90);font-weight:800;}
+.create .totla_wrap > div {position:relative;display:flex;flex-direction:column;gap:2rem;width:calc(100% - 160px);}
+.create .totla_wrap > div::after {content:'';position:absolute;right:0;display:block;width:166px;height:173px;background:url(../images/contents/totla__info_img.png);}
 
+.totla__title {font-size:20px;font-weight:800;color:var(--gray_120);}
+.totla__title > b {color:var(--blue_100);}
 
+.totla__info {display:flex;flex-direction:column;gap:1rem;}
+.totla__info .totla__item em {font-size:16px;font-weight:700;color:var(--gray_70);}
 
+.totla__info .totla__item.num1 ul {display:flex;gap:1rem;}
+.totla__info .totla__item.num1 ul li {color:var(--gray_90);font-size:18px;}
 
-
-
-
+.unit__wrap {display:flex;flex-wrap:wrap;gap:.5rem;max-width:900px;margin-top:.5rem;}
+.unit__wrap .unit__item {padding:.5rem 1rem;border:.1rem solid var(--gray_50);border-radius:.4rem;color:var(--gray_80);font-weight:500;}
 
 
