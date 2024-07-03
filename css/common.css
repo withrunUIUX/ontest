@@ -176,7 +176,7 @@ table caption p{margin:0;line-height:0;font-size:0;}
 table.center tbody tr td{text-align:center;}
 
 table th,
-table td {margin-left:-1px;padding:.9rem .4rem;border-left:1px solid var(--gray_40);border-bottom:1px solid var(--gray_40);vertical-align:middle;word-wrap:break-word;word-break:keep-all;color:var(--gray_100)}
+table td {margin-left:-1px;padding:1rem .4rem;border-left:1px solid var(--gray_40);border-bottom:1px solid var(--gray_40);vertical-align:middle;word-wrap:break-word;word-break:keep-all;color:var(--gray_100)}
 table th:first-child, 
 table td:first-child {border-left:none;}
 table th:last-child, 
@@ -199,6 +199,9 @@ table thead th {color:#fff;border-color:var(--gray_30);background:var(--gray_70)
 table thead th.th_deep {background:var(--gray_90);}
 table thead th:first-child {border-radius: 10px 0 0 0;}
 table thead th:last-child {border-radius: 0 10px 0 0;}
+
+.tbl_basic tbody tr:nth-child(even) {background:var(--blue_10);}
+.tbl_basic.type2 tbody tr:nth-child(even) {background:#fff;}
 
 .tbl_basic.type2 {}
 .tbl_basic.type2 thead th {background:var(--blue_120);}
