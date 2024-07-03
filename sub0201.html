@@ -35,7 +35,7 @@
             <a href="#" class="item">문제은행</a>
         </div>
 
-        <div class="subject">
+        <div class="sub_title">
             <h1>문제은행</h1>
             <p>학생 평가지를 만듭니다.</p>
         </div>
@@ -45,16 +45,192 @@
 
         <div class="create_wrap">
             <div class="line_box">
-
+                <ul class="create_box">
+                    <!--학년-->
+                    <li class="create__item num1">
+                        <span class="item__title"><em class="number">1</em>학년</span>
+                        <div class="item__box">
+                            <div class="select_wrap">
+                                <select class="select" id="select1">
+                                      <option selected>선택</option>
+                                      <option value="">6</option>
+                                      <option value="">5</option>
+                                      <option value="">4</option>
+                                      <option value="">3</option>
+                                      <option value="">2</option>
+                                </select>
+                                <label for="select1">학년</label>
+                            </div>
+                            <div class="select_wrap">
+                                <select class="select" id="select1">
+                                      <option selected>선택</option>
+                                      <option value="">1</option>
+                                      <option value="">2</option>
+                                </select>
+                                <label for="select1">학기</label>
+                            </div>
+                        </div>
+                    </li>
+                     <!--과목-->
+                    <li class="create__item num2">
+                        <span class="item__title"><em class="number">2</em>과목</span>
+                        <div class="item__box flex-col">
+                            <ul class="subject__select">
+                                <li>
+                                    <input type="radio" id="subjectkey1" name="subject_radio">
+                                    <label for="subjectkey1" class="box_btn">국어</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="subjectkey2" name="subject_radio">
+                                    <label for="subjectkey2" class="box_btn">수학</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="subjectkey3" name="subject_radio">
+                                    <label for="subjectkey3" class="box_btn">사회</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="subjectkey4" name="subject_radio">
+                                    <label for="subjectkey4" class="box_btn">과학</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="subjectkey5" name="subject_radio">
+                                    <label for="subjectkey5" class="box_btn">영어</label>
+                                </li>
+                            </ul>
+                            <div class="publisher_select">
+                                <span><em class="required"><span class="sr-only">필수선택</span></em>출판사 선택</span>
+                                <ul>
+                                    <li>
+                                        <input type="radio" id="publikey1" name="publisher_radio">
+                                        <label for="publikey1">YBM 김</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="publikey2" name="publisher_radio">
+                                        <label for="publikey2">YBM 최</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="publikey3" name="publisher_radio">
+                                        <label for="publikey3">대교</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="publikey4" name="publisher_radio">
+                                        <label for="publikey4">동아</label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="publikey5" name="publisher_radio">
+                                        <label for="publikey5">천재 함</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </li>
+                    <!--출제범위-->
+                    <li class="create__item num3">
+                        <span class="item__title"><em class="number">3</em>출제 범위</span>
+                        <div class="item__box">
+                            <ul class="unit__select">
+                                <li>
+                                    <input type="checkbox" id="unitkey1" name="unit_check" checked>
+                                    <label for="unitkey1" class="unit_btn">
+                                        <span><em>1 단원</em>What grade are you in?</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="unitkey2" name="unit_check">
+                                    <label for="unitkey2" class="unit_btn">
+                                        <span><em>2 단원</em>I have a cold.</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="unitkey3" name="unit_check">
+                                    <label for="unitkey3" class="unit_btn">
+                                        <span><em>3 단원</em>When is the club festival?</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="unitkey4" name="unit_check">
+                                    <label for="unitkey4" class="unit_btn">
+                                        <span><em>4 단원</em>Where is the post office?</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="unitkey5" name="unit_check">
+                                    <label for="unitkey5" class="unit_btn">
+                                        <span><em>5 단원</em>I’m going to see a movie.</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="unitkey6" name="unit_check">
+                                    <label for="unitkey6" class="unit_btn">
+                                        <span><em>6 단원</em>He has short curly hair.</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="unitkey7" name="unit_check">
+                                    <label for="unitkey7" class="unit_btn">
+                                        <span><em>7 단원</em>He has short curly hair.</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="unitkey8" name="unit_check">
+                                    <label for="unitkey8" class="unit_btn">
+                                        <span><em>8 단원</em>I’m going to see a movie.</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="unitkey9" name="unit_check">
+                                    <label for="unitkey9" class="unit_btn">
+                                        <span><em>9 단원</em>Where is the post office?</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="unitkey10" name="unit_check">
+                                    <label for="unitkey10" class="unit_btn">
+                                        <span><em>10 단원</em>When is the club festival?</span>
+                                    </label>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <!--출제유형-->
+                    <li class="create__item num4">
+                        <span class="item__title"><em class="number">4</em>출제 유형</span>
+                        <div class="item__box">
+                            <ul class="subject__select">
+                                <li>
+                                    <input type="checkbox" id="categkey1" name="categ_check" checked>
+                                    <label for="categkey1" class="box_btn">선택형</label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="categkey2" name="categ_check" checked>
+                                    <label for="categkey2" class="box_btn">서답형</label>
+                                </li>
+                                <li>
+                                    <div class="select_wrap">
+                                        <select class="select" id="select1">
+                                              <option selected>선택</option>
+                                              <option value="">10%</option>
+                                              <option value="">20%</option>
+                                              <option value="">30%</option>
+                                              <option value="">40%</option>
+                                              <option value="">50%</option>
+                                        </select>
+                                        <label for="select1">%</label>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
             </div>
             <div class="table_wrap">
                 <table class="tbl_basic center table-hover">
                     <caption>학생 목록</caption>
                     <colgroup>
-                        <col style="width:5%">
-                        <col style="width:5%">
-                        <col style="width:5%">
+                        <col style="width:10%">
+                        <col style="width:10%">
                         <col style="width:20%">
+                        <col style="width:40%">
                     </colgroup>
                     <thead>
                         <tr>
@@ -134,9 +310,36 @@
                     </tbody>
                 </table>
             </div>
-
         </div>
 
+        <div class="totla_wrap line_box">
+            <span><i class="micon ico9"></i>평가지 선택 확인</span>
+            <div>
+                <strong class="totla__title"><b>5</b>학년 <b>1</b>학기 <b>영어(동아)</b> 평가지 문제수 <b>25</b>개</strong>
+                <ul class="totla__info">
+                    <li class="totla__item num1">
+                        <ul>
+                            <li><em>유형</em> 선택형 <b>90</b>%, 서답형 <b>10</b>%</li>
+                            <li><em>난이도</em> 상 <b>20</b>%, 중 <b>50</b>%, 하 <b>30</b>%</li>
+                            <li><em>선택 학생수</em> <b>4</b>명 / 20명</li>
+                        </ul>
+                    </li>
+                    <li class="totla__item num2">
+                        <em>출제범위</em>
+                        <div class="unit__wrap">
+                            <span class="unit__item">1단원 What grade are you in?</span>
+                            <span class="unit__item">2단원 I have a cold.</span>
+                            <span class="unit__item">3단원 When is the club festival?</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="btn_group">
+            <button type="submit" class="btn btn-ani btn-secondary">임시저장</button>
+            <a class="btn btn-ani btn-primary" href="#">미리보기</a>
+        </div>
     </section>
 
 </main><!--//container-->
