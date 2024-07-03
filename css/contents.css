@@ -21,7 +21,7 @@
 .create_box .item__title {min-width:100px;font-weight:700;color:var(--gray_100);}
 .create_box .item__title > .number {display:inline-flex;justify-content:center;align-items:center;width:26px;height:26px;border-radius:26px;margin-right:.4rem;color:var(--c_white);font-size:16px;background:var(--gray_100);}
 
-.create_box .create__item .select_wrap .select {padding:.6rem 2.5rem .6rem 1rem;}
+.create_box .create__item .select_wrap .select {min-height:46px;padding:.6rem 2.5rem .6rem 1rem;}
 .create_box .create__item .select_wrap > label {font-weight:700;color:var(--gray_90);}
 
 .subject__select {display:flex;gap:1rem;}
@@ -46,8 +46,28 @@
 .unit__select input[type="checkbox"]:checked ~ .unit_btn span {color:var(--blue_90);font-weight:600;}
 .unit__select input[type="checkbox"]:checked ~ .unit_btn span > em {color:var(--blue_90);font-weight:600;background-color:var(--blue_20);}
 
+.diffic_select {display:flex;align-items:center;gap:1rem;}
+.diffic_select::after {content:'';}
+.diffic_select li {display:flex;align-items:center;gap:.5rem;}
+.diffic_item {display:flex;border:.1rem solid var(--gray_40);border-radius:.4rem;overflow:hidden;}
+.diffic_item > span {line-height:1.5;padding:.5rem 1rem;font-weight:600;background:var(--gray_20);}
+.diffic_item .select:focus {box-shadow:none;}
+.diffic_item:has(.select:focus) {box-shadow:0 0 1px 3px rgba(59, 153, 252, .5);}
+.pertt {color:var(--gray_60) !important;font-weight:600;}
+
+.diffic_total {display:flex;align-items:center;gap:.5rem;}
+.diffic_total input {max-width:60px;font-weight:600;}
 
 /* 문제은행 > 생성하기 > 평가지선택확인 */
 .create .totla_wrap {margin-top:3rem;}
 .create .totla_wrap > span {}
 .create .totla_wrap .totla__item {}
+
+
+
+
+
+
+
+
+
