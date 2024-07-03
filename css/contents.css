@@ -36,7 +36,6 @@
 .create_box .publisher_select  > span > .required::after {top:3px;}
 .create_box .publisher_select > ul {display:flex;gap:1rem;padding:0 1rem;}
 
-
 .create_box .create__item .item__box {gap:.5rem}
 .unit__select_wrap {padding:1.5rem;border-radius:10px;background:var(--blue_20);}
 .unit__select_wrap .empty_tt {display:inline-flex;justify-content:center;align-items:center;gap:.2rem;width:100%;font-size:20px;color:var(--blue_110);font-weight:800;}
