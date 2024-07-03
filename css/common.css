@@ -140,8 +140,11 @@ input[type="password"]:disabled {border:none;background:transparent;}
 input[type="time"] {padding:.6rem;padding:8px;border:1px solid var(--gray_40);border-radius:0.3em;color:var(--gray_90);font-size:1rem;font-family:var(--f_ptd);background:url('../images/common/ico_time_gray.svg') calc(100% - 14px) center no-repeat;} 
 
 input[type="text"] {padding:.6rem;margin:0;border:1px solid var(--gray_40);border-radius:0.3em;font-size:1rem;font-weight:400;line-height:1.2;color:var(--gray_80);font-family:var(--f_ptd);}
-input[type="text"]:disabled {background:var(--gray_30);}
-input[type="text"].disabled {border:1px solid var(--gray_30);background:var(--gray_10);}
+input[type="text"]:disabled,
+input[type="text"].disabled {border:1px solid var(--gray_40);background:var(--gray_30);}
+input[type="text"].no-line {border:none;}
+input[type="text"].no-line:disabled {border:none;background:var(--gray_20);}
+
 
 /* 달력 */
 .date_wrap {display:flex;align-items:center;gap:.5rem;}
@@ -302,4 +305,7 @@ table thead th:last-child {border-radius: 0 10px 0 0;}
 .item__box {} /*item 하위 요소들을 감쌀때 사용__기본 스타일 X, 스타일을 줄때는 contents.css에서 선택자를 부모요소부터 선언하여 개별적으로 적용*/
 
 /*버튼 박스*/
-.btn_group {display:flex;justify-content:center;margin:3rem 0;}
+.btn_group {display:flex;justify-content:center;gap:1rem;margin:3rem 0;}
+
+/* 한줄짜리 안내문 */
+.description {font-size:14px!important;font-weight:500;color:var(--gray_70)!important;}
