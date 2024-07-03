@@ -127,7 +127,7 @@
                     <!--출제범위-->
                     <li class="create__item num3">
                         <span class="item__title"><em class="number">3</em>출제 범위</span>
-                        <div class="item__box">
+                        <div class="item__box flex-col">
                             <ul class="unit__select">
                                 <li>
                                     <input type="checkbox" id="unitkey1" name="unit_check" checked>
@@ -190,19 +190,20 @@
                                     </label>
                                 </li>
                             </ul>
+                            <p class="description">※복수 단원 선택 가능합니다.</p>
                         </div>
                     </li>
                     <!--출제유형-->
                     <li class="create__item num4">
                         <span class="item__title"><em class="number">4</em>출제 유형</span>
-                        <div class="item__box">
+                        <div class="item__box flex-col">
                             <ul class="subject__select">
                                 <li>
-                                    <input type="checkbox" id="categkey1" name="categ_check" checked>
+                                    <input type="checkbox" id="categkey1" name="categ_check">
                                     <label for="categkey1" class="box_btn">선택형</label>
                                 </li>
                                 <li>
-                                    <input type="checkbox" id="categkey2" name="categ_check" checked>
+                                    <input type="checkbox" id="categkey2" name="categ_check">
                                     <label for="categkey2" class="box_btn">서답형</label>
                                 </li>
                                 <li>
@@ -219,6 +220,106 @@
                                     </div>
                                 </li>
                             </ul>
+                            <p class="description">※단답형, 완결형, 논문형(논술형, 서술형)</p>
+                        </div>
+                    </li>
+                    <!--문제수-->
+                    <li class="create__item num5">
+                        <span class="item__title"><em class="number">5</em>문제수</span>
+                        <div class="item__box">
+                            <ul class="subject__select">
+                                <li>
+                                    <input type="radio" id="countkey1" name="count_radio">
+                                    <label for="countkey1" class="box_btn">10개</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="countkey2" name="count_radio">
+                                    <label for="countkey2" class="box_btn">15개</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="countkey3" name="count_radio">
+                                    <label for="countkey3" class="box_btn">20개</label>
+                                </li>
+                                <li>
+                                    <input type="radio" id="countkey4" name="count_radio">
+                                    <label for="countkey4" class="box_btn">25개</label>
+                                </li>
+                            </ul>
+                        </div>
+                    </li>
+                    <!--난이도-->
+                    <li class="create__item num6">
+                        <span class="item__title"><em class="number">6</em>난이도</span>
+                        <div class="item__box">
+                            <ul class="diffic_select">
+                                <li>
+                                    <div class="diffic_item">
+                                        <span>상</span>
+                                        <select class="select no-line">
+                                            <option selected="">선택</option>
+                                            <option value="">0</option>
+                                            <option value="">10</option>
+                                            <option value="">20</option>
+                                            <option value="">30</option>
+                                            <option value="">40</option>
+                                            <option value="">50</option>
+                                            <option value="">60</option>
+                                            <option value="">70</option>
+                                            <option value="">80</option>
+                                            <option value="">90</option>
+                                            <option value="">100</option>
+                                        </select>
+                                    </div>
+                                  <em class="pertt">%</em>
+                                </li>
+                                <li>
+                                    <div class="diffic_item">
+                                        <span>중</span>
+                                        <select class="select no-line">
+                                            <option selected="">선택</option>
+                                            <option value="">0</option>
+                                            <option value="">10</option>
+                                            <option value="">20</option>
+                                            <option value="">30</option>
+                                            <option value="">40</option>
+                                            <option value="">50</option>
+                                            <option value="">60</option>
+                                            <option value="">70</option>
+                                            <option value="">80</option>
+                                            <option value="">90</option>
+                                            <option value="">100</option>
+                                        </select>
+                                    </div>
+                                  <em class="pertt">%</em>
+                                </li>
+                                <li>
+                                    <div class="diffic_item">
+                                        <span>하</span>
+                                        <select class="select no-line">
+                                            <option selected="">선택</option>
+                                            <option value="">0</option>
+                                            <option value="">10</option>
+                                            <option value="">20</option>
+                                            <option value="">30</option>
+                                            <option value="">40</option>
+                                            <option value="">50</option>
+                                            <option value="">60</option>
+                                            <option value="">70</option>
+                                            <option value="">80</option>
+                                            <option value="">90</option>
+                                            <option value="">100</option>
+                                        </select>
+                                    </div>
+                                  <em class="pertt">%</em>
+                                </li>
+                            </ul>
+                            <div class="diffic_total">
+                                <div class="diffic_item">
+                                    <span>총</span>
+                                    <input type="text" value="100" class="no-line">
+                                </div>
+                                <em class="pertt">%</em>
+                            </div>
                         </div>
                     </li>
                 </ul>
