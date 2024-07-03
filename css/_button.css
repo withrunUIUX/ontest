@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+/* BUTTON  */
+a, a:active, a:visited {text-decoration:none;}
+button {border:0;background:none;cursor:pointer;}
+
 .btn {
   position:relative;
   display: inline-flex;
