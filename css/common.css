@@ -304,8 +304,11 @@ table thead th:last-child {border-radius: 0 10px 0 0;}
 
 /* 박스형태 */
 .line_box {padding:60px;border:1px solid var(--gray_40);border-radius:10px;} /* 라인 박스 */
-.table_wrap {} /*테이블을 감쌀때 사용__기본 스타일 X, 스타일을 줄때는 contents.css에서 선택자를 부모요소부터 선언하여 개별적으로 적용*/
+.table_wrap {overflow-y:auto;} /*테이블을 감쌀때 사용__기본 스타일 X, 스타일을 줄때는 contents.css에서 선택자를 부모요소부터 선언하여 개별적으로 적용*/
+.table_wrap::-webkit-scrollbar {width:8px;}
+.table_wrap::-webkit-scrollbar-thumb {border-radius:8px;background:var(--gray_50);}
 .item__box {} /*item 하위 요소들을 감쌀때 사용__기본 스타일 X, 스타일을 줄때는 contents.css에서 선택자를 부모요소부터 선언하여 개별적으로 적용*/
+.title_box {display:flex;}
 
 /*버튼 박스*/
 .btn_group {display:flex;justify-content:center;gap:1rem;margin:3rem 0;}
