@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+.q_tit {display:flex;align-items:center;justify-content:flex-start;gap:.4rem;margin:0;padding:26px 40px;font-size:16px;font-weight:500;background:var(--gray_20);}
+.q_tit .question_number {padding:.5rem .8rem;border-radius:.3rem;color:var(--c_white);font-weight:600;background:var(--gray_70);}
+.q_tit .txt {}
+
+.q_layout {display:flex;flex-direction:column;gap:1rem;padding:26px 40px;}
+.q_layout .q_wrap {}
+.q_layout .a_wrap {font-weight:500;color:var(--gray_90);}
+
+
+/* defualt 버튼 */
+.txtblock {border:.1rem solid var(--gray_40);border-radius:.3rem;padding:6px 12px !important;font-weight:600 !important;background:var(--gray_10);} /*박스버튼*/
+
+
+/* 핫스폿 버튼 -- 라디오*/
+input[type="radio"].hotspot + label {margin-right:6px;}
+input[type="radio"].hotspot + label::before {display:none;}
+
+/* 핫스폿 버튼 -- 체크박스*/
