@@ -51,15 +51,93 @@
                 <button type="submit" class="btn btn-ani btn-quaternary"><i class="sicon ico3"></i>선택삭제</button>
             </div>
             <div class="table_wrap">
-
+                <table class="tbl_basic tbl_list center table-hover">
+                    <caption>개요</caption>
+                    <colgroup>
+                        <col style="width:4%"/>
+                        <col style="width:5%"/>
+                        <col style="width:5%"/>
+                        <col style="width:40%"/>
+                        <col style="width:8%"/>
+                        <col style="width:6%"/>
+                        <col style="width:6%"/>
+                        <col style="width:7%"/>
+                        <col style="width:7%"/>
+                        <col style="width:5%"/>
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th scope="col"><input type="checkbox" id="allcheck" name="check" checked/><label for="allcheck"></label></th>
+                            <th scope="col">학년</th>
+                            <th scope="col">반</th>
+                            <th scope="col">평가지명</th>
+                            <th scope="col">생성일</th>
+                            <th scope="col" class="th_deep">수정</th>
+                            <th scope="col" class="th_deep">미리보기</th>
+                            <th scope="col" class="th_deep">배포</th>
+                            <th scope="col" class="th_deep">채점</th>
+                            <th scope="col" class="th_deep">삭제</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row"><input type="checkbox" id="check0" name="check"/><label for="check0"></label></th>
+                            <td>5</td>
+                            <td>1</td>
+                            <td class="td_left"><b>5학년 1학기 영어(동아) 평가지</b>25문제 | 1단원, 2단원</td>
+                            <td>24.09.30</td>
+                            <td><a href="/sub0201.html" class="micon ico5">수정</a></td>
+                            <td><a href="/sub0202.html" class="micon ico7">보기</a></td>
+                            <td><a href="#" class="btn btn-ani btn-primary sm">배포하기</a></td>
+                            <td><a href="#" class="state tx score1">채점전</a></td>
+                            <td><a href="#" class="micon ico8">삭제</a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><input type="checkbox" id="check0" name="check"/><label for="check0"></label></th>
+                            <td>5</td>
+                            <td>1</td>
+                            <td class="td_left"><b>5학년 1학기 영어(동아) 평가지</b>25문제 | 1단원, 2단원</td>
+                            <td>24.09.30</td>
+                            <td><a href="#" class="micon ico5">수정</a></td>
+                            <td><a href="#" class="micon ico7">보기</a></td>
+                            <td><a href="#" class="btn btn-ani btn-outline-primary sm">평가중</a></td>
+                            <td><a href="#" class="state tx score3">미완료</a></td>
+                            <td><a href="#" class="micon ico8">삭제</a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><input type="checkbox" id="check0" name="check"/><label for="check0"></label></th>
+                            <td>5</td>
+                            <td>1</td>
+                            <td class="td_left"><b>5학년 1학기 영어(동아) 평가지</b>25문제 | 1단원, 2단원</td>
+                            <td>24.09.30</td>
+                            <td><a href="#" class="micon ico5">수정</a></td>
+                            <td><a href="#" class="micon ico7">보기</a></td>
+                            <td><i class="state tx end">완료</i></td>
+                            <td><a href="#" class="state tx score3">미완료</a></td>
+                            <td><a href="#" class="micon ico8">삭제</a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><input type="checkbox" id="check0" name="check"/><label for="check0"></label></th>
+                            <td>5</td>
+                            <td>1</td>
+                            <td class="td_left"><b>5학년 1학기 영어(동아) 평가지</b>25문제 | 1단원, 2단원</td>
+                            <td>24.09.30</td>
+                            <td><a href="#" class="micon ico5">수정</a></td>
+                            <td><a href="#" class="micon ico7">보기</a></td>
+                            <td><i class="state tx end">완료</i></td>
+                            <td><a href="#" class="state tx end">완료</a></td>
+                            <td><a href="#" class="micon ico8">삭제</a></td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
 
-        <div class="paginate_wrap">
+        <div class="paginate">
             <a href="#" class="dir first">첫페이지로 이동</a>
             <a href="#" class="dir prev">이전페이지로 이동</a>
-            <ul class="paginate">
-                <li><a href="#">1</a></li>
+            <ul>
+                <li><a href="#" class="active">1</a></li>
                 <li><a href="#">2</a></li>
                 <li><a href="#">3</a></li>
                 <li><a href="#">4</a></li>
@@ -71,8 +149,6 @@
     </section>
 
 </main>
-
-
 
 
 </body>
