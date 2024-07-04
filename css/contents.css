@@ -1,16 +1,12 @@
 @charset "UTF-8";
 
 /* 문제은행 > 생성하기 */
-.create {}
-.create_wrap {display:flex;gap:2rem;}
-.create_wrap .line_box {width:70%;max-height:1092px;}
+.create_wrap {}
 
-.create_wrap .table_wrap {width:30%;max-height:1092px;overflow-y:auto;}
-.create_wrap .table_wrap::-webkit-scrollbar {width:8px;}
-.create_wrap .table_wrap::-webkit-scrollbar-thumb {border-radius:8px;background:var(--gray_50);}
+.create_wrap .table_wrap {width:30%;max-height:1092px;}
 .create_wrap .table_wrap table {margin:0;}
 
-.create_box {display:flex;flex-direction:column;gap:2rem;}
+.create_box {display:flex;flex-direction:column;gap:2rem;width:70%;max-height:1092px;}
 .create_box .create__item {display:flex;align-items:flex-start;gap:2rem;}
 .create_box .create__item * {font-size:18px;color:var(--gray_100);}
 .create_box .item__box {display:flex;gap:1rem;width:100%;}
@@ -68,10 +64,10 @@
 .diffic_total input {max-width:80px;font-weight:600;}
 
 /* 문제은행 > 생성하기 > 평가지선택확인 */
-.create .totla_wrap {display:flex;align-items:flex-start;gap:3rem;margin-top:2rem;}
-.create .totla_wrap > span {display:flex;align-items:center;width:160px;font-size:18px;color:var(--gray_90);font-weight:800;}
-.create .totla_wrap > div {position:relative;display:flex;flex-direction:column;gap:2rem;width:calc(100% - 160px);}
-.create .totla_wrap > div::after {content:'';position:absolute;right:0;display:block;width:166px;height:173px;background:url(../images/contents/totla__info_img.png);}
+.create_wrap .totla_wrap {display:flex;align-items:flex-start;gap:3rem;margin-top:2rem;}
+.create_wrap .totla_wrap > span {display:flex;align-items:center;width:160px;font-size:18px;color:var(--gray_90);font-weight:800;}
+.create_wrap .totla_wrap > div {position:relative;display:flex;flex-direction:column;gap:2rem;width:calc(100% - 160px);}
+.create_wrap .totla_wrap > div::after {content:'';position:absolute;right:0;display:block;width:166px;height:173px;background:url(../images/contents/totla__info_img.png);}
 
 .totla__title {font-size:20px;font-weight:800;color:var(--gray_120);}
 .totla__title > b {color:var(--blue_100);}
@@ -84,5 +80,38 @@
 
 .unit__wrap {display:flex;flex-wrap:wrap;gap:.5rem;max-width:900px;margin-top:.5rem;}
 .unit__wrap .unit__item {padding:.5rem 1rem;border:.1rem solid var(--gray_50);border-radius:.4rem;color:var(--gray_80);font-weight:500;}
+
+
+
+/* 문제은행 > 미리보기 */
+.prev_wrap {}
+.prev_wrap .title_box {justify-content:space-between;align-items:center;margin-bottom:1rem;}
+
+.prev_info {display:flex;flex-direction:column;gap:3rem;width:35%;}
+.prev_info .info_box {padding:2.5rem;border:.1rem solid var(--gray_40);border-radius:10px;}
+.info_box .text_box {display:flex;flex-direction:column;}
+.info_box .text_box .totla__title {font-size:22px;}
+.info_box .text_box > span {display:flex;align-items:center;margin-top:1rem;color:var(--gray_80);}
+.info_box .text_box > span > em {padding:.4rem .8rem .5rem;border-radius:30px;line-height: 1;color:#fff;font-size:14px;font-weight:600;background:var(--blue_130);}
+.info_box .text_box > span > b {font-size:34px;margin-left:.5rem;color:var(--blue_120);font-family:var(--f_scd);}
+.info_box .text_box > ul {display:flex;align-items:center;gap:.5rem;color:var(--gray_80);}
+.info_box .text_box > ul li:nth-child(1) {display:flex;align-items:center;gap:.5rem;}
+.info_box .text_box > ul li:nth-child(1)::after {content:'·';}
+
+.info_box .graph_wrap {display:flex;flex-direction:column;align-items:flex-end;width:100%;height:105px;}
+.info_box .graph_wrap .infoChart_wrap {width:220px;}
+.info_box .graph_wrap .infoChart_wrap canvas {height:80px;}
+.info_box .graph_wrap > ul {display:flex;gap:.6rem;width:100%;max-width:220px;margin-top:.4rem;}
+.info_box .graph_wrap > ul > li {width:30%;text-align:center;}
+
+.prev_info .info_list {}
+.info_list .table_wrap {max-height:500px;padding-right:.5rem;}
+.info_list .table_wrap table td {padding:.6rem .4rem;}
+
+.prev_box {width:65%;padding:2.5rem 3rem;border-radius:10px;background:var(--gray_120);}
+.prev_box .subtitle2 {color:#fff}
+.prev_box select {background-color:#fff;}
+
+.prev_list .prev__item {}
 
 
