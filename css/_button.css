@@ -185,7 +185,7 @@ fieldset:disabled a.btn {pointer-events: none;}
 /* primary - outline*/
 .btn-outline-primary {
   color:var(--blue_80);
-  background-color: #fff;
+  background-color: var(--blue_20);
   background-image: none;
   border-color:var(--blue_80);
 }
@@ -221,7 +221,7 @@ fieldset:disabled a.btn {pointer-events: none;}
 /* secondary-outline */
 .btn-outline-secondary {
   color:var(--gray_80);
-  background-color: transparent;
+  background-color:var(--gray_20);
   background-image: none;
   border-color:var(--gray_60);
 }
@@ -238,7 +238,7 @@ fieldset:disabled a.btn {pointer-events: none;}
 .btn-outline-secondary.disabled,
 .btn-outline-secondary:disabled {
   color: var(--gray_50);
-  background-color: transparent;
+  background-color:var(--gray_20);
   border-color:var(--gray_50);
 }
 .btn-outline-secondary:not(:disabled):not(.disabled).active,
