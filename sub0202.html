@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>온평가 > 미리보기</title>
+    
+        <link rel="stylesheet" href="/css/common.css">
+        <link rel="stylesheet" href="/css/contents.css">
+
+        <script type="text/javascript" src="/js/jquery-3.6.0.min.js"></script>
+        <script type="text/javascript" src="/js/jquery-latest.min.js"></script>
+        <script type="text/javascript" src="/js/include.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
+    </head>
+
+<body>
+
+<!--[include]HEADER :: Start -->
+<div id="header"></div>
+<!--[include]HEADER :: End -->
+
+<main id="container" class="sub">
+    <section class="sub_header">
+        <div class="login_info">
+            <div class="info_item">
+                <i class="sicon ico1"></i><span class="name"><b>김평가</b>선생님</span>
+                <span class="scoolname">충남초등학교</span>
+            </div>
+            <a href="#" class="logout">로그아웃</a>
+        </div>
+
+        <div id="location">
+            <a href="#" class="item home"><span>홈</span></a>
+            <a href="#" class="item">문제은행</a>
+        </div>
+
+        <div class="sub_title">
+            <h1>문제은행</h1>
+            <p>학생 평가지를 만듭니다.</p>
+        </div>
+    </section><!--//sub_header-->
+
+    <section id="content" class="prev_wrap">
+        <div class="layout">
+            <div class="prev_info">
+                <div class="info_box">
+                    <div class="text_box">
+                        <strong class="totla__title"><b>5</b>학년 <b>1</b>학기 <b>영어(동아)</b></strong>
+                        <span><em>총 문제수</em><b>25</b>문제</span>
+                        <ul>
+                            <li>선택형 19</li>
+                            <li>서답형 6</li>
+                        </ul>
+                    </div>
+                    <div class="graph_wrap">
+                        <div class="infoChart_wrap"><canvas id="infoChart"></canvas></div>
+                        <ul>
+                            <li>상</li>
+                            <li>중</li>
+                            <li>하</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="info_list">
+                    <div class="title_box">
+                        <strong class="subtitle2">문제목록</strong>
+                        <button type="submit" class="btn btn-ani btn-quaternary"><i class="sicon ico3"></i>선택삭제</button>
+                    </div>
+                   
+                    <div class="table_wrap">
+                        <table class="tbl_basic center table-hover">
+                            <caption>문제 목록</caption>
+                            <colgroup>
+                                <col style="width:10%">
+                                <col style="width:10%">
+                                <col style="width:40%">
+                                <col style="width:10%">
+                                <col style="width:10%">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col"><input type="checkbox" id="allcheck" name="check" checked/><label for="allcheck"></label></th>
+                                    <th scope="col">번호</th>
+                                    <th scope="col">평가내용</th>
+                                    <th scope="col">난이도</th>
+                                    <th scope="col">배점</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row"><input type="checkbox" id="check0" name="check"/><label for="check0"></label></th>
+                                    <td>1</td>
+                                    <td>대화의 특성 파악</td>
+                                    <td>중</td>
+                                    <td>4</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><input type="checkbox" id="check0" name="check"/><label for="check0"></label></th>
+                                    <td>2</td>
+                                    <td>대화의 특성 파악</td>
+                                    <td>중</td>
+                                    <td>4</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><input type="checkbox" id="check0" name="check"/><label for="check0"></label></th>
+                                    <td>3</td>
+                                    <td>대화의 특성 파악</td>
+                                    <td>중</td>
+                                    <td>4</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><input type="checkbox" id="check0" name="check"/><label for="check0"></label></th>
+                                    <td>4</td>
+                                    <td>대화의 특성 파악</td>
+                                    <td>중</td>
+                                    <td>4</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><input type="checkbox" id="check0" name="check"/><label for="check0"></label></th>
+                                    <td>5</td>
+                                    <td>대화의 특성 파악</td>
+                                    <td>중</td>
+                                    <td>4</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><input type="checkbox" id="check0" name="check"/><label for="check0"></label></th>
+                                    <td>6</td>
+                                    <td>대화의 특성 파악</td>
+                                    <td>중</td>
+                                    <td>4</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><input type="checkbox" id="check0" name="check"/><label for="check0"></label></th>
+                                    <td>7</td>
+                                    <td>대화의 특성 파악</td>
+                                    <td>중</td>
+                                    <td>4</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><input type="checkbox" id="check0" name="check"/><label for="check0"></label></th>
+                                    <td>8</td>
+                                    <td>대화의 특성 파악</td>
+                                    <td>중</td>
+                                    <td>4</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><input type="checkbox" id="check0" name="check"/><label for="check0"></label></th>
+                                    <td>9</td>
+                                    <td>대화의 특성 파악</td>
+                                    <td>중</td>
+                                    <td>4</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><input type="checkbox" id="check0" name="check"/><label for="check0"></label></th>
+                                    <td>10</td>
+                                    <td>대화의 특성 파악</td>
+                                    <td>중</td>
+                                    <td>4</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><input type="checkbox" id="check0" name="check"/><label for="check0"></label></th>
+                                    <td>11</td>
+                                    <td>대화의 특성 파악</td>
+                                    <td>중</td>
+                                    <td>4</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><input type="checkbox" id="check0" name="check"/><label for="check0"></label></th>
+                                    <td>12</td>
+                                    <td>대화의 특성 파악</td>
+                                    <td>중</td>
+                                    <td>4</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><input type="checkbox" id="check0" name="check"/><label for="check0"></label></th>
+                                    <td>13</td>
+                                    <td>대화의 특성 파악</td>
+                                    <td>중</td>
+                                    <td>4</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><input type="checkbox" id="check0" name="check"/><label for="check0"></label></th>
+                                    <td>14</td>
+                                    <td>대화의 특성 파악</td>
+                                    <td>중</td>
+                                    <td>4</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><input type="checkbox" id="check0" name="check"/><label for="check0"></label></th>
+                                    <td>15</td>
+                                    <td>대화의 특성 파악</td>
+                                    <td>중</td>
+                                    <td>4</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><input type="checkbox" id="check0" name="check"/><label for="check0"></label></th>
+                                    <td>16</td>
+                                    <td>대화의 특성 파악</td>
+                                    <td>중</td>
+                                    <td>4</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><input type="checkbox" id="check0" name="check"/><label for="check0"></label></th>
+                                    <td>17</td>
+                                    <td>대화의 특성 파악</td>
+                                    <td>중</td>
+                                    <td>4</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><input type="checkbox" id="check0" name="check"/><label for="check0"></label></th>
+                                    <td>18</td>
+                                    <td>대화의 특성 파악</td>
+                                    <td>중</td>
+                                    <td>4</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><input type="checkbox" id="check0" name="check"/><label for="check0"></label></th>
+                                    <td>19</td>
+                                    <td>대화의 특성 파악</td>
+                                    <td>중</td>
+                                    <td>4</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><input type="checkbox" id="check0" name="check"/><label for="check0"></label></th>
+                                    <td>20</td>
+                                    <td>대화의 특성 파악</td>
+                                    <td>중</td>
+                                    <td>4</td>
+                                </tr>
+                            </tbody>
+                        </table>  
+                    </div>
+                </div>
+            </div>
+            <div class="prev_box">
+                <div class="title_box">
+                    <strong class="subtitle2">미리보기</strong>
+                    <div class="select_wrap">
+                        <select class="select">
+                                <option selected>문제유형 오름차순</option>
+                                <option value="">문제유형 내림차순</option>
+                        </select>
+                    </div>
+                </div>
+                <ul class="prev_list">
+                    <li class="prev__item">
+                        
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<script>
+var ctx = document.getElementById('infoChart').getContext('2d');
+    var chart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: ['상','중','하'],
+            datasets: [{
+                backgroundColor: [
+                    'rgb(255, 86, 86)',
+                    'rgb(0, 211, 171)',
+                    'rgb(255, 184, 62)',
+                    ],
+                barThickness: 40, //그래프 굵기
+                borderRadius: 6, // 그래프 둥글기
+                borderSkipped: false, //그래프 둥글기 아래부분 나오게
+                data:[2, 10, 5],
+            }]
+        },
+        options:{
+            responsive: true,
+            maintainAspectRatio :false,//그래프의 비율 유지 
+            plugins:{
+                legend: {display:false}, // 범례 숨김
+                tooltip: { enabled: false}, // 툴팁 숨김
+            },
+            scales: {
+                x: {
+                    display: false
+                },
+                y: {
+                    display: false
+                },
+            }
+        }        
+    });
+</script>
+
+
+</body>
+</html>
