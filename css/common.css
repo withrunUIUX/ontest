@@ -174,6 +174,7 @@ table {display:table;width:100%;font-weight:500; margin-bottom:10px;}
 table caption {text-indent:-100000px;font-size:0;line-height:0}
 table caption p{margin:0;line-height:0;font-size:0;}
 table.center tbody tr td{text-align:center;}
+table.center tbody tr .td_left {text-align:left;}
 
 table th,
 table td {margin-left:-1px;padding:1rem .4rem;border-left:1px solid var(--gray_40);border-bottom:1px solid var(--gray_40);vertical-align:middle;word-wrap:break-word;word-break:keep-all;color:var(--gray_100)}
@@ -205,7 +206,7 @@ table thead th:last-child {border-radius: 0 10px 0 0;}
 
 .tbl_basic.type2 {}
 .tbl_basic.type2 thead th {background:var(--blue_120);}
-.tbl_basic.type2 tbody .td_left {padding:.9rem;border-left:0 !important;text-align:left;line-height: 1.5;}
+.tbl_basic.type2 tbody .td_left {padding:.9rem;border-left:0 !important;line-height: 1.5;}
 
 .tbl_basic.type3 {border-top:4px solid var(--blue_110);}
 .tbl_basic.type3 thead th {color:var(--gray_100);border-color:var(--blue_40);text-align:center;background:var(--blue_20);}
@@ -216,6 +217,11 @@ table thead th:last-child {border-radius: 0 10px 0 0;}
 .tbl_basic.type3 tbody tr th {font-weight:600;text-align:center;}
 .tbl_basic.type3 tbody tr td {color:var(--gray_80);font-weight:500;}
 
+.tbl_list {}
+.tbl_list tbody tr td {border-left:none;}
+.tbl_list tbody tr td .btn {padding:.6rem;}
+.tbl_list tbody tr:nth-child(even) {background:#fff;}
+.tbl_list tbody tr .td_left {padding:1rem;}
 
 /* tab */
 .tabs {width:100%}
@@ -340,4 +346,18 @@ table thead th:last-child {border-radius: 0 10px 0 0;}
 
 
 
+/* 페이지네비게이션 */
+.paginate {display:flex;justify-content:center;gap:.5rem;margin:2rem 0;}
+.paginate a {display:inline-flex;align-items:center;justify-content:center;width:32px;height:32px;border-radius:32px;font-size:18px;color:var(--gray_80);background-color:#fff;transition:var(--ani_time);}
 
+.paginate .dir {border:1px solid var(--gray_80);font-size:0;background-position:50%;background-repeat:no-repeat;}
+.paginate .dir:hover {background-color:var(--gray_30);}
+.paginate .dir.first {background-image:url(../images/common/dir_arr2.svg);}
+.paginate .dir.last {transform:rotate(-180deg);background-image:url(../images/common/dir_arr2.svg);}
+.paginate .dir.prev {background-image:url(../images/common/dir_arr1.svg);}
+.paginate .dir.next {transform:rotate(-180deg);background-image:url(../images/common/dir_arr1.svg);}
+
+.paginate > ul {display:flex;gap:.2rem;}
+.paginate > ul li a:hover {background-color:var(--gray_30);}
+.paginate > ul li a:focus {}
+.paginate > ul li a.active {color:#fff;font-weight:600;background-color:var(--gray_80);}
