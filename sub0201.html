@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>온평가</title>
+        <title>온평가 > 생성하기</title>
     
         <link rel="stylesheet" href="/css/common.css">
         <link rel="stylesheet" href="/css/contents.css">
@@ -41,292 +41,289 @@
         </div>
     </section><!--//sub_header-->
 
-    <section id="content" class="create">
-
-        <div class="create_wrap">
-            <div class="line_box">
-                <ul class="create_box">
-                    <!--학년-->
-                    <li class="create__item num1">
-                        <span class="item__title"><em class="number">1</em>학년</span>
-                        <div class="item__box">
-                            <div class="select_wrap">
-                                <select class="select" id="select1">
-                                      <option selected>선택</option>
-                                      <option value="">6</option>
-                                      <option value="">5</option>
-                                      <option value="">4</option>
-                                      <option value="">3</option>
-                                      <option value="">2</option>
-                                </select>
-                                <label for="select1">학년</label>
-                            </div>
-                            <div class="select_wrap">
-                                <select class="select" id="select1">
-                                      <option selected>선택</option>
-                                      <option value="">1</option>
-                                      <option value="">2</option>
-                                </select>
-                                <label for="select1">학기</label>
-                            </div>
+    <section id="content" class="create_wrap">
+        <div class="layout">
+            <ul class="create_box line_box">
+                <!--학년-->
+                <li class="create__item num1">
+                    <span class="item__title"><em class="number">1</em>학년</span>
+                    <div class="item__box">
+                        <div class="select_wrap">
+                            <select class="select" id="select1">
+                                    <option selected>선택</option>
+                                    <option value="">6</option>
+                                    <option value="">5</option>
+                                    <option value="">4</option>
+                                    <option value="">3</option>
+                                    <option value="">2</option>
+                            </select>
+                            <label for="select1">학년</label>
                         </div>
-                    </li>
-                     <!--과목-->
-                    <li class="create__item num2">
-                        <span class="item__title"><em class="number">2</em>과목</span>
-                        <div class="item__box flex-col">
-                            <ul class="subject__select">
-                                <li>
-                                    <input type="radio" id="subjectkey1" name="subject_radio" value="eng-no">
-                                    <label for="subjectkey1" class="box_btn">국어</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="subjectkey2" name="subject_radio" value="eng-no">
-                                    <label for="subjectkey2" class="box_btn">수학</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="subjectkey3" name="subject_radio" value="eng-no">
-                                    <label for="subjectkey3" class="box_btn">사회</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="subjectkey4" name="subject_radio" value="eng-no">
-                                    <label for="subjectkey4" class="box_btn">과학</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="subjectkey5" name="subject_radio" value="eng">
-                                    <label for="subjectkey5" class="box_btn">영어</label>
-                                </li>
-                            </ul>
-                            <div class="publisher_select">
-                                <span><em class="required"><span class="sr-only">필수선택</span></em>출판사 선택</span>
-                                <ul>
-                                    <li>
-                                        <input type="radio" id="publikey1" name="publisher_radio">
-                                        <label for="publikey1">YBM 김</label>
-                                    </li>
-                                    <li>
-                                        <input type="radio" id="publikey2" name="publisher_radio">
-                                        <label for="publikey2">YBM 최</label>
-                                    </li>
-                                    <li>
-                                        <input type="radio" id="publikey3" name="publisher_radio">
-                                        <label for="publikey3">대교</label>
-                                    </li>
-                                    <li>
-                                        <input type="radio" id="publikey4" name="publisher_radio">
-                                        <label for="publikey4">동아</label>
-                                    </li>
-                                    <li>
-                                        <input type="radio" id="publikey5" name="publisher_radio">
-                                        <label for="publikey5">천재 함</label>
-                                    </li>
-                                </ul>
-                            </div>
+                        <div class="select_wrap">
+                            <select class="select" id="select2">
+                                    <option selected>선택</option>
+                                    <option value="">1</option>
+                                    <option value="">2</option>
+                            </select>
+                            <label for="select2">학기</label>
                         </div>
-                    </li>
-                    <!--출제범위-->
-                    <li class="create__item num3">
-                        <span class="item__title"><em class="number">3</em>출제 범위</span>
-                        <div class="item__box flex-col">
-                            <div class="unit__select_wrap">
-                                <span class="empty_tt"><i></i>과목을 선택하세요.</span>
-                                <ul class="unit__select">
-                                    <li>
-                                        <input type="checkbox" id="unitkey1" name="unit_check">
-                                        <label for="unitkey1" class="unit_btn">
-                                            <span><em>1 단원</em>What grade are you in?</span>
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <input type="checkbox" id="unitkey2" name="unit_check">
-                                        <label for="unitkey2" class="unit_btn">
-                                            <span><em>2 단원</em>I have a cold.</span>
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <input type="checkbox" id="unitkey3" name="unit_check">
-                                        <label for="unitkey3" class="unit_btn">
-                                            <span><em>3 단원</em>When is the club festival?</span>
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <input type="checkbox" id="unitkey4" name="unit_check">
-                                        <label for="unitkey4" class="unit_btn">
-                                            <span><em>4 단원</em>Where is the post office?</span>
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <input type="checkbox" id="unitkey5" name="unit_check">
-                                        <label for="unitkey5" class="unit_btn">
-                                            <span><em>5 단원</em>I’m going to see a movie.</span>
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <input type="checkbox" id="unitkey6" name="unit_check">
-                                        <label for="unitkey6" class="unit_btn">
-                                            <span><em>6 단원</em>He has short curly hair.</span>
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <input type="checkbox" id="unitkey7" name="unit_check">
-                                        <label for="unitkey7" class="unit_btn">
-                                            <span><em>7 단원</em>He has short curly hair.</span>
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <input type="checkbox" id="unitkey8" name="unit_check">
-                                        <label for="unitkey8" class="unit_btn">
-                                            <span><em>8 단원</em>I’m going to see a movie.</span>
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <input type="checkbox" id="unitkey9" name="unit_check">
-                                        <label for="unitkey9" class="unit_btn">
-                                            <span><em>9 단원</em>Where is the post office?</span>
-                                        </label>
-                                    </li>
-                                    <li>
-                                        <input type="checkbox" id="unitkey10" name="unit_check">
-                                        <label for="unitkey10" class="unit_btn">
-                                            <span><em>10 단원</em>When is the club festival?</span>
-                                        </label>
-                                    </li>
-                                </ul>
-                            </div>
-                            <p class="description">※복수 단원 선택 가능합니다.</p>
-                        </div>
-                    </li>
-                    <!--출제유형-->
-                    <li class="create__item num4">
-                        <span class="item__title"><em class="number">4</em>출제 유형</span>
-                        <div class="item__box flex-col">
-                            <ul class="subject__select">
+                    </div>
+                </li>
+                    <!--과목-->
+                <li class="create__item num2">
+                    <span class="item__title"><em class="number">2</em>과목</span>
+                    <div class="item__box flex-col">
+                        <ul class="subject__select">
+                            <li>
+                                <input type="radio" id="subjectkey1" name="subject_radio" value="eng-no">
+                                <label for="subjectkey1" class="box_btn">국어</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="subjectkey2" name="subject_radio" value="eng-no">
+                                <label for="subjectkey2" class="box_btn">수학</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="subjectkey3" name="subject_radio" value="eng-no">
+                                <label for="subjectkey3" class="box_btn">사회</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="subjectkey4" name="subject_radio" value="eng-no">
+                                <label for="subjectkey4" class="box_btn">과학</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="subjectkey5" name="subject_radio" value="eng">
+                                <label for="subjectkey5" class="box_btn">영어</label>
+                            </li>
+                        </ul>
+                        <div class="publisher_select">
+                            <span><em class="required"><span class="sr-only">필수선택</span></em>출판사 선택</span>
+                            <ul>
                                 <li>
-                                    <input type="checkbox" id="categkey1" name="categ_check">
-                                    <label for="categkey1" class="box_btn">선택형</label>
+                                    <input type="radio" id="publikey1" name="publisher_radio">
+                                    <label for="publikey1">YBM 김</label>
                                 </li>
                                 <li>
-                                    <input type="checkbox" id="categkey2" name="categ_check">
-                                    <label for="categkey2" class="box_btn">서답형</label>
+                                    <input type="radio" id="publikey2" name="publisher_radio">
+                                    <label for="publikey2">YBM 최</label>
                                 </li>
                                 <li>
-                                    <div class="select_wrap">
-                                        <select class="select" id="select1">
-                                              <option selected>선택</option>
-                                              <option value="">10%</option>
-                                              <option value="">20%</option>
-                                              <option value="">30%</option>
-                                              <option value="">40%</option>
-                                              <option value="">50%</option>
-                                        </select>
-                                        <label for="select1">%</label>
-                                    </div>
-                                </li>
-                            </ul>
-                            <p class="description">※단답형, 완결형, 논문형(논술형, 서술형)</p>
-                        </div>
-                    </li>
-                    <!--문제수-->
-                    <li class="create__item num5">
-                        <span class="item__title"><em class="number">5</em>문제수</span>
-                        <div class="item__box">
-                            <ul class="subject__select">
-                                <li>
-                                    <input type="radio" id="countkey1" name="count_radio">
-                                    <label for="countkey1" class="box_btn">10개</label>
+                                    <input type="radio" id="publikey3" name="publisher_radio">
+                                    <label for="publikey3">대교</label>
                                 </li>
                                 <li>
-                                    <input type="radio" id="countkey2" name="count_radio">
-                                    <label for="countkey2" class="box_btn">15개</label>
+                                    <input type="radio" id="publikey4" name="publisher_radio">
+                                    <label for="publikey4">동아</label>
                                 </li>
                                 <li>
-                                    <input type="radio" id="countkey3" name="count_radio">
-                                    <label for="countkey3" class="box_btn">20개</label>
-                                </li>
-                                <li>
-                                    <input type="radio" id="countkey4" name="count_radio">
-                                    <label for="countkey4" class="box_btn">25개</label>
+                                    <input type="radio" id="publikey5" name="publisher_radio">
+                                    <label for="publikey5">천재 함</label>
                                 </li>
                             </ul>
                         </div>
-                    </li>
-                    <!--난이도-->
-                    <li class="create__item num6">
-                        <span class="item__title"><em class="number">6</em>난이도</span>
-                        <div class="item__box">
-                            <ul class="diffic_select">
+                    </div>
+                </li>
+                <!--출제범위-->
+                <li class="create__item num3">
+                    <span class="item__title"><em class="number">3</em>출제 범위</span>
+                    <div class="item__box flex-col">
+                        <div class="unit__select_wrap">
+                            <span class="empty_tt"><i></i>과목을 선택하세요.</span>
+                            <ul class="unit__select">
                                 <li>
-                                    <div class="diffic_item">
-                                        <span>상</span>
-                                        <select class="select no-line">
-                                            <option selected="">선택</option>
-                                            <option value="">0</option>
-                                            <option value="">10</option>
-                                            <option value="">20</option>
-                                            <option value="">30</option>
-                                            <option value="">40</option>
-                                            <option value="">50</option>
-                                            <option value="">60</option>
-                                            <option value="">70</option>
-                                            <option value="">80</option>
-                                            <option value="">90</option>
-                                            <option value="">100</option>
-                                        </select>
-                                    </div>
-                                  <em class="pertt">%</em>
+                                    <input type="checkbox" id="unitkey1" name="unit_check">
+                                    <label for="unitkey1" class="unit_btn">
+                                        <span><em>1 단원</em>What grade are you in?</span>
+                                    </label>
                                 </li>
                                 <li>
-                                    <div class="diffic_item">
-                                        <span>중</span>
-                                        <select class="select no-line">
-                                            <option selected="">선택</option>
-                                            <option value="">0</option>
-                                            <option value="">10</option>
-                                            <option value="">20</option>
-                                            <option value="">30</option>
-                                            <option value="">40</option>
-                                            <option value="">50</option>
-                                            <option value="">60</option>
-                                            <option value="">70</option>
-                                            <option value="">80</option>
-                                            <option value="">90</option>
-                                            <option value="">100</option>
-                                        </select>
-                                    </div>
-                                  <em class="pertt">%</em>
+                                    <input type="checkbox" id="unitkey2" name="unit_check">
+                                    <label for="unitkey2" class="unit_btn">
+                                        <span><em>2 단원</em>I have a cold.</span>
+                                    </label>
                                 </li>
                                 <li>
-                                    <div class="diffic_item">
-                                        <span>하</span>
-                                        <select class="select no-line">
-                                            <option selected="">선택</option>
-                                            <option value="">0</option>
-                                            <option value="">10</option>
-                                            <option value="">20</option>
-                                            <option value="">30</option>
-                                            <option value="">40</option>
-                                            <option value="">50</option>
-                                            <option value="">60</option>
-                                            <option value="">70</option>
-                                            <option value="">80</option>
-                                            <option value="">90</option>
-                                            <option value="">100</option>
-                                        </select>
-                                    </div>
-                                  <em class="pertt">%</em>
+                                    <input type="checkbox" id="unitkey3" name="unit_check">
+                                    <label for="unitkey3" class="unit_btn">
+                                        <span><em>3 단원</em>When is the club festival?</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="unitkey4" name="unit_check">
+                                    <label for="unitkey4" class="unit_btn">
+                                        <span><em>4 단원</em>Where is the post office?</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="unitkey5" name="unit_check">
+                                    <label for="unitkey5" class="unit_btn">
+                                        <span><em>5 단원</em>I’m going to see a movie.</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="unitkey6" name="unit_check">
+                                    <label for="unitkey6" class="unit_btn">
+                                        <span><em>6 단원</em>He has short curly hair.</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="unitkey7" name="unit_check">
+                                    <label for="unitkey7" class="unit_btn">
+                                        <span><em>7 단원</em>He has short curly hair.</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="unitkey8" name="unit_check">
+                                    <label for="unitkey8" class="unit_btn">
+                                        <span><em>8 단원</em>I’m going to see a movie.</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="unitkey9" name="unit_check">
+                                    <label for="unitkey9" class="unit_btn">
+                                        <span><em>9 단원</em>Where is the post office?</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="unitkey10" name="unit_check">
+                                    <label for="unitkey10" class="unit_btn">
+                                        <span><em>10 단원</em>When is the club festival?</span>
+                                    </label>
                                 </li>
                             </ul>
-                            <div class="diffic_total">
+                        </div>
+                        <p class="description">※복수 단원 선택 가능합니다.</p>
+                    </div>
+                </li>
+                <!--출제유형-->
+                <li class="create__item num4">
+                    <span class="item__title"><em class="number">4</em>출제 유형</span>
+                    <div class="item__box flex-col">
+                        <ul class="subject__select">
+                            <li>
+                                <input type="checkbox" id="categkey1" name="categ_check">
+                                <label for="categkey1" class="box_btn">선택형</label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="categkey2" name="categ_check">
+                                <label for="categkey2" class="box_btn">서답형</label>
+                            </li>
+                            <li>
+                                <div class="select_wrap">
+                                    <select class="select" id="select3">
+                                            <option selected>선택</option>
+                                            <option value="">10%</option>
+                                            <option value="">20%</option>
+                                            <option value="">30%</option>
+                                            <option value="">40%</option>
+                                            <option value="">50%</option>
+                                    </select>
+                                    <label for="select3">%</label>
+                                </div>
+                            </li>
+                        </ul>
+                        <p class="description">※단답형, 완결형, 논문형(논술형, 서술형)</p>
+                    </div>
+                </li>
+                <!--문제수-->
+                <li class="create__item num5">
+                    <span class="item__title"><em class="number">5</em>문제수</span>
+                    <div class="item__box">
+                        <ul class="subject__select">
+                            <li>
+                                <input type="radio" id="countkey1" name="count_radio">
+                                <label for="countkey1" class="box_btn">10개</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="countkey2" name="count_radio">
+                                <label for="countkey2" class="box_btn">15개</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="countkey3" name="count_radio">
+                                <label for="countkey3" class="box_btn">20개</label>
+                            </li>
+                            <li>
+                                <input type="radio" id="countkey4" name="count_radio">
+                                <label for="countkey4" class="box_btn">25개</label>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <!--난이도-->
+                <li class="create__item num6">
+                    <span class="item__title"><em class="number">6</em>난이도</span>
+                    <div class="item__box">
+                        <ul class="diffic_select">
+                            <li>
                                 <div class="diffic_item">
-                                    <span>총</span>
-                                    <input type="text" value="100" class="no-line">
+                                    <span>상</span>
+                                    <select class="select no-line">
+                                        <option selected="">선택</option>
+                                        <option value="">0</option>
+                                        <option value="">10</option>
+                                        <option value="">20</option>
+                                        <option value="">30</option>
+                                        <option value="">40</option>
+                                        <option value="">50</option>
+                                        <option value="">60</option>
+                                        <option value="">70</option>
+                                        <option value="">80</option>
+                                        <option value="">90</option>
+                                        <option value="">100</option>
+                                    </select>
                                 </div>
                                 <em class="pertt">%</em>
+                            </li>
+                            <li>
+                                <div class="diffic_item">
+                                    <span>중</span>
+                                    <select class="select no-line">
+                                        <option selected="">선택</option>
+                                        <option value="">0</option>
+                                        <option value="">10</option>
+                                        <option value="">20</option>
+                                        <option value="">30</option>
+                                        <option value="">40</option>
+                                        <option value="">50</option>
+                                        <option value="">60</option>
+                                        <option value="">70</option>
+                                        <option value="">80</option>
+                                        <option value="">90</option>
+                                        <option value="">100</option>
+                                    </select>
+                                </div>
+                                <em class="pertt">%</em>
+                            </li>
+                            <li>
+                                <div class="diffic_item">
+                                    <span>하</span>
+                                    <select class="select no-line">
+                                        <option selected="">선택</option>
+                                        <option value="">0</option>
+                                        <option value="">10</option>
+                                        <option value="">20</option>
+                                        <option value="">30</option>
+                                        <option value="">40</option>
+                                        <option value="">50</option>
+                                        <option value="">60</option>
+                                        <option value="">70</option>
+                                        <option value="">80</option>
+                                        <option value="">90</option>
+                                        <option value="">100</option>
+                                    </select>
+                                </div>
+                                <em class="pertt">%</em>
+                            </li>
+                        </ul>
+                        <div class="diffic_total">
+                            <div class="diffic_item">
+                                <span>총</span>
+                                <input type="text" value="100" class="no-line">
                             </div>
+                            <em class="pertt">%</em>
                         </div>
-                    </li>
-                </ul>
-            </div>
+                    </div>
+                </li>
+            </ul>
             <div class="table_wrap">
                 <table class="tbl_basic center table-hover">
                     <caption>학생 목록</caption>
