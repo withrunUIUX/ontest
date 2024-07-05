@@ -392,8 +392,12 @@ a.state.tx.end:hover {border:.1rem solid var(--gray_60);background-color:var(--g
 .item_state {}
 
 
-
-
+/* 문항 슬라이드 */
+.slick-arrow {z-index:11;position:absolute;top:50%;display:flex!important;align-items:center;justify-content:center;width:70px;height:70px;border-radius:70px;font-size:0;background:var(--gray_70);transition:var(--ani_time);}
+.slick-arrow:hover {outline:10px solid var(--blue_40);background:var(--blue_110);}
+.slick-arrow:after {content:'';display:block;width:50px;height:50px;background:url('../images/common/arr_b.svg') no-repeat 50%;}
+.slick-arrow.slick-prev {left:-3%;transform: rotate(-180deg);}
+.slick-arrow.slick-next {right:-3%;}
 
 
 
