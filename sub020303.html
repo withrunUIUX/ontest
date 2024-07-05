@@ -4,17 +4,19 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>온평가 > 채점하기</title>
+        <title>온평가 > 배포하기</title>
     
+        <link rel="stylesheet" href="/css/slick.css">
         <link rel="stylesheet" href="/css/common.css">
         <link rel="stylesheet" href="/css/question.css">
         <link rel="stylesheet" href="/css/contents.css">
 
         <script type="text/javascript" src="/js/jquery-3.6.0.min.js"></script>
         <script type="text/javascript" src="/js/jquery-latest.min.js"></script>
+        <script type="text/javascript" src="/js/slick.js"></script>
+        <script type="text/javascript" src="/js/chart.js"></script>
+
         <script type="text/javascript" src="/js/include.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
     </head>
 
 <body>
@@ -37,26 +39,141 @@
             <a href="#" class="item home"><span>홈</span></a>
             <a href="#" class="item">문제은행</a>
             <a href="#" class="item">출제내역</a>
-            <a href="#" class="item">채점하기</a>
+            <a href="#" class="item">배포하기</a>
         </div>
 
         <div class="sub_title">
-            <h1>채점하기</h1>
-            <p>채점을 진행중인 목록입니다.</p>
+            <h1>배포하기</h1>
+            <p>출제한 문제를 배포합니다.</p>
         </div>
     </section><!--//sub_header-->
 
-    <section id="content" class="list_wrap">
+    <section id="content">
         <div class="layout">
+            <div class="publish_prev">
 
+                <ul class="summary_wrap">
+                    <li class="item_subject">
+                        <i class="ico_logo type1">온평가</i>
+                        <b>영어</b>
+                        <span class="state tx">5학년 1학기</span>
+                    </li>
+                    <li>
+                        <div class="unit__wrap">
+                            <span class="unit__item">1단원</span>
+                            <span class="unit__item">2단원</span>
+                            <span class="unit__item">3단원</span>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="question_list_wrap">
+
+                </div>
+
+                <div id="q_slide">
+                    <div class="question_content">
+                        <h4 class="q_tit">
+                            <em class="question_number">1번</em>
+                            <span class="txt">가방의 수에 따른 국어책의 수와 수학책의 수를 나눗셈으로 비교하려고 합니다. 알맞은 말을 골라 ○표 하세요.</span> 
+                        </h4>
+                        <div class="q_layout">
+                            <div class="q_wrap">
+                                <table class="tbl_basic type3 center">
+                                    <caption>개요</caption>
+                                    <colgroup>
+                                        <col style="width:10%"/>
+                                        <col style="width:5%"/>
+                                        <col style="width:5%"/>
+                                        <col style="width:5%"/>
+                                        <col style="width:5%"/>
+                                        <col style="width:5%"/>
+                                        <col style="width:5%"/>
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">가방 수(개)</th>
+                                            <th scope="col">1</th>
+                                            <th scope="col">2</th>
+                                            <th scope="col">3</th>
+                                            <th scope="col">4</th>
+                                            <th scope="col">5</th>
+                                            <th scope="col">…</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">국어책 수(권)</th>
+                                            <td>4</td>
+                                            <td>4</td>
+                                            <td>4</td>
+                                            <td>4</td>
+                                            <td>4</td>
+                                            <td>…</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">수학책 수(권)</th>
+                                            <td>5</td>
+                                            <td>5</td>
+                                            <td>5</td>
+                                            <td>5</td>
+                                            <td>5</td>
+                                            <td>…</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="a_wrap">
+                                <div style="text-align:center;">
+                                    <span>가방 수에 따라 국어책의 수와 수학책의 수의 비가</span>
+                                    <input type="radio" class="hotspot" name="example" id="example1" checked>
+                                    <label for="example1" class="txtblock">변합니다.</label>
+                                    <input type="radio" class="hotspot" name="example" id="example2">
+                                    <label for="example2" class="txtblock">변하지 않습니다.</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="question_content">
+                        <h4 class="q_tit">
+                            <em class="question_number">2번</em>
+                            <span class="txt">가방의 수에 따른 국어책의 수와 수학책의 수를 나눗셈으로 비교하려고 합니다. 알맞은 말을 골라 ○표 하세요.</span> 
+                        </h4>
+                        <div class="q_layout">
+                            <div class="q_wrap">테스트2222</div>
+                            <div class="a_wrap">테스트2222</div>
+                        </div>
+                    </div>
+                    <div class="question_content">
+                        <h4 class="q_tit">
+                            <em class="question_number">3번</em>
+                            <span class="txt">가방의 수에 따른 국어책의 수와 수학책의 수를 나눗셈으로 비교하려고 합니다. 알맞은 말을 골라 ○표 하세요.</span> 
+                        </h4>
+                        <div class="q_layout">
+                            <div class="q_wrap">테스트3333</div>
+                            <div class="a_wrap">테스트3333</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
         <div class="btn_group">
-            <a href="/sub0203.html" class="btn btn-ani btn-secondary">출제목록으로</a>
+            <a href="/sub0203.html" class="btn btn-ani btn-secondary">취소</a>
+            <a href="#" class="btn btn-ani btn-primary">배포하기</a>
         </div>
     </section>
 
 </main>
 
+<script type="text/javascript">
+    $(document).ready(function(){
+      $('#q_slide').slick({
+            dots: true,
+            appendDots: $('.question_list_wrap'), //슬라이드 dot 위치 이동
+      });
+    });
+  </script>
 
 </body>
 </html>
