@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>온평가 > 미리보기</title>
+        <title>온평가 > 채점하기</title>
     
         <link rel="stylesheet" href="/css/common.css">
         <link rel="stylesheet" href="/css/question.css">
@@ -36,106 +36,187 @@
         <div id="location">
             <a href="#" class="item home"><span>홈</span></a>
             <a href="#" class="item">문제은행</a>
+            <a href="#" class="item">출제내역</a>
+            <a href="#" class="item">채점하기</a>
         </div>
 
         <div class="sub_title">
-            <h1>채점목록</h1>
+            <h1>채점하기</h1>
             <p>채점을 진행중인 목록입니다.</p>
         </div>
     </section><!--//sub_header-->
 
     <section id="content" class="list_wrap">
         <div class="layout">
-            <div class="date_wrap">
-                <span><b>2024</b>년 <b>7</b>월 <b>30</b>일</span>
-                
-            </div>
+            <ul class="summary_wrap">
+                <li class="item_date">
+                    <b>2024</b>년 
+                    <b>9</b>월 
+                    <b>30</b>일
+                </li>
+                <li class="item_subject">
+                    <i class="ico_logo type1">온평가</i>
+                    <b>영어</b>
+                    <span class="state tx">5학년 1학기</span>
+                </li>
+                <li class="item_state">
+                    평가가 <b>진행중</b> 입니다.
+                </li>
+            </ul>
+
+            <ul class="info_card">
+                <li class="card__item">
+                    <span class="item num1"><b>평가대상</b></span>
+                    <span class="item num2"><b>5학년 1반</b></span>
+                </li>
+                <li class="card__item">
+                    <span class="item num1"><b>평가과목</b></span>
+                    <span class="item num2"><b>영어</b></span>
+                </li>
+                <li class="card__item">
+                    <span class="item num1"><b>제출현황</b></span>
+                    <span class="item num2"><b>3명</b> / 19명</span>
+                </li>
+                <li class="card__item">
+                    <span class="item num1"><b>남은시간</b></span>
+                    <span class="item num2"><b>23분 12초 </b></span>
+                </li>
+            </ul>
 
             <div class="title_box">
-                <strong class="subtitle2">채점현황</strong>
-                
+                <strong class="subtitle">
+                    <i class="hico hico2"></i>
+                    채점현황
+                    <span>제출이 완료된 학생들은 채점하실 수 있습니다.</span>
+                </strong>
+                <ul class="badge_wrap">
+                    <li><i class="badge badge1">접속</i></li>
+                    <li><i class="badge badge2">결시</i></li>
+                    <li><i class="badge badge3">10분 이상 무응답</i></li>
+                    <li><i class="badge badge4">제출완료</i></li>
+                </ul>
             </div>
+
             <div class="table_wrap">
                 <table class="tbl_basic tbl_list center table-hover">
                     <caption>개요</caption>
                     <colgroup>
-                        <col style="width:4%"/>
                         <col style="width:5%"/>
                         <col style="width:5%"/>
-                        <col style="width:40%"/>
+                        <col style="width:5%"/>
                         <col style="width:8%"/>
                         <col style="width:6%"/>
                         <col style="width:6%"/>
-                        <col style="width:7%"/>
-                        <col style="width:7%"/>
-                        <col style="width:5%"/>
+                        <col style="width:6%"/>
+                        <col style="width:8%"/>
+                        <col style="width:22%"/>
+                        <col style="width:6%"/>
                     </colgroup>
                     <thead>
                         <tr>
-                            <th scope="col"><input type="checkbox" id="allcheck" name="check" checked/><label for="allcheck"></label></th>
                             <th scope="col">학년</th>
                             <th scope="col">반</th>
-                            <th scope="col">평가지명</th>
-                            <th scope="col">생성일</th>
-                            <th scope="col" class="th_deep">수정</th>
-                            <th scope="col" class="th_deep">미리보기</th>
-                            <th scope="col" class="th_deep">배포</th>
+                            <th scope="col">번호</th>
+                            <th scope="col">이름</th>
+                            <th scope="col">평가일</th>
+                            <th scope="col">진행률</th>
+                            <th scope="col">접속상태</th>
                             <th scope="col" class="th_deep">채점</th>
-                            <th scope="col" class="th_deep">삭제</th>
+                            <th scope="col">비고</th>
+                            <th scope="col" class="th_deep">비고수정</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <th scope="row"><input type="checkbox" id="check0" name="check"/><label for="check0"></label></th>
-                            <td>5</td>
+                            <th scope="row">5</th>
                             <td>1</td>
-                            <td class="td_left"><b>5학년 1학기 영어(동아) 평가지</b>25문제 | 1단원, 2단원</td>
+                            <td>1</td>
+                            <td>홍길동</td>
                             <td>24.09.30</td>
-                            <td><a href="/sub0201.html" class="micon ico5">수정</a></td>
-                            <td><a href="/sub0202.html" class="micon ico7">보기</a></td>
-                            <td><a href="#" class="btn btn-ani btn-primary sm">배포하기</a></td>
-                            <td><a href="#" class="state tx score1">채점전</a></td>
-                            <td><a href="#" class="micon ico8">삭제</a></td>
+                            <td>100%</td>
+                            <td><i class="badge badge4">제출완료</i></td>
+                            <td><a href="#" class="btn btn-ani btn-quaternary">수정</a></td>
+                            <td class="td_left"></td>
+                            <td><a href="#" class="micon ico5">수정</a></td>
                         </tr>
                         <tr>
-                            <th scope="row"><input type="checkbox" id="check0" name="check"/><label for="check0"></label></th>
-                            <td>5</td>
+                            <th scope="row">5</th>
                             <td>1</td>
-                            <td class="td_left"><b>5학년 1학기 영어(동아) 평가지</b>25문제 | 1단원, 2단원</td>
-                            <td>24.09.30</td>
+                            <td>2</td>
+                            <td>박길동</td>
+                            <td>-</td>
+                            <td>0%</td>
+                            <td><i class="badge badge2">결시</i></td>
+                            <td><i class="state tx score1">채점전</i></td>
+                            <td class="td_left">결시</td>
                             <td><a href="#" class="micon ico5">수정</a></td>
-                            <td><a href="#" class="micon ico7">보기</a></td>
-                            <td><a href="#" class="btn btn-ani btn-outline-primary sm">평가중</a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">5</th>
+                            <td>1</td>
+                            <td>3</td>
+                            <td>홍충남</td>
+                            <td>24.09.30</td>
+                            <td>90%</td>
+                            <td><i class="badge badge1">접속</i></td>
                             <td><a href="#" class="state tx score3">미완료</a></td>
-                            <td><a href="#" class="micon ico8">삭제</a></td>
+                            <td class="td_left"><input type="text" placeholder="입력하세요"></td>
+                            <td><a href="#" class="micon ico6">수정중</a></td>
                         </tr>
                         <tr>
-                            <th scope="row"><input type="checkbox" id="check0" name="check"/><label for="check0"></label></th>
-                            <td>5</td>
+                            <th scope="row">5</th>
                             <td>1</td>
-                            <td class="td_left"><b>5학년 1학기 영어(동아) 평가지</b>25문제 | 1단원, 2단원</td>
+                            <td>4</td>
+                            <td>김일남</td>
                             <td>24.09.30</td>
+                            <td>100%</td>
+                            <td><i class="badge badge4">제출완료</i></td>
+                            <td><a href="#" class="state tx score2">채점중</a></td>
+                            <td class="td_left"></td>
                             <td><a href="#" class="micon ico5">수정</a></td>
-                            <td><a href="#" class="micon ico7">보기</a></td>
-                            <td><i class="state tx end">완료</i></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">5</th>
+                            <td>1</td>
+                            <td>5</td>
+                            <td>심이나</td>
+                            <td>24.09.30</td>
+                            <td>50%</td>
+                            <td><i class="badge badge3">10분 이상 무응답</i></td>
                             <td><a href="#" class="state tx score3">미완료</a></td>
-                            <td><a href="#" class="micon ico8">삭제</a></td>
+                            <td class="td_left"></td>
+                            <td><a href="#" class="micon ico5">수정</a></td>
                         </tr>
                         <tr>
-                            <th scope="row"><input type="checkbox" id="check0" name="check"/><label for="check0"></label></th>
-                            <td>5</td>
+                            <th scope="row">5</th>
                             <td>1</td>
-                            <td class="td_left"><b>5학년 1학기 영어(동아) 평가지</b>25문제 | 1단원, 2단원</td>
+                            <td>6</td>
+                            <td>박해수</td>
                             <td>24.09.30</td>
+                            <td>90%</td>
+                            <td><i class="badge badge1">접속</i></td>
+                            <td><a href="#" class="state tx score3">미완료</a></td>
+                            <td class="td_left"></td>
                             <td><a href="#" class="micon ico5">수정</a></td>
-                            <td><a href="#" class="micon ico7">보기</a></td>
-                            <td><i class="state tx end">완료</i></td>
-                            <td><a href="#" class="state tx end">완료</a></td>
-                            <td><a href="#" class="micon ico8">삭제</a></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">5</th>
+                            <td>1</td>
+                            <td>7</td>
+                            <td>김칠남</td>
+                            <td>24.09.30</td>
+                            <td>90%</td>
+                            <td><i class="badge badge1">접속</i></td>
+                            <td><a href="#" class="state tx score3">미완료</a></td>
+                            <td class="td_left"></td>
+                            <td><a href="#" class="micon ico5">수정</a></td>
                         </tr>
                     </tbody>
                 </table>
             </div>
+        </div>
+        <div class="btn_group">
+            <a href="/sub0203.html" class="btn btn-ani btn-secondary">출제목록으로</a>
         </div>
     </section>
 
