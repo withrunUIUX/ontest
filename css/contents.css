@@ -142,13 +142,28 @@
 
 /* 배포하기 */
 .publish_prev {display:flex;flex-direction:column;gap:2rem;width:100%;padding:4rem;border-radius:10px;background-color:var(--gray_30);}
-.publish_prev .question_content {border:1px solid var(--gray_50)}
+.publish_prev .question_content {border:1px solid var(--gray_50);pointer-events:none;}
 
 .question_list_wrap {}
 .question_list_wrap ul {display:flex !important;flex-wrap:wrap;gap:.708rem;}
 .question_list_wrap ul li button {position:relative;display:inline-flex;align-items:center;justify-content:center;border-radius:6px;width:60px;height:60px;border:.1rem solid var(--gray_60);color:var(--gray_100);font-size:18px;font-weight:600;background:#fff;}
 .question_list_wrap ul li.slick-active button {border:3px solid var(--blue_90);color:var(--blue_90);font-weight:700;box-shadow:2px 2px 4px 1px rgba(0, 0, 0, 0.2);}
 .question_list_wrap ul li.slick-active button::before {content:'';position:absolute;top:-10px;display:block;width:20px;height:20px;border-radius:20px;background:var(--blue_90) url(../images/common/arr_check.svg) no-repeat 50%;}
+
+
+/* 전송하기 */
+.send_wrap .prev_info {width:100%;}
+.send_wrap .info_box {display:flex;align-items:center;}
+.send_wrap .info_box > div:nth-child(1){width:54%;}
+.send_wrap .info_box > div:nth-child(1) .unit__wrap {margin-top:1.5rem;}
+.send_wrap .info_box > div:nth-child(2){display:flex;width:46%;}
+
+.class_code_wrap {}
+.class_code_wrap > span {}
+.class_code {}
+
+.qrcode {}
+
 
 
 
