@@ -152,6 +152,7 @@
 
 
 /* 전송하기 */
+.send_wrap .layout {flex-direction:column;gap:1rem;}
 .send_wrap .prev_info {width:100%;}
 .send_wrap .info_box {display:flex;align-items:center;}
 .send_wrap .info_box > div:nth-child(1){width:54%;}
