@@ -90,7 +90,7 @@
 .prev_info .info_box {padding:2.5rem;border:.1rem solid var(--gray_40);border-radius:10px;}
 .info_box .text_box {display:flex;flex-direction:column;}
 .info_box .text_box .totla__title {font-size:22px;}
-.info_box .text_box > span {display:flex;align-items:center;margin-top:1rem;color:var(--gray_80);}
+.info_box .text_box > span {display:flex;align-items:center;gap:.5rem;margin-top:1rem;color:var(--gray_80);}
 .info_box .text_box > span > em {padding:.4rem .8rem .5rem;border-radius:30px;line-height: 1;color:#fff;font-size:14px;font-weight:600;background:var(--blue_130);}
 .info_box .text_box > span > b {font-size:34px;margin-left:.5rem;color:var(--blue_120);font-family:var(--f_scd);}
 .info_box .text_box > ul {display:flex;align-items:center;gap:.5rem;color:var(--gray_80);}
@@ -154,18 +154,49 @@
 /* 전송하기 */
 .send_wrap .layout {flex-direction:column;gap:1rem;}
 .send_wrap .prev_info {width:100%;}
-.send_wrap .info_box {display:flex;align-items:center;}
-.send_wrap .info_box > div:nth-child(1){width:54%;}
+.send_wrap .info_box {position:relative;display:flex;gap:6rem;padding:4rem;}
+.send_wrap .info_box > div:nth-child(1) {display:flex;align-items:flex-end;width:54%;}
+.send_wrap .info_box > div:nth-child(1) .text_box {width:100%;}
 .send_wrap .info_box > div:nth-child(1) .unit__wrap {margin-top:1.5rem;}
-.send_wrap .info_box > div:nth-child(2){display:flex;width:46%;}
+.send_wrap .info_box > div:nth-child(2) {position:relative;display:flex;align-items:center;justify-content:space-between;width:46%;}
+.send_wrap .info_box > div:nth-child(2)::before {content:'';position:absolute;left:-3.5rem;display:inline-block;width:1px;height:100%;background-color:var(--gray_30);}
 
-.class_code_wrap {}
-.class_code_wrap > span {}
-.class_code {}
+.class_code_wrap {display:flex;flex-direction:column;gap:2rem;}
+.class_code_wrap > span {font-size:20px;font-weight:800;color:var(--gray_70);}
+.class_code {font-size:46px;font-weight:800;color:var(--gray_110);}
 
-.qrcode {}
+.qrcode {width:130px;height:130px;}
+.qrcode > img {width:100%;}
 
+.send_wrap .title_box {margin:2rem 0 1rem}
 
+/*접속현황*/
+.connect_wrap {display:flex;flex-direction:column;gap:1rem;padding:3rem;border:.1rem solid var(--gray_40);border-radius:10px;}
+
+.connect_summary {display:flex;justify-content:space-between;}
+.connect_summary .pers {display:flex;align-items:center;gap:.3rem;font-size:18px;color:var(--gray_80);}
+.connect_summary .pers > em {font-size: 16px;}
+
+.connect_item_wrap {display:flex;flex-wrap:wrap;gap:1rem;}
+.connect_item_wrap .connect_item {display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.5rem;width:calc(10% - 1rem);min-width:130px;min-height:110px;padding:1rem;border:.1rem solid var(--gray_40);border-radius:.3rem;background-color:#fff;}
+.connect_item_wrap .connect_item > i {width:32px;height:32px;background-image:url('../images/common/mico_11.svg');background-position:50%;background-repeat:no-repeat;}
+.connect_item_wrap .connect_item > span {font-size:18px;color:var(--gray_70);font-weight:600;}
+/*접속*/
+.connect_item_wrap .connect_item.on {border-color:var(--blue_30);background-color:var(--blue_10);}
+.connect_item_wrap .connect_item.on > i {background-image:url('../images/common/mico_12.svg');}
+.connect_item_wrap .connect_item.on > span {color:var(--blue_90);}
+/*결시*/
+.connect_item_wrap .connect_item.off {background-color:var(--gray_30);}
+.connect_item_wrap .connect_item.off > i {opacity:.5;}
+.connect_item_wrap .connect_item.off > span {color:var(--gray_50);}
+/*무응답*/
+.connect_item_wrap .connect_item.no {border-color:var(--coral_30);background-color:var(--coral_10);}
+.connect_item_wrap .connect_item.no > i {mask-image:url('../images/common/mico_12.svg');background-color:var(--coral_80);background-image:none;}
+.connect_item_wrap .connect_item.no > span {color:var(--coral_80);}
+/*제출완료*/
+.connect_item_wrap .connect_item.fin {border-color:var(--green_40);background-color:var(--green_10);}
+.connect_item_wrap .connect_item.fin > i {mask-image:url('../images/common/mico_12.svg');background-color:var(--green_90);background-image:none;}
+.connect_item_wrap .connect_item.fin > span {color:var(--green_90);}
 
 
 
