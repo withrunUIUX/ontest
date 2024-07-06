@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>온평가 > 배포하기</title>
+    
+        <link rel="stylesheet" href="/css/slick.css">
+        <link rel="stylesheet" href="/css/common.css">
+        <link rel="stylesheet" href="/css/question.css">
+        <link rel="stylesheet" href="/css/contents.css">
+
+        <script type="text/javascript" src="/js/jquery-3.6.0.min.js"></script>
+        <script type="text/javascript" src="/js/jquery-latest.min.js"></script>
+        <script type="text/javascript" src="/js/slick.js"></script>
+        <script type="text/javascript" src="/js/chart.js"></script>
+
+        <script type="text/javascript" src="/js/include.js"></script>
+    </head>
+
+<body>
+
+<!--[include]HEADER :: Start -->
+<div id="header"></div>
+<!--[include]HEADER :: End -->
+
+<main id="container" class="sub">
+    <section class="sub_header">
+        <div class="login_info">
+            <div class="info_item">
+                <i class="sicon ico1"></i><span class="name"><b>김평가</b>선생님</span>
+                <span class="scoolname">충남초등학교</span>
+            </div>
+            <a href="#" class="logout">로그아웃</a>
+        </div>
+
+        <div id="location">
+            <a href="#" class="item home"><span>홈</span></a>
+            <a href="#" class="item">문제은행</a>
+            <a href="#" class="item">채점하기</a>
+        </div>
+
+        <div class="sub_title">
+            <h1>채점하기</h1>
+            <p>응답이 완료된 문항을 채점합니다.</p>
+        </div>
+    </section><!--//sub_header-->
+
+    <section id="content" class="grading_wrap">
+        <div class="layout">
+            <ul class="summary_wrap">
+                <li class="item_subject">
+                    <i class="ico_logo type1">온평가</i>
+                    <b>영어</b>
+                    <span class="state tx">5학년 1학기</span>
+                </li>
+                <li>
+                    <div class="unit__wrap">
+                        <span class="unit__item">1단원</span>
+                        <span class="unit__item">2단원</span>
+                        <span class="unit__item">3단원</span>
+                    </div>
+                </li>
+            </ul>
+
+            <ul class="student_info">
+                <li><span>학교명</span>충남초등학교</li>
+                <li><span>학년</span>5</li>
+                <li><span>반</span>1</li>
+                <li><span>번호</span>3</li>
+                <li><span>이름</span>홍길동</li>
+            </ul>
+
+            <div class="grading_table">
+                <ul class="info_wrap">
+                    <!-- <li><span class="bullet">총계</span></li> -->
+                    <li><i class="sicon ico_o"></i>정답 : 20개</li>
+                    <li><i class="sicon ico_x"></i>오답 : 5개</li>
+                </ul>
+                <div class="inner responseTable">
+                    <table class="tbl_basic type3 center">
+                        <colgroup>
+                            <col>
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="col">1</th>
+                                <th scope="col">2</th>
+                                <th scope="col">3</th>
+                                <th scope="col">4</th>
+                                <th scope="col">5</th>
+                                <th scope="col">6</th>
+                                <th scope="col">7</th>
+                                <th scope="col">8</th>
+                                <th scope="col">9</th>
+                                <th scope="col">10</th>
+                                <th scope="col">11</th>
+                                <th scope="col">12</th>
+                                <th scope="col">13</th>
+                                <th scope="col">14</th>
+                                <th scope="col">15</th>
+                                <th scope="col">16</th>
+                                <th scope="col">17</th>
+                                <th scope="col">18</th>
+                                <th scope="col">19</th>
+                                <th scope="col">20</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><i class="sicon ico_o">정답</i></td>
+                                <td><i class="sicon ico_x">오답</i></td>
+                                <td><i class="sicon ico_o">정답</i></td>
+                                <td><i class="sicon ico_o">정답</i></td>
+                                <td><i class="sicon ico_o">정답</i></td>
+                                <td><i class="sicon ico_o">정답</i></td>
+                                <td><i class="sicon ico_o">정답</i></td>
+                                <td><i class="sicon ico_o">정답</i></td>
+                                <td><i class="sicon ico_o">정답</i></td>
+                                <td><i class="sicon ico_o">정답</i></td>
+                                <td><i class="sicon ico_x">오답</i></td>
+                                <td><i class="sicon ico_x">오답</i></td>
+                                <td><i class="sicon ico_o">정답</i></td>
+                                <td><i class="sicon ico_o">정답</i></td>
+                                <td><i class="sicon ico_o">정답</i></td>
+                                <td><i class="sicon ico_o">정답</i></td>
+                                <td><i class="sicon ico_x">오답</i></td>
+                                <td><i class="sicon ico_o">정답</i></td>
+                                <td><i class="sicon ico_o">정답</i></td>
+                                <td><i class="sicon ico_o">정답</i></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+                
+            <div class="publish_prev grading" id="grading_prev_wrap">
+                <div class="modal modal-popup" id="modal-answerSee">
+                    <div class="modal-background is-click-disabled"></div>
+                    <div class="modal-content">
+                        <button type="button" class="modal-close bn_close bk"></button>
+                        <div class="popup-wrap">
+                            <div class="con-head">
+                                <h3>정답</h3>
+                            </div>
+                            <div class="con-wrap">
+                                <ul>
+                                    <li>문항번호 : 2-1-8-[2국05-02]-하-02</li>
+                                    <li>난이도 : 하</li>
+                                </ul>
+                                <div>
+                                    변하지 않습니다.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="btn_group">
+                    <span class="answerBtn see" id="answerSee"><i></i>정답보기</span>
+                    <div id="answerEdit_wrap">
+                        <a class="answerBtn edit" id="answerBtn_slide" href="#"><i></i>채점수정</a>
+                        <div class="editBtn_wrap">
+                            <a href="#"><i class="sicon ico_o">정답</i></a>
+                            <a href="#"><i class="sicon ico_x">오답</i></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="q_slide">
+                    <div class="question_content grade_true">
+                        <h4 class="q_tit">
+                            <em class="question_number">1번</em>
+                            <span class="txt">가방의 수에 따른 국어책의 수와 수학책의 수를 나눗셈으로 비교하려고 합니다. 알맞은 말을 골라 ○표 하세요.</span> 
+                        </h4>
+                        <div class="q_layout">
+                            <div class="q_wrap">
+                                <table class="tbl_basic type3 center">
+                                    <caption>개요</caption>
+                                    <colgroup>
+                                        <col style="width:10%"/>
+                                        <col style="width:5%"/>
+                                        <col style="width:5%"/>
+                                        <col style="width:5%"/>
+                                        <col style="width:5%"/>
+                                        <col style="width:5%"/>
+                                        <col style="width:5%"/>
+                                    </colgroup>
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">가방 수(개)</th>
+                                            <th scope="col">1</th>
+                                            <th scope="col">2</th>
+                                            <th scope="col">3</th>
+                                            <th scope="col">4</th>
+                                            <th scope="col">5</th>
+                                            <th scope="col">…</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">국어책 수(권)</th>
+                                            <td>4</td>
+                                            <td>4</td>
+                                            <td>4</td>
+                                            <td>4</td>
+                                            <td>4</td>
+                                            <td>…</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">수학책 수(권)</th>
+                                            <td>5</td>
+                                            <td>5</td>
+                                            <td>5</td>
+                                            <td>5</td>
+                                            <td>5</td>
+                                            <td>…</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="a_wrap">
+                                <div style="text-align:center;">
+                                    <span>가방 수에 따라 국어책의 수와 수학책의 수의 비가</span>
+                                    <input type="radio" class="hotspot" name="example" id="example1" checked>
+                                    <label for="example1" class="txtblock">변합니다.</label>
+                                    <input type="radio" class="hotspot" name="example" id="example2">
+                                    <label for="example2" class="txtblock">변하지 않습니다.</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="question_content grade_wrong">
+                        <h4 class="q_tit">
+                            <em class="question_number">2번</em>
+                            <span class="txt">가방의 수에 따른 국어책의 수와 수학책의 수를 나눗셈으로 비교하려고 합니다. 알맞은 말을 골라 ○표 하세요.</span> 
+                        </h4>
+                        <div class="q_layout">
+                            <div class="q_wrap">테스트2222</div>
+                            <div class="a_wrap">테스트2222</div>
+                        </div>
+                    </div>
+                    <div class="question_content">
+                        <h4 class="q_tit">
+                            <em class="question_number">3번</em>
+                            <span class="txt">가방의 수에 따른 국어책의 수와 수학책의 수를 나눗셈으로 비교하려고 합니다. 알맞은 말을 골라 ○표 하세요.</span> 
+                        </h4>
+                        <div class="q_layout">
+                            <div class="q_wrap">테스트3333</div>
+                            <div class="a_wrap">테스트3333</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="btn_group">
+            <a href="#" class="btn btn-ani btn-secondary">임시저장</a>
+            <a href="#" class="btn btn-ani btn-primary">채점완료</a>
+        </div>
+    </section>
+
+</main>
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('#q_slide').slick({
+            dots: false,
+        });
+    });
+</script>
+
+<script type="text/javascript">
+    //채점수정 버튼
+    function answerBtn_slide(){
+        var param = $("#answerEdit_wrap");
+        var obj = param.find(".editBtn_wrap");
+        var btn = param.find("#answerBtn_slide");
+        obj.css({"display":"none","z-index":"1"});
+        btn.unbind().bind("click touchend",function(event){
+            if(obj.css("display") == "none"){
+                obj.css({"z-index":"1"});
+                obj.show().stop(true,false).animate({duration:0,easing:"easeOutCubic"});
+                btn.addClass("ov");
+            }else{
+                obj.css({"z-index":"1"});
+                obj.hide().stop(true,false).animate({duration:0,easing:"easeOutCubic"});
+                btn.removeClass("ov");
+            }
+            event.preventDefault();
+            event.stopPropagation();
+        });
+    }
+    answerBtn_slide();
+
+    //모달팝업 열기 -- 정답보기
+    $(document).on("click", "#answerSee", function(){
+        sign_index = $("#answerSee").index(this);
+        $("#modal-answerSee").addClass("active");
+        $('body').addClass('open');
+    });
+    //모달팝업 닫기 -- 정답보기
+    $(".modal-close").on("click",function(){
+        $("#modal-answerSee").removeClass("active");
+        $("body").removeClass("open").removeAttr("style");
+    });
+</script>
+
+</body>
+</html>
