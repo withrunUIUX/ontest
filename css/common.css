@@ -400,8 +400,15 @@ a.state.tx.end:hover {border:.1rem solid var(--gray_60);background-color:var(--g
 .slick-arrow.slick-next {right:-3%;}
 
 
-
-
-
-
+/* 모달팝업 레이아웃 */
+.modal {z-index:100;position:absolute;display:none;justify-content:center;align-items:center;width:100%;height:auto;min-height:100%;left:0;top:0;background:rgba(0, 0, 0, 0.5);}
+.modal.active{display:flex;display:-webkit-box;}
+.modal-background {position:absolute;bottom:0;left:0;right:0;top:0;background-color:rgb(10 10 10 / 10%);pointer-events: none;}
+.modal-content {width:550px;padding:2rem 3rem 3rem;border:1px solid var(--c_gray_60);box-shadow:0px 0px 10px 0px rgba(0, 0, 0, 0.15);background:#fff;}
+.modal-close {z-index:99;position:absolute;top:0;right:0;-webkit-transition:all .2s;transition:all .2s;border:0;background:none;cursor:pointer;right:20px;top:20px;width:2rem;height:2rem;}
+.modal-content .popup-wrap {display:flex;flex-direction:column;gap:16px;}
+.modal-content .popup-wrap .con-head {}
+.modal-content .popup-wrap .con-head h3 {margin:40px 0 10px;font-weight:800;line-height:1;color:var(--c_primary_m);font-family:var(--f_eli);}
+.modal-content .popup-wrap .con-head h3::before {}
+.modal-content .popup-wrap .con-wrap {display:flex;}
 
