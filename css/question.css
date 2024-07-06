@@ -6,7 +6,7 @@
 .question_list .qnum.ing {border:3px solid var(--blue_90);color:var(--blue_90);font-weight:700;box-shadow:2px 2px 4px 1px rgba(0, 0, 0, 0.2);}
 .question_list .qnum.ing::before {content:'';position:absolute;top:-10px;display:block;width:20px;height:20px;border-radius:20px;background:var(--blue_90) url(../images/common/arr_check.svg) no-repeat 50%;}
 
-.question_content {overflow:hidden;border-radius:10px;background:#fff;}
+.question_content {overflow:hidden;position:relative;border-radius:10px;background:#fff;}
 
 .q_tit {display:flex;align-items:center;justify-content:flex-start;gap:.4rem;margin:0;padding:32px 42px;font-size:16px;font-weight:500;background:var(--gray_20);}
 .q_tit .question_number {padding:.5rem .8rem;border-radius:.3rem;color:var(--c_white);font-weight:600;background:var(--gray_70);}
