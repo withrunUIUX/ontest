@@ -270,10 +270,13 @@ table thead th:last-child {border-radius: 0 10px 0 0;}
 .sicon.ico_x {background-image:url('../images/common/ico_x.svg');}
 
 .sicon.ico_print {background-image:url('../images/common/sico_print.svg');}
+.sicon.ico_print_w {background-image:url('../images/common/sico_print_w.svg');}
 .sicon.ico_save {background-image:url('../images/common/sico_save.svg');}
 
 .sicon.ico_calender {background-image:url('../images/common/ico_calender.svg');}
 .sicon.ico_time {background-image:url('../images/common/ico_time.svg');}
+
+.sicon.ico_excel {background-image:url('../images/common/excel.svg');}
 
 /* 네비게이션 아이콘 */
 .nicon {display:inline-block;width:20px;height:20px;margin:auto;background-repeat:no-repeat;background-position:50%;text-indent:-999px;font-size:0;overflow:hidden;}
