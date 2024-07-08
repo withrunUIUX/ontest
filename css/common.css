@@ -350,7 +350,7 @@ table thead th:last-child {border-radius: 0 10px 0 0;}
 .description {font-size:14px!important;font-weight:500;color:var(--gray_70)!important;}
 
 /* state 텍스트형 */
-.state.tx {width:auto;height:33px;border:.1rem solid;padding:8px;font-size:15px;line-height:1;border-radius:4px;font-weight:600;font-style:normal;text-indent:0;overflow:hidden;text-align:center;transition:var(--ani_time);}
+.state.tx {display:inline-flex;width:auto;height:33px;border:.1rem solid;padding:8px;font-size:15px;line-height:1;border-radius:4px;font-weight:600;font-style:normal;text-indent:0;overflow:hidden;text-align:center;transition:var(--ani_time);}
 .state.tx {color:var(--blue_80);border:.1rem solid var(--blue_40);background-color:var(--blue_10);} /*기본*/
 .state.tx.diff1 {color:var(--pink_m);border:.1rem solid var(--pink);background-color:var(--pink_10);}/*난이도 상*/
 .state.tx.diff2 {color:var(--green_90);border:.1rem solid var(--green_50);background-color:var(--green_10);}/*난이도 중*/
@@ -359,6 +359,8 @@ table thead th:last-child {border-radius: 0 10px 0 0;}
 .state.tx.score2 {color:#fff;border:.1rem solid var(--coral_80);background-color:var(--coral_80);}/*채점중*/
 .state.tx.score3 {color:var(--coral_90);border:.1rem solid var(--coral_40);background-color:var(--coral_20);}/*미완료*/
 .state.tx.end {color:#fff;border:.1rem solid var(--gray_50);background-color:var(--gray_50);}/*완료*/
+/*sm*/
+.state.tx.sm {height:auto;padding:6px;}
 /* 버튼일때 */
 button.state.tx.score1:hover,
 a.state.tx.score1:hover {background-color:var(--gray_30);}
