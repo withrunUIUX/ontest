@@ -353,5 +353,43 @@
 .expand_box .table_wrap {overflow-y:auto;max-height:414px;padding-right:.5rem;}
 
 
+/* 학급통계 */
+.average {}
+.average .layout {flex-direction:column;gap:3rem;}
+.average .layout > div {width:100%;}
+
+.average .class_info .class_info_item.num2 .state.tx {height:initial;line-height:1;padding:10px 12px;border:.1rem solid var(--blue_40);color:var(--blue_80);background-color:var(--blue_10);}
+
+.average_wrap {}
+.average_wrap .info_card {margin:1rem 0 0;}
+.average_wrap .info_card .card__item {position:relative;display:flex;gap:1rem;padding:2.2rem 2.6rem;}
+.average_wrap .info_card .card__item .item {display:flex;}
+.average_wrap .info_card .card__item .item.num1 {}
+.average_wrap .info_card .card__item .item.num1 > b {padding:.5rem 1rem;border-radius:50px;color:var(--gray_110);font-weight:800;background:var(--c_white);}
+.average_wrap .info_card .card__item .item.num2 {align-items:flex-end;gap:.5rem;padding:0;}
+.average_wrap .info_card .card__item .item.num2 > b {line-height:1;font-size:30px;color:var(--blue_90);}
+.average_wrap .info_card .card__item .item.num2 > em {line-height:1;font-size:18px;font-weight:500;color:var(--gray_80);}
+
+.average_wrap .info_card .card__item::after {content:'';position:absolute;right:1rem;bottom:1rem;display:inline-block;background-repeat:no-repeat;background-position:50%;}
+.average_wrap .info_card .card__item:nth-child(1)::after {width:86px;height:65px;background-image:url(../images/common/subject_ico1.png);}
+.average_wrap .info_card .card__item:nth-child(2)::after {width:86px;height:65px;background-image:url(../images/common/subject_ico2.png);}
+.average_wrap .info_card .card__item:nth-child(3)::after {width:86px;height:65px;background-image:url(../images/common/subject_ico3.png);}
+.average_wrap .info_card .card__item:nth-child(4)::after {width:86px;height:65px;background-image:url(../images/common/subject_ico4.png);}
+.average_wrap .info_card .card__item:nth-child(5)::after {width:86px;height:65px;background-image:url(../images/common/subject_ico5.png);}
+
+.average .table_wrap {max-height:initial;padding:0;}
+.average .table_wrap .below {color:var(--coral_80)}
+
+.average .classNum {min-width:60px;padding:10px 12px;border:.1rem solid var(--blue_90);border-radius:.2rem;color:var(--blue_90);background:#fff;}
+.average .classNum:hover {background:var(--blue_30);}
+
+
+
+
+
+
+
+
+
 
 
