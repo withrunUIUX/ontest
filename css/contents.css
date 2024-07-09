@@ -381,7 +381,7 @@
 .average_wrap .info_card .card__item:nth-child(5)::after {width:86px;height:65px;background-image:url(../images/common/subject_ico5.png);}
 
 .average .table_wrap {max-height:initial;padding:0;}
-.average .table_wrap .below {color:var(--coral_80)}
+.table_wrap .below {color:var(--coral_80)}/* 평균이하일때 학급통계, 세부결과에서 사용중*/
 
 .classNum {min-width:60px;padding:10px 12px;border:.1rem solid var(--blue_90);border-radius:.2rem;color:var(--blue_90);background:#fff;}
 .classNum:hover {background:var(--blue_30);}
@@ -435,20 +435,33 @@
 
 
 /* 학생별 통계 세부결과 */
-.result_wrap {}
-.result_wrap::after {content:'';position:absolute;left:0;top:0;display:block;width:100%;height:398px;background:var(--blue_10);}
+#content.result_wrap {padding:10rem 18rem 3rem;}
+.result_wrap::before {z-index:1;content:'';position:absolute;top:-60px;right:100px;width:457px;height:351px;background:url(../images/common/bg_result_wrap.png) 50% no-repeat;mix-blend-mode:multiply;}
+.result_wrap::after {content:'';position:absolute;left:0;top:0;display:block;width:100%;height:470px;background:var(--blue_10);}
 
+.result_wrap .layout {flex-direction:column;gap:5rem;}
 
+.result_wrap .sub_title {flex-direction:column;align-items:flex-start;gap:3rem;}
+.result_wrap .sub_title h1 {color:var(--blue_130)}
 
+.result_wrap .sub_title > .inner {display:flex;justify-content:space-between;width:100%;}
+.result_wrap .sub_title > .inner .student_info {margin:0}
+.result_wrap .sub_title > .inner .btn_group {margin:0}
+.result_wrap .sub_title > .inner .btn_group > a {gap:.2rem;color:var(--gray_70);font-weight:500;}
 
+.result_wrap .stat_tab .tab-header {margin-bottom:5rem;}
 
+.result_wrap .stat_tab .tab-body {padding:0;border:none;border-radius:initial;}
+.result_wrap .stat_tab .tab-body .title_box {margin-bottom:1rem;}
 
+.result_detail {margin-bottom:3rem;}
+.result_detail .detail_box {display:flex;width:100%;padding:3.5rem;border:.6rem solid var(--gray_30);border-radius:10px;}
 
+.result_detail.num2 .table_wrap {width:100%;}
 
-
-
-
-
+.result_detail.num3 {margin:0;}
+.result_detail.num3 .detail_box .table_wrap {width:36%}
+.result_detail.num3 .detail_box .graph_wrap {width:64%;min-height:460px;}
 
 
 
