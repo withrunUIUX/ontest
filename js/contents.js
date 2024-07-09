@@ -50,6 +50,23 @@ $(document).ready(function(){
         $("#" + activeTab).fadeIn();
     });
 
+	// 2번째 탭 컨텐츠 숨기기
+    $(".tabin-body").hide();
+    // 첫번째 탭콘텐츠 보이기
+    $(".tabin").each(function(){
+        $(this).children(".tabin-header").children("button").eq(0).addClass("active");
+        $(this).children(".tabin-body").eq(0).show();
+    });
+    //탭메뉴 클릭 이벤트
+    $(".tabin-header button").click(function(){
+        $(this).parent(".tabin-header").children("button").removeClass("active");
+        $(this).addClass("active");
+        
+        var activeTab = $(this).attr("rel");
+        $(this).parents(".tabin").children(".tabin-body").hide();
+        $("#" + activeTab).fadeIn();
+    });
+
     // 펼쳐보기
     $(".accordion").click(function(){
         $(this).toggleClass("on");
