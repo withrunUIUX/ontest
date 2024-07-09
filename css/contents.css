@@ -421,15 +421,16 @@
 .stat_tab .tab-body .graph_wrap .inner {min-height:445px;}
 .stat_tab .tab-body .graph_wrap .inner canvas {font-family: var(--f_scd);}
 
-.stat_tab .tab-body .legend_wrap ul {display:flex;align-items:center;justify-content:center;gap:.5rem;margin-top:.5rem;}
-.stat_tab .tab-body .legend_wrap ul li {display:flex;align-items:center;gap:.2rem;font-weight:600;font-family:var(--f_scd);cursor:pointer;}
-.stat_tab .tab-body .legend_wrap ul li > span {display:inline-block;width:16px;height:16px;border:.1rem solid #85C4FF;background-color:rgba(133, 196, 255, .3);}
-.stat_tab .tab-body .legend_wrap ul li:nth-child(1) {color:#1788F2;}
-.stat_tab .tab-body .legend_wrap ul li:nth-child(1) > span {}
-.stat_tab .tab-body .legend_wrap ul li:nth-child(2) {color:#D94E7C;}
-.stat_tab .tab-body .legend_wrap ul li:nth-child(2) > span {border-color:#E68EAB;background-color:rgba(255, 138, 172, .3);}
-.stat_tab .tab-body .legend_wrap ul li:nth-child(3) {color:#16BF97;}
-.stat_tab .tab-body .legend_wrap ul li:nth-child(3) > span {border:.1rem dashed #42D3B1;background-color:rgba(66, 211, 177, .3);}
+/* chart.js 범례 커스텀 :: 학생별 통계*/
+.tab-body .legend_wrap ul {display:flex;align-items:center;justify-content:center;gap:.5rem;margin-top:.5rem;}
+.tab-body .legend_wrap ul li {display:flex;align-items:center;gap:.2rem;font-weight:600;font-family:var(--f_scd);cursor:pointer;}
+.tab-body .legend_wrap ul li > span {display:inline-block;width:16px;height:16px;border:.1rem solid #85C4FF;background-color:rgba(133, 196, 255, .3);}
+.tab-body .legend_wrap ul li:nth-child(1) {color:#1788F2;}
+.tab-body .legend_wrap ul li:nth-child(1) > span {}
+.tab-body .legend_wrap ul li:nth-child(2) {color:#D94E7C;}
+.tab-body .legend_wrap ul li:nth-child(2) > span {border-color:#E68EAB;background-color:rgba(255, 138, 172, .3);}
+.tab-body .legend_wrap ul li:nth-child(3) {color:#16BF97;}
+.tab-body .legend_wrap ul li:nth-child(3) > span {border:.1rem dashed #42D3B1;background-color:rgba(66, 211, 177, .3);}
 
 .stat_tab .tab-body .btn_group {position:absolute;right:3.5rem;bottom:2rem;gap:.5rem;margin:1rem 0 0;}
 
@@ -464,7 +465,35 @@
 .result_detail.num3 .detail_box .graph_wrap {width:64%;min-height:460px;}
 
 
+/* 관리자 통계 */
+.manager_wrap {}
+.manager_wrap > .layout > .btn_group {z-index:11;position:absolute;top:0;right:0;margin:0;}
 
+.chart_group {display:flex;flex-wrap:wrap;column-gap:1rem;row-gap:2rem;}
+.chart_item {width: calc(50% - .5rem);border:.1rem solid var(--gray_40);border-radius:10px;overflow:hidden;}
+.chart_item.num5 {width:100%;}
 
+.chart_item .title_box {padding:1.5rem 2rem;background:var(--gray_20);}
+.chart_item .title_box .subtitle {font-size:18px;font-family:var(--f_scd);}
 
+.chart_item .title_box .tooltip_wrap {position:relative;}
+.chart_item .title_box .tooltip_wrap .tooltip {display:flex;justify-content:center;align-items:center;width:24px;height:24px;border-radius:24px;background-color:var(--gray_50);cursor:pointer;}
 
+.chart_item .title_box .tooltip_wrap .tooltip_box {display:none;position:absolute;top:20px;right:0;width:160px;padding:1rem;border:.1rem solid var(--gray_50);border-radius:10px;box-shadow:2px 2px 5px 1px rgba(0, 123, 255, 0.2);background:#fff;}
+.chart_item .title_box .tooltip_wrap .tooltip:hover + .tooltip_box {display:block;}
+.chart_item .title_box .tooltip_wrap .tooltip_box > p {font-size:14px;color:var(--gray_80);}
+
+.chart_item_con {padding:1.5rem 2rem;}
+
+.chart_item .total {display:flex;align-items:center;gap:.5rem;}
+.chart_item .total > em {display:inline-block;padding:.5rem 1rem;border-radius:35px;font-size:16px;font-weight:600;color:#fff;background:var(--blue_130);}
+.chart_item .total > span {font-size:30px;font-weight:800;font-family:var(--f_scd);color:var(--blue_130);}
+
+.chart_item_con .graph_wrap {min-height:300px;}
+
+/* chart.js 범례 커스텀 :: 관리자 통계*/
+.manager_wrap .tab-body .legend_wrap {margin:2rem 0 1rem;}
+.manager_wrap .tab-body .legend_wrap ul li:nth-child(3) > span {border:.1rem solid #FFAE35;background-color:rgba(255, 174, 53, .3);}
+.manager_wrap .tab-body .legend_wrap ul li:nth-child(4) > span {border-color:#42D3B1;background-color:rgba(66, 211, 177, .3);}
+.manager_wrap .tab-body .legend_wrap ul li:nth-child(5) > span {border-color:#C985FF;background-color:rgba(201, 133, 255, .3);}
+.manager_wrap .tab-body .legend_wrap ul li {font-weight:500;color:var(--gray_90);}
