@@ -236,7 +236,7 @@ table thead th:last-child {border-radius: 0 10px 0 0;}
 .tabs .tab-body{padding:0;}
 
 /* 아이콘 32*32 */
-.micon {display:inline-block;width:32px;height:32px;margin:auto;background-repeat:no-repeat;background-position:50%;text-indent:-999px;font-size:0;overflow:hidden;}
+.micon {display:inline-block;width:32px;height:32px;margin:0;background-repeat:no-repeat;background-position:50%;text-indent:-999px;font-size:0;overflow:hidden;}
 .micon.disabled {filter:brightness(2) grayscale(1);pointer-events:none;}
 .micon.ico1 {background-image:url('../images/common/mico_01.svg');}
 .micon.ico2 {background-image:url('../images/common/mico_02.svg');}
@@ -252,7 +252,7 @@ table thead th:last-child {border-radius: 0 10px 0 0;}
 .micon.ico12 {background-image:url('../images/common/mico_12.svg');}
 
 /* 아이콘 20*20 */
-.sicon {display:inline-block;width:20px;height:20px;margin:auto;background-repeat:no-repeat;background-position:50%;text-indent:-999px;font-size:0;overflow:hidden;}
+.sicon {display:inline-block;width:20px;height:20px;margin:0;background-repeat:no-repeat;background-position:50%;text-indent:-999px;font-size:0;overflow:hidden;}
 .sicon.disabled {filter:brightness(2) grayscale(1);pointer-events:none;}
 .sicon.ico1 {background-image:url('../images/common/sico_01.svg');}
 .sicon.ico2 {background-image:url('../images/common/sico_02.svg');}
@@ -274,20 +274,22 @@ table thead th:last-child {border-radius: 0 10px 0 0;}
 .sicon.ico_print_w {background-image:url('../images/common/sico_print_w.svg');}
 .sicon.ico_save {background-image:url('../images/common/sico_save.svg');}
 
+.sicon.ico_share {background-image:url('../images/common/sico_share.svg');}
+
 .sicon.ico_calender {background-image:url('../images/common/ico_calender.svg');}
 .sicon.ico_time {background-image:url('../images/common/ico_time.svg');}
 
 .sicon.ico_excel {background-image:url('../images/common/excel.svg');}
 
 /* 네비게이션 아이콘 */
-.nicon {display:inline-block;width:20px;height:20px;margin:auto;background-repeat:no-repeat;background-position:50%;text-indent:-999px;font-size:0;overflow:hidden;}
+.nicon {display:inline-block;width:20px;height:20px;margin:0;background-repeat:no-repeat;background-position:50%;text-indent:-999px;font-size:0;overflow:hidden;}
 .nicon.ico1 {background-image:url('../images/common/ico_navi01.svg');}
 .nicon.ico2 {background-image:url('../images/common/ico_navi02.svg');}
 .nicon.ico3 {background-image:url('../images/common/ico_navi03.svg');}
 .nicon.ico4 {background-image:url('../images/common/ico_navi04.svg');}
 
 /* 헤딩 아이콘 */
-.hico {display:inline-block;width:32px;height:32px;margin:auto;border-radius:32px;text-indent:-999px;overflow:hidden;background-repeat:no-repeat;background-position:50%;background-color:var(--blue_130);}
+.hico {display:inline-block;width:32px;height:32px;margin:0;border-radius:32px;text-indent:-999px;overflow:hidden;background-repeat:no-repeat;background-position:50%;background-color:var(--blue_130);}
 .hico.hico1 {background-image:url(../images/common/hico1.svg);}
 .hico.hico2 {background-image:url(../images/common/hico2.svg);}
 .hico.hico3 {background-image:url(../images/common/hico3.svg);}
@@ -295,7 +297,7 @@ table thead th:last-child {border-radius: 0 10px 0 0;}
 .hico.hico5 {background-image:url(../images/common/hico5.svg);}
 
 /* 기타 아이콘 */
-.icon {display:inline-block;margin:auto;background-repeat:no-repeat;background-position:50%;text-indent:-999px;font-size:0;overflow:hidden;}
+.icon {display:inline-block;margin:0;background-repeat:no-repeat;background-position:50%;text-indent:-999px;font-size:0;overflow:hidden;}
 .icon.arr_s {width:10px;height:10px;background-image:url('../images/common/arr_s.svg');}
 .icon.arr_m {width:13px;height:13px;background-image:url('../images/common/arr_m.svg');}
 .icon.arr_b {width:24px;height:24px;background-image:url('../images/common/arr_b.svg');}
@@ -307,7 +309,7 @@ table thead th:last-child {border-radius: 0 10px 0 0;}
 .icon.ico_plus {width:14px;height:14px;background-image:url('../images/common/ico_plus.svg');}
 
 /* 그래픽 아이콘 */
-.gicon {display:inline-block;margin:auto;background-repeat:no-repeat;background-position:50%;text-indent:-999px;font-size:0;overflow:hidden;}
+.gicon {display:inline-block;margin:0;background-repeat:no-repeat;background-position:50%;text-indent:-999px;font-size:0;overflow:hidden;}
 .gicon.ico1 {width:86px;height:65px;background-image:url('../images/common/subject_ico1.png');}
 .gicon.ico2 {width:87px;height:77px;background-image:url('../images/common/subject_ico2.png');}
 .gicon.ico3 {width:56px;height:73px;background-image:url('../images/common/subject_ico3.png');}
@@ -317,7 +319,7 @@ table thead th:last-child {border-radius: 0 10px 0 0;}
 .gicon.ico7 {width:66px;height:51px;background-image:url('../images/common/graphic_ico2.svg');}
 
 /* 채점 이미지 */
-.grade {display:inline-block;width:200px;height:152px;margin:auto;background-repeat:no-repeat;background-position:50%;text-indent:-999px;font-size:0;overflow:hidden;}
+.grade {display:inline-block;width:200px;height:152px;margin:0;background-repeat:no-repeat;background-position:50%;text-indent:-999px;font-size:0;overflow:hidden;}
 .grade.grade1 {background-image:url('../images/common/img_grade1.svg');}
 .grade.grade2 {background-image:url('../images/common/img_grade2.svg');}
 
@@ -327,7 +329,7 @@ table thead th:last-child {border-radius: 0 10px 0 0;}
 .bn_close.bk:hover {border:2px solid var(--gray_110);background-color: var(--gray_110);}
 
 /* 로고 */
-.ico_logo  {display:inline-block;width:102px;height:43px;margin:auto;background-repeat:no-repeat;background-position:50%;text-indent:-999px;font-size:0;overflow:hidden;}
+.ico_logo  {display:inline-block;width:102px;height:43px;margin:0;background-repeat:no-repeat;background-position:50%;text-indent:-999px;font-size:0;overflow:hidden;}
 .ico_logo.type1 {background-image:url('../images/common/logo.svg');}
 .ico_logo.type2 {background-image:url('../images/common/logo_w.svg');}
 .ico_logo.type3 {background-image:url('../images/common/logo_w2.svg');}
