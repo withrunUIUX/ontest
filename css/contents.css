@@ -434,3 +434,24 @@
 .stat_tab .tab-body .btn_group {position:absolute;right:3.5rem;bottom:2rem;gap:.5rem;margin:1rem 0 0;}
 
 
+/* 학생별 통계 세부결과 */
+.result_wrap {}
+.result_wrap::after {content:'';position:absolute;left:0;top:0;display:block;width:100%;height:398px;background:var(--blue_10);}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
