@@ -296,6 +296,14 @@ table thead th:last-child {border-radius: 0 10px 0 0;}
 .hico.hico4 {background-image:url(../images/common/hico4.svg);}
 .hico.hico5 {background-image:url(../images/common/hico5.svg);}
 
+/* 헤딩 아이콘2 */
+.hico2 {display:inline-block;width:24px;height:24px;margin:0;text-indent:-999px;background-repeat:no-repeat;background-position:50%;}
+.hico2.hico6 {background-image:url(../images/common/hico6.svg);}
+.hico2.hico7 {background-image:url(../images/common/hico7.svg);}
+.hico2.hico8 {background-image:url(../images/common/hico8.svg);}
+.hico2.hico9 {background-image:url(../images/common/hico9.svg);}
+.hico2.hico10 {background-image:url(../images/common/hico10.svg);}
+
 /* 기타 아이콘 */
 .icon {display:inline-block;margin:0;background-repeat:no-repeat;background-position:50%;text-indent:-999px;font-size:0;overflow:hidden;}
 .icon.arr_s {width:10px;height:10px;background-image:url('../images/common/arr_s.svg');}
