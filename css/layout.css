@@ -67,13 +67,13 @@
 #location .item:last-child::after {display:none;}
 #location .item.home > span {display:block;width:20px;height:20px;font-size:0;background-image:url(../images/common/sico_05.svg);background-size:90%;background-repeat:no-repeat;background-position:50%;}
 
-.sub_header .sub_title {display:flex;align-items:flex-end;gap:.5rem;}
-.sub_header .sub_title h1 {margin:1rem 0 0;color:var(--gray_130);font-size:38px;font-family:var(--f_scd);}
-.sub_header .sub_title p {color:var(--gray_70);font-weight:700;}
+.sub_title {display:flex;align-items:flex-end;gap:.5rem;}
+.sub_title h1 {margin:1rem 0 0;color:var(--gray_130);font-size:38px;font-family:var(--f_scd);}
+.sub_title p {color:var(--gray_70);font-weight:700;}
 
 /* 콘텐츠 */
 #content {width:100%;padding:4rem 5rem 3rem;}
-.layout {display:flex;gap:2rem;}
+.layout {z-index:1;position:relative;display:flex;gap:2rem;}
 
 
 
