@@ -319,7 +319,7 @@
 
 
 <script>
-        function createChart(ctx, legendContainerId, chartData) {
+    function createChart(ctx, legendContainerId, chartData) {
             var chart = new Chart(ctx, {
             type: 'bar',
             data: chartData,
@@ -344,7 +344,7 @@
                         ticks: { stepSize: 10 },
                     },
                     x: {
-                        grid: { color: 'transparent', },
+                        grid: { color: 'transparent'},
                     },
                 },
             },
@@ -381,177 +381,177 @@
     }
 
     var chartData1 = {
-            labels: ['3월 13일', '4월 1일', '4월 11일', '5월 1일', '6월 1일', '6월 12일', '7월 4일', '8월 1일', '9월 1일', '9월 10일', '12월 1일'],
-            datasets: [
-                {
-                    label: '점수',
-                    backgroundColor: 'rgba(133, 196, 255, .3)',
-                    borderWidth: 1,
-                    borderColor: 'rgba(133, 196, 255, 1)',
-                    barThickness: 20,
-                    borderRadius: 20,
-                    data: [20, 30, 60, 50, 40, 70, 60, 80, 90, 100, 90],
-                },
-                {
-                    label: '반평균',
-                    type: 'line',
-                    borderWidth: 1,
-                    backgroundColor: 'rgb(230, 142, 171)',
-                    borderColor: 'rgb(230, 142, 171)',
-                    data: [30, 60, 70, 60, 80, 90, 80, 95, 77, 80, 90],
-                },
-                {
-                    label: '성장',
-                    type: 'line',
-                    borderWidth: 1,
-                    borderDash: [4, 4],
-                    backgroundColor: 'rgb(66, 211, 177)',
-                    borderColor: 'rgb(66, 211, 177)',
-                    data: [20, 30, 60, 50, 40, 70, 60, 80, 90, 100, 90],
-                },
-            ]
-        };
+        labels: ['3월 13일', '4월 1일', '4월 11일', '5월 1일', '6월 1일', '6월 12일', '7월 4일', '8월 1일', '9월 1일', '9월 10일', '12월 1일'],
+        datasets: [
+            {
+                label: '점수',
+                backgroundColor: 'rgba(133, 196, 255, .3)',
+                borderWidth: 1,
+                borderColor: 'rgba(133, 196, 255, 1)',
+                barThickness: 20,
+                borderRadius: 20,
+                data: [20, 30, 60, 50, 40, 70, 60, 80, 90, 100, 90],
+            },
+            {
+                label: '반평균',
+                type: 'line',
+                borderWidth: 1,
+                backgroundColor: 'rgb(230, 142, 171)',
+                borderColor: 'rgb(230, 142, 171)',
+                data: [30, 60, 70, 60, 80, 90, 80, 95, 77, 80, 90],
+            },
+            {
+                label: '성장',
+                type: 'line',
+                borderWidth: 1,
+                borderDash: [4, 4],
+                backgroundColor: 'rgb(66, 211, 177)',
+                borderColor: 'rgb(66, 211, 177)',
+                data: [20, 30, 60, 50, 40, 70, 60, 80, 90, 100, 90],
+            },
+        ]
+    };
 
-        var chartData2 = {
-            labels: ['1월 1일', '2월 1일', '3월 1일', '4월 1일', '5월 1일', '6월 1일', '7월 1일', '8월 1일', '9월 1일', '10월 1일'],
-            datasets: [
-                {
-                    label: '점수',
-                    backgroundColor: 'rgba(133, 196, 255, .3)',
-                    borderWidth: 1,
-                    borderColor: 'rgba(133, 196, 255, 1)',
-                    barThickness: 20,
-                    borderRadius: 20,
-                    data: [20, 30, 60, 50, 40, 70, 60, 80, 90, 100],
-                },
-                {
-                    label: '반평균',
-                    type: 'line',
-                    borderWidth: 1,
-                    backgroundColor: 'rgb(230, 142, 171)',
-                    borderColor: 'rgb(230, 142, 171)',
-                    data: [30, 60, 70, 60, 80, 90, 80, 95, 77, 80],
-                },
-                {
-                    label: '성장',
-                    type: 'line',
-                    borderWidth: 1,
-                    borderDash: [4, 4],
-                    backgroundColor: 'rgb(66, 211, 177)',
-                    borderColor: 'rgb(66, 211, 177)',
-                    data: [20, 30, 60, 50, 40, 70, 60, 80, 90, 100],
-                },
-            ]
-        };
+    var chartData2 = {
+        labels: ['1월 1일', '2월 1일', '3월 1일', '4월 1일', '5월 1일', '6월 1일', '7월 1일', '8월 1일', '9월 1일', '10월 1일'],
+        datasets: [
+            {
+                label: '점수',
+                backgroundColor: 'rgba(133, 196, 255, .3)',
+                borderWidth: 1,
+                borderColor: 'rgba(133, 196, 255, 1)',
+                barThickness: 20,
+                borderRadius: 20,
+                data: [20, 30, 60, 50, 40, 70, 60, 80, 90, 100],
+            },
+            {
+                label: '반평균',
+                type: 'line',
+                borderWidth: 1,
+                backgroundColor: 'rgb(230, 142, 171)',
+                borderColor: 'rgb(230, 142, 171)',
+                data: [30, 60, 70, 60, 80, 90, 80, 95, 77, 80],
+            },
+            {
+                label: '성장',
+                type: 'line',
+                borderWidth: 1,
+                borderDash: [4, 4],
+                backgroundColor: 'rgb(66, 211, 177)',
+                borderColor: 'rgb(66, 211, 177)',
+                data: [20, 30, 60, 50, 40, 70, 60, 80, 90, 100],
+            },
+        ]
+    };
 
-        var chartData3 = {
-            labels: ['1월 1일', '2월 1일', '3월 1일', '4월 1일',],
-            datasets: [
-                {
-                    label: '점수',
-                    backgroundColor: 'rgba(133, 196, 255, .3)',
-                    borderWidth: 1,
-                    borderColor: 'rgba(133, 196, 255, 1)',
-                    barThickness: 20,
-                    borderRadius: 20,
-                    data: [20, 30, 60, 50, 40, 70, 60, 80, 90, 100],
-                },
-                {
-                    label: '반평균',
-                    type: 'line',
-                    borderWidth: 1,
-                    backgroundColor: 'rgb(230, 142, 171)',
-                    borderColor: 'rgb(230, 142, 171)',
-                    data: [30, 60, 70, 60, 80, 90, 80, 95, 77, 80],
-                },
-                {
-                    label: '성장',
-                    type: 'line',
-                    borderWidth: 1,
-                    borderDash: [4, 4],
-                    backgroundColor: 'rgb(66, 211, 177)',
-                    borderColor: 'rgb(66, 211, 177)',
-                    data: [20, 30, 60, 50, 40, 70, 60, 80, 90, 100],
-                },
-            ]
-        };
+    var chartData3 = {
+        labels: ['1월 1일', '2월 1일', '3월 1일', '4월 1일',],
+        datasets: [
+            {
+                label: '점수',
+                backgroundColor: 'rgba(133, 196, 255, .3)',
+                borderWidth: 1,
+                borderColor: 'rgba(133, 196, 255, 1)',
+                barThickness: 20,
+                borderRadius: 20,
+                data: [20, 30, 60, 50, 40, 70, 60, 80, 90, 100],
+            },
+            {
+                label: '반평균',
+                type: 'line',
+                borderWidth: 1,
+                backgroundColor: 'rgb(230, 142, 171)',
+                borderColor: 'rgb(230, 142, 171)',
+                data: [30, 60, 70, 60, 80, 90, 80, 95, 77, 80],
+            },
+            {
+                label: '성장',
+                type: 'line',
+                borderWidth: 1,
+                borderDash: [4, 4],
+                backgroundColor: 'rgb(66, 211, 177)',
+                borderColor: 'rgb(66, 211, 177)',
+                data: [20, 30, 60, 50, 40, 70, 60, 80, 90, 100],
+            },
+        ]
+    };
 
-        var chartData4 = {
-            labels: ['1월 1일', '2월 1일', '3월 1일', '4월 1일', '5월 1일', '6월 1일', '7월 1일',],
-            datasets: [
-                {
-                    label: '점수',
-                    backgroundColor: 'rgba(133, 196, 255, .3)',
-                    borderWidth: 1,
-                    borderColor: 'rgba(133, 196, 255, 1)',
-                    barThickness: 20,
-                    borderRadius: 20,
-                    data: [20, 30, 60, 50, 40, 70, 60, 80, 90, 100],
-                },
-                {
-                    label: '반평균',
-                    type: 'line',
-                    borderWidth: 1,
-                    backgroundColor: 'rgb(230, 142, 171)',
-                    borderColor: 'rgb(230, 142, 171)',
-                    data: [30, 60, 70, 60, 80, 90, 80, 95, 77, 80],
-                },
-                {
-                    label: '성장',
-                    type: 'line',
-                    borderWidth: 1,
-                    borderDash: [4, 4],
-                    backgroundColor: 'rgb(66, 211, 177)',
-                    borderColor: 'rgb(66, 211, 177)',
-                    data: [20, 30, 60, 50, 40, 70, 60, 80, 90, 100],
-                },
-            ]
-        };
+    var chartData4 = {
+        labels: ['1월 1일', '2월 1일', '3월 1일', '4월 1일', '5월 1일', '6월 1일', '7월 1일',],
+        datasets: [
+            {
+                label: '점수',
+                backgroundColor: 'rgba(133, 196, 255, .3)',
+                borderWidth: 1,
+                borderColor: 'rgba(133, 196, 255, 1)',
+                barThickness: 20,
+                borderRadius: 20,
+                data: [20, 30, 60, 50, 40, 70, 60, 80, 90, 100],
+            },
+            {
+                label: '반평균',
+                type: 'line',
+                borderWidth: 1,
+                backgroundColor: 'rgb(230, 142, 171)',
+                borderColor: 'rgb(230, 142, 171)',
+                data: [30, 60, 70, 60, 80, 90, 80, 95, 77, 80],
+            },
+            {
+                label: '성장',
+                type: 'line',
+                borderWidth: 1,
+                borderDash: [4, 4],
+                backgroundColor: 'rgb(66, 211, 177)',
+                borderColor: 'rgb(66, 211, 177)',
+                data: [20, 30, 60, 50, 40, 70, 60, 80, 90, 100],
+            },
+        ]
+    };
 
-        var chartData5 = {
-            labels: ['1월 1일', '2월 1일', '3월 1일', '4월 1일', '5월 1일', '6월 1일', '7월 1일',],
-            datasets: [
-                {
-                    label: '점수',
-                    backgroundColor: 'rgba(133, 196, 255, .3)',
-                    borderWidth: 1,
-                    borderColor: 'rgba(133, 196, 255, 1)',
-                    barThickness: 20,
-                    borderRadius: 20,
-                    data: [20, 30, 60, 50, 40, 70, 60, 80, 90, 100],
-                },
-                {
-                    label: '반평균',
-                    type: 'line',
-                    borderWidth: 1,
-                    backgroundColor: 'rgb(230, 142, 171)',
-                    borderColor: 'rgb(230, 142, 171)',
-                    data: [30, 60, 70, 60, 80, 90, 80, 95, 77, 80],
-                },
-                {
-                    label: '성장',
-                    type: 'line',
-                    borderWidth: 1,
-                    borderDash: [4, 4],
-                    backgroundColor: 'rgb(66, 211, 177)',
-                    borderColor: 'rgb(66, 211, 177)',
-                    data: [20, 30, 60, 50, 40, 70, 60, 80, 90, 100],
-                },
-            ]
-        };
+    var chartData5 = {
+        labels: ['1월 1일', '2월 1일', '3월 1일', '4월 1일', '5월 1일', '6월 1일', '7월 1일',],
+        datasets: [
+            {
+                label: '점수',
+                backgroundColor: 'rgba(133, 196, 255, .3)',
+                borderWidth: 1,
+                borderColor: 'rgba(133, 196, 255, 1)',
+                barThickness: 20,
+                borderRadius: 20,
+                data: [20, 30, 60, 50, 40, 70, 60, 80, 90, 100],
+            },
+            {
+                label: '반평균',
+                type: 'line',
+                borderWidth: 1,
+                backgroundColor: 'rgb(230, 142, 171)',
+                borderColor: 'rgb(230, 142, 171)',
+                data: [30, 60, 70, 60, 80, 90, 80, 95, 77, 80],
+            },
+            {
+                label: '성장',
+                type: 'line',
+                borderWidth: 1,
+                borderDash: [4, 4],
+                backgroundColor: 'rgb(66, 211, 177)',
+                borderColor: 'rgb(66, 211, 177)',
+                data: [20, 30, 60, 50, 40, 70, 60, 80, 90, 100],
+            },
+        ]
+    };
 
-        var chart1 = createChart(document.getElementById('averageChart1').getContext('2d'), 'custom-legend1', chartData1);
-        var chart2 = createChart(document.getElementById('averageChart2').getContext('2d'), 'custom-legend2', chartData2);
-        var chart3 = createChart(document.getElementById('averageChart3').getContext('2d'), 'custom-legend3', chartData3);
-        var chart4 = createChart(document.getElementById('averageChart4').getContext('2d'), 'custom-legend4', chartData4);
-        var chart5 = createChart(document.getElementById('averageChart5').getContext('2d'), 'custom-legend5', chartData5);
+    var chart1 = createChart(document.getElementById('averageChart1').getContext('2d'), 'custom-legend1', chartData1);
+    var chart2 = createChart(document.getElementById('averageChart2').getContext('2d'), 'custom-legend2', chartData2);
+    var chart3 = createChart(document.getElementById('averageChart3').getContext('2d'), 'custom-legend3', chartData3);
+    var chart4 = createChart(document.getElementById('averageChart4').getContext('2d'), 'custom-legend4', chartData4);
+    var chart5 = createChart(document.getElementById('averageChart5').getContext('2d'), 'custom-legend5', chartData5);
 
-        document.getElementById('custom-legend1').innerHTML = chart1.generateLegend();
-        document.getElementById('custom-legend2').innerHTML = chart2.generateLegend();
-        document.getElementById('custom-legend3').innerHTML = chart3.generateLegend();
-        document.getElementById('custom-legend4').innerHTML = chart4.generateLegend();
-        document.getElementById('custom-legend5').innerHTML = chart5.generateLegend();
-            
+    document.getElementById('custom-legend1').innerHTML = chart1.generateLegend();
+    document.getElementById('custom-legend2').innerHTML = chart2.generateLegend();
+    document.getElementById('custom-legend3').innerHTML = chart3.generateLegend();
+    document.getElementById('custom-legend4').innerHTML = chart4.generateLegend();
+    document.getElementById('custom-legend5').innerHTML = chart5.generateLegend();
+                
 
     //그래프 가로 사이즈 조절
     const container = document.querySelector('#graph_wrap1');
@@ -588,7 +588,6 @@
     const newWidth5 = 1000 + (totalLables5 - 10) * 30;
     container5.style.width = newWidth5 + 'px';
     };
-
 
 </script>
 
