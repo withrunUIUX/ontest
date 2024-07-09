@@ -1,20 +1,8 @@
 function modalOpen(modal_id){
     $('.modal' + '#' + modal_id).css({display: 'flex'});
-    /*if(typeof modal_open !== 'undefined'){
-        modal_open = true;
-    }*/
 }
-
 function modalClose(modal_id){
     $('.modal' + '#' + modal_id).css({display: 'none'});
-    /*if(typeof modal_open !== 'undefined'){
-        modal_open = false;
-    }*/
-}
-
-//모달화면 위로가기
-function popupTop(){
-    $('.pop-test-wrap').animate({scrollTop:0}, 300);
 }
 
 $(document).ready(function(){
@@ -75,5 +63,15 @@ $(document).ready(function(){
         } else {
             $(".accgrap").show();
         }
+    });
+
+    //커스텀 selectbox
+    $(document).on('click', '.designSelect', function(event){
+        $(this).toggleClass('on');
+    });
+
+    $(document).on("click", ".lists a", function(){
+        var ht = $(this).html();
+        $(this).parents(".designSelect").find("strong").children("a").html(ht);
     });
 });
