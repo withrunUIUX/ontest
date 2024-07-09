@@ -232,8 +232,17 @@ table thead th:last-child {border-radius: 0 10px 0 0;}
 .tabs .tab-header > a,
 .tabs .tab-header > button {position:relative;min-width:14rem;margin-left:-1px;padding:1rem 1.5rem;border:1px solid var(--gray_50);border-bottom:0;border-radius:10px 10px 0 0;font-size:1.1rem;font-weight:600;color:var(--gray_70);font-family:var(--f_ptd);background-color:var(--c_white);cursor:pointer;}
 .tabs .tab-header > a.active,
-.tabs .tab-header > button.active {z-index:10;color:var(--c_white);background:var(--blue_130);}
+.tabs .tab-header > button.active {z-index:10;color:var(--c_white);border-color:var(--blue_130);background:var(--blue_130);}
 .tabs .tab-body{padding:0;}
+
+/* tab in tab */
+.tabin {width:100%}
+.tabin .tabin-header {position:relative;display:flex;align-items:center;justify-content:center;gap:.5rem;margin-bottom:3rem;}
+.tabin .tabin-header > a,
+.tabin .tabin-header > button {position:relative;min-width:10rem;padding:1rem 1.5rem;border:1px solid var(--gray_50);border-radius:10px;font-size:1.1rem;font-weight:600;color:var(--gray_70);font-family:var(--f_ptd);background-color:var(--c_white);cursor:pointer;}
+.tabin .tabin-header > a.active,
+.tabin .tabin-header > button.active {z-index:10;color:var(--c_white);border-color:var(--blue_100);background:var(--blue_100);}
+.tabin .tabin-body{padding:0;}
 
 /* 아이콘 32*32 */
 .micon {display:inline-block;width:32px;height:32px;margin:0;background-repeat:no-repeat;background-position:50%;text-indent:-999px;font-size:0;overflow:hidden;}
