@@ -72,7 +72,7 @@
 .sub_title p {color:var(--gray_70);font-weight:700;}
 
 /* 콘텐츠 */
-#content {width:100%;padding:4rem 5rem 3rem;}
+#content {width:100%;padding:4rem 5rem 8rem;}
 .layout {z-index:1;position:relative;display:flex;gap:2rem;}
 
 
