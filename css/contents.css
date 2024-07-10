@@ -262,19 +262,19 @@
 
 
 /* 정답보기 모달팝업 */
-#modal-answerSee {}
-#modal-answerSee .modal-content .popup-wrap {gap:.4rem;}
-#modal-answerSee .modal-content .popup-wrap h3 {font-size:24px;font-weight:600;color:var(--gray_90);font-family:var(--f_scd);}
-#modal-answerSee .modal-content .popup-wrap h3::before {width:32px;height:32px;background-image:url(../images/common/mico_10.svg);}
+.answerPop {}
+.answerPop .modal-content .popup-wrap {gap:.4rem;}
+.answerPop .modal-content .popup-wrap h3 {font-size:24px;font-weight:600;color:var(--gray_90);font-family:var(--f_scd);}
+.answerPop .modal-content .popup-wrap h3::before {width:32px;height:32px;background-image:url(../images/common/mico_10.svg);}
 
-#modal-answerSee .modal-content .popup-wrap .con-wrap {flex-direction:column;gap:1rem;}
+.answerPop .modal-content .popup-wrap .con-wrap {flex-direction:column;gap:1rem;}
 
-#modal-answerSee .answerSee_info {display:flex;flex-direction:column;gap:.2rem;}
-#modal-answerSee .answerSee_info li {font-size:18px;font-weight:600;color:var(--gray_70);}
+.answerPop .answerSee_info {display:flex;flex-direction:column;gap:.2rem;}
+.answerPop .answerSee_info li {font-size:18px;font-weight:600;color:var(--gray_70);}
 
-#modal-answerSee .answerSee_item {display:flex;align-items:center;justify-content:center;min-height:140px;padding:2rem;border:.1rem solid var(--gray_30);border-radius:12px;font-size:16px;font-weight:600;color:var(--gray_90);background-color:var(--gray_10);}
-#modal-answerSee .answerSee_item * {font-size:16px;font-weight:600;color:var(--gray_90);}
-#modal-answerSee .answerSee_item > img {}
+.answerPop .answerSee_item {display:flex;align-items:center;justify-content:center;min-height:140px;padding:2rem;border:.1rem solid var(--gray_30);border-radius:12px;font-size:16px;font-weight:600;color:var(--gray_90);background-color:var(--gray_10);}
+.answerPop .answerSee_item * {font-size:16px;font-weight:600;color:var(--gray_90);}
+.answerPop .answerSee_item > img {}
 
 
 /* 학급관리 */
