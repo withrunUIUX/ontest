@@ -1,9 +1,9 @@
-function modalOpen(modal_id){
-    $('.modal' + '#' + modal_id).css({display: 'flex'});
-}
-function modalClose(modal_id){
-    $('.modal' + '#' + modal_id).css({display: 'none'});
-}
+// function modalOpen(modal_id){
+//     $('.modal' + '#' + modal_id).css({display: 'flex'});
+// }
+// function modalClose(modal_id){
+//     $('.modal' + '#' + modal_id).css({display: 'none'});
+// }
 
 $(document).ready(function(){
 	//체크박스 전체 선택, 해제
@@ -74,4 +74,17 @@ $(document).ready(function(){
         var ht = $(this).html();
         $(this).parents(".designSelect").find("strong").children("a").html(ht);
     });
+
+    //모달팝업 열기
+    $(document).on("click", "#popup_btn", function(){
+        sign_index = $("#popup_btn").index(this);
+        $("#popup_opne").addClass("active");
+        $('body').addClass('open');
+    });
+    //모달팝업 닫기
+    $(".modal-close").on("click",function(){
+        $("#popup_opne").removeClass("active");
+        $("body").removeClass("open").removeAttr("style");
+    });
+
 });
