@@ -1,4 +1,7 @@
 <footer class="inner">
+    <div class="floating">
+        <a href="#wrap" class="btn_top">상단위로 이동</a>
+    </div>
     <div class="footer_l">
         <div class="guide_list">
             <a href="#">이용안내</a>
@@ -29,4 +32,22 @@
         </div>
     </div>
 </footer>
+
+<script>
+    // top_btn
+    $(function () {
+        // Floating
+        $.fn.floating = function(){
+            var $window = $(window),$target = $('.btn_top');
+                $window.scroll(function() {
+                    ($window.scrollTop() > 100) ? $target.addClass('show') : $target.removeClass('show');
+                });
+            $('.btn_top').on('click', function(e) {
+                e.preventDefault();
+                $('html, body').animate({scrollTop:0}, 300);
+            });
+        }
+        $.fn.floating();
+    });
+</script>
 
