@@ -31,6 +31,13 @@
 #footer .designSelect .lists ul li a:hover {color:var(--blue_100)}
 #footer .designSelect .lists ul li a span.bullet.num.gr:hover{border-color:var(--blue_10);color:var(--blue_100);background:var(--blue_10);}
 
+/* topBtn */
+#footer .floating{position:fixed;bottom:34px;right:10px;z-index:99}
+#footer .floating *{transition:all 0.5s cubic-bezier(0.390, 0.575, 0.565, 1.000)}
+#footer .floating a{display:block;position:relative;width:50px;height:50px;border-radius:56px;font-size:0;background:var(--gray_70) url('../images/common/topbtn.svg') no-repeat 50% 50%;}
+#footer .floating .btn_top{margin-top:-60px;opacity:0;transform:scale(0,0)}
+#footer .floating .btn_top.show{margin-top:20px;opacity:1;transform:scale(1,1)}
+
 
 /* 메뉴 */
 .gnb {width:100%;height:100%;z-index:9997;transition:.5s right;}
