@@ -500,10 +500,33 @@
         </div>
 
         <div class="btn_group">
-            <button type="submit" class="btn btn-ani btn-secondary">임시저장</button>
-            <a href="/sub0202.html" class="btn btn-ani btn-primary">미리보기</a>
+            <button type="submit" class="btn btn-ani btn-secondary lg">임시저장</button>
+            <a class="btn btn-ani btn-primary lg" id="popup_btn">미리보기</a>
         </div>
     </section>
+
+    <!--문항추가 안내팝업-->
+    <div class="modal type2 modal-popup answerPop" id="popup_opne">
+        <div class="modal-background is-click-disabled"></div>
+        <div class="modal-content">
+            <div class="popup-wrap">
+                <div class="con-head">
+                    <h3>안내</h3>
+                </div>
+                <div class="con-wrap">
+                    <p>
+                        설정한 문항 수보다 적은 문항이 출제됩니다.<br>
+                        <b>타 출판사를 추가하면 설정한 문항 수대로 출제 가능</b>합니다.<br>
+                        타 출판사도 추가하시겠습니까?
+                    </p>
+                    <div class="btn_group">
+                        <a href="/sub0202.html" class="btn btn-ani btn-secondary">추가안함</a>
+                        <a href="/sub0201.html" class="btn btn-ani btn-primary">문항추가</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!--//문항추가 안내팝업-->
 
 
 <!--[include]HEADER :: Start -->
