@@ -139,7 +139,7 @@
             <div class="publish_prev grading" id="grading_prev_wrap">
 
                 <!--정답보기 팝업-->
-                <div class="modal modal-popup" id="modal-answerSee">
+                <div class="modal modal-popup answerPop" id="popup_opne">
                     <div class="modal-background is-click-disabled"></div>
                     <div class="modal-content">
                         <button type="button" class="modal-close bn_close bk"></button>
@@ -161,7 +161,7 @@
                 </div><!--//정답보기 팝업-->
 
                 <div class="btn_group">
-                    <span class="answerBtn see" id="answerSee"><i></i>정답보기</span>
+                    <a class="answerBtn see" id="popup_btn"><i></i>정답보기</a>
                     <div id="answerEdit_wrap">
                         <a class="answerBtn edit" id="answerBtn_slide" href="#"><i></i>채점수정</a>
                         <div class="editBtn_wrap">
@@ -299,17 +299,6 @@
     }
     answerBtn_slide();
 
-    //모달팝업 열기 -- 정답보기
-    $(document).on("click", "#answerSee", function(){
-        sign_index = $("#answerSee").index(this);
-        $("#modal-answerSee").addClass("active");
-        $('body').addClass('open');
-    });
-    //모달팝업 닫기 -- 정답보기
-    $(".modal-close").on("click",function(){
-        $("#modal-answerSee").removeClass("active");
-        $("body").removeClass("open").removeAttr("style");
-    });
 </script>
 
 </body>
