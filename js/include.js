@@ -5,4 +5,5 @@ $(function(){
 
     //문항페이지
     $("#question_header").load("../include/question_header.html"); 
+    $("#question_footer").load("../include/question_footer.html"); 
 });
