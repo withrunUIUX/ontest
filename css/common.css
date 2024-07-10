@@ -426,6 +426,7 @@ a.state.tx.end:hover {border:.1rem solid var(--gray_60);background-color:var(--g
 
 
 /* 모달팝업 레이아웃 */
+body.open:has(.modal.type2) {overflow:hidden;} /*모달tpye2 일때 body 스크롤 안되게*/
 .modal {z-index:100;position:absolute;display:none;justify-content:center;align-items:center;width:100%;height:auto;min-height:100%;left:0;top:0;background:rgba(0, 0, 0, 0.5);}
 .modal.active{display:flex;display:-webkit-flex;}
 .modal-background {position:absolute;bottom:0;left:0;right:0;top:0;background-color:rgb(10 10 10 / 10%);pointer-events: none;}
@@ -436,4 +437,13 @@ a.state.tx.end:hover {border:.1rem solid var(--gray_60);background-color:var(--g
 .modal-content .popup-wrap .con-head h3 {display:flex;align-items:center;gap:.2rem;margin:1rem 0;font-weight:800;line-height:1;color:var(--c_primary_m);font-family:var(--f_eli);}
 .modal-content .popup-wrap .con-head h3::before {content:'';display:inline-block;}
 .modal-content .popup-wrap .con-wrap {display:flex;}
+
+.modal.type2 {position:fixed;}
+.modal.type2 .modal-content .popup-wrap h3::before {background-image:url('../images/common/mico_09.svg');}
+.modal.type2 .modal-content .popup-wrap .con-wrap {gap:2rem;}
+.modal.type2 .modal-content .popup-wrap .con-wrap > p {font-size:18px;font-weight:700;color:var(--gray_110);text-align:center;line-height:1.5;}
+.modal.type2 .modal-content .popup-wrap .con-wrap > p > b {color:var(--blue_90)}
+.modal.type2 .modal-content .popup-wrap .con-wrap .btn_group {margin:0;}
+
+
 
