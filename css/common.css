@@ -341,7 +341,7 @@ table thead th:last-child {border-radius: 0 10px 0 0;}
 .grade.grade2 {background-image:url('../images/common/img_grade2.svg');}
 
 /* 닫기 버튼 */
-.bn_close {width:36px;height:36px;border-radius:20rem;border:2px solid var(--gray_90);background:#fff url('../images/common/ico_close.svg') no-repeat 50% 50%;}
+.bn_close {width:36px;height:36px;border-radius:20rem;border:2px solid var(--gray_90);text-indent:-999px;font-size:0;background:#fff url('../images/common/ico_close.svg') no-repeat 50% 50%;}
 .bn_close.bk {background:var(--gray_90) url('../images/common/ico_close_w.svg') no-repeat 50% 50%; transition: var(--ani_time);}
 .bn_close.bk:hover {border:2px solid var(--gray_110);background-color: var(--gray_110);}
 
