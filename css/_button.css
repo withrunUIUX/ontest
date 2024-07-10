@@ -403,7 +403,7 @@ fieldset:disabled a.btn {pointer-events: none;}
 .btn.btn-ico .ico{margin:0 2px 0 -2px;}
 
 .btn-group-lg > .btn,
-.lg {padding:14px 22px;line-height:1;font-weight:800;}
+.lg {padding:14px 22px;line-height:1;font-weight:800;font-size:18px;}
 .btn-group-sm > .btn,
 .sm {padding:.6rem 1rem;font-size:0.9rem;line-height:1;border-radius: 0.2rem;}
 
