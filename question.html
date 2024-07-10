@@ -17,7 +17,7 @@
         <script type="text/javascript" src="/js/chart.js"></script> -->
 
         <script type="text/javascript" src="/js/include.js"></script>
-        <!-- <script type="text/javascript" src="/js/contents.js"></script> -->
+        <script type="text/javascript" src="/js/contents.js"></script>
 
     </head>
 
@@ -27,8 +27,8 @@
 <div id="question_header"></div>
 <!--[include]HEADER :: End -->
 
-<main id="container" class="question">
-    <div class="question_content" style="width: 100%; display: inline-block;">
+<div id="container" class="question">
+    <div class="question_content">
         <h4 class="q_tit">
             <em class="question_number">1번</em>
             <span class="txt">가방의 수에 따른 국어책의 수와 수학책의 수를 나눗셈으로 비교하려고 합니다. 알맞은 말을 골라 ○표 하세요.</span> 
@@ -90,13 +90,72 @@
             </div>
         </div>
     </div>
-    <div id="question_footer">
-        <button class="btn btn-secondary save_prev">이전문제<i class="icon arr_b"></i></button>
-        <button class="btn btn-primary save_next">저장 후 다음문제<i class="icon arr_b"></i></button>
-        <!-- <button class="btn btn-primary save_send">저장 후 완료하기<i class="icon arr_b"></i></button> -->
-    </div>
-</main>
+</div>
 
+<!--[include]FOOTER :: Start -->
+<div id="question_footer"></div>
+<!--[include]FOOTER :: End -->    
+
+<!--제출팝업 :: 미답변 있을때-->
+<div class="modal modal-popup question_modal" id="popup_opne">
+    <div class="modal-background is-click-disabled"></div>
+    <div class="modal-content">
+        <div class="popup-wrap">
+            <span class="flag"><span>1단원</span></span>
+            <div class="con-head">
+                <h3><i class="micon ico2"></i>5학년 1학기</h3>
+            </div>
+            <div class="con-wrap">
+                <strong><em>미답변</em> 문항이 있습니다. <br>그대로 답안을 제출하시겠습니까?</strong>
+                <div class="no_answer">
+                    <span>미답변</span>
+                    <ul class="no_answer_list">
+                        <li class="no_answer_item">2</li>
+                        <li class="no_answer_item">3</li>
+                        <li class="no_answer_item">12</li>
+                    </ul>
+                </div>
+                <div class="btn_group">
+                    <button type="button" class="btn btn-ani btn-secondary modal-close">제출취소</button>
+                    <a class="btn btn-ani btn-primary" id="popup_btn2">제출하기</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--제출팝업 :: 완료 -->
+<div class="modal modal-popup question_modal" id="popup_opne2">
+    <div class="modal-background is-click-disabled"></div>
+    <div class="modal-content">
+        <div class="popup-wrap">
+            <span class="flag"><span>1단원</span></span>
+            <div class="con-head">
+                <h3><i class="micon ico2"></i>5학년 1학기</h3>
+            </div>
+            <div class="con-wrap">
+                <span class="confirm_img"></span>
+                <strong><em>답안</em> 제출이 완료 되었습니다.</strong>
+                <div class="btn_group">
+                    <button type="button" class="btn btn-ani btn-primary modal-close">확인</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    //제출팝업 :: 완료 팝업 열기
+    $(document).on("click", "#popup_btn2", function(){
+        sign_index = $("#popup_btn2").index(this);
+        $("#popup_opne2").addClass("active");
+    });
+    //제출팝업 :: 완료 팝업 닫기
+    $(".modal-close").on("click",function(){
+        $("#popup_opne2").removeClass("active");
+    });
+</script>
 
 </body>
 </html>
