@@ -77,7 +77,7 @@
                             <i class="hico hico1"></i>
                             문제목록
                         </strong>
-                        <button type="submit" class="btn btn-ani btn-quaternary"><i class="sicon ico3"></i>선택삭제</button>
+                        <button type="submit" class="btn btn-ani btn-quaternary" id="popup_btn"><i class="sicon ico3"></i>선택삭제</button>
                     </div>
                    
                     <div class="table_wrap">
@@ -404,6 +404,32 @@
             <a href="/sub0203.html" class="btn btn-ani btn-primary lg">문제저장</a>
         </div>
     </section>
+
+
+    <!--삭제 안내팝업-->
+    <div class="modal type2 modal-popup answerPop" id="popup_opne">
+        <div class="modal-background is-click-disabled"></div>
+        <div class="modal-content">
+            <div class="popup-wrap">
+                <div class="con-head">
+                    <h3>선택한 문항을 삭제 하시겠습니까?</h3>
+                </div>
+                <div class="con-wrap">
+                    <ul class="delete_box">
+                        <li>문항번호 : 1</li>
+                        <li>평가내용 : 대화의 특성파악</li>
+                        <li>난이도 : 중</li>
+                        <li>배점 : 4</li>
+                    </ul>
+                    <div class="btn_group">
+                        <a href="/sub0202.html" class="btn btn-ani btn-secondary">취소</a>
+                        <a href="/sub0202.html" class="btn btn-ani btn-primary">삭제</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!--//삭제 안내팝업-->
+
 
 <!--[include]HEADER :: Start -->
 <div id="footer"></div>
