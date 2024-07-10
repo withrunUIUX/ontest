@@ -215,7 +215,7 @@
 .evaluating .graph_wrap .chart_tt > span > i {z-index:2;position:relative;}
 
 .evaluating .infoChart_wrap {overflow:hidden;display:flex;width:610px;height:12px;border-radius:12px;background-color:var(--gray_30);}
-.evaluating .infoChart_wrap > .ingChart {display:inline-block;width:70%;height:12px;border-radius:0 12px 12px 0;background-color:var(--blue_90);}
+.evaluating .infoChart_wrap > .ingChart {display:inline-block;height:12px;border-radius:0 12px 12px 0;background-color:var(--blue_90);}
 .evaluating .infoChart_wrap > canvas {}
 
 .evaluating .graph_wrap .ingChart_tt {font-size:20px;font-weight:600;color:var(--blue_90)}
