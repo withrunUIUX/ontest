@@ -42,7 +42,7 @@
 #question_header .question_list_box > span > b {margin-right:.2rem;font-weight:700;}
 /* 문제풀이현황 버튼 리스트 */
 .question_list {display:flex;flex-wrap:wrap;gap:.708rem;}
-.question_list .qnum {position:relative;display:inline-flex;align-items:center;justify-content:center;border-radius:6px;width:60px;height:60px;border:.1rem solid var(--gray_60);color:var(--gray_100);font-size:18px;font-weight:600;background:#fff;}
+.question_list .qnum {position:relative;display:inline-flex;align-items:center;justify-content:center;border-radius:6px;width:60px;height:60px;border:.1rem solid var(--gray_60);color:var(--gray_100);font-size:1.1rem;font-weight:600;background:#fff;}
 .question_list .qnum.end {color:#fff;border-color:var(--blue_90);background-color:var(--blue_90);}
 .question_list .qnum.ing {border:3px solid var(--blue_90);color:var(--blue_90);font-weight:700;box-shadow:2px 2px 4px 1px rgba(0, 0, 0, 0.2);}
 .question_list .qnum.ing::before {content:'';position:absolute;top:-10px;display:block;width:20px;height:20px;border-radius:20px;background:var(--blue_90) url(../images/common/arr_check.svg) no-repeat 50%;}
@@ -78,9 +78,9 @@
 
 /* 제출팝업 :: 미답변 */
 .no_answer {display:flex;flex-direction:column;align-items:center;gap:.5rem;}
-.no_answer > span {padding:.5rem 1rem;border-radius:40px;color:#fff;font-size:18px;font-weight:600;background:var(--gray_80);}
+.no_answer > span {padding:.5rem 1rem;border-radius:40px;color:#fff;font-size:1.1rem;font-weight:600;background:var(--gray_80);}
 .no_answer .no_answer_list {display:flex;align-items:center;gap:.5rem;}
-.no_answer .no_answer_list .no_answer_item {display:inline-flex;align-items:center;justify-content:center;width:46px;height:46px;border:.1rem solid var(--gray_60);border-radius:4px;color:var(--gray_100);font-size:18px;font-weight:600;background:#fff;}
+.no_answer .no_answer_list .no_answer_item {display:inline-flex;align-items:center;justify-content:center;width:46px;height:46px;border:.1rem solid var(--gray_60);border-radius:4px;color:var(--gray_100);font-size:1.1rem;font-weight:600;background:#fff;}
 
 
 /* question body */
@@ -105,7 +105,7 @@
 .q_layout .question_info li:last-child:after {display:none;}
 
 /* 예문 */
-.q_layout .q_wrap {overflow:hidden;width:100%;padding:2rem 4rem;border:.1rem solid var(--gray_50);border-radius:10px;font-size:18px;color:var(--gray_90);} /* 예문영역 */
+.q_layout .q_wrap {overflow:hidden;width:100%;padding:3rem 4rem;border:.2rem solid var(--gray_50);border-radius:10px;font-size:1.1rem;color:var(--gray_90);} /* 예문영역 */
 .q_layout .q_wrap .examBox {display:flex;justify-content:center;flex-direction:column;align-items:center;gap:1rem;}
 .q_layout .q_wrap .examBox .subtitle3 {font-size:20px;}
 .q_layout .q_wrap .examBox p {line-height:1.5;}
@@ -113,7 +113,7 @@
 
 .q_layout .a_wrap {font-weight:500;color:var(--gray_90);} /* 보기영역 */
 .q_layout .a_wrap * {color:var(--gray_90);}
-.question .q_layout .a_wrap {padding:1rem 0}
+.question .q_layout .a_wrap {display:flex;justify-content:center;padding:1rem 0}
 
 
 
@@ -125,14 +125,14 @@
 
 
 /* bullet */
-.bullet {display:inline-flex;justify-content:center;align-items:center;padding:.5rem 1rem;border-radius:50px;border:.1rem solid var(--gray_90);font-size:18px;font-weight:700;color:var(--gray_90);background-color:var(--gray_20);}
+.bullet {display:inline-flex;justify-content:center;align-items:center;padding:.5rem 1rem;border-radius:50px;border:.1rem solid var(--gray_90);font-size:1.1rem;font-weight:700;color:var(--gray_90);background-color:var(--gray_20);}
 .bullet.circle {width:28px;height:28px;padding:0;font-weight:700;color:var(--gray_90);}
 .bullet.blue {border:.1rem solid var(--blue_90);color:var(--blue_90);background-color:var(--blue_20);}
 /*circle sm*/
 .bullet.circle.sm {width:20px;height:20px;font-size:12px;}
 
 /* 꾸밈요소 */
-.blankBox {display:inline-flex;align-items:center;justify-content:center;min-width:60px;height:42px;padding:0 1rem;border-radius:3px;border:2px dashed var(--gray_60);font-size:18px;font-weight:600;color:var(--gray_60);background:var(--gray_20);vertical-align:middle;}/*빈칸표시*/
+.blankBox {display:inline-flex;align-items:center;justify-content:center;min-width:60px;height:42px;padding:0 1rem;border-radius:3px;border:2px dashed var(--gray_60);font-size:1.1rem;font-weight:600;color:var(--gray_60);background:var(--gray_20);vertical-align:middle;}/*빈칸표시*/
 .blankBox.sm {min-width:50px;height:38px;font-size:16px;}
 
 
@@ -144,7 +144,7 @@
 .inputWrap .inputBox.big {width:100px}
 
 /* 분수형태 */
-.fraction {display:flex;flex-direction:column;align-items:center;gap:.2rem;line-height:1;font-size:18px;}
+.fraction {display:flex;flex-direction:column;align-items:center;gap:.2rem;line-height:1;font-size:1.1rem;}
 .fraction > .line {width:100%;height:1px;background-color:var(--gray_100);}
 .fraction.type2 {display:flex;flex-direction:row;align-items:center;}
 
@@ -168,12 +168,12 @@ input[type="chekbox"] + .cardWrap:before {display:none;}
 
 
 /* 라디오 */
-.radioWrap {display:flex;flex-direction:column;gap:.5rem;}
+.radioWrap {display:flex;flex-direction:column;gap:.5rem;width:100%;}
 .radioWrap *,
-.radioWrap input[type="radio"] + label {color:var(--gray_100);font-size:16px;font-weight:500;}
+.radioWrap input[type="radio"] + label {color:var(--gray_100);font-size:1.1rem;font-weight:500;}
 .radioWrap table thead th {font-weight:700;}
 /* 라디오 type2 :: 가로정렬, 중앙배치*/
-.radioWrap.type2 {flex-direction:row;justify-content:center;width:100%;}
+.radioWrap.type2 {flex-direction:row;justify-content:center;}
 /* 라디오 type3 :: 보기 하나에 ㄱ, ㄴ으로 구분되어져 정렬을 해야할때*/
 .radioWrap.type3 {}
 .radioWrap.type3 li label {display:flex;align-items:center;gap:1rem;margin:0;}
@@ -185,19 +185,32 @@ input[type="chekbox"] + .cardWrap:before {display:none;}
 /* .radioWrap.type4 input[type="radio"] + label::before {display:none;} */
 .radioWrap.type4 input[type="radio"]:checked + label {color:var(--blue_100);border-color:var(--blue_100);}
 /* 라디오 type5 */
-.radioWrap.type5 {flex-wrap:wrap;flex-direction:row;justify-content:center;gap:1.5rem;width:100%;}
+.radioWrap.type5 {flex-wrap:wrap;flex-direction:row;justify-content:center;gap:1.5rem;}
 .radioWrap.type5 li {width:25%;}
 .radioWrap.type5 input[type="radio"] + label {width:100%;margin:0;padding:0}
 .radioWrap.type5 input[type="radio"]:checked + label * {color:var(--blue_100);border-color:var(--blue_100);}
 /* 라디오 type6 */
-.radioWrap.type6 {align-items:center;width:100%;}
+.radioWrap.type6 {align-items:center;}
 .radioWrap.type6 table {max-width:900px;}
+/* 라디오 type7 */
+.radioWrap.type7 {flex-direction:row;justify-content:center;align-items:center;gap:1rem;}
+.radioWrap.type7 .group {display:flex;flex-direction:column;align-items:center;gap:.5rem;}
+.radioWrap.type7 .group .groupBox {display:flex;flex-direction:column;gap:.5rem;padding:2rem;border:1px solid var(--gray_50);border-radius:10px;}
+.radioWrap.type7 .group .groupBox li {}
+/* 라디오 type7 가로정랼*/
+.radioWrap.type7.flex-col {justify-content:center;align-items:flex-start;gap:1rem;width:initial;}
+.radioWrap.type7.flex-col .group {align-items:center;flex-direction:row;gap:.5rem;}
+.radioWrap.type7.flex-col .group .groupBox {display:flex;flex-direction:column;gap:.5rem;padding:2rem;border:1px solid var(--gray_50);border-radius:10px;}
+.radioWrap.type7.flex-col .group .groupBox li {}
+
+
+
 
 
 /* 핫스폿 -- 라디오 형태(단일선택) :: 공통*/
 .hsradioWrap {text-align:center;}
-.hsradioWrap * {color:var(--gray_110);font-weight:500;}
-.hsradioWrap input[type="radio"] + label {margin-right:6px;padding:6px 12px;border:.1rem solid var(--gray_40);border-radius:.3rem;font-weight:600;background:var(--gray_10);}
+.hsradioWrap * {color:var(--gray_110);font-size:1.1rem;font-weight:500;}
+.hsradioWrap input[type="radio"] + label {margin-right:6px;padding:6px 12px;border:.1rem solid var(--gray_40);border-radius:.3rem;font-size:1.1rem;font-weight:600;background:var(--gray_10);}
 .hsradioWrap input[type="radio"] + label::before {display:none;}
 .hsradioWrap input[type="radio"]:checked + label {border-color:var(--blue_100);color:var(--blue_100);background-color:var(--blue_20);}
 .hsradioWrap input[type="radio"]:checked + label::before {left:50%;transform:translateY(-50%) translateX(-50%);display:block;width:68px;height:68px;background-image:url(../images/common/hotspot_img.svg);}
