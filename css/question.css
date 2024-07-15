@@ -84,28 +84,36 @@
 
 
 /* question body */
-#container.question {height:100%;padding:2rem 10rem;background:var(--blue_20);}
+.question {height:100%;padding:2rem 10rem;background:var(--blue_20);}
 
-.question_content {overflow:hidden;position:relative;border-radius:10px;background:#fff;}
-.question .question_content {box-shadow:1px 1px 10px 0 rgba(79, 106, 135, 0.2);}
+.q_content {overflow:hidden;position:relative;border-radius:10px;background:#fff;}
+.question .q_content {box-shadow:1px 1px 10px 0 rgba(79, 106, 135, 0.2);}
 
-.q_layout {display:flex;flex-direction:column;gap:3rem;min-height:600px;padding:48px 70px;}
-.question .q_layout {gap:1.2rem;min-height:calc(73vh + 3px);padding:20px 70px 48px;}
+.q_layout {display:flex;flex-direction:column;gap:3rem;min-height:600px;padding:48px 70px;background:#fff;}
+.question .q_layout {gap:1.2rem;min-height:calc(73vh + 19px);padding:20px 70px 40px;}
 
 /* 문항 질문 */
-.q_tit {display:flex;align-items:center;justify-content:flex-start;gap:.4rem;margin:0;padding:32px 42px;font-size:16px;font-weight:500;background:var(--gray_20);}
+.q_tit {display:flex;align-items:center;justify-content:flex-start;gap:.4rem;margin:0;padding:26px 42px;font-size:16px;font-weight:500;background:var(--gray_20);}
 .q_tit .question_number {padding:.5rem .8rem;border-radius:.3rem;color:var(--c_white);font-weight:600;background:var(--gray_70);}
 .q_tit .txt {}
+.q_tit .txt > u {text-decoration:none;border-bottom:1px solid var(--gray_80);}
 
+/* 문항정보 */
 .q_layout .question_info {display:flex;align-items:center;justify-content:flex-end;gap:.5rem;font-size:14px;font-weight:600;color:var(--gray_70);}
 .q_layout .question_info li {display:flex;align-items:center;gap:.5rem;}
 .q_layout .question_info li::after {content:'';display:inline-block;width:2px;height:12px;background:var(--gray_40);}
 .q_layout .question_info li:last-child:after {display:none;}
 
-.q_layout .q_wrap {overflow:hidden;padding:4rem 6rem;border:.1rem solid var(--gray_50);border-radius:10px;} /* 예문영역 */
+/* 예문 */
+.q_layout .q_wrap {overflow:hidden;width:100%;padding:2rem 4rem;border:.1rem solid var(--gray_50);border-radius:10px;font-size:18px;color:var(--gray_90);} /* 예문영역 */
+.q_layout .q_wrap .examBox {display:flex;justify-content:center;flex-direction:column;align-items:center;gap:1rem;}
+.q_layout .q_wrap .examBox .subtitle3 {font-size:20px;}
+.q_layout .q_wrap .examBox p {line-height:1.5;}
+
+
 .q_layout .a_wrap {font-weight:500;color:var(--gray_90);} /* 보기영역 */
-.q_layout .a_wrap * {color:var(--gray_110);}
-.question .q_layout .a_wrap {padding:2rem 0}
+.q_layout .a_wrap * {color:var(--gray_90);}
+.question .q_layout .a_wrap {padding:1rem 0}
 
 
 
@@ -117,14 +125,53 @@
 
 
 /* bullet */
-.bullet {display:flex;justify-content:center;align-items:center;padding:.5rem 1rem;border-radius:50px;border:.1rem solid var(--gray_90);font-weight:700;color:var(--gray_90);background-color:var(--gray_20);}
-.bullet.circle {width:28px;height:28px;padding:0;}
+.bullet {display:inline-flex;justify-content:center;align-items:center;padding:.5rem 1rem;border-radius:50px;border:.1rem solid var(--gray_90);font-size:18px;font-weight:700;color:var(--gray_90);background-color:var(--gray_20);}
+.bullet.circle {width:28px;height:28px;padding:0;font-weight:700;color:var(--gray_90);}
 .bullet.blue {border:.1rem solid var(--blue_90);color:var(--blue_90);background-color:var(--blue_20);}
+/*circle sm*/
+.bullet.circle.sm {width:20px;height:20px;font-size:12px;}
+
+/* 꾸밈요소 */
+.blankBox {display:inline-flex;align-items:center;justify-content:center;min-width:60px;height:42px;padding:0 1rem;border-radius:3px;border:2px dashed var(--gray_60);font-size:18px;font-weight:600;color:var(--gray_60);background:var(--gray_20);vertical-align:middle;}/*빈칸표시*/
+.blankBox.sm {min-width:50px;height:38px;font-size:16px;}
+
+
+/* 단답형 */
+.inputWrap {}
+.inputWrap .inputBox {height:42px;border-color:var(--gray_60);color:var(--gray_90);font-weight:600;text-align:center;}
+.inputWrap .inputBox.sm {width:50px}
+.inputWrap .inputBox.md {width:80px}
+.inputWrap .inputBox.big {width:100px}
+
+/* 분수형태 */
+.fraction {display:flex;flex-direction:column;align-items:center;gap:.2rem;line-height:1;font-size:18px;}
+.fraction > .line {width:100%;height:1px;background-color:var(--gray_100);}
+.fraction.type2 {display:flex;flex-direction:row;align-items:center;}
+
+
+/* 카드박스 */
+input[type="radio"] + .cardWrap:before,
+input[type="chekbox"] + .cardWrap:before {display:none;}
+
+.cardBox {display:flex;gap:.2rem;width:300px;padding:18px;border:1px solid var(--gray_50);border-radius:6px;background-color:#fff;}
+.cardBox > p {flex:1;}
+
+.cardBox.photo {align-items:center;gap:1rem;padding:30px;width:350px;}
+.cardBox .photoBox {border-radius:6px;overflow:hidden;}
+.cardBox .photoBox > img {width:100%;height:100%;}
+
+.cardBox.flex-col {width:initial}
+.cardBox.photo.flex-col {padding:18px;}
+
+.cardBox.magazine {align-items:center;gap:1rem;max-width:400px;border:none;background:transparent;}
+.cardBox.magazine .inner {display:flex;gap:.6rem;}
+
 
 /* 라디오 */
 .radioWrap {display:flex;flex-direction:column;gap:.5rem;}
 .radioWrap *,
 .radioWrap input[type="radio"] + label {color:var(--gray_100);font-size:16px;font-weight:500;}
+.radioWrap table thead th {font-weight:700;}
 /* 라디오 type2 :: 가로정렬, 중앙배치*/
 .radioWrap.type2 {flex-direction:row;justify-content:center;width:100%;}
 /* 라디오 type3 :: 보기 하나에 ㄱ, ㄴ으로 구분되어져 정렬을 해야할때*/
@@ -134,9 +181,18 @@
 /* 라디오 type4 */
 .radioWrap.type4 {display:block;}
 .radioWrap.type4 > div {line-height:2;}
-.radioWrap.type4 input[type="radio"] + label {margin:0;padding:0;border-bottom:1px solid var(--gray_40);}
-.radioWrap.type4 input[type="radio"] + label::before {display:none;}
+.radioWrap.type4 input[type="radio"] + label {margin:0;border-bottom:1px solid var(--gray_40);}
+/* .radioWrap.type4 input[type="radio"] + label::before {display:none;} */
 .radioWrap.type4 input[type="radio"]:checked + label {color:var(--blue_100);border-color:var(--blue_100);}
+/* 라디오 type5 */
+.radioWrap.type5 {flex-wrap:wrap;flex-direction:row;justify-content:center;gap:1.5rem;width:100%;}
+.radioWrap.type5 li {width:25%;}
+.radioWrap.type5 input[type="radio"] + label {width:100%;margin:0;padding:0}
+.radioWrap.type5 input[type="radio"]:checked + label * {color:var(--blue_100);border-color:var(--blue_100);}
+/* 라디오 type6 */
+.radioWrap.type6 {align-items:center;width:100%;}
+.radioWrap.type6 table {max-width:900px;}
+
 
 /* 핫스폿 -- 라디오 형태(단일선택) :: 공통*/
 .hsradioWrap {text-align:center;}
@@ -158,13 +214,13 @@
 .hsradioWrap.type3 input[type="radio"]:checked + label::before {width:100px;height:100px;background-size:100%;}
 .hsradioWrap.type3 input[type="radio"]:checked + label * {color:var(--blue_100);}
 
-
-
-
-
-
-
 /* 핫스폿 -- 체크박스 형태(다중선택) :: 공통 */
+
+
+
+
+
+
 
 
 
