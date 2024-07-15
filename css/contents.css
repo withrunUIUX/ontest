@@ -115,10 +115,10 @@
 .prev_list::-webkit-scrollbar {width:8px;}
 .prev_list::-webkit-scrollbar-thumb {border-radius:8px;background:rgba(180, 192, 211, .3);}
 .prev_list .prev__item {overflow:hidden;min-height:520px;border-radius:10px;background:#fff;}
-.prev_list .prev__item .question__box {pointer-events:none;}
-.prev_list .prev__item .question__box .q_tit {padding:26px 40px;}
-.prev_list .prev__item .question__box .q_layout  {gap:1rem;min-height:initial;padding:26px 40px;}
-.prev_list .prev__item .question__box .q_layout .q_wrap {padding:2rem 3rem;}
+.prev_list .prev__item .q_content {pointer-events:none;}
+.prev_list .prev__item .q_content .q_tit {padding:26px 40px;}
+.prev_list .prev__item .q_content .q_layout  {gap:1rem;min-height:initial;padding:26px 40px;}
+.prev_list .prev__item .q_content .q_layout .q_wrap {padding:2rem 3rem;}
 .prev_list .prev__item .btn_group {display:flex;align-items:center;justify-content:space-between;padding:0 40px;margin:1rem 0 2.5rem;}
 .prev_list .prev__item .btn_group li:nth-child(1) {display:flex;align-items:center;gap:.5rem;}
 .prev_list .prev__item .btn_group li:nth-child(1) > .report {display:flex;align-items:center;gap:.2rem;padding:6px;color:var(--gray_70);}
