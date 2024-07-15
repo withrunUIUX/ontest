@@ -214,10 +214,10 @@ table thead th:last-child {border-radius: 0 10px 0 0;}
 .tbl_basic.type3 thead th {color:var(--gray_100);border-color:var(--blue_40);text-align:center;background:var(--blue_20);}
 .tbl_basic.type3 thead th:first-child,
 .tbl_basic.type3 thead  th:last-child {border-radius:0;}
-.tbl_basic.type3 tbody .td_left {padding:.9rem;border-left:0 !important;text-align:left;line-height: 1.5;}
+.tbl_basic.type3 tbody .td_left {padding:.9rem;text-align:left;line-height:1.5;}
 .tbl_basic.type3 tbody tr:nth-child(even) {background:#fff;}
 .tbl_basic.type3 tbody tr th {font-weight:600;text-align:center;}
-.tbl_basic.type3 tbody tr td {color:var(--gray_80);font-weight:500;}
+.tbl_basic.type3 tbody tr td {color:var(--gray_90);font-weight:500;}
 
 .tbl_list {}
 .tbl_list tbody tr td {border-left:none;}
