@@ -24,15 +24,38 @@
 
 <body class="style_wrap">
 
-<ul class="sgNavi">
-    <li><a href="../styleguide/styleguide.html" class="">스타일가이드</a></li>
-    <li><a href="../styleguide/questuon_cmpt.html" class="on">문항컴포넌트</a></li>
-    <li><a href="../styleguide/examBox_cmpt.html" class="">예문 컴포넌트</a></li>
-</ul>
-    
+<div class="sgNavi_wrap">
+    <ul class="sgNavi">
+        <li><a href="../styleguide/styleguide.html" class="">스타일가이드</a></li>
+        <li> <a href="../styleguide/questuon_cmpt.html" class="on">문항컴포넌트</a></li>
+        <li><a href="../styleguide/examBox_cmpt.html" class="">예문 컴포넌트</a></li>
+    </ul>
+
+    <div class="sgNavi_2depth_wrap">
+        <strong>문항컴포넌트</strong>
+        <ul class="sgNavi_2depth">
+            <li><a href="#bullet">bullet(꾸밈요소)</a></li>
+            <li><a href="#blankBox">빈칸박스(꾸밈요소)</a></li>
+            <li><a href="#cardBox">카드박스</a></li>
+            <li><a href="#inputWrap">단답형input</a></li>
+            <li><a href="#fraction">분수형태</a></li>
+            <li><a href="#radioWrap">라디오</a></li>
+            <li><a href="#radioWrapT2">라디오 type2</a></li>
+            <li><a href="#radioWrapT3">라디오 type3</a></li>
+            <li><a href="#radioWrapT4">라디오 type4</a></li>
+            <li><a href="#radioWrapT5">라디오 type5</a></li>
+            <li><a href="#radioWrapT6">라디오 type6</a></li>
+            <li><a href="#radioWrapT7">라디오 type7</a></li>
+            <li><a href="#hsradioWrap">핫스폿</a></li>
+            <li><a href="#hsradioWrapT2">핫스폿 type2</a></li>
+            <li><a href="#hsradioWrapT3">핫스폿 type3</a></li>
+        </ul>  
+    </div>  
+</div>
+
 <section>
 
-<h2>bullet</h2>
+<h2 id="bullet">bullet</h2>
 <div class="stwrap">
     <span class="bullet">보기1</span>
     <span class="bullet blue">보기1</span>
@@ -54,7 +77,7 @@
     <span class="bullet circle blue sm">ㄱ</span>
 </div>
 
-<h2>빈칸 박스 <small>예문에 사용한다.</small></h2>
+<h2 id="blankBox">빈칸 박스 <small>예문에 사용한다.</small></h2>
 <div class="stwrap">
     <span class="blankBox">빈칸</span>
     <span class="blankBox sm">small</span>
@@ -76,7 +99,7 @@
     </div>
 </div>
 
-<h2>카드박스 <small></small></h2>
+<h2 id="cardBox">카드박스 <small></small></h2>
 <div class="stwrap">
     <div class="cardBox">
         <span class="bullet circle">가</span>
@@ -107,8 +130,7 @@
 
 </div>
 
-
-<h2>단답형 <small></small></h2>
+<h2 id="inputWrap">단답형 <small></small></h2>
 <div class="stwrap">
     <div class="inner inputWrap">
         <input type="text" class="inputBox" value="기본타입">
@@ -118,7 +140,7 @@
     </div>
 </div>
 
-<h2>분수<small></small></h2>
+<h2 id="fraction">분수<small></small></h2>
 <div class="stwrap">
     <div class="inputWrap">
         <div class="fraction">
@@ -177,30 +199,33 @@
     </div>
 </div>
 
-
-<h2>라디오</h2>
+<h2 id="radioWrap">라디오 <small>보기가 긴 형태일때</small></h2>
 <div class="stwrap">
     <ul class="radioWrap">
         <li>
-            <input type="radio" name="radioexam" id="radioexam1">
-            <label for="radioexam1">4.76 ÷ 4</label>
+            <input type="radio" name="radioexam" id="radioexamT1_1">
+            <label for="radioexamT1_1">100이 8개이면 80입니다.</label>
         </li>
         <li>
-            <input type="radio" name="radioexam" id="radioexam2">
-            <label for="radioexam2">4.76 ÷ 4</label>
+            <input type="radio" name="radioexam" id="radioexamT1_2">
+            <label for="radioexamT1_2">700은 10이 7개인 수입니다.</label>
         </li>
         <li>
-            <input type="radio" name="radioexam" id="radioexam3">
-            <label for="radioexam3">4.76 ÷ 4</label>
+            <input type="radio" name="radioexam" id="radioexamT1_3">
+            <label for="radioexamT1_3">100이 6개이면 600입니다.</label>
         </li>
         <li>
-            <input type="radio" name="radioexam" id="radioexam4">
-            <label for="radioexam4">4.76 ÷ 4</label>
+            <input type="radio" name="radioexam" id="radioexamT1_4">
+            <label for="radioexamT1_4">400은 10이 4개인 수입니다.</label>
+        </li>
+        <li>
+            <input type="radio" name="radioexam" id="radioexamT1_5">
+            <label for="radioexamT1_5">100이 3개면 30입니다.</label>
         </li>
     </ul>
 </div>
 
-<h2>라디오 type2</h2>
+<h2 id="radioWrapT2">라디오 type2 <small>보기가 짧거나 이미지 일때</small></h2>
 <div class="stwrap">
     <ul class="radioWrap type2">
         <li>
@@ -222,7 +247,7 @@
     </ul>
 </div>
 
-<h2>라디오 type3</h2>
+<h2 id="radioWrapT3">라디오 type3</h2>
 <div class="stwrap">
     <ul class="radioWrap type3">
         <li>
@@ -263,7 +288,7 @@
     </ul>
 </div>
 
-<h2>라디오 type4</h2>
+<h2 id="radioWrapT4">라디오 type4</h2>
 <div class="stwrap">
     <div class="radioWrap type4">
         <div>
@@ -280,7 +305,7 @@
     </div>
 </div>
 
-<h2>라디오 type5 <small>Label 안에 카드박스를 사용. 카드박스 컴포넌트 활용</small></h2>
+<h2 id="radioWrapT5">라디오 type5 <small>Label 안에 카드박스를 사용. 카드박스 컴포넌트 활용</small></h2>
 <div class="stwrap">
     <ul class="radioWrap type5">
         <li>
@@ -341,7 +366,7 @@
     </ul>
 </div>
 
-<h2>라디오 type6 <small>테이블 안에서 선택</small></h2>
+<h2 id="radioWrapT6">라디오 type6 <small>테이블 안에서 선택</small></h2>
 <div class="stwrap">
     <a href="/html/sci_623_u1513.html" target="_blank" class="stwrap_btn">미리보기</a>
     <div class="radioWrap type6">
@@ -390,11 +415,76 @@
     </div>
 </div>
 
+<h2 id="radioWrapT7">라디오 type7 <small>그룹 선택형</small></h2>
+<div class="stwrap">
+    <div class="radioWrap type7">
+        <div class="group">
+            <span class="bullet circle">1</span>
+            <ul class="groupBox">
+                <li>
+                    <input type="radio" name="group1" id="radioexamT7_1">
+                    <label for="radioexamT7_1">9 ÷ 4 = 2.25</label>
+                </li>
+                <li>
+                    <input type="radio" name="group1" id="radioexamT7_2">
+                    <label for="radioexamT7_2">9 ÷ 2 = 42.5</label>
+                </li>
+            </ul>
+        </div>
+        <div class="group">
+            <span class="bullet circle">2</span>
+            <ul class="groupBox">
+                <li>
+                    <input type="radio" name="group2" id="radioexamT7_3">
+                    <label for="radioexamT7_3">35.56÷7=5.08</label>
+                </li>
+                <li>
+                    <input type="radio" name="group2" id="radioexamT7_4">
+                    <label for="radioexamT7_4">35.56÷7=50.8</label>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
 
+<h2>라디오 type7 <small>그룹 선택형 가로정렬</small></h2>
+<div class="stwrap">
+    <a href="/html/kor_616_t434.html" target="_blank" class="stwrap_btn">미리보기</a>
+    <div class="radioWrap type7 flex-col">
+        <div class="group">
+            <span class="bullet circle">1</span>
+            <ul class="groupBox">
+                <li>
+                    <input type="radio" name="group3" id="radioexamT7_5">
+                    <label for="radioexamT7_5">동형어</label>
+                </li>
+                <li>
+                    <input type="radio" name="group3" id="radioexamT7_6">
+                    <label for="radioexamT7_6">다의어</label>
+                </li>
+                <li>
+                    <input type="radio" name="group3" id="radioexamT7_7">
+                    <label for="radioexamT7_7">외래어</label>
+                </li>
+            </ul>
+        </div>
+        <div class="group">
+            <span class="bullet circle">2</span>
+            <ul class="groupBox">
+                <li>
+                    <input type="radio" name="group4" id="radioexamT7_8">
+                    <label for="radioexamT7_8">다리 1 : 사람이나 동물의 몸통 아래 붙어 있는 신체의 부분. 서고 걷고 뛰는 일 따위를 맡아 한다.</label>
+                </li>
+                <li>
+                    <input type="radio" name="group4" id="radioexamT7_9">
+                    <label for="radioexamT7_9">다리 2 : 중간에 거쳐야 할 단계나 과정, 물을 건너거나 또는 한편의 높은 곳에서 다른 편의 높은 곳으로 건너다닐 수 있도록 만든 시설물.</label>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
 
-
-
-<h2>핫스폿</h2>
+<h2 id="hsradioWrap">핫스폿</h2>
 <div class="stwrap">
     <div class="hsradioWrap">
         <span>가방 수에 따라 국어책의 수와 수학책의 수의 비가</span>
@@ -405,7 +495,7 @@
     </div>
 </div>
 
-<h2>핫스폿 type2 (리스트 형태)</h2>
+<h2 id="hsradioWrapT2">핫스폿 type2 (리스트 형태)</h2>
 <div class="stwrap">
     <ul class="hsradioWrap type2">
         <li>
@@ -429,8 +519,7 @@
     </ul>
 </div>
 
-
-<h2>핫스폿 type3 (카드 형태)</h2>
+<h2 id="hsradioWrapT3">핫스폿 type3 (카드 형태)</h2>
 <div class="stwrap">
     <div class="hsradioWrap type3">
         <div>
