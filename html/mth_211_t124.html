@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>6-2-3-[6과15-01]-하-03</title>
+    
+        <!-- <link rel="stylesheet" href="/css/slick.css"> -->
+        <link rel="stylesheet" href="/css/common.css">
+        <link rel="stylesheet" href="/css/question.css">
+        <!-- <link rel="stylesheet" href="/css/contents.css"> -->
+
+        <script type="text/javascript" src="/js/jquery-3.6.0.min.js"></script>
+        <script type="text/javascript" src="/js/jquery-latest.min.js"></script>
+        <!-- <script type="text/javascript" src="/js/slick.js"></script>
+        <script type="text/javascript" src="/js/chart.js"></script> -->
+
+        <script type="text/javascript" src="/js/include.js"></script>
+        <script type="text/javascript" src="/js/contents.js"></script>
+
+    </head>
+
+<body>
+
+<!--[include]HEADER :: Start -->
+<div id="question_header"></div>
+<!--[include]HEADER :: End -->
+
+<div id="question" class="question">
+    <div class="q_content" id="mth_211_t124">
+        <h4 class="q_tit">
+            <em class="question_number">1번</em>
+            <span class="txt">알코올램프가 타는 모습을 관찰하고 작성한 보고서의 내용 중 옳지 <u>않은</u> 것은?</span> 
+        </h4>
+        <div class="q_layout">
+            <ul class="question_info">
+                <li>수와 연산</li>
+                <li>난이도&nbsp;하</li>
+                <li>정답률&nbsp;90%</li>
+            </ul>
+            <div class="q_wrap">
+                <div class="examBox">
+                    <span class="bullet blue">보기</span>
+                    <div class="dis_flex gap20">
+                        <span class="square">317</span>
+                        <span class="square">327</span>
+                        <span class="blankBox"></span>
+                        <span class="square">347</span>
+                        <span class="square">357</span>
+                        <span class="square">367</span>
+                    </div>
+                </div>
+            </div>
+            <div class="a_wrap">
+                <ul class="radioWrap type2">
+                    <li>
+                        <input type="radio" name="mth_211_t124_a" id="mth_211_t124_a1">
+                        <label for="mth_211_t124_a1">335</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="mth_211_t124_a" id="mth_211_t124_a2">
+                        <label for="mth_211_t124_a2">336</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="mth_211_t124_a" id="mth_211_t124_a3">
+                        <label for="mth_211_t124_a3">337</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="mth_211_t124_a" id="mth_211_t124_a4">
+                        <label for="mth_211_t124_a4">345</label>
+                    </li>
+                    <li>
+                        <input type="radio" name="mth_211_t124_a" id="mth_211_t124_a5">
+                        <label for="mth_211_t124_a5">346</label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--[include]FOOTER :: Start -->
+<div id="question_footer"></div>
+<!--[include]FOOTER :: End -->    
+
+<!--제출팝업 :: 미답변 있을때-->
+<div class="modal modal-popup question_modal" id="popup_opne">
+    <div class="modal-background is-click-disabled"></div>
+    <div class="modal-content">
+        <div class="popup-wrap">
+            <span class="flag"><span>1단원</span></span>
+            <div class="con-head">
+                <h3><i class="micon ico2"></i>5학년 1학기</h3>
+            </div>
+            <div class="con-wrap">
+                <strong><em>미답변</em> 문항이 있습니다. <br>그대로 답안을 제출하시겠습니까?</strong>
+                <div class="no_answer">
+                    <span>미답변</span>
+                    <ul class="no_answer_list">
+                        <li class="no_answer_item">2</li>
+                        <li class="no_answer_item">3</li>
+                        <li class="no_answer_item">12</li>
+                    </ul>
+                </div>
+                <div class="btn_group">
+                    <button type="button" class="btn btn-ani btn-secondary modal-close">제출취소</button>
+                    <a class="btn btn-ani btn-primary" id="popup_btn2">제출하기</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--제출팝업 :: 완료 -->
+<div class="modal modal-popup question_modal" id="popup_opne2">
+    <div class="modal-background is-click-disabled"></div>
+    <div class="modal-content">
+        <div class="popup-wrap">
+            <span class="flag"><span>1단원</span></span>
+            <div class="con-head">
+                <h3><i class="micon ico2"></i>5학년 1학기</h3>
+            </div>
+            <div class="con-wrap">
+                <span class="confirm_img"></span>
+                <strong><em>답안</em> 제출이 완료 되었습니다.</strong>
+                <div class="btn_group">
+                    <button type="button" class="btn btn-ani btn-primary modal-close">확인</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    //제출팝업 :: 완료 팝업 열기
+    $(document).on("click", "#popup_btn2", function(){
+        sign_index = $("#popup_btn2").index(this);
+        $("#popup_opne2").addClass("active");
+    });
+    //제출팝업 :: 완료 팝업 닫기
+    $(".modal-close").on("click",function(){
+        $("#popup_opne2").removeClass("active");
+    });
+</script>
+
+</body>
+</html>
