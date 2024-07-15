@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>스타일가이드</title>
+
+	<link rel="stylesheet" href="/css/slick.css">
+	<link rel="stylesheet" href="/css/common.css">
+	<link rel="stylesheet" href="/css/question.css">
+	<link rel="stylesheet" href="/css/contents.css">
+
+	<script type="text/javascript" src="/js/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="/js/jquery-latest.min.js"></script>
+	<script type="text/javascript" src="/js/slick.js"></script>
+	<script type="text/javascript" src="/js/chart.js"></script>
+
+	<script type="text/javascript" src="/js/include.js"></script>
+	<script type="text/javascript" src="/js/contents.js"></script>
+
+	<link rel="stylesheet" href="/styleguide/styleguide.css">
+
+</head>
+
+<body class="style_wrap">
+
+<ul class="sgNavi">
+	<li><a href="../styleguide/styleguide.html" class="on">스타일가이드</a></li>
+	<li><a href="../styleguide/questuon_cmpt.html" class="">문항컴포넌트</a></li>
+	<li><a href="../styleguide/examBox_cmpt.html" class="">예문 컴포넌트</a></li>
+</ul>
+
+<section>
+
+<h2>LOGO</h2>
+<div class="stwrap" style="background:#99a0ab">
+	<i class="ico_logo type1">온평가 로고</i>
+	<i class="ico_logo type2">온평가 로고</i>
+	<i class="ico_logo type3">온평가 로고</i>
+</div>
+
+
+<h2>BUTTON</h2>
+<div class="stwrap">
+	<div class="pad-ver styleguide_box">
+		<div class="group">
+			<strong class="gr_tit" id="docs-ui-button1">State</strong>
+			<ul class="wrap heading">
+				<li class="grap">
+					<div class="tit"><b>Enable</b></div>
+					<a class="btn btn-ani btn-primary" href="#">Primary</a>
+					<a class="btn btn-ani btn-outline-primary" href="#">Primary</a>
+					<a class="btn btn-ani btn-secondary" href="#">Secondary</a>
+					<a class="btn btn-ani btn-outline-secondary" href="#">Secondary</a>
+					<a class="btn btn-ani btn-tertiary" href="#">Tertiary</a>
+					<a class="btn btn-ani btn-outline-tertiary" href="#">Tertiary</a>
+					<a class="btn btn-ani btn-quaternary" href="#">quaternary</a>
+					<a class="btn btn-ani btn-outline-quaternary" href="#">quaternary</a>
+					<a class="btn btn-ani btn-text" href="#">btn-text</a>
+					<a class="btn btn-ani btn-blank" href="#" target="_blank">btn-text</a>
+				</li>
+				<li class="grap">
+					<div class="tit"><b>hover/active</b></div>
+					<a class="btn btn-ani btn-primary hover" href="#">Primary</a>
+					<a class="btn btn-ani btn-outline-primary hover" href="#">Primary</a>
+					<a class="btn btn-ani btn-secondary hover" href="#">Secondary</a>
+					<a class="btn btn-ani btn-outline-secondary hover" href="#">Secondary</a>
+					<a class="btn btn-ani btn-tertiary hover" href="#">Tertiary</a>
+					<a class="btn btn-ani btn-outline-tertiary hover" href="#">Tertiary</a>
+					<a class="btn btn-ani btn-quaternary hover" href="#">quaternary</a>
+					<a class="btn btn-ani btn-outline-quaternary hover" href="#">quaternary</a>
+					<a class="btn btn-ani btn-text hover" href="#">btn-text</a>
+					<a class="btn btn-ani btn-blank hover" href="#" target="_blank">btn-text</a>
+				</li>
+				<li class="grap">
+					<div class="tit"><b>Focus</b></div>
+					<a class="btn btn-ani btn-primary focus" href="#">Primary</a>
+					<a class="btn btn-ani btn-outline-primary focus" href="#">Primary</a>
+					<a class="btn btn-ani btn-secondary focus" href="#">Secondary</a>
+					<a class="btn btn-ani btn-outline-secondary focus" href="#">Secondary</a>
+					<a class="btn btn-ani btn-tertiary focus" href="#">Tertiary</a>
+					<a class="btn btn-ani btn-outline-tertiary focus" href="#">Tertiary</a>
+					<a class="btn btn-ani btn-quaternary focus" href="#">quaternary</a>
+					<a class="btn btn-ani btn-outline-quaternary focus" href="#">quaternary</a>
+					<a class="btn btn-ani btn-text focus" href="#">btn-text</a>
+					<a class="btn btn-ani btn-blank focus" href="#" target="_blank">btn-text</a>
+				</li>
+				<li class="grap">
+					<div class="tit"><b>Disable</b></div>
+					<a class="btn btn-ani btn-primary disabled" href="#">Primary</a>
+					<a class="btn btn-ani btn-outline-primary disabled" href="#">Primary</a>
+					<a class="btn btn-ani btn-secondary disabled" href="#">Secondary</a>
+					<a class="btn btn-ani btn-outline-secondary disabled" href="#">Secondary</a>
+					<a class="btn btn-ani btn-tertiary disabled" href="#">Tertiary</a>
+					<a class="btn btn-ani btn-outline-tertiary disabled" href="#">Tertiary</a>
+					<a class="btn btn-ani btn-quaternary disabled" href="#">quaternary</a>
+					<a class="btn btn-ani btn-outline-quaternary disabled" href="#">quaternary</a>
+					<a class="btn btn-ani btn-text disabled" href="#">btn-text</a>
+					<a class="btn btn-ani btn-blank disabled" href="#" target="_blank">btn-text</a>
+				</li>
+			</ul>
+		</div>
+		<div class="group">
+			<strong class="gr_tit" id="docs-ui-button2">Size</strong>
+			<ul class="wrap heading">
+				<li class="grap">
+					<div class="tit"><b>sm</b></div>
+					<a class="btn btn-ani btn-primary sm" href="#">Primary</a>
+					<a class="btn btn-ani btn-outline-primary sm" href="#">Primary</a>
+					<a class="btn btn-ani btn-primary sm" href="#">
+						Primary
+						<i class="ico ico-arrow" aria-hidden="true"></i>
+					</a>
+				</li>
+				<li class="grap">
+					<div class="tit"><b>md</b></div>
+					<a class="btn btn-ani btn-primary" href="#">Primary</a>
+					<a class="btn btn-ani btn-outline-primary" href="#">Primary</a>
+					<a class="btn btn-ani btn-primary" href="#">
+						Primary
+						<i class="ico ico-arrow" aria-hidden="true"></i>
+					</a>
+				</li>
+				<li class="grap">
+					<div class="tit"><b>lg</b></div>
+					<a class="btn btn-ani btn-primary lg" href="#">Primary</a>
+					<a class="btn btn-ani btn-outline-primary lg" href="#">Primary</a>
+					<a class="btn btn-ani btn-primary lg" href="#">
+						Primary
+						<i class="ico ico-arrow" aria-hidden="true"></i>
+					</a>
+				</li>
+				<li>*** btn-text, btn-ico 버튼은 Md만 사용</li>
+			</ul>
+		</div>
+		<div class="group">
+			<strong class="gr_tit" id="docs-ui-button3">Type / Hierarchy</strong>
+			<ul class="wrap heading">
+				<li class="grap">
+					<div class="tit"><b>Defualt Button</b></div>
+					<a class="btn btn-ani btn-primary" href="#">Primary</a>
+					&gt;
+					<a class="btn btn-ani btn-outline-primary" href="#">Primary</a>
+					&gt;
+					<a class="btn btn-ani btn-text" href="#">
+						btn-text
+					</a>
+				</li>
+				<li class="grap">
+					<div class="tit"><b>with ico Button</b></div>
+					<a class="btn btn-ani btn-primary" href="#">
+						Primary
+						<i class="ico ico-arrow" aria-hidden="true"></i>
+					</a>
+					&gt;
+					<a class="btn btn-ani btn-outline-primary" href="#">
+						Primary
+						<i class="ico ico-arrow" aria-hidden="true"></i>
+					</a>
+					&gt;
+					<a class="btn btn-ani btn-primary btn-ico" href="#">
+						<span class="skip">Primary</span>
+						<i class="ico ico-arrow" aria-hidden="true"></i>
+					</a>
+					<a class="btn btn-ani btn-outline-primary btn-ico" href="#">
+						<span class="skip">Primary</span>
+						<i class="ico ico-arrow" aria-hidden="true"></i>
+					</a>
+					&gt;
+					<a class="btn btn-ani btn-text" href="#">
+						btn-text
+						<i class="ico ico-arrow" aria-hidden="true"></i>
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="group wide">
+			<strong class="gr_tit" id="docs-ui-button4">Case</strong>
+			<ul class="wrap heading">
+				<li class="grap">
+					<div class="tit"><b>단일 사용시</b></div>
+					<a class="btn btn-ani btn-primary" href="#">Primary</a>
+				</li>
+				<li class="grap">
+					<div class="tit"><b>레벨 차이 두개 이상 버튼 나열 시</b></div>
+					<div class="btnwrap">
+						<a class="btn btn-ani btn-primary" href="#">Primary</a>
+						<a class="btn btn-ani btn-secondary" href="#">Secondary</a>
+					</div>
+				</li>
+				<li class="grap">
+					<div class="tit"><b>같은 레벨 두개 이상 버튼 나열 시</b></div>
+					<div class="btnwrap">
+						<a class="btn btn-ani btn-outline-primary" href="#">Primary</a>
+						<a class="btn btn-ani btn-outline-primary" href="#">Primary</a>
+						<a class="btn btn-ani btn-outline-primary" href="#">Primary</a>
+						<a class="btn btn-ani btn-outline-primary" href="#">Primary</a>
+						<a class="btn btn-ani btn-outline-primary" href="#">Primary</a>
+					</div>
+				</li>
+				<li class="grap">
+					<div class="tit"><b>문장과 같이 사용시</b></div>
+					<p>
+					문장사이에 링크안내를 해줘야 할 경우 Text Button을 사용합니다.
+					<a class="btn btn-ani btn-text" href="#">
+						btn-text
+						<i class="ico ico-arrow" aria-hidden="true"></i>
+					</a>
+					</p>
+				</li>
+				<li class="grap">
+					<div class="tit"><b>테이블 안에 버튼을 넣어야 할 경우</b></div>
+					<table class="tbl_basic tx_center">
+						<caption>
+						<strong>table button</strong>
+						<p>table button이 들어가는 경우에 사용합니다.</p>
+						</caption>
+						<thead>
+							<tr>
+								<th scope="col">thead</th>
+								<th scope="col">thead</th>
+								<th scope="col">thead</th>
+							</tr>
+						</thead>
+						<tbody>
+						<tr>
+							<th scope="row">th </th>
+							<td>td</td>
+							<td>
+								<a class="btn btn-ani btn-outline-primary sm" href="#">Primary</a>
+							</td>
+						</tr>
+						<tr>
+							<th scope="row">th </th>
+							<td>td</td>
+							<td>
+								<a class="btn btn-ani btn-outline-primary sm" href="#">Primary</a>
+							</td>
+						</tr>
+						</tbody>
+					</table>
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+
+<h2>TABLE</h2>
+<div class="stwrap">
+	<h3>기본 테이블</h3>
+	<table class="tbl_basic center table-hover">
+		<caption>개요</caption>
+		<colgroup>
+			<col style="width:5%"/>
+			<col style="width:5%"/>
+			<col style="width:5%"/>
+			<col style="width:8%"/>
+			<col style="width:10%"/>
+			<col style="width:10%"/>
+			<col style="width:10%"/>
+            <col style="width:10%"/>
+            <col style="width:10%"/>
+		</colgroup>
+		<thead>
+			<tr>
+				<th scope="col">학년</th>
+				<th scope="col">반</th>
+				<th scope="col">번호</th>
+				<th scope="col">이름</th>
+				<th scope="col" class="th_deep">국어</th>
+				<th scope="col" class="th_deep">수학</th>
+				<th scope="col" class="th_deep">사회</th>
+                <th scope="col" class="th_deep">과학</th>
+				<th scope="col" class="th_deep">영어</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th scope="row">5</th>
+				<td>1</td>
+				<td>1</td>
+				<td>홍길동</td>
+				<td></td>
+				<td></td>
+				<td></td>
+                <td></td>
+                <td></td>
+			</tr>
+			<tr>
+				<th scope="row">5</th>
+				<td>1</td>
+				<td>2</td>
+				<td>김충남</td>
+				<td></td>
+				<td></td>
+				<td></td>
+                <td></td>
+                <td></td>
+			</tr>
+		</tbody>
+	</table>
+
+	<h3>리스트 테이블</h3>
+	<table class="tbl_basic tbl_list center table-hover">
+		<caption>개요</caption>
+		<colgroup>
+			<col style="width:4%"/>
+			<col style="width:5%"/>
+			<col style="width:5%"/>
+			<col style="width:30%"/>
+			<col style="width:8%"/>
+			<col style="width:5%"/>
+			<col style="width:5%"/>
+            <col style="width:6%"/>
+            <col style="width:6%"/>
+			<col style="width:4%"/>
+		</colgroup>
+		<thead>
+			<tr>
+				<th scope="col"><input type="checkbox" id="allcheck" name="check" checked/><label for="allcheck"></label></th>
+				<th scope="col">학년</th>
+				<th scope="col">반</th>
+				<th scope="col">평가지명</th>
+				<th scope="col">생성일</th>
+				<th scope="col" class="th_deep">수정</th>
+				<th scope="col" class="th_deep">미리보기</th>
+				<th scope="col" class="th_deep">배포</th>
+                <th scope="col" class="th_deep">채점</th>
+				<th scope="col" class="th_deep">삭제</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th scope="row"><input type="checkbox" id="check0" name="check"/><label for="check0"></label></th>
+				<td>5</td>
+				<td>1</td>
+				<td class="td_left"><b>5학년 1학기 영어(동아) 평가지</b>25문제 | 1단원, 2단원</td>
+				<td>24.09.30</td>
+				<td><a href="#" class="micon ico5">수정</a></td>
+				<td><a href="#" class="micon ico7">보기</a></td>
+                <td><a href="#" class="btn btn-ani btn-primary sm">배포하기</a></td>
+                <td><a href="#" class="state tx score1">채점전</a></td>
+				<td><a href="#" class="micon ico8">삭제</a></td>
+			</tr>
+			<tr>
+				<th scope="row"><input type="checkbox" id="check0" name="check"/><label for="check0"></label></th>
+				<td>5</td>
+				<td>1</td>
+				<td class="td_left"><b>5학년 1학기 영어(동아) 평가지</b>25문제 | 1단원, 2단원</td>
+				<td>24.09.30</td>
+				<td><a href="#" class="micon ico5">수정</a></td>
+				<td><a href="#" class="micon ico7">보기</a></td>
+                <td><a href="#" class="btn btn-ani btn-outline-primary sm">평가중</a></td>
+                <td><a href="#" class="state tx score3">미완료</a></td>
+				<td><a href="#" class="micon ico8">삭제</a></td>
+			</tr>
+			<tr>
+				<th scope="row"><input type="checkbox" id="check0" name="check"/><label for="check0"></label></th>
+				<td>5</td>
+				<td>1</td>
+				<td class="td_left"><b>5학년 1학기 영어(동아) 평가지</b>25문제 | 1단원, 2단원</td>
+				<td>24.09.30</td>
+				<td><a href="#" class="micon ico5">수정</a></td>
+				<td><a href="#" class="micon ico7">보기</a></td>
+                <td><i class="state tx end">완료</i></td>
+                <td><a href="#" class="state tx score3">미완료</a></td>
+				<td><a href="#" class="micon ico8">삭제</a></td>
+			</tr>
+			<tr>
+				<th scope="row"><input type="checkbox" id="check0" name="check"/><label for="check0"></label></th>
+				<td>5</td>
+				<td>1</td>
+				<td class="td_left"><b>5학년 1학기 영어(동아) 평가지</b>25문제 | 1단원, 2단원</td>
+				<td>24.09.30</td>
+				<td><a href="#" class="micon ico5">수정</a></td>
+				<td><a href="#" class="micon ico7">보기</a></td>
+                <td><i class="state tx end">완료</i></td>
+                <td><a href="#" class="state tx end">완료</a></td>
+				<td><a href="#" class="micon ico8">삭제</a></td>
+			</tr>
+		</tbody>
+	</table>
+
+	<h3>결과 테이블</h3>
+	<table class="tbl_basic type2 center table-hover">
+		<caption>개요</caption>
+		<colgroup>
+			<col />
+			<col style="width:10%"/>
+			<col style="width:10%"/>
+			<col style="width:8%"/>
+			<col style="width:12%"/>
+			<col style="width:12%"/>
+		</colgroup>
+		<thead>
+			<tr>
+				<th scope="col">성취기준</th>
+				<th scope="col">정답률</th>
+				<th scope="col">전체 정답률</th>
+				<th scope="col">난이도</th>
+				<th scope="col">정답률</th>
+				<th scope="col">전체 정답률</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th scope="row" rowspan="3" class="td_left">[6국05-03] 비유적 표현의 특성과 효과를 살려 생각과 느낌을 다양하게 표현한다.</th>
+				<td rowspan="3">75%</td>
+				<td rowspan="3">80%</td>
+				<td>상</td>
+				<td>60</td>
+				<td>70</td>
+			</tr>
+			<tr>
+				<td>중</td>
+				<td>60</td>
+				<td>70</td>
+			</tr>
+            <tr>
+				<td>하</td>
+				<td>60</td>
+				<td>70</td>
+			</tr>
+            <tr>
+				<th scope="row" rowspan="3" class="td_left">[6국05-01] 문학은 가치 있는 내용을 언어로 표현하여 아름다움을 느끼게 하는 활동임을 이해하고 문학 활동을 한다.</th>
+				<td rowspan="3">75%</td>
+				<td rowspan="3">80%</td>
+				<td>상</td>
+				<td>60</td>
+				<td>70</td>
+			</tr>
+			<tr>
+				<td>중</td>
+				<td>60</td>
+				<td>70</td>
+			</tr>
+            <tr>
+				<td>하</td>
+				<td>60</td>
+				<td>70</td>
+			</tr>
+		</tbody>
+	</table>
+
+	<h3>문항 테이블</h3>
+	<table class="tbl_basic type3 center">
+		<caption>개요</caption>
+		<colgroup>
+			<col style="width:5%"/>
+			<col style="width:5%"/>
+			<col style="width:5%"/>
+			<col style="width:8%"/>
+			<col style="width:10%"/>
+			<col style="width:10%"/>
+			<col style="width:10%"/>
+            <col style="width:10%"/>
+            <col style="width:10%"/>
+		</colgroup>
+		<thead>
+			<tr>
+				<th scope="col">학년</th>
+				<th scope="col">반</th>
+				<th scope="col">번호</th>
+				<th scope="col">이름</th>
+				<th scope="col" class="th_deep">국어</th>
+				<th scope="col" class="th_deep">수학</th>
+				<th scope="col" class="th_deep">사회</th>
+                <th scope="col" class="th_deep">과학</th>
+				<th scope="col" class="th_deep">영어</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<th scope="row">5</th>
+				<td>1</td>
+				<td>1</td>
+				<td>홍길동</td>
+				<td></td>
+				<td></td>
+				<td></td>
+                <td></td>
+                <td></td>
+			</tr>
+			<tr>
+				<th scope="row">5</th>
+				<td>1</td>
+				<td>2</td>
+				<td>김충남</td>
+				<td></td>
+				<td></td>
+				<td></td>
+                <td></td>
+                <td></td>
+			</tr>
+		</tbody>
+	</table>
+
+</div>
+
+<h2>아이콘 32*32</h2>
+<div class="stwrap" style="background:#d0e6e2">
+    <i class="micon ico1">학생 추가 아이콘</i>
+	<i class="micon ico2">학급관리 아이콘</i>
+	<i class="micon ico3">자동생성</i>
+	<i class="micon ico4">입력완료</i>
+	<i class="micon ico5">입력수정</i>
+	<i class="micon ico6">입력수정 on</i>
+	<i class="micon ico7">자세히보기</i>
+	<i class="micon ico8">삭제</i>
+	<i class="micon ico9">정보아이콘</i>
+	<i class="micon ico10">정답 팝업용 아이콘</i>
+	<i class="micon ico11">미접속</i>
+	<i class="micon ico12">접속</i>
+</div>
+
+<h2>아이콘 20*20</h2>
+<div class="stwrap" style="background:#d0e6e2">
+	<i class="sicon ico1">접속</i>
+	<i class="sicon ico2">일괄수정</i>
+	<i class="sicon ico3">선택삭제</i>
+	<i class="sicon ico4">로케이션 홈</i>
+	<i class="sicon ico5">로그아웃</i>
+	<i class="sicon ico6">삭제</i>
+	<i class="sicon ico7">경고</i>
+	<i class="sicon ico8">경고</i>
+
+	<i class="sicon close">닫기</i>
+	<i class="sicon close_w">닫기</i>
+
+	<i class="sicon ico_info">정보</i>
+
+	<i class="sicon ico_o">정답</i>
+	<i class="sicon ico_x">오답</i>
+
+	<i class="sicon ico_print">인쇄하기</i>
+	<i class="sicon ico_print_w">인쇄하기</i>
+	<i class="sicon ico_save">저장하기</i>
+
+	<i class="sicon ico_share">공유하기</i>
+
+	<i class="sicon ico_calender">달력</i>
+	<i class="sicon ico_time">시계</i>
+
+	<i class="sicon ico_excel">엑셀</i>
+
+	<i class="nicon ico1">학급관리</i>
+	<i class="nicon ico2">문제은행</i>
+	<i class="nicon ico3">Ai</i>
+	<i class="nicon ico4">통계</i>
+</div>
+
+<h2>헤딩 아이콘</h2>
+<div class="stwrap">
+	<i class="hico hico1">목록</i>
+	<i class="hico hico2">확인</i>
+	<i class="hico hico3">학생목록</i>
+	<i class="hico hico4">평균점수</i>
+	<i class="hico hico5"></i>
+
+	<i class="hico2 hico6"></i>
+	<i class="hico2 hico7"></i>
+	<i class="hico2 hico8"></i>
+	<i class="hico2 hico9"></i>
+	<i class="hico2 hico10"></i>
+</div>
+
+<h2>기타 아이콘</h2>
+<div class="stwrap" style="background:#000">
+	<i class="icon arr_s">작은 화살표</i>
+	<i class="icon arr_m">중간 화살표</i>
+	<i class="icon arr_b">큰 화살표</i>
+	<i class="icon arr_selet">선택박스 화살표</i>
+	<i class="icon arr_blue">블루 화살표</i>
+	<i class="icon arr_check">체크용 화살표</i>
+	<i class="icon arr_heading">헤딩용 화살표</i>
+	<i class="icon ico_minus">빼기</i>
+	<i class="icon ico_plus">더하기</i>
+</div>
+
+<h2>그래픽 아이콘</h2>
+<div class="stwrap">
+	<i class="gicon ico1">국어</i>
+	<i class="gicon ico2">수학</i>
+	<i class="gicon ico3">사회</i>
+	<i class="gicon ico4">과학</i>
+	<i class="gicon ico5">영어</i>
+	<i class="gicon ico6">그래픽 아이콘1</i>
+	<i class="gicon ico7">그래픽 아이콘2</i>
+</div>
+
+<h2>접속상태 배지</h2>
+<div class="stwrap">
+	<p>단일로 쓰일때</p>
+	<i class="badge badge1">접속</i>
+	<i class="badge badge2">결시</i>
+	<i class="badge badge3">10분 이상 무응답</i>
+	<i class="badge badge4">제출완료</i>
+
+	<p>badge_wrap 안에 있을때는 텍스트 보임</p>
+	<div class="badge_wrap">
+		<i class="badge badge1">접속</i>
+		<i class="badge badge2">결시</i>
+		<i class="badge badge3">10분 이상 무응답</i>
+		<i class="badge badge4">제출완료</i>
+	</div>
+</div>
+
+<h2>채점 이미지</h2>
+<div class="stwrap">
+	<i class="grade grade1">정답</i>
+	<i class="grade grade2">오답</i>
+</div>
+
+<h2>state 텍스트형</h2>
+<div class="stwrap">
+	<i class="state tx">선택형</i>
+	<i class="state tx diff1">상</i>
+	<i class="state tx diff2">중</i>
+	<i class="state tx diff3">하</i>
+
+	<i class="state tx end">완료</i>
+
+	<i class="state tx score1">채점전</i>
+	<i class="state tx score2">채점중</i>
+	<i class="state tx score3">미완료</i>
+</div>
+
+<h2>닫기버튼</h2>
+<div class="stwrap">
+    <button type="button" class="bn_close"><span class="sr-only">닫기</span></button>
+    <button type="button" class="bn_close bk"><span class="sr-only">닫기</span></button>
+</div>
+
+<h2>tab</h2>
+<div class="stwrap">
+	<div class="tabs">
+		<div class="tab-header">
+			<button rel="tab1" class="active">탭버튼1</button>
+			<button rel="tab2">탭버튼2</button>
+		</div>
+		<div class="tab-body" id="tab1" class="active">탭1</div>
+		<div class="tab-body" id="tab2">탭2</div>
+	</div>
+</div>
+
+<h2>tab in tab</h2>
+<div class="stwrap">
+	<div class="tabin">
+		<div class="tabin-header">
+			<button rel="tabin1" class="active">탭버튼1</button>
+			<button rel="tabin2">탭버튼2</button>
+		</div>
+		<div class="tabin-body" id="tabin1" class="active">탭1</div>
+		<div class="tabin-body" id="tabin2">탭2</div>
+	</div>
+</div>
+
+<h2>form 태그</h2>
+<div class="stwrap">
+	<div class="styleguide_box">
+	 <div class="group">
+		<strong class="gr_tit">select</strong>
+		<ul class="wrap">
+			<li class="grap">
+				<div class="select_wrap">
+					<label for="select">검색조건<em class="required"><span class="sr-only">필수입력</span></em></label>
+					<select class="select" id="select">
+						  <option selected>선택</option>
+						  <option value="">선택1</option>
+						  <option value="">선택2</option>
+						  <option value="">선택3</option>
+						  <option value="">선택4</option>
+						  <option value="">선택5</option>
+					</select>
+				</div>
+				<select class="select no-line">
+					  <option selected>선택</option>
+					  <option value="">선택1</option>
+					  <option value="">선택2</option>
+					  <option value="">선택3</option>
+					  <option value="">선택4</option>
+					  <option value="">선택5</option>
+				</select>
+				<select class="select" disabled>
+					  <option disabled>선택</option>
+					  <option value="" selected>선택1</option>
+					  <option value="">선택2</option>
+					  <option value="">선택3</option>
+					  <option value="">선택4</option>
+					  <option value="">선택5</option>
+				</select>
+			</li>
+		</ul>
+	 </div>
+
+	 <div class="group">
+		<strong class="gr_tit">input text</strong>
+		<ul class="wrap">
+			<li class="grap">
+				<input type="text" placeholder="입력하세요"/>
+				<input type="text" disabled value="input 비활성 상태"/>
+				<input type="password" placeholder="비밀번호를 입력하세요"/>
+				<input type="text" class="no-line" placeholder="라인이 없는 inputbox"/>
+				<input type="text" class="no-line" disabled value="라인이 없는 input 비활성 상태"/>
+			</li>
+		</ul>
+	 </div>
+
+	 <div class="group">
+		<strong class="gr_tit">intput time</strong>
+		<ul class="wrap">
+			<li class="grap">
+				<input type="time" name="time"/>
+			</li>
+		</ul>
+	 </div>
+
+	 <div class="group">
+		<strong class="gr_tit">intput date</strong>
+		<ul class="wrap">
+			<li class="grap">
+				<div class="date_wrap">
+					<label for="date1">기간</label><input type="date" name="date" id="date1"/>
+					<span> ~ </span>
+					<label for="date2" class="sr-only">마지막날짜 입력</label><input type="date" name="date" id="date2"/>
+				</div>
+			</li>
+		</ul>
+	 </div>
+
+	 <div class="group">
+		<strong class="gr_tit">radio</strong>
+		<ul class="wrap">
+			<li class="grap">
+				<input type="radio" id="radio1" name="radio" checked/><label for="radio1">선택1</label>
+				<input type="radio" id="radio2" name="radio"/><label for="radio2">선택2</label>
+			</li>
+		</ul>
+	 </div>
+
+	 <div class="group">
+		<strong class="gr_tit">checkbox</strong>
+		<ul class="wrap">
+			<li class="grap">
+				<input type="checkbox" id="check1" name="check" checked/><label for="check1">체크박스1</label>
+				<input type="checkbox" id="check2" name="check"/><label for="check2">체크박스2</label>
+			</li>
+		</ul>
+	 </div>
+	</div>
+</div>
+
+<h2>컴포넌트 : 요약</h2>
+<div class="stwrap">
+	<ul class="summary_wrap">
+		<li class="item_date">
+			<b>2024</b>년 
+			<b>7</b>월 
+			<b>30</b>일
+		</li>
+		<li class="item_subject">
+			<i class="ico_logo type1">온평가</i>
+			<b>영어</b>
+			<span class="state tx">5학년 1학기</span>
+		</li>
+		<li class="item_state">
+			평가가 <b>진행중</b> 입니다.
+		</li>
+	</ul>
+</div>
+
+<h2>컴포넌트 : 문항 번호 네비게이션</h2>
+<div class="stwrap">
+	<ul class="question_list">
+		<li><a href="#" class="qnum ing">1</a></li>
+		<li><a href="#" class="qnum">2</a></li>
+		<li><a href="#" class="qnum">3</a></li>
+		<li><a href="#" class="qnum">4</a></li>
+		<li><a href="#" class="qnum">5</a></li>
+		<li><a href="#" class="qnum">6</a></li>
+		<li><a href="#" class="qnum">7</a></li>
+		<li><a href="#" class="qnum">8</a></li>
+		<li><a href="#" class="qnum">9</a></li>
+		<li><a href="#" class="qnum">10</a></li>
+		<li><a href="#" class="qnum">11</a></li>
+		<li><a href="#" class="qnum">12</a></li>
+		<li><a href="#" class="qnum">13</a></li>
+		<li><a href="#" class="qnum">14</a></li>
+		<li><a href="#" class="qnum">15</a></li>
+		<li><a href="#" class="qnum">16</a></li>
+		<li><a href="#" class="qnum">17</a></li>
+		<li><a href="#" class="qnum">18</a></li>
+		<li><a href="#" class="qnum">19</a></li>
+		<li><a href="#" class="qnum">20</a></li>
+		<li><a href="#" class="qnum">21</a></li>
+		<li><a href="#" class="qnum">22</a></li>
+		<li><a href="#" class="qnum">23</a></li>
+		<li><a href="#" class="qnum">24</a></li>
+		<li><a href="#" class="qnum">25</a></li>
+	</ul>
+</div>
+
+
+
+</section>
+</body>
+
+</html>
