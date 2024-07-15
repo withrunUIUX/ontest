@@ -93,7 +93,7 @@
 .question .q_layout {gap:1.2rem;min-height:calc(73vh + 19px);padding:20px 70px 40px;}
 
 /* 문항 질문 */
-.q_tit {display:flex;align-items:center;justify-content:flex-start;gap:.4rem;margin:0;padding:26px 42px;font-size:16px;font-weight:500;background:var(--gray_20);}
+.q_tit {display:flex;align-items:center;justify-content:flex-start;gap:.4rem;margin:0;padding:26px 42px;font-size:1rem;font-weight:500;background:var(--gray_20);}
 .q_tit .question_number {padding:.5rem .8rem;border-radius:.3rem;color:var(--c_white);font-weight:600;background:var(--gray_70);}
 .q_tit .txt {}
 .q_tit .txt > u {text-decoration:none;border-bottom:1px solid var(--gray_80);}
@@ -105,7 +105,7 @@
 .q_layout .question_info li:last-child:after {display:none;}
 
 /* 예문 */
-.q_layout .q_wrap {overflow:hidden;width:100%;padding:3rem 4rem;border:.2rem solid var(--gray_50);border-radius:10px;font-size:1.1rem;color:var(--gray_90);} /* 예문영역 */
+.q_layout .q_wrap {overflow:hidden;width:100%;padding:3rem 4rem;border:.3rem solid var(--gray_30);border-radius:10px;font-size:1.1rem;color:var(--gray_90);} /* 예문영역 */
 .q_layout .q_wrap .examBox {display:flex;justify-content:center;flex-direction:column;align-items:center;gap:1rem;}
 .q_layout .q_wrap .examBox .subtitle3 {font-size:20px;}
 .q_layout .q_wrap .examBox p {line-height:1.5;}
@@ -131,9 +131,13 @@
 /*circle sm*/
 .bullet.circle.sm {width:20px;height:20px;font-size:12px;}
 
-/* 꾸밈요소 */
+/* 빈칸 */
 .blankBox {display:inline-flex;align-items:center;justify-content:center;min-width:60px;height:42px;padding:0 1rem;border-radius:3px;border:2px dashed var(--gray_60);font-size:1.1rem;font-weight:600;color:var(--gray_60);background:var(--gray_20);vertical-align:middle;}/*빈칸표시*/
-.blankBox.sm {min-width:50px;height:38px;font-size:16px;}
+.blankBox.sm {min-width:50px;height:38px;padding:0 .5rem;font-size:1rem;}
+
+/* 텍스트박스 */
+.square {display:inline-flex;align-items:center;justify-content:center;min-width:60px;height:42px;padding:0 1rem;border-radius:3px;border:2px solid var(--gray_60);font-size:1.1rem;font-weight:600;color:var(--gray_90);background:#fff;vertical-align:middle;}/*빈칸표시*/
+.square.sm {min-width:50px;height:38px;padding:0 .5rem;font-size:1rem;}
 
 
 /* 단답형 */
