@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문항 컴포넌트</title>
+
+	<link rel="stylesheet" href="/css/slick.css">
+	<link rel="stylesheet" href="/css/common.css">
+	<link rel="stylesheet" href="/css/question.css">
+	<link rel="stylesheet" href="/css/contents.css">
+
+	<script type="text/javascript" src="/js/jquery-3.6.0.min.js"></script>
+	<script type="text/javascript" src="/js/jquery-latest.min.js"></script>
+	<script type="text/javascript" src="/js/slick.js"></script>
+	<script type="text/javascript" src="/js/chart.js"></script>
+
+	<script type="text/javascript" src="/js/include.js"></script>
+	<script type="text/javascript" src="/js/contents.js"></script>
+
+	<link rel="stylesheet" href="/styleguide/styleguide.css">
+</head>
+
+<body class="style_wrap">
+
+<ul class="sgNavi">
+    <li><a href="../styleguide/styleguide.html" class="">스타일가이드</a></li>
+    <li><a href="../styleguide/questuon_cmpt.html" class="on">문항컴포넌트</a></li>
+    <li><a href="../styleguide/examBox_cmpt.html" class="">예문 컴포넌트</a></li>
+</ul>
+    
+<section>
+
+<h2>bullet</h2>
+<div class="stwrap">
+    <span class="bullet">보기1</span>
+    <span class="bullet blue">보기1</span>
+
+    <span class="bullet circle">가</span>
+    <span class="bullet circle">1</span>
+    <span class="bullet circle">ㄱ</span>
+
+    <span class="bullet circle sm">가</span>
+    <span class="bullet circle sm">1</span>
+    <span class="bullet circle sm">ㄱ</span>
+
+    <span class="bullet circle blue">가</span>
+    <span class="bullet circle blue">1</span>
+    <span class="bullet circle blue">ㄱ</span>
+
+    <span class="bullet circle blue sm">가</span>
+    <span class="bullet circle blue sm">1</span>
+    <span class="bullet circle blue sm">ㄱ</span>
+</div>
+
+<h2>빈칸 박스 <small>예문에 사용한다.</small></h2>
+<div class="stwrap">
+    <span class="blankBox">빈칸</span>
+    <span class="blankBox sm">small</span>
+    <span class="blankBox wp100">100%</span>
+
+    <span class="blankBox"><span class="bullet circle blue">ㄱ</span></span>
+    <span class="blankBox sm"><span class="bullet circle blue sm">ㄱ</span></span>
+    <span class="blankBox wp100"><span class="bullet circle blue">ㄱ</span></span>
+
+    <div class="q_layout">
+        <h3>blankBox 예시</h3>
+        <div class="q_wrap">
+            지난주에 친구들과 고구마 농장에 갔습니다. 농장에는
+            <span class="blankBox sm"><span class="bullet circle blue sm">ㄱ</span></span>&nbsp;
+            밭과 멋진 연못이 있었습니다. 우리는 밭에 쪼르르 앉아서 고구마를 열심히 캤습니다. 울퉁불퉁한 고구마가&nbsp;
+            <span class="blankBox sm"><span class="bullet circle blue sm">ㄴ</span></span>&nbsp;
+            열렸습니다.
+        </div>
+    </div>
+</div>
+
+<h2>카드박스 <small></small></h2>
+<div class="stwrap">
+    <div class="cardBox">
+        <span class="bullet circle">가</span>
+        <p>은 좁은 면적에 비해 나라가 많으며, 북반구에 있다.</p>
+    </div>
+
+    <div class="cardBox photo">
+        <div class="photoBox">
+            <img src="../images/common/cardbox_eximg1.png">
+        </div>
+        <p>기름 13L로 221㎞를 갈 수 있는 가 자동차 </p>
+    </div>
+
+    <div class="cardBox photo flex-col">
+        <div class="photoBox">
+            <img src="../images/common/cardbox_eximg3.png">
+        </div>
+        <p><span class="bullet circle">1</span>&nbsp;전기 제품 사용하지 않을 때</p>
+    </div>
+
+    <div class="cardBox magazine flex-col">
+        <p><span class="bullet circle">1</span>&nbsp;전기 제품 사용하지 않을 때</p>
+        <div class="inner">
+            <img src="../images/common/cardbox_eximg5.png">
+            <p>우리학교 독도사랑 동아리 대원들이 OO일에 독도를 다녀왔다. 우리나라 최남단 ‘독도’ 방문</p>
+        </div>
+    </div>
+
+</div>
+
+
+<h2>단답형 <small></small></h2>
+<div class="stwrap">
+    <div class="inner inputWrap">
+        <input type="text" class="inputBox" value="기본타입">
+        <input type="text" class="inputBox sm" value="sm">
+        <input type="text" class="inputBox md" value="mid">
+        <input type="text" class="inputBox big" value="big">
+    </div>
+</div>
+
+<h2>분수<small></small></h2>
+<div class="stwrap">
+    <div class="inputWrap">
+        <div class="fraction">
+            2
+            <span class="line"></span>
+            3
+        </div>     
+    </div>
+    <div class="inputWrap">
+        <div class="fraction">
+            <input type="text" class="inputBox sm">
+            <span class="line"></span>
+            <input type="text" class="inputBox sm">
+        </div>     
+    </div>
+    <div class="inputWrap">
+        <div class="fraction type2">
+            2
+            <div class="fraction">
+                3
+                <span class="line"></span>
+                100
+            </div>
+        </div>     
+    </div>
+    <div class="inputWrap">
+        <div class="fraction type2">
+            <input type="text" class="inputBox sm">
+            <div class="fraction">
+                <input type="text" class="inputBox sm">
+                <span class="line"></span>
+                <input type="text" class="inputBox sm">
+            </div>
+        </div>     
+    </div>
+</div>
+
+<h2>분수 <small>예문에 사용할때</small></h2>
+<div class="stwrap">
+    <div class="inputWrap">
+        <div class="fraction">
+            <span class="blankBox"><span class="bullet circle blue sm">ㄴ</span></span>
+            <span class="line"></span>
+            <span class="blankBox"><span class="bullet circle blue sm">ㄱ</span></span>
+        </div>   
+    </div>
+    <div class="inputWrap">
+        <div class="fraction type2">
+            <span class="blankBox"><span class="bullet circle blue sm">ㄱ</span></span>
+            <div class="fraction">
+                <span class="blankBox"><span class="bullet circle blue sm">ㄷ</span></span>
+                <span class="line"></span>
+                <span class="blankBox"><span class="bullet circle blue sm">ㄴ</span></span>
+            </div>
+        </div>     
+    </div>
+</div>
+
+
+<h2>라디오</h2>
+<div class="stwrap">
+    <ul class="radioWrap">
+        <li>
+            <input type="radio" name="radioexam" id="radioexam1">
+            <label for="radioexam1">4.76 ÷ 4</label>
+        </li>
+        <li>
+            <input type="radio" name="radioexam" id="radioexam2">
+            <label for="radioexam2">4.76 ÷ 4</label>
+        </li>
+        <li>
+            <input type="radio" name="radioexam" id="radioexam3">
+            <label for="radioexam3">4.76 ÷ 4</label>
+        </li>
+        <li>
+            <input type="radio" name="radioexam" id="radioexam4">
+            <label for="radioexam4">4.76 ÷ 4</label>
+        </li>
+    </ul>
+</div>
+
+<h2>라디오 type2</h2>
+<div class="stwrap">
+    <ul class="radioWrap type2">
+        <li>
+            <input type="radio" name="radioexam1" id="radioexam5">
+            <label for="radioexam5">4.76 ÷ 4</label>
+        </li>
+        <li>
+            <input type="radio" name="radioexam1" id="radioexam6">
+            <label for="radioexam6">4.76 ÷ 4</label>
+        </li>
+        <li>
+            <input type="radio" name="radioexam1" id="radioexam7">
+            <label for="radioexam7">4.76 ÷ 4</label>
+        </li>
+        <li>
+            <input type="radio" name="radioexam1" id="radioexam8">
+            <label for="radioexam8">4.76 ÷ 4</label>
+        </li>
+    </ul>
+</div>
+
+<h2>라디오 type3</h2>
+<div class="stwrap">
+    <ul class="radioWrap type3">
+        <li>
+            <input type="radio" name="radioexam2" id="radioexamT3_1">
+            <label for="radioexamT3_1">
+                <span>주체: 가계</span>
+                <span>문제점: 일자리를 제공하지 않으면 일을 할 수 없다.</span>
+            </label>
+        </li>
+        <li>
+            <input type="radio" name="radioexam2" id="radioexamT3_2">
+            <label for="radioexamT3_2">
+                <span>주체: 가계</span>
+                <span>문제점: 생산 활동을 할 수 없어 소득을 얻기 어렵다</span>
+            </label>
+        </li>
+        <li>
+            <input type="radio" name="radioexam2" id="radioexamT3_3">
+            <label for="radioexamT3_3">
+                <span>주체: 가계</span>
+                <span>문제점: 생산 활동에 필요한 노동력을 제공받을 수 없다.</span>
+            </label>
+        </li>
+        <li>
+            <input type="radio" name="radioexam2" id="radioexamT3_4">
+            <label for="radioexamT3_4">
+                <span>주체: 가계</span>
+                <span>문제점: 생활에 필요한 물건을 구입하거나 서비스를 받기 어렵다</span>
+            </label>
+        </li>
+        <li>
+            <input type="radio" name="radioexam2" id="radioexamT3_5">
+            <label for="radioexamT3_5">
+                <span>주체: 가계</span>
+                <span>문제점: 생산 활도을 제대로 하지 않으면 물건을 구입할 수 없다.</span>
+            </label>
+        </li>
+    </ul>
+</div>
+
+<h2>라디오 type4</h2>
+<div class="stwrap">
+    <div class="radioWrap type4">
+        <div>
+            친구야, 안녕? 전기를 낭비하는 모습이 안타깝구나. 
+            <input type="radio" name="radioexamT4" id="radioexamT4_1"><label for="radioexamT4_1">토스터를 사용하지 않을 때에는 플러그를 뽑아둬야해.</label>&nbsp;
+            <input type="radio" name="radioexamT4" id="radioexamT4_2"><label for="radioexamT4_2">세탁물의 양이 적어야 세탁이 잘 되니 적은 양으로 자주 세탁해주는 게 좋아.</label>&nbsp;
+            <input type="radio" name="radioexamT4" id="radioexamT4_3"><label for="radioexamT4_3">밥은 먹을 만큼만 하 남 밥은 식힌 후에 냉동실에 얼리면</label>&nbsp;
+            전기를 절약할 수 있어.&nbsp;
+            <input type="radio" name="radioexamT4" id="radioexamT4_4"><label for="radioexamT4_4">TV를 보지 않을 때는 전원을 끄고 플러그를 뽑아둬야 해.</label>&nbsp;
+            마지막으로,&nbsp;
+            <input type="radio" name="radioexamT4" id="radioexamT4_5"><label for="radioexamT4_5">창문을 닫고 에어컨을 사용해야</label>&nbsp;
+            전기를 절약할 수 있어. 친구야, 전기를 낭비하지 않도록 앞으로 노력해보자.
+        </div>
+    </div>
+</div>
+
+<h2>라디오 type5 <small>Label 안에 카드박스를 사용. 카드박스 컴포넌트 활용</small></h2>
+<div class="stwrap">
+    <ul class="radioWrap type5">
+        <li>
+            <input type="radio" name="radioexamT5" id="radioexamT5_1">
+            <label for="radioexamT5_1" class="cardWrap">
+                <div class="cardBox photo flex-col">
+                    <div class="photoBox">
+                        <img src="../images/common/cardbox_eximg3.png">
+                    </div>
+                    <p><span class="bullet circle">1</span>&nbsp;전기 제품 사용하지 않을 때</p>
+                </div>
+            </label>
+        </li>
+        <li>
+            <input type="radio" name="radioexamT5" id="radioexamT5_2">
+            <label for="radioexamT5_2" class="cardWrap">
+                <div class="cardBox photo flex-col">
+                    <div class="photoBox">
+                        <img src="../images/common/cardbox_eximg3.png">
+                    </div>
+                    <p><span class="bullet circle">2</span>&nbsp;전기 제품 사용하지 않을 때</p>
+                </div>
+            </label>
+        </li>
+        <li>
+            <input type="radio" name="radioexamT5" id="radioexamT5_3">
+            <label for="radioexamT5_3" class="cardWrap">
+                <div class="cardBox photo flex-col">
+                    <div class="photoBox">
+                        <img src="../images/common/cardbox_eximg3.png">
+                    </div>
+                    <p><span class="bullet circle">3</span>&nbsp;전기 제품 사용하지 않을 때</p>
+                </div>
+            </label>
+        </li>
+        <li>
+            <input type="radio" name="radioexamT5" id="radioexamT5_4">
+            <label for="radioexamT5_4" class="cardWrap">
+                <div class="cardBox photo flex-col">
+                    <div class="photoBox">
+                        <img src="../images/common/cardbox_eximg3.png">
+                    </div>
+                    <p><span class="bullet circle">4</span>&nbsp;전기 제품 사용하지 않을 때</p>
+                </div>
+            </label>
+        </li>
+        <li>
+            <input type="radio" name="radioexamT5" id="radioexamT5_5">
+            <label for="radioexamT5_5" class="cardWrap">
+                <div class="cardBox photo flex-col">
+                    <div class="photoBox">
+                        <img src="../images/common/cardbox_eximg3.png">
+                    </div>
+                    <p><span class="bullet circle">5</span>&nbsp;전기 제품 사용하지 않을 때</p>
+                </div>
+            </label>
+        </li>
+    </ul>
+</div>
+
+<h2>라디오 type6 <small>테이블 안에서 선택</small></h2>
+<div class="stwrap">
+    <a href="/html/sci_623_u1513.html" target="_blank" class="stwrap_btn">미리보기</a>
+    <div class="radioWrap type6">
+        <table class="tbl_basic type3 center">
+            <caption>개요</caption>
+            <colgroup>
+                <col style="width:30%">
+                <col style="width:70%">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th scope="col">구분</th>
+                    <th scope="col">관찰결과</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">불꽃이 타는 모습</th>
+                    <td class="td_left">
+                        불꽃의 모양은 위 아래로 길쭉한 모양이고,<br>
+                        <input type="radio" name="radioexamT6" id="radioexamT6_1"><label for="radioexamT6_1">불꽃의 색깔은 푸른색, 붉은색 등이다.</label>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">불꽃 주변의 밝기</th>
+                    <td class="td_left">
+                        <input type="radio" name="radioexamT6" id="radioexamT6_2"><label for="radioexamT6_2">불꽃 주변이 밝아진다.</label><br>
+                        <input type="radio" name="radioexamT6" id="radioexamT6_3"><label for="radioexamT6_3">불꽃의 위치에 따라 밝기가 다르다.</label>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">손을 가까이 했을 때의 느낌</th>
+                    <td class="td_left">
+                        <input type="radio" name="radioexamT6" id="radioexamT6_4"><label for="radioexamT6_4">손이 따뜻해진다.</label>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">그 밖에 관찰한 것</th>
+                    <td class="td_left">
+                        불꽃이 흔들린다.<br>
+                        <input type="radio" name="radioexamT6" id="radioexamT6_5"><label for="radioexamT6_5">시간이 지날수록 알코올의 양이 늘어난다.</label>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+
+
+
+<h2>핫스폿</h2>
+<div class="stwrap">
+    <div class="hsradioWrap">
+        <span>가방 수에 따라 국어책의 수와 수학책의 수의 비가</span>
+        <input type="radio" name="hsexam1" id="hsexam1">
+        <label for="hsexam1">변합니다.</label>
+        <input type="radio" name="hsexam1" id="hsexam2">
+        <label for="hsexam2">변하지 않습니다.</label>
+    </div>
+</div>
+
+<h2>핫스폿 type2 (리스트 형태)</h2>
+<div class="stwrap">
+    <ul class="hsradioWrap type2">
+        <li>
+            <input type="radio" name="hsexam2" id="example3">
+            <label for="example3">수아</label>
+            <img src="../images/common/hotspot_eximg1.png">
+            <span>내가 좋아하는 음식과 싫어하는 음식을 기준으로 분류했어.</span>
+        </li>
+        <li>
+            <input type="radio" name="hsexam2" id="example4">
+            <label for="example4">지나</label>
+            <img src="../images/common/hotspot_eximg2.png">
+            <span>쓰레기 종류를 기준으로 캔류, 병류, 비닐류, 종이류로 분류했어.</span>
+        </li>
+        <li>
+            <input type="radio" name="hsexam2" id="example5">
+            <label for="example5">휘민</label>
+            <img src="../images/common/hotspot_eximg3.png">
+            <span>쓰레기 모양을 기준으로 둥근 것과 네모난 것으로 분류했어.</span>
+        </li>
+    </ul>
+</div>
+
+
+<h2>핫스폿 type3 (카드 형태)</h2>
+<div class="stwrap">
+    <div class="hsradioWrap type3">
+        <div>
+            <div class="card_item">
+                <input type="radio" name="hsexam3" id="example6">
+                <label for="example6">
+                    <img src="../images/common/hotspot_eximg4.png">
+                    <span>기름 13L로 221㎞를 갈 수 있는 가 자동차 </span>
+                </label>
+            </div>
+            <div class="card_item">
+                <input type="radio" name="hsexam3" id="example7">
+                <label for="example7">
+                    <img src="../images/common/hotspot_eximg5.png">
+                    <span>기름 18L로 342㎞를 갈 수 있는 나 자동차 </span>
+                </label>
+            </div>
+            <div class="card_item">
+                <input type="radio" name="hsexam3" id="example8">
+                <label for="example8">
+                    <img src="../images/common/hotspot_eximg5.png">
+                    <span>기름 18L로 342㎞를 갈 수 있는 나 자동차 </span>
+                </label>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+</section>
+</body>
+
+</html>
