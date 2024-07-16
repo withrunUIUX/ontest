@@ -87,4 +87,20 @@ $(document).ready(function(){
         $("body").removeClass("open").removeAttr("style");
     });
 
+    $('.q_wrap').each(function(){
+        var check = $(this).children();
+        if(!check)
+        {
+            $(this).css('display','none');
+        }
+      });
+
+    //예문 안에 아무것도 없을때 hidden 클래스 추가
+    $('.q_wrap').each(function() {
+        if ($(this).html().trim() === '') {
+            $(this).addClass('hidden');
+        }
+    });
 });
+
+
