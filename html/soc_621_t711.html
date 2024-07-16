@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>6-2-3-[6과15-01]-하-03</title>
+    
+        <!-- <link rel="stylesheet" href="/css/slick.css"> -->
+        <link rel="stylesheet" href="/css/common.css">
+        <link rel="stylesheet" href="/css/question.css">
+        <!-- <link rel="stylesheet" href="/css/contents.css"> -->
+
+        <script type="text/javascript" src="/js/jquery-3.6.0.min.js"></script>
+        <script type="text/javascript" src="/js/jquery-latest.min.js"></script>
+        <!-- <script type="text/javascript" src="/js/slick.js"></script>
+        <script type="text/javascript" src="/js/chart.js"></script> -->
+
+        <script type="text/javascript" src="/js/include.js"></script>
+        <script type="text/javascript" src="/js/contents.js"></script>
+
+    </head>
+
+<body>
+
+<!--[include]HEADER :: Start -->
+<div id="question_header"></div>
+<!--[include]HEADER :: End -->
+
+<div id="question" class="question">
+    <div class="q_content" id="soc_621_t711">
+        <h4 class="q_tit">
+            <em class="question_number">1번</em>
+            <span class="txt">여러 가지 뜻을 가진 낱말을 무엇이라 부르는지 (1)번에서 선택하고 (2)번에서 ‘다리’의 뜻을 바르게 고르세요.</span> 
+        </h4>
+        <div class="q_layout">
+            <ul class="question_info">
+                <li>수와 연산</li>
+                <li>난이도&nbsp;하</li>
+                <li>정답률&nbsp;90%</li>
+            </ul>
+            <div class="q_wrap">
+
+            </div>
+            <div class="a_wrap">
+                <div class="bgBox monitor">
+                    <div class="bgCont">
+                        <div class="checkWrap type6">
+                            <strong class="sub_tt"><지구본과 세계지도></strong>
+                            <div class="txt_group">
+                                <span class="txtRight">1학년 김OO</span>
+                                <span class="txtRight">2005년 8월 6일<br>서영이를 사랑하는 아빠가 공주에서</span>
+                                <span class="annt">※지석: 죽은 사람의 인적 사항이나 무덤의 소재를 기록하여 묻은 판석이나 도판</span>
+                            </div>
+                             <ul>
+                                <li>
+                                    <b>[지구본의 특징]</b>
+                                    <input type="checkbox" name="checkexamT6_11" id="checkexamT6_1_11">
+                                    <label for="checkexamT6_1_11">나라의 위치와 영토 모양이 실제와 비슷하게 나타난다.</label>
+                                </li>
+                                <li>
+                                    <b>[세계지도의 특징]</b>
+                                    <input type="checkbox" name="checkexamT6_11" id="checkexamT6_2_11">
+                                    <label for="checkexamT6_2_11">전 세계를 한눈에 보기 어렵다.</label>
+                                </li>
+                                <li>
+                                    <b>[지구본과 세계지도의 공통점]</b>
+                                    <input type="checkbox" name="checkexamT6_11" id="checkexamT6_3_11">
+                                    <label for="checkexamT6_3_11">지구의 실제 모습과 비슷하며 가지고 다니기 편리하다는 장점이 있다.</label>
+                                    <input type="checkbox" name="checkexamT6_11" id="checkexamT6_4_11">
+                                    <label for="checkexamT6_4_11">여러 나라의 위치나 영토의 모양, 나라 간의 거리가 비교적 정확한 편이다.</label>
+                                    <input type="checkbox" name="checkexamT6_11" id="checkexamT6_5_11">
+                                    <label for="checkexamT6_5_11">위도와 경도를 이용하여 비교적 정확하게 여러 나라의 위치를 나타낼 수 있다.</label>
+                                </li>
+                             </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--[include]FOOTER :: Start -->
+<div id="question_footer"></div>
+<!--[include]FOOTER :: End -->    
+
+<!--제출팝업 :: 미답변 있을때-->
+<div class="modal modal-popup question_modal" id="popup_opne">
+    <div class="modal-background is-click-disabled"></div>
+    <div class="modal-content">
+        <div class="popup-wrap">
+            <span class="flag"><span>1단원</span></span>
+            <div class="con-head">
+                <h3><i class="micon ico2"></i>5학년 1학기</h3>
+            </div>
+            <div class="con-wrap">
+                <strong><em>미답변</em> 문항이 있습니다. <br>그대로 답안을 제출하시겠습니까?</strong>
+                <div class="no_answer">
+                    <span>미답변</span>
+                    <ul class="no_answer_list">
+                        <li class="no_answer_item">2</li>
+                        <li class="no_answer_item">3</li>
+                        <li class="no_answer_item">12</li>
+                    </ul>
+                </div>
+                <div class="btn_group">
+                    <button type="button" class="btn btn-ani btn-secondary modal-close">제출취소</button>
+                    <a class="btn btn-ani btn-primary" id="popup_btn2">제출하기</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--제출팝업 :: 완료 -->
+<div class="modal modal-popup question_modal" id="popup_opne2">
+    <div class="modal-background is-click-disabled"></div>
+    <div class="modal-content">
+        <div class="popup-wrap">
+            <span class="flag"><span>1단원</span></span>
+            <div class="con-head">
+                <h3><i class="micon ico2"></i>5학년 1학기</h3>
+            </div>
+            <div class="con-wrap">
+                <span class="confirm_img"></span>
+                <strong><em>답안</em> 제출이 완료 되었습니다.</strong>
+                <div class="btn_group">
+                    <button type="button" class="btn btn-ani btn-primary modal-close">확인</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+    //제출팝업 :: 완료 팝업 열기
+    $(document).on("click", "#popup_btn2", function(){
+        sign_index = $("#popup_btn2").index(this);
+        $("#popup_opne2").addClass("active");
+    });
+    //제출팝업 :: 완료 팝업 닫기
+    $(".modal-close").on("click",function(){
+        $("#popup_opne2").removeClass("active");
+    });
+</script>
+
+</body>
+</html>
