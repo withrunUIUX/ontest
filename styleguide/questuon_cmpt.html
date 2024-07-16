@@ -36,7 +36,10 @@
         <ul class="sgNavi_2depth">
             <li><a href="#bullet">bullet(꾸밈요소)</a></li>
             <li><a href="#blankBox">빈칸박스(꾸밈요소)</a></li>
-            <li><a href="#squareBox">텍스트(꾸밈요소)</a></li>
+            <li><a href="#squareBox">텍스트박스(꾸밈요소)</a></li>
+            <li><a href="#subTitle">문항안에 제목</a></li>
+            <li><a href="#listStyle">문항안에 list</a></li>
+            <li><a href="#bgStyle">배경타입</a></li>
             <li><a href="#cardBox">카드박스</a></li>
             <li><a href="#inputWrap">단답형input</a></li>
             <li><a href="#fraction">분수형태</a></li>
@@ -47,9 +50,16 @@
             <li><a href="#radioWrapT5">라디오 type5</a></li>
             <li><a href="#radioWrapT6">라디오 type6</a></li>
             <li><a href="#radioWrapT7">라디오 type7</a></li>
+            <li><a href="#checkWrapT1">체크박스</a></li>
+            <li><a href="#checkWrapT2">체크박스 type2</a></li>
+            <li><a href="#checkWrapT3">체크박스 type3</a></li>
+            <li><a href="#checkWrapT4">체크박스 type4</a></li>
+            <li><a href="#checkWrapT5">체크박스 type5</a></li>
+            <li><a href="#checkWrapT6">체크박스 type6</a></li>
             <li><a href="#hsradioWrap">핫스폿</a></li>
             <li><a href="#hsradioWrapT2">핫스폿 type2</a></li>
             <li><a href="#hsradioWrapT3">핫스폿 type3</a></li>
+            <li><a href="#hsradioWrapT12">핫스폿 type12</a></li>
         </ul>  
     </div>  
 </div>
@@ -102,10 +112,12 @@
 
 <h2 id="squareBox">텍스트박스 <small>꾸밈요소</small></h2>
 <div class="stwrap">
-    <a href="/html/mth_211_t124.html" target="_blank" class="stwrap_btn">미리보기</a>
     <span class="square">365</span>
     <span class="square sm">365</span>
     
+    <span class="nametag">지훈</span>
+    <span class="nametag sm">지훈</span>
+
     <div class="q_layout">
         <h3>squareBox 예시</h3>
         <div class="q_wrap">
@@ -122,6 +134,146 @@
             </div>
         </div>
     </div>
+</div>
+
+<h2 id="subTitle">문항 안에 사용하는 제목 <small></small></h2>
+<div class="stwrap">
+    <a href="#checkWrapT5" class="stwrap_btn">예시</a>
+    <strong class="sub_tt"><지구본과 세계지도></strong>
+    <strong class="sub_tt blue">나라별 사람들의 식생활 모습</strong>
+</div>
+
+<h2 id="listStyle">문항 안에 사용하는 리스트 <small></small></h2>
+<div class="stwrap">
+    <a href="#checkWrapT4" class="stwrap_btn">예시</a>
+    <ul class="list_1st">
+        <li>기본적인 리스트 스타일입니다.</li>
+        <li>보기 안에 리스트 형태를 써야 할때 사용합니다.</li>
+    </ul>
+</div>
+
+
+<h2 id="bgStyle">배경타입 <small>기능에 상관없이 사용할 수 있도록</small></h2>
+<div class="stwrap">
+    <div class="q_layout">
+        <h3 id="bgStyle1">모니터</h3>
+        <div class="a_wrap">
+            <div class="bgBox monitor">
+                <div class="bgCont">
+                    <div class="checkWrap type6">
+                        <strong class="sub_tt"><지구본과 세계지도></strong>
+                        <div class="txt_group">
+                            <span class="txtRight">1학년 김OO</span>
+                        </div>
+                         <ul>
+                            <li>
+                                <b>[지구본의 특징]</b>
+                                <input type="checkbox" name="checkexamT6_11" id="checkexamT6_1_11">
+                                <label for="checkexamT6_1_11">나라의 위치와 영토 모양이 실제와 비슷하게 나타난다.</label>
+                            </li>
+                            <li>
+                                <b>[세계지도의 특징]</b>
+                                <input type="checkbox" name="checkexamT6_11" id="checkexamT6_2_11">
+                                <label for="checkexamT6_2_11">전 세계를 한눈에 보기 어렵다.</label>
+                            </li>
+                            <li>
+                                <b>[지구본과 세계지도의 공통점]</b>
+                                <input type="checkbox" name="checkexamT6_11" id="checkexamT6_3_11">
+                                <label for="checkexamT6_3_11">지구의 실제 모습과 비슷하며 가지고 다니기 편리하다는 장점이 있다.</label>
+                                <input type="checkbox" name="checkexamT6_11" id="checkexamT6_4_11">
+                                <label for="checkexamT6_4_11">여러 나라의 위치나 영토의 모양, 나라 간의 거리가 비교적 정확한 편이다.</label>
+                                <input type="checkbox" name="checkexamT6_11" id="checkexamT6_5_11">
+                                <label for="checkexamT6_5_11">위도와 경도를 이용하여 비교적 정확하게 여러 나라의 위치를 나타낼 수 있다.</label>
+                            </li>
+                         </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="q_layout">
+        <h3 id="bgStyle2">칠판</h3>
+        <div class="a_wrap">
+            <div class="bgBox board">
+                <div class="bgCont">
+                    <div class="hsradioWrap type12">
+                        <strong class="sub_tt">(&nbsp;&nbsp;&nbsp;)의 특징 알기</strong>
+                        <strong class="sub_tt">(&nbsp;&nbsp;&nbsp;) : 지구의 모습을 아주 작게 줄여 나타낸 형</strong>
+                        <ul>
+                            <li>
+                                <input type="radio" name="hsradioexamT12_1" id="hsradioexamT12_1_1">
+                                <label for="hsradioexamT12_1_1" class="noBox">①축소와 확대가 가능하다.</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="hsradioexamT12_1" id="hsradioexamT12_1_2">
+                                <label for="hsradioexamT12_1_2" class="noBox">②세계의 모습을 한눈에 볼 수 있다.</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="hsradioexamT12_1" id="hsradioexamT12_1_3">
+                                <label for="hsradioexamT12_1_3" class="noBox">③가지고 다니기 편리하다는 장점이 있다.</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="hsradioexamT12_1" id="hsradioexamT12_1_4">
+                                <label for="hsradioexamT12_1_4" class="noBox">④평면에 나타냈기 때문에 실제와 다른 점도 있다.</label>
+                            </li>
+                            <li>
+                                <input type="radio" name="hsradioexamT12_1" id="hsradioexamT12_1_5">
+                                <label for="hsradioexamT12_1_5" class="noBox">⑤대부분 위선과 경선이 표시되어 있어 위치를 정확하게 알 수 있다.</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="q_layout">
+        <h3 id="bgStyle3">엽서, 편지</h3>
+        <div class="a_wrap flex-col fx_align_c gap40">
+            <div class="bgBox post">
+                <div class="bgCont">
+                    <ul class="checkWrap">
+                        <li>
+                            <input type="checkbox" name="postexamT1" id="postexamT1">
+                            <label for="postexamT1">‘저런 것들을 쓰면서 백제 사람들도 행복하게 살았겠지’</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="postexamT1" id="postexamT2">
+                            <label for="postexamT2">그런 생각을 하며 박물관을 나왔다.</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="postexamT1" id="postexamT3">
+                            <label for="postexamT3">무령왕릉의 지석 속 마법의 문을 통해 백제 시대로 갔다가 되돌아온 느낌이 들었다.</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="postexamT1" id="postexamT4">
+                            <label for="postexamT4">아빠는 백제의 마지막 도읍지였던 부여로 가기 위해 공주를 떠난다.</label>
+                        </li>
+                        <li>
+                            <input type="checkbox" name="postexamT1" id="postexamT5">
+                            <label for="postexamT5">공주에서 부여는 무척이나 가깝단다.</label>
+                        </li>
+                    </ul>
+                    <div class="txt_group">
+                        <span class="txtRight">2005년 8월 6일<br>서영이를 사랑하는 아빠가 공주에서</span>
+                        <span class="annt">※지석: 죽은 사람의 인적 사항이나 무덤의 소재를 기록하여 묻은 판석이나 도판</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bgBox post">
+                <div class="bgCont col_2">
+                    <div>
+                        <p>안녕. 난 중국에 사는 웨이야.<br><u>①중국은 세계에서 가장 큰 나라야.</u> <u>②4개의 섬나라로 되어 있고</u> <u>③환태평양 조산대에 있어서 지진과 화산이 많이 일어나서</u> 늘 걱정이 많아.</p>
+                    </div>
+                    <div>
+                        <p><u>④우리나라는 한자를 사용해.</u> 세계에서 인구가 가장 많은 나라이고, 여러 가지 산업이 발달했어. 그런데 중국은 <u>⑤위도가 높아 냉대 기후가 널리 나타나니까 옷을 따뜻하게 입고와.</u></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 </div>
 
 <h2 id="cardBox">카드박스 <small></small></h2>
@@ -393,7 +545,7 @@
 
 <h2 id="radioWrapT6">라디오 type6 <small>테이블 안에서 선택</small></h2>
 <div class="stwrap">
-    <a href="/html/sci_623_u1513.html" target="_blank" class="stwrap_btn">미리보기</a>
+    <a href="/html/sci_623_u1513.html" target="_blank" class="stwrap_btn">예시</a>
     <div class="radioWrap type6">
         <table class="tbl_basic type3 center">
             <caption>개요</caption>
@@ -411,7 +563,7 @@
                 <tr>
                     <th scope="row">불꽃이 타는 모습</th>
                     <td class="td_left">
-                        불꽃의 모양은 위 아래로 길쭉한 모양이고,<br>
+                        <span>불꽃의 모양은 위 아래로 길쭉한 모양이고,</span><br><!--선택된 행 전체에 디자인이 적용되지 않게 하려면 적용되지 않아야 할 텍스트를 span으로 감싸준다.-->
                         <input type="radio" name="radioexamT6" id="radioexamT6_1"><label for="radioexamT6_1">불꽃의 색깔은 푸른색, 붉은색 등이다.</label>
                     </td>
                 </tr>
@@ -431,9 +583,56 @@
                 <tr>
                     <th scope="row">그 밖에 관찰한 것</th>
                     <td class="td_left">
-                        불꽃이 흔들린다.<br>
+                        <span>불꽃이 흔들린다.</span><br>
                         <input type="radio" name="radioexamT6" id="radioexamT6_5"><label for="radioexamT6_5">시간이 지날수록 알코올의 양이 늘어난다.</label>
                     </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<h2 id="radioWrapT6">라디오 type6 <small>테이블 안에서 선택, 선택된 행 전체 디자인 적용</small></h2>
+<div class="stwrap">
+    <div class="radioWrap type6">
+        <table class="tbl_basic type3 center">
+            <caption>개요</caption>
+            <colgroup>
+                <col style="width:30%">
+                <col style="width:30%">
+                <col style="width:70%">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th scope="col">테이블 1</th>
+                    <th scope="col">테이블 2</th>
+                    <th scope="col">테이블 3</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">
+                        <input type="radio" name="radioexamT6_1" id="radioexamT6_1_1">
+                        <label for="radioexamT6_1_1">선택1</label>
+                    </th>
+                    <td>선택1에 대한 자세한 내용</td>
+                    <td class="td_left">선택1에 대한 자세한 내용222</td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        <input type="radio" name="radioexamT6_1" id="radioexamT6_1_2">
+                        <label for="radioexamT6_1_2">선택2</label>
+                    </th>
+                    <td>선택2에 대한 자세한 내용</td>
+                    <td class="td_left">선택2에 대한 자세한 내용2</td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        <input type="radio" name="radioexamT6_1" id="radioexamT6_1_3">
+                        <label for="radioexamT6_1_3">선택3</label>
+                    </th>
+                    <td>선택3에 대한 자세한 내용</td>
+                    <td class="td_left">선택3에 대한 자세한 내용2</td>
                 </tr>
             </tbody>
         </table>
@@ -474,7 +673,7 @@
 
 <h2>라디오 type7 <small>그룹 선택형 가로정렬</small></h2>
 <div class="stwrap">
-    <a href="/html/kor_616_t434.html" target="_blank" class="stwrap_btn">미리보기</a>
+    <a href="/html/kor_616_t434.html" target="_blank" class="stwrap_btn">예시</a>
     <div class="radioWrap type7 flex-col">
         <div class="group">
             <span class="bullet circle">1</span>
@@ -508,6 +707,360 @@
         </div>
     </div>
 </div>
+
+
+<h2 id="checkWrapT1">체크박스 <small>보기가 긴 형태일때</small></h2>
+<div class="stwrap">
+    <ul class="checkWrap">
+        <li>
+            <input type="checkbox" name="checkexamT1" id="checkexamT1_1">
+            <label for="checkexamT1_1"><span class="bullet circle">ㄱ</span><b>근거1</b>인공 지능이 사회적·경제적 불평들을 심하게 할 것입니다.</label>
+        </li>
+        <li>
+            <input type="checkbox" name="checkexamT1" id="checkexamT1_2">
+            <label for="checkexamT1_2"><span class="bullet circle">ㄴ</span><b>근거2</b>인공 지능과 관련한 일자리가 늘어날 것입니다.</label>
+        </li>
+        <li>
+            <input type="checkbox" name="checkexamT1" id="checkexamT1_3">
+            <label for="checkexamT1_3"><span class="bullet circle">ㄷ</span><b>근거3</b>사람이 하기 어렵거나 위험한 일을 인공 지능이 대신할 수 있습니다.</label>
+        </li>
+        <li>
+            <input type="checkbox" name="checkexamT1" id="checkexamT1_4">
+            <label for="checkexamT1_4"><span class="bullet circle">ㄹ</span><b>근거4</b>인간이 인공 지능에게 지배를 받게 될지도 모릅니다.</label>
+        </li>
+        <li>
+            <input type="checkbox" name="checkexamT1" id="checkexamT1_5">
+            <label for="checkexamT1_5"><span class="bullet circle">ㅁ</span><b>근거5</b>힘이 강한 나라가 사람들을 지배할 수도 있습니다.</label>
+        </li>
+    </ul>
+</div>
+
+<h2 id="checkWrapT2">체크박스 type2 <small>보기가 짧거나 이미지 일때</small></h2>
+<div class="stwrap">
+    <ul class="checkWrap type2">
+        <li>
+            <input type="checkbox" name="checkexamT2" id="checkexamT2_1">
+            <label for="checkexamT2_1">4.76 ÷ 4</label>
+        </li>
+        <li>
+            <input type="checkbox" name="checkexamT2" id="checkexamT2_2">
+            <label for="checkexamT2_2">4.76 ÷ 4</label>
+        </li>
+        <li>
+            <input type="checkbox" name="checkexamT2" id="checkexamT2_3">
+            <label for="checkexamT2_3">4.76 ÷ 4</label>
+        </li>
+        <li>
+            <input type="checkbox" name="checkexamT2" id="checkexamT2_4">
+            <label for="checkexamT2_4">4.76 ÷ 4</label>
+        </li>
+    </ul>
+</div>
+
+<h2 id="checkWrapT3">체크박스 type3 <small>여러 요소 혼용</small></h2>
+<div class="stwrap">
+    <ul class="checkWrap type3">
+        <li>
+            <input type="checkbox" name="checkexamT3" id="checkexamT3_1">
+            <label for="checkexamT3_1">
+                <img src="../images/common/checkBox_eximg1.png">
+                <span>사용하지 않는 전등을 항상 켜두면 전기를 절약할 수 있다.</span>
+            </label>
+        </li>
+        <li>
+            <input type="checkbox" name="checkexamT3" id="checkexamT3_2">
+            <label for="checkexamT3_2">
+                <img src="../images/common/checkBox_eximg1.png">
+                <span>사용하지 않는 전등을 항상 켜두면 전기를 절약할 수 있다.</span>
+            </label>
+        </li>
+        <li>
+            <input type="checkbox" name="checkexamT3" id="checkexamT3_3">
+            <label for="checkexamT3_3">
+                <img src="../images/common/checkBox_eximg1.png">
+                <span>사용하지 않는 전등을 항상 켜두면 전기를 절약할 수 있다.</span>
+            </label>
+        </li>
+        <li>
+            <input type="checkbox" name="checkexamT3" id="checkexamT3_4">
+            <label for="checkexamT3_4">
+                <img src="../images/common/checkBox_eximg1.png">
+                <span>사용하지 않는 전등을 항상 켜두면 전기를 절약할 수 있다.</span>
+            </label>
+        </li>
+    </ul>
+</div>
+
+<h2>체크박스 type3 <small>여러 요소 혼용</small></h2>
+<div class="stwrap">
+    <ul class="checkWrap type3">
+        <li>
+            <input type="checkbox" name="checkexamT3_1" id="checkexamT3_5">
+            <label for="checkexamT3_5">
+                <b class="nametag">준철</b>
+                <div class="fraction">
+                    8
+                    <span class="line"></span>
+                    12
+                </div>
+                <span>의 분자와 분모에 4를 더해서</span>
+                <div class="fraction">
+                    12
+                    <span class="line"></span>
+                    16
+                </div>
+                <span>를 만들었어.</span>
+            </label>
+        </li>
+        <li>
+            <input type="checkbox" name="checkexamT3_1" id="checkexamT3_6">
+            <label for="checkexamT3_6">
+                <b class="nametag">지훈</b>
+                <div class="fraction">
+                    8
+                    <span class="line"></span>
+                    12
+                </div>
+                <span>의 분자와 분모에 4를 빼서</span>
+                <div class="fraction">
+                    4
+                    <span class="line"></span>
+                    8
+                </div>
+                <span>를 만들었어.</span>
+            </label>
+        </li>
+        <li>
+            <input type="checkbox" name="checkexamT3_1" id="checkexamT3_7">
+            <label for="checkexamT3_7">
+                <b class="nametag">민지</b>
+                <div class="fraction">
+                    8
+                    <span class="line"></span>
+                    12
+                </div>
+                <span>의 분자와 분모에 4를 곱해서</span>
+                <div class="fraction">
+                    32
+                    <span class="line"></span>
+                    48
+                </div>
+                <span>를 만들었어.</span>
+            </label>
+        </li>
+        <li>
+            <input type="checkbox" name="checkexamT3_1" id="checkexamT3_8">
+            <label for="checkexamT3_8">
+                <b class="nametag">소연</b>
+                <div class="fraction">
+                    8
+                    <span class="line"></span>
+                    12
+                </div>
+                <span>의 분자와 분모에 4를 나눠서</span>
+                <div class="fraction">
+                    2
+                    <span class="line"></span>
+                    3
+                </div>
+                <span>를 만들었어.</span>
+            </label>
+        </li>
+    </ul>
+</div>
+
+<h2 id="checkWrapT4">체크박스 type4 <small>카드박스 가로정렬</small></h2>
+<div class="stwrap">
+    <ul class="checkWrap type4">
+        <li>
+            <input type="checkbox" name="checkexamT4" id="checkexamT4_1">
+            <label for="checkexamT4_1">
+                <div class="cardBox flex-col">
+                    <span><span class="bullet circle">1</span><b>사진</b></span>
+                    <ul class="list_1st">
+                        <li>환경교육주간 진행 사진</li>
+                        <li>학생들이 참여한 사진</li>
+                    </ul>
+                </div>
+            </label>
+        </li>
+        <li>
+            <input type="checkbox" name="checkexamT4" id="checkexamT4_2">
+            <label for="checkexamT4_2">
+                <div class="cardBox flex-col">
+                    <span><span class="bullet circle">2</span><b>뉴스기사</b></span>
+                    <ul class="list_1st">
+                        <li>지구촌 환경 오염과 관련된 뉴스</li>
+                    </ul>
+                </div>
+            </label>
+        </li>
+        <li>
+            <input type="checkbox" name="checkexamT4" id="checkexamT4_3">
+            <label for="checkexamT4_3">
+                <div class="cardBox flex-col">
+                    <span><span class="bullet circle">3</span><b>동영상</b></span>
+                    <ul class="list_1st">
+                        <li>환경 교육 주간의 주요장면을 담은 동영상</li>
+                    </ul>
+                </div>
+            </label>
+        </li>
+        <li>
+            <input type="checkbox" name="checkexamT4" id="checkexamT4_4">
+            <label for="checkexamT4_4">
+                <div class="cardBox flex-col">
+                    <span><span class="bullet circle">4</span><b>인터뷰</b></span>
+                    <ul class="list_1st">
+                        <li>환경보호 단체의 발전소 설립 반대 인터뷰</li>
+                    </ul>
+                </div>
+            </label>
+        </li>
+    </ul>
+</div>
+
+<h2 id="checkWrapT5">체크박스 type5 <small>테이블 안에서 선택</small></h2>
+<div class="stwrap">
+    <div class="checkWrap type5">
+        <strong class="sub_tt blue">인도의 이모저모</strong>
+        <table class="tbl_basic type3 center">
+            <caption>개요</caption>
+            <colgroup>
+                <col style="width:30%">
+                <col style="width:70%">
+            </colgroup>
+            <tbody>
+                <tr>
+                    <th scope="row">조사 내용</th>
+                    <td class="td_left">
+                        <span>인도의 자연·인문 환경과 사람들의 의식주 생활 모습</span>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">인도의 환경</th>
+                    <td class="td_left">
+                        <input type="checkbox" name="checkexamT5_1" id="checkexamT5_1_1">
+                        <label for="checkexamT5_1_1">힌두교를 믿는 사람들이 대부분이다.</label><br>
+                        <span>신분제도가 아직 남아있다.</span><!--선택된 행 전체에 디자인이 적용되지 않게 하려면 적용되지 않아야 할 텍스트를 span으로 감싸준다.-->
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">생활 모습</th>
+                    <td class="td_left">
+                        <input type="checkbox" name="checkexamT5_1" id="checkexamT5_1_2">
+                        <label for="checkexamT5_1_2">주로 젓가락을 이용하여 음식을 먹는다.</label><br>
+                        <input type="checkbox" name="checkexamT5_1" id="checkexamT5_1_3">
+                        <label for="checkexamT5_1_3">닭고기를 피하고 소고기를 이용한 음식을 많이 먹는다.</label><br>
+                        <input type="checkbox" name="checkexamT5_1" id="checkexamT5_1_4">
+                        <label for="checkexamT5_1_4">힌두교의 영향으로 사람이 죽으면 고인의 관을 들고 춤을 추는 풍습이 있다.</label><br>
+                        <input type="checkbox" name="checkexamT5_1" id="checkexamT5_1_5">
+                        <label for="checkexamT5_1_5">여자들은 한 장의 긴 천을 허리에 감고 어깨를 두르거나, 머리에 덮어 쓰는 전통 의상을 입는다.</label><br>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<h2>체크박스 type5 <small>테이블 안에서 선택, 선택된 행 전체 디자인 적용</small></h2>
+<div class="stwrap">
+    <div class="checkWrap type5 oneLine">
+        <strong class="sub_tt blue">나라별 사람들의 식생활 모습</strong>
+        <table class="tbl_basic type3 center">
+            <caption>개요</caption>
+            <colgroup>
+                <col style="width:20%">
+                <col style="width:30%">
+                <col style="width:70%">
+            </colgroup>
+            <thead>
+                <tr>
+                    <th scope="col">이름</th>
+                    <th scope="col">조사한 나라</th>
+                    <th scope="col">주요 음식(요리)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">
+                        <input type="checkbox" name="checkexamT5" id="checkexamT5_1">
+                        <label for="checkexamT5_1"><b class="nametag">서연</b></label>
+                    </th>
+                    <td>멕시코</td>
+                    <td class="td_left">고기를 쉽고 간단하게 조각내어 구워 먹는 케밥</td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        <input type="checkbox" name="checkexamT5" id="checkexamT5_2">
+                        <label for="checkexamT5_2"><b class="nametag">서아</b></label>
+                    </th>
+                    <td>뉴질랜드</td>
+                    <td class="td_left">땅의 열을 이용해 고기과 야채를 익혀서 만든 향이</td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        <input type="checkbox" name="checkexamT5" id="checkexamT5_3">
+                        <label for="checkexamT5_3"><b class="nametag">서진</b></label>
+                    </th>
+                    <td>튀르키예</td>
+                    <td class="td_left">얇게 구운 옥수수빵에 채소와 고기를 넣어 만든 타고</td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        <input type="checkbox" name="checkexamT5" id="checkexamT5_4">
+                        <label for="checkexamT5_4"><b class="nametag">서은</b></label>
+                    </th>
+                    <td>인도네시아</td>
+                    <td class="td_left">묵은 밥과 자투리 식재료를 기름에 볶아 만든 나시고랭</td>
+                </tr>
+                <tr>
+                    <th scope="row">
+                        <input type="checkbox" name="checkexamT5" id="checkexamT5_5">
+                        <label for="checkexamT5_5"><b class="nametag">석용</b></label>
+                    </th>
+                    <td>베트남</td>
+                    <td class="td_left">여러 종류의 치즈를 녹인 소스에 재료를 찍어 먹는 퐁듀</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<h2 id="checkWrapT6">체크박스 type6 <small>보고서 형식, 문항화면에서는 가운데 정렬됩니다.</small></h2>
+<div class="stwrap">
+    <a href="#bgStyle" class="stwrap_btn">예시</a>
+    <div class="checkWrap type6">
+        <strong class="sub_tt"><지구본과 세계지도></strong>
+        <div class="txt_group">
+            <span class="txtRight">1학년 김OO</span>
+            <span class="txtRight">2005년 8월 6일<br>서영이를 사랑하는 아빠가 공주에서</span>
+            <span class="annt">※지석: 죽은 사람의 인적 사항이나 무덤의 소재를 기록하여 묻은 판석이나 도판</span>
+        </div>
+        <ul>
+            <li>
+                <b>[지구본의 특징]</b>
+                <input type="checkbox" name="checkexamT6" id="checkexamT6_1">
+                <label for="checkexamT6_1">나라의 위치와 영토 모양이 실제와 비슷하게 나타난다.</label>
+            </li>
+            <li>
+                <b>[세계지도의 특징]</b>
+                <input type="checkbox" name="checkexamT6" id="checkexamT6_2">
+                <label for="checkexamT6_2">전 세계를 한눈에 보기 어렵다.</label>
+            </li>
+            <li>
+                <b>[지구본과 세계지도의 공통점]</b>
+                <input type="checkbox" name="checkexamT6" id="checkexamT6_3">
+                <label for="checkexamT6_3">지구의 실제 모습과 비슷하며 가지고 다니기 편리하다는 장점이 있다.</label>
+                <input type="checkbox" name="checkexamT6" id="checkexamT6_4">
+                <label for="checkexamT6_4">여러 나라의 위치나 영토의 모양, 나라 간의 거리가 비교적 정확한 편이다.</label>
+                <input type="checkbox" name="checkexamT6" id="checkexamT6_5">
+                <label for="checkexamT6_5">위도와 경도를 이용하여 비교적 정확하게 여러 나라의 위치를 나타낼 수 있다.</label>
+            </li>
+        </ul>
+    </div>
+</div>
+
 
 <h2 id="hsradioWrap">핫스폿</h2>
 <div class="stwrap">
@@ -573,7 +1126,36 @@
     </div>
 </div>
 
-
+<h2 id="hsradioWrapT12">핫스폿 type12 <small>보고서 형식, 문항화면에서는 가운데 정렬됩니다.</small></h2>
+<div class="stwrap">
+    <a href="#bgStyle2" class="stwrap_btn">예시</a>
+    <div class="hsradioWrap type12">
+        <strong class="sub_tt">(&nbsp;&nbsp;&nbsp;)의 특징 알기</strong>
+        <strong class="sub_tt">(&nbsp;&nbsp;&nbsp;) : 지구의 모습을 아주 작게 줄여 나타낸 형</strong>
+        <ul>
+            <li>
+                <input type="radio" name="hsradioexamT12" id="hsradioexamT12_1">
+                <label for="hsradioexamT12_1" class="noBox">①축소와 확대가 가능하다.</label>
+            </li>
+            <li>
+                <input type="radio" name="hsradioexamT12" id="hsradioexamT12_2">
+                <label for="hsradioexamT12_2" class="noBox">②세계의 모습을 한눈에 볼 수 있다.</label>
+            </li>
+            <li>
+                <input type="radio" name="hsradioexamT12" id="hsradioexamT12_3">
+                <label for="hsradioexamT12_3" class="noBox">③가지고 다니기 편리하다는 장점이 있다.</label>
+            </li>
+            <li>
+                <input type="radio" name="hsradioexamT12" id="hsradioexamT12_4">
+                <label for="hsradioexamT12_4" class="noBox">④평면에 나타냈기 때문에 실제와 다른 점도 있다.</label>
+            </li>
+            <li>
+                <input type="radio" name="hsradioexamT12" id="hsradioexamT12_5">
+                <label for="hsradioexamT12_5" class="noBox">⑤대부분 위선과 경선이 표시되어 있어 위치를 정확하게 알 수 있다.</label>
+            </li>
+        </ul>
+    </div>
+</div>
 
 
 
