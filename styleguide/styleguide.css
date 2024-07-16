@@ -17,6 +17,7 @@ small {font-weight:500;}
 .stwrap.q_layout .q_wrap .layout.colum_2 {}
 .stwrap.q_layout .q_wrap .layout > div {height:200px;background-color:var(--blue_30);}
 
+.q_layout .a_wrap {display:flex;justify-content:center;padding:1rem 0;}
 
 .sgNavi_wrap {z-index:999;position:fixed;left:0;top:0;display:flex;flex-direction:column;width:200px;height:100%;background:var(--blue_130);}
 .sgNavi {display:flex;flex-direction:column;align-items:center;gap:0;padding:1rem 0;}
