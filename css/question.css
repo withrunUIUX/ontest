@@ -64,20 +64,18 @@
 .question_modal .popup-wrap .con-wrap > strong > em {font-size:22px;font-weight:700;font-family:var(--f_scd);color:var(--blue_90);}
 .question_modal .btn_group {margin:0;}
 .question_modal .modal-close {position:static;width:initial;height:initial;color:#fff;border-color:var(--gray_60);background-color:var(--gray_60);}
-
 .question_modal .confirm_img {width:80px;height:80px;background:url('../images/common/confirm_img.svg') no-repeat 50%;}
-
 .flag {position:absolute;top:-10px;right:40px;display:flex;align-items:center;justify-content:center;width:87px;height:77px;color:#fff;font-size:20px;font-weight:700;font-family: var(--f_scd);background:url(../images/common/flag.svg) no-repeat 50%;background-size:contain;}
 .flag > span {margin-bottom:.5rem;}
-
 /* 제출팝업 :: 미답변 */
 .no_answer {display:flex;flex-direction:column;align-items:center;gap:.5rem;}
 .no_answer > span {padding:.5rem 1rem;border-radius:40px;color:#fff;font-size:1.1rem;font-weight:600;background:var(--gray_80);}
 .no_answer .no_answer_list {display:flex;align-items:center;gap:.5rem;}
 .no_answer .no_answer_list .no_answer_item {display:inline-flex;align-items:center;justify-content:center;width:46px;height:46px;border:.1rem solid var(--gray_60);border-radius:4px;color:var(--gray_100);font-size:1.1rem;font-weight:600;background:#fff;}
 
-
 /* question body :: 문항 영역 layout */
+u {text-decoration:none;border-bottom:1px solid var(--gray_70);}/* 밑줄, 문항 전체 공통, 문항제목, 예문, 보기 등에서 사용 */
+
 .question {height:100%;padding:2rem 10rem;background:var(--blue_20);}
 .q_content {overflow:hidden;position:relative;border-radius:10px;background:#fff;}
 .q_layout {display:flex;flex-direction:column;gap:3rem;min-height:600px;padding:48px 70px;background:#fff;}
@@ -90,7 +88,6 @@
 /* 문항 질문 */
 .q_tit {display:flex;align-items:center;justify-content:flex-start;gap:.4rem;margin:0;padding:26px 42px;font-size:1rem;font-weight:500;background:var(--gray_20);}
 .q_tit .question_number {padding:.5rem .8rem;border-radius:.3rem;color:var(--c_white);font-weight:600;background:var(--gray_70);}
-.q_tit .txt > u {text-decoration:none;border-bottom:1px solid var(--gray_80);}
 
 /* 문항정보 */
 .q_layout .question_info {display:flex;align-items:center;justify-content:flex-end;gap:.5rem;font-size:14px;font-weight:600;color:var(--gray_70);}
@@ -104,7 +101,6 @@
 .q_layout .q_wrap .examBox .subtitle3 {font-size:20px;}
 .q_layout .q_wrap .examBox p {line-height:1.5;}
 .q_layout .q_wrap.hidden {display:none;} /* 예문 내용이 없을때 숨김 */
-
 
 /* 보기 */
 .q_layout .a_wrap {font-weight:500;color:var(--gray_90);}
@@ -141,7 +137,7 @@ label img {vertical-align:middle;margin:0 4px}
 .nametag.sm {min-width:50px;height:38px;padding:0 .5rem;font-size:1rem;}
 
 /* 문항 안에 사용하는 제목 */
-.sub_tt {display:block;margin-bottom:1rem;text-align:center;font-size:1.2rem!important;font-weight:700!important;color:var(--gray_100);}
+.sub_tt {display:block;text-align:center;font-size:1.2rem!important;font-weight:700!important;color:var(--gray_100);}
 .sub_tt.blue {color:var(--blue_100);}
 .sub_tt.white {color:#fff;}
 
@@ -152,41 +148,52 @@ label img {vertical-align:middle;margin:0 4px}
 /* 배경 :: 공통규격 */
 .bgBox {display:flex;flex-direction:column;min-width:700px;max-width:1024px;}
 .bgBox::before, .bgBox::after {content:'';display:inline-block;width:100%;min-height:6px;background-position:50%;background-repeat:no-repeat;}
-.bgBox .bgCont {position:relative;padding:1rem 2rem;background-repeat:repeat-y;background-position:50%;}
-.bgBox .bgCont.col_2 {display:flex;gap:2rem;}
+.bgBox .bgCont {position:relative;display:flex;flex-direction:column;gap:1rem;padding:1rem 2rem;background-repeat:repeat-y;background-position:50%;}
+.bgBox .bgCont.col_2 {display:flex;flex-direction:row;gap:2rem;}
 .bgBox .bgCont.col_2 > div {position:relative;width:calc(50% - 1rem);}
 .bgBox .bgCont.col_2 > div:nth-child(1)::after {content:'';position:absolute;top:0;right:-.6rem;display:inline-block;width:1px;height:100%;background-color:var(--gray_60);mix-blend-mode:multiply;opacity:.3;}
-
 /* 배경::신문 */
 .bgBox.monitor {width:882px;}
 .bgBox.monitor::before {height:32px;background-image:url('../images/common/bg_monitor_top.png');}
 .bgBox.monitor::after {height:100px;background-image:url('../images/common/bg_monitor_btm.png');}
-.bgBox.monitor .bgCont {min-height:300px;padding:2.5rem 4rem;background-image:url('../images/common/bg_monitor_mid.png');}
+.bgBox.monitor .bgCont {padding:2.5rem 4rem;background-image:url('../images/common/bg_monitor_mid.png');}
 /* 배경::칠판 */
 .bgBox.board {width:950px;}
 .bgBox.board::before {height:60px;background-image:url('../images/common/bg_board_top.png');}
 .bgBox.board::after {height:90px;background-image:url('../images/common/bg_board_btm.png');}
-.bgBox.board .bgCont {min-height:250px;padding:1rem 4rem;background-image:url('../images/common/bg_board_mid.png');}
+.bgBox.board .bgCont {padding:1rem 4rem;background-image:url('../images/common/bg_board_mid.png');}
 .bgBox.board .bgCont * {color:#fff !important;mix-blend-mode:inherit;}
 .bgBox.board .bgCont input:checked + label {color:var(--yelliw_m)!important;}
+.bgBox.board .bgCont .blankBox {border-color:#fff;background:transparent;}
 /* 배경::엽서, 편지 */
 .bgBox.post {width:950px;border-radius:20px;overflow:hidden;}
 .bgBox.post::before {height:94px;background-image:url('../images/common/bg_post_top.png');background-position:top;}
 .bgBox.post::after {display:none;}
 .bgBox.post .bgCont {min-height:initial;padding:2rem 4rem 3rem;background-image:url('../images/common/bg_post_mid.png');}
+/* 배경::신문 */
+.bgBox.news {width:900px;}
+.bgBox.news::before {height:110px;background-image:url('../images/common/bg_news_top.png');}
+.bgBox.news::after {display:none;}
+.bgBox.news .bgCont {padding:1.2rem 4rem 2rem;background-image:none;background-color:#EBEBEE;}
+/* 배경::일기장 */
+.bgBox.diary {width:900px;gap:.5rem;}
+.bgBox.diary::before {height:46px;background-image:url('../images/common/bg_diary_top.png');}
+.bgBox.diary::after {display:none;}
+.bgBox.diary .bgCont {padding:3rem 4rem;border:2px solid #A7B7B7;border-radius:4px;background-image:url('../images/common/bg_diary_mid.png');background-repeat:repeat;}
+/* 배경::책 */
+.bgBox.book {width:950px;}
+.bgBox.book::before {height:35px;background-image:url('../images/common/bg_book_top.png');}
+.bgBox.book::after {height:70px;background-image:url('../images/common/bg_book_btm.png');}
+.bgBox.book .bgCont {padding:1.2rem 4rem 2rem;background-image:url('../images/common/bg_book_mid.png');}
 
 
 
-
-
-
-
-
-/* 텍스트 그룹 :: 기능적인 의미없이 문항에 꾸밈요소로 사용되는 텍스트들, 문항 안에 사용하는 제목과 동일한 요소 */
-.txt_group {width:100%;display:flex;flex-direction:column;} /* 아래 요소들을 묶어 쓸때 */
+/* 텍스트 그룹 :: 기능없이 문항에 꾸밈요소로 사용되는 텍스트 그룹, 예문에 사용 */
+.txt_group {width:100%;display:flex;flex-direction:column;gap:.5rem;} /* 아래 요소들을 묶어 쓸때 */
 .txtRight {text-align:right;font-weight:600;color:var(--gray_100);} /* 텍스트 오른쪽 정렬 */
 .annt {font-size:.83rem;font-weight:500;color:var(--gray_100);mix-blend-mode:multiply;opacity:.6;} /* 보조설명 */
-
+.txt_group .txt_box {display:flex;gap:1rem}
+.txt_group .txt_box p {flex:1;line-height:1.8;}
 
 /* 단답형 */
 .inputWrap .inputBox {height:42px;border-color:var(--gray_60);color:var(--gray_90);font-weight:600;text-align:center;}
@@ -231,7 +238,8 @@ input[type="chekbox"] + .cardWrap:before {display:none;}
 /* 라디오 type4 */
 .radioWrap.type4 {display:block;}
 .radioWrap.type4 > div {line-height:2;color:var(--gray_100);font-size:1.1rem;font-weight:500;}
-.radioWrap.type4 input[type="radio"] + label {margin:0;border-bottom:1px solid var(--gray_40);}
+.radioWrap.type4 input[type="radio"] + label {margin:0;}
+.radioWrap.type4 input[type="radio"]:checked + label {border-color:var(--blue_100);}
 /* 라디오 type5 */
 .radioWrap.type5 {flex-wrap:wrap;flex-direction:row;justify-content:center;gap:1.5rem;}
 .radioWrap.type5 li {width:25%;}
@@ -321,10 +329,23 @@ input[type="chekbox"] + .cardWrap:before {display:none;}
 .hsradioWrap.type3 input[type="radio"]:checked + label::before {width:100px;height:100px;background-size:100%;}
 .hsradioWrap.type3 input[type="radio"]:checked + label * {color:var(--blue_100);}
 
-/* 핫스폿 type12 :: 보고서 형식*/
-.hsradioWrap.type12 {}
-.hsradioWrap.type12 ul {display:flex;flex-direction:column;gap:.5rem;}
+/* 핫스폿 type7 :: 문장형 */
+.hsradioWrap.type7 {text-align:left;color:var(--gray_100);font-size:1.1rem;font-weight:500;line-height:1.8;}
+.hsradioWrap.type7 input[type="radio"] + label {margin:0;}
+.hsradioWrap.type7 input[type="radio"]:checked + label u {color:var(--blue_100);border-color:var(--blue_100);}
 
+/* 핫스폿 type11 :: 문장형, 좌우 다단형 */
+.hsradioWrap.type11 {display:flex;flex-direction:row;gap:4rem;}
+.hsradioWrap.type11 > .inner {text-align:left;}
+.hsradioWrap.type11 > .inner .sub_tt {margin-bottom:1rem;}
+.hsradioWrap.type11 input[type="radio"] + label {margin:0;line-height:1.8;}
+.hsradioWrap.type11 input[type="radio"]:checked + label u {color:var(--blue_100);border-color:var(--blue_100);}
+
+/* 핫스폿 type12 :: 보고서 형식*/
+.hsradioWrap.type12 {display:flex;flex-direction:column;gap:2rem;}
+.hsradioWrap.type12 ul {display:flex;flex-direction:column;gap:.5rem;}
+.hsradioWrap.type12 input[type="radio"] + label {margin:0;}
+.hsradioWrap.type12 input[type="radio"]:checked + label u {color:var(--blue_100);border-color:var(--blue_100);}
 
 
 
