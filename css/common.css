@@ -172,7 +172,7 @@ textarea {overflow-y:auto;vertical-align:top;width:100%;line-height:1.5;padding:
 .required::after {content:'*';position:relative;top:6px;display:inline-block;height:16px;}
 
 /* TABLE */
-table {display:table;width:100%;font-weight:500; margin-bottom:10px;}
+table {display:table;width:100%;font-weight:500;margin-bottom:10px;background:#fff;}
 table caption {text-indent:-100000px;font-size:0;line-height:0}
 table caption p{margin:0;line-height:0;font-size:0;}
 table.center tbody tr td{text-align:center;}
@@ -259,6 +259,7 @@ table thead th:last-child {border-radius: 0 10px 0 0;}
 .micon.ico10 {background-image:url('../images/common/mico_10.svg');}
 .micon.ico11 {background-image:url('../images/common/mico_11.svg');}
 .micon.ico12 {background-image:url('../images/common/mico_12.svg');}
+.micon.ico13 {background-image:url('../images/common/mico_13.svg');}
 
 /* 아이콘 20*20 */
 .sicon {display:inline-block;width:20px;height:20px;margin:0;background-repeat:no-repeat;background-position:50%;text-indent:-999px;font-size:0;overflow:hidden;}
