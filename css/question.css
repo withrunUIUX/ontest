@@ -85,6 +85,7 @@ u {text-decoration:none;border-bottom:1px solid var(--gray_70);}/* 밑줄, 문�
 
 .q_layout p {font-size:1.1rem;line-height:2;color:var(--gray_100);}
 
+
 /* 문항 질문 */
 .q_tit {display:flex;align-items:center;justify-content:flex-start;gap:.4rem;margin:0;padding:26px 42px;font-size:1rem;font-weight:500;background:var(--gray_20);}
 .q_tit .question_number {padding:.5rem .8rem;border-radius:.3rem;color:var(--c_white);font-weight:600;background:var(--gray_70);}
@@ -97,10 +98,13 @@ u {text-decoration:none;border-bottom:1px solid var(--gray_70);}/* 밑줄, 문�
 
 /* 예문 */
 .q_layout .q_wrap {overflow:hidden;display:flex;justify-content:center;width:100%;padding:3rem 4rem;border:.3rem solid var(--gray_30);border-radius:10px;font-size:1.1rem;color:var(--gray_90);}
-.q_layout .q_wrap .examBox {display:flex;justify-content:center;flex-direction:column;align-items:center;gap:1rem;}
-.q_layout .q_wrap .examBox .subtitle3 {font-size:20px;}
-.q_layout .q_wrap .examBox p {line-height:1.5;}
 .q_layout .q_wrap.hidden {display:none;} /* 예문 내용이 없을때 숨김 */
+/* 예문 type1 제목+본문 상하정렬 */
+.q_wrap .examBox {display:flex;justify-content:center;flex-direction:column;align-items:center;gap:1rem;}
+.q_wrap .examBox .subtitle3 {font-size:20px;}
+.q_wrap .examBox p {line-height:1.5;}
+
+
 
 /* 보기 */
 .q_layout .a_wrap {font-weight:500;color:var(--gray_90);}
@@ -136,6 +140,33 @@ label img {vertical-align:middle;margin:0 4px}
 .nametag {display:inline-flex;align-items:center;justify-content:center;min-width:60px;height:42px;padding:0 1rem;border-radius:3px;border: 1px solid var(--blue_40);font-size:1.1rem;font-weight:600;color: var(--blue_90) !important;background: var(--blue_20);vertical-align:middle;}
 .nametag.sm {min-width:50px;height:38px;padding:0 .5rem;font-size:1rem;}
 
+/* 채팅 프로필 */
+.chat_img {display:inline-block;width:60px;height:60px;border-radius:60px;overflow:hidden;background-position:50%;background-repeat:no-repeat;}
+.chat_img.blue {background-color:var(--blue_30);}
+.chat_img.pink {background-color:var(--coral_30);}
+
+.chat_img.male1 {background-image:url(../images/common/male1.png);}
+.chat_img.male2 {background-image:url(../images/common/male2.png);}
+.chat_img.male3 {background-image:url(../images/common/male3.png);}
+.chat_img.male4 {background-image:url(../images/common/male4.png);}
+
+.chat_img.female1 {background-image:url(../images/common/female1.png);}
+.chat_img.female2 {background-image:url(../images/common/female2.png);}
+.chat_img.female3 {background-image:url(../images/common/female3.png);}
+.chat_img.female4 {background-image:url(../images/common/female4.png);}
+
+/* 채팅 */
+.bubble {position:relative;width:100%;padding:1rem;border-radius:3px;border:1px solid var(--gray_100);background:#fff;}
+.bubble::before {content:'';position:absolute;left:-1.11rem;top:.5rem;display:inline-block;width:19px;height:25px;background:url(../images/common/bubble_tail.svg) 50% no-repeat;background-size:100%;}
+
+.chatBox {display:flex;flex-direction:column;gap:1rem;width:100%;}
+.chatBox .chat_item {display:flex;gap:1rem;}
+
+.chatBox.type2 .chat_item.left {padding-right:72px;}
+.chatBox.type2 .chat_item.right {flex-direction:row-reverse;padding-left:72px;}
+.chatBox.type2 .chat_item.right .bubble::before {left:initial;right:-1.11rem;transform:scaleX(-1);}
+
+
 /* 문항 안에 사용하는 제목 */
 .sub_tt {display:block;text-align:center;font-size:1.2rem!important;font-weight:700!important;color:var(--gray_100);}
 .sub_tt.blue {color:var(--blue_100);}
@@ -146,7 +177,7 @@ label img {vertical-align:middle;margin:0 4px}
 .list_1st li {list-style:disc;font-size:1rem;}
 
 /* 배경 :: 공통규격 */
-.bgBox {display:flex;flex-direction:column;min-width:700px;max-width:1024px;}
+.bgBox {position:relative;display:flex;flex-direction:column;min-width:700px;max-width:1024px;}
 .bgBox::before, .bgBox::after {content:'';display:inline-block;width:100%;min-height:6px;background-position:50%;background-repeat:no-repeat;}
 .bgBox .bgCont {position:relative;display:flex;flex-direction:column;gap:1rem;padding:1rem 2rem;background-repeat:repeat-y;background-position:50%;}
 .bgBox .bgCont.col_2 {display:flex;flex-direction:row;gap:2rem;}
@@ -185,8 +216,26 @@ label img {vertical-align:middle;margin:0 4px}
 .bgBox.book::before {height:35px;background-image:url('../images/common/bg_book_top.png');}
 .bgBox.book::after {height:70px;background-image:url('../images/common/bg_book_btm.png');}
 .bgBox.book .bgCont {padding:1.2rem 4rem 2rem;background-image:url('../images/common/bg_book_mid.png');}
-
-
+/* 배경::노트 */
+.bgBox.note {width:950px;border:1px solid var(--gray_70);border-radius:20px;background-image:url(../images/common/bg_report_mid.png);background-repeat:repeat;overflow:hidden;}
+.bgBox.note::before {width:100%;max-width:858px;height:24px;margin:0 auto;background-image:url(../images/common/bg_note_top.png);background-repeat:repeat-x;background-position:bottom;}
+.bgBox.note::after {display:none;}
+.bgBox.note .bgCont {padding:2.5rem 4rem 3rem;}
+/* 배경::보고서 */
+.bgBox.report {width:auto;padding:2.5rem 2rem 2rem;border-radius:30px;background-color:#808EAC;}
+.bgBox.report::before {z-index:1;position:absolute;top:1rem;left:50%;transform:translateX(-50%);width:182px;height:54px;background-image:url('../images/common/bg_report_top.png');}
+.bgBox.report::after {display:none;}
+.bgBox.report .bgCont {padding:3rem 2rem 2rem;background-image:url('../images/common/bg_report_mid.png');background-color:#fff;background-repeat:repeat;}
+/* 배경::핸드폰+대화창 */
+.bgBox.phone {width:auto;max-width:800px;padding:1.6rem;border-radius:30px;background-color:var(--gray_90);}
+.bgBox.phone::before {z-index:1;position:absolute;top:0;left:50%;transform:translateX(-50%);width:238px;height:52px;background-image:url('../images/common/bg_phone_top.png');}
+.bgBox.phone::after {display:none;}
+.bgBox.phone .bgCont {padding:4rem 2rem 2rem;border-radius:15px;background-color:#BACEE0;}
+/* 배경::핸드폰+포털 */
+.bgBox.portal {width:auto;max-width:1012px;padding:1.6rem;border-radius:30px;background-color:var(--gray_90);}
+.bgBox.portal::before {z-index:1;position:absolute;top:0;left:50%;transform:translateX(-50%);width:238px;height:52px;background-image:url('../images/common/bg_phone_top.png');}
+.bgBox.portal::after {display:none;}
+.bgBox.portal .bgCont {padding:4rem 2rem 2rem;border-radius:15px;background-color:#F7F7F7;}
 
 /* 텍스트 그룹 :: 기능없이 문항에 꾸밈요소로 사용되는 텍스트 그룹, 예문에 사용 */
 .txt_group {width:100%;display:flex;flex-direction:column;gap:.5rem;} /* 아래 요소들을 묶어 쓸때 */
@@ -194,6 +243,15 @@ label img {vertical-align:middle;margin:0 4px}
 .annt {font-size:.83rem;font-weight:500;color:var(--gray_100);mix-blend-mode:multiply;opacity:.6;} /* 보조설명 */
 .txt_group .txt_box {display:flex;gap:1rem}
 .txt_group .txt_box p {flex:1;line-height:1.8;}
+
+
+/* 시 형태 */ 
+.poemBox {display:flex;flex-direction:column;gap:.5rem;padding:0 1rem;}
+.poemBox .poemTxt {text-align:center;font-size:1rem;line-height:1.5;}
+.poemBox .poemTxt.left {text-align:left;}
+
+
+
 
 /* 단답형 */
 .inputWrap .inputBox {height:42px;border-color:var(--gray_60);color:var(--gray_90);font-weight:600;text-align:center;}
@@ -217,20 +275,20 @@ input[type="chekbox"] + .cardWrap:before {display:none;}
 .cardBox .photoBox {border-radius:6px;overflow:hidden;}
 .cardBox .photoBox > img {width:100%;height:100%;}
 
-.cardBox.flex-col {width:initial}
+.cardBox.flex-col {width:280px;}
 .cardBox.photo.flex-col {padding:18px;}
 
-.cardBox.magazine {align-items:center;gap:1rem;max-width:400px;border:none;background:transparent;}
+.cardBox.magazine {align-items:center;gap:1rem;width:initial;max-width:400px;border:none;background:transparent;}
 .cardBox.magazine .inner {display:flex;gap:.6rem;}
 
 
 /*///라디오///*/
-.radioWrap {display:flex;flex-direction:column;gap:.5rem;width:100%;}
+.radioWrap {display:flex;flex-direction:column;gap:.5rem;width:100%;font-size:1.1rem;color:var(--gray_100);}
 .radioWrap label *,
 .radioWrap input[type="radio"] + label {color:var(--gray_100);font-size:1.1rem;font-weight:500;}
 .radioWrap input[type="radio"]:checked + label,
 .radioWrap input[type="radio"]:checked + label * {color:var(--blue_100);border-color:var(--blue_100);}
-.radioWrap table thead th {font-weight:700;}
+.radioWrap .tbl_basic thead th {font-weight:700;}
 /* 라디오 type2 :: 가로정렬, 중앙배치*/
 .radioWrap.type2 {flex-direction:row;justify-content:center;}
 /* 라디오 type3 :: 보기 하나에 ㄱ, ㄴ으로 구분되어져 정렬을 해야할때*/
@@ -240,15 +298,15 @@ input[type="chekbox"] + .cardWrap:before {display:none;}
 .radioWrap.type4 > div {line-height:2;color:var(--gray_100);font-size:1.1rem;font-weight:500;}
 .radioWrap.type4 input[type="radio"] + label {margin:0;}
 .radioWrap.type4 input[type="radio"]:checked + label {border-color:var(--blue_100);}
+.radioWrap.type4 input[type="radio"]:checked + label u {color:var(--blue_100);border-color:var(--blue_100);}
 /* 라디오 type5 */
 .radioWrap.type5 {flex-wrap:wrap;flex-direction:row;justify-content:center;gap:1.5rem;}
-.radioWrap.type5 li {width:25%;}
-.radioWrap.type5 input[type="radio"] + label {width:100%;margin:0;padding:0}
+.radioWrap.type5 input[type="radio"] + label {margin:0;padding:0}
 /* 라디오 type6 */
 .radioWrap.type6 {align-items:center;}
-.radioWrap.type6 table {max-width:980px;}
-.radioWrap.type6 table * {color:var(--gray_100);font-size:1.1rem;font-weight:500;}
-.radioWrap.type6 table tr:has(input[type="radio"]:checked) td {color:var(--blue_100);}
+.radioWrap.type6 .tbl_basic {max-width:980px;}
+.radioWrap.type6 .tbl_basic * {color:var(--gray_100);font-size:1.1rem;font-weight:500;}
+.radioWrap.type6 .tbl_basic th:has(input[type="radio"]:checked) ~ td {color:var(--blue_100);}
 /* 라디오 type7 */
 .radioWrap.type7 {flex-direction:row;justify-content:center;align-items:center;gap:1rem;}
 .radioWrap.type7 .group {display:flex;flex-direction:column;align-items:center;gap:.5rem;}
@@ -257,17 +315,21 @@ input[type="chekbox"] + .cardWrap:before {display:none;}
 .radioWrap.type7.flex-col {justify-content:center;align-items:flex-start;gap:1rem;width:initial;}
 .radioWrap.type7.flex-col .group {align-items:center;flex-direction:row;gap:.5rem;}
 .radioWrap.type7.flex-col .group .groupBox {display:flex;flex-direction:column;gap:.5rem;padding:2rem;border:1px solid var(--gray_50);border-radius:10px;}
-
+/* 라디오 type8 */
+.radioWrap.type8 {display:flex;flex-direction:row;justify-content:center;flex-wrap:wrap;gap:1rem;}
+.radioWrap.type8 input[type="radio"] + label {display:flex;flex-direction:column;align-items:center;gap:.5rem;height:100%;margin:0;padding:0;}
+.radioWrap.type8 input[type="radio"] + label::before {position:static;transform:initial;}
+.radioWrap.type8 .poemBox {flex:1;min-width:350px;height:100%;padding:2rem;border:2px dashed var(--gray_50);border-radius:10px;background:var(--gray_10);}
 
 /*///체크박스///*/
-.checkWrap {display:flex;flex-direction:column;gap:.5rem;width:100%;}
+.checkWrap {display:flex;flex-direction:column;gap:.5rem;width:100%;font-size:1.1rem;color:var(--gray_100);line-height:2;}
 .checkWrap label *,
 .checkWrap input[type="checkbox"] + label {color:var(--gray_100);font-size:1.1rem;font-weight:500;}
 .checkWrap input[type="checkbox"] + label {padding-left:22px;}
 .checkWrap input[type="checkbox"] + label::before {position:absolute;transform:translateY(-55%);}
 .checkWrap input[type="checkbox"]:checked + label,
 .checkWrap input[type="checkbox"]:checked + label * {color:var(--blue_100);border-color:var(--blue_100);}
-.checkWrap table thead th {font-weight:700;}
+.checkWrap .tbl_basic thead th {font-weight:700;}
 /* 체크박스 type2 :: 가로정렬, 중앙배치*/
 .checkWrap.type2 {flex-direction:row;justify-content:center;flex-wrap:wrap;}
 /* 체크박스 type4 */
@@ -278,15 +340,27 @@ input[type="chekbox"] + .cardWrap:before {display:none;}
 .checkWrap.type4 input[type="checkbox"] + label:before {position:static;transform:initial;}
 /* 체크박스 type5 :: 테이블 안에서 */
 .checkWrap.type5 {align-items:center;}
-.checkWrap.type5 table {max-width:980px;}
-.checkWrap.type5 table * {color:var(--gray_100);font-size:1.1rem;font-weight:500;}
-.checkWrap.type5 table input[type="checkbox"] + label {gap:.2rem}
-.checkWrap.type5 table tr:has(input[type="checkbox"]:checked) td {color:var(--blue_100);}
+.checkWrap.type5 .tbl_basic {max-width:980px;}
+.checkWrap.type5 .tbl_basic * {color:var(--gray_100);font-size:1.1rem;}
+.checkWrap.type5 .tbl_basic input[type="checkbox"] + label {gap:.2rem}
+
+.checkWrap.type5 .tbl_basic th:has(input[type="checkbox"]:checked) ~ td {color:var(--blue_100);}
+
 /* 체크박스 type6 :: 보고서 형식 */
 .checkWrap.type6 {max-width:800px;}
 .checkWrap.type6 ul {display:flex;flex-direction:column;gap:.8rem;}
 .checkWrap.type6 ul li {display:flex;flex-direction:column;gap:.4rem;}
-.checkWrap.type6 ul li b {font-size:1.1rem;}
+.checkWrap.type6 ul li b {font-size:1.1rem;color:var(--gray_100);}
+
+
+/*///단답형///*/
+.inputWrap {text-align:center;font-size:1.1rem;color:var(--gray_100);line-height:2;}
+/* 단답형 type2 테이블 */
+.inputWrap.type2 {width:100%;max-width:1024px;}
+
+/* 단답형 type6 */
+.inputWrap.type6 {display:flex;flex-wrap:wrap;gap:1rem;}
+.inputWrap.type6 li {display:flex;align-items:center;gap:.5rem;}
 
 
 
@@ -299,19 +373,15 @@ input[type="chekbox"] + .cardWrap:before {display:none;}
 
 
 
-
-
-
-
-
-
-/* 핫스폿 -- 라디오 형태(단일선택) :: 공통*/
-.hsradioWrap {text-align:center;}
+/*///핫스폿///*/
+/* 공통*/
+.hsradioWrap {text-align:center;font-size:1.1rem;color:var(--gray_100);font-weight:500;line-height:2;}
+.hsradioWrap > div {font-size:1.1rem;color:var(--gray_100);font-weight:500;line-height:2;}
 .hsradioWrap label * {color:var(--gray_100);font-size:1.1rem;font-weight:500;}
-.hsradioWrap input[type="radio"] + label {margin-right:6px;padding:6px 12px;border:.1rem solid var(--gray_40);border-radius:.3rem;color:var(--gray_100);font-size:1.1rem;font-weight:500;background:var(--gray_10);}
+.hsradioWrap input[type="radio"] + label {margin-right:6px;padding:6px 12px;border:.1rem solid var(--gray_40);border-radius:.3rem;color:var(--gray_80);font-size:1.1rem;font-weight:500;background:var(--gray_10);}
 .hsradioWrap input[type="radio"] + label::before {display:none;}
 .hsradioWrap input[type="radio"]:checked + label {border-color:var(--blue_100);color:var(--blue_100);background-color:var(--blue_20);}
-.hsradioWrap input[type="radio"]:checked + label::before {left:50%;transform:translateY(-50%) translateX(-50%);display:block;width:68px;height:68px;background-image:url(../images/common/hotspot_img.svg);}
+.hsradioWrap input[type="radio"]:checked + label::before {z-index:1;left:50%;transform:translateY(-50%) translateX(-50%);display:block;width:68px;height:68px;background-image:url(../images/common/hotspot_img.svg);background-size:100%;}
 .hsradioWrap ul li {text-align:left;}
 /* 핫스폿 type4, type5, type7, type10, type11, type12, type14, type15 등 박스형태의 버튼을 사용하지 않을때 lable에 noBox 클래스 추가*/
 .hsradioWrap input[type="radio"] + label.noBox {padding:0;border:none;border-radius:0;background:transparent;}
@@ -326,30 +396,53 @@ input[type="chekbox"] + .cardWrap:before {display:none;}
 .hsradioWrap.type3 .card_item label {display:flex;align-items:center;justify-content:center;gap:1rem;margin:0;padding:1.5rem 2rem;background:#fff;}
 .hsradioWrap.type3 .card_item label * {text-align:left;}
 .hsradioWrap.type3 input[type="radio"]:checked + label {background:#fff;}
-.hsradioWrap.type3 input[type="radio"]:checked + label::before {width:100px;height:100px;background-size:100%;}
+.hsradioWrap.type3 input[type="radio"]:checked + label::before {width:100px;height:94px;}
 .hsradioWrap.type3 input[type="radio"]:checked + label * {color:var(--blue_100);}
+/* 핫스폿 type4 :: 문장형 */
+.hsradioWrap.type4 {text-align:left;color:var(--gray_100);font-size:1.1rem;font-weight:500;line-height:1.8;}
+.hsradioWrap.type4 input[type="radio"] + label {margin:0;}
+.hsradioWrap.type4 input[type="radio"]:checked + label u {color:var(--blue_100);border-color:var(--blue_100);}
 
-/* 핫스폿 type7 :: 문장형 */
-.hsradioWrap.type7 {text-align:left;color:var(--gray_100);font-size:1.1rem;font-weight:500;line-height:1.8;}
-.hsradioWrap.type7 input[type="radio"] + label {margin:0;}
-.hsradioWrap.type7 input[type="radio"]:checked + label u {color:var(--blue_100);border-color:var(--blue_100);}
-
+/* 핫스폿 type9 :: 대화형 */
+.hsradioWrap.type9 {}
+.hsradioWrap.type9 input[type="radio"] + label {margin:0;padding:0;border:none;border-radius:0;background:transparent;}
+.hsradioWrap.type9 input[type="radio"] + label::before {width:80px;height:80px;}
+.hsradioWrap.type9 input[type="radio"]:checked + label * {color:var(--blue_100);border-color:var(--blue_100);}
+.hsradioWrap.type9 input[type="radio"]:checked + label .bubble::before {background-image:url(../images/common/bubble_tail_on.svg);}
+/* 핫스폿 type10 :: 보고서 형식*/
+.hsradioWrap.type10 {display:flex;flex-direction:column;gap:2rem;}
+.hsradioWrap.type10 ul {display:flex;flex-direction:column;gap:.5rem;}
+.hsradioWrap.type10 input[type="radio"] + label {margin:0;}
+.hsradioWrap.type10 input[type="radio"]:checked + label u {color:var(--blue_100);border-color:var(--blue_100);}
 /* 핫스폿 type11 :: 문장형, 좌우 다단형 */
 .hsradioWrap.type11 {display:flex;flex-direction:row;gap:4rem;}
 .hsradioWrap.type11 > .inner {text-align:left;}
 .hsradioWrap.type11 > .inner .sub_tt {margin-bottom:1rem;}
 .hsradioWrap.type11 input[type="radio"] + label {margin:0;line-height:1.8;}
 .hsradioWrap.type11 input[type="radio"]:checked + label u {color:var(--blue_100);border-color:var(--blue_100);}
+/* 핫스폿 type12 :: 검색레이아웃 */
+.hsradioWrap.type12 {display:flex;flex-direction:column;gap:1rem;width:100%;max-width:872px;}
+.hsradioWrap.type12 input[type="radio"] + label {margin:0;padding:0;border:none;border-radius:0;background:transparent;}
+.hsradioWrap.type12 input[type="radio"] + label::before {width:100px;height:100px;}
+.hsradioWrap.type12 input[type="radio"]:checked + label * {color:var(--blue_100);border-color:var(--blue_100);}
+/*검색레이아웃*/
+.searchBox {display: flex;border:1px solid #49AC3F}
+.searchBox .searchTxt {width:calc(100% - 54px);line-height:54px;padding:0 1.5rem;text-align:left;font-size:1.2rem;font-weight:600;background:#fff;}
+.searchBox .searchBtn {display:inline-flex;justify-content:center;align-items:center;width:54px;height:54px;background:#49AC3F;}
+.searchCon ul {display:flex;justify-content:flex-start;flex-wrap:wrap;gap:1rem;}
 
-/* 핫스폿 type12 :: 보고서 형식*/
-.hsradioWrap.type12 {display:flex;flex-direction:column;gap:2rem;}
-.hsradioWrap.type12 ul {display:flex;flex-direction:column;gap:.5rem;}
-.hsradioWrap.type12 input[type="radio"] + label {margin:0;}
-.hsradioWrap.type12 input[type="radio"]:checked + label u {color:var(--blue_100);border-color:var(--blue_100);}
 
 
 
-/* 핫스폿 -- 체크박스 형태(다중선택) :: 공통 */
+/* 핫스폿 type15 :: 테이블 */
+.hsradioWrap.type15 {display:flex;flex-direction:column;gap:1rem;}
+.hsradioWrap.type15 .tbl_basic,
+.hsradioWrap.type15 input[type="radio"] + label {margin:0;}
+.hsradioWrap.type15 input[type="radio"]:checked + label u {color:var(--blue_100);border-color:var(--blue_100);}
+.hsradioWrap.type15 .tbl_basic * {color:var(--gray_100);font-size:1.1rem;}
+
+
+
 
 
 
