@@ -5,14 +5,14 @@ small {font-weight:500;}
 .style_wrap > section {padding:60px 0;}
 .style_wrap h2 {font-size:1.18rem;margin-bottom:1rem;padding-top:2rem;}
 .style_wrap h3 {margin:0;}
-.stwrap {position:relative;display:flex;flex-wrap:wrap;align-items:flex-start;gap:2rem;width:100%;margin:0 auto;padding:50px;background:#fff;border:1px solid #eee;}
+
+.stwrap {position:relative;display:flex;flex-wrap:wrap;align-items:flex-start;justify-content:center;gap:2rem;width:100%;margin:0 auto;padding:50px;background:#fff;border:1px solid #eee;}
 .stwrap .styleguide_box {display:flex;flex-direction:column;gap:32px;width:100%;}
 .stwrap .gr_tit {width: 100px;font-weight:700;}
+.stwrap h3 {color:var(--blue_110)}
 
 .stwrap > .inner {width:100%;border-radius:0;}
-
 .stwrap .q_layout {gap:1rem;width:100%;min-height:initial;padding:0;}
-
 .stwrap.q_layout {min-height:initial;}
 .stwrap.q_layout .q_wrap .layout.colum_2 {}
 .stwrap.q_layout .q_wrap .layout > div {height:200px;background-color:var(--blue_30);}
