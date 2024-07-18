@@ -118,7 +118,7 @@ u {text-decoration:none;border-bottom:1px solid var(--gray_70);}/* 밑줄, 문�
 
 /* 공통 */
 label b {display:inline-block;margin:0 4px;font-weight:700!important;}
-label img {vertical-align:middle;margin:0 4px}
+label img {vertical-align:middle;}
 
 /* defualt 버튼 */
 .txtblock {border:.1rem solid var(--gray_40);border-radius:.3rem;padding:6px 12px!important;font-weight:600!important;background:var(--gray_10);} /*박스버튼*/
@@ -144,12 +144,10 @@ label img {vertical-align:middle;margin:0 4px}
 .chat_img {display:inline-block;width:60px;height:60px;border-radius:60px;overflow:hidden;background-position:50%;background-repeat:no-repeat;}
 .chat_img.blue {background-color:var(--blue_30);}
 .chat_img.pink {background-color:var(--coral_30);}
-
 .chat_img.male1 {background-image:url(../images/common/male1.png);}
 .chat_img.male2 {background-image:url(../images/common/male2.png);}
 .chat_img.male3 {background-image:url(../images/common/male3.png);}
 .chat_img.male4 {background-image:url(../images/common/male4.png);}
-
 .chat_img.female1 {background-image:url(../images/common/female1.png);}
 .chat_img.female2 {background-image:url(../images/common/female2.png);}
 .chat_img.female3 {background-image:url(../images/common/female3.png);}
@@ -159,13 +157,14 @@ label img {vertical-align:middle;margin:0 4px}
 .bubble {position:relative;width:100%;padding:1rem;border-radius:3px;border:1px solid var(--gray_100);background:#fff;}
 .bubble::before {content:'';position:absolute;left:-1.11rem;top:.5rem;display:inline-block;width:19px;height:25px;background:url(../images/common/bubble_tail.svg) 50% no-repeat;background-size:100%;}
 
+.bubble.top::before {top:-1.31rem;left:50%;transform:rotate(90deg);}
+.bubble.under::before {top:initial;bottom:-1.31rem;left:50%;transform:rotate(-90deg);}
+
 .chatBox {display:flex;flex-direction:column;gap:1rem;width:100%;}
 .chatBox .chat_item {display:flex;gap:1rem;}
-
 .chatBox.type2 .chat_item.left {padding-right:72px;}
 .chatBox.type2 .chat_item.right {flex-direction:row-reverse;padding-left:72px;}
 .chatBox.type2 .chat_item.right .bubble::before {left:initial;right:-1.11rem;transform:scaleX(-1);}
-
 
 /* 문항 안에 사용하는 제목 */
 .sub_tt {display:block;text-align:center;font-size:1.2rem!important;font-weight:700!important;color:var(--gray_100);}
@@ -173,8 +172,8 @@ label img {vertical-align:middle;margin:0 4px}
 .sub_tt.white {color:#fff;}
 
 /* 리스트 기본스타일 */
-.list_1st {padding-left:1.5rem;}
-.list_1st li {list-style:disc;font-size:1rem;}
+.list_1st {display:flex;flex-direction:column;gap:.5rem;padding-left:1.5rem;}
+.list_1st li {list-style:disc;font-size:1.1rem;color:var(--gray_100);}
 
 /* 배경 :: 공통규격 */
 .bgBox {position:relative;display:flex;flex-direction:column;min-width:700px;max-width:1024px;}
@@ -236,12 +235,34 @@ label img {vertical-align:middle;margin:0 4px}
 .bgBox.portal::before {z-index:1;position:absolute;top:0;left:50%;transform:translateX(-50%);width:238px;height:52px;background-image:url('../images/common/bg_phone_top.png');}
 .bgBox.portal::after {display:none;}
 .bgBox.portal .bgCont {padding:4rem 2rem 2rem;border-radius:15px;background-color:#F7F7F7;}
+/* 배경::SNS */
+.bgBox.sns {width:auto;max-width:780px;border-radius:30px;border:10px solid var(--gray_110);}
+.bgBox.sns::before {height:145px;background-image:url('../images/common/bg_sns_top.png');}
+.bgBox.sns::after {height:116px;background-image:url('../images/common/bg_sns_btm.png');}
+.bgBox.sns .bgCont {gap:.5rem;padding:2rem 2rem 1rem;background-color:#fff;}
+.bgBox.sns .sns_photo {display:flex;flex-direction:column;}
+.bgBox.sns .sns_photo::after {content:'';display:inline-block;height:81px;background-image:url('../images/common/bg_sns_etc.png');background-repeat:no-repeat;}
+/* 배경::포스터 */
+.bgBox.poster {width:900px;overflow:hidden;}
+.bgBox.poster::before {height:66px;background-image:url('../images/common/bg_poster_top.png');background-position:top;}
+.bgBox.poster::after {height:79px;background-image:url('../images/common/bg_poster_btm.png');}
+.bgBox.poster .bgCont {gap:2rem;min-height:initial;padding:0rem 4rem;background-color:#F2F1E6;}
+.bgBox.poster .bgCont .txt_group p {line-height:1.8;}
+
+
+
+
+
+
+
+
+
 
 /* 텍스트 그룹 :: 기능없이 문항에 꾸밈요소로 사용되는 텍스트 그룹, 예문에 사용 */
 .txt_group {width:100%;display:flex;flex-direction:column;gap:.5rem;} /* 아래 요소들을 묶어 쓸때 */
 .txtRight {text-align:right;font-weight:600;color:var(--gray_100);} /* 텍스트 오른쪽 정렬 */
 .annt {font-size:.83rem;font-weight:500;color:var(--gray_100);mix-blend-mode:multiply;opacity:.6;} /* 보조설명 */
-.txt_group .txt_box {display:flex;gap:1rem}
+.txt_group .txt_box {display:flex;gap:1rem} /*이미지 + 텍스트 좌우 정렬로 사용할때, 상하로 쓸때는 txt_group만 쓴다*/
 .txt_group .txt_box p {flex:1;line-height:1.8;}
 
 
@@ -269,18 +290,17 @@ input[type="radio"] + .cardWrap:before,
 input[type="chekbox"] + .cardWrap:before {display:none;}
 
 .cardBox {display:flex;gap:.2rem;width:300px;padding:18px;border:1px solid var(--gray_50);border-radius:6px;background-color:#fff;}
-.cardBox > p {flex:1;}
+.cardBox > p {flex:1;font-size:1.1rem;color:var(--gray_100);}
 
-.cardBox.photo {align-items:center;gap:1rem;padding:30px;width:350px;}
+.cardBox.photo {align-items:center;gap:1rem;padding:22px;width:350px;}
 .cardBox .photoBox {border-radius:6px;overflow:hidden;}
 .cardBox .photoBox > img {width:100%;height:100%;}
-
 .cardBox.flex-col {width:280px;}
-.cardBox.photo.flex-col {padding:18px;}
-
-.cardBox.magazine {align-items:center;gap:1rem;width:initial;max-width:400px;border:none;background:transparent;}
+.cardBox.magazine {align-items:center;gap:1rem;width:initial;max-width:400px;padding:0;border:none;background:transparent;}
+.cardBox.magazine > p {font-weight:700;}
 .cardBox.magazine .inner {display:flex;gap:.6rem;}
-
+.cardBox.magazine .inner p {flex:1;overflow:hidden;height:82px;line-height:1.5;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;text-overflow:ellipsis;word-break:break-all;font-size:1.1rem;color:var(--gray_100);}
+.cardBox.photo.magazine .photoBox {border-radius:0;}
 
 /*///라디오///*/
 .radioWrap {display:flex;flex-direction:column;gap:.5rem;width:100%;font-size:1.1rem;color:var(--gray_100);}
@@ -375,13 +395,13 @@ input[type="chekbox"] + .cardWrap:before {display:none;}
 
 /*///핫스폿///*/
 /* 공통*/
-.hsradioWrap {text-align:center;font-size:1.1rem;color:var(--gray_100);font-weight:500;line-height:2;}
+.hsradioWrap {position:relative;font-size:1.1rem;color:var(--gray_100);font-weight:500;line-height:2;}
 .hsradioWrap > div {font-size:1.1rem;color:var(--gray_100);font-weight:500;line-height:2;}
 .hsradioWrap label * {color:var(--gray_100);font-size:1.1rem;font-weight:500;}
-.hsradioWrap input[type="radio"] + label {margin-right:6px;padding:6px 12px;border:.1rem solid var(--gray_40);border-radius:.3rem;color:var(--gray_80);font-size:1.1rem;font-weight:500;background:var(--gray_10);}
+.hsradioWrap input[type="radio"] + label {margin:0;padding:6px 12px;border:.1rem solid var(--gray_40);border-radius:.3rem;color:var(--gray_100);font-size:1.1rem;font-weight:500;background:var(--gray_10);}
 .hsradioWrap input[type="radio"] + label::before {display:none;}
 .hsradioWrap input[type="radio"]:checked + label {border-color:var(--blue_100);color:var(--blue_100);background-color:var(--blue_20);}
-.hsradioWrap input[type="radio"]:checked + label::before {z-index:1;left:50%;transform:translateY(-50%) translateX(-50%);display:block;width:68px;height:68px;background-image:url(../images/common/hotspot_img.svg);background-size:100%;}
+.hsradioWrap input[type="radio"]:checked + label::before {z-index:1;left:50%;transform:translateY(-50%) translateX(-50%);display:block;width:52px;height:52px;background-image:url(../images/common/hotspot_img.svg);background-size:100%;}
 .hsradioWrap ul li {text-align:left;}
 /* 핫스폿 type4, type5, type7, type10, type11, type12, type14, type15 등 박스형태의 버튼을 사용하지 않을때 lable에 noBox 클래스 추가*/
 .hsradioWrap input[type="radio"] + label.noBox {padding:0;border:none;border-radius:0;background:transparent;}
@@ -390,18 +410,46 @@ input[type="chekbox"] + .cardWrap:before {display:none;}
 .hsradioWrap.type2 {display:flex;justify-content:flex-start;flex-direction:column;gap:1rem;text-align:left;}
 .hsradioWrap.type2 li {display:flex;align-items:center;gap:.5rem;}
 /* 핫스폿 type3 카드형 */
-.hsradioWrap.type3 {display:flex;justify-content:center;width:100%;}
-.hsradioWrap.type3 > div {display:flex;justify-content:flex-start;flex-wrap:wrap;gap:1rem;width:60%;}
-.hsradioWrap.type3 .card_item {width:calc(50% - .5rem);}
-.hsradioWrap.type3 .card_item label {display:flex;align-items:center;justify-content:center;gap:1rem;margin:0;padding:1.5rem 2rem;background:#fff;}
-.hsradioWrap.type3 .card_item label * {text-align:left;}
-.hsradioWrap.type3 input[type="radio"]:checked + label {background:#fff;}
+.hsradioWrap.type3 {display:flex;justify-content:center;flex-wrap:wrap;gap:1rem;width:100%;}
+.hsradioWrap.type3 input[type="radio"] + label {padding:0;border:none;border-radius:0;background:transparent;}
 .hsradioWrap.type3 input[type="radio"]:checked + label::before {width:100px;height:94px;}
-.hsradioWrap.type3 input[type="radio"]:checked + label * {color:var(--blue_100);}
+.hsradioWrap.type3 input[type="radio"]:checked + label * {color:var(--blue_100);border-color:var(--blue_100);}
 /* 핫스폿 type4 :: 문장형 */
 .hsradioWrap.type4 {text-align:left;color:var(--gray_100);font-size:1.1rem;font-weight:500;line-height:1.8;}
 .hsradioWrap.type4 input[type="radio"] + label {margin:0;}
 .hsradioWrap.type4 input[type="radio"]:checked + label u {color:var(--blue_100);border-color:var(--blue_100);}
+/* 핫스폿 type5 :: 문장형 왼족 정렬, 중앙배치 */
+.hsradioWrap.type5 {text-align:left;color:var(--gray_100);font-size:1.1rem;font-weight:500;line-height:1.8;}
+.hsradioWrap.type5 input[type="radio"] + label {margin:0;}
+.hsradioWrap.type5 input[type="radio"]:checked + label u {color:var(--blue_100);border-color:var(--blue_100);}
+/* 핫스폿 type6 :: 이미지 위에 말풍선, 카드박스 */
+.hsradioWrap.type6 {}
+.hsradioWrap.type6 img {}
+.hsradioWrap.type6 input[type="radio"] + label {padding:0;border:none;border-radius:0;background:transparent;}
+.hsradioWrap.type6 input[type="radio"]:checked + label * {color:var(--blue_100);border-color:var(--blue_100);}
+.hsradioWrap.type6 input[type="radio"]:checked + label .bubble::before {background-image:url(../images/common/bubble_tail_on.svg);}
+.hsradioWrap.type6 .btn_group {position:absolute;display:block;width:100%;height:100%;margin:0;padding:2rem;}
+.hsradioWrap.type6 .btn_group .btn_item {position:absolute;}
+/* 개별버튼 위치 :: 현재 쓰여진건 예시 입니다. question2.css에 문항작업코드(id)로 선택하여 위치를 설정합니다. */
+#hsradioexam6 .btn_group {padding:6rem;}
+#hsradioexam6 .btn_item.num1 {}
+#hsradioexam6 .btn_item.num2 {left:22rem;}
+#hsradioexam6 .btn_item.num3 {right:6rem;}
+#hsradioexam6 .btn_item.num4 {bottom:6rem;}
+#hsradioexam6 .btn_item.num5 {right:6rem;bottom:6rem;}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* 핫스폿 type9 :: 대화형 */
 .hsradioWrap.type9 {}
@@ -430,6 +478,20 @@ input[type="chekbox"] + .cardWrap:before {display:none;}
 .searchBox .searchTxt {width:calc(100% - 54px);line-height:54px;padding:0 1.5rem;text-align:left;font-size:1.2rem;font-weight:600;background:#fff;}
 .searchBox .searchBtn {display:inline-flex;justify-content:center;align-items:center;width:54px;height:54px;background:#49AC3F;}
 .searchCon ul {display:flex;justify-content:flex-start;flex-wrap:wrap;gap:1rem;}
+/* 핫스폿 type13 :: 이미지 위에 버튼일때만 */
+.hsradioWrap.type13 {}
+.hsradioWrap.type13 img {}
+.hsradioWrap.type13 .btn_group {position:absolute;display:block;width:100%;height:100%;margin:0;padding:2rem;}
+.hsradioWrap.type13 .btn_group .btn_item {position:absolute;}
+/* 개별버튼 위치 :: 현재 쓰여진건 예시 입니다. question2.css에 문항작업코드(id)로 선택하여 위치를 설정합니다. */
+#hsradioexam13 .btn_group {padding:6rem;}
+#hsradioexam13 .btn_item.num1 {top:4rem;left:9rem;}
+#hsradioexam13 .btn_item.num2 {top:12rem;left:7rem;}
+#hsradioexam13 .btn_item.num3 {left: 20rem;}
+#hsradioexam13 .btn_item.num4 {top: 6rem;right: 11rem;}
+#hsradioexam13 .btn_item.num5 {right: 3rem;bottom: 12rem;}
+
+
 
 
 
