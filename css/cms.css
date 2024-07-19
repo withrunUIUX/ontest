@@ -3,7 +3,8 @@
 #header {}
 #header .logo {}
 
-
+.sub_header {padding:1.6rem 5rem;}
+.sub_header .login_info .time {font-size:.95em;color:var(--gray_60);font-weight:600;}
 
 
 
