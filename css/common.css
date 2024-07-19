@@ -297,6 +297,12 @@ table thead th:last-child {border-radius: 0 10px 0 0;}
 .nicon.ico2 {background-image:url('../images/common/ico_navi02.svg');}
 .nicon.ico3 {background-image:url('../images/common/ico_navi03.svg');}
 .nicon.ico4 {background-image:url('../images/common/ico_navi04.svg');}
+.nicon.ico5 {background-image:url('../images/common/ico_navi07.svg');}
+.nicon.ico6 {background-image:url('../images/common/sico_01.svg');}
+.nicon.ico7 {background-image:url('../images/common/ico_navi05.svg');}
+.nicon.ico8 {background-image:url('../images/common/ico_navi06.svg');}
+
+
 
 /* 헤딩 아이콘 */
 .hico {display:inline-block;width:32px;height:32px;margin:0;border-radius:32px;text-indent:-999px;overflow:hidden;background-repeat:no-repeat;background-position:50%;background-color:var(--blue_130);}
