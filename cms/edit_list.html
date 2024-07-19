@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>온평가 ADMIN</title>
+    
+        <link rel="stylesheet" href="/css/common.css">
+        <link rel="stylesheet" href="/css/question.css">
+        <!-- <link rel="stylesheet" href="/css/contents.css"> -->
+        <link rel="stylesheet" href="/css/cms.css">
+
+        <script type="text/javascript" src="/js/jquery-3.6.0.min.js"></script>
+        <script type="text/javascript" src="/js/jquery-latest.min.js"></script>
+
+        <script type="text/javascript" src="/js/contents.js"></script>
+    </head>
+
+<body>
+
+<div id="wrapper">
+
+<header id="header">
+    <div class="logo">
+        <a href="/">
+            <span>온평가</span>
+            <em>ADMIN</em>
+        </a>
+    </div>
+    <nav>
+        <div class="gnb">
+            <ul class="gnb__depth1">
+                <li class="depth1-item">
+                    <a href="#"><i class="nicon ico6"></i>회원관리</a>
+                    <ul class="depth2">
+                        <li class="depth2__item"><a href="#">회원관리</a></li>
+                    </ul>
+                </li>
+                <li class="depth1-item">
+                    <a href="#"><i class="nicon ico1"></i>학교관리</a>
+                    <ul class="depth2">
+                        <li class="depth2__item"><a href="#">학교관리</a></li>
+                    </ul>
+                </li>
+                <li class="depth1-item">
+                    <a href="#" class="active"><i class="nicon ico2"></i>문항관리</a>
+                    <ul class="depth2">
+                        <li class="depth2__item"><a href="#" class="active">문항자료 관리</a></li>
+                        <li class="depth2__item"><a href="#">문항유형 관리</a></li>
+                        <li class="depth2__item"><a href="#">리포트 관리</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<main id="container" class="cms">
+    <section class="sub_header">
+        <div class="login_info">
+            <div class="info_item">
+                <i class="sicon ico1"></i><span class="name"><b>전체관리자</b></span>
+                <span class="time">(2024-07-19)</span>
+            </div>
+            <a href="#" class="logout">로그아웃</a>
+        </div>
+    </section>
+
+    <section id="content" class="list">
+        <div class="cms_con_header">
+            <h2>문항자료 관리 <small>등록된 문항자료 목록입니다.</small></h2>
+            <div id="location">
+                <a href="#" class="item home"><span>홈</span></a>
+                <a href="#" class="item">문제은행</a>
+                <a href="#" class="item">생성하기</a>
+            </div>
+        </div>
+
+        <div class="search_wrap">
+            <div class="inner">
+                <div class="select_wrap">
+                    <label for="select1">과목</label>
+                    <select class="select" id="select1">
+                        <option selected="">선택</option>
+                        <option value="">국어</option>
+                        <option value="">수학</option>
+                        <option value="">사회</option>
+                        <option value="">과학</option>
+                        <option value="">영어</option>
+                    </select>
+                </div>
+                <div class="select_wrap">
+                    <label for="select2">학년</label>
+                    <select class="select" id="select2">
+                        <option selected="">선택</option>
+                        <option value="">6</option>
+                        <option value="">5</option>
+                        <option value="">2</option>
+                    </select>
+                </div>
+                <div class="select_wrap">
+                    <label for="select3">유형</label>
+                    <select class="select" id="select3">
+                        <option selected="">선택</option>
+                        <option value="">라디오</option>
+                        <option value="">체크박스</option>
+                        <option value="">단답형</option>
+                        <option value="">아래로펼치기</option>
+                        <option value="">끌어놓기</option>
+                        <option value="">짝연결하기</option>
+                        <option value="">핫스폿</option>
+                        <option value="">서술형</option>
+                    </select>
+                </div>
+            </div>
+            <div class="inner">
+                <div class="select_wrap">
+                    <label for="select4">검색조건</label>
+                    <select class="select" id="select4">
+                        <option selected="">문항번호</option>
+                        <option selected="">성취코드</option>
+                        <option value="">파일명</option>
+                        <option value="">평가요소</option>
+                    </select>
+                </div>
+                <div class="search_bar">
+                    <input type="text" placeholder="검색어를 입력하세요">
+                    <button type="submit" href="#" class="btn btn-ani btn-secondary">검색</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="title_box">
+            <strong class="subtitle">
+                <i class="hico hico1"></i>
+                문항목록
+            </strong>
+            <div class="btn_group">
+                <button type="submit" class="btn btn-ani btn-delete"><i class="sicon ico3"></i>선택삭제</button>
+                <button type="submit" class="btn btn-ani btn-primary"><i class="sicon ico2"></i>선택 미출력</button>
+            </div>
+        </div>
+
+        <div class="table_wrap"> 
+            <table class="tbl_basic tbl_list center table-hover">
+                <caption>개요</caption>
+                <colgroup>
+                    <col style="width:3%">
+                    <col style="width:3%">
+                    <col style="width:3%">
+                    <col style="width:5%">
+                    <col style="width:12%">
+                    <col style="width:5%">
+                    <col style="width:25%">
+                    <col style="width:3%">
+                    <col style="width:3%">
+                    <col style="width:3%">
+                </colgroup>
+                <thead>
+                    <tr>
+                        <th scope="col"><input type="checkbox" id="allcheck" name="check"><label for="allcheck"></label></th>
+                        <th scope="col">과목</th>
+                        <th scope="col">학년</th>
+                        <th scope="col">성취코드</th>
+                        <th scope="col">문항번호</th>
+                        <th scope="col">파일명</th>
+                        <th scope="col" class="th_deep">성취기준/문제/정답</th>
+                        <th scope="col" class="th_deep">문제유형</th>
+                        <th scope="col" class="th_deep">사용유무</th>
+                        <th scope="col" class="th_deep">수정</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row"><input type="checkbox" id="check0" name="check"><label for="check0"></label></th>
+                        <td>국어</td>
+                        <td>5</td>
+                        <td>[6수01-03]</td>
+                        <td class="td_left">9수05-1-5-[6수01-08][평가준거 성취기준②]-하-042-01</td>
+                        <td><a href="#">sci_623_m1524_01.html</a></td>
+                        <td class="td_left">
+                            <ul class="standard_info">
+                                <li>일상생활 속의 친숙한 주제에 관한 쉽고 짧은 글을 읽고 세부 정보를 파악하기</li>
+                                <li>다음 글을 읽고, 빈칸에 적절한 문장을 끌어놓으시오.</li>
+                                <li><textarea>ㄱ|ㄴ|ㄷ</textarea></li>
+                            </ul>
+                        </td>
+                        <td>
+                            <select class="select">
+                                <option selected="">라디오</option>
+                                <option value="">체크박스</option>
+                                <option value="">단답형</option>
+                                <option value="">아래로펼치기</option>
+                                <option value="">끌어놓기</option>
+                                <option value="">짝연결하기</option>
+                                <option value="">핫스폿</option>
+                                <option value="">서술형</option>
+                            </select>
+                        </td>
+                        <td><i class="state tx end">미사용</i></td>
+                        <td><a href="#" class="micon ico5">수정</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><input type="checkbox" id="check0" name="check"><label for="check0"></label></th>
+                        <td>국어</td>
+                        <td>5</td>
+                        <td>[6수01-03]</td>
+                        <td class="td_left">9수05-1-5-[6수01-08][평가준거 성취기준②]-하-042-01</td>
+                        <td><a href="#">sci_623_m1524_01.html</a></td>
+                        <td class="td_left">
+                            <ul class="standard_info">
+                                <li>일상생활 속의 친숙한 주제에 관한 쉽고 짧은 글을 읽고 세부 정보를 파악하기</li>
+                                <li>다음 글을 읽고, 빈칸에 적절한 문장을 끌어놓으시오.</li>
+                                <li><textarea>ㄱ|ㄴ|ㄷ</textarea></li>
+                            </ul>
+                        </td>
+                        <td>
+                            <select class="select">
+                                <option selected="">라디오</option>
+                                <option value="">체크박스</option>
+                                <option value="">단답형</option>
+                                <option value="">아래로펼치기</option>
+                                <option value="">끌어놓기</option>
+                                <option value="">짝연결하기</option>
+                                <option value="">핫스폿</option>
+                                <option value="">서술형</option>
+                            </select>
+                        </td>
+                        <td><i class="state tx end">미사용</i></td>
+                        <td><a href="#" class="micon ico5">수정</a></td>
+                    </tr>
+                    <tr>
+                        <th scope="row"><input type="checkbox" id="check0" name="check"><label for="check0"></label></th>
+                        <td>국어</td>
+                        <td>5</td>
+                        <td>[6수01-03]</td>
+                        <td class="td_left">9수05-1-5-[6수01-08][평가준거 성취기준②]-하-042-01</td>
+                        <td><a href="#">sci_623_m1524_01.html</a></td>
+                        <td class="td_left">
+                            <ul class="standard_info">
+                                <li>일상생활 속의 친숙한 주제에 관한 쉽고 짧은 글을 읽고 세부 정보를 파악하기</li>
+                                <li>다음 글을 읽고, 빈칸에 적절한 문장을 끌어놓으시오.</li>
+                                <li><textarea>ㄱ|ㄴ|ㄷ</textarea></li>
+                            </ul>
+                        </td>
+                        <td>
+                            <select class="select">
+                                <option selected="">라디오</option>
+                                <option value="">체크박스</option>
+                                <option value="">단답형</option>
+                                <option value="">아래로펼치기</option>
+                                <option value="">끌어놓기</option>
+                                <option value="">짝연결하기</option>
+                                <option value="">핫스폿</option>
+                                <option value="">서술형</option>
+                            </select>
+                        </td>
+                        <td><i class="state tx">사용중</i></td>
+                        <td><a href="#" class="micon ico5">수정</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="paginate">
+            <a href="#" class="dir first">첫페이지로 이동</a>
+            <a href="#" class="dir prev">이전페이지로 이동</a>
+            <ul>
+                <li><a href="#" class="active">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+            </ul>
+            <a href="#" class="dir next">다음페이지로 이동</a>
+            <a href="#" class="dir last">마지막페이지로 이동</a>
+        </div>
+        
+    </section>
+</main>
+
+</div>
+
+</body>
+</html>
