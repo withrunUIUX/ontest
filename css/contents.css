@@ -152,7 +152,7 @@
 
 /* 배포하기 */
 .publish_prev {overflow:hidden;position:relative;display:flex;flex-direction:column;gap:2rem;width:100%;padding:4rem;border-radius:10px;background-color:var(--gray_30);}
-.publish_prev .question_content {border:1px solid var(--gray_50);pointer-events:none;}
+.publish_prev .q_content {border:1px solid var(--gray_50);pointer-events:none;}
 
 .question_list_wrap {}
 .question_list_wrap ul {display:flex !important;flex-wrap:wrap;gap:.708rem;}
