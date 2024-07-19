@@ -107,9 +107,9 @@ u {text-decoration:none;border-bottom:1px solid var(--gray_70);}/* 밑줄, 문�
 
 
 /* 보기 */
-.q_layout .a_wrap {font-weight:500;color:var(--gray_90);}
+.q_layout .a_wrap {display:flex;justify-content:center;font-weight:500;color:var(--gray_90);}
 .q_layout .a_wrap * {}
-.question .q_layout .a_wrap {display:flex;justify-content:center;padding:1rem 0} /* 미리보기에서는 나오지 않게 */
+.question .q_layout .a_wrap {padding:1rem 0} /* 미리보기에서는 나오지 않게 */
 
 
 
