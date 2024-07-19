@@ -52,7 +52,7 @@
 .gnb__depth1 .depth1-item .active {}
 .gnb__depth1 .depth1-item .active::after {transform:rotate(90deg);}
 .gnb__depth1 .depth2 {display:none;}
-.gnb__depth1 .depth1-item > a.active + .depth2 {display:block;padding:12px 24px;background:var(--blue_120);}
+.gnb__depth1 .depth1-item > a.active + .depth2 {display:block;padding:12px;background:var(--blue_120);}
 .gnb__depth1 .depth2__item {margin:6px 0;}
 .gnb__depth1 .depth2__item > a {display:flex;align-items:center;gap:8px;padding:2px 0 2px 18px;font-size:16px;word-break:keep-all;line-height:1.5;}
 .gnb__depth1 .depth2__item > a::before{content:'';display:block;width:4px;height:4px;border-radius:4px;background:#fff;}
@@ -97,7 +97,7 @@
 .login_info .info_item .name > b {font-weight:900;}
 .login_info .info_item .scoolname {color:var(--gray_70);}
 
-.logout {display:flex;align-items:center;gap:.2rem;color:var(--gray_100);}
+.logout {display:flex;align-items:center;gap:.2rem;color:var(--gray_80);font-weight:600;}
 .logout::before {content:'';display:inline-block;width:20px;height:20px;background:url(../images/common/sico_06.svg) no-repeat 50%;}
 
 #location {display:flex;align-items:center;gap:.5rem;}
