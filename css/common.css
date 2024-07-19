@@ -69,6 +69,24 @@ html,body,div,span,object,h1,h2,h3,h4,h5,h6,p,a,abbr,address,cite,em,img,strong,
 .wp90 {width:90% !important}
 .wp100 {width:100% !important}
 
+/* margin */
+.mt_10 {margin-top:10px !important}
+.mt_20 {margin-top:20px !important}
+.mt_30 {margin-top:30px !important}
+.mt_40 {margin-top:40px !important}
+.mt_50 {margin-top:50px !important}
+.mt_60 {margin-top:60px !important}
+
+.mb_10 {margin-bottom:10px !important}
+.mb_20 {margin-bottom:20px !important}
+.mb_30 {margin-bottom:30px !important}
+.mb_40 {margin-bottom:40px !important}
+.mb_50 {margin-bottom:50px !important}
+.mb_60 {margin-bottom:60px !important}
+
+
+
+
 
 /* heading title */
 h1 {position:relative;margin:35px 0 10px;font-family:var(--f_ptd);font-size:26px;line-height:1;font-weight:900;color:var(--gray_90)}
@@ -172,7 +190,7 @@ select:disabled, .select:disabled, .select.disabled{opacity:0.5;pointer-events:n
 select.no-line, .select.no-line {border:none;}
 
 /* textarea 기본 */
-textarea {overflow-y:auto;vertical-align:top;width:100%;line-height:1.5;padding:1rem 1.5rem;border-radius:.3rem;border:1px solid var(--c_gray_30);font-size:1rem;font-family:var(--f_ptd);resize:none;}
+textarea {overflow-y:auto;vertical-align:top;width:100%;line-height:1.5;padding:1rem 1.5rem;border-radius:.3rem;border:1px solid var(--gray_40);font-size:1rem;font-family:var(--f_ptd);resize:none;}
 
 /* 필수입력 기호 */
 .required {color:var(--blue_100);font-size:1.5rem;}
