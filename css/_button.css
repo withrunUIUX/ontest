@@ -432,3 +432,77 @@ input[type="submit"].btn-block {width:100%;}
 .btn-text.disabled .ico-arrow,
 .btn-text:disabled .ico-arrow{opacity:.5}
 
+
+/* delete */
+.btn-delete {
+  color: #fff;
+  background-color:var(--coral_100);
+  border-color:var(--coral_100);
+}
+.btn-delete.hover,
+.btn-delete:hover {
+  color: #fff;
+  background-color:var(--coral_110);
+  border-color:var(--coral_110);
+}
+.btn-delete.focus,
+.btn-tertiary:focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.3);
+}
+.btn-delete.disabled,
+.btn-delete:disabled {
+  color: #fff;
+  background-color:var(--coral_50);
+  border-color:var(--coral_50);
+}
+.btn-delete:not(:disabled):not(.disabled).active,
+.btn-delete:not(:disabled):not(.disabled):active,
+.show > .btn-tertiary.dropdown-toggle {
+  color: #fff;
+  background-color:var(--coral_100);
+  border-color:var(--coral_100);
+}
+.btn-delete:not(:disabled):not(.disabled).active:focus,
+.btn-delete:not(:disabled):not(.disabled):active:focus,
+.show > .btn-delete.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.3);
+}
+/* delete-outline */
+.btn-outline-delete {
+  color:var(--coral_100);
+  background-color:var(--coral_20);
+  background-image: none;
+  border-color:var(--coral_60);
+}
+.btn-outline-delete.hover,
+.btn-outline-delete:hover {
+  color:var(--coral_100);
+  background-color:var(--coral_30);
+  border-color:var(--coral_100);
+}
+.btn-outline-delete.focus,
+.btn-outline-delete:focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 0, 0, 0.3);
+}
+.btn-outline-delete.disabled,
+.btn-outline-delete:disabled {
+  color:var(--coral_50);
+  background-color:var(--coral_20);
+  border-color:var(--coral_50);
+}
+.btn-outline-delete:not(:disabled):not(.disabled).active,
+.btn-outline-delete:not(:disabled):not(.disabled):active,
+.show > .btn-outline-delete.dropdown-toggle {
+  color:var(--coral_50);
+  background-color:var(--coral_20);
+  border-color:var(--coral_50);
+}
+.btn-outline-delete:not(:disabled):not(.disabled).active:focus,
+.btn-outline-delete:not(:disabled):not(.disabled):active:focus,
+.show > .btn-outline-delete.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(108, 117, 125, 0.5);
+}
+
+
+
+
