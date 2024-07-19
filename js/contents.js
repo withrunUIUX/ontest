@@ -101,6 +101,27 @@ $(document).ready(function(){
             $(this).addClass('hidden');
         }
     });
+
+    //파일찾기 커스텀1
+    $("#file1").on('change',function(){
+        var fileName = $("#file1").val();
+        $(".upload-name1").val(fileName);
+    });
+    //파일찾기 커스텀2
+    $("#file2").on('change',function(){
+        var fileName = $("#file2").val();
+        $(".upload-name2").val(fileName);
+    });
+    //파일찾기 커스텀3
+    $("#file3").on('change',function(){
+        var fileName = $("#file3").val();
+        $(".upload-name3").val(fileName);
+    });
+    //파일찾기 커스텀4
+    $("#file4").on('change',function(){
+        var fileName = $("#file4").val();
+        $(".upload-name4").val(fileName);
+    });
 });
 
 
