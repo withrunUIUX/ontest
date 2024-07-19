@@ -112,6 +112,8 @@ input[type="file"] {cursor: pointer;}
 
 ::placeholder {color:var(--gray_60)}
 
+label {font-size:1.1rem;font-weight:700;color:var(--gray_80)}
+
 /* checkbox 기본 */
 input[type="checkbox"]{position:absolute;opacity:0;cursor:pointer;}
 input[type="checkbox"] + label{position:relative;display:inline-block;line-height:1.5;margin-right:20px;padding-left:22px;font-weight:500;font-size:initial;color:var(--gray_80);cursor:pointer;}
@@ -154,9 +156,14 @@ input[type="date"],
 input[type="month"]{width:168px;padding:.6rem 1rem .6rem 1rem;border:1px solid var(--gray_40);border-radius:0.3rem;color:var(--gray_90);font-size:1rem;font-family:var(--f_ptd);background:url('../images/common/ico_calender.svg') calc(100% - 16px) center no-repeat;} 
 input[type="date"].no-line {border:none;}
 
+/* 파일찾기 :: input[type="file"] 커스텀 */
+.filebox {display:flex;gap:.5rem;}
+.filebox .upload-name {width:calc(100% - 87px);padding:.6rem;margin:0;border:1px solid var(--gray_40);border-radius:0.3em;font-size:1rem;font-weight:400;line-height:1.2;color:var(--gray_80);font-family:var(--f_ptd);}
+.filebox input[type="file"] {position:absolute;width:0;height:0;padding:0;overflow:hidden;border:0;}
+
 /* select 스타일 리셋*/
 select {-moz-appearance:none;-webkit-appearance:none;appearance:none;cursor:pointer;}
-select::-ms-expand {display: none;}
+select::-ms-expand {display:none;}
 select:hover, select:focus, select:active {outline:none;}
 select, .select {padding:.6rem 2rem .6rem 1rem;margin:0;border:1px solid var(--gray_40);border-radius:0.3em;color:var(--gray_90);font-size:1rem;font-weight:600;font-family:var(--f_ptd);background:url('../images/common/arr_selet.svg') calc(100% - 12px) center no-repeat;}
 select:hover, .select:hover {border-color:#888;}
@@ -372,7 +379,8 @@ table thead th:last-child {border-radius: 0 10px 0 0;}
 .title_box .subtitle > span {margin:.5rem 0 0 0;font-size:16px;font-weight:600;color:var(--gray_70);}
 
 /*버튼 박스*/
-.btn_group {display:flex;justify-content:center;gap:1rem;margin:3rem 0;}
+.btn_group {display:flex;justify-content:center;gap:1rem;margin:0}
+#content > .btn_group {margin:3rem 0;}
 
 /* 한줄짜리 안내문 */
 .description {font-size:14px!important;font-weight:500;color:var(--gray_70)!important;}
