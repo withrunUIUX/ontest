@@ -265,14 +265,10 @@ label img {vertical-align:middle;}
 .txt_group .txt_box {display:flex;gap:1rem} /*이미지 + 텍스트 좌우 정렬로 사용할때, 상하로 쓸때는 txt_group만 쓴다*/
 .txt_group .txt_box p {flex:1;line-height:1.8;}
 
-
 /* 시 형태 */ 
 .poemBox {display:flex;flex-direction:column;gap:.5rem;padding:0 1rem;}
-.poemBox .poemTxt {text-align:center;font-size:1rem;line-height:1.5;}
+.poemBox .poemTxt {text-align:center;font-size:1.1rem;line-height:1.5;}
 .poemBox .poemTxt.left {text-align:left;}
-
-
-
 
 /* 단답형 */
 .inputWrap .inputBox {height:42px;border-color:var(--gray_60);color:var(--gray_90);font-weight:600;text-align:center;}
@@ -301,6 +297,19 @@ input[type="chekbox"] + .cardWrap:before {display:none;}
 .cardBox.magazine .inner {display:flex;gap:.6rem;}
 .cardBox.magazine .inner p {flex:1;overflow:hidden;height:82px;line-height:1.5;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;text-overflow:ellipsis;word-break:break-all;font-size:1.1rem;color:var(--gray_100);}
 .cardBox.photo.magazine .photoBox {border-radius:0;}
+
+/* 숫자카드 */
+.numcard_box {display:flex;flex-direction:column;gap:.2rem;}
+.numcard_tr {display:flex;gap:.2rem;}
+.numcard_tr > li {display:flex;align-items:center;justify-content:center;width:72px;height:72px;border: 1px solid var(--gray_40);}
+.numcard_th {font-size:18px;font-weight:600;background-color:var(--gray_20);}
+
+.numcard_th.mathsymbol {font-size:0;}
+.numcard_th.mathsymbol::before {content:'';display:inline-block;width:17px;height:17px;background-position:50%;background-repeat:no-repeat;}
+.numcard_th.mathsymbol.mathsymbol1::before {background-image:url(../images/common/mathsymbol_1.svg);}
+.numcard_th.mathsymbol.mathsymbol2::before {background-image:url(../images/common/mathsymbol_2.svg);}
+.numcard_th.mathsymbol.mathsymbol3::before {background-image:url(../images/common/mathsymbol_3.svg);}
+.numcard_th.mathsymbol.mathsymbol4::before {background-image:url(../images/common/mathsymbol_4.svg);}
 
 /*///라디오///*/
 .radioWrap {display:flex;flex-direction:column;gap:.5rem;width:100%;font-size:1.1rem;color:var(--gray_100);}
@@ -374,9 +383,24 @@ input[type="chekbox"] + .cardWrap:before {display:none;}
 
 
 /*///단답형///*/
-.inputWrap {text-align:center;font-size:1.1rem;color:var(--gray_100);line-height:2;}
+.inputWrap {position:relative;text-align:center;font-size:1.1rem;color:var(--gray_100);line-height:2;}
 /* 단답형 type2 테이블 */
 .inputWrap.type2 {width:100%;max-width:1024px;}
+/* 단답형 type3 */
+.inputWrap.type3 {padding:3rem 0 0 3rem;}
+.numcard_arr {position:absolute;display:inline-block;background-position:50%;background-repeat:no-repeat;}
+.numcard_arr.horizon {top:0;width:136px;height:40px;}
+.numcard_arr.horizon.plus {background-image:url(../images/common/numcard_arr_plus1.png);}
+.numcard_arr.horizon.minus {background-image:url(../images/common/numcard_arr_minus1.png);}
+.numcard_arr.horizon.obelus {background-image:url(../images/common/numcard_arr_obelus1.png);}
+.numcard_arr.horizon.gobhagi {background-image:url(../images/common/numcard_arr_gobhagi1.png);}
+.numcard_arr.vertic {left:0;width:40px;height:136px;}
+.numcard_arr.vertic.plus {background-image:url(../images/common/numcard_arr_plus2.png);}
+.numcard_arr.vertic.minus {background-image:url(../images/common/numcard_arr_minus2.png);}
+.numcard_arr.vertic.obelus {background-image:url(../images/common/numcard_arr_obelus2.png);}
+.numcard_arr.vertic.gobhagi {background-image:url(../images/common/numcard_arr_gobhagi2.png);}
+/* 단답형 type4 */
+.inputWrap.type4 {display:flex;align-items:center;gap:1rem;}
 
 /* 단답형 type6 */
 .inputWrap.type6 {display:flex;flex-wrap:wrap;gap:1rem;}
@@ -438,11 +462,12 @@ input[type="chekbox"] + .cardWrap:before {display:none;}
 #hsradioexam6 .btn_item.num4 {bottom:6rem;}
 #hsradioexam6 .btn_item.num5 {right:6rem;bottom:6rem;}
 
-
-
-
-
-
+/* 핫스폿 type8 :: 숫자카드 */
+.hsradioWrap.type8 {}
+.hsradioWrap.type8 .numcard_tr > li {position:relative;text-align:initial;}
+.hsradioWrap.type8 .numcard_td:has(input[type="radio"]:checked) {border-color:var(--blue_100);background-color:var(--blue_20);}
+.hsradioWrap.type8 .numcard_td:has(input[type="radio"]:checked)::before {z-index:1;position:absolute;content:'';top:50%;left:50%;transform:translateY(-50%) translateX(-50%);display:block;width:52px;height:52px;background-image:url(../images/common/hotspot_img.svg);background-size:100%;background-repeat:no-repeat;}
+.hsradioWrap.type8 .numcard_td input[type="radio"] + label {display:flex;align-items:center;justify-content:center;width:100%;height:100%;}
 
 
 
