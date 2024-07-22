@@ -190,7 +190,9 @@ select:disabled, .select:disabled, .select.disabled{opacity:0.5;pointer-events:n
 select.no-line, .select.no-line {border:none;}
 
 /* textarea 기본 */
-textarea {overflow-y:auto;vertical-align:top;width:100%;line-height:1.5;padding:1rem 1.5rem;border-radius:.3rem;border:1px solid var(--gray_40);font-size:1rem;font-family:var(--f_ptd);resize:none;}
+textarea {overflow-y:auto;vertical-align:top;width:100%;line-height:1.5;padding:1rem 1.5rem;border-radius:.3rem;border:1px solid var(--gray_40);font-size:1rem;font-family:var(--f_ptd);color:var(--gray_100);}
+textarea::-webkit-scrollbar {width:8px;}
+textarea::-webkit-scrollbar-thumb {border-radius:8px;background:var(--gray_50);}
 
 /* 필수입력 기호 */
 .required {color:var(--blue_100);font-size:1.5rem;}
