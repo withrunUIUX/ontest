@@ -321,7 +321,10 @@ input[type="chekbox"] + .cardWrap:before {display:none;}
 /* 라디오 type2 :: 가로정렬, 중앙배치*/
 .radioWrap.type2 {flex-direction:row;justify-content:center;}
 /* 라디오 type3 :: 보기 하나에 ㄱ, ㄴ으로 구분되어져 정렬을 해야할때*/
-.radioWrap.type3 li label {display:flex;align-items:center;gap:1rem;margin:0;}
+.radioWrap.type3 {max-width:900px;}
+.radioWrap.type3 input[type="radio"] + label {display:flex;align-items:center;gap:1rem;margin:0;}
+.radioWrap.type3 input[type="radio"] + label span {flex:1;display:flex;align-items:center;justify-content:space-between;}
+
 /* 라디오 type4 */
 .radioWrap.type4 {display:block;}
 .radioWrap.type4 > div {line-height:2;color:var(--gray_100);font-size:1.1rem;font-weight:500;}
@@ -379,11 +382,17 @@ input[type="chekbox"] + .cardWrap:before {display:none;}
 .checkWrap.type6 ul {display:flex;flex-direction:column;gap:.8rem;}
 .checkWrap.type6 ul li {display:flex;flex-direction:column;gap:.4rem;}
 .checkWrap.type6 ul li b {font-size:1.1rem;color:var(--gray_100);}
-/* 체크박스 type7 :: 보고서 형식 */
-.checkWrap.type7 {}
+/* 체크박스 type7 :: 문장형 */
 .checkWrap.type7 > div {line-height:2;color:var(--gray_100);font-size:1.1rem;font-weight:500;}
 .checkWrap.type7 input[type="checkbox"] + label {display:inline;margin:0;}
 .checkWrap.type7 input[type="checkbox"] + label::before {top:4px;transform:initial;}
+/* 체크박스 type8 :: 핸드폰+대화형 */
+.checkWrap.type8 input[type="checkbox"] + label::before {display:none;}
+.checkWrap.type8 input[type="checkbox"]:checked + label .bubble::before {background-image:url(../images/common/bubble_tail_on.svg);}
+/* 체크박스 type9 :: 정렬 */
+.checkWrap.type9 {max-width:900px;}
+.checkWrap.type9 input[type="checkbox"] + label {display:flex;gap:1rem;margin:0;}
+.checkWrap.type9 input[type="checkbox"] + label span {flex:1;display:flex;align-items:center;justify-content:space-between;}
 
 
 
