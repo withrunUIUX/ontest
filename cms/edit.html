@@ -423,6 +423,7 @@
 $(document).ready(function(){
     // 타입 아이템 숨김
     $('.example_type_item').hide();
+    $('.editer_item').show();
     $("input:radio[name=example_type]").click(function(){
         if($("input[name=example_type]:checked").val() == "editer_item"){ //에디터 선택 시 에디터박스 나타남, 파일등록 숨김
             $('.editer_item').show();
