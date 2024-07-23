@@ -15,14 +15,17 @@ function setRotation(element, rotationDegree) {
 }
 
 function calculateRotation(event, centerX, centerY) {
-    const deltaX = (event.clientX || event.touches[0].clientX) - centerX;
-    const deltaY = (event.clientY || event.touches[0].clientY) - centerY;
+    const clientX = event.clientX || event.touches[0].clientX;
+    const clientY = event.clientY || event.touches[0].clientY;
+    const deltaX = clientX - centerX;
+    const deltaY = clientY - centerY;
     const angle = Math.atan2(deltaY, deltaX) * (180 / Math.PI);
     return angle + 90; // Adjusting for the initial 90 degree rotation
 }
 
 function startDrag(event) {
     if (event.target.classList.contains('hand')) {
+        event.preventDefault();
         selectedHand = event.target;
         isDragging = true;
 
@@ -38,6 +41,7 @@ function startDrag(event) {
 
 function drag(event) {
     if (isDragging && selectedHand) {
+        event.preventDefault();
         const rect = clock.getBoundingClientRect();
         const centerX = rect.left + rect.width / 2;
         const centerY = rect.top + rect.height / 2;
