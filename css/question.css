@@ -462,15 +462,15 @@ input[type="chekbox"] + .cardWrap:before {display:none;}
 .hsradioWrap.type6 input[type="radio"] + label {padding:0;border:none;border-radius:0;background:transparent;}
 .hsradioWrap.type6 input[type="radio"]:checked + label * {color:var(--blue_100);border-color:var(--blue_100);}
 .hsradioWrap.type6 input[type="radio"]:checked + label .bubble::before {background-image:url(../images/common/bubble_tail_on.svg);}
-.hsradioWrap.type6 .btn_group {position:absolute;display:block;width:100%;height:100%;margin:0;padding:2rem;}
+.hsradioWrap.type6 .btn_group {width:100%;height:100%;margin:0;}
 .hsradioWrap.type6 .btn_group .btn_item {position:absolute;}
 /* 개별버튼 위치 :: 현재 쓰여진건 예시 입니다. question2.css에 문항작업코드(id)로 선택하여 위치를 설정합니다. */
-#hsradioexam6 .btn_group {padding:6rem;}
+/* #hsradioexam6 .btn_group {padding:6rem;}
 #hsradioexam6 .btn_item.num1 {}
 #hsradioexam6 .btn_item.num2 {left:22rem;}
 #hsradioexam6 .btn_item.num3 {right:6rem;}
 #hsradioexam6 .btn_item.num4 {bottom:6rem;}
-#hsradioexam6 .btn_item.num5 {right:6rem;bottom:6rem;}
+#hsradioexam6 .btn_item.num5 {right:6rem;bottom:6rem;} */
 /* 핫스폿 type8 :: 숫자카드 */
 .hsradioWrap.type8 {}
 .hsradioWrap.type8 .numcard_tr > li {position:relative;text-align:initial;}
@@ -507,15 +507,14 @@ input[type="chekbox"] + .cardWrap:before {display:none;}
 /* 핫스폿 type13 :: 이미지 위에 버튼일때만 */
 .hsradioWrap.type13 {}
 .hsradioWrap.type13 img {}
-.hsradioWrap.type13 .btn_group {position:absolute;display:block;width:100%;height:100%;margin:0;padding:2rem;}
+.hsradioWrap.type13 .btn_group {width:100%;height:100%;margin:0;}
 .hsradioWrap.type13 .btn_group .btn_item {position:absolute;}
 /* 개별버튼 위치 :: 현재 쓰여진건 예시 입니다. question2.css에 문항작업코드(id)로 선택하여 위치를 설정합니다. */
-#hsradioexam13 .btn_group {padding:6rem;}
-#hsradioexam13 .btn_item.num1 {top:4rem;left:9rem;}
+/* #hsradioexam13 .btn_item.num1 {top:4rem;left:9rem;}
 #hsradioexam13 .btn_item.num2 {top:12rem;left:7rem;}
 #hsradioexam13 .btn_item.num3 {left: 20rem;}
 #hsradioexam13 .btn_item.num4 {top: 6rem;right: 11rem;}
-#hsradioexam13 .btn_item.num5 {right: 3rem;bottom: 12rem;}
+#hsradioexam13 .btn_item.num5 {right: 3rem;bottom: 12rem;} */
 /* 핫스폿 type14 :: 카드안에서 선택 */
 .hsradioWrap.type14 {display:flex;flex-direction:column;gap:1rem;}
 .hsradioWrap.type14 .cardBox {display:flex;align-items:center;gap:1rem;width:800px;}
@@ -544,4 +543,83 @@ input[type="chekbox"] + .cardWrap:before {display:none;}
 .txareWrap.type3 .item .inner textarea {border:none;border-radius:0;background:transparent;resize:none;}
 .txareWrap.type3 .item .inner:has(p) {padding:.5rem;background-color:var(--gray_10);}
 .txareWrap.type3 .item .inner p {color:var(--gray_100);font-weight:600;}
+
+
+
+/*///끌어놓기///*/
+.dragWrap {display:flex;flex-direction:column;align-items:center;gap:2rem;}
+.dragBtnBox {}
+.dragBtnBox .draggable {display:inline-flex;line-height:1.5;margin:0;padding:6px 12px;border:.1rem solid var(--gray_40);border-radius:.3rem;color:var(--gray_100);font-size:1.1rem;font-weight:500;background-color:var(--gray_10);cursor:pointer;}
+.dragBtnBox .draggable:has(img) {min-height:40px;}
+.dragBtnBox .draggable > img {width:100%;object-fit:contain;}
+.dragBtnBox .draggable:hover,
+.dragBtnBox .draggable:active,
+.dragBtnBox .draggable.dragging {border-color:var(--blue_100);color:var(--blue_100);background-color:var(--blue_20);}
+.dragAnswerBox {position:relative;width:100%;}
+.dragAnswerBox .caption {display:flex;align-items:center;flex-wrap:wrap;gap:.5rem;font-size:1.1rem;font-weight:600;color:var(--gray_90);}
+.dragAnswerBox .dragitem {font-size:1.1rem;font-weight:500;color:var(--gray_90);line-height:2;}
+.dragAnswerBox .draginput {display:inline-flex;justify-content:center;align-items:center;margin:.2rem;padding:.6rem;border-radius:0.3em;border:1px solid var(--gray_40);text-align:center;}
+.dragAnswerBox .draginput.sm {width:5rem;}
+.dragAnswerBox .draginput.big {min-width:62px;min-height:62px;}
+
+
+/* 끌어놓기 type2 :: 이미지 위에 끌어놓기 */
+.dragWrap.type2 .dragAnswerBox > img {width:100%;}
+.draginput_group .draginput {position:absolute;}
+/* 끌어놓기 type3 :: ox 퀴즈 */
+.dragWrap.type3 {min-width:500px;}
+.dragWrap.type3 .dragAnswerBox {display:flex;flex-direction:column;gap:1rem}
+.dragWrap.type3 .dragitem {display:flex;justify-content:space-between;padding-bottom:1rem;border-bottom:1px dashed var(--gray_40);}
+
+/* 끌어놓기 type4 :: 시계 돌리기, 시간 맞추기 */
+.dragWrap.type4 {}
+.clock {position:relative;width:500px;height:500px;border-radius:50%;}/*background:white url(../images/common/clock_bg.png) no-repeat 50%;background-size:100%;*/
+.clock .hand {position:absolute;top:50%;transform-origin:100%;width:50%;height:6px;border-radius:6px;font-size:0;background:black;cursor:pointer;}
+.clock .hand.hour {left:20%;width:30%;height:6px;background:var(--blue_120);}
+.clock .hand.minute {left:4%;width:46%;height:6px;background:var(--blue_70);}
+.clock .hand.second {display:none;left:4%;width:46%;height:3px;background:var(--coral_110);}
+.clock .clockDot {width:20px;height:20px;background:black;border-radius:50%;position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);}
+.clock .clock_bg {width:100%;height:100%;pointer-events:none;}
+.clock .clock_bg img {width:100%;height:100%;pointer-events:none;-webkit-user-drag:none;-khtml-user-drag:none;-moz-user-drag:none;-o-user-drag:none;user-drag:none;}
+
+
+/* 끌어놓기 type10 :: 문장부호 맞추기 */
+.dragWrap.type10 {}
+.dragWrap.type10 .dragBtnBox .draggable:has(img) {padding:0;border:none;background:transparent;transition:var(--ani_time);}
+.dragWrap.type10 .dragBtnBox .draggable:has(img):hover,
+.dragWrap.type10 .dragBtnBox .draggable:has(img):active,
+.dragWrap.type10 .dragBtnBox .draggable.dragging:has(img) {transform:scale(1.05);}
+
+.dragWrap.type10 .dragAnswerBox {display:flex;justify-content:flex-start;flex-direction:column;gap:2rem}
+.dragWrap.type10 .dragAnswerBox .dragitem {display:flex;justify-content:flex-start;flex-direction:column;gap:1rem}
+.dragWrap.type10 .dragAnswerBox .dragmark_group {display:flex;}
+.dragWrap.type10 .dragAnswerBox .dragmark_group li {display:inline-flex;justify-content:center;align-items:center;width:70px;height:70px;margin-left:-2px;line-height:1;font-size:3rem;font-weight:700;color:var(--gray_130);background:url(../images/common/dragmark_bg2.png) 50% no-repeat;}
+.dragWrap.type10 .dragAnswerBox .dragmark_group li:has(.draginput) {background-image:url(../images/common/dragmark_bg1.png);}
+.dragWrap.type10 .dragAnswerBox .dragmark_group li .draginput {width:100%;height:100%;border:none;border-radius:0;margin:0;padding:0;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
