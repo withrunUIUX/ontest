@@ -575,8 +575,8 @@ input[type="chekbox"] + .cardWrap:before {display:none;}
 .dragWrap.type4 {}
 .clock {position:relative;width:500px;height:500px;border-radius:50%;}/*background:white url(../images/common/clock_bg.png) no-repeat 50%;background-size:100%;*/
 .clock .hand {position:absolute;top:50%;transform-origin:100%;width:50%;height:6px;border-radius:6px;font-size:0;background:black;cursor:pointer;}
-.clock .hand.hour {left:20%;width:30%;height:6px;background:var(--blue_120);}
-.clock .hand.minute {left:4%;width:46%;height:6px;background:var(--blue_70);}
+.clock .hand.hour {left:20%;width:30%;height:10px;background:var(--blue_120);}
+.clock .hand.minute {left:4%;width:46%;height:10px;background:var(--blue_70);}
 .clock .hand.second {display:none;left:4%;width:46%;height:3px;background:var(--coral_110);}
 .clock .clockDot {width:20px;height:20px;background:black;border-radius:50%;position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);}
 .clock .clock_bg {width:100%;height:100%;pointer-events:none;}
