@@ -15,13 +15,13 @@ function setRotation(element, rotationDegree) {
 }
 
 function calculateRotation(event, centerX, centerY) {
-    const deltaX = event.clientX - centerX;
-    const deltaY = event.clientY - centerY;
+    const deltaX = (event.clientX || event.touches[0].clientX) - centerX;
+    const deltaY = (event.clientY || event.touches[0].clientY) - centerY;
     const angle = Math.atan2(deltaY, deltaX) * (180 / Math.PI);
     return angle + 90; // Adjusting for the initial 90 degree rotation
 }
 
-clock.addEventListener('mousedown', (event) => {
+function startDrag(event) {
     if (event.target.classList.contains('hand')) {
         selectedHand = event.target;
         isDragging = true;
@@ -34,9 +34,9 @@ clock.addEventListener('mousedown', (event) => {
         const currentRotation = parseFloat(selectedHand.style.transform.replace('rotate(', '').replace('deg)', '')) || 0;
         offsetAngle = clickAngle - currentRotation;
     }
-});
+}
 
-document.addEventListener('mousemove', (event) => {
+function drag(event) {
     if (isDragging && selectedHand) {
         const rect = clock.getBoundingClientRect();
         const centerX = rect.left + rect.width / 2;
@@ -52,12 +52,20 @@ document.addEventListener('mousemove', (event) => {
             secondRotation = rotationDegree;
         }
     }
-});
+}
 
-document.addEventListener('mouseup', () => {
+function endDrag() {
     isDragging = false;
     selectedHand = null;
-});
+}
+
+clock.addEventListener('mousedown', startDrag);
+document.addEventListener('mousemove', drag);
+document.addEventListener('mouseup', endDrag);
+
+clock.addEventListener('touchstart', startDrag);
+document.addEventListener('touchmove', drag);
+document.addEventListener('touchend', endDrag);
 
 function initializeClock() {
     const currentDate = new Date();
