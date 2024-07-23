@@ -130,7 +130,7 @@ input[type="file"] {cursor: pointer;}
 
 ::placeholder {color:var(--gray_60)}
 
-label {font-size:1.1rem;font-weight:700;color:var(--gray_80)}
+label {font-size:1.1rem;font-weight:700;color:var(--gray_80);cursor:pointer;}
 
 /* checkbox 기본 */
 input[type="checkbox"]{position:absolute;opacity:0;cursor:pointer;}
@@ -245,6 +245,15 @@ table thead th:last-child {border-radius: 0 10px 0 0;}
 .tbl_basic.type3 tbody tr:nth-child(even) {background:#fff;}
 .tbl_basic.type3 tbody tr th {font-weight:600;text-align:center;}
 .tbl_basic.type3 tbody tr td {color:var(--gray_90);font-weight:500;}
+
+/* 라디오 type3, 체크박스 type9에 사용 */
+.tbl_basic.type4 {}
+.tbl_basic.type4 thead th,
+.tbl_basic.type4 tbody tr th,
+.tbl_basic.type4 tbody tr td {color:var(--gray_100);border-color:transparent;background:transparent;}
+.tbl_basic.type4 tbody tr th,
+.tbl_basic.type4 tbody tr td {}
+.tbl_basic.type4 tbody tr:nth-child(even) {background:#fff;}
 
 .tbl_list {}
 .tbl_list tbody tr td {border-left:none;}
