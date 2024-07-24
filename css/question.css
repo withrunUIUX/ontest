@@ -140,7 +140,7 @@ label img {vertical-align:middle;}
 .chat_img.female4 {background-image:url(../images/q_common/female4.png);}
 
 /* 채팅 */
-.bubble {position:relative;width:100%;padding:1rem;border-radius:3px;border:1px solid var(--gray_100);background:#fff;}
+.bubble {position:relative;padding:1rem;border-radius:3px;border:1px solid var(--gray_100);background:#fff;}/*flex:1;width:100%;*/
 .bubble::before {content:'';position:absolute;left:-1.11rem;top:.5rem;display:inline-block;width:19px;height:25px;background:url(../images/q_common/bubble_tail.svg) 50% no-repeat;background-size:100%;}
 .bubble.top::before {top:-1.31rem;left:50%;transform:rotate(90deg);}
 .bubble.under::before {top:initial;bottom:-1.31rem;left:50%;transform:rotate(-90deg);}
@@ -327,7 +327,7 @@ input[type="chekbox"] + .cardWrap:before {display:none;}
 .radioWrap.type8 input[type="radio"] + label::before {position:static;transform:initial;}
 .radioWrap.type8 label > div {flex:1;min-width:350px;height:100%;padding:2rem;border:2px dashed var(--gray_50);border-radius:10px;background:var(--gray_10);}
 /* 라디오 type9 :: 대화형 */
-.radioWrap.type9 input[type="radio"] + label {flex:1;}
+.radioWrap.type9 input[type="radio"] + label {}
 .radioWrap.type9 input[type="radio"] + label::before {display:none;}
 .radioWrap.type9 input[type="radio"]:checked + label .bubble::before {background-image:url(../images/q_common/bubble_tail_on.svg);}
 
@@ -364,7 +364,7 @@ input[type="chekbox"] + .cardWrap:before {display:none;}
 .checkWrap.type7 input[type="checkbox"] + label {display:inline;margin:0;}
 .checkWrap.type7 input[type="checkbox"] + label::before {top:4px;transform:initial;}
 /* 체크박스 type8 :: 핸드폰+대화형 */
-.checkWrap.type8 input[type="checkbox"] + label {flex:1;}
+.checkWrap.type8 input[type="checkbox"] + label {}
 .checkWrap.type8 input[type="checkbox"] + label::before {display:none;}
 .checkWrap.type8 input[type="checkbox"]:checked + label .bubble::before {background-image:url(../images/q_common/bubble_tail_on.svg);}
 /* 체크박스 type9 :: 정렬 */
@@ -436,7 +436,7 @@ input[type="chekbox"] + .cardWrap:before {display:none;}
 .hsradioWrap.type8 .numcard_td:has(input[type="radio"]:checked)::before {z-index:1;position:absolute;content:'';top:50%;left:50%;transform:translateY(-50%) translateX(-50%);display:block;width:52px;height:52px;background-image:url(../images/q_common/hotspot_img.svg);background-size:100%;background-repeat:no-repeat;}
 .hsradioWrap.type8 .numcard_td input[type="radio"] + label {display:flex;align-items:center;justify-content:center;width:100%;height:100%;}
 /* 핫스폿 type9 :: 대화형 */
-.hsradioWrap.type9 input[type="radio"] + label {flex:1;margin:0;padding:0;border:none;border-radius:0;background:transparent;}
+.hsradioWrap.type9 input[type="radio"] + label {margin:0;padding:0;border:none;border-radius:0;background:transparent;}
 .hsradioWrap.type9 input[type="radio"] + label::before {width:80px;height:80px;}
 .hsradioWrap.type9 input[type="radio"]:checked + label * {color:var(--blue_100);border-color:var(--blue_100);}
 .hsradioWrap.type9 input[type="radio"]:checked + label .bubble::before {background-image:url(../images/q_common/bubble_tail_on.svg);}
@@ -495,24 +495,33 @@ input[type="chekbox"] + .cardWrap:before {display:none;}
 /*///끌어놓기///*/
 .dragWrap {display:flex;flex-direction:column;align-items:center;gap:2rem;}
 .dragWrap .caption {display:flex;align-items:center;flex-wrap:wrap;gap:.5rem;font-size:1.1rem;font-weight:600;color:var(--gray_90);}
-.dragBtnBox {display:flex;flex-wrap:wrap;gap:.5rem;max-width:950px;}
+.dragBtnBox {display:flex;flex-wrap:wrap;justify-content:center;gap:.5rem;max-width:950px;}
 .dragAnswerBox {position:relative;width:100%;}
 .dragAnswerBox .dragitem {font-size:1.1rem;font-weight:500;color:var(--gray_90);line-height:2;}
 /* 끌어놓기 보기 버튼 */
-.draggable {display:inline-flex;line-height:1.5;margin:0;padding:6px 12px;border:.1rem solid var(--gray_40);border-radius:.3rem;color:var(--gray_100);font-size:1.1rem;font-weight:500;background-color:var(--gray_10);cursor:pointer;}
+.draggable {display:inline-flex;line-height:1.5;margin:0;padding:6px 12px;border:.1rem solid var(--gray_40);border-radius:.3rem;text-align:left;color:var(--gray_100);font-size:1.1rem;font-weight:500;background-color:var(--gray_10);transition:var(--ani_time);cursor:pointer;}
 .draggable:has(img) {min-height:40px;}
 .draggable > img {width:100%;object-fit:contain;}
 .draggable:hover,
 .draggable:active,
 .draggable.dragging {border-color:var(--blue_100);color:var(--blue_100);background-color:var(--blue_20);}
+/* 끌어놓기 카드박스 형태의 보기 버튼 */
+.draggable:has(.dargcard) {width:calc(100% / 4 - .4rem);padding:1rem 1.5rem;border-color:var(--gray_60);background-color:#fff;}
+.draggable:has(.dargcard):hover,
+.draggable:has(.dargcard):active,
+.draggable:has(.dargcard).dragging {border-color:var(--blue_100);}
+.dargcard {display:flex;flex-direction:column;gap:1rem;font-size:1rem;text-align:left;}
+.dargcard img {}
 /* 끌어놓기 답변 박스 */
-.draginput {display:inline-flex;justify-content:center;align-items:center;min-width:8rem;min-height:42px;margin:.2rem;padding:.6rem;border-radius:0.3em;border:1px solid var(--gray_40);text-align:center;background-color:#fff;vertical-align:middle;transition:var(--ani_time);}
+.draginput {display:inline-flex;justify-content:center;align-items:center;min-width:8rem;min-height:42px;margin:.2rem !important;padding:.6rem;border-radius:0.3em;border:1px solid var(--gray_40);text-align:center;background-color:#fff;vertical-align:middle;transition:var(--ani_time);}
 .draginput.sm {width:5rem;}
 .draginput.big {min-width:62px;min-height:62px;}
 .draginput:hover,
 .draginput:focus {z-index:1;border-color:var(--blue_70);box-shadow: 0 0 0 0.2rem rgba(81, 137, 250, 0.3);}
+.draginput:has(.draggable),
+.draginput:has(img) {width:auto;min-width:auto !important;height:auto;padding:0;border:0;background-color:transparent;}
 /* 끌어놓기 답변 박스 :: 다중 */
-.draginput.many {flex-wrap:wrap;align-items:flex-start;justify-content:flex-start;align-content:flex-start;gap:.5rem;width:100%;min-height:200px;padding:1rem;border-radius:20px;border-color:var(--yelliw_m);background:var(--yelliw_10);}
+.draginput.many {flex-wrap:wrap;align-items:flex-start;justify-content:flex-start;align-content:flex-start;gap:.5rem;width:100%;min-height:200px;padding:1rem;border-radius:20px;border:1px solid var(--yelliw_m);background:var(--yelliw_10);}
 /* 끌어놓기 type2 :: 이미지 위에 끌어놓기 */
 .dragWrap.type2 .dragAnswerBox > img {width:100%;}
 .draginput_group .draginput {position:absolute;}
@@ -520,10 +529,12 @@ input[type="chekbox"] + .cardWrap:before {display:none;}
 .dragWrap.type3 {min-width:500px;}
 .dragWrap.type3 .dragAnswerBox {display:flex;flex-direction:column;gap:1rem}
 .dragWrap.type3 .dragitem {display:flex;justify-content:space-between;padding-bottom:1rem;border-bottom:1px dashed var(--gray_40);}
+.dragWrap.type3 .draginput {border:1px solid var(--gray_40);background-color:#fff;}
 /* 끌어놓기 type4 :: 시계 돌리기, 시간 맞추기 */
 .dragWrap.type4 {}
 .clock {position:relative;width:500px;height:500px;border-radius:50%;}
 .clock .hand {position:absolute;top:50%;transform-origin:100%;width:50%;height:6px;border-radius:6px;font-size:0;background:black;cursor:pointer;}
+.clock .hand:hover {box-shadow: 0 0 0 0.2rem rgba(81, 137, 250, 0.3);}
 .clock .hand.hour {display:none;left:20%;width:30%;height:10px;background:var(--blue_120);}/*현재 문제들은 사용하지 않아서 숨김처리, 백그라운드 이미지로 문제 제시*/
 .clock .hand.minute {left:4%;width:46%;height:10px;background:var(--blue_70);}
 .clock .hand.second {display:none;left:4%;width:46%;height:3px;background:var(--coral_110);}/*현재 문제들은 사용하지 않아서 숨김처리*/
@@ -539,50 +550,74 @@ input[type="chekbox"] + .cardWrap:before {display:none;}
 .dragtable_td {width:calc(100% - 260px);line-height:1.5;padding:1rem;border:1px solid var(--gray_50);border-left:none;}
 /* 끌어놓기 type6 :: 중복으로 끌어놓기 */
 .dragWrap.type6 {}
-.dragWrap.type6 .dragAnswerBox {display:flex;justify-content:space-between;gap:1rem;max-width:950px;}
-.dragWrap.type6 .dragitem {display:flex;flex-direction:column;align-items:center;width:50%;}
+.dragWrap.type6 .dragAnswerBox {display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;max-width:950px;}
+.dragWrap.type6 .dragitem {display:flex;flex-direction:column;align-items:center;width:calc(50% - .5rem);}
 .dragWrap.type6 .dragitem .bullet {z-index:1;}
-.dragWrap.type6 .dragitem .draginput {z-index:initial;margin:0;margin-top:-16px;padding-top:2rem;}
-
-
-
-
-
-
+.dragWrap.type6 .dragitem .draginput.many {z-index:initial;margin:0;margin-top:-16px !important;padding-top:2rem;}
+.dragWrap.type6 .caption {justify-content:flex-end;width:100%;font-size:.9rem;font-weight:500;}
+.dragWrap.type6 .draggable:has(img) {padding:0;border:none;background:transparent;transition:var(--ani_time);}
+.dragWrap.type6 .draggable:has(img):hover,
+.dragWrap.type6 .draggable:has(img):active,
+.dragWrap.type6 .draggable.dragging:has(img) {transform:scale(1.05);}
+/* 끌어놓기 type7 :: 중복으로 끌어놓기, 다이어그램 */
+.dragWrap.type7 {gap:3rem;}
+.diagram {position:relative;display:flex;width:1024px;min-height:260px;}
+.diagram::before, .diagram::after {position:absolute;content:'';display:block;width:calc(100% - 33% - 7px);height:100%;border-radius:100px;}
+.diagram::before {border:2px solid var(--blue_100);}
+.diagram::after {border:2px solid var(--green_100);right:0;}
+.diagram .dragitem {z-index:1;display:flex;justify-content:center;width:calc(100% / 3);}
+.diagram .dragitem .bullet {z-index:1;position:absolute;top:-22px;}
+.diagram .dragitem:nth-child(1) .bullet {color:#fff;border-color:var(--blue_100);background-color:var(--blue_100);}
+.diagram .dragitem:nth-child(3) .bullet {color:#fff;border-color:var(--green_100);background-color:var(--green_100);}
+.diagram .draginput.many {z-index:initial;display:flex;flex-direction:column;align-items:center;align-content:center;margin:0 !important;padding-top:2rem;border:0;border-radius:100px;background:transparent;}
+/* 끌어놓기 type8 :: 순서대로 끌어놓기 */
+.dragWrap.type8 {max-width:950px;}
+.dragflow {display:flex;flex-wrap:wrap;gap:1rem 3rem;}
+.dragflow .dragitem {position:relative;line-height:3;padding:1rem 1.5rem;border:1px solid var(--blue_50);border-radius:10px;background:var(--blue_20);}
+.dragflow .dragitem::after {content:'';position:absolute;top:50%;transform:translateY(-50%);right:calc(-3rem + 8px);display:inline-block;width:28px;height:28px;background:url(../images/q_common/flow_arr.svg) 50% no-repeat;}
+.dragflow .dragitem:last-child::after {display:none;}
 /* 끌어놓기 type10 :: 문장부호 맞추기 */
 .dragWrap.type10 {}
-.dragWrap.type10 .dragBtnBox .draggable:has(img) {padding:0;border:none;background:transparent;transition:var(--ani_time);}
-.dragWrap.type10 .dragBtnBox .draggable:has(img):hover,
-.dragWrap.type10 .dragBtnBox .draggable:has(img):active,
-.dragWrap.type10 .dragBtnBox .draggable.dragging:has(img) {transform:scale(1.05);}
-
+.dragWrap.type10 .draggable:has(img) {padding:0;border:none;background:transparent;transition:var(--ani_time);}
+.dragWrap.type10 .draggable:has(img):hover,
+.dragWrap.type10 .draggable:has(img):active,
+.dragWrap.type10 .draggable.dragging:has(img) {transform:scale(1.05);}
 .dragWrap.type10 .dragAnswerBox {display:flex;justify-content:flex-start;flex-direction:column;gap:2rem}
 .dragWrap.type10 .dragAnswerBox .dragitem {display:flex;justify-content:flex-start;flex-direction:column;gap:1rem}
 .dragWrap.type10 .dragAnswerBox .dragmark_group {display:flex;}
 .dragWrap.type10 .dragAnswerBox .dragmark_group li {display:inline-flex;justify-content:center;align-items:center;width:70px;height:70px;margin-left:-2px;line-height:1;font-size:3rem;font-weight:700;color:var(--gray_130);background:url(../images/q_common/dragmark_bg2.png) 50% no-repeat;}
 .dragWrap.type10 .dragAnswerBox .dragmark_group li:has(.draginput) {background-image:url(../images/q_common/dragmark_bg1.png);}
-.dragWrap.type10 .dragAnswerBox .dragmark_group li .draginput {width:100%;height:100%;min-width:initial;min-height:initial;border:none;border-radius:0;margin:0;padding:0;background-color:initial;}
+.dragWrap.type10 .dragAnswerBox .dragmark_group li .draginput {width:100%;height:100%;min-width:initial;min-height:initial;border:none;border-radius:0;margin:0 !important;padding:0;background-color:initial;}
+/* 끌어놓기 type11 :: 핸드폰+대화형 */
+.dragWrap.type11 {}
+.dragWrap.type11 .bubble .draginput {min-width:6rem;margin:0 !important;}
+/* 끌어놓기 type12 :: 카드박스 */
+.dragWrap.type12 {gap:1rem;}
+.dragWrap.type12 .dragtable {flex-direction:row;}
+.dragWrap.type12 .dragtable_tr {flex-direction:column;width:calc(100% / 4 + 1px);margin:0;margin-left:-1px;}
+.dragWrap.type12 .dragtable_tr .dragtable_th {width:100%;}
+.dragWrap.type12 .dragtable_tr .dragtable_td {width:100%;height:100%;margin-top:-1px;padding:0;border:1px solid var(--gray_50);}
+.dragWrap.type12 .dragtable_tr .dragtable_td:hover {z-index:1;}
+.dragWrap.type12 .dragtable_tr .dragtable_td .draginput {z-index:2;width:100%;height:100%;min-height:160px;margin:0 !important;border:none;border-radius:0;background-color:#fff;}
+.dragWrap.type12 .dragtable_tr .dragtable_td .draginput .draggable {width:100%;border:none;}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*///아래로펼치기///*/
+.seletWrap {font-size:1.1rem;font-weight:500;color:var(--gray_100);line-height:2;}
+/* 아래로펼치기 type2 :: 순서대로 선택 */
+.seletWrap.type2 {display:flex;gap:3rem;}
+.seletWrap.type2 .select {background-color:#fff;}
+.seletWrap.type2 .item {position:relative;min-width:2rem;line-height:3;padding:1rem 1.5rem;border:1px solid var(--blue_50);border-radius:10px;background:var(--blue_20);text-align:center;}
+.seletWrap.type2 .item::after {content:'';position:absolute;top:50%;transform:translateY(-50%);right:calc(-3rem + 8px);display:inline-block;width:28px;height:28px;background:url(../images/q_common/flow_arr.svg) 50% no-repeat;}
+.seletWrap.type2 .item:last-child::after {display:none;}
+/* 아래로펼치기 type3 :: 테이블 */
+.seletWrap.type3 {}
+.selettable {display:flex;}
+.selettable_tr {display:flex;flex-direction:column;margin-left:-1px;}
+.selettable_tr * {color:var(--gray_100);}
+.selettable_th {display:flex;justify-content:center;align-items:center;width:100%;padding:1rem;border:1px solid var(--gray_50);font-size:1.1rem;font-weight:700;background:var(--gray_20);}
+.selettable_td {display:inline-flex;justify-content:center;align-items:center;width:100%;height:100%;line-height:1.5;padding:1rem;margin-top:-1px;border:1px solid var(--gray_50);}
+.selettable .select {margin:0 .2rem;}
 
 
 
