@@ -1,5 +1,4 @@
 @charset "UTF-8";
-
 /* question header */
 #question_header {z-index:10;position:relative;}
 #question_header header {display:flex;justify-content:space-between;padding:1.5rem 6.5rem 1.5rem 2.5rem;background-color:var(--blue_130);}
@@ -74,28 +73,20 @@
 .no_answer .no_answer_list .no_answer_item {display:inline-flex;align-items:center;justify-content:center;width:46px;height:46px;border:.1rem solid var(--gray_60);border-radius:4px;color:var(--gray_100);font-size:1.1rem;font-weight:600;background:#fff;}
 
 /* question body :: 문항 영역 layout */
-u {text-decoration:none;border-bottom:1px solid var(--gray_70);}/* 밑줄, 문항 전체 공통, 문항제목, 예문, 보기 등에서 사용 */
-
 .question {height:100%;padding:2rem 10rem;background:var(--blue_20);}
 .q_content {overflow:hidden;position:relative;border-radius:10px;background:#fff;}
 .q_layout {display:flex;flex-direction:column;gap:3rem;min-height:600px;padding:48px 70px;background:#fff;}
-
 .question .q_content {box-shadow:1px 1px 10px 0 rgba(79, 106, 135, 0.2);} /* 미리보기에서는 나오지 않게 */
 .question .q_layout {gap:1.2rem;min-height:calc(73vh + 19px);padding:20px 70px 40px;} /* 미리보기에서는 나오지 않게 */
-
 .q_layout p {font-size:1.1rem;line-height:2;color:var(--gray_100);}
-
-
 /* 문항 질문 */
 .q_tit {display:flex;align-items:center;justify-content:flex-start;gap:.4rem;margin:0;padding:26px 42px;font-size:1rem;font-weight:500;background:var(--gray_20);}
 .q_tit .question_number {padding:.5rem .8rem;border-radius:.3rem;color:var(--c_white);font-weight:600;background:var(--gray_70);}
-
 /* 문항정보 */
 .q_layout .question_info {display:flex;align-items:center;justify-content:flex-end;gap:.5rem;font-size:14px;font-weight:600;color:var(--gray_70);}
 .q_layout .question_info li {display:flex;align-items:center;gap:.5rem;}
 .q_layout .question_info li::after {content:'';display:inline-block;width:2px;height:12px;background:var(--gray_40);}
 .q_layout .question_info li:last-child:after {display:none;}
-
 /* 예문 */
 .q_layout .q_wrap {overflow:hidden;display:flex;justify-content:center;width:100%;padding:3rem 4rem;border:.3rem solid var(--gray_30);border-radius:10px;font-size:1.1rem;color:var(--gray_90);}
 .q_layout .q_wrap.hidden {display:none;} /* 예문 내용이 없을때 숨김 */
@@ -103,20 +94,15 @@ u {text-decoration:none;border-bottom:1px solid var(--gray_70);}/* 밑줄, 문�
 .q_wrap .examBox {display:flex;justify-content:center;flex-direction:column;align-items:center;gap:1rem;}
 .q_wrap .examBox .subtitle3 {font-size:20px;}
 .q_wrap .examBox p {line-height:1.5;}
-
-
-
 /* 보기 */
 .q_layout .a_wrap {display:flex;justify-content:center;font-weight:500;color:var(--gray_90);}
 .q_layout .a_wrap * {}
 .question .q_layout .a_wrap {padding:1rem 0} /* 미리보기에서는 나오지 않게 */
 
 
-
-
 /*/////////////////////문항 컴포넌트 시작////////////////////////*/
-
 /* 공통 */
+u {text-decoration:none;border-bottom:1px solid var(--gray_70);}/* 밑줄, 문항 전체 공통, 문항제목, 예문, 보기 등에서 사용 */
 label b {display:inline-block;margin:0 4px;font-weight:700!important;}
 label img {vertical-align:middle;}
 
@@ -144,19 +130,18 @@ label img {vertical-align:middle;}
 .chat_img {display:inline-block;width:60px;height:60px;border-radius:60px;overflow:hidden;background-position:50%;background-repeat:no-repeat;}
 .chat_img.blue {background-color:var(--blue_30);}
 .chat_img.pink {background-color:var(--coral_30);}
-.chat_img.male1 {background-image:url(../images/common/male1.png);}
-.chat_img.male2 {background-image:url(../images/common/male2.png);}
-.chat_img.male3 {background-image:url(../images/common/male3.png);}
-.chat_img.male4 {background-image:url(../images/common/male4.png);}
-.chat_img.female1 {background-image:url(../images/common/female1.png);}
-.chat_img.female2 {background-image:url(../images/common/female2.png);}
-.chat_img.female3 {background-image:url(../images/common/female3.png);}
-.chat_img.female4 {background-image:url(../images/common/female4.png);}
+.chat_img.male1 {background-image:url(../images/q_common/male1.png);}
+.chat_img.male2 {background-image:url(../images/q_common/male2.png);}
+.chat_img.male3 {background-image:url(../images/q_common/male3.png);}
+.chat_img.male4 {background-image:url(../images/q_common/male4.png);}
+.chat_img.female1 {background-image:url(../images/q_common/female1.png);}
+.chat_img.female2 {background-image:url(../images/q_common/female2.png);}
+.chat_img.female3 {background-image:url(../images/q_common/female3.png);}
+.chat_img.female4 {background-image:url(../images/q_common/female4.png);}
 
 /* 채팅 */
 .bubble {position:relative;width:100%;padding:1rem;border-radius:3px;border:1px solid var(--gray_100);background:#fff;}
-.bubble::before {content:'';position:absolute;left:-1.11rem;top:.5rem;display:inline-block;width:19px;height:25px;background:url(../images/common/bubble_tail.svg) 50% no-repeat;background-size:100%;}
-
+.bubble::before {content:'';position:absolute;left:-1.11rem;top:.5rem;display:inline-block;width:19px;height:25px;background:url(../images/q_common/bubble_tail.svg) 50% no-repeat;background-size:100%;}
 .bubble.top::before {top:-1.31rem;left:50%;transform:rotate(90deg);}
 .bubble.under::before {top:initial;bottom:-1.31rem;left:50%;transform:rotate(-90deg);}
 
@@ -184,79 +169,70 @@ label img {vertical-align:middle;}
 .bgBox .bgCont.col_2 > div:nth-child(1)::after {content:'';position:absolute;top:0;right:-.6rem;display:inline-block;width:1px;height:100%;background-color:var(--gray_60);mix-blend-mode:multiply;opacity:.3;}
 /* 배경::신문 */
 .bgBox.monitor {width:882px;}
-.bgBox.monitor::before {height:32px;background-image:url('../images/common/bg_monitor_top.png');}
-.bgBox.monitor::after {height:100px;background-image:url('../images/common/bg_monitor_btm.png');}
-.bgBox.monitor .bgCont {padding:2.5rem 4rem;background-image:url('../images/common/bg_monitor_mid.png');}
+.bgBox.monitor::before {height:32px;background-image:url('../images/q_common/bg_monitor_top.png');}
+.bgBox.monitor::after {height:100px;background-image:url('../images/q_common/bg_monitor_btm.png');}
+.bgBox.monitor .bgCont {padding:2.5rem 4rem;background-image:url('../images/q_common/bg_monitor_mid.png');}
 /* 배경::칠판 */
 .bgBox.board {width:950px;}
-.bgBox.board::before {height:60px;background-image:url('../images/common/bg_board_top.png');}
-.bgBox.board::after {height:90px;background-image:url('../images/common/bg_board_btm.png');}
-.bgBox.board .bgCont {padding:1rem 4rem;background-image:url('../images/common/bg_board_mid.png');}
+.bgBox.board::before {height:60px;background-image:url('../images/q_common/bg_board_top.png');}
+.bgBox.board::after {height:90px;background-image:url('../images/q_common/bg_board_btm.png');}
+.bgBox.board .bgCont {padding:1rem 4rem;background-image:url('../images/q_common/bg_board_mid.png');}
 .bgBox.board .bgCont * {color:#fff !important;mix-blend-mode:inherit;}
 .bgBox.board .bgCont input:checked + label {color:var(--yelliw_m)!important;}
 .bgBox.board .bgCont .blankBox {border-color:#fff;background:transparent;}
 /* 배경::엽서, 편지 */
 .bgBox.post {width:950px;border-radius:20px;overflow:hidden;}
-.bgBox.post::before {height:94px;background-image:url('../images/common/bg_post_top.png');background-position:top;}
+.bgBox.post::before {height:94px;background-image:url('../images/q_common/bg_post_top.png');background-position:top;}
 .bgBox.post::after {display:none;}
-.bgBox.post .bgCont {min-height:initial;padding:2rem 4rem 3rem;background-image:url('../images/common/bg_post_mid.png');}
+.bgBox.post .bgCont {min-height:initial;padding:2rem 4rem 3rem;background-image:url('../images/q_common/bg_post_mid.png');}
 /* 배경::신문 */
 .bgBox.news {width:900px;}
-.bgBox.news::before {height:110px;background-image:url('../images/common/bg_news_top.png');}
+.bgBox.news::before {height:110px;background-image:url('../images/q_common/bg_news_top.png');}
 .bgBox.news::after {display:none;}
 .bgBox.news .bgCont {padding:1.2rem 4rem 2rem;background-image:none;background-color:#EBEBEE;}
 /* 배경::일기장 */
 .bgBox.diary {width:900px;gap:.5rem;}
-.bgBox.diary::before {height:46px;background-image:url('../images/common/bg_diary_top.png');}
+.bgBox.diary::before {height:46px;background-image:url('../images/q_common/bg_diary_top.png');}
 .bgBox.diary::after {display:none;}
-.bgBox.diary .bgCont {padding:3rem 4rem;border:2px solid #A7B7B7;border-radius:4px;background-image:url('../images/common/bg_diary_mid.png');background-repeat:repeat;}
+.bgBox.diary .bgCont {padding:3rem 4rem;border:2px solid #A7B7B7;border-radius:4px;background-image:url('../images/q_common/bg_diary_mid.png');background-repeat:repeat;}
 /* 배경::책 */
 .bgBox.book {width:950px;}
-.bgBox.book::before {height:35px;background-image:url('../images/common/bg_book_top.png');}
-.bgBox.book::after {height:70px;background-image:url('../images/common/bg_book_btm.png');}
-.bgBox.book .bgCont {padding:1.2rem 4rem 2rem;background-image:url('../images/common/bg_book_mid.png');}
+.bgBox.book::before {height:35px;background-image:url('../images/q_common/bg_book_top.png');}
+.bgBox.book::after {height:70px;background-image:url('../images/q_common/bg_book_btm.png');}
+.bgBox.book .bgCont {padding:1.2rem 4rem 2rem;background-image:url('../images/q_common/bg_book_mid.png');}
 /* 배경::노트 */
-.bgBox.note {width:950px;border:1px solid var(--gray_70);border-radius:20px;background-image:url(../images/common/bg_report_mid.png);background-repeat:repeat;overflow:hidden;}
-.bgBox.note::before {width:100%;max-width:858px;height:24px;margin:0 auto;background-image:url(../images/common/bg_note_top.png);background-repeat:repeat-x;background-position:bottom;}
+.bgBox.note {width:950px;border:1px solid var(--gray_70);border-radius:20px;background-image:url(../images/q_common/bg_report_mid.png);background-repeat:repeat;overflow:hidden;}
+.bgBox.note::before {width:100%;max-width:858px;height:24px;margin:0 auto;background-image:url(../images/q_common/bg_note_top.png);background-repeat:repeat-x;background-position:bottom;}
 .bgBox.note::after {display:none;}
 .bgBox.note .bgCont {padding:2.5rem 4rem 3rem;}
 /* 배경::보고서 */
 .bgBox.report {width:auto;padding:2.5rem 2rem 2rem;border-radius:30px;background-color:#808EAC;}
-.bgBox.report::before {z-index:1;position:absolute;top:1rem;left:50%;transform:translateX(-50%);width:182px;height:54px;background-image:url('../images/common/bg_report_top.png');}
+.bgBox.report::before {z-index:1;position:absolute;top:1rem;left:50%;transform:translateX(-50%);width:182px;height:54px;background-image:url('../images/q_common/bg_report_top.png');}
 .bgBox.report::after {display:none;}
-.bgBox.report .bgCont {padding:3rem 2rem 2rem;background-image:url('../images/common/bg_report_mid.png');background-color:#fff;background-repeat:repeat;}
+.bgBox.report .bgCont {padding:3rem 2rem 2rem;background-image:url('../images/q_common/bg_report_mid.png');background-color:#fff;background-repeat:repeat;}
 /* 배경::핸드폰+대화창 */
 .bgBox.phone {width:auto;max-width:800px;padding:1.6rem;border-radius:30px;background-color:var(--gray_90);}
-.bgBox.phone::before {z-index:1;position:absolute;top:0;left:50%;transform:translateX(-50%);width:238px;height:52px;background-image:url('../images/common/bg_phone_top.png');}
+.bgBox.phone::before {z-index:1;position:absolute;top:0;left:50%;transform:translateX(-50%);width:238px;height:52px;background-image:url('../images/q_common/bg_phone_top.png');}
 .bgBox.phone::after {display:none;}
 .bgBox.phone .bgCont {padding:4rem 2rem 2rem;border-radius:15px;background-color:#BACEE0;}
 /* 배경::핸드폰+포털 */
 .bgBox.portal {width:auto;max-width:1012px;padding:1.6rem;border-radius:30px;background-color:var(--gray_90);}
-.bgBox.portal::before {z-index:1;position:absolute;top:0;left:50%;transform:translateX(-50%);width:238px;height:52px;background-image:url('../images/common/bg_phone_top.png');}
+.bgBox.portal::before {z-index:1;position:absolute;top:0;left:50%;transform:translateX(-50%);width:238px;height:52px;background-image:url('../images/q_common/bg_phone_top.png');}
 .bgBox.portal::after {display:none;}
 .bgBox.portal .bgCont {padding:4rem 2rem 2rem;border-radius:15px;background-color:#F7F7F7;}
 /* 배경::SNS */
 .bgBox.sns {width:auto;max-width:780px;border-radius:30px;border:10px solid var(--gray_110);}
-.bgBox.sns::before {height:145px;background-image:url('../images/common/bg_sns_top.png');}
-.bgBox.sns::after {height:116px;background-image:url('../images/common/bg_sns_btm.png');}
+.bgBox.sns::before {height:145px;background-image:url('../images/q_common/bg_sns_top.png');}
+.bgBox.sns::after {height:116px;background-image:url('../images/q_common/bg_sns_btm.png');}
 .bgBox.sns .bgCont {gap:.5rem;padding:2rem 2rem 1rem;background-color:#fff;}
 .bgBox.sns .sns_photo {display:flex;flex-direction:column;}
-.bgBox.sns .sns_photo::after {content:'';display:inline-block;height:81px;background-image:url('../images/common/bg_sns_etc.png');background-repeat:no-repeat;}
+.bgBox.sns .sns_photo::after {content:'';display:inline-block;height:81px;background-image:url('../images/q_common/bg_sns_etc.png');background-repeat:no-repeat;}
 /* 배경::포스터 */
 .bgBox.poster {width:900px;overflow:hidden;}
-.bgBox.poster::before {height:66px;background-image:url('../images/common/bg_poster_top.png');background-position:top;}
-.bgBox.poster::after {height:79px;background-image:url('../images/common/bg_poster_btm.png');}
+.bgBox.poster::before {height:66px;background-image:url('../images/q_common/bg_poster_top.png');background-position:top;}
+.bgBox.poster::after {height:79px;background-image:url('../images/q_common/bg_poster_btm.png');}
 .bgBox.poster .bgCont {gap:2rem;min-height:initial;padding:0rem 4rem;background-color:#F2F1E6;}
 .bgBox.poster .bgCont .txt_group p {line-height:1.8;}
-
-
-
-
-
-
-
-
-
 
 /* 텍스트 그룹 :: 기능없이 문항에 꾸밈요소로 사용되는 텍스트 그룹, 예문에 사용 */
 .txt_group {width:100%;display:flex;flex-direction:column;gap:.5rem;} /* 아래 요소들을 묶어 쓸때 */
@@ -284,10 +260,8 @@ label img {vertical-align:middle;}
 /* 카드박스 */
 input[type="radio"] + .cardWrap:before,
 input[type="chekbox"] + .cardWrap:before {display:none;}
-
 .cardBox {display:flex;gap:.2rem;width:300px;padding:18px;border:1px solid var(--gray_50);border-radius:6px;background-color:#fff;}
 .cardBox > p {flex:1;font-size:1.1rem;color:var(--gray_100);}
-
 .cardBox.photo {align-items:center;gap:1rem;padding:22px;width:350px;}
 .cardBox .photoBox {border-radius:6px;overflow:hidden;}
 .cardBox .photoBox > img {width:100%;height:100%;}
@@ -303,13 +277,12 @@ input[type="chekbox"] + .cardWrap:before {display:none;}
 .numcard_tr {display:flex;gap:.2rem;}
 .numcard_tr > li {display:flex;align-items:center;justify-content:center;width:72px;height:72px;border: 1px solid var(--gray_40);}
 .numcard_th {font-size:18px;font-weight:600;background-color:var(--gray_20);}
-
 .numcard_th.mathsymbol {font-size:0;}
 .numcard_th.mathsymbol::before {content:'';display:inline-block;width:17px;height:17px;background-position:50%;background-repeat:no-repeat;}
-.numcard_th.mathsymbol.mathsymbol1::before {background-image:url(../images/common/mathsymbol_1.svg);}
-.numcard_th.mathsymbol.mathsymbol2::before {background-image:url(../images/common/mathsymbol_2.svg);}
-.numcard_th.mathsymbol.mathsymbol3::before {background-image:url(../images/common/mathsymbol_3.svg);}
-.numcard_th.mathsymbol.mathsymbol4::before {background-image:url(../images/common/mathsymbol_4.svg);}
+.numcard_th.mathsymbol.mathsymbol1::before {background-image:url(../images/q_common/mathsymbol_1.svg);}
+.numcard_th.mathsymbol.mathsymbol2::before {background-image:url(../images/q_common/mathsymbol_2.svg);}
+.numcard_th.mathsymbol.mathsymbol3::before {background-image:url(../images/q_common/mathsymbol_3.svg);}
+.numcard_th.mathsymbol.mathsymbol4::before {background-image:url(../images/q_common/mathsymbol_4.svg);}
 
 /*///라디오///*/
 .radioWrap {display:flex;flex-direction:column;gap:.5rem;width:100%;font-size:1.1rem;color:var(--gray_100);}
@@ -325,7 +298,6 @@ input[type="chekbox"] + .cardWrap:before {display:none;}
 .radioWrap.type3 label {vertical-align:middle;font-weight:600;color:var(--gray_90);}
 .radioWrap.type3 input[type="radio"] + label:before {position:static;transform:initial;}
 .radioWrap.type3 .tbl_basic th:has(input[type="radio"]:checked) ~ td label {color:var(--blue_100);}
-
 /* 라디오 type4 */
 .radioWrap.type4 {display:block;}
 .radioWrap.type4 > div {line-height:2;color:var(--gray_100);font-size:1.1rem;font-weight:500;}
@@ -357,8 +329,7 @@ input[type="chekbox"] + .cardWrap:before {display:none;}
 /* 라디오 type9 :: 대화형 */
 .radioWrap.type9 input[type="radio"] + label {flex:1;}
 .radioWrap.type9 input[type="radio"] + label::before {display:none;}
-.radioWrap.type9 input[type="radio"]:checked + label .bubble::before {background-image:url(../images/common/bubble_tail_on.svg);}
-
+.radioWrap.type9 input[type="radio"]:checked + label .bubble::before {background-image:url(../images/q_common/bubble_tail_on.svg);}
 
 /*///체크박스///*/
 .checkWrap {display:flex;flex-direction:column;gap:.5rem;width:100%;font-size:1.1rem;color:var(--gray_100);line-height:2;}
@@ -395,13 +366,12 @@ input[type="chekbox"] + .cardWrap:before {display:none;}
 /* 체크박스 type8 :: 핸드폰+대화형 */
 .checkWrap.type8 input[type="checkbox"] + label {flex:1;}
 .checkWrap.type8 input[type="checkbox"] + label::before {display:none;}
-.checkWrap.type8 input[type="checkbox"]:checked + label .bubble::before {background-image:url(../images/common/bubble_tail_on.svg);}
+.checkWrap.type8 input[type="checkbox"]:checked + label .bubble::before {background-image:url(../images/q_common/bubble_tail_on.svg);}
 /* 체크박스 type9 :: 정렬 */
 .checkWrap.type9 {max-width:900px;}
 .checkWrap.type9 label {font-weight:600;color:var(--gray_90);}
 .checkWrap.type9 input[type="checkbox"] + label:before {position:static;transform:initial;}
 .checkWrap.type9 .tbl_basic th:has(input[type="checkbox"]:checked) ~ td label {color:var(--blue_100);}
-
 
 /*///단답형///*/
 .inputWrap {position:relative;text-align:center;font-size:1.1rem;color:var(--gray_100);line-height:2;}
@@ -411,31 +381,29 @@ input[type="chekbox"] + .cardWrap:before {display:none;}
 .inputWrap.type3 {padding:3rem 0 0 3rem;}
 .numcard_arr {position:absolute;display:inline-block;background-position:50%;background-repeat:no-repeat;}
 .numcard_arr.horizon {top:0;width:136px;height:40px;}
-.numcard_arr.horizon.plus {background-image:url(../images/common/numcard_arr_plus1.png);}
-.numcard_arr.horizon.minus {background-image:url(../images/common/numcard_arr_minus1.png);}
-.numcard_arr.horizon.obelus {background-image:url(../images/common/numcard_arr_obelus1.png);}
-.numcard_arr.horizon.gobhagi {background-image:url(../images/common/numcard_arr_gobhagi1.png);}
+.numcard_arr.horizon.plus {background-image:url(../images/q_common/numcard_arr_plus1.png);}
+.numcard_arr.horizon.minus {background-image:url(../images/q_common/numcard_arr_minus1.png);}
+.numcard_arr.horizon.obelus {background-image:url(../images/q_common/numcard_arr_obelus1.png);}
+.numcard_arr.horizon.gobhagi {background-image:url(../images/q_common/numcard_arr_gobhagi1.png);}
 .numcard_arr.vertic {left:0;width:40px;height:136px;}
-.numcard_arr.vertic.plus {background-image:url(../images/common/numcard_arr_plus2.png);}
-.numcard_arr.vertic.minus {background-image:url(../images/common/numcard_arr_minus2.png);}
-.numcard_arr.vertic.obelus {background-image:url(../images/common/numcard_arr_obelus2.png);}
-.numcard_arr.vertic.gobhagi {background-image:url(../images/common/numcard_arr_gobhagi2.png);}
+.numcard_arr.vertic.plus {background-image:url(../images/q_common/numcard_arr_plus2.png);}
+.numcard_arr.vertic.minus {background-image:url(../images/q_common/numcard_arr_minus2.png);}
+.numcard_arr.vertic.obelus {background-image:url(../images/q_common/numcard_arr_obelus2.png);}
+.numcard_arr.vertic.gobhagi {background-image:url(../images/q_common/numcard_arr_gobhagi2.png);}
 /* 단답형 type4 */
 .inputWrap.type4 {display:flex;align-items:center;gap:1rem;}
 /* 단답형 type6 */
 .inputWrap.type6 {display:flex;flex-wrap:wrap;gap:1rem;}
 .inputWrap.type6 li {display:flex;align-items:center;gap:.5rem;}
 
-
 /*///핫스폿///*/
-/* 공통*/
 .hsradioWrap {position:relative;font-size:1.1rem;color:var(--gray_100);font-weight:500;line-height:2;}
 .hsradioWrap > div {font-size:1.1rem;color:var(--gray_100);font-weight:500;line-height:2;}
 .hsradioWrap label * {color:var(--gray_100);font-size:1.1rem;font-weight:500;}
 .hsradioWrap input[type="radio"] + label {margin:0;padding:6px 12px;border:.1rem solid var(--gray_40);border-radius:.3rem;color:var(--gray_100);font-size:1.1rem;font-weight:500;background:var(--gray_10);}
 .hsradioWrap input[type="radio"] + label::before {display:none;}
 .hsradioWrap input[type="radio"]:checked + label {border-color:var(--blue_100);color:var(--blue_100);background-color:var(--blue_20);}
-.hsradioWrap input[type="radio"]:checked + label::before {z-index:1;left:50%;transform:translateY(-50%) translateX(-50%);display:block;width:52px;height:52px;background-image:url(../images/common/hotspot_img.svg);background-size:100%;}
+.hsradioWrap input[type="radio"]:checked + label::before {z-index:1;left:50%;transform:translateY(-50%) translateX(-50%);display:block;width:52px;height:52px;background-image:url(../images/q_common/hotspot_img.svg);background-size:100%;}
 .hsradioWrap ul li {text-align:left;}
 /* 핫스폿 type4, type5, type7, type10, type11, type12, type14, type15 등 박스형태의 버튼을 사용하지 않을때 lable에 noBox 클래스 추가*/
 .hsradioWrap input[type="radio"] + label.noBox {display:inline;padding:0;border:none;border-radius:0;background:transparent;}
@@ -457,32 +425,21 @@ input[type="chekbox"] + .cardWrap:before {display:none;}
 .hsradioWrap.type5 input[type="radio"] + label {margin:0;}
 .hsradioWrap.type5 input[type="radio"]:checked + label u {color:var(--blue_100);border-color:var(--blue_100);}
 /* 핫스폿 type6 :: 이미지 위에 말풍선, 카드박스 */
-.hsradioWrap.type6 {}
-.hsradioWrap.type6 img {}
 .hsradioWrap.type6 input[type="radio"] + label {padding:0;border:none;border-radius:0;background:transparent;}
 .hsradioWrap.type6 input[type="radio"]:checked + label * {color:var(--blue_100);border-color:var(--blue_100);}
-.hsradioWrap.type6 input[type="radio"]:checked + label .bubble::before {background-image:url(../images/common/bubble_tail_on.svg);}
+.hsradioWrap.type6 input[type="radio"]:checked + label .bubble::before {background-image:url(../images/q_common/bubble_tail_on.svg);}
 .hsradioWrap.type6 .btn_group {width:100%;height:100%;margin:0;}
 .hsradioWrap.type6 .btn_group .btn_item {position:absolute;}
-/* 개별버튼 위치 :: 현재 쓰여진건 예시 입니다. question2.css에 문항작업코드(id)로 선택하여 위치를 설정합니다. */
-/* #hsradioexam6 .btn_group {padding:6rem;}
-#hsradioexam6 .btn_item.num1 {}
-#hsradioexam6 .btn_item.num2 {left:22rem;}
-#hsradioexam6 .btn_item.num3 {right:6rem;}
-#hsradioexam6 .btn_item.num4 {bottom:6rem;}
-#hsradioexam6 .btn_item.num5 {right:6rem;bottom:6rem;} */
 /* 핫스폿 type8 :: 숫자카드 */
-.hsradioWrap.type8 {}
 .hsradioWrap.type8 .numcard_tr > li {position:relative;text-align:initial;}
 .hsradioWrap.type8 .numcard_td:has(input[type="radio"]:checked) {border-color:var(--blue_100);background-color:var(--blue_20);}
-.hsradioWrap.type8 .numcard_td:has(input[type="radio"]:checked)::before {z-index:1;position:absolute;content:'';top:50%;left:50%;transform:translateY(-50%) translateX(-50%);display:block;width:52px;height:52px;background-image:url(../images/common/hotspot_img.svg);background-size:100%;background-repeat:no-repeat;}
+.hsradioWrap.type8 .numcard_td:has(input[type="radio"]:checked)::before {z-index:1;position:absolute;content:'';top:50%;left:50%;transform:translateY(-50%) translateX(-50%);display:block;width:52px;height:52px;background-image:url(../images/q_common/hotspot_img.svg);background-size:100%;background-repeat:no-repeat;}
 .hsradioWrap.type8 .numcard_td input[type="radio"] + label {display:flex;align-items:center;justify-content:center;width:100%;height:100%;}
 /* 핫스폿 type9 :: 대화형 */
-.hsradioWrap.type9 {}
 .hsradioWrap.type9 input[type="radio"] + label {flex:1;margin:0;padding:0;border:none;border-radius:0;background:transparent;}
 .hsradioWrap.type9 input[type="radio"] + label::before {width:80px;height:80px;}
 .hsradioWrap.type9 input[type="radio"]:checked + label * {color:var(--blue_100);border-color:var(--blue_100);}
-.hsradioWrap.type9 input[type="radio"]:checked + label .bubble::before {background-image:url(../images/common/bubble_tail_on.svg);}
+.hsradioWrap.type9 input[type="radio"]:checked + label .bubble::before {background-image:url(../images/q_common/bubble_tail_on.svg);}
 /* 핫스폿 type10 :: 보고서 형식*/
 .hsradioWrap.type10 {display:flex;flex-direction:column;gap:2rem;}
 .hsradioWrap.type10 ul {display:flex;flex-direction:column;gap:.5rem;}
@@ -505,16 +462,8 @@ input[type="chekbox"] + .cardWrap:before {display:none;}
 .searchBox .searchBtn {display:inline-flex;justify-content:center;align-items:center;width:54px;height:54px;background:#49AC3F;}
 .searchCon ul {display:flex;justify-content:flex-start;flex-wrap:wrap;gap:1rem;}
 /* 핫스폿 type13 :: 이미지 위에 버튼일때만 */
-.hsradioWrap.type13 {}
-.hsradioWrap.type13 img {}
 .hsradioWrap.type13 .btn_group {width:100%;height:100%;margin:0;}
 .hsradioWrap.type13 .btn_group .btn_item {position:absolute;}
-/* 개별버튼 위치 :: 현재 쓰여진건 예시 입니다. question2.css에 문항작업코드(id)로 선택하여 위치를 설정합니다. */
-/* #hsradioexam13 .btn_item.num1 {top:4rem;left:9rem;}
-#hsradioexam13 .btn_item.num2 {top:12rem;left:7rem;}
-#hsradioexam13 .btn_item.num3 {left: 20rem;}
-#hsradioexam13 .btn_item.num4 {top: 6rem;right: 11rem;}
-#hsradioexam13 .btn_item.num5 {right: 3rem;bottom: 12rem;} */
 /* 핫스폿 type14 :: 카드안에서 선택 */
 .hsradioWrap.type14 {display:flex;flex-direction:column;gap:1rem;}
 .hsradioWrap.type14 .cardBox {display:flex;align-items:center;gap:1rem;width:800px;}
@@ -526,7 +475,6 @@ input[type="chekbox"] + .cardWrap:before {display:none;}
 .hsradioWrap.type15 input[type="radio"] + label {margin:0;}
 .hsradioWrap.type15 input[type="radio"]:checked + label u {color:var(--blue_100);border-color:var(--blue_100);}
 .hsradioWrap.type15 .tbl_basic * {color:var(--gray_100);font-size:1.1rem;}
-
 
 /*///서술형///*/
 .txareWrap {width:100%;}
@@ -544,25 +492,27 @@ input[type="chekbox"] + .cardWrap:before {display:none;}
 .txareWrap.type3 .item .inner:has(p) {padding:.5rem;background-color:var(--gray_10);}
 .txareWrap.type3 .item .inner p {color:var(--gray_100);font-weight:600;}
 
-
-
 /*///끌어놓기///*/
 .dragWrap {display:flex;flex-direction:column;align-items:center;gap:2rem;}
-.dragBtnBox {}
-.dragBtnBox .draggable {display:inline-flex;line-height:1.5;margin:0;padding:6px 12px;border:.1rem solid var(--gray_40);border-radius:.3rem;color:var(--gray_100);font-size:1.1rem;font-weight:500;background-color:var(--gray_10);cursor:pointer;}
-.dragBtnBox .draggable:has(img) {min-height:40px;}
-.dragBtnBox .draggable > img {width:100%;object-fit:contain;}
-.dragBtnBox .draggable:hover,
-.dragBtnBox .draggable:active,
-.dragBtnBox .draggable.dragging {border-color:var(--blue_100);color:var(--blue_100);background-color:var(--blue_20);}
+.dragWrap .caption {display:flex;align-items:center;flex-wrap:wrap;gap:.5rem;font-size:1.1rem;font-weight:600;color:var(--gray_90);}
+.dragBtnBox {display:flex;flex-wrap:wrap;gap:.5rem;max-width:950px;}
 .dragAnswerBox {position:relative;width:100%;}
-.dragAnswerBox .caption {display:flex;align-items:center;flex-wrap:wrap;gap:.5rem;font-size:1.1rem;font-weight:600;color:var(--gray_90);}
 .dragAnswerBox .dragitem {font-size:1.1rem;font-weight:500;color:var(--gray_90);line-height:2;}
-.dragAnswerBox .draginput {display:inline-flex;justify-content:center;align-items:center;margin:.2rem;padding:.6rem;border-radius:0.3em;border:1px solid var(--gray_40);text-align:center;}
-.dragAnswerBox .draginput.sm {width:5rem;}
-.dragAnswerBox .draginput.big {min-width:62px;min-height:62px;}
-
-
+/* 끌어놓기 보기 버튼 */
+.draggable {display:inline-flex;line-height:1.5;margin:0;padding:6px 12px;border:.1rem solid var(--gray_40);border-radius:.3rem;color:var(--gray_100);font-size:1.1rem;font-weight:500;background-color:var(--gray_10);cursor:pointer;}
+.draggable:has(img) {min-height:40px;}
+.draggable > img {width:100%;object-fit:contain;}
+.draggable:hover,
+.draggable:active,
+.draggable.dragging {border-color:var(--blue_100);color:var(--blue_100);background-color:var(--blue_20);}
+/* 끌어놓기 답변 박스 */
+.draginput {display:inline-flex;justify-content:center;align-items:center;min-width:8rem;min-height:42px;margin:.2rem;padding:.6rem;border-radius:0.3em;border:1px solid var(--gray_40);text-align:center;background-color:#fff;vertical-align:middle;transition:var(--ani_time);}
+.draginput.sm {width:5rem;}
+.draginput.big {min-width:62px;min-height:62px;}
+.draginput:hover,
+.draginput:focus {z-index:1;border-color:var(--blue_70);box-shadow: 0 0 0 0.2rem rgba(81, 137, 250, 0.3);}
+/* 끌어놓기 답변 박스 :: 다중 */
+.draginput.many {flex-wrap:wrap;align-items:flex-start;justify-content:flex-start;align-content:flex-start;gap:.5rem;width:100%;min-height:200px;padding:1rem;border-radius:20px;border-color:var(--yelliw_m);background:var(--yelliw_10);}
 /* 끌어놓기 type2 :: 이미지 위에 끌어놓기 */
 .dragWrap.type2 .dragAnswerBox > img {width:100%;}
 .draginput_group .draginput {position:absolute;}
@@ -570,7 +520,6 @@ input[type="chekbox"] + .cardWrap:before {display:none;}
 .dragWrap.type3 {min-width:500px;}
 .dragWrap.type3 .dragAnswerBox {display:flex;flex-direction:column;gap:1rem}
 .dragWrap.type3 .dragitem {display:flex;justify-content:space-between;padding-bottom:1rem;border-bottom:1px dashed var(--gray_40);}
-
 /* 끌어놓기 type4 :: 시계 돌리기, 시간 맞추기 */
 .dragWrap.type4 {}
 .clock {position:relative;width:500px;height:500px;border-radius:50%;}
@@ -581,6 +530,23 @@ input[type="chekbox"] + .cardWrap:before {display:none;}
 .clock .clockDot {width:20px;height:20px;background:black;border-radius:50%;position:absolute;top:50%;left:50%;transform:translate(-50%, -50%);}
 .clock .clock_bg {width:100%;height:100%;pointer-events:none;}
 .clock .clock_bg img {width:100%;height:100%;pointer-events:none;-webkit-user-drag:none;-khtml-user-drag:none;-moz-user-drag:none;-o-user-drag:none;user-drag:none;}
+/* 끌어놓기 type5 :: 테이블 */
+.dragWrap.type5 {}
+.dragtable {display:flex;flex-direction:column;max-width:950px;}
+.dragtable_tr {display:flex;margin-top:-1px;}
+.dragtable_tr * {color:var(--gray_100);}
+.dragtable_th {display:flex;justify-content:center;align-items:center;width:260px;padding:1rem;border:1px solid var(--gray_50);font-size:1.1rem;font-weight:700;background:var(--gray_20);}
+.dragtable_td {width:calc(100% - 260px);line-height:1.5;padding:1rem;border:1px solid var(--gray_50);border-left:none;}
+/* 끌어놓기 type6 :: 중복으로 끌어놓기 */
+.dragWrap.type6 {}
+.dragWrap.type6 .dragAnswerBox {display:flex;justify-content:space-between;gap:1rem;max-width:950px;}
+.dragWrap.type6 .dragitem {display:flex;flex-direction:column;align-items:center;width:50%;}
+.dragWrap.type6 .dragitem .bullet {z-index:1;}
+.dragWrap.type6 .dragitem .draginput {z-index:initial;margin:0;margin-top:-16px;padding-top:2rem;}
+
+
+
+
 
 
 /* 끌어놓기 type10 :: 문장부호 맞추기 */
@@ -593,9 +559,9 @@ input[type="chekbox"] + .cardWrap:before {display:none;}
 .dragWrap.type10 .dragAnswerBox {display:flex;justify-content:flex-start;flex-direction:column;gap:2rem}
 .dragWrap.type10 .dragAnswerBox .dragitem {display:flex;justify-content:flex-start;flex-direction:column;gap:1rem}
 .dragWrap.type10 .dragAnswerBox .dragmark_group {display:flex;}
-.dragWrap.type10 .dragAnswerBox .dragmark_group li {display:inline-flex;justify-content:center;align-items:center;width:70px;height:70px;margin-left:-2px;line-height:1;font-size:3rem;font-weight:700;color:var(--gray_130);background:url(../images/common/dragmark_bg2.png) 50% no-repeat;}
-.dragWrap.type10 .dragAnswerBox .dragmark_group li:has(.draginput) {background-image:url(../images/common/dragmark_bg1.png);}
-.dragWrap.type10 .dragAnswerBox .dragmark_group li .draginput {width:100%;height:100%;border:none;border-radius:0;margin:0;padding:0;}
+.dragWrap.type10 .dragAnswerBox .dragmark_group li {display:inline-flex;justify-content:center;align-items:center;width:70px;height:70px;margin-left:-2px;line-height:1;font-size:3rem;font-weight:700;color:var(--gray_130);background:url(../images/q_common/dragmark_bg2.png) 50% no-repeat;}
+.dragWrap.type10 .dragAnswerBox .dragmark_group li:has(.draginput) {background-image:url(../images/q_common/dragmark_bg1.png);}
+.dragWrap.type10 .dragAnswerBox .dragmark_group li .draginput {width:100%;height:100%;min-width:initial;min-height:initial;border:none;border-radius:0;margin:0;padding:0;background-color:initial;}
 
 
 
