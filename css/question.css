@@ -515,11 +515,10 @@ input[type="chekbox"] + .cardWrap:before {display:none;}
 /* 끌어놓기 답변 박스 */
 .draginput {display:inline-flex;justify-content:center;align-items:center;min-width:8rem;min-height:42px;margin:.2rem !important;padding:.6rem;border-radius:0.3em;border:1px solid var(--gray_40);text-align:center;background-color:#fff;vertical-align:middle;transition:var(--ani_time);}
 .draginput.sm {width:5rem;}
-.draginput.big {min-width:62px;min-height:62px;}
+.draginput.big {min-width:67px;min-height:54px;}
 .draginput:hover,
 .draginput:focus {z-index:1;border-color:var(--blue_70);box-shadow: 0 0 0 0.2rem rgba(81, 137, 250, 0.3);}
-.draginput:has(.draggable),
-.draginput:has(img) {width:auto;min-width:auto !important;height:auto;padding:0;border:0;background-color:transparent;}
+.draginput:has(.draggable) {width:auto;min-width:auto !important;height:auto;padding:0;border:0;background-color:transparent;}
 /* 끌어놓기 답변 박스 :: 다중 */
 .draginput.many {flex-wrap:wrap;align-items:flex-start;justify-content:flex-start;align-content:flex-start;gap:.5rem;width:100%;min-height:200px;padding:1rem;border-radius:20px;border:1px solid var(--yelliw_m);background:var(--yelliw_10);}
 /* 끌어놓기 type2 :: 이미지 위에 끌어놓기 */
@@ -529,7 +528,6 @@ input[type="chekbox"] + .cardWrap:before {display:none;}
 .dragWrap.type3 {min-width:500px;}
 .dragWrap.type3 .dragAnswerBox {display:flex;flex-direction:column;gap:1rem}
 .dragWrap.type3 .dragitem {display:flex;justify-content:space-between;padding-bottom:1rem;border-bottom:1px dashed var(--gray_40);}
-.dragWrap.type3 .draginput {border:1px solid var(--gray_40);background-color:#fff;}
 /* 끌어놓기 type4 :: 시계 돌리기, 시간 맞추기 */
 .dragWrap.type4 {}
 .clock {position:relative;width:500px;height:500px;border-radius:50%;}
