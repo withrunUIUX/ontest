@@ -152,7 +152,7 @@ label img {vertical-align:middle;}
 .chatBox.type2 .chat_item.right .bubble::before {left:initial;right:-1.11rem;transform:scaleX(-1);}
 
 /* 문항 안에 사용하는 제목 */
-.sub_tt {display:block;text-align:center;font-size:1.2rem!important;font-weight:700!important;color:var(--gray_100);}
+.sub_tt {display:block;line-height:1;margin-bottom:.6rem;text-align:center;font-size:1.2rem!important;font-weight:700!important;color:var(--gray_100);}
 .sub_tt.blue {color:var(--blue_100);}
 .sub_tt.white {color:#fff;}
 
@@ -510,7 +510,8 @@ input[type="chekbox"] + .cardWrap:before {display:none;}
 /*///끌어놓기///*/
 .dragWrap {display:flex;flex-direction:column;align-items:center;gap:2rem;}
 .dragWrap .caption {display:flex;align-items:center;flex-wrap:wrap;gap:.5rem;font-size:1.1rem;font-weight:600;color:var(--gray_90);}
-.dragBtnBox {display:flex;flex-wrap:wrap;justify-content:center;gap:.5rem;max-width:950px;}
+.dragBtnBox {position:relative;display:flex;flex-wrap:wrap;justify-content:center;gap:.5rem;max-width:950px;padding:2.2rem 2rem 1.6rem;border:2px dashed var(--gray_50);border-radius:12px;background:#fff;}
+.dragBtnBox::before {overflow:hidden;content:'끌어놓으세요.';position:absolute;top:-1.2rem;display:inline-block;padding:.6rem 1rem;border-radius:60px;color:var(--gray_120);font-size:1rem;font-weight:700;background:var(--gray_30);}
 .dragAnswerBox {position:relative;width:100%;}
 .dragAnswerBox .dragitem {font-size:1.1rem;font-weight:500;color:var(--gray_90);line-height:2;}
 /* 끌어놓기 보기 버튼 */
@@ -521,7 +522,7 @@ input[type="chekbox"] + .cardWrap:before {display:none;}
 .draggable:active,
 .draggable.dragging {border-color:var(--blue_100);color:var(--blue_100);background-color:var(--blue_20);}
 /* 끌어놓기 카드박스 형태의 보기 버튼 */
-.draggable:has(.dargcard) {width:calc(100% / 4 - .4rem);padding:1rem 1.5rem;border-color:var(--gray_60);background-color:#fff;}
+.draggable:has(.dargcard) {width:calc(100% / 4 - .4rem);padding:1rem;border-color:var(--gray_60);border:2px solid var(--gray_40);background-color:#fff;}
 .draggable:has(.dargcard):hover,
 .draggable:has(.dargcard):active,
 .draggable:has(.dargcard).dragging {border-color:var(--blue_100);}
@@ -529,7 +530,7 @@ input[type="chekbox"] + .cardWrap:before {display:none;}
 .dargcard img {}
 /* 끌어놓기 답변 박스 */
 .draginput {display:inline-flex;justify-content:center;align-items:center;min-width:8rem;min-height:42px;margin:.2rem !important;padding:.6rem;border-radius:0.3em;border:1px solid var(--gray_40);text-align:center;background-color:#fff;vertical-align:middle;transition:var(--ani_time);}
-.draginput.sm {width:5rem;}
+.draginput.sm {min-width:4rem;}
 .draginput.big {min-width:67px;min-height:54px;}
 .draginput:hover,
 .draginput:focus {z-index:1;border-color:var(--blue_70);box-shadow: 0 0 0 0.2rem rgba(81, 137, 250, 0.3);}
@@ -611,7 +612,7 @@ input[type="chekbox"] + .cardWrap:before {display:none;}
 .dragWrap.type12 .dragtable_tr .dragtable_th {width:100%;}
 .dragWrap.type12 .dragtable_tr .dragtable_td {width:100%;height:100%;margin-top:-1px;padding:0;border:1px solid var(--gray_50);}
 .dragWrap.type12 .dragtable_tr .dragtable_td:hover {z-index:1;}
-.dragWrap.type12 .dragtable_tr .dragtable_td .draginput {z-index:2;width:100%;height:100%;min-height:160px;margin:0 !important;border:none;border-radius:0;background-color:#fff;}
+.dragWrap.type12 .dragtable_tr .dragtable_td .draginput {width:100%;height:100%;min-height:160px;margin:0 !important;border:none;border-radius:0;background-color:#fff;}
 .dragWrap.type12 .dragtable_tr .dragtable_td .draginput .draggable {width:100%;border:none;}
 
 
