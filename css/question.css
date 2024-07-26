@@ -554,7 +554,7 @@ input[type="chekbox"] + .cardWrap:before {display:none;}
 .dragtable_tr {display:flex;margin-top:-1px;}
 .dragtable_tr * {color:var(--gray_100);}
 .dragtable_th {display:flex;justify-content:center;align-items:center;width:260px;padding:1rem;border:1px solid var(--gray_50);font-size:1.1rem;font-weight:700;background:var(--gray_20);}
-.dragtable_td {width:calc(100% - 260px);line-height:1.5;padding:1rem;border:1px solid var(--gray_50);border-left:none;}
+.dragtable_td {width:calc(100% - 260px);line-height:1.5;padding:1rem;border:1px solid var(--gray_50);border-left:none;font-weight:500;}
 /* 끌어놓기 type6 :: 중복으로 끌어놓기 */
 .dragWrap.type6 .dragAnswerBox {display:flex;justify-content:space-between;flex-wrap:wrap;gap:1rem;max-width:950px;}
 .dragWrap.type6 .dragitem {display:flex;flex-direction:column;align-items:center;width:calc(50% - .5rem);}
