@@ -518,7 +518,7 @@ input[type="chekbox"] + .cardWrap:before {display:none;}
 .draggable:active,
 .draggable.dragging {border-color:var(--blue_100);color:var(--blue_100);background-color:var(--blue_20);}
 /* 끌어놓기 카드박스 형태의 보기 버튼 */
-.draggable:has(.dargcard) {width:calc(100% / 4 - .4rem);padding:1rem;border-color:var(--gray_60);border:2px solid var(--gray_40);background-color:#fff;}
+.draggable:has(.dargcard) {width:calc(100% / 4 - .8rem);padding:1rem;border-color:var(--gray_60);border:2px solid var(--gray_40);background-color:#fff;}
 .draggable:has(.dargcard):hover,
 .draggable:has(.dargcard):active,
 .draggable:has(.dargcard).dragging {border-color:var(--blue_100);}
