@@ -506,7 +506,7 @@ input[type="chekbox"] + .cardWrap:before {display:none;}
 /*///끌어놓기///*/
 .dragWrap {display:flex;flex-direction:column;align-items:center;gap:2rem;}
 .dragWrap .caption {display:flex;align-items:center;flex-wrap:wrap;gap:.5rem;font-size:1.1rem;font-weight:600;color:var(--gray_90);}
-.dragBtnBox {position:relative;display:flex;flex-wrap:wrap;justify-content:center;gap:.5rem;max-width:950px;padding:2.2rem 2rem 1.6rem;border:2px dashed var(--gray_50);border-radius:12px;background:#fff;}
+.dragBtnBox {position:relative;display:flex;flex-wrap:wrap;justify-content:center;gap:1rem;max-width:950px;padding:2.2rem 2rem 1.6rem;border:2px dashed var(--gray_50);border-radius:12px;background:#fff;}
 .dragBtnBox::before {overflow:hidden;content:'끌어놓으세요.';position:absolute;top:-1.2rem;display:inline-block;padding:.6rem 1rem;border-radius:60px;color:var(--gray_120);font-size:1rem;font-weight:700;background:var(--gray_30);}
 .dragAnswerBox {position:relative;width:100%;}
 .dragAnswerBox .dragitem {font-size:1.1rem;font-weight:500;color:var(--gray_90);line-height:2;}
