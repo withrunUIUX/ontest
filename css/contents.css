@@ -303,6 +303,9 @@
 .class_list .title_box > .btn_group {margin:0;}
 .class_list .table_wrap {max-height:1073px;padding-right:.5rem;}
 .class_list .table_wrap table td {padding: .5rem .4rem;}
+.class_list .table_wrap table td input[type="text"] {height:36px;}
+.class_list .table_wrap table td .stdName {text-align:center;padding:0;color:var(--gray_100);font-weight:500;}
+.class_list .table_wrap table td .stdName:disabled {border:none;background:transparent;}
 
 .class_wrap .info_wrap {display:flex;flex-direction:column;gap:2rem;width:calc(100% - 60.1%);padding-top:3.7rem;}
 
