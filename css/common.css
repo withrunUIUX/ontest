@@ -424,6 +424,7 @@ table thead th:last-child {border-radius: 0 10px 0 0;}
 .state.tx.score2 {color:#fff;border:.1rem solid var(--coral_80);background-color:var(--coral_80);}/*채점중*/
 .state.tx.score3 {color:var(--coral_90);border:.1rem solid var(--coral_40);background-color:var(--coral_20);}/*미완료*/
 .state.tx.end {color:#fff;border:.1rem solid var(--gray_50);background-color:var(--gray_50);}/*완료*/
+.state.tx.gr {color:var(--gray_70);border-color:var(--gray_40);background:var(--c_white);}
 /*sm*/
 .state.tx.sm {height:auto;padding:6px;}
 /* 버튼일때 */
