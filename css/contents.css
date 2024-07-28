@@ -107,21 +107,21 @@
 .info_list .table_wrap {max-height:500px;padding-right:.5rem;}
 .info_list .table_wrap table td {padding:.6rem .4rem;}
 
-.prev_box {width:65%;padding:2.5rem 3rem;border-radius:10px;background:var(--gray_120);}
-.prev_box .subtitle2 {color:#fff}
+.prev_box {width:65%;padding:2.5rem 3rem;border-radius:10px;background:var(--gray_40);}
+.prev_box .subtitle2 {color:var(--gray_100)}
 .prev_box select {background-color:#fff;}
 
 .prev_list {overflow-y:auto;display:flex;flex-direction:column;gap:1rem;max-height:770px;padding-right:.2rem;}
 .prev_list::-webkit-scrollbar {width:8px;}
-.prev_list::-webkit-scrollbar-thumb {border-radius:8px;background:rgba(180, 192, 211, .3);}
+.prev_list::-webkit-scrollbar-thumb {border-radius:8px;background:rgba(180, 192, 211, 1);}
 .prev_list .prev__item {overflow:hidden;min-height:520px;border-radius:10px;background:#fff;}
 .prev_list .prev__item .q_content {pointer-events:none;}
 .prev_list .prev__item .q_content .q_tit {padding:26px 40px;}
 .prev_list .prev__item .q_content .q_layout  {gap:1rem;min-height:initial;padding:26px 40px;}
 .prev_list .prev__item .q_content .q_layout .q_wrap {padding:2rem 3rem;}
 .prev_list .prev__item .btn_group {display:flex;align-items:center;justify-content:space-between;padding:0 40px;margin:1rem 0 2.5rem;}
-.prev_list .prev__item .btn_group li:nth-child(1) {display:flex;align-items:center;gap:.5rem;}
-.prev_list .prev__item .btn_group li:nth-child(1) > .report {display:flex;align-items:center;gap:.2rem;padding:6px;color:var(--gray_70);}
+.prev_list .prev__item .btn_group li {display:flex;align-items:center;gap:.5rem;}
+.prev_list .prev__item .btn_group li:nth-child(2) > .report {display:flex;align-items:center;gap:.2rem;padding:6px;color:var(--gray_70);font-size:.9rem;}
 .prev_list .prev__item .btn_group li:nth-child(2) > button {width:30px;height:30px;border-radius:.4rem;background-color:var(--gray_30);}
 
 /* 문제은행 > 상세편집 :: 삭제안내팝업 */
