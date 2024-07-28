@@ -235,8 +235,8 @@ label img {vertical-align:middle;}
 /* 배경::포스터 */
 .bgBox.poster {overflow:hidden;max-width:900px;padding:5rem 4rem 4rem;background-color:#F2F1E6;}
 .bgBox.poster::before, .bgBox.poster::after {position:absolute;}
-.bgBox.poster::before {top:2rem;width:56px;height:54px;background-image:url('../images/q_common/bg_poster_top.png');background-position:top;}
-.bgBox.poster::after {top:2rem;right:4rem;width:56px;height:54px;background-image:url('../images/q_common/bg_poster_top.png');background-position:top;}
+.bgBox.poster::before {top:1rem;width:56px;height:54px;background-image:url('../images/q_common/bg_poster_top.png');background-position:top;}
+.bgBox.poster::after {top:1rem;right:4rem;width:56px;height:54px;background-image:url('../images/q_common/bg_poster_top.png');background-position:top;}
 .bgBox.poster .bgCont {gap:2rem;min-height:initial;padding:0;}
 .bgBox.poster .bgCont::after {content:'';position:absolute;bottom:-4rem;right:-4rem;display:inline-block;width:86px;height:78px;background:url('../images/q_common/bg_poster_btm.png') 50% no-repeat}
 .bgBox.poster .bgCont .txt_group p {line-height:1.8;}
