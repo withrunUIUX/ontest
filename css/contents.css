@@ -259,9 +259,9 @@
 .editBtn_wrap .editBtn_wrong {border-color:var(--coral_40);background-color:var(--coral_20);}
 .editBtn_wrap .editBtn_wrong:hover {background-color:var(--coral_30);}
 
-.grading .question_content.grade_check::before {content:'';position:absolute;top:2px;left:2px;display:block;width:200px;height:152px;background-position:50%;background-repeat:no-repeat;}
-.grading .question_content.grade_check.true::before {background-image:url(../images/common/img_grade1.svg);}
-.grading .question_content.grade_check.wrong::before {background-image:url(../images/common/img_grade2.svg);}
+.grading .q_content.grade_check::before {content:'';position:absolute;top:2px;left:2px;display:block;width:200px;height:152px;background-position:50%;background-repeat:no-repeat;}
+.grading .q_content.grade_check.true::before {background-image:url(../images/common/img_grade1.svg);}
+.grading .q_content.grade_check.wrong::before {background-image:url(../images/common/img_grade2.svg);}
 
 
 /* 정답보기 모달팝업 */
