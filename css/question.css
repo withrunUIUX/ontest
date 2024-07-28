@@ -75,9 +75,9 @@
 /* question body :: 문항 영역 layout */
 .question {height:100%;padding:2rem 10rem;background:var(--blue_20);}
 .q_content {overflow:hidden;position:relative;border-radius:10px;background:#fff;}
-.q_layout {display:flex;flex-direction:column;gap:3rem;min-height:600px;padding:48px 70px;background:#fff;}
+.q_layout {display:flex;flex-direction:column;gap:1.2rem;min-height:600px;padding:20px 70px 40px;background:#fff;}
 .question .q_content {box-shadow:1px 1px 10px 0 rgba(79, 106, 135, 0.2);} /* 미리보기에서는 나오지 않게 */
-.question .q_layout {gap:1.2rem;min-height:calc(73vh + 19px);padding:20px 70px 40px;} /* 미리보기에서는 나오지 않게 */
+.question .q_layout {min-height:calc(73vh + 19px);} /* 미리보기에서는 나오지 않게 padding:20px 70px 40px;*/
 .q_layout p {font-size:1.1rem;line-height:2;color:var(--gray_100);}
 /* 문항 질문 */
 .q_tit {display:flex;align-items:center;justify-content:flex-start;gap:.4rem;margin:0;padding:26px 42px;font-size:1rem;font-weight:500;background:var(--gray_20);}
