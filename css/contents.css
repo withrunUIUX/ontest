@@ -199,11 +199,11 @@
 .connect_item_wrap .connect_item.off > span {color:var(--gray_50);}
 /*무응답*/
 .connect_item_wrap .connect_item.no {border-color:var(--coral_30);background-color:var(--coral_10);}
-.connect_item_wrap .connect_item.no > i {mask-image:url('../images/common/mico_12.svg');background-color:var(--coral_80);background-image:none;}
+.connect_item_wrap .connect_item.no > i {mask-image:url('../images/common/mico_12.svg');-webkit-mask-image:url('../images/common/mico_12.svg');background-color:var(--coral_80);background-image:none;}
 .connect_item_wrap .connect_item.no > span {color:var(--coral_80);}
 /*제출완료*/
 .connect_item_wrap .connect_item.fin {border-color:var(--green_40);background-color:var(--green_10);}
-.connect_item_wrap .connect_item.fin > i {mask-image:url('../images/common/mico_12.svg');background-color:var(--green_90);background-image:none;}
+.connect_item_wrap .connect_item.fin > i {mask-image:url('../images/common/mico_12.svg');-webkit-mask-image:url('../images/common/mico_12.svg');background-color:var(--green_90);background-image:none;}
 .connect_item_wrap .connect_item.fin > span {color:var(--green_90);}
 
 
@@ -307,7 +307,7 @@
 .class_list .table_wrap table td .stdName {text-align:center;padding:0;color:var(--gray_100);font-weight:500;}
 .class_list .table_wrap table td .stdName:disabled {border:none;background:transparent;}
 
-.class_wrap .info_wrap {display:flex;flex-direction:column;gap:2rem;width:calc(100% - 60.1%);padding-top:3.7rem;}
+.class_wrap .info_wrap {display:flex;flex-direction:column;gap:2rem;width:calc(100% - 58% - 2rem);padding-top:3.7rem;}
 
 .class_code_wrap {gap:3rem;padding:0;}
 .class_code_wrap .class_code_box {padding:50px 60px 0;}
