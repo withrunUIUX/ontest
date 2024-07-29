@@ -9,7 +9,7 @@
 .create_box {display:flex;flex-direction:column;gap:2rem;width:70%;max-height:1092px;}
 .create_box .create__item {display:flex;align-items:flex-start;gap:2rem;}
 .create_box .create__item * {font-size:18px;color:var(--gray_100);}
-.create_box .item__box {display:flex;gap:1rem;width:100%;}
+.create_box .item__box {display:flex;flex-wrap:wrap;gap:1rem;width:100%;}
 
 .create_box .box_btn {margin:0;padding:.8rem 1.4rem;line-height:1;border:.1rem solid var(--gray_40);border-radius:.4rem;color:var(--gray_100);background:var(--gray_10);}
 .create_box .box_btn::before {opacity:0;}
@@ -35,7 +35,7 @@
 .create_box .create__item .item__box {gap:.5rem}
 .unit__select_wrap {padding:1.5rem;border-radius:10px;background:var(--blue_20);}
 .unit__select_wrap .empty_tt {display:inline-flex;justify-content:center;align-items:center;gap:.2rem;width:100%;font-size:20px;color:var(--blue_110);font-weight:800;}
-.unit__select_wrap .empty_tt > i {display:inline-block;width:32px;height:32px;mask:url('../images/common/mico_10.svg'); background-color:var(--blue_110);}
+.unit__select_wrap .empty_tt > i {display:inline-block;width:32px;height:32px;mask:url('../images/common/mico_10.svg');-webkit-mask:url('../images/common/mico_10.svg');background-color:var(--blue_110);}
 .unit__select {overflow-y:scroll;display:flex;flex-direction:column;gap:.5rem;width:100%;max-height:392px;padding-right:1.5rem;padding-bottom:1rem;}
 .unit__select::-webkit-scrollbar {width:8px;}   
 .unit__select::-webkit-scrollbar-thumb {border-radius:8px;background:var(--gray_60);}
