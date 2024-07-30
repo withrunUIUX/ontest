@@ -4,32 +4,84 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>온평가 > 미리보기</title>
-    
-        <link rel="stylesheet" href="/css/slick.css">
+        <title>온평가</title>
+
         <link rel="stylesheet" href="/css/common.css">
-        <link rel="stylesheet" href="/css/question.css">
-        <link rel="stylesheet" href="/css/contents.css">
+        <link rel="stylesheet" href="/css/main.css">
 
         <script type="text/javascript" src="/js/jquery-3.6.0.min.js"></script>
         <script type="text/javascript" src="/js/jquery-latest.min.js"></script>
-        <script type="text/javascript" src="/js/slick.js"></script>
-        <script type="text/javascript" src="/js/chart.js"></script>
 
-        <script type="text/javascript" src="/js/include.js"></script>
-        <script type="text/javascript" src="/js/contents.js"></script>
-
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.10.2/lottie.min.js"></script>
     </head>
 
 <body>
+<main>
+    <div class="wrap">
+        <div class="mcon">
+            <h1 class="title">
+                <span>출발선이 평등한 행복한 충남교육</span>
+                <span><em>컴퓨터 기반</em> 평가 문제은행</span>
+                <img src="../images/main/logo_main.svg" alt="온평가 로고">
+            </h1>
+            <ul class="btn_group">
+                <li>
+                    <a class="btn login teacher">
+                        <span>
+                            <span class="first_word" data-hover="선생님">선생님</span>
+                            <span class="second_word" data-hover="로그인">로그인</span>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a class="btn login student">
+                        <span>
+                            <span class="first_word" data-hover="학생">학생</span>
+                            <span class="second_word" data-hover="로그인">로그인</span>
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </div>
 
-<!--[include]HEADER :: Start -->
-<div id="header"></div>
-<!--[include]HEADER :: End -->
+        <div class="obj_group">
+            <span id="lottie2" class="lottie mobj02"></span>
+            <span id="lottie1" class="lottie mobj01"></span>
+        </div>
+    </div>
 
+    <div class="bg_group">
+        <span class="purple num1"></span>
+        <span class="purple num2"></span>
+        <span class="wave num1"></span>
+        <span class="wave num2"></span>
+    </div>
+</main>
 
+<footer>
+    <img src="../images/main/cne_logo.svg" alt="충청남도교육청교육과정평가정보원 로고">
+    <span>Copyright ⓒ 2024 edus충남. All Rights Reserved.</span>
+</footer>
 
-
+<script>
+    //남학생
+    var animation1 = bodymovin.loadAnimation({ 
+        container: document.getElementById('lottie1'),
+        path: '/images/main/mobj01.json',
+        renderer: 'svg',
+        loop: true,
+        autoplay: true
+    });
+    //여학생
+    var animation2 = bodymovin.loadAnimation({ 
+        container: document.getElementById('lottie2'),
+        path: '/images/main/mobj02.json',
+        renderer: 'svg',
+        loop: true,
+        autoplay: true
+    });
+    
+</script>
 
 
 
