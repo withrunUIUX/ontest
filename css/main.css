@@ -2,9 +2,10 @@
 
 /* main */
 main {position:relative;width:100%;height:calc(100vh - 90px);box-sizing:border-box;background:#0B47A0;overflow:hidden;}
+main::before {z-index:2;position:absolute;right:0;content:'';display:block;width:161px;height:215px;background:url(../images/main/line_bg02.png) 50% no-repeat;}
 
 .wrap {z-index:2;position:relative;display:flex;justify-content:center;align-items:center;height:100%;}
-.wrap .mcon {display:flex;flex-direction:column;gap:4rem;margin-bottom:2rem;}
+.wrap .mcon {display:flex;flex-direction:column;gap:6rem;margin-bottom:2rem;}
 
 .title {display:flex;flex-direction:column;gap:.8rem;margin:0;}
 .title * {color:#fff;font-family:var(--f_scd);}
@@ -13,8 +14,8 @@ main {position:relative;width:100%;height:calc(100vh - 90px);box-sizing:border-b
 .title > span:nth-child(2) > em {color:#FDFF8F;}
 .title > img {max-width:350px;max-height:145px;margin-top:1rem;}
 
-.mcon .btn_group {justify-content:flex-start;}
-.mcon .btn_group li {}
+.mcon .btn_group {position:relative;justify-content:flex-start;}
+.mcon .btn_group::before {z-index:-1;position:absolute;top:-84px;right:-65px;content:'';display:block;width:137px;height:103px;background:url(../images/main/line_bg01.png) 50% no-repeat;;}
 .mcon .btn_group li a {padding:1rem 3rem;border-radius:60px;font-size:1.3rem;background:#fff;transition:var(--ani_time)}
 .mcon .btn_group li a:hover,
 .mcon .btn_group li a:focus {box-shadow:0 0 0 0.3rem rgb(0 209 255);}
@@ -38,28 +39,25 @@ main {position:relative;width:100%;height:calc(100vh - 90px);box-sizing:border-b
 .mcon .btn_group li a.student > span .first_word::before {color:var(--gray_130);}
 
 .obj_group {position:relative;display:flex;min-width:800px;height:100%;}
-.obj_group * {position:absolute;}
+.obj_group * {position:absolute;}/*pointer-events:none;*/
 .lottie {z-index:1;display:block;}
 .lottie.mobj01 {bottom:2%;right:0;width:440px;height:650px;}
 .lottie.mobj02 {top:196px;left:13%;width:360px;height:300px;}
 .obj {background-position:50%;background-repeat:no-repeat;}
-.obj.num1 {width:217px;height:144px;background-image:url(../images/main/mobj_s01.svg);}
-.obj.num2 {width:156px;height:92px;background-image:url(../images/main/mobj_s02.svg);}
-.obj.num3 {width:71px;height:55px;background-image:url(../images/main/mobj_s03.svg);}
-.obj.num4 {width:73px;height:69px;background-image:url(../images/main/mobj_s04.svg);}
-.obj.num5 {width:117px;height:31px;background-image:url(../images/main/mobj_s05.svg);}
-.obj.num6 {right:-52px;top:133px;width:135px;height:132px;}
-.obj.num6 .shape {position:absolute;display:inline-block;width:98px;height:78px;background:url(../images/main/shape.svg) 50% no-repeat;opacity:.3;}
+.obj.num1 {z-index:1;bottom:9rem;left:9rem;width:180px;height:144px;background-image:url(../images/main/mobj_s01.svg);background-size:100%;}
+.obj.num2 {bottom:7rem;right:-10rem;width:156px;height:92px;background-image:url(../images/main/mobj_s02.svg);}
+.obj.num3 {top:12rem;left:12rem;width:71px;height:55px;background-image:url(../images/main/mobj_s03.svg);}
+.obj.num5 {opacity:.2;top:22rem;right:-8rem;width:117px;height:31px;background-image:url(../images/main/mobj_s05.svg);}
+.obj.num6 {right:-3rem;top:11rem;width:114px;height:100px;}
+.obj.num6 .shape {opacity:.3;position:absolute;display:inline-block;width:98px;height:78px;background:url(../images/main/shape.svg) 50% no-repeat;}
 .obj.num6 .shape.num1 {top:0;}
 .obj.num6 .shape.num2 {top:11px;left:8px;}
 .obj.num6 .shape.num3 {top:21px;left:15px;}
-.obj.num7 {width:66px;height:78px;background-image:url(../images/main/mobj_s07.svg);}
-.obj.num8 {width:123px;height:109px;background-image:url(../images/main/mobj_s08.svg);}
-.obj.num9 {width:99px;height:80px;background-image:url(../images/main/mobj_s09.svg);}
-.obj.num10 {width:103px;height:103px;background-image:url(../images/main/mobj_s10.svg);}
+.obj.num7 {right:-4rem;top:14rem;width:55px;height:78px;background-image:url(../images/main/mobj_s07.svg);background-size:100%;}
+.obj.num8 {opacity:.8;top:3rem;right:9rem;width:123px;height:109px;background-image:url(../images/main/mobj_s08.svg);}
+.obj.num9 {opacity:.5;top:5rem;left:17rem;width:99px;height:80px;background-image:url(../images/main/mobj_s09.svg);}
+.obj.num10 {opacity:.7;top:3rem;left:8rem;width:103px;height:103px;background-image:url(../images/main/mobj_s10.svg);}
 .obj.objBg {top:190px;left:26%;width:600px;height:540px;background-image:url(../images/main/mobj_bg.svg);background-size:100%;}
-
-
 
 
 .bg_group {z-index:1;position:absolute;top:0;width:100%;height:100%;}
