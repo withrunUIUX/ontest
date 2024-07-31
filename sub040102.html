@@ -11,8 +11,6 @@
         <link rel="stylesheet" href="/css/question.css">
         <link rel="stylesheet" href="/css/contents.css">
 
-        <link rel="stylesheet" href="/css/contents_min.css">
-
         <script type="text/javascript" src="/js/jquery-3.6.0.min.js"></script>
         <script type="text/javascript" src="/js/jquery-latest.min.js"></script>
         <script type="text/javascript" src="/js/slick.js"></script>
@@ -28,7 +26,7 @@
 <div id="wrapper">
 
 <!--[include]HEADER :: Start -->
-<div id="header"></div>
+<!-- <div id="header"></div> -->
 <!--[include]HEADER :: End -->
 
 <main id="container" class="sub">
@@ -50,7 +48,7 @@
                     </ul>
                     <div class="btn_group">
                         <a href="#" class="btn btn-ani btn-text"><i class="sicon ico_print"></i>인쇄하기</a>
-                        <a href="#" class="btn btn-ani btn-text"><i class="sicon ico_share"></i>공유하기</a>
+                        <!-- <a href="#" class="btn btn-ani btn-text"><i class="sicon ico_share"></i>공유하기</a> -->
                     </div>
                 </div>
 
@@ -141,8 +139,71 @@
                                     <li><b>학생응답</b>4,5 </li>
                                     <li class="correct"><b>정답</b>4,5</li>
                                 </ul>
-                                <div class="q_wrap">
-                                    <div><img src="/images/contents/img_question.png" alt=""></div>
+                                <div class="qinfo_wrap">
+                                    <div>
+                                        <div class="q_content">
+                                            <h4 class="q_tit">
+                                               <em class="question_number">1번</em>
+                                               <span class="txt">가방의 수에 따른 국어책의 수와 수학책의 수를 나눗셈으로 비교하려고 합니다. 알맞은 말을 골라 ○표 하세요.</span> 
+                                            </h4>
+                                            <div class="q_layout">
+                                                <div class="q_wrap">
+                                                    <table class="tbl_basic type3 center">
+                                                        <caption>개요</caption>
+                                                        <colgroup>
+                                                            <col style="width:10%">
+                                                            <col style="width:5%">
+                                                            <col style="width:5%">
+                                                            <col style="width:5%">
+                                                            <col style="width:5%">
+                                                            <col style="width:5%">
+                                                            <col style="width:5%">
+                                                        </colgroup>
+                                                        <thead>
+                                                            <tr>
+                                                                <th scope="col">가방 수(개)</th>
+                                                                <th scope="col">1</th>
+                                                                <th scope="col">2</th>
+                                                                <th scope="col">3</th>
+                                                                <th scope="col">4</th>
+                                                                <th scope="col">5</th>
+                                                                <th scope="col">…</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <th scope="row">국어책 수(권)</th>
+                                                                <td>4</td>
+                                                                <td>4</td>
+                                                                <td>4</td>
+                                                                <td>4</td>
+                                                                <td>4</td>
+                                                                <td>…</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th scope="row">수학책 수(권)</th>
+                                                                <td>5</td>
+                                                                <td>5</td>
+                                                                <td>5</td>
+                                                                <td>5</td>
+                                                                <td>5</td>
+                                                                <td>…</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <div class="a_wrap">
+                                                    <div class="hsradioWrap" style="text-align:center;">
+                                                        <span>가방 수에 따라 국어책의 수와 수학책의 수의 비가</span>
+                                                        <input type="radio" class="hotspot" name="example" id="example1">
+                                                        <label for="example1">변합니다.</label>
+                                                        <input type="radio" class="hotspot" name="example" id="example2">
+                                                        <label for="example2">변하지 않습니다.</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </td>
                         </tr>
@@ -163,13 +224,13 @@
 
         </div>
 
-        <div class="btn_group">
+        <!-- <div class="btn_group">
             <a href="/sub040101.html" class="btn btn-ani btn-primary lg">돌아가기</a>
-        </div>
+        </div> -->
     </section>
     
 <!--[include]HEADER :: Start -->
-<div id="footer"></div>
+<!-- <div id="footer"></div> -->
 <!--[include]HEADER :: End -->
 
 </main>
