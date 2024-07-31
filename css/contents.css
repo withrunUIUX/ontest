@@ -148,7 +148,7 @@
 
 /* 배포하기 */
 .publish_prev {overflow:hidden;position:relative;display:flex;flex-direction:column;gap:2rem;width:100%;padding:4rem;border-radius:10px;background-color:var(--gray_30);}
-.publish_prev .q_content {border:1px solid var(--gray_50);pointer-events:none;}
+.publish_prev .q_content {min-height:600px;border:1px solid var(--gray_50);pointer-events:none;}
 .question_list_wrap {}
 .question_list_wrap ul {display:flex !important;flex-wrap:wrap;gap:.708rem;}
 .question_list_wrap ul li button {position:relative;display:inline-flex;align-items:center;justify-content:center;border-radius:6px;width:60px;height:60px;border:.1rem solid var(--gray_60);color:var(--gray_100);font-size:18px;font-weight:600;background:#fff;}
@@ -175,11 +175,38 @@
 .connect_summary {display:flex;justify-content:space-between;}
 .connect_summary .pers {display:flex;align-items:center;gap:.3rem;font-size:18px;color:var(--gray_80);}
 .connect_summary .pers > em {font-size: 16px;}
+
+.connect_stat {position:relative;}
+.pause_pop_wrap {display:none;justify-content:center;align-items:center;z-index:1;position:absolute;width:100%;height:100%;}
+.pause_pop_wrap .pause_pop {position:relative;display:block;width:460px;height:190px;animation:pop-show .5s;}
+.pause_pop_wrap .pause_pop::after {z-index:-1;content:'';position:absolute;bottom:0;display:block;width:calc(100% - 4px);height:170px;border:2px solid var(--gray_50);border-radius:20px;background:#fff;}
+.pause_pop_wrap .pause_pop .bubble {position:absolute;top:0;left:4rem;font-size:1.1rem;font-weight:700;border-color:var(--gray_80);}
+.pause_pop_wrap .pause_pop .bubble::before {transform:rotate(90deg) scaleX(-1);}
+.pause_pop_wrap .pause_pop .bubble > em {color:var(--coral_100);}
+.pause_pop_wrap .pause_pop > p {padding:5.5rem 2.5rem 0;line-height:1.8;font-weight:600;color:var(--gray_100);}
+.pause_pop_wrap .pause_pop > p > img {vertical-align:middle;}
+.pause_pop_wrap .pause_pop > img {position:absolute;right:-1rem;bottom:2px;}
+@keyframes pop-show {
+    0% {-webkit-transform: scale(.7); transform: scale(.7)}
+    40% {-webkit-transform: scale(1.05); transform: scale(1.05)}
+    90% {-webkit-transform: scale(.99); transform: scale(.99)}
+    100% {-webkit-transform: scale(1); transform: scale(1)}
+}
+
 .connect_item_wrap {display:flex;flex-wrap:wrap;gap:1rem;}
 .connect_item_wrap .connect_item {display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.5rem;width:calc(10% - 1rem);min-width:130px;min-height:110px;padding:1rem;border:.1rem solid var(--gray_40);border-radius:.3rem;background-color:#fff;}
 .connect_item_wrap .connect_item > i {width:32px;height:32px;background-image:url('../images/common/mico_11.svg');background-position:50%;background-repeat:no-repeat;}
 .connect_item_wrap .connect_item > span {font-size:18px;color:var(--gray_70);font-weight:600;}
-.connect_wrap > .btn_group {position:absolute;right:3rem;bottom:3.5rem;}
+
+.connect_wrap .btn_group {position:absolute;right:3rem;bottom:3.5rem;}
+.connect_wrap .btn_group .start {display:none;}
+.connect_wrap .btn_group .start:hover {color:var(--blue_100);background-color:var(--blue_30);}
+
+.connect_wrap.active .connect_item_wrap {pointer-events:none;}
+.connect_wrap.active .connect_item_wrap::before {content:'';position:absolute;bottom:0;display:block;width:100%;height:100%;background:var(--gray_130);opacity:.1;}
+.connect_wrap.active .btn_group .stop {display:none;}
+.connect_wrap.active .pause_pop_wrap,
+.connect_wrap.active .btn_group .start {display:flex;}
 
 /*접속*/
 .connect_item_wrap .connect_item.on {border-color:var(--blue_30);background-color:var(--blue_10);}
