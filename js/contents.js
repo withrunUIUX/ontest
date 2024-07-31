@@ -1,9 +1,26 @@
-// function modalOpen(modal_id){
-//     $('.modal' + '#' + modal_id).css({display: 'flex'});
-// }
-// function modalClose(modal_id){
-//     $('.modal' + '#' + modal_id).css({display: 'none'});
-// }
+
+    //모달팝업 열기
+    function modalOpen(modal_id){
+        $('.modal' + '#' + modal_id).addClass("active");
+        $('body').addClass('open');
+    }
+    //모달팝업 닫기
+    function modalClose(modal_id){
+        $('.modal' + '#' + modal_id).removeClass("active");
+        $("body").removeClass("open").removeAttr("style");
+    }
+
+    // //모달팝업 열기
+    // $(document).on("click", "#popup_btn", function(){
+    //     sign_index = $("#popup_btn").index(this);
+    //     $("#popup_opne").addClass("active");
+    //     $('body').addClass('open');
+    // });
+    // //모달팝업 닫기
+    // $(".modal-close").on("click",function(){
+    //     $("#popup_opne").removeClass("active");
+    //     $("body").removeClass("open").removeAttr("style");
+    // });
 
 $(document).ready(function(){
 	//체크박스 전체 선택, 해제
@@ -75,26 +92,14 @@ $(document).ready(function(){
         $(this).parents(".designSelect").find("strong").children("a").html(ht);
     });
 
-    //모달팝업 열기
-    $(document).on("click", "#popup_btn", function(){
-        sign_index = $("#popup_btn").index(this);
-        $("#popup_opne").addClass("active");
-        $('body').addClass('open');
-    });
-    //모달팝업 닫기
-    $(".modal-close").on("click",function(){
-        $("#popup_opne").removeClass("active");
-        $("body").removeClass("open").removeAttr("style");
-    });
-
-    $('.q_wrap').each(function(){
-        var check = $(this).children();
-        if(!check)
-        {
-            $(this).css('display','none');
-        }
-      });
-
+    
+    // $('.q_wrap').each(function(){
+    //     var check = $(this).children();
+    //     if(!check)
+    //     {
+    //         $(this).css('display','none');
+    //     }
+    //   });
     //예문 안에 아무것도 없을때 hidden 클래스 추가
     $('.q_wrap').each(function() {
         if ($(this).html().trim() === '') {
