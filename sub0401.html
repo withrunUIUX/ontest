@@ -10,7 +10,6 @@
         <link rel="stylesheet" href="/css/common.css">
         <link rel="stylesheet" href="/css/question.css">
         <link rel="stylesheet" href="/css/contents.css">
-        <link rel="stylesheet" href="/css/contents_min.css">
 
         <script type="text/javascript" src="/js/jquery-3.6.0.min.js"></script>
         <script type="text/javascript" src="/js/jquery-latest.min.js"></script>
@@ -55,7 +54,7 @@
     <section id="content" class="manager_wrap state">
         <div class="layout">
             <div class="btn_group">
-                <a href="#" class="btn btn-ani btn-outline-secondary"><i class="sicon ico_print"></i>인쇄하기</a>
+                <a href="#" class="btn btn-ani btn-outline-secondary"><i class="sicon ico_save"></i>저장하기</a>
                 <!-- <a href="#" class="btn btn-ani btn-outline-secondary"><i class="sicon ico_share"></i>공유하기</a> -->
             </div>
             <div class="tabs">
@@ -265,15 +264,15 @@
                                     </div>
                                     <div class="item ico4">
                                         <b>평균응답시간</b>
-                                        <p><a href="#" onclick="modalOpen('modal-tab');" id="modal-tab" >28분</a></p>
+                                        <p><button onclick="modalOpen('modal-tab');" id="modal-tab">28분</button></p>
                                     </div>
                                    
-                                    <!-- 원그랲프 들어가는 자리 -->
+                                    <!-- 원그래프 들어가는 자리 -->
                                     <div class="doughnut-chart" id="doughnutChart">
                                         <span>전체정답률<b>75%</b></span>
                                         <canvas id="doughnutChartCanvas"></canvas>
                                     </div>
-                                    <!-- //원그랲프 들어가는 자리 -->
+                                    <!-- //원그래프 들어가는 자리 -->
                                 </div>
                             </div>
                             <div class="totalcommt">
@@ -359,37 +358,116 @@
                                                 <li><b>맥락</b>순수과학</li>
                                                 <li><b>역량</b>과학 원리의 이해 및 적용 능력 </li>
                                             </ul>
-                                            <div class="q_wrap">
-                                                <div><img src="/images/contents/img_question.png" alt=""></div>
+                                            <div class="qinfo_wrap">
+                                                <div>
+                                                    <div class="q_content">
+                                                        <h4 class="q_tit">
+                                                           <em class="question_number">1번</em>
+                                                           <span class="txt">가방의 수에 따른 국어책의 수와 수학책의 수를 나눗셈으로 비교하려고 합니다. 알맞은 말을 골라 ○표 하세요.</span> 
+                                                        </h4>
+                                                        <div class="q_layout">
+                                                            <div class="q_wrap">
+                                                                <table class="tbl_basic type3 center">
+                                                                    <caption>개요</caption>
+                                                                    <colgroup>
+                                                                        <col style="width:10%">
+                                                                        <col style="width:5%">
+                                                                        <col style="width:5%">
+                                                                        <col style="width:5%">
+                                                                        <col style="width:5%">
+                                                                        <col style="width:5%">
+                                                                        <col style="width:5%">
+                                                                    </colgroup>
+                                                                    <thead>
+                                                                        <tr>
+                                                                            <th scope="col">가방 수(개)</th>
+                                                                            <th scope="col">1</th>
+                                                                            <th scope="col">2</th>
+                                                                            <th scope="col">3</th>
+                                                                            <th scope="col">4</th>
+                                                                            <th scope="col">5</th>
+                                                                            <th scope="col">…</th>
+                                                                        </tr>
+                                                                    </thead>
+                                                                    <tbody>
+                                                                        <tr>
+                                                                            <th scope="row">국어책 수(권)</th>
+                                                                            <td>4</td>
+                                                                            <td>4</td>
+                                                                            <td>4</td>
+                                                                            <td>4</td>
+                                                                            <td>4</td>
+                                                                            <td>…</td>
+                                                                        </tr>
+                                                                        <tr>
+                                                                            <th scope="row">수학책 수(권)</th>
+                                                                            <td>5</td>
+                                                                            <td>5</td>
+                                                                            <td>5</td>
+                                                                            <td>5</td>
+                                                                            <td>5</td>
+                                                                            <td>…</td>
+                                                                        </tr>
+                                                                    </tbody>
+                                                                </table>
+                                                            </div>
+                                                            <div class="a_wrap">
+                                                                <div class="hsradioWrap" style="text-align:center;">
+                                                                    <span>가방 수에 따라 국어책의 수와 수학책의 수의 비가</span>
+                                                                    <input type="radio" class="hotspot" name="example" id="example1">
+                                                                    <label for="example1">변합니다.</label>
+                                                                    <input type="radio" class="hotspot" name="example" id="example2">
+                                                                    <label for="example2">변하지 않습니다.</label>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                                 <ul class="answerwrap">
                                                     <li class="wrong">
-                                                        <em class="num">1</em>
-                                                        <b class="graph" style="width:11%"></b>
-                                                        <em><b>11%</b> 주요오답 </em>
+                                                        <div>
+                                                            <em class="num">1</em>
+                                                            <b class="graph" style="width:11%"></b>
+                                                            <em><b>11%</b> 주요오답 </em>
+                                                        </div>
                                                         <span>[ 김하나, 이두나, 한세나, 김가윤, 김나윤, 김다윤, 김라율]</span>
-
                                                     </li>
                                                     <li class="correct">
-                                                        <em class="num">2</em>
-                                                        <b class="graph" style="width:72%"></b>
-                                                        <em><b>72%</b> 정답 </em>
+                                                        <div>
+                                                            <em class="num">2</em>
+                                                            <b class="graph" style="width:72%"></b>
+                                                            <em><b>72%</b> 정답 </em>
+                                                        </div>
                                                         <span>[ 김하나, 이두나, 한세나, 김가윤, 김나윤, 김다윤, 김라율]</span></li>
                                                     <li>
-                                                        <em class="num">3</em>
-                                                        <b class="graph" style="width:3%"></b>
-                                                        <em><b>3%</b> </em>
+                                                        <div>
+                                                            <em class="num">3</em>
+                                                            <b class="graph" style="width:3%"></b>
+                                                            <em><b>3%</b> </em>
+                                                        </div>
                                                         <span>[ 김하나, 이두나, 한세나, 김가윤, 김나윤, 김다윤, 김라율]</span></li>
                                                     <li>
-                                                        <em class="num">4</em>
-                                                        <b class="graph" style="width:3%"></b>
-                                                        <em><b>3%</b> </em>
+                                                        <div>
+                                                            <em class="num">4</em>
+                                                            <b class="graph" style="width:3%"></b>
+                                                            <em><b>3%</b> </em>
+                                                        </div>
                                                         <span>[ 김하나, 이두나, 한세나, 김가윤, 김나윤, 김다윤, 김라율]</span></li>
                                                     <li>
-                                                        <em class="num">5</em>
-                                                        <b class="graph" style="width:3%"></b>
-                                                        <em><b>3%</b> </em>
-                                                        <span>[ 김하나, 이두나, 한세나, 김가윤, 김나윤, 김다윤, 김라율]</span></li>
+                                                        <div>
+                                                            <em class="num">5</em>
+                                                            <b class="graph" style="width:3%"></b>
+                                                            <em><b>3%</b> </em>
+                                                        </div>
+                                                        <span>[ 김하나, 이두나, 한세나, 김가윤, 김나윤, 김다윤, 김라율]</span>
+                                                    </li>
                                                 </ul>
+                                            </div>
+                                            <div class="comment_wrap">
+                                                <b>해설</b>
+                                                <div class="comment">
+                                                    발표를 할 때는 듣는 사람을 바라보며 알맞은 목소리로 말하고, 중요한 내용은 쓰면서 듣고, 발표를 들을 때에는 발표하는 친구 얼굴을 보면서 바른 자세로 듣고, 궁금한 내용이 있으면 손을 들고 기회를 얻어 질문합니다.
+                                                </div>
                                             </div>
                                         </td>
                                     </tr>
@@ -727,14 +805,6 @@
 </div>
 
 <script>
-//다중 레이어팝업
-function modalOpen(modal_id){
-    $('.modal' + '#' + modal_id).css({display: 'flex'});
-}
-
-function modalClose(modal_id){
-    $('.modal' + '#' + modal_id).css({display: 'none'});
-}
 
  //토글
  function createChart() {
