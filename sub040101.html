@@ -10,7 +10,6 @@
         <link rel="stylesheet" href="/css/common.css">
         <link rel="stylesheet" href="/css/question.css">
         <link rel="stylesheet" href="/css/contents.css">
-        <link rel="stylesheet" href="/css/contents_min.css">
 
         <script type="text/javascript" src="/js/jquery-3.6.0.min.js"></script>
         <script type="text/javascript" src="/js/jquery-latest.min.js"></script>
@@ -55,7 +54,7 @@
     <section id="content" class="manager_wrap state student">
         <div class="layout">
             <div class="btn_group">
-                <a href="#" class="btn btn-ani btn-outline-secondary"><i class="sicon ico_print"></i>인쇄하기</a>
+                <a href="#" class="btn btn-ani btn-outline-secondary"><i class="sicon ico_save"></i>저장하기</a>
                 
             </div>
             <div class="colwrap">
@@ -71,6 +70,16 @@
                     <a href="#"><span>8</span> 홍길동</a>
                     <a href="#"><span>9</span> 홍길동</a>
                     <a href="#"><span>10</span> 홍길동</a>
+                    <a href="#"><span>11</span> 홍길동</a>
+                    <a href="#"><span>12</span> 홍길동</a>
+                    <a href="#"><span>13</span> 홍길동</a>
+                    <a href="#"><span>14</span> 홍길동</a>
+                    <a href="#"><span>15</span> 홍길동</a>
+                    <a href="#"><span>16</span> 홍길동</a>
+                    <a href="#"><span>17</span> 홍길동</a>
+                    <a href="#"><span>18</span> 홍길동</a>
+                    <a href="#"><span>19</span> 홍길동</a>
+                    <a href="#"><span>20</span> 홍길동</a>
                 </div>
                 <!-- //탭in 학생목록 -->
 
@@ -182,7 +191,7 @@
 
                         <!-- 회차별 탭 -->
                         <div class="tab-body" id="tab2">
-                            <a href="#" onclick="modalOpen('modal-result');" class="btn btn-ani btn-outline-secondary btn_share"><i class="sicon ico_share"></i>공유하기</a>
+                            <a href="#" onclick="modalOpen('modal-share');" class="btn btn-ani btn-outline-secondary btn_share"><i class="sicon ico_share"></i>공유하기</a>
                             <div class="tabin">
                                 <div class="tabtop">
                                     <div class="tabin-header">
@@ -299,9 +308,71 @@
                                                                 <li class="correct"><b>정답</b>4,5</li>
                                                                 <li><b>응답시간</b>20초 </li>
                                                             </ul>
-                                                            <div class="q_wrap">
-                                                                <div><img src="/images/contents/img_question.png" alt=""></div>
-                                        
+                                                            <div class="qinfo_wrap">
+                                                                <div>
+                                                                    <div class="q_content">
+                                                                        <h4 class="q_tit">
+                                                                           <em class="question_number">1번</em>
+                                                                           <span class="txt">가방의 수에 따른 국어책의 수와 수학책의 수를 나눗셈으로 비교하려고 합니다. 알맞은 말을 골라 ○표 하세요.</span> 
+                                                                        </h4>
+                                                                        <div class="q_layout">
+                                                                            <div class="q_wrap">
+                                                                                <table class="tbl_basic type3 center">
+                                                                                    <caption>개요</caption>
+                                                                                    <colgroup>
+                                                                                        <col style="width:10%">
+                                                                                        <col style="width:5%">
+                                                                                        <col style="width:5%">
+                                                                                        <col style="width:5%">
+                                                                                        <col style="width:5%">
+                                                                                        <col style="width:5%">
+                                                                                        <col style="width:5%">
+                                                                                    </colgroup>
+                                                                                    <thead>
+                                                                                        <tr>
+                                                                                            <th scope="col">가방 수(개)</th>
+                                                                                            <th scope="col">1</th>
+                                                                                            <th scope="col">2</th>
+                                                                                            <th scope="col">3</th>
+                                                                                            <th scope="col">4</th>
+                                                                                            <th scope="col">5</th>
+                                                                                            <th scope="col">…</th>
+                                                                                        </tr>
+                                                                                    </thead>
+                                                                                    <tbody>
+                                                                                        <tr>
+                                                                                            <th scope="row">국어책 수(권)</th>
+                                                                                            <td>4</td>
+                                                                                            <td>4</td>
+                                                                                            <td>4</td>
+                                                                                            <td>4</td>
+                                                                                            <td>4</td>
+                                                                                            <td>…</td>
+                                                                                        </tr>
+                                                                                        <tr>
+                                                                                            <th scope="row">수학책 수(권)</th>
+                                                                                            <td>5</td>
+                                                                                            <td>5</td>
+                                                                                            <td>5</td>
+                                                                                            <td>5</td>
+                                                                                            <td>5</td>
+                                                                                            <td>…</td>
+                                                                                        </tr>
+                                                                                    </tbody>
+                                                                                </table>
+                                                                            </div>
+                                                                            <div class="a_wrap">
+                                                                                <div class="hsradioWrap" style="text-align:center;">
+                                                                                    <span>가방 수에 따라 국어책의 수와 수학책의 수의 비가</span>
+                                                                                    <input type="radio" class="hotspot" name="example" id="example1">
+                                                                                    <label for="example1">변합니다.</label>
+                                                                                    <input type="radio" class="hotspot" name="example" id="example2">
+                                                                                    <label for="example2">변하지 않습니다.</label>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
                                                             </div>
                                                         </td>
                                                     </tr>
@@ -445,151 +516,27 @@
         </div>
     </section>
 
-<!--공유평가기록 팝업-->
-<div class="modal type2 fullsize" id="modal-result">
+<!--공유하기 팝업-->
+<div class="modal type2 modal-popup answerPop" id="modal-share">
     <div class="modal-background is-click-disabled"></div>
-    <div class="modal-content lg">
-        <button type="button" class="modal-close bn_close bk" onclick="modalClose('modal-result');"></button>
+    <div class="modal-content">
         <div class="popup-wrap">
-            <section id="content" class="result_wrap state">
-                <div class="layout">
-                    <div class="sub_title">
-                        <h1>
-                            <i class="ico_logo type1">온평가</i> 
-                            평가기록
-                        </h1>
-        
-                        <div class="inner">
-                            <ul class="student_info">
-                                <li><span>학교명</span>충남초등학교</li>
-                                <li><span>학년</span>5</li>
-                                <li><span>반</span>1</li>
-                                <li><span>번호</span>3</li>
-                                <li><span>이름</span>홍길동</li>
-                            </ul>
-                            <div class="btn_group">
-                                <a href="#" class="btn btn-ani btn-text"><i class="sicon ico_print"></i>인쇄하기</a>
-                                <a href="#" class="btn btn-ani btn-text"><i class="sicon ico_share"></i>공유하기</a>
-                            </div>
-                        </div>
-        
-                    </div>
-        
-                    <div class="text_info">
-                        <div class="info_box">
-        
-                            <div class="item_subject">
-                                <span class="tit">
-                                    <b>과학</b>
-                                </span>
-                                <ul class="subject_list">
-                                    <li>1. 지구와 달의 운동</li>
-                                    <li>2. 여러 가지 기체</li>   
-                                </ul>
-                            </div>
-                            <div class="text_box col3">
-                                <div class="item">
-                                    <b>응시일</b>
-                                    <p>2025.4.3</p>
-                                </div>
-                                <div class="item ico2">
-                                    <b>총 문항 수</b>
-                                    <p>20문항</p>
-                                    <span>상 5 / 중 10 / 하 5</span>
-                                </div>
-                            
-                                <!-- 원그랲프 들어가는 자리 -->
-                                <div class="doughnut-chart" id="doughnutChart">
-                                    <span>전체정답률<b>75%</b></span>
-                                    <canvas id="doughnutChartCanvas"></canvas>
-                                </div>
-                                <!-- //원그랲프 들어가는 자리 -->
-                            </div>
-                        </div>
-                        <div class="totalcommt">
-                            <strong>종합의견</strong>
-                            <ul>
-                                <li><b>홍길동</b> 학생은 <b>낮과 밤이 생기는 까닭</b>을 잘 알고 관련된 문항의 정답률이 높은 모습을 보이고 있으며, </li>
-                                <li><b>지구의 공전과 별자리의 관계, 계절에 따른 별자리</b> 관련 문항을 풀이하는 데 어려움을 보이고 있습니다</li>
-                            </ul>
-                        </div>
-                        <div class="title_box">
-                            <strong class="subtitle">평가 문항정보</strong>
-                        </div>
-                        <table class="tbl_basic center table-hover">
-                            <caption>평가문항정보</caption>
-                            <colgroup>
-                                <col style="width:5%">
-                                <col style="width:20%">
-                                <col style="width:20%">
-                                <col style="width:auto">
-                                <col style="width:7%">
-                                <col style="width:5%">
-                            </colgroup>
-                            <thead>
-                                <tr>
-                                    <th scope="col">번호</th>
-                                    <th scope="col">단원</th>
-                                    <th scope="col">성취기준</th>
-                                    <th scope="col">평가요소</th>
-                                    <th scope="col">정답여부</th>
-                                    <th scope="col">보기</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <th scope="row">01</th>
-                                    <td>2.지구와 달의 운동</td>
-                                    <td>[6과09-01]</td>
-                                    <td>낮과 밤이 생기는 까닭</td>
-                                    <td><i class="sicon ico_o">정답</i></td>
-                                    <td><a href="#" class="micon ico7">자세히보기</a></td>
-                                </tr>
-                                <tr class="active">
-                                    <th scope="row">01</th>
-                                    <td>2.지구와 달의 운동</td>
-                                    <td>[6과09-01]</td>
-                                    <td>낮과 밤이 생기는 까닭</td>
-                                    <td><i class="sicon ico_o">정답</i></td>
-                                    <td><a href="#" class="icon arr_blue">펼침닫기</a></td>
-                                </tr>
-                                <!-- active -->
-                                <tr>
-                                    <td colspan="8">
-                                        <ul class="tit_list">
-                                            <li><b>학생응답</b>4,5 </li>
-                                            <li class="correct"><b>정답</b>4,5</li>
-                                        </ul>
-                                        <div class="q_wrap">
-                                            <div><img src="/images/contents/img_question.png" alt=""></div>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <!-- //active -->
-                                <tr>
-                                    <th scope="row">01</th>
-                                    <td>2.지구와 달의 운동</td>
-                                    <td>[6과09-01]</td>
-                                    <td>낮과 밤이 생기는 까닭</td>
-                                    <td><i class="sicon ico_x">오답</i></td>
-                                    <td><a href="#" class="micon ico7">자세히보기</a></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-        
-        
-        
+            <div class="con-head">
+                <h3>평가 기록을 공유하겠습니까?</h3>
+            </div>
+            <div class="con-wrap">
+                <div class="delete_box">
+                   <input type="text" value="https://main--stalwart-axolotl-86516a.netlify.app/sub040102">
                 </div>
-        
                 <div class="btn_group">
-                    <a href="/sub040101.html" class="btn btn-ani btn-primary lg">돌아가기</a>
+                    <button class="btn btn-ani btn-secondary" onclick="modalClose('modal-share');">취소</button>
+                    <a href="/sub040102.html" class="btn btn-ani btn-primary">복사</a>
                 </div>
-            </section>
+            </div>
         </div>
     </div>
 </div>
-<!--//공유평가기록 팝업-->
+<!--//공유하기 팝업-->
 
 <!--출판사선택 팝업-->
 <div class="modal type2 modal-popup" id="modal-company">
@@ -638,15 +585,6 @@
 </div>
 
 <script>
-//다중 레이어팝업
-function modalOpen(modal_id){
-    $('.modal' + '#' + modal_id).css({display: 'flex'});
-}
-
-function modalClose(modal_id){
-    $('.modal' + '#' + modal_id).css({display: 'none'});
-}
-
 
  //토글
  function createChart() {
