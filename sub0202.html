@@ -78,7 +78,7 @@
                             <i class="hico hico1"></i>
                             문제목록
                         </strong>
-                        <button type="submit" class="btn btn-ani btn-quaternary" id="popup_btn"><i class="sicon ico3"></i>선택삭제</button>
+                        <button type="submit" class="btn btn-ani btn-quaternary" onclick="modalOpen('popup_opne');"><i class="sicon ico3"></i>선택삭제</button>
                     </div>
                    
                     <div class="table_wrap">
@@ -436,8 +436,8 @@
                         <li>배점 : 4</li>
                     </ul>
                     <div class="btn_group">
-                        <a href="/sub0202.html" class="btn btn-ani btn-secondary">취소</a>
-                        <a href="/sub0202.html" class="btn btn-ani btn-primary">삭제</a>
+                        <a class="btn btn-ani btn-secondary" onclick="modalClose('popup_opne');">취소</a>
+                        <a class="btn btn-ani btn-primary" onclick="modalClose('popup_opne');">삭제</a>
                     </div>
                 </div>
             </div>
