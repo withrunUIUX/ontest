@@ -84,7 +84,8 @@
 	--load_time:3s;	
 }
 
-.c_blue {color:var(--c_blue);} /* 적용예시 */
+.c_blue{color:var(--blue_80)}
+.c_red{color:var(--coral_70)}
 
 .f36 {font-size:36px; line-height: 1;font-weight:800} /* h2 */
 .f24 {font-size: 24px; line-height: 1;font-weight:800} /* h3 */
