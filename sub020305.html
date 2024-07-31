@@ -98,7 +98,6 @@
                 </div>
 
                 <div class="connect_wrap">
-
                     <div class="connect_summary">
                         <div class="unit__wrap">
                             <span class="unit__item">1단원</span>
@@ -113,35 +112,44 @@
                         </ul>
                     </div>
 
-                    <div class="connect_item_wrap">
-                        <dvi class="pause_pop" style="z-index:1;position:absolute;display:none;">
-                            <div class="bubble under">
-                                평가가 <em>일시정지</em> 되었습니다.
-                            </div>
-                            <span>평가를 진행하시려면 <br> 아래 <img src="../images/common/playbtn_img.png">를 클릭하세요.</span>
-                            <img src="../images/common/pause_img.png">
-                        </dvi>
+                    <div class="connect_stat">
+                        <div class="pause_pop_wrap">
+                            <dvi class="pause_pop">
+                                <div class="bubble under">
+                                    평가가 <em>일시정지</em> 되었습니다.
+                                </div>
+                                <p>평가를 진행하려면 <br> 아래 <img src="../images/common/playbtn_img.png">를 클릭하세요.</p>
+                                <img src="../images/common/pause_img.png">
+                            </dvi>
+                        </div><!--일시정지 시 나타나는 안내 팝업-->
 
-                        <a href="#" class="connect_item on"><i></i><span>학생 1</span></a>
-                        <a href="#" class="connect_item off"><i></i><span>학생 2</span></a>
-                        <a href="/sub020306.html" class="connect_item fin"><i></i><span>학생 3</span></a>
-                        <a href="#" class="connect_item on"><i></i><span>학생 4</span></a>
-                        <a href="#" class="connect_item on"><i></i><span>학생 5</span></a>
-                        <a href="#" class="connect_item no"><i></i><span>학생 6</span></a>
-                        <a href="#" class="connect_item on"><i></i><span>학생 7</span></a>
-                        <a href="#" class="connect_item on"><i></i><span>학생 8</span></a>
-                        <a href="#" class="connect_item on"><i></i><span>학생 9</span></a>
-                        <a href="#" class="connect_item on"><i></i><span>학생 10</span></a>
-                        <a href="#" class="connect_item on"><i></i><span>학생 11</span></a>
-                        <a href="#" class="connect_item fin"><i></i><span>학생 12</span></a>
-                        <a href="#" class="connect_item on"><i></i><span>학생 13</span></a>
-                        <a href="#" class="connect_item on"><i></i><span>학생 14</span></a>
-                        <a href="#" class="connect_item on"><i></i><span>학생 15</span></a>
-                        <a href="#" class="connect_item on"><i></i><span>학생 16</span></a>
-                        <a href="#" class="connect_item on"><i></i><span>학생 17</span></a>
-                        <a href="#" class="connect_item on"><i></i><span>학생 18</span></a>
-                        <a href="#" class="connect_item fin"><i></i><span>학생 19</span></a>
-                        <a href="#" class="connect_item fin"><i></i><span>학생 20</span></a>
+                        <div class="connect_item_wrap">
+                            <a href="#" class="connect_item on"><i></i><span>학생 1</span></a>
+                            <a href="#" class="connect_item off"><i></i><span>학생 2</span></a>
+                            <a href="/sub020306.html" class="connect_item fin"><i></i><span>학생 3</span></a>
+                            <a href="#" class="connect_item on"><i></i><span>학생 4</span></a>
+                            <a href="#" class="connect_item on"><i></i><span>학생 5</span></a>
+                            <a href="#" class="connect_item no"><i></i><span>학생 6</span></a>
+                            <a href="#" class="connect_item on"><i></i><span>학생 7</span></a>
+                            <a href="#" class="connect_item on"><i></i><span>학생 8</span></a>
+                            <a href="#" class="connect_item on"><i></i><span>학생 9</span></a>
+                            <a href="#" class="connect_item on"><i></i><span>학생 10</span></a>
+                            <a href="#" class="connect_item on"><i></i><span>학생 11</span></a>
+                            <a href="#" class="connect_item fin"><i></i><span>학생 12</span></a>
+                            <a href="#" class="connect_item on"><i></i><span>학생 13</span></a>
+                            <a href="#" class="connect_item on"><i></i><span>학생 14</span></a>
+                            <a href="#" class="connect_item on"><i></i><span>학생 15</span></a>
+                            <a href="#" class="connect_item on"><i></i><span>학생 16</span></a>
+                            <a href="#" class="connect_item on"><i></i><span>학생 17</span></a>
+                            <a href="#" class="connect_item on"><i></i><span>학생 18</span></a>
+                            <a href="#" class="connect_item fin"><i></i><span>학생 19</span></a>
+                            <a href="#" class="connect_item fin"><i></i><span>학생 20</span></a>
+                            <!-- <a href="#" class="connect_item on"><i></i><span>학생 21</span></a>
+                            <a href="#" class="connect_item on"><i></i><span>학생 22</span></a>
+                            <a href="#" class="connect_item on"><i></i><span>학생 23</span></a>
+                            <a href="#" class="connect_item fin"><i></i><span>학생 24</span></a>
+                            <a href="#" class="connect_item fin"><i></i><span>학생 25</span></a> -->
+                        </div>
                     </div>
 
                     <div class="graph_wrap">
@@ -153,8 +161,8 @@
                     </div>
 
                     <div class="btn_group">
-                        <a class="btn btn-ani btn-delete" href="#">일시정지<i class="icon ico_pause"></i></a>
-                        <a class="btn btn-ani btn-outline-primary" href="#">이어하기<i class="icon ico_play"></i></a>
+                        <a class="btn btn-ani btn-delete stop">일시정지<i class="icon ico_pause"></i></a>
+                        <a class="btn btn-ani btn-outline-primary start">이어하기<i class="icon ico_play"></i></a>
                     </div>
                 </div>
             </div>
@@ -171,10 +179,16 @@
 
 <script>
 //탭메뉴 클릭 이벤트
-$(".btn_group .btn-delete").click(function(){
+$(".btn_group .stop").click(function(){
     $(this).parents(".connect_wrap").addClass("active");
 });
+$(".btn_group .start").click(function(){
+    $(this).parents(".connect_wrap").removeClass("active");
+});
+
 </script>
+
+
 
 
 
