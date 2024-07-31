@@ -221,7 +221,7 @@ fieldset:disabled a.btn {pointer-events: none;}
 /* secondary-outline */
 .btn-outline-secondary {
   color:var(--gray_80);
-  background-color:var(--gray_20);
+  background-color:#fff;
   background-image: none;
   border-color:var(--gray_60);
 }
