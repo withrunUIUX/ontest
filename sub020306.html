@@ -141,10 +141,10 @@
             <div class="publish_prev grading" id="grading_prev_wrap">
 
                 <!--정답보기 팝업-->
-                <div class="modal modal-popup answerPop" id="popup_opne">
+                <div class="modal modal-popup answerPop" id="popup_answer">
                     <div class="modal-background is-click-disabled"></div>
                     <div class="modal-content">
-                        <button type="button" class="modal-close bn_close bk"></button>
+                        <button type="button" class="modal-close bn_close bk" onclick="modalClose('popup_answer');">닫기</button>
                         <div class="popup-wrap">
                             <div class="con-head">
                                 <h3>정답</h3>
@@ -163,7 +163,7 @@
                 </div><!--//정답보기 팝업-->
 
                 <div class="btn_group">
-                    <a class="answerBtn see" id="popup_btn"><i></i>정답보기</a>
+                    <a class="answerBtn see" onclick="modalOpen('popup_answer');"><i></i>정답보기</a>
                     <div id="answerEdit_wrap">
                         <a class="answerBtn edit" id="answerBtn_slide" href="#"><i></i>채점수정</a>
                         <div class="editBtn_wrap">
