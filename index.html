@@ -26,7 +26,7 @@
             </h1>
             <ul class="btn_group">
                 <li>
-                    <a class="btn login teacher" id="login_teacher">
+                    <a class="btn login teacher" onclick="modalOpen('popup_teacher');">
                         <span>
                             <span class="first_word" data-hover="선생님">선생님</span>
                             <span class="second_word" data-hover="로그인">로그인</span>
@@ -34,7 +34,7 @@
                     </a>
                 </li>
                 <li>
-                    <a class="btn login student" id="login_student">
+                    <a class="btn login student" onclick="modalOpen('popup_student');">
                         <span>
                             <span class="first_word" data-hover="학생">학생</span>
                             <span class="second_word" data-hover="로그인">로그인</span>
@@ -81,7 +81,7 @@
 <div class="modal modal-popup" id="popup_teacher">
     <div class="modal-background is-click-disabled"></div>
     <div class="modal-content">
-        <button type="button" class="btn btn-ani btn-secondary modal-close">닫기</button>
+        <button type="button" class="btn btn-ani btn-secondary modal-close" onclick="modalClose('popup_teacher');">닫기</button>
         <div class="popup-wrap">
             <div class="con-head">
                 <h3>선생님 로그인</h3>
@@ -92,9 +92,9 @@
                     <li><input type="password" placeholder="비밀번호를 입력해주세요."></li>
                 </ul>
                 <div class="btn_group">
-                    <a class="btn btn-ani btn-primary">로그인</a>
-                    <a class="btn btn-ani btn-outline-primary" target="_blank">인증서 로그인</a>
-                    <a class="btn btn-ani btn-blank" target="_blank">아이디 / 비밀번호 찾기</a>
+                    <a class="btn btn-ani btn-primary" href="/sub0101.html">로그인</a>
+                    <a class="btn btn-ani btn-outline-primary" href="#" target="_blank">인증서 로그인</a>
+                    <a class="btn btn-ani btn-blank" href="#" target="_blank">아이디 / 비밀번호 찾기</a>
                 </div>
             </div>
         </div>
@@ -106,7 +106,7 @@
 <div class="modal modal-popup" id="popup_student">
     <div class="modal-background is-click-disabled"></div>
     <div class="modal-content">
-        <button type="button" class="btn btn-ani btn-secondary modal-close">닫기</button>
+        <button type="button" class="btn btn-ani btn-secondary modal-close" onclick="modalClose('popup_student');">닫기</button>
         <div class="popup-wrap">
             <div class="con-head">
                 <h3>학생 로그인</h3>
@@ -117,7 +117,7 @@
                     <li><input type="text" placeholder="학급번호를 입력하세요."></li>
                 </ul>
                 <div class="btn_group">
-                    <a class="btn btn-ani btn-primary" id="popup_btn2">시작하기</a>
+                    <a class="btn btn-ani btn-primary" onclick="modalOpen('popup_loading');">시작하기</a>
                 </div>
             </div>
         </div>
@@ -178,35 +178,17 @@
         autoplay: true,
     });
 
-    //선생님 로그인 팝업 열기
-    $(document).on("click", "#login_teacher", function(){
-        sign_index = $("#login_teacher").index(this);
-        $("#popup_teacher").addClass("active");
+
+    //모달팝업 열기
+    function modalOpen(modal_id){
+        $('.modal' + '#' + modal_id).addClass("active");
         $('body').addClass('open');
-    });
-
-
-    //학생 로그인 팝업 열기
-    $(document).on("click", "#login_student", function(){
-        sign_index = $("#login_student").index(this);
-        $("#popup_student").addClass("active");
-        $('body').addClass('open');
-    });
-
-    //학생 로딩 팝업 열기
-    $(document).on("click", "#popup_btn2", function(){
-        sign_index = $("#popup_btn2").index(this);
-        $("#popup_loading").addClass("active");
-        $('body').addClass('open');
-    });
-
-
-    //로그인 팝업 닫기
-    $(".modal-close").on("click",function(){
-        $("#popup_teacher").removeClass("active");
-        $("#popup_student").removeClass("active");
-    });
-
+    }
+    //모달팝업 닫기
+    function modalClose(modal_id){
+        $('.modal' + '#' + modal_id).removeClass("active");
+        $("body").removeClass("open").removeAttr("style");
+    }
 
 
 </script>
