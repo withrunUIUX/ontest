@@ -73,6 +73,7 @@ footer > span  {color:#fff;}
 
 
 /* 로그인 팝업 :: 공통 */
+.modal {width:100%;}
 .modal-content {padding:0;border:none;animation:pop-show .5s;}
 @keyframes pop-show {
     0% {-webkit-transform: scale(.7); transform: scale(.7)}
@@ -115,7 +116,7 @@ footer > span  {color:#fff;}
     0%, 100% {transform:translateY(0);}
     50% {transform:translateY(-20px);}
 }
-
+/* 학생 평가 정보 */
 .test_info {display:flex;justify-content:center;gap:1rem;width:100%;}
 .test_info li {display:flex;flex-direction:column;align-items:center;width:50%;padding:1.5rem 2rem;border:1px solid var(--gray_40);border-radius:10px;background:var(--gray_10);}
 .test_info li > i {display:inline-block;width:40px;height:40px;background-position:50%;background-repeat:no-repeat;}
