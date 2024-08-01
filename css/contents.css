@@ -579,6 +579,7 @@ body.open:has(.grading_wrap .modal) {overflow: initial;}
 .state .comment_wrap > b {padding:4px;border-radius:4px;border:1px solid var(--gray_40);font-size:15px;color:var(--gray_70);font-weight:normal}
 .state .comment_wrap .comment {font-size:15px;color:var(--gray_90);text-align:left;}
 /*회차별 평가문항정보 테이블 토글*/
+.test_item {height:69px;}
 .test_item .btnView {display:inline-flex;width:32px;height:32px;font-size:0;}
 .test_item .btnView::before {content:'';display:block;width:32px;height:32px;background:url('../images/common/mico_07.svg') 50% no-repeat;}
 .test_item .btnView.ov::before {background-image:url('../images/common/arr_blue.svg');}
