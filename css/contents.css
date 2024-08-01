@@ -577,7 +577,7 @@ body.open:has(.grading_wrap .modal) {overflow: initial;}
 .state .qinfo_wrap .answerwrap li span{overflow:hidden;white-space:nowrap;text-overflow:ellipsis;font-size:1rem;text-align:left;font-weight:400;color:var(--gray_50);}
 .state .comment_wrap {display:flex;flex-direction:column;align-items:flex-start;gap:.5rem;border-radius:20px;margin:0 0 40px;padding:2rem 4rem;border:1px solid var(--gray_40);}
 .state .comment_wrap > b {padding:4px;border-radius:4px;border:1px solid var(--gray_40);font-size:15px;color:var(--gray_70);font-weight:normal}
-.state .comment_wrap .comment {font-size:15px;color:var(--gray_90);}
+.state .comment_wrap .comment {font-size:15px;color:var(--gray_90);text-align:left;}
 
 .txt_tooltip_wrap {position:relative;}
 .txt_tooltip_wrap .tooltip {text-decoration:underline;cursor:pointer;}
