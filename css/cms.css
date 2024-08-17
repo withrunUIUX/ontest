@@ -2,7 +2,7 @@
 
 #header {}
 #header .logo a {display:flex;flex-direction:column;gap:.5rem;text-align:center;}
-#header .logo a > span {background-image:url('/images/common/logo_w2.svg');}
+#header .logo a > span {background-image:url('../images/common/logo_w2.svg');}
 #header .logo a > em {font-size:1.1rem;font-weight:800;color:#fff;}
 
 .sub_header {padding:1.6rem 3rem;}
