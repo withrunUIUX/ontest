@@ -39,6 +39,6 @@ small {font-weight:500;}
 .stwrap_btn:hover {background:var(--blue_100);}
 
 
-
-
+.stwrap_inner {display:flex;gap:1rem;}
+.stwrap_inner * {position:static;}
 

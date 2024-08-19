@@ -1,2 +1,54 @@
-<button class="btn btn-secondary save_prev">이전문제<i class="icon arr_b"></i></button>
-<button class="btn btn-primary save_next" onclick="modalOpen('popup_opne');">저장 후 다음문제<i class="icon arr_b"></i></button><!--문제 마지막일때 저장후 다음 문제에 save_send 클래스 추가-->
+<div class="q_footer">
+    <button class="btn btn-secondary save_prev">이전문제<i class="icon arr_b"></i></button>
+    <button class="btn btn-primary save_next" onclick="modalOpen('popup_opne');">저장 후 다음문제<i class="icon arr_b"></i></button><!--문제 마지막일때 저장후 다음 문제에 save_send 클래스 추가-->
+</div>
+
+
+
+<!--제출팝업 :: 미답변 있을때-->
+<div class="modal modal-popup question_modal" id="popup_opne">
+    <div class="modal-background is-click-disabled"></div>
+    <div class="modal-content">
+        <div class="popup-wrap">
+            <span class="flag"><span>1단원</span></span>
+            <div class="con-head">
+                <h3><i class="micon ico2"></i>5학년 1학기</h3>
+            </div>
+            <div class="con-wrap">
+                <strong><em>미답변</em> 문항이 있습니다. <br>그대로 답안을 제출하시겠습니까?</strong>
+                <div class="no_answer">
+                    <span>미답변</span>
+                    <ul class="no_answer_list">
+                        <li class="no_answer_item">2</li>
+                        <li class="no_answer_item">3</li>
+                        <li class="no_answer_item">12</li>
+                    </ul>
+                </div>
+                <div class="btn_group">
+                    <button type="button" class="btn btn-ani btn-secondary" onclick="modalClose('popup_opne');">제출취소</button>
+                    <a class="btn btn-ani btn-primary" onclick="modalOpen('popup_opne2');">제출하기</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--제출팝업 :: 완료 -->
+<div class="modal modal-popup question_modal" id="popup_opne2">
+    <div class="modal-background is-click-disabled"></div>
+    <div class="modal-content">
+        <div class="popup-wrap">
+            <span class="flag"><span>1단원</span></span>
+            <div class="con-head">
+                <h3><i class="micon ico2"></i>5학년 1학기</h3>
+            </div>
+            <div class="con-wrap">
+                <span class="confirm_img"></span>
+                <strong><em>답안</em> 제출이 완료 되었습니다.</strong>
+                <div class="btn_group">
+                    <button type="button" class="btn btn-ani btn-primary" onclick="modalClose('popup_opne2');">확인</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

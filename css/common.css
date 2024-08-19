@@ -84,8 +84,16 @@ html,body,div,span,object,h1,h2,h3,h4,h5,h6,p,a,abbr,address,cite,em,img,strong,
 .mb_50 {margin-bottom:50px !important}
 .mb_60 {margin-bottom:60px !important}
 
-
-
+/*폰트사이즈*/
+.fs_12 {font-size:1.2rem !important}
+.fs_13 {font-size:1.3rem !important}
+.fs_14 {font-size:1.4rem !important}
+.fs_15 {font-size:1.5rem !important}
+.fs_16 {font-size:1.6rem !important}
+.fs_17 {font-size:1.7rem !important}
+.fs_18 {font-size:1.8rem !important}
+.fs_19 {font-size:1.9rem !important}
+.fs_20 {font-size:2rem !important}
 
 
 /* heading title */
@@ -241,10 +249,10 @@ table thead th:last-child {border-radius: 0 10px 0 0;}
 .tbl_basic.type3 thead th {color:var(--gray_100);border-color:var(--blue_40);text-align:center;background:var(--blue_20);}
 .tbl_basic.type3 thead th:first-child,
 .tbl_basic.type3 thead  th:last-child {border-radius:0;}
-.tbl_basic.type3 tbody .td_left {padding:.9rem;text-align:left;line-height:1.5;}
+.tbl_basic.type3 tbody .td_left {padding:.9rem;line-height:1.5;}
 .tbl_basic.type3 tbody tr:nth-child(even) {background:#fff;}
-.tbl_basic.type3 tbody tr th {font-weight:600;text-align:center;}
-.tbl_basic.type3 tbody tr td {color:var(--gray_90);font-weight:500;}
+.tbl_basic.type3 tbody tr th {font-weight:700;text-align:center;}
+.tbl_basic.type3 tbody tr td {color:var(--gray_100);font-weight:400;}
 
 /* 라디오 type3, 체크박스 type9에 사용 */
 .tbl_basic.type4 {}

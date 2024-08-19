@@ -9,8 +9,7 @@
         <link rel="stylesheet" href="/css/common.css">
         <link rel="stylesheet" href="/css/main.css">
 
-        <script type="text/javascript" src="/js/jquery-3.6.0.min.js"></script>
-        <script type="text/javascript" src="/js/jquery-latest.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.10.2/lottie.min.js"></script>
     </head>
@@ -91,6 +90,7 @@
                     <li><input type="text" placeholder="아이디를 입력해주세요."></li>
                     <li><input type="password" placeholder="비밀번호를 입력해주세요."></li>
                 </ul>
+                <div class="login_alert"><i class="sicon ico7"></i><span class="txt">아이디 또는 비밀번호가 일치하지 않습니다.</span></div>
                 <div class="btn_group">
                     <a class="btn btn-ani btn-primary" href="/sub0101.html">로그인</a>
                     <a class="btn btn-ani btn-outline-primary" href="#" target="_blank">인증서 로그인</a>
@@ -116,6 +116,7 @@
                     <li><input type="text" placeholder="학급코드를 입력하세요"></li>
                     <li><input type="text" placeholder="학급번호를 입력하세요."></li>
                 </ul>
+                <div class="login_alert"><i class="sicon ico7"></i><span class="txt">학급코드 또는 학생번호가 일치하지 않습니다.</span></div>
                 <div class="btn_group">
                     <a class="btn btn-ani btn-primary" onclick="modalOpen('popup_loading');">시작하기</a>
                 </div>

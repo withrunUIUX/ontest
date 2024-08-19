@@ -6,15 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>문항 컴포넌트</title>
 
-	<link rel="stylesheet" href="/css/slick.css">
 	<link rel="stylesheet" href="/css/common.css">
 	<link rel="stylesheet" href="/css/question.css">
 	<link rel="stylesheet" href="/css/contents.css">
 
-	<script type="text/javascript" src="/js/jquery-3.6.0.min.js"></script>
-	<script type="text/javascript" src="/js/jquery-latest.min.js"></script>
-	<script type="text/javascript" src="/js/slick.js"></script>
-	<script type="text/javascript" src="/js/chart.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
 	<script type="text/javascript" src="/js/include.js"></script>
 	<script type="text/javascript" src="/js/contents.js"></script>
@@ -27,7 +23,7 @@
 <div class="sgNavi_wrap">
     <ul class="sgNavi">
         <li><a href="../styleguide/styleguide.html" class="">스타일가이드</a></li>
-        <li> <a href="../styleguide/questuon_cmpt.html" class="on">문항컴포넌트</a></li>
+        <li> <a href="../styleguide/questuon_cmpt.html" class="on">문항 컴포넌트</a></li>
         <li><a href="../styleguide/examBox_cmpt.html" class="">예문 컴포넌트</a></li>
     </ul>
 
@@ -56,6 +52,7 @@
             <li><a href="#radioWrapT7" title="그룹 선택형">라디오 type7</a></li>
             <li><a href="#radioWrapT8" title="보기가 시 형태일때">라디오 type8</a></li>
             <li><a href="#radioWrapT9" title="대화형">라디오 type9</a></li>
+            <li><a href="#radioWrapT10" title="시 형태">라디오 type10</a></li>
             <li><a href="#checkWrapT1">체크박스</a></li>
             <li><a href="#checkWrapT2" title="보기 가로 정렬, 짧은 보기">체크박스 type2</a></li>
             <li><a href="#checkWrapT3" title="여러 요소 혼용">체크박스 type3</a></li>
@@ -65,12 +62,17 @@
             <li><a href="#checkWrapT7" title="문장형">체크박스 type7</a></li>
             <li><a href="#checkWrapT8" title="대화형">체크박스 type8</a></li>
             <li><a href="#checkWrapT9" title="구분 정렬">체크박스 type9</a></li>
+            <li><a href="#checkWrapT10" title="시 형태">체크박스 type10</a></li>
             <li><a href="#inputWrapT1">단답형</a></li>
             <li><a href="#inputWrapT2" title="테이블">단답형 type2</a></li>
             <li><a href="#inputWrapT3" title="숫자카드+수학기호">단답형 type3</a></li>
             <li><a href="#inputWrapT4" title="분수 형태">단답형 type4</a></li>
             <li><a href="#inputWrapT5" title="숫자카드">단답형 type5</a></li>
             <li><a href="#inputWrapT6" title="순서대로 입력">단답형 type6</a></li>
+            <li><a href="#inputWrapT7" title="문장형">단답형 type7</a></li>
+            <li><a href="#inputWrapT8" title="원형 input">단답형 type8</a></li>
+            <li><a href="#inputWrapT9" title="그룹형">단답형 type9</a></li>
+            <li><a href="#inputWrapT10" title="리스트">단답형 type10</a></li>
             <li><a href="#hsradioWrap">핫스폿</a></li>
             <li><a href="#hsradioWrapT2" title="이름 선택">핫스폿 type2</a></li>
             <li><a href="#hsradioWrapT3" title="카드형태">핫스폿 type3</a></li>
@@ -86,6 +88,15 @@
             <li><a href="#hsradioWrapT13" title="이미지 위에 버튼">핫스폿 type13</a></li>
             <li><a href="#hsradioWrapT14" title="카드박스 안에서 선택">핫스폿 type14</a></li>
             <li><a href="#hsradioWrapT15" title="테이블 안에서 선택">핫스폿 type15</a></li>
+            <li><a href="#hsradioWrapT16" title="이미지 위에 투명버튼">핫스폿 type16</a></li>
+            <li><a href="#hsradioWrapT17" title="다중선택 말풍선">핫스폿 type17</a></li>
+            <li><a href="#hsradioWrapT18" title="다중선택 버튼">핫스폿 type18</a></li>
+            <li><a href="#hsradioWrapT19" title="ox선택">핫스폿 type19</a></li>
+            <li><a href="#hsradioWrapT20" title="ox선택 그룹형">핫스폿 type20</a></li>
+            <li><a href="#hsradioWrapT21" title="다중선택 카드형">핫스폿 type21</a></li>
+            <li><a href="#hsradioWrapT22" title="리스트 그룹형">핫스폿 type22</a></li>
+            <li><a href="#hsradioWrapT23" title="다중선택 기본형">핫스폿 type23</a></li>
+            <li><a href="#hsradioWrapT24" title="다중선택 대화형">핫스폿 type24</a></li>
             <li><a href="#txareWrapT1">서술형</a></li>
             <li><a href="#txareWrapT2" title="2개 이상">서술형 type2</a></li>
             <li><a href="#txareWrapT3" title="테이블">서술형 type3</a></li>
@@ -97,12 +108,20 @@
             <li><a href="#dragWrapT6" title="중복으로">끌어놓기 type6</a></li>
             <li><a href="#dragWrapT7" title="벤다이어그램">끌어놓기 type7</a></li>
             <li><a href="#dragWrapT8" title="순서대로">끌어놓기 type8</a></li>
-            <li><a href="#dragWrapT10" title="문장부호 맞추기">끌어놓기 type10</a></li>
-            <li><a href="#dragWrapT11" title="대화형">끌어놓기 type11</a></li>
-            <li><a href="#dragWrapT12" title="카드박스">끌어놓기 type12</a></li>
+            <li><a href="#dragWrapT9" title="문장부호 맞추기">끌어놓기 type9</a></li>
+            <li><a href="#dragWrapT10" title="대화형">끌어놓기 type10</a></li>
+            <li><a href="#dragWrapT11" title="카드박스">끌어놓기 type11</a></li>
+            <li><a href="#dragWrapT12" title="리스트">끌어놓기 type12</a></li>
             <li><a href="#seletWrapT1">아래로펼치기</a></li>
-            <li><a href="#seletWrapT2" title="순서대로 ">아래로펼치기 type2</a></li>
-            <li><a href="#seletWrapT3" title="테이블">아래로펼치기 type3</a></li>
+            <li><a href="#seletWrapT2" title="순서대로">아래로펼치기 type2</a></li>
+            <li><a href="#seletWrapT3" title="디자인 테이블">아래로펼치기 type3</a></li>
+            <li><a href="#seletWrapT4" title="기본 테이블">아래로펼치기 type4</a></li>
+            <li><a href="#seletWrapT5" title="대화형">아래로펼치기 type5</a></li>
+            <li><a href="#seletWrapT6" title="보고서">아래로펼치기 type6</a></li>
+            <li><a href="#lineWrapT1">짝연결하기</a></li>
+            <li><a href="#lineWrapT2" title="선긋기 3개">짝연결하기 type2</a></li>
+            <li><a href="#lineWrapT3" title="그룹형">짝연결하기 type3</a></li>
+            <li><a href="#lineWrapT4" title="타이틀">짝연결하기 type4</a></li>
         </ul>  
     </div>  
 </div>
@@ -111,8 +130,8 @@
 
 <h2 id="bullet">bullet</h2>
 <div class="stwrap">
-    <span class="bullet">보기1</span>
-    <span class="bullet blue">보기1</span>
+    <span class="bullet tit">보기1</span>
+    <span class="bullet tit blue">보기1</span>
 
     <span class="bullet circle">가</span>
     <span class="bullet circle">1</span>
@@ -131,7 +150,12 @@
     <span class="bullet circle blue sm">ㄱ</span>
 </div>
 
-<h2 id="blankBox">빈칸 박스 <small>꾸밈요소, 예문에 사용한다.</small></h2>
+<h2 id="arrow">화살표 <small>단순사용이 필요할때(예문도 포함)</small></h2>
+<div class="stwrap">
+    <span class="icoarrow"></span>
+</div>
+
+<h2 id="blankBox">빈칸 박스 <small>꾸밈요소</small></h2>
 <div class="stwrap">
     <span class="blankBox">빈칸</span>
     <span class="blankBox sm">small</span>
@@ -159,15 +183,13 @@
 <div class="stwrap">
     <span class="square">365</span>
     <span class="square sm">365</span>
-    
     <span class="nametag">지훈</span>
     <span class="nametag sm">지훈</span>
-
     <div class="q_layout">
         <h3>squareBox 예시</h3>
         <div class="q_wrap">
-            <div class="examBox"><!---->
-                <span class="bullet blue">보기</span>
+            <div class="examBox">
+                <span class="bullet tit blue">보기</span>
                 <div class="dis_flex gap20">
                     <span class="square">317</span>
                     <span class="square">327</span>
@@ -186,11 +208,17 @@
     <span class="chat_img blue male1"></span>
     <span class="chat_img pink male2"></span>
     <span class="chat_img blue male3"></span>
-    <span class="chat_img pink male4"></span>
     <span class="chat_img blue female1"></span>
     <span class="chat_img pink female2"></span>
     <span class="chat_img blue female3"></span>
-    <span class="chat_img pink female4"></span>
+    <span class="chat_img blue">재민</span>
+    <span class="chat_img pink">민수</span>
+    <span class="chat_img gren">수호</span>
+    <span class="chat_img yell">효림</span>
+    <span class="chat_img viol">은서</span>
+    <span class="chat_img oran">정아</span>
+    <span class="chat_img pink male6"></span>
+    <span class="chat_img pink female6"></span>
 </div>
 
 <h2 id="chating">말풍선 <small></small></h2>
@@ -201,13 +229,16 @@
             <span class="bullet circle">1</span>
             촛불집회는 사회 문제 해결을 평화롭게 요구하는 방법이야.
         </div>
-
+        <h3>말풍선 꼬리 오른쪽</h3>
+        <div class="bubble right">
+            <span class="bullet circle">1</span>
+            촛불집회는 사회 문제 해결을 평화롭게 요구하는 방법이야.
+        </div>
         <h3>말풍선 꼬리 위</h3>
         <div class="bubble top">
             <span class="bullet circle">1</span>
             촛불집회는 사회 문제 해결을 평화롭게 요구하는 방법이야.
         </div>
-
         <h3>말풍선 꼬리 아래</h3>
         <div class="bubble under">
             <span class="bullet circle">1</span>
@@ -250,6 +281,24 @@
                 <div class="bubble">
                     <span class="bullet circle">2</span>
                     촛불집회는 사회 문제 해결을 평화롭게 요구하는 방법이야.
+                </div> 
+            </li>
+        </ul>
+    </div>
+
+    <div class="q_layout">
+        <h3>프로필 텍스트로 쓸때</h3>
+        <ul class="chatBox">
+            <li class="chat_item">
+                <span class="chat_img pink">사냥꾼</span>
+                <div class="bubble">
+                    도대체 누구 말이 진실인가?
+                </div> 
+            </li>
+            <li class="chat_item">
+                <span class="chat_img blue">빨간풍선</span>
+                <div class="bubble">
+                    민서영이 흑설 공주에게 일방적으로 당한 것 같다. 지금이라도 민서영이 자기 입장을 밝혀 주어 속 시원하다.
                 </div> 
             </li>
         </ul>
@@ -345,7 +394,6 @@
         </div>
     </div>
 </div>
-
 
 <h2 id="bgStyle">배경타입 <small>기능에 상관없이 사용할 수 있도록</small></h2>
 <div class="stwrap">
@@ -479,7 +527,7 @@
                     <div class="txt_group">
                         <strong class="sub_tt"><스모그가 덮친 도시와 지구촌 환경문제></strong>
                         <div class="txt_box">
-                            <img src="../images/q_common/news_eximg1.png">
+                            <img src="/images/q_common/news_eximg1.png">
                             <p>스모그는 원래 연기(smoke)와 안개(fog)가 합쳐져  만들어진 말이지만, 일반적으로 자동차 등이 내뿜는 매연으로 인해 오염된 공기층을 지칭하는 것으로서 성분이 다양하다. 이 외에도 지구촌 곳곳에 여러 환경문제가 발생하고 있고 해결을 위한 노력도 계속되고 있다. </p>
                         </div>
                     </div>
@@ -716,7 +764,7 @@
                                     <label for="hsradioexamT12_1_1">
                                         <div class="cardBox photo flex-col">
                                             <div class="photoBox">
-                                                <img src="../images/q_common/cardbox_eximg3.png">
+                                                <img src="/images/q_common/cardbox_eximg3.png">
                                             </div>
                                             <p><span class="bullet circle">1</span>&nbsp;서명운동</p>
                                         </div>
@@ -727,7 +775,7 @@
                                     <label for="hsradioexamT12_1_2">
                                         <div class="cardBox photo flex-col">
                                             <div class="photoBox">
-                                                <img src="../images/q_common/cardbox_eximg3.png">
+                                                <img src="/images/q_common/cardbox_eximg3.png">
                                             </div>
                                             <p><span class="bullet circle">1</span>&nbsp;서명운동</p>
                                         </div>
@@ -738,7 +786,7 @@
                                     <label for="hsradioexamT12_1_3">
                                         <div class="cardBox photo flex-col">
                                             <div class="photoBox">
-                                                <img src="../images/q_common/cardbox_eximg3.png">
+                                                <img src="/images/q_common/cardbox_eximg3.png">
                                             </div>
                                             <p><span class="bullet circle">1</span>&nbsp;서명운동</p>
                                         </div>
@@ -749,7 +797,7 @@
                                     <label for="hsradioexamT12_1_4">
                                         <div class="cardBox photo flex-col">
                                             <div class="photoBox">
-                                                <img src="../images/q_common/cardbox_eximg3.png">
+                                                <img src="/images/q_common/cardbox_eximg3.png">
                                             </div>
                                             <p><span class="bullet circle">1</span>&nbsp;서명운동</p>
                                         </div>
@@ -760,7 +808,7 @@
                                     <label for="hsradioexamT12_1_5">
                                         <div class="cardBox photo flex-col">
                                             <div class="photoBox">
-                                                <img src="../images/q_common/cardbox_eximg3.png">
+                                                <img src="/images/q_common/cardbox_eximg3.png">
                                             </div>
                                             <p><span class="bullet circle">1</span>&nbsp;서명운동</p>
                                         </div>
@@ -779,7 +827,7 @@
         <div class="a_wrap flex-col fx_align_c gap40">
             <div class="bgBox sns">
                 <div class="bgCont">
-                    <div class="sns_photo"><img src="../images/q_common/sns_eximg1.png"></div>
+                    <div class="sns_photo"><img src="/images/q_common/sns_eximg1.png"></div>
                     <div class="txt_group">
                         <p>오늘은 영덕에 있는 신돌석 장군님의 생가에 다녀왔습니다. 그곳에서 신돌석 장군님의 초상화도 볼 수 있었습니다.</p>
                     </div>
@@ -821,7 +869,7 @@
                             <label for="posterexm1">
                                 <div class="cardBox photo magazine flex-col">
                                     <div class="photoBox">
-                                        <img src="../images/q_common/poster_eximg1.png">
+                                        <img src="/images/q_common/poster_eximg1.png">
                                     </div>
                                     <p><span class="bullet circle">1</span>&nbsp;논갈이</p>
                                 </div>
@@ -832,7 +880,7 @@
                             <label for="posterexm2">
                                 <div class="cardBox photo magazine flex-col">
                                     <div class="photoBox">
-                                        <img src="../images/q_common/poster_eximg2.png">
+                                        <img src="/images/q_common/poster_eximg2.png">
                                     </div>
                                     <p><span class="bullet circle">2</span>&nbsp;초충도</p>
                                 </div>
@@ -843,7 +891,7 @@
                             <label for="posterexm3">
                                 <div class="cardBox photo magazine flex-col">
                                     <div class="photoBox">
-                                        <img src="../images/q_common/poster_eximg3.png">
+                                        <img src="/images/q_common/poster_eximg3.png">
                                     </div>
                                     <p><span class="bullet circle">3</span>&nbsp;행주대첩도</p>
                                 </div>
@@ -854,7 +902,7 @@
                             <label for="posterexm4">
                                 <div class="cardBox photo magazine flex-col">
                                     <div class="photoBox">
-                                        <img src="../images/q_common/poster_eximg4.png">
+                                        <img src="/images/q_common/poster_eximg4.png">
                                     </div>
                                     <p><span class="bullet circle">4</span>&nbsp;정약용 초상화</p>
                                 </div>
@@ -865,13 +913,37 @@
                             <label for="posterexm5">
                                 <div class="cardBox photo magazine flex-col">
                                     <div class="photoBox">
-                                        <img src="../images/q_common/poster_eximg5.png">
+                                        <img src="/images/q_common/poster_eximg5.png">
                                     </div>
                                     <p><span class="bullet circle">5</span>&nbsp;수산리 고분 벽화</p>
                                 </div>
                             </label>
                         </li>
                     </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="q_layout">
+        <h3 id="bgStyle11">양피지, 종이 <small>(두루마리를 사용해야할때도 이 배경을 사용)</small></h3>
+        <div class="a_wrap flex-col fx_align_c gap40">
+            <div class="bgBox paper">
+                <div class="bgCont">
+                    <div class="txt_group">
+                        <strong class="sub_tt"><상소문></strong>
+                    </div>
+                    <div class="seletWrap">
+                        조선의 백성은 대부분 농민입니다. 지금 농촌의 가장 큰 문제는 자기 땅에서 농사를 짓는 백성들이 거의 없다는 것입니다. 따라서 백성들의 생활을 안정시키기 위해서는
+                        <select class="select">
+                            <option selected="">선택하세요.</option>
+                            <option value="">토지 제도를 개혁해야 합니다.</option>
+                            <option value="">우리의 역사를 연구해야 합니다.</option>
+                            <option value="">청의 문물을 받아들여야 합니다.</option>
+                            <option value="">상업과 공업을 발전시켜야 합니다.</option>
+                            <option value="">조선의 지도책을 만들어야 합니다.</option>
+                      </select>
+                    </div>
                 </div>
             </div>
         </div>
@@ -887,14 +959,14 @@
 
     <div class="cardBox photo">
         <div class="photoBox">
-            <img src="../images/q_common/cardbox_eximg1.png">
+            <img src="/images/q_common/cardbox_eximg1.png">
         </div>
         <p>기름 13L로 221㎞를 갈 수 있는 가 자동차 </p>
     </div>
 
     <div class="cardBox photo flex-col">
         <div class="photoBox">
-            <img src="../images/q_common/cardbox_eximg3.png">
+            <img src="/images/q_common/cardbox_eximg3.png">
         </div>
         <p><span class="bullet circle">1</span>&nbsp;전기 제품 사용하지 않을 때</p>
     </div>
@@ -902,7 +974,7 @@
     <div class="cardBox magazine flex-col">
         <p><span class="bullet circle">1</span>&nbsp;우리나라 최남단 ‘독도’ 방문기</p>
         <div class="inner">
-            <img src="../images/q_common/cardbox_eximg5.png">
+            <img src="/images/q_common/cardbox_eximg5.png">
             <p>우리학교 독도사랑 동아리 대원들이 OO일에 독도를 다녀왔다. 우리나라 최남단 ‘독도’ 방문을 위해 우리학교 독도사랑 대원들은</p>
         </div>
     </div>
@@ -1079,8 +1151,8 @@
             <thead>
                 <tr>
                     <th scope="col"></th>
-                    <th scope="col"><span class="bullet blue">ㄱ</span></th>
-                    <th scope="col"><span class="bullet blue">ㄴ</span></th>
+                    <th scope="col"><span class="bullet tit blue">ㄱ</span></th>
+                    <th scope="col"><span class="bullet tit blue">ㄴ</span></th>
                 </tr>
             </thead>
             <tbody>
@@ -1125,9 +1197,9 @@
             <thead>
                 <tr>
                     <th scope="col"></th>
-                    <th scope="col"><span class="bullet blue">ㄱ</span></th>
-                    <th scope="col"><span class="bullet blue">ㄴ</span></th>
-                    <th scope="col"><span class="bullet blue">ㄷ</span></th>
+                    <th scope="col"><span class="bullet tit blue">ㄱ</span></th>
+                    <th scope="col"><span class="bullet tit blue">ㄴ</span></th>
+                    <th scope="col"><span class="bullet tit blue">ㄷ</span></th>
                 </tr>
             </thead>
             <tbody>
@@ -1188,7 +1260,7 @@
             <label for="radioexamT5_1" class="cardWrap">
                 <div class="cardBox photo flex-col">
                     <div class="photoBox">
-                        <img src="../images/q_common/cardbox_eximg3.png">
+                        <img src="/images/q_common/cardbox_eximg3.png">
                     </div>
                     <p><span class="bullet circle">1</span>&nbsp;전기 제품 사용하지 않을 때</p>
                 </div>
@@ -1199,7 +1271,7 @@
             <label for="radioexamT5_2" class="cardWrap">
                 <div class="cardBox photo flex-col">
                     <div class="photoBox">
-                        <img src="../images/q_common/cardbox_eximg3.png">
+                        <img src="/images/q_common/cardbox_eximg3.png">
                     </div>
                     <p><span class="bullet circle">2</span>&nbsp;전기 제품 사용하지 않을 때</p>
                 </div>
@@ -1210,7 +1282,7 @@
             <label for="radioexamT5_3" class="cardWrap">
                 <div class="cardBox photo flex-col">
                     <div class="photoBox">
-                        <img src="../images/q_common/cardbox_eximg3.png">
+                        <img src="/images/q_common/cardbox_eximg3.png">
                     </div>
                     <p><span class="bullet circle">3</span>&nbsp;전기 제품 사용하지 않을 때</p>
                 </div>
@@ -1221,7 +1293,7 @@
             <label for="radioexamT5_4" class="cardWrap">
                 <div class="cardBox photo flex-col">
                     <div class="photoBox">
-                        <img src="../images/q_common/cardbox_eximg3.png">
+                        <img src="/images/q_common/cardbox_eximg3.png">
                     </div>
                     <p><span class="bullet circle">4</span>&nbsp;전기 제품 사용하지 않을 때</p>
                 </div>
@@ -1232,7 +1304,7 @@
             <label for="radioexamT5_5" class="cardWrap">
                 <div class="cardBox photo flex-col">
                     <div class="photoBox">
-                        <img src="../images/q_common/cardbox_eximg3.png">
+                        <img src="/images/q_common/cardbox_eximg3.png">
                     </div>
                     <p><span class="bullet circle">5</span>&nbsp;전기 제품 사용하지 않을 때</p>
                 </div>
@@ -1507,9 +1579,9 @@
 
 <h2 id="radioWrapT9">라디오 type9 <small>대화형</small></h2>
 <div class="stwrap">
-    <div class="bgBox phone">
-        <div class="bgCont">
-            <div class="radioWrap type9">
+    <div class="radioWrap type9">
+        <div class="bgBox phone">
+            <div class="bgCont">
                 <ul class="chatBox type2">
                     <li class="chat_item">
                         <span class="chat_img blue male1"></span>
@@ -1517,7 +1589,7 @@
                         <label for="radioexamT9_1">
                             <div class="bubble">
                                 <span class="bullet circle">1</span>
-                               법은 지키지 않으면 처벌받아.
+                            법은 지키지 않으면 처벌받아.
                             </div> 
                         </label>
                     </li>
@@ -1564,6 +1636,29 @@
                 </ul>
             </div>
         </div>
+    </div>
+</div>
+
+<h2 id="radioWrapT10">라디오 type10 <small>시 형태</small></h2>
+<div class="stwrap">
+    <div class="radioWrap type10 poemBox">
+        <div class="txt_group">
+            <strong class="sub_tt">소나기 반성문</strong>
+            <span class="txtRight">송찬호</span>
+        </div>
+        <p class="poemTxt">
+            <input type="radio" name="radioexamT10" id="radioexamT10_1">
+            <label for="radioexamT10_1"><u>㉠할머니 아픈 허리는 </u></label>
+            <input type="radio" name="radioexamT10" id="radioexamT10_2">
+            <label for="radioexamT10_2"><u>㉡왜 밟아야 시원할까요?</u></label><br>
+            <input type="radio" name="radioexamT10" id="radioexamT10_3">
+            <label for="radioexamT10_3"><u>㉢아이쿠! 아이쿠!</u></label>&nbsp;하면서도&nbsp;
+            <input type="radio" name="radioexamT10" id="radioexamT10_4">
+            <label for="radioexamT10_4"><u>㉣“꼭꼭 밟아라.”</u></label>&nbsp;하십니다.<br>
+            그래도 나는 겁이 나&nbsp;
+            <input type="radio" name="radioexamT10" id="radioexamT10_5">
+            <label for="radioexamT10_5"><u>㉤자근자근 밟습니다.</u></label>
+        </p>
     </div>
 </div>
 
@@ -1621,28 +1716,28 @@
         <li>
             <input type="checkbox" name="checkexamT3" id="checkexamT3_1">
             <label for="checkexamT3_1">
-                <img src="../images/q_common/checkBox_eximg1.png">
+                <img src="/images/q_common/checkBox_eximg1.png">
                 <span>사용하지 않는 전등을 항상 켜두면 전기를 절약할 수 있다.</span>
             </label>
         </li>
         <li>
             <input type="checkbox" name="checkexamT3" id="checkexamT3_2">
             <label for="checkexamT3_2">
-                <img src="../images/q_common/checkBox_eximg1.png">
+                <img src="/images/q_common/checkBox_eximg1.png">
                 <span>사용하지 않는 전등을 항상 켜두면 전기를 절약할 수 있다.</span>
             </label>
         </li>
         <li>
             <input type="checkbox" name="checkexamT3" id="checkexamT3_3">
             <label for="checkexamT3_3">
-                <img src="../images/q_common/checkBox_eximg1.png">
+                <img src="/images/q_common/checkBox_eximg1.png">
                 <span>사용하지 않는 전등을 항상 켜두면 전기를 절약할 수 있다.</span>
             </label>
         </li>
         <li>
             <input type="checkbox" name="checkexamT3" id="checkexamT3_4">
             <label for="checkexamT3_4">
-                <img src="../images/q_common/checkBox_eximg1.png">
+                <img src="/images/q_common/checkBox_eximg1.png">
                 <span>사용하지 않는 전등을 항상 켜두면 전기를 절약할 수 있다.</span>
             </label>
         </li>
@@ -1936,9 +2031,9 @@
 
 <h2 id="checkWrapT8">체크박스 type8 <small>핸드폰 + 대화형</small></h2>
 <div class="stwrap">
-    <div class="bgBox phone">
-        <div class="bgCont">
-            <div class="checkWrap type8">
+    <div class="checkWrap type8">
+        <div class="bgBox phone">
+            <div class="bgCont">
                 <ul class="chatBox type2">
                     <li class="chat_item">
                         <span class="chat_img blue male1"></span>
@@ -1946,7 +2041,7 @@
                         <label for="checkexamT8_1">
                             <div class="bubble">
                                 <span class="bullet circle">1</span>
-                               국토의 영역은 영토, 영해 두 가지로 이루어져 있어.
+                                국토의 영역은 영토, 영해 두 가지로 이루어져 있어.
                             </div> 
                         </label>
                     </li>
@@ -2047,8 +2142,8 @@
             <thead>
                 <tr>
                     <th scope="col"></th>
-                    <th scope="col"><span class="bullet blue">주장</span></th>
-                    <th scope="col"><span class="bullet blue">근거</span></th>
+                    <th scope="col"><span class="bullet tit blue">주장</span></th>
+                    <th scope="col"><span class="bullet tit blue">근거</span></th>
                 </tr>
             </thead>
             <tbody>
@@ -2094,6 +2189,29 @@
                 </tr>
             </tbody>
         </table>
+    </div>
+</div>
+
+<h2 id="checkWrapT10">체크박스 type10 <small>시 형태</small></h2>
+<div class="stwrap">
+    <div class="checkWrap type10 poemBox">
+        <div class="txt_group">
+            <strong class="sub_tt">소나기 반성문</strong>
+            <span class="txtRight">송찬호</span>
+        </div>
+        <p class="poemTxt">
+            <input type="checkbox" name="checkexamT10" id="checkexamT10_1">
+            <label for="checkexamT10_1"><u>㉠할머니 아픈 허리는 </u></label>
+            <input type="checkbox" name="checkexamT10" id="checkexamT10_2">
+            <label for="checkexamT10_2"><u>㉡왜 밟아야 시원할까요?</u></label><br>
+            <input type="checkbox" name="checkexamT10" id="checkexamT10_3">
+            <label for="checkexamT10_3"><u>㉢아이쿠! 아이쿠!</u></label>&nbsp;하면서도&nbsp;
+            <input type="checkbox" name="checkexamT10" id="checkexamT10_4">
+            <label for="checkexamT10_4"><u>㉣“꼭꼭 밟아라.”</u></label>&nbsp;하십니다.<br>
+            그래도 나는 겁이 나&nbsp;
+            <input type="checkbox" name="checkexamT10" id="checkexamT10_5">
+            <label for="checkexamT10_5"><u>㉤자근자근 밟습니다.</u></label>
+        </p>
     </div>
 </div>
 
@@ -2151,6 +2269,18 @@
             <li class="numcard_td"><input type="text" class="inputBox sm"></li>
             <li class="numcard_td"><input type="text" class="inputBox sm"></li>
         </ul>
+    </div>
+    <div class="stwrap_inner" style="flex-direction:column;">
+        <span class="numcard_arr horizon plus"></span>
+        <span class="numcard_arr horizon minus"></span>
+        <span class="numcard_arr horizon obelus"></span>
+        <span class="numcard_arr horizon gobhagi"></span>
+    </div>
+    <div class="stwrap_inner">
+        <span class="numcard_arr vertic plus"></span>
+        <span class="numcard_arr vertic minus"></span>
+        <span class="numcard_arr vertic obelus"></span>
+        <span class="numcard_arr vertic gobhagi"></span>
     </div>
 </div>
 
@@ -2229,6 +2359,77 @@
     </ul>
 </div>
 
+<h2 id="inputWrapT7">답답형 type7 <small>문장형</small></h2>
+<div class="stwrap">
+    <div class="inputWrap type7">
+        <input type="text" class="inputBox big">
+        운동은 사이버 공간에서 악의적인 댓글(악플) 때문에 고통받는 사람들에게 용기와 희망을 주는 댓글을 먼저 달아 주자는 운동입니다. 이 운동은 근거 없는 악의적인 댓글이 사람들에게 얼마나 큰 고통과 피해를 주는지 깨닫게 하고 아름다운 인터넷 문화, 아름다운 사회를 가꾸어 나가는 것이 목적입니다. 
+        <br>
+        <input type="text" class="inputBox big">
+        운동은 생명을 소중하게 생각하는 생명 운동인 동시에 바르고 아름다운 언어를 사용해 생각과 행동을 바꾸자는 사이버 공간에서의 정신 문화 운동입니다. 
+    </div>
+</div>
+
+<h2 id="inputWrapT8">답답형 type8 <small>원형 input, 수학에서 사용</small></h2>
+<div class="stwrap">
+    <div class="inputWrap type8">
+       <div>1♣9</div><input type="text" class="inputBox circle"><div>7♣4</div>
+    </div>
+</div>
+
+<h2 id="inputWrapT9">답답형 type9 <small>그룹형</small></h2>
+<div class="stwrap">
+    <ul class="inputWrap type9">
+       <li>
+            <span class="bullet circle">1</span>
+            <img src="../images/q_common/intpu_eximg1.png">
+            <span class="bullet tit">쓰기</span>
+            <input type="text" class="inputBox md">
+            <span class="bullet tit">읽기</span>
+            <input type="text" class="inputBox md">
+       </li>
+       <li>
+            <span class="bullet circle">2</span>
+            <img src="../images/q_common/intpu_eximg2.png">
+            <span class="bullet tit">쓰기</span>
+            <input type="text" class="inputBox md">
+            <span class="bullet tit">읽기</span>
+            <input type="text" class="inputBox md">
+        </li>
+    </ul>
+</div>
+
+<h2 id="inputWrapT10">답답형 type10 <small>리스트</small></h2>
+<div class="stwrap">
+    <ul class="inputWrap type10">
+        <li>
+            <span class="nametag sm">소희</span>
+            <p>2019년 독도 방문객 수는 일의 자리에서 버림하여 122730명이야.</p>
+        </li>
+        <li>
+            <span class="nametag sm">준수</span>
+            <p>일의 자리에서 반올림하면?</p>
+        </li>
+        <li>
+            <span class="nametag sm">소희</span>
+            <p>그래도 122730명이야.</p>
+        </li>
+        <li>
+            <span class="nametag sm">준수</span>
+            <p>아하! 혹시 일의 자리 수가 3보다 커?</p>
+        </li>
+        <li>
+            <span class="nametag sm">소희</span>
+            <p>응.</p>
+        </li>
+        <li>
+            <span class="nametag sm">준수</span>
+            <p>알았다. 2019년 독도 방문객 수는 정확하게 <input type="text" class="inputBox md">명이구나.</p>
+        </li>
+    </ul>
+</div>
+
+
 <h2 id="hsradioWrap">핫스폿</h2>
 <div class="stwrap">
     <div class="hsradioWrap">
@@ -2248,19 +2449,19 @@
         <li>
             <input type="radio" name="hsexam2" id="example3">
             <label for="example3">수아</label>
-            <img src="../images/q_common/hotspot_eximg1.png">
+            <img src="/images/q_common/hotspot_eximg1.png">
             <span>내가 좋아하는 음식과 싫어하는 음식을 기준으로 분류했어.</span>
         </li>
         <li>
             <input type="radio" name="hsexam2" id="example4">
             <label for="example4">지나</label>
-            <img src="../images/q_common/hotspot_eximg2.png">
+            <img src="/images/q_common/hotspot_eximg2.png">
             <span>쓰레기 종류를 기준으로 캔류, 병류, 비닐류, 종이류로 분류했어.</span>
         </li>
         <li>
             <input type="radio" name="hsexam2" id="example5">
             <label for="example5">휘민</label>
-            <img src="../images/q_common/hotspot_eximg3.png">
+            <img src="/images/q_common/hotspot_eximg3.png">
             <span>쓰레기 모양을 기준으로 둥근 것과 네모난 것으로 분류했어.</span>
         </li>
     </ul>
@@ -2274,7 +2475,7 @@
             <label for="hsradioexamT3_1">
                 <div class="cardBox photo">
                     <div class="photoBox">
-                        <img src="../images/q_common/cardbox_eximg1.png">
+                        <img src="/images/q_common/cardbox_eximg1.png">
                     </div>
                     <p>기름 13L로 221㎞를 갈 수 있는 가 자동차</p>
                 </div>
@@ -2285,7 +2486,7 @@
             <label for="hsradioexamT3_2">
                 <div class="cardBox photo">
                     <div class="photoBox">
-                        <img src="../images/q_common/hotspot_eximg5.png">
+                        <img src="/images/q_common/hotspot_eximg5.png">
                     </div>
                     <p>기름 18L로 342㎞를 갈 수 있는 나 자동차</p>
                 </div>
@@ -2296,7 +2497,7 @@
             <label for="hsradioexamT3_3">
                 <div class="cardBox photo">
                     <div class="photoBox">
-                        <img src="../images/q_common/hotspot_eximg5.png">
+                        <img src="/images/q_common/hotspot_eximg5.png">
                     </div>
                     <p>기름 13L로 221㎞를 갈 수 있는 가 자동차 </p>
                 </div>
@@ -2347,7 +2548,7 @@
 
 <h2 id="hsradioWrapT6">핫스폿 type6 <small>이미지 위에 말풍선, 카드박스 일때 사용합니다. 버튼일때는 type13</small></h2>
 <div class="stwrap">
-    <div class="hsradioWrap type6" id="hsradioexam6">
+    <div class="hsradioWrap type6">
         <div class="btn_group">
             <div class="btn_item num1" style="top:16%;left:14%;">
                 <input type="radio" name="hsradioexamT6" id="hsradioexamT6_1">
@@ -2390,13 +2591,13 @@
                 </label>
             </div>
         </div>
-        <img src="../images/q_common/hstype6_eximg.png">
+        <img src="/images/q_common/hstype6_eximg.png">
     </div>
 </div>
 
 <h2 id="hsradioWrapT7">핫스폿 type7 <small>시 형태</small></h2>
 <div class="stwrap">
-    <div class="hsradioWrap type6 poemBox">
+    <div class="hsradioWrap type7 poemBox">
         <div class="txt_group">
             <strong class="sub_tt">소나기 반성문</strong>
             <span class="txtRight">송찬호</span>
@@ -2520,56 +2721,64 @@
 <h2 id="hsradioWrapT9">핫스폿 type9 <small>대화형</small></h2>
 <div class="stwrap">
     <div class="hsradioWrap type9">
-        <ul class="chatBox">
-            <li class="chat_item">
-                <span class="chat_img blue male1"></span>
-                <input type="radio" name="hsradioexamT9" id="hsradioexamT9_1">
-                <label for="hsradioexamT9_1">
-                    <div class="bubble">
-                        <span class="bullet circle">1</span>
-                        촛불집회는 사회 문제 해결을 평화롭게 요구하는 방법이야.
-                    </div> 
-                </label>
-            </li>
-            <li class="chat_item">
-                <span class="chat_img pink female1"></span>
-                <input type="radio" name="hsradioexamT9" id="hsradioexamT9_2">
-                <label for="hsradioexamT9_2">
-                    <div class="bubble">
-                        <span class="bullet circle">1</span>
-                        촛불집회는 사회 문제 해결을 평화롭게 요구하는 방법이야.
-                    </div> 
-                </label>
-            </li>
-        </ul>
+        <div class="bgBox phone">
+            <div class="bgCont">
+                <ul class="chatBox">
+                    <li class="chat_item">
+                        <span class="chat_img blue male1"></span>
+                        <input type="radio" name="hsradioexamT9" id="hsradioexamT9_1">
+                        <label for="hsradioexamT9_1">
+                            <div class="bubble">
+                                <span class="bullet circle">1</span>
+                                촛불집회는 사회 문제 해결을 평화롭게 요구하는 방법이야.
+                            </div> 
+                        </label>
+                    </li>
+                    <li class="chat_item">
+                        <span class="chat_img pink female1"></span>
+                        <input type="radio" name="hsradioexamT9" id="hsradioexamT9_2">
+                        <label for="hsradioexamT9_2">
+                            <div class="bubble">
+                                <span class="bullet circle">1</span>
+                                촛불집회는 사회 문제 해결을 평화롭게 요구하는 방법이야.
+                            </div> 
+                        </label>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
 </div>
 
 <h2>핫스폿 type9 <small>대화형 좌우</small></h2>
 <div class="stwrap">
     <div class="hsradioWrap type9">
-        <ul class="chatBox type2">
-            <li class="chat_item left">
-                <span class="chat_img blue male1"></span>
-                <input type="radio" name="hsradioexamT9_1" id="hsradioexamT9_1_1">
-                <label for="hsradioexamT9_1_1">
-                    <div class="bubble">
-                        <span class="bullet circle">1</span>
-                        촛불집회는 사회 문제 해결을 평화롭게 요구하는 방법이야.
-                    </div> 
-                </label>
-            </li>
-            <li class="chat_item right">
-                <span class="chat_img pink female1"></span>
-                <input type="radio" name="hsradioexamT9_1" id="hsradioexamT9_1_2">
-                <label for="hsradioexamT9_1_2">
-                    <div class="bubble">
-                        <span class="bullet circle">1</span>
-                        촛불집회는 사회 문제 해결을 평화롭게 요구하는 방법이야.
-                    </div> 
-                </label>
-            </li>
-        </ul>
+        <div class="bgBox phone">
+            <div class="bgCont">
+                <ul class="chatBox type2">
+                    <li class="chat_item left">
+                        <span class="chat_img blue male1"></span>
+                        <input type="radio" name="hsradioexamT9_1" id="hsradioexamT9_1_1">
+                        <label for="hsradioexamT9_1_1">
+                            <div class="bubble">
+                                <span class="bullet circle">1</span>
+                                촛불집회는 사회 문제 해결을 평화롭게 요구하는 방법이야.
+                            </div> 
+                        </label>
+                    </li>
+                    <li class="chat_item right">
+                        <span class="chat_img pink female1"></span>
+                        <input type="radio" name="hsradioexamT9_1" id="hsradioexamT9_1_2">
+                        <label for="hsradioexamT9_1_2">
+                            <div class="bubble">
+                                <span class="bullet circle">1</span>
+                                촛불집회는 사회 문제 해결을 평화롭게 요구하는 방법이야.
+                            </div> 
+                        </label>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
 </div>
 
@@ -2661,7 +2870,7 @@
                     <label for="hsradioexamT12_1">
                         <div class="cardBox photo flex-col">
                             <div class="photoBox">
-                                <img src="../images/q_common/cardbox_eximg3.png">
+                                <img src="/images/q_common/cardbox_eximg3.png">
                             </div>
                             <p><span class="bullet circle">1</span>&nbsp;서명운동</p>
                         </div>
@@ -2672,7 +2881,7 @@
                     <label for="hsradioexamT12_2">
                         <div class="cardBox photo flex-col">
                             <div class="photoBox">
-                                <img src="../images/q_common/cardbox_eximg3.png">
+                                <img src="/images/q_common/cardbox_eximg3.png">
                             </div>
                             <p><span class="bullet circle">1</span>&nbsp;서명운동</p>
                         </div>
@@ -2683,7 +2892,7 @@
                     <label for="hsradioexamT12_3">
                         <div class="cardBox photo flex-col">
                             <div class="photoBox">
-                                <img src="../images/q_common/cardbox_eximg3.png">
+                                <img src="/images/q_common/cardbox_eximg3.png">
                             </div>
                             <p><span class="bullet circle">1</span>&nbsp;서명운동</p>
                         </div>
@@ -2694,7 +2903,7 @@
                     <label for="hsradioexamT12_4">
                         <div class="cardBox photo flex-col">
                             <div class="photoBox">
-                                <img src="../images/q_common/cardbox_eximg3.png">
+                                <img src="/images/q_common/cardbox_eximg3.png">
                             </div>
                             <p><span class="bullet circle">1</span>&nbsp;서명운동</p>
                         </div>
@@ -2705,7 +2914,7 @@
                     <label for="hsradioexamT12_5">
                         <div class="cardBox photo flex-col">
                             <div class="photoBox">
-                                <img src="../images/q_common/cardbox_eximg3.png">
+                                <img src="/images/q_common/cardbox_eximg3.png">
                             </div>
                             <p><span class="bullet circle">1</span>&nbsp;서명운동</p>
                         </div>
@@ -2741,7 +2950,7 @@
                 <label for="hsradioexamT13_5">5번</label>
             </div>
         </div>
-        <img src="../images/q_common/hstype13_eximg.png">
+        <img src="/images/q_common/hstype13_eximg.png">
     </div>
 </div>
 
@@ -2831,12 +3040,264 @@
     </div>
 </div>
 
+<h2 id="hsradioWrapT16">핫스폿 type16 <small>이미지 위에 투명 버튼</small></h2>
+<div class="stwrap">
+    <div class="hsradioWrap type16">
+        <div class="btn_group">
+            <div class="btn_item num1" style="left:15%;bottom:9%;width:6rem;height:3.5rem;">
+                <input type="radio" name="hsradioexamT16" id="hsradioexamT16_1">
+                <label for="hsradioexamT16_1">1번</label>
+            </div>
+            <div class="btn_item num2" style="left:36%;bottom:9%;width:6rem;height:3.5rem;">
+                <input type="radio" name="hsradioexamT16" id="hsradioexamT16_2">
+                <label for="hsradioexamT16_2">2번</label>
+            </div>
+            <div class="btn_item num3" style="left:57%;bottom:9%;width:6rem;height:3.5rem;">
+                <input type="radio" name="hsradioexamT16" id="hsradioexamT16_3">
+                <label for="hsradioexamT16_3">3번</label>
+            </div>
+            <div class="btn_item num4" style="left:77%;bottom:9%;width:6rem;height:3.5rem;">
+                <input type="radio" name="hsradioexamT16" id="hsradioexamT16_4">
+                <label for="hsradioexamT16_4">4번</label>
+            </div>
+        </div>
+        <img src="/images/q_common/hstype16_eximg.png">
+    </div>
+</div>
+
+<h2 id="hsradioWrapT17">핫스폿 type17 <small>이미지 위에 다중선택 말풍선</small></h2>
+<div class="stwrap">
+    <div class="hsradioWrap type17">
+        <div class="btn_group">
+            <div class="btn_item num1" style="top:5%;left:0;">
+                <input type="checkbox" name="hsradioexamT17" id="hsradioexamT17_1">
+                <label for="hsradioexamT17_1">
+                    <div class="bubble under">
+                        ① 한 지역의 기후는<br>일 년마다 다르게 나타나
+                    </div> 
+                </label>
+            </div>
+            <div class="btn_item num2" style="top:42%;left:12%;">
+                <input type="checkbox" name="hsradioexamT17" id="hsradioexamT17_2">
+                <label for="hsradioexamT17_2">
+                    <div class="bubble top">
+                        ② 한 지역에서 여러 해에<br>걸쳐 나타나는 평균적인 날씨야
+                    </div> 
+                </label>
+            </div>
+            <div class="btn_item num3" style="top:0;left:35%;">
+                <input type="checkbox" name="hsradioexamT17" id="hsradioexamT17_3">
+                <label for="hsradioexamT17_3">
+                    <div class="bubble under">
+                        ③ 기후는 위도나 지형에 영향을 받아
+                    </div> 
+                </label>
+            </div>
+            <div class="btn_item num4" style="top:42%;left:48%;">
+                <input type="checkbox" name="hsradioexamT17" id="hsradioexamT17_4">
+                <label for="hsradioexamT17_4">
+                    <div class="bubble top">
+                        ④ 사람들의 의식주 생활 모습은 기후에<br>큰 영향을 받지 않아
+                    </div> 
+                </label>
+            </div>
+            <div class="btn_item num5" style="top:60%;left:73%;">
+                <input type="checkbox" name="hsradioexamT17" id="hsradioexamT17_5">
+                <label for="hsradioexamT17_5">
+                    <div class="bubble top">
+                        ⑤ 적도에서 극지방으로 갈수록<br>한대, 냉대, 온대, 열대 기후의<br>순으로 나타나
+                    </div> 
+                </label>
+            </div>
+        </div>
+        <img src="/images/q_common/hstype17_eximg.png">
+    </div>
+</div>
+
+<h2 id="hsradioWrapT18">핫스폿 type18 <small>이미지 위에 다중선택 버튼</small></h2>
+<div class="stwrap">
+    <div class="hsradioWrap type18">
+        <div class="btn_group">
+            <div class="btn_item num1" style="top:12%;left:17%;">
+                <input type="checkbox" name="hsradioexamT18" id="hsradioexamT18_1">
+                <label for="hsradioexamT18_1">1번</label>
+            </div>
+            <div class="btn_item num2" style="top:21%;left:36%;">
+                <input type="checkbox" name="hsradioexamT18" id="hsradioexamT18_2">
+                <label for="hsradioexamT18_2">2번</label>
+            </div>
+            <div class="btn_item num3" style="top:38%;left:13%;">
+                <input type="checkbox" name="hsradioexamT18" id="hsradioexamT18_3">
+                <label for="hsradioexamT18_3">3번</label>
+            </div>
+            <div class="btn_item num4" style="top:18%;left:73%;">
+                <input type="checkbox" name="hsradioexamT18" id="hsradioexamT18_4">
+                <label for="hsradioexamT18_4">4번</label>
+            </div>
+            <div class="btn_item num5" style="top:51%;left:86%;">
+                <input type="checkbox" name="hsradioexamT18" id="hsradioexamT18_5">
+                <label for="hsradioexamT18_5">5번</label>
+            </div>
+        </div>
+        <img src="/images/q_common/hstype13_eximg.png">
+    </div>
+</div>
+
+<h2 id="hsradioWrapT19">핫스폿 type19 <small>o,x 선택</small></h2>
+<div class="stwrap">
+    <div class="hsradioWrap type19">
+        <input type="radio" name="hsradioexamT19" id="hsradioexamT19_1">
+        <label for="hsradioexamT19_1"><img src="../images/q_common/img_o.svg"></label>
+        <input type="radio" name="hsradioexamT19" id="hsradioexamT19_2">
+        <label for="hsradioexamT19_2"><img src="../images/q_common/img_x.svg"></label>
+    </div>
+</div>
+
+<h2 id="hsradioWrapT20">핫스폿 type20 <small>o,x 그룹형</small></h2>
+<div class="stwrap">
+    <div class="hsradioWrap type20">
+        <div>
+            <input type="radio" name="hsradioexamT20_1" id="hsradioexamT20_1">
+            <label for="hsradioexamT20_1"><img src="../images/q_common/img_o.svg"></label>
+            <input type="radio" name="hsradioexamT20_1" id="hsradioexamT20_2">
+            <label for="hsradioexamT20_2"><img src="../images/q_common/img_x.svg"></label>
+        </div>
+        <div>
+            <input type="radio" name="hsradioexamT20_2" id="hsradioexamT20_3">
+            <label for="hsradioexamT20_3"><img src="../images/q_common/img_o.svg"></label>
+            <input type="radio" name="hsradioexamT20_2" id="hsradioexamT20_4">
+            <label for="hsradioexamT20_4"><img src="../images/q_common/img_x.svg"></label>
+        </div>
+    </div>
+</div>
+
+<h2 id="hsradioWrapT21">핫스폿 type21 <small>다중선택 카드형태</small></h2>
+<div class="stwrap">
+    <ul class="hsradioWrap type21">
+        <li>
+            <input type="checkbox" name="hsradioexamT21" id="hsradioexamT21_1">
+            <label for="hsradioexamT21_1">
+                <div class="cardBox photo">
+                    <div class="photoBox">
+                        <img src="/images/q_common/hstype21_eximg1.png">
+                    </div>
+                    <p>I want to be a singer.</p>
+                </div>
+            </label>
+        </li>
+        <li>
+            <input type="checkbox" name="hsradioexamT21" id="hsradioexamT21_2">
+            <label for="hsradioexamT21_2">
+                <div class="cardBox photo">
+                    <div class="photoBox">
+                        <img src="/images/q_common/hstype21_eximg2.png">
+                    </div>
+                    <p>I want to be a soccer player.</p>
+                </div>
+            </label>
+        </li>
+        <li>
+            <input type="checkbox" name="hsradioexamT21" id="hsradioexamT21_3">
+            <label for="hsradioexamT21_3">
+                <div class="cardBox photo">
+                    <div class="photoBox">
+                        <img src="/images/q_common/hstype21_eximg3.png">
+                    </div>
+                    <p>I want to be a painter.</p>
+                </div>
+            </label>
+        </li>
+        <li>
+            <input type="checkbox" name="hsradioexamT21" id="hsradioexamT21_4">
+            <label for="hsradioexamT21_4">
+                <div class="cardBox photo">
+                    <div class="photoBox">
+                        <img src="/images/q_common/hstype21_eximg4.png">
+                    </div>
+                    <p>I want to be a cook.</p>
+                </div>
+            </label>
+        </li>
+    </ul>
+</div>
+
+<h2 id="hsradioWrapT22">핫스폿 type22 <small>리스트 그룹형</small></h2>
+<div class="stwrap">
+    <ul class="hsradioWrap type22">
+        <li>
+            <span>구멍 난 양말을</span>
+            <input type="radio" name="hsradioexamT22_1" id="hsradioexamT22_1">
+            <label for="hsradioexamT22_1">깁다</label>  
+            <input type="radio" name="hsradioexamT22_1" id="hsradioexamT22_2">
+            <label for="hsradioexamT22_2">깊다</label> 
+        </li>
+        <li>
+            <span>생각보다 우물이</span>
+            <input type="radio" name="hsradioexamT22_2" id="hsradioexamT22_3">
+            <label for="hsradioexamT22_3">깁다</label>    
+            <input type="radio" name="hsradioexamT22_2" id="hsradioexamT22_4">
+            <label for="hsradioexamT22_4">깊다</label>   
+        </li>
+    </ul>
+</div>
+
+<h2 id="hsradioWrapT23">핫스폿 type23 <small>다중선택 기본형</small></h2>
+<div class="stwrap">
+    <div class="hsradioWrap type23">
+        <div>
+            <span>가방 수에 따라 국어책의 수와 수학책의 수의 비가</span>
+            <input type="checkbox" name="hsradioexamT23" id="hsradioexamT23_1">
+            <label for="hsradioexamT23_1">변합니다.</label>
+            <input type="checkbox" name="hsradioexamT23" id="hsradioexamT23_2">
+            <label for="hsradioexamT23_2">변하지 않습니다.</label>
+        </div>
+    </div>
+</div>
+
+<h2 id="hsradioWrapT24">핫스폿 type24 <small>다중선택 대화형</small></h2>
+<div class="stwrap">
+    <div class="hsradioWrap type24">
+        <div class="bgBox phone">
+            <div class="bgCont">
+                <ul class="chatBox">
+                    <li class="chat_item">
+                        <span class="chat_img blue male1"></span>
+                        <input type="checkbox" name="hsradioexamT24" id="hsradioexamT24_1">
+                        <label for="hsradioexamT24_1">
+                            <div class="bubble">
+                                <span class="bullet circle">1</span>
+                                촛불집회는 사회 문제 해결을 평화롭게 요구하는 방법이야.
+                            </div> 
+                        </label>
+                    </li>
+                    <li class="chat_item">
+                        <span class="chat_img pink female1"></span>
+                        <input type="checkbox" name="hsradioexamT24" id="hsradioexamT24_2">
+                        <label for="hsradioexamT24_2">
+                            <div class="bubble">
+                                <span class="bullet circle">1</span>
+                                촛불집회는 사회 문제 해결을 평화롭게 요구하는 방법이야.
+                            </div> 
+                        </label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
 <h2 id="txareWrapT1">서술형 <small></small></h2>
 <div class="stwrap">
     <div class="txareWrap">
         <div class="item">
             <strong>요약</strong>
-            <textarea></textarea>
+            <textarea placeholder="답안을 작성하세요."></textarea>
         </div>
     </div>
 </div>
@@ -2846,11 +3307,11 @@
     <div class="txareWrap type2">
         <div class="item">
             <strong>요약</strong>
-            <textarea></textarea>
+            <textarea placeholder="답안을 작성하세요."></textarea>
         </div>
         <div class="item">
             <strong>요약</strong>
-            <textarea></textarea>
+            <textarea placeholder="답안을 작성하세요."></textarea>
         </div>
     </div>
 </div>
@@ -2903,8 +3364,10 @@
 <div class="stwrap">
     <div class="dragWrap">
         <div class="dragBtnBox">
-            <div class="draggable"><img src="../images/q_common/spacing_img.png"></div>
-            <div class="draggable"><img src="../images/q_common/spacing_img2.png"></div>
+            <!-- <div class="draggable"><img src="/images/q_common/spacing_img.png"></div>
+            <div class="draggable"><img src="/images/q_common/spacing_img2.png"></div> -->
+            <div class="draggable">&#x2228;</div>
+            <div class="draggable">&#x2A54;</div>
         </div>
         <div class="dragAnswerBox">
             <div class="dragitem">
@@ -2936,7 +3399,7 @@
                     <div class="draginput" style="width:15%;top:48%;left:57%;"></div>
                     <div class="draginput" style="width:15%;top:68%;left:28%;"></div>
                 </div>
-                <img src="../images/q_common/drage_t2_ex_img2.png">
+                <img src="/images/q_common/drage_t2_ex_img2.png">
             </div>
         </div>
     </div>
@@ -2946,17 +3409,17 @@
 <div class="stwrap">
     <div class="dragWrap type3">
         <div class="dragBtnBox">
-            <div class="draggable"><img src="../images/q_common/img_o.svg"></div>
-            <div class="draggable"><img src="../images/q_common/img_x.svg"></div>
+            <div class="draggable"><img src="/images/q_common/img_o.svg"></div>
+            <div class="draggable"><img src="/images/q_common/img_x.svg"></div>
         </div>
         <div class="dragAnswerBox">
             <div class="dragitem">
                 <span class="caption"><span class="bullet circle">1</span>나는 친구랑 사이좋게 지낸다.</span>
-                <div class="draginput big"><div class="draggable"><img src="../images/q_common/img_x.svg"></div></div>
+                <div class="draginput big"><div class="draggable"><img src="/images/q_common/img_x.svg"></div></div>
             </div>
             <div class="dragitem">
                 <span class="caption"><span class="bullet circle">2</span>나는 다른 사람을 배려하며 말한다.</span>
-                <div class="draginput big"><div class="draggable"><img src="../images/q_common/img_x.svg"></div></div>
+                <div class="draginput big"><div class="draggable"><img src="/images/q_common/img_x.svg"></div></div>
             </div>
             <div class="dragitem">
                 <span class="caption"><span class="bullet circle">3</span>나는 자주 줄임말을 사용한다.</span>
@@ -2974,7 +3437,7 @@
             <div class="hand minute" id="minute-hand">분</div>
             <div class="hand second" id="second-hand">초</div>
             <div class="clockDot"></div>
-            <div class="clock_bg"><img src="../images/q_common/clock_bg_ex.png" onselectstart="return false" ondragstart="return false"></div>
+            <div class="clock_bg"><img src="/images/q_common/clock_bg_ex.png" onselectstart="return false" ondragstart="return false"></div>
         </div>
         <script type="text/javascript" src="/js/clock.js"></script><!--끌어넣기 typy4(시계 돌리기) 스크립트, 컨텐츠 아래에 있어야 작동합니다.-->
     </div>
@@ -3073,7 +3536,7 @@
         </div>
         <div class="dragAnswerBox">
             <div class="dragitem">
-                <span class="bullet">뜻을 더해 주는 말</span>
+                <span class="bullet tit ">뜻을 더해 주는 말</span>
                 <div class="draginput many">
                     <div class="draggable">사냥</div>
                     <div class="draggable">꾼</div>
@@ -3083,7 +3546,7 @@
                 </div>
             </div>
             <div class="dragitem">
-                <span class="bullet">뜻이 있는 낱말</span>
+                <span class="bullet tit ">뜻이 있는 낱말</span>
                 <div class="draginput many">
                     <div class="draggable">사냥</div>
                     <div class="draggable">꾼</div>
@@ -3098,48 +3561,48 @@
     <div class="dragWrap type6">
         <span class="caption">달걀 한 개는 10개, 두 개는 100개를 의미합니다.</span>
         <div class="dragBtnBox">
-            <div class="draggable"><img src="../images/q_common/agg1.png"></div>
-            <div class="draggable"><img src="../images/q_common/agg2.png"></div>
+            <div class="draggable"><img src="/images/q_common/agg1.png"></div>
+            <div class="draggable"><img src="/images/q_common/agg2.png"></div>
         </div>
         <div class="dragAnswerBox">
             <div class="dragitem">
                 <span class="bullet circle">가</span>
                 <div class="draginput many">
-                    <div class="draggable"><img src="../images/q_common/agg2.png"></div>
-                    <div class="draggable"><img src="../images/q_common/agg2.png"></div>
-                    <div class="draggable"><img src="../images/q_common/agg2.png"></div>
-                    <div class="draggable"><img src="../images/q_common/agg1.png"></div>
-                    <div class="draggable"><img src="../images/q_common/agg1.png"></div>
+                    <div class="draggable"><img src="/images/q_common/agg2.png"></div>
+                    <div class="draggable"><img src="/images/q_common/agg2.png"></div>
+                    <div class="draggable"><img src="/images/q_common/agg2.png"></div>
+                    <div class="draggable"><img src="/images/q_common/agg1.png"></div>
+                    <div class="draggable"><img src="/images/q_common/agg1.png"></div>
                 </div>
             </div>
             <div class="dragitem">
                 <span class="bullet circle">나</span>
                 <div class="draginput many">
-                    <div class="draggable"><img src="../images/q_common/agg2.png"></div>
-                    <div class="draggable"><img src="../images/q_common/agg2.png"></div>
-                    <div class="draggable"><img src="../images/q_common/agg2.png"></div>
-                    <div class="draggable"><img src="../images/q_common/agg1.png"></div>
-                    <div class="draggable"><img src="../images/q_common/agg1.png"></div>
+                    <div class="draggable"><img src="/images/q_common/agg2.png"></div>
+                    <div class="draggable"><img src="/images/q_common/agg2.png"></div>
+                    <div class="draggable"><img src="/images/q_common/agg2.png"></div>
+                    <div class="draggable"><img src="/images/q_common/agg1.png"></div>
+                    <div class="draggable"><img src="/images/q_common/agg1.png"></div>
                 </div>
             </div>
             <div class="dragitem">
                 <span class="bullet circle">다</span>
                 <div class="draginput many">
-                    <div class="draggable"><img src="../images/q_common/agg2.png"></div>
-                    <div class="draggable"><img src="../images/q_common/agg2.png"></div>
-                    <div class="draggable"><img src="../images/q_common/agg2.png"></div>
-                    <div class="draggable"><img src="../images/q_common/agg1.png"></div>
-                    <div class="draggable"><img src="../images/q_common/agg1.png"></div>
+                    <div class="draggable"><img src="/images/q_common/agg2.png"></div>
+                    <div class="draggable"><img src="/images/q_common/agg2.png"></div>
+                    <div class="draggable"><img src="/images/q_common/agg2.png"></div>
+                    <div class="draggable"><img src="/images/q_common/agg1.png"></div>
+                    <div class="draggable"><img src="/images/q_common/agg1.png"></div>
                 </div>
             </div>
             <div class="dragitem">
                 <span class="bullet circle">라</span>
                 <div class="draginput many">
-                    <div class="draggable"><img src="../images/q_common/agg2.png"></div>
-                    <div class="draggable"><img src="../images/q_common/agg2.png"></div>
-                    <div class="draggable"><img src="../images/q_common/agg2.png"></div>
-                    <div class="draggable"><img src="../images/q_common/agg1.png"></div>
-                    <div class="draggable"><img src="../images/q_common/agg1.png"></div>
+                    <div class="draggable"><img src="/images/q_common/agg2.png"></div>
+                    <div class="draggable"><img src="/images/q_common/agg2.png"></div>
+                    <div class="draggable"><img src="/images/q_common/agg2.png"></div>
+                    <div class="draggable"><img src="/images/q_common/agg1.png"></div>
+                    <div class="draggable"><img src="/images/q_common/agg1.png"></div>
                 </div>
             </div>
         </div>
@@ -3158,7 +3621,7 @@
         <div class="dragAnswerBox">
             <div class="diagram">
                 <div class="dragitem">
-                    <span class="bullet">우리나라</span>
+                    <span class="bullet tit">우리나라</span>
                     <div class="draginput many">
                         일본의 식민 지배를 받았다.
                         <div class="draggable">분단국가로 남아 현재 휴전국 상태이다.</div>
@@ -3172,7 +3635,7 @@
                     </div>
                 </div>
                 <div class="dragitem">
-                    <span class="bullet">베트남</span>
+                    <span class="bullet tit">베트남</span>
                     <div class="draginput many">
                         프랑스의 식민 지배를 받았다.
                         <div class="draggable">현재 통일 국가를 이루었다.</div>
@@ -3217,23 +3680,23 @@
     </div>
 </div>
 
-<h2 id="dragWrapT10">끌어놓기 type10 <small>문장부호 맞추기</small></h2>
+<h2 id="dragWrapT9">끌어놓기 type9 <small>문장부호 맞추기 // type10 > type9 수정</small></h2>
 <div class="stwrap">
-    <div class="dragWrap type10">
+    <div class="dragWrap type9">
         <div class="dragBtnBox">
-            <div class="draggable"><img src="../images/q_common/drage_t10_ex_btn1.png"></div>
-            <div class="draggable"><img src="../images/q_common/drage_t10_ex_btn2.png"></div>
-            <div class="draggable"><img src="../images/q_common/drage_t10_ex_btn3.png"></div>
-            <div class="draggable"><img src="../images/q_common/drage_t10_ex_btn4.png"></div>
-            <div class="draggable"><img src="../images/q_common/drage_t10_ex_btn5.png"></div>
-            <div class="draggable"><img src="../images/q_common/drage_t10_ex_btn6.png"></div>
-            <div class="draggable"><img src="../images/q_common/drage_t10_ex_btn7.png"></div>
+            <div class="draggable"><img src="/images/q_common/drage_t10_ex_btn1.png"></div>
+            <div class="draggable"><img src="/images/q_common/drage_t10_ex_btn2.png"></div>
+            <div class="draggable"><img src="/images/q_common/drage_t10_ex_btn3.png"></div>
+            <div class="draggable"><img src="/images/q_common/drage_t10_ex_btn4.png"></div>
+            <div class="draggable"><img src="/images/q_common/drage_t10_ex_btn5.png"></div>
+            <div class="draggable"><img src="/images/q_common/drage_t10_ex_btn6.png"></div>
+            <div class="draggable"><img src="/images/q_common/drage_t10_ex_btn7.png"></div>
         </div>
         <div class="dragAnswerBox">
             <div class="dragitem">
-                <span class="caption"><span class="bullet">상황 1</span>방학이 끝나고 친구 시우를 만나서 인사를 나누었다.</span>
+                <span class="caption"><span class="bullet tit ">상황 1</span>방학이 끝나고 친구 시우를 만나서 인사를 나누었다.</span>
                 <ul class="dragmark_group">
-                    <li><div class="draginput"><div class="draggable"><img src="../images/q_common/drage_t10_ex_btn1.png"></div></div></li>
+                    <li><div class="draginput"><div class="draggable"><img src="/images/q_common/drage_t10_ex_btn1.png"></div></div></li>
                     <li>시</li>
                     <li>우</li>
                     <li>야</li>
@@ -3248,7 +3711,7 @@
                 </ul>
             </div>
             <div class="dragitem">
-                <span class="caption"><span class="bullet">상황 2</span>심청전 책을 읽고 마음 속으로 이런 생각이 들었다.</span>
+                <span class="caption"><span class="bullet tit ">상황 2</span>심청전 책을 읽고 마음 속으로 이런 생각이 들었다.</span>
                 <ul class="dragmark_group">
                     <li><div class="draginput"></div></li>
                     <li>심</li>
@@ -3271,9 +3734,9 @@
     </div>
 </div>
 
-<h2 id="dragWrapT11">끌어놓기 type11 <small>핸드폰 + 대화형</small></h2>
+<h2 id="dragWrapT10">끌어놓기 type10 <small>핸드폰 + 대화형 //  type 11 > type10으로 수정</small></h2>
 <div class="stwrap">
-    <div class="dragWrap type11">
+    <div class="dragWrap type10">
         <div class="dragBtnBox">
             <div class="draggable">뭘 그런 걸로 화를 내니? 너 지금 너무 예민한 것 같아.</div>
             <div class="draggable">그런 말을 들었구나. 이번 기회에 살을 빼는 건 어떨까?</div>
@@ -3325,7 +3788,7 @@
     </div>
 </div>
 <div class="stwrap">
-    <div class="dragWrap type11">
+    <div class="dragWrap type10">
         <div class="dragBtnBox">
             <div class="draggable">(_ _*)</div>
             <div class="draggable">^0^</div>
@@ -3393,33 +3856,31 @@
     </div>
 </div>
 
-
-
-<h2 id="dragWrapT12">끌어놓기 type12 <small>카드박스</small></h2>
+<h2 id="dragWrapT11">끌어놓기 type11 <small>카드박스  // type12 > type11로 수정</small></h2>
 <div class="stwrap">
-    <div class="dragWrap type12">
+    <div class="dragWrap type11">
         <div class="dragBtnBox">
             <div class="draggable">
                 <div class="dargcard">
-                    <img src="../images/q_common/drag_t12ex1.png">
+                    <img src="/images/q_common/drag_t12ex1.png">
                     궁궐에서 그림을 그리거나 외국 사신을 맞이하며 통역을 담당하기도 했다.
                 </div>
             </div>
             <div class="draggable">
                 <div class="dargcard">
-                    <img src="../images/q_common/drag_t12ex2.png">
+                    <img src="/images/q_common/drag_t12ex2.png">
                     관리가 되거나 유교의 가르침이 담긴 책을 공부하고 지역의 선비들과 여러 가지 주제로 토론하기도 했다.
                 </div>
             </div>
             <div class="draggable">
                 <div class="dargcard">
-                    <img src="../images/q_common/drag_t12ex3.png">
+                    <img src="/images/q_common/drag_t12ex3.png">
                     나라와 개인의 재산으로 여겨져 양반의 집이나 관공서에서 허드렛일이나 물건을 만드는 일을 하기도 했다.
                 </div>
             </div>
             <div class="draggable">
                 <div class="dargcard">
-                    <img src="../images/q_common/drag_t12ex4.png">
+                    <img src="/images/q_common/drag_t12ex4.png">
                     대부분 농사를 지으며 나라에 큰 공사나 일이 있을 때 불려 가기도 했으며 나라에 세금을 내기도 했다.
                 </div>
             </div>
@@ -3438,7 +3899,7 @@
                         <div class="draginput">
                             <div class="draggable">
                                 <div class="dargcard">
-                                    <img src="../images/q_common/drag_t12ex1.png">
+                                    <img src="/images/q_common/drag_t12ex1.png">
                                     <span>궁궐에서 그림을 그리거나 외국 사신을 맞이하며 통역을 담당하기도 했다.</span>
                                 </div>
                             </div>
@@ -3464,7 +3925,7 @@
 <div class="stwrap">
     <div class="bgBox book">
         <div class="bgCont">
-            <div class="dragWrap type12">
+            <div class="dragWrap type11">
                 <strong class="sub_tt">&lt;기본권 보장 사례&gt;</strong>
                 <div class="dragBtnBox">
                     <div class="draggable">
@@ -3526,6 +3987,35 @@
         </div>
     </div>
 </div>
+
+
+<h2 id="dragWrapT12">끌어놓기 type12 <small>리스트</small></h2>
+<div class="stwrap">
+    <div class="dragWrap type12">
+        <div class="dragBtnBox">
+            <div class="draggable">베껴 쓰기</div>
+            <div class="draggable">읽으면서 기록하기</div>
+            <div class="draggable">여러 번 반복해 읽고 쓰기</div>
+            <div class="draggable">대상과 감정을 상상하며 읽기</div>
+            <div class="draggable">글과 관련된 곳에 직접 가 보기</div>
+        </div>
+        <div class="dragAnswerBox">
+            <div class="dragitem">
+                <span class="caption"><span class="bullet circle">1</span><span>세종 대왕은 같은 책을 백 번 읽고 백 번 쓰면 책 내용을 잊지 않는다고 했다.</span></span>
+                <div class="draginput wp30"></div>
+            </div>
+            <div class="dragitem">
+                <span class="caption"><span class="bullet circle">2</span><span>어린이날을 만든 아동 문학가 방정환은 어린이가 글을 읽은 다음에는 반드시 관련한 곳에 직접 가 봐야 한다고 했다. 글 내용을 오랫동안 기억하려면 직접 겪어 보라고 했다.</span></span>
+                <div class="draginput wp30"></div>
+            </div>
+            <div class="dragitem">
+                <span class="caption"><span class="bullet circle">3</span><span>정약용은 읽다가 생각나는 것이 있으면 바로 적을 수 있어야 한다고 했다. 의심했던 부분에 대한 답을 얻게 되면 즉시 적어 두었다. 질문과 기록을 중시하는 자발적이고 적극적인 독서법이다.</span></span>
+                <div class="draginput wp30"><div class="draggable">글과 관련된 곳에 직접 가 보기</div></div>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 <h2 id="seletWrapT1">아래로펼치기 <small></small></h2>
 <div class="stwrap">
@@ -3602,9 +4092,9 @@
     </div>
 </div>
 
-<h2 id="seletWrapT3">아래로펼치기 type3 <small>테이블</small></h2>
+<h2 id="seletWrapT3">아래로펼치기 type3 <small>디자인 테이블</small></h2>
 <div class="stwrap">
-    <div class="seletWrap type2">
+    <div class="seletWrap type3">
         <ul class="selettable">
             <li class="selettable_tr">
                 <div class="selettable_th">지시약</div>
@@ -3651,7 +4141,7 @@
     </div>
 </div>
 <div class="stwrap">
-    <div class="seletWrap type2">
+    <div class="seletWrap type3">
         <ul class="selettable">
             <li class="selettable_tr">
                 <div class="selettable_th">소금</div>
@@ -3681,11 +4171,303 @@
     </div>
 </div>
 
+<h2 id="seletWrapT4">아래로펼치기 type4 <small>기본 테이블</small></h2>
+<div class="stwrap">
+    <div class="seletWrap type4">
+        <strong class="sub_tt">
+            <select class="select">
+                <option selected="">선택하세요.</option>
+                <option value="">1</option>
+                <option value="">2</option>
+            </select>
+            보고서
+        </strong>
+        <table class="tbl_basic type3 center">
+            <caption>개요</caption>
+            <colgroup>
+                <col style="width:30%">
+                <col style="width:70%">
+            </colgroup>
+            <tbody>
+                <tr>
+                    <th scope="row">명칭</th>
+                    <td class="td_left">
+                        <select class="select">
+                            <option selected="">선택하세요.</option>
+                            <option value="">1</option>
+                            <option value="">2</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">주요 내용</th>
+                    <td class="td_left">
+                        - 우리나라의 통치권이 미치는 바다를 의미한다.<br>
+                        - 수산 자원 및 바닷속에 묻혀 있는 석유와 천연가스 등의 지하자원 확보의 중요성이 커지면서 가치가 높아지고 있음.<br>
+                        -<select class="select">
+                            <option selected="">선택하세요.</option>
+                            <option value="">1</option>
+                            <option value="">2</option>
+                        </select> : 해안선이 복잡하고 많은 섬으로 이루어져 있음. 따라서, 가장 바깥의 섬들을 직선으로 연결하여 기준선을 설정한 후 여기로부터 약 22km까지를 범위로 설정함.
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+<h2 id="seletWrapT5">아래로펼치기 type5 <small>대화형</small></h2>
+<div class="stwrap">
+    <div class="seletWrap type5">
+        <div class="bgBox phone">
+            <div class="bgCont">
+                <ul class="chatBox type2">
+                    <li class="chat_item left">
+                        <span class="chat_img blue female1"></span>
+                        <div class="bubble">
+                            마틴 루서 킹은 인권 신장을 위해 힘썼어.
+                        </div>
+                    </li>
+                    <li class="chat_item left">
+                        <span class="chat_img pink male1"></span>
+                        <div class="bubble">
+                            인권 신장을 위해 어떤 노력을 했는데?
+                        </div> 
+                    </li>
+                    <li class="chat_item right">
+                        <span class="chat_img pink male2"></span>
+                        <div class="bubble">
+                            <select class="select">
+                                <option selected="">선택하세요.</option>
+                                <option value="">장애인의 인권을 보호했어.</option>
+                                <option value="">신분에 따른 차별을 비판했어.</option>
+                                <option value="">종교의 자유를 얻기 위해 노력했어.</option>
+                                <option value="">어린이가 존중받을 수 있도록 힘썼어.</option>
+                                <option value="">피부색으로 차별받는 상황을 비판했어.</option>
+                            </select>
+                        </div> 
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<h2 id="seletWrapT6">아래로펼치기 type6 <small>이미지 + 텍스트, 보고서 형태</small></h2>
+<div class="stwrap">
+    <div class="seletWrap type6">
+        <strong class="sub_tt">고려 장군, 강감찬 큰 승리를 거두다!</strong>
+        <div class="txt_box">
+            <img src="../images/q_common/selettype1_eximg.png">
+            <p>
+                거란이
+                <select class="select">
+                    <option selected="">선택하세요.</option>
+                    <option value="">강동 6주를 돌려 달라</option>
+                    <option value="">명을 치러가는 길을 빌려 달라</option>
+                    <option value="">명을 가까이하고 후금을 멀리한다</option>
+                </select>
+                는 이유로 다시 고려를 침입하였다. 이에 강감찬이 이끈 군대는
+                <select class="select">
+                    <option selected="">선택하세요.</option>
+                    <option value="">귀주에서</option>
+                    <option value="">처인성에서</option>
+                </select>
+                돌아가는 거란에게 큰 승리를 거두었다.
+            </p>
+        </div>
+    </div>
+</div>
+
+<h2 id="lineWrapT1">짝연결하기 <small></small></h2>
+<div class="stwrap">
+    <div class="lineWrap">
+        <div class="field left">
+            <ul class="linkList">
+                <li data-name="a1">
+                    <div class="linkCon"><span class="FL-tt">발단</span></div>
+                    <button class="unlink"></button>
+                    <i class="dot dot_r"></i>
+                </li>
+                <li data-name="a2">
+                    <div class="linkCon"><span class="FL-tt">발단</span></div>
+                    <button class="unlink"></button>
+                    <i class="dot dot_r"></i>
+                </li>
+            </ul>
+        </div>
+        <div class="field canvasWrap">
+            <canvas></canvas>
+        </div>
+        <div class="field right">
+            <ul class="linkList">
+                <li data-name="b1">
+                    <i class="dot dot_l"></i>
+                    <div class="linkCon"><span class="FL-tt">저승사자가 원님에게 이승에 보내 주는 대신 수고비를 내놓으라고 함</span></div>
+                </li>
+                <li data-name="b2">
+                    <i class="dot dot_l"></i>
+                    <div class="linkCon"><span class="FL-tt">저승사자가 원님에게 이승에 보내 주는 대신 수고비를 내놓으라고 함</span></div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<h2 id="lineWrapT2">짝연결하기 type2 <small>선긋기 3개</small></h2>
+<div class="stwrap">
+    <div class="lineWrap type2">
+        <div class="field left">
+            <ul class="linkList">
+                <li data-name="a1">
+                    <div class="linkCon"><span class="FL-tt">발단</span></div>
+                    <button class="unlink"></button>
+                    <i class="dot dot_r"></i>
+                </li>
+                <li data-name="a2">
+                    <div class="linkCon"><span class="FL-tt">발단</span></div>
+                    <button class="unlink"></button>
+                    <i class="dot dot_r"></i>
+                </li>
+            </ul>
+        </div>
+        <div class="field canvasWrap">
+            <canvas></canvas>
+        </div>
+        <div class="field mid">
+            <ul class="linkList">
+                <li data-name="b1">
+                    <i class="dot dot_l"></i>
+                    <div class="linkCon"><span class="FL-tt">저승사자가 원님에게 이승에 보내 주는 대신 수고비를 내놓으라고 함</span></div>
+                    <button class="unlink"></button>
+                    <i class="dot dot_r"></i>
+                </li>
+                <li data-name="b2">
+                    <i class="dot dot_l"></i>
+                    <div class="linkCon"><span class="FL-tt">저승사자가 원님에게 이승에 보내 주는 대신 수고비를 내놓으라고 함</span></div>
+                    <button class="unlink"></button>
+                    <i class="dot dot_r"></i>
+                </li>
+            </ul>
+        </div>
+        <div class="field canvasWrap">
+            <canvas></canvas>
+        </div>
+        <div class="field right">
+            <ul class="linkList">
+                <li data-name="c1">
+                    <i class="dot dot_l"></i>
+                    <div class="linkCon"><span class="FL-tt">저승사자가 원님에게 이승에 보내 주는 대신 수고비를 내놓으라고 함</span></div>
+                </li>
+                <li data-name="c2">
+                    <i class="dot dot_l"></i>
+                    <div class="linkCon"><span class="FL-tt">덕진이 원님에게 받은 쌀로 마을 강가에 다리를 놓음</span></div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<h2 id="lineWrapT3">짝연결하기 type3 <small>그룹형</small></h2>
+<div class="stwrap">
+    <div class="lineWrap type3">
+        <div class="inner">
+            <div class="field left">
+                <ul class="linkList">
+                    <li data-name="a1">
+                        <div class="linkCon"><span class="FL-tt">1 . 산소는 색깔과 냄새가</span></div>
+                        <button class="unlink"></button>
+                        <i class="dot dot_r"></i>
+                    </li>
+                </ul>
+            </div>
+            <div class="field canvasWrap">
+                <canvas></canvas>
+            </div>
+            <div class="field right">
+                <ul class="linkList">
+                    <li data-name="b1">
+                        <i class="dot dot_l"></i>
+                        <div class="linkCon"><span class="FL-tt">있다.</span></div>
+                    </li>
+                    <li data-name="b2">
+                        <i class="dot dot_l"></i>
+                        <div class="linkCon"><span class="FL-tt">없다.</span></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="inner">
+            <div class="field left">
+                <ul class="linkList">
+                    <li data-name="a1">
+                        <div class="linkCon"><span class="FL-tt">2. 산소는 다른 물질이 타는 것을</span></div>
+                        <button class="unlink"></button>
+                        <i class="dot dot_r"></i>
+                    </li>
+                </ul>
+            </div>
+            <div class="field canvasWrap">
+                <canvas></canvas>
+            </div>
+            <div class="field right">
+                <ul class="linkList">
+                    <li data-name="b1">
+                        <i class="dot dot_l"></i>
+                        <div class="linkCon"><span class="FL-tt">도와줍니다.</span></div>
+                    </li>
+                    <li data-name="b2">
+                        <i class="dot dot_l"></i>
+                        <div class="linkCon"><span class="FL-tt">방해합니다.</span></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<h2 id="lineWrapT4">짝연결하기 type4 <small>타이틀</small></h2>
+<div class="stwrap">
+    <div class="lineWrap type4">
+        <div class="field left">
+            <strong class="sub_tt">인물</strong>
+            <ul class="linkList">
+                <li data-name="a1">
+                    <div class="linkCon"><span class="FL-tt">이방원</span></div>
+                    <button class="unlink"></button>
+                    <i class="dot dot_r"></i>
+                </li>
+                <li data-name="a2">
+                    <div class="linkCon"><span class="FL-tt">정몽주</span></div>
+                    <button class="unlink"></button>
+                    <i class="dot dot_r"></i>
+                </li>
+            </ul>
+        </div>
+        <div class="field canvasWrap">
+            <canvas></canvas>
+        </div>
+        <div class="field right">
+            <strong class="sub_tt">인물의 생각</strong>
+            <ul class="linkList">
+                <li data-name="b1">
+                    <i class="dot dot_l"></i>
+                    <div class="linkCon"><span class="FL-tt">서로 다른 의견을 조율해보자</span></div>
+                </li>
+                <li data-name="b2">
+                    <i class="dot dot_l"></i>
+                    <div class="linkCon"><span class="FL-tt">변함없이 고려에 충성을 다하겠다.</span></div>
+                </li>
+                <li data-name="b3">
+                    <i class="dot dot_l"></i>
+                    <div class="linkCon"><span class="FL-tt">뜻을 함께 모아 새 나라를 세우자.</span></div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
 </section>
-
-
-
-
 </body>
-
 </html>

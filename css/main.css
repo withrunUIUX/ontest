@@ -124,7 +124,7 @@ footer > span  {color:#fff;}
 .test_info li.time > i {background-image:url(../images/main/micon_time.svg);}
 .test_info li > span {font-size:28px;font-family:var(--f_scd);font-weight:700;color:var(--gray_120);}
 
-
-
-
+.login_alert {display:flex;align-items:center;width:100%;}
+.login_alert > .sicon.ico7 {mask:url(../images/common/sico_08.svg);-webkit-mask:url(../images/common/sico_08.svg);background-color:var(--coral_100);background-image:none;}
+.login_alert > .txt {color:var(--coral_100);}
 
