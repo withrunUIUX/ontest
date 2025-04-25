@@ -59,6 +59,7 @@ $(document).ready(function(){
         $("#" + activeTab).fadeIn();
     });
 
+
     // 펼쳐보기
     $(".accordion").click(function(){
         $(this).toggleClass("on");
@@ -107,6 +108,8 @@ $(document).ready(function(){
         var fileName = $("#file4").val();
         $(".upload-name4").val(fileName);
     });
+
+
 });
 
 

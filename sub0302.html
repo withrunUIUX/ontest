@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>온평가 > AI출제 > 생성하기</title>
+
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/question.css">
+        <link rel="stylesheet" href="/css/question_ind.css">
+    <link rel="stylesheet" href="/css/contents.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script type="text/javascript" src="/js/include.js"></script>
+    <script type="text/javascript" src="/js/contents.js"></script>
+</head>
+
+<body>
+
+<div id="wrapper">
+
+<!--[include]HEADER :: Start -->
+<div id="header"></div>
+<!--[include]HEADER :: End -->
+
+<main id="container" class="sub">
+    <section class="sub_header">
+        <div class="login_info">
+            <div class="info_item">
+                <i class="sicon ico1"></i><span class="name"><b>김평가</b>선생님</span>
+                <span class="scoolname">충남초등학교</span>
+            </div>
+            <a href="#" class="logout">로그아웃</a>
+        </div>
+
+        <div id="location">
+            <a href="#" class="item home"><span>홈</span></a>
+            <a href="#" class="item">문제은행</a>
+            <a href="#" class="item">생성하기</a>
+        </div>
+
+        <div class="sub_title">
+            <h1>AI 데이터 활용</h1>
+            <p>AI 데이터를 활용하여 평가 결과를 확인합니다.</p>
+        </div>
+    </section><!--//sub_header-->
+
+    <section id="content" class="aidata_wrap state">
+        <div class="layout flex-col">
+            <div class="layout flex-col gap20">
+                <h2>필수사항</h2>
+                <div class="layout info_select">
+                    <ul class="info_select_item num1 chart_group">
+                        <li class="chart_item">
+                            <div class="title_box">
+                                <strong class="subtitle">학년</strong>
+                            </div>
+                            <div class="select_wrap">
+                                <select class="select">
+                                      <option selected>선택</option>
+                                      <option value="">1</option>
+                                      <option value="">2</option>
+                                      <option value="">3</option>
+                                      <option value="">4</option>
+                                      <option value="">5</option>
+                                      <option value="">6</option>
+                                </select>
+                                <label>학년</label>
+                            </div>
+                        </li>
+                        <li class="chart_item">
+                            <div class="title_box">
+                                <strong class="subtitle">학기</strong>
+                            </div>
+                            <div class="select_wrap">
+                                <select class="select">
+                                      <option selected>선택</option>
+                                      <option value="">1</option>
+                                      <option value="">2</option>
+                                </select>
+                                <label>학기</label>
+                            </div>
+                        </li>
+                        <li class="chart_item">
+                            <div class="title_box">
+                                <strong class="subtitle">과목</strong>
+                            </div>
+                            <div class="select_wrap">
+                                <select class="select" id="subject_select">
+                                      <option selected>선택</option>
+                                      <option value="">국어</option>
+                                      <option value="">영어</option>
+                                      <option value="">수학</option>
+                                      <option value="">사회</option>
+                                      <option value="">과학</option>
+                                </select>
+                            </div>
+                        </li>
+                        <li class="chart_item">
+                            <div class="title_box">
+                                <strong class="subtitle">기간설정</strong>
+                            </div>
+                            <div class="date_wrap">
+                                <input type="date" name="date">
+                                <span> ~ </span>
+                                <input type="date" name="date">
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="info_select_item num2 unit__select_wrap">
+                        <span class="empty_tt"><i></i>학년, 학기, 과목을 선택하시면, 단원이 활성화됩니다.</span>
+                        <ul class="unit__select">
+                            <li>
+                                <input type="checkbox" id="unitkey1" name="unit_check">
+                                <label for="unitkey1" class="unit_btn">
+                                    <span><em>1 단원</em><span class="pbName">YBM 김</span>What grade are you in?</span>
+                                </label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="unitkey11" name="unit_check">
+                                <label for="unitkey11" class="unit_btn">
+                                    <span><em>1 단원</em><span class="pbName">천재 함</span>What grade are you in?</span>
+                                </label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="unitkey2" name="unit_check">
+                                <label for="unitkey2" class="unit_btn">
+                                    <span><em>2 단원</em><span class="pbName">YBM 김</span>I have a cold.</span>
+                                </label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="unitkey3" name="unit_check">
+                                <label for="unitkey3" class="unit_btn">
+                                    <span><em>3 단원</em><span class="pbName">YBM 김</span>When is the club festival?</span>
+                                </label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="unitkey4" name="unit_check">
+                                <label for="unitkey4" class="unit_btn">
+                                    <span><em>4 단원</em><span class="pbName">YBM 김</span>Where is the post office?</span>
+                                </label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="unitkey5" name="unit_check">
+                                <label for="unitkey5" class="unit_btn">
+                                    <span><em>5 단원</em><span class="pbName">YBM 김</span>I’m going to see a movie.</span>
+                                </label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="unitkey6" name="unit_check">
+                                <label for="unitkey6" class="unit_btn">
+                                    <span><em>6 단원</em><span class="pbName">YBM 김</span>He has short curly hair.</span>
+                                </label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="unitkey7" name="unit_check">
+                                <label for="unitkey7" class="unit_btn">
+                                    <span><em>7 단원</em><span class="pbName">YBM 김</span>He has short curly hair.</span>
+                                </label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="unitkey8" name="unit_check">
+                                <label for="unitkey8" class="unit_btn">
+                                    <span><em>8 단원</em><span class="pbName">YBM 김</span>I’m going to see a movie.</span>
+                                </label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="unitkey9" name="unit_check">
+                                <label for="unitkey9" class="unit_btn">
+                                    <span><em>9 단원</em><span class="pbName">YBM 김</span>Where is the post office?</span>
+                                </label>
+                            </li>
+                            <li>
+                                <input type="checkbox" id="unitkey10" name="unit_check">
+                                <label for="unitkey10" class="unit_btn">
+                                    <span><em>10 단원</em><span class="pbName">YBM 김</span>When is the club festival?</span>
+                                </label>
+                            </li>
+                        </ul>
+                        <div class="info_wrap">
+                            <span class="description">*복수선택 가능</span>
+                            <div class="select_all">
+                                <input type="checkbox" id="allchk" name="allchk">
+                                <label for="allchk" class="">
+                                    전체선택
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="totla_wrap line_box">
+                <span><i class="micon ico9"></i>필수사항 선택 확인</span>
+                <div>
+                    <strong class="totla__title"><b>5</b>학년 <b>1</b>학기 <b>영어</b>과목</strong>
+                    <ul class="totla__info">
+                        <li class="totla__item num1">
+                            <ul>
+                                <li><em>기간</em> <b>2024. 12. 01 ~  2024. 12. 01</b></li>
+                            </ul>
+                        </li>
+                        <li class="totla__item num2 flex-row">
+                            <em>선택단원</em>
+                            <div class="unit__wrap">
+                                <span class="unit__item">1단원 YBM 김</span>
+                                <span class="unit__item">2단원 YBM 김</span>
+                                <span class="unit__item">3단원 YBM 김</span>
+                                <span class="unit__item">4단원 YBM 김</span>
+                                <span class="unit__item">5단원 YBM 김</span>
+                                <span class="unit__item">6단원 YBM 김</span>
+                                <span class="unit__item">7단원 YBM 김</span>
+                                <span class="unit__item">8단원 YBM 김</span>
+                                <span class="unit__item">9단원 YBM 김</span>
+                                <span class="unit__item">10단원 YBM 김</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+    
+            <div class="layout flex-col gap20 ">
+                <h2>세부사항 <small class="description">*복수선택 가능</small></h2>
+                
+                <div class="chart_group mb_20">
+                    <div class="chart_item wp100">
+                        <div class="title_box">
+                            <strong class="subtitle"><i class="hico2 hico11"></i>성적 설정</strong>
+                            <div class="tooltip_wrap">
+                                <a class="tooltip"><i class="sicon ico_info">정보</i></a>
+                                <div class="tooltip_box">
+                                    <p>성적 데이터를 설정합니다.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="chart_item_con">
+                            <div class="settingWrap">
+                                <div class="grandCheck">
+                                    <input type="checkbox" id="grandCheck1" name="grandCheck1">
+                                    <label for="grandCheck1" class="grandCheck_btn">
+                                        학급점수
+                                    </label>
+                                </div>
+                                <ul class="subCheck">
+                                    <li>
+                                        <input type="checkbox" id="subCheck1_item1" name="subCheck1">
+                                        <label for="subCheck1_item1" class="subCheck_btn">
+                                            학급 평균 점수
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="subCheck1_item2" name="subCheck1">
+                                        <label for="subCheck1_item2" class="subCheck_btn">
+                                            학급 최고 점수
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="subCheck1_item3" name="subCheck1">
+                                        <label for="subCheck1_item3" class="subCheck_btn">
+                                            학급 최저 점수
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="settingWrap">
+                                <div class="grandCheck">
+                                    <input type="checkbox" id="grandCheck2" name="grandCheck2">
+                                    <label for="grandCheck2" class="grandCheck_btn">
+                                        난이도별 정답률
+                                    </label>
+                                </div>
+                                <ul class="subCheck">
+                                    <li>
+                                        <input type="checkbox" id="subCheck2_item1" name="subCheck2">
+                                        <label for="subCheck2_item1" class="subCheck_btn">
+                                            상
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="subCheck2_item2" name="subCheck2">
+                                        <label for="subCheck2_item2" class="subCheck_btn">
+                                            중
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="subCheck2_item3" name="subCheck2">
+                                        <label for="subCheck2_item3" class="subCheck_btn">
+                                            하
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="settingWrap">
+                                <div class="grandCheck">
+                                    <input type="checkbox" id="grandCheck3" name="grandCheck3">
+                                    <label for="grandCheck3" class="grandCheck_btn">
+                                       평가 유형별 정답률
+                                    </label>
+                                </div>
+                                <ul class="subCheck">
+                                    <li>
+                                        <input type="checkbox" id="subCheck3_item1" name="subCheck3">
+                                        <label for="subCheck3_item1" class="subCheck_btn">
+                                            단답형
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="subCheck3_item2" name="subCheck3">
+                                        <label for="subCheck3_item2" class="subCheck_btn">
+                                            서술형
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="subCheck3_item3" name="subCheck3">
+                                        <label for="subCheck3_item3" class="subCheck_btn">
+                                            선다형
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="chart_group mb_20">
+                    <div class="chart_item wp100">
+                        <div class="title_box">
+                            <strong class="subtitle"><i class="hico2 hico12"></i>비교 분석 설정</strong>
+                            <div class="tooltip_wrap">
+                                <a class="tooltip"><i class="sicon ico_info">정보</i></a>
+                                <div class="tooltip_box">
+                                    <p>비교 분석 데이터를 설정합니다.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="chart_item_con">
+                            <div class="settingWrap">
+                                <div class="grandCheck">
+                                    <input type="checkbox" id="grandCheck4" name="grandCheck4">
+                                    <label for="grandCheck4" class="grandCheck_btn">
+                                        기간별 정답률
+                                    </label>
+                                </div>
+                                <ul class="subCheck">
+                                    <li>
+                                        <input type="checkbox" id="subCheck4_item1" name="subCheck4">
+                                        <label for="subCheck4_item1" class="subCheck_btn">
+                                            기간별 평균 점수
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="subCheck4_item2" name="subCheck4">
+                                        <label for="subCheck4_item2" class="subCheck_btn">
+                                            기간별 최고 점수
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="subCheck4_item3" name="subCheck4">
+                                        <label for="subCheck4_item3" class="subCheck_btn">
+                                            기간별 최저 점수
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="subCheck4_item4" name="subCheck4">
+                                        <label for="subCheck4_item4" class="subCheck_btn">
+                                            기간별 성적 향상
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="subCheck4_item5" name="subCheck4">
+                                        <label for="subCheck4_item5" class="subCheck_btn">
+                                            기간별 성적 하락
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="settingWrap">
+                                <div class="grandCheck">
+                                    <input type="checkbox" id="grandCheck5" name="grandCheck5">
+                                    <label for="grandCheck5" class="grandCheck_btn">
+                                        충남 정답률 비교
+                                    </label>
+                                </div>
+                                <ul class="subCheck">
+                                    <li>
+                                        <input type="checkbox" id="subCheck5_item1" name="subCheck5">
+                                        <label for="subCheck5_item1" class="subCheck_btn">
+                                            전체
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="subCheck5_item2" name="subCheck5">
+                                        <label for="subCheck5_item2" class="subCheck_btn">
+                                            천안
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="subCheck5_item3" name="subCheck5">
+                                        <label for="subCheck5_item3" class="subCheck_btn">
+                                            공주
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="subCheck5_item4" name="subCheck5">
+                                        <label for="subCheck5_item4" class="subCheck_btn">
+                                            보령
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="subCheck5_item5" name="subCheck5">
+                                        <label for="subCheck5_item5" class="subCheck_btn">
+                                            아산
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="subCheck5_item6" name="subCheck5">
+                                        <label for="subCheck5_item6" class="subCheck_btn">
+                                            서산
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="subCheck5_item7" name="subCheck5">
+                                        <label for="subCheck5_item7" class="subCheck_btn">
+                                            논산계룡
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="subCheck5_item8" name="subCheck5">
+                                        <label for="subCheck5_item8" class="subCheck_btn">
+                                            당진
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="subCheck5_item9" name="subCheck5">
+                                        <label for="subCheck5_item9" class="subCheck_btn">
+                                            금산
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="subCheck5_item10" name="subCheck5">
+                                        <label for="subCheck5_item10" class="subCheck_btn">
+                                            부여
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="subCheck5_item11" name="subCheck5">
+                                        <label for="subCheck5_item11" class="subCheck_btn">
+                                            서천
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="subCheck5_item12" name="subCheck5">
+                                        <label for="subCheck5_item12" class="subCheck_btn">
+                                            청양
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="subCheck5_item13" name="subCheck5">
+                                        <label for="subCheck5_item13" class="subCheck_btn">
+                                            홍성
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="subCheck5_item14" name="subCheck5">
+                                        <label for="subCheck5_item14" class="subCheck_btn">
+                                            예산
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="subCheck5_item15" name="subCheck5">
+                                        <label for="subCheck5_item15" class="subCheck_btn">
+                                            태안
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="chart_group mb_20">
+                    <div class="chart_item wp100">
+                        <div class="title_box">
+                            <strong class="subtitle"><i class="hico2 hico13"></i>문항 관련 설정</strong>
+                            <div class="tooltip_wrap">
+                                <a class="tooltip"><i class="sicon ico_info">정보</i></a>
+                                <div class="tooltip_box">
+                                    <p>문항 관련 데이터를 설정합니다.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="chart_item_con">
+                            <div class="settingWrap">
+                                <div class="grandCheck">
+                                    <input type="checkbox" id="grandCheck6" name="grandCheck6">
+                                    <label for="grandCheck6" class="grandCheck_btn">
+                                        문항 풀이 시간
+                                    </label>
+                                </div>
+                                <ul class="subCheck">
+                                    <li>
+                                        <input type="radio" id="subCheck6_item1" name="subCheck6">
+                                        <label for="subCheck6_item1" class="subCheck_btn">
+                                            최단 시간 풀이 문항
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="subCheck6_item2" name="subCheck6">
+                                        <label for="subCheck6_item2" class="subCheck_btn">
+                                            최장 시간 풀이 문항
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="settingWrap">
+                                <div class="grandCheck">
+                                    <input type="checkbox" id="grandCheck7" name="grandCheck7">
+                                    <label for="grandCheck7" class="grandCheck_btn">
+                                        정답률 분석
+                                    </label>
+                                </div>
+                                <ul class="subCheck">
+                                    <li>
+                                        <input type="radio" id="subCheck7_item1" name="subCheck7">
+                                        <label for="subCheck7_item1" class="subCheck_btn">
+                                            정답률이 가장 낮은 문항
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <input type="radio" id="subCheck7_item2" name="subCheck7">
+                                        <label for="subCheck7_item2" class="subCheck_btn">
+                                            정답률이 가장 높은 문항
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="settingWrap">
+                                <div class="grandCheck">
+                                    <input type="checkbox" id="grandCheck8" name="grandCheck8">
+                                    <label for="grandCheck8" class="grandCheck_btn">
+                                        기타
+                                    </label>
+                                </div>
+                                <ul class="subCheck">
+                                    <li>
+                                        <input type="checkbox" id="subCheck8_item1" name="subCheck8">
+                                        <label for="subCheck8_item1" class="subCheck_btn">
+                                            오답 패턴 분석
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="subCheck8_item2" name="subCheck8">
+                                        <label for="subCheck8_item2" class="subCheck_btn">
+                                            난이도 대비 성과 분석
+                                        </label>
+                                    </li>
+                                    <li>
+                                        <input type="checkbox" id="subCheck8_item3" name="subCheck8">
+                                        <label for="subCheck8_item3" class="subCheck_btn">
+                                            재시도 문항 분석
+                                        </label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="chart_group">
+                    <div class="chart_item wp100">
+                        <div class="title_box">
+                            <strong class="subtitle"><i class="hico2 hico14"></i>학생 행동 패턴 분석</strong>
+                            <div class="tooltip_wrap">
+                                <a class="tooltip"><i class="sicon ico_info">정보</i></a>
+                                <div class="tooltip_box">
+                                    <p>학생 행동 패턴 분석 데이터를 설정합니다.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="chart_item_con">
+                            <div class="settingWrap type2">
+                                <input type="checkbox" id="grandCheck9" name="grandCheck9">
+                                <label for="grandCheck9" class="grandCheck_btn">
+                                    <i class="micon ico14"></i>
+                                    특정 정답 패턴 학생 분석
+                                </label>
+                                <input type="checkbox" id="grandCheck10" name="grandCheck10">
+                                <label for="grandCheck10" class="grandCheck_btn">
+                                    <i class="micon ico15"></i>
+                                    평균 풀이 시간 대비 풀이 시간 빠른 학생 분석
+                                </label>
+                                <!-- <input type="checkbox" id="grandCheck11" name="grandCheck11">
+                                <label for="grandCheck11" class="grandCheck_btn">
+                                    <i class="micon ico16"></i>
+                                    집중 구간 분석
+                                </label>
+                                <input type="checkbox" id="grandCheck12" name="grandCheck12">
+                                <label for="grandCheck12" class="grandCheck_btn">
+                                    <i class="micon ico17"></i>
+                                    풀이 속도 분석
+                                </label> -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="btn_group mt_60 gap10">
+                <a class="btn btn-ani btn-outline-secondary" href="#wrapper" onclick="location.reload();">취소</a>
+                <button type="button" class="btn btn-ani btn-primary lg">엑셀저장</button>
+            </div>
+        </div>
+    </section>
+
+<script>
+$(document).ready(function() {
+    // subCheck의 label을 클릭하면 grandCheck도 체크
+    $('.subCheck label').click(function() {
+        // subCheck와 이웃한 grandCheck의 input을 체크 상태로 변경
+        let grandCheckInput = $(this).closest('.settingWrap').find('.grandCheck input[type="checkbox"]');
+        if (!grandCheckInput.prop('checked')) {
+            grandCheckInput.prop('checked', true); // grandCheck의 input을 체크
+        }
+    });
+
+    // grandCheck의 label 클릭 시
+    $('.grandCheck label').click(function() {
+        // grandCheck의 input을 찾음
+        let grandCheckInput = $(this).prev('input[type="checkbox"]');
+
+        // grandCheck가 체크된 상태인지 확인
+        if (grandCheckInput.prop('checked')) {
+            // 이웃한 subCheck 내의 모든 checkbox 체크 해제
+            $(this).closest('.settingWrap').find('.subCheck input[type="checkbox"]').prop('checked', false);
+
+            // subCheck 내의 모든 radio 버튼 체크 해제
+            $(this).closest('.settingWrap').find('.subCheck input[type="radio"]').prop('checked', false);
+        }
+    });
+
+    // unit__select 숨김
+    $('.unit__select').hide();
+    // 과목 선택 시 unit__select 나타남
+    $("#subject_select").change(function() {
+        const selectedValue = $(this).val();
+
+        if (selectedValue === "선택") {
+            $('.unit__select').hide();
+            $('.select_all').hide();
+            $('.unit__select_wrap .empty_tt').show(); 
+        } else {
+            $('.unit__select').show();
+            $('.select_all').show();
+            $('.unit__select_wrap .empty_tt').hide();
+        }
+    });
+});
+</script>
+
+
+<!--[include]HEADER :: Start -->
+<div id="footer"></div>
+<!--[include]HEADER :: End -->
+
+</main>
+
+</div>
+
+
+</body>
+</html>
+

@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="/css/common.css">
     <link rel="stylesheet" href="/css/question.css">
+        <link rel="stylesheet" href="/css/question_ind.css">
     <link rel="stylesheet" href="/css/contents.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -87,8 +88,9 @@
                             <div class="class_code">a54321</div>
                         </div>
                         <div class="qrcode">
-                            <img src="../images/common/qrcode_img.png"/>
+                            <a onclick="modalOpen('qrcode_pop');"><img src="../images/common/qrcode_img.png"/></a>
                         </div>
+                        <span class="description wp100">※QR코드 클릭시 확대 됩니다.</span>
                     </div>
                 </div>
             </div>
@@ -143,6 +145,21 @@
 <!--[include]HEADER :: Start -->
 <div id="footer"></div>
 <!--[include]HEADER :: End -->
+
+<div class="modal modal-popup" id="qrcode_pop">
+    <div class="modal-background is-click-disabled"></div>
+    <div class="modal-content">
+        <button type="button" class="modal-close bn_close bk" onclick="modalClose('qrcode_pop');">닫기</button>
+        <div class="popup-wrap">
+            <div class="con-head">
+                <h3>n98242</h3>
+            </div>
+            <div class="con-wrap">
+                <svg viewBox="0 0 41 41"></svg>
+            </div>
+        </div>
+    </div>
+</div>
 
 </main>
 

@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="/css/common.css">
     <link rel="stylesheet" href="/css/question.css">
+        <link rel="stylesheet" href="/css/question_ind.css">
     <link rel="stylesheet" href="/css/contents.css">
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -140,61 +141,67 @@
                                 <li>
                                     <input type="checkbox" id="unitkey1" name="unit_check">
                                     <label for="unitkey1" class="unit_btn">
-                                        <span><em>1 단원</em>What grade are you in?</span>
+                                        <span><em>1 단원</em><span class="pbName">YBM 김</span>What grade are you in?</span>
+                                    </label>
+                                </li>
+                                <li>
+                                    <input type="checkbox" id="unitkey11" name="unit_check">
+                                    <label for="unitkey11" class="unit_btn">
+                                        <span><em>1 단원</em><span class="pbName">천재 함</span>What grade are you in?</span>
                                     </label>
                                 </li>
                                 <li>
                                     <input type="checkbox" id="unitkey2" name="unit_check">
                                     <label for="unitkey2" class="unit_btn">
-                                        <span><em>2 단원</em>I have a cold.</span>
+                                        <span><em>2 단원</em><span class="pbName">YBM 김</span>I have a cold.</span>
                                     </label>
                                 </li>
                                 <li>
                                     <input type="checkbox" id="unitkey3" name="unit_check">
                                     <label for="unitkey3" class="unit_btn">
-                                        <span><em>3 단원</em>When is the club festival?</span>
+                                        <span><em>3 단원</em><span class="pbName">YBM 김</span>When is the club festival?</span>
                                     </label>
                                 </li>
                                 <li>
                                     <input type="checkbox" id="unitkey4" name="unit_check">
                                     <label for="unitkey4" class="unit_btn">
-                                        <span><em>4 단원</em>Where is the post office?</span>
+                                        <span><em>4 단원</em><span class="pbName">YBM 김</span>Where is the post office?</span>
                                     </label>
                                 </li>
                                 <li>
                                     <input type="checkbox" id="unitkey5" name="unit_check">
                                     <label for="unitkey5" class="unit_btn">
-                                        <span><em>5 단원</em>I’m going to see a movie.</span>
+                                        <span><em>5 단원</em><span class="pbName">YBM 김</span>I’m going to see a movie.</span>
                                     </label>
                                 </li>
                                 <li>
                                     <input type="checkbox" id="unitkey6" name="unit_check">
                                     <label for="unitkey6" class="unit_btn">
-                                        <span><em>6 단원</em>He has short curly hair.</span>
+                                        <span><em>6 단원</em><span class="pbName">YBM 김</span>He has short curly hair.</span>
                                     </label>
                                 </li>
                                 <li>
                                     <input type="checkbox" id="unitkey7" name="unit_check">
                                     <label for="unitkey7" class="unit_btn">
-                                        <span><em>7 단원</em>He has short curly hair.</span>
+                                        <span><em>7 단원</em><span class="pbName">YBM 김</span>He has short curly hair.</span>
                                     </label>
                                 </li>
                                 <li>
                                     <input type="checkbox" id="unitkey8" name="unit_check">
                                     <label for="unitkey8" class="unit_btn">
-                                        <span><em>8 단원</em>I’m going to see a movie.</span>
+                                        <span><em>8 단원</em><span class="pbName">YBM 김</span>I’m going to see a movie.</span>
                                     </label>
                                 </li>
                                 <li>
                                     <input type="checkbox" id="unitkey9" name="unit_check">
                                     <label for="unitkey9" class="unit_btn">
-                                        <span><em>9 단원</em>Where is the post office?</span>
+                                        <span><em>9 단원</em><span class="pbName">YBM 김</span>Where is the post office?</span>
                                     </label>
                                 </li>
                                 <li>
                                     <input type="checkbox" id="unitkey10" name="unit_check">
                                     <label for="unitkey10" class="unit_btn">
-                                        <span><em>10 단원</em>When is the club festival?</span>
+                                        <span><em>10 단원</em><span class="pbName">YBM 김</span>When is the club festival?</span>
                                     </label>
                                 </li>
                             </ul>
@@ -329,149 +336,169 @@
                             </div>
                             <em class="pertt">%</em>
                         </div>
+                        <div class="diffic_info">
+                            <span>현재 선택하신 단원의 난이도별 총 개수 입니다.</span>
+                            <ul>
+                                <li><i class="state tx diff1">상</i><b>200</b>개 임의로 텍스트가 더 들어갈 예정입니다. 임의 텍스트 임의 텍스트 임의 텍스트</li>
+                                <li><i class="state tx diff2">중</i><b>200</b>개 임의로 텍스트가 더 들어갈 예정입니다. 임의 텍스트 임의 텍스트 임의 텍스트</li>
+                                <li><i class="state tx diff3">하</i><b>200</b>개 임의로 텍스트가 더 들어갈 예정입니다. 임의 텍스트 임의 텍스트 임의 텍스트</li>
+                            </ul>
+                            <span class="diffic_alt">문항 개수가 부족합니다. 선택하신 문항 개수를 확인해주세요.</span>
+                        </div>
                     </div>
                 </li>
             </ul>
-            <div class="table_wrap">
-                <table class="tbl_basic center table-hover">
-                    <caption>학생 목록</caption>
-                    <colgroup>
-                        <col style="width:10%">
-                        <col style="width:10%">
-                        <col style="width:20%">
-                        <col style="width:40%">
-                    </colgroup>
-                    <thead>
-                        <tr>
-                            <th scope="col"><input type="checkbox" id="allcheck" name="check"/><label for="allcheck"></label></th>
-                            <th scope="col">번호</th>
-                            <th scope="col">이름</th>
-                            <th scope="col">비고</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th scope="row"><input type="checkbox" id="check0" name="check"/><label for="check0"></label></th>
-                            <td>1</td>
-                            <td>홍길동</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <th scope="row"><input type="checkbox" id="check1" name="check"/><label for="check1"></label></th>
-                            <td>2</td>
-                            <td>김충남</td>
-                            <td>4.15 국어 저장 완료</td>
-                        </tr>
-                        <tr>
-                            <th scope="row"><input type="checkbox" id="check2" name="check"/><label for="check2"></label></th>
-                            <td>3</td>
-                            <td>서산인</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <th scope="row"><input type="checkbox" id="check3" name="check"/><label for="check3"></label></th>
-                            <td>4</td>
-                            <td>정아산</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <th scope="row"><input type="checkbox" id="check4" name="check"/><label for="check4"></label></th>
-                            <td>5</td>
-                            <td>이충호</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <th scope="row"><input type="checkbox" id="check5" name="check"/><label for="check5"></label></th>
-                            <td>6</td>
-                            <td>박당진</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <th scope="row"><input type="checkbox" id="check6" name="check"/><label for="check6"></label></th>
-                            <td>7</td>
-                            <td>김대전</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <th scope="row"><input type="checkbox" id="check7" name="check"/><label for="check7"></label></th>
-                            <td>8</td>
-                            <td>이일남</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <th scope="row"><input type="checkbox" id="check8" name="check"/><label for="check8"></label></th>
-                            <td>9</td>
-                            <td>박충남</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <th scope="row"><input type="checkbox" id="check9" name="check"/><label for="check9"></label></th>
-                            <td>10</td>
-                            <td>홍이동</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <th scope="row"><input type="checkbox" id="check10" name="check"/><label for="check10"></label></th>
-                            <td>11</td>
-                            <td>김일남</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <th scope="row"><input type="checkbox" id="check10" name="check"/><label for="check10"></label></th>
-                            <td>12</td>
-                            <td>홍삼동</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <th scope="row"><input type="checkbox" id="check10" name="check"/><label for="check10"></label></th>
-                            <td>13</td>
-                            <td>홍사동</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <th scope="row"><input type="checkbox" id="check10" name="check"/><label for="check10"></label></th>
-                            <td>14</td>
-                            <td>홍오동</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <th scope="row"><input type="checkbox" id="check10" name="check"/><label for="check10"></label></th>
-                            <td>15</td>
-                            <td>홍육동</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <th scope="row"><input type="checkbox" id="check10" name="check"/><label for="check10"></label></th>
-                            <td>16</td>
-                            <td>김칠남</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <th scope="row"><input type="checkbox" id="check10" name="check"/><label for="check10"></label></th>
-                            <td>17</td>
-                            <td>김팔남</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <th scope="row"><input type="checkbox" id="check10" name="check"/><label for="check10"></label></th>
-                            <td>18</td>
-                            <td>홍구동</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <th scope="row"><input type="checkbox" id="check10" name="check"/><label for="check10"></label></th>
-                            <td>19</td>
-                            <td>김구남</td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <th scope="row"><input type="checkbox" id="check10" name="check"/><label for="check10"></label></th>
-                            <td>20</td>
-                            <td>김일남</td>
-                            <td></td>
-                        </tr>
-                    </tbody>
-                </table>
+            <div class="inner">
+                <div class="class_code_wrap line_box">
+                    <div class="class_code_box">
+                        <span><b>학급코드</b>※학급코드는 숫자 / 알파벳을 포함한 1~6글자로 생성합니다.</span>
+                        <input type="text" class="class_code" value="a54321">
+                    </div>
+                    <div class="btn_group">
+                        <button type="button" class="btn btn-ani btn-primary"><i class="micon ico4"></i>저장하기</button>
+                    </div>
+                </div>
+                <div class="table_wrap">
+                    <table class="tbl_basic center table-hover">
+                        <caption>학생 목록</caption>
+                        <colgroup>
+                            <col style="width:10%">
+                            <col style="width:10%">
+                            <col style="width:20%">
+                            <col style="width:40%">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="col"><input type="checkbox" id="allcheck" name="check"/><label for="allcheck"></label></th>
+                                <th scope="col">번호</th>
+                                <th scope="col">이름</th>
+                                <th scope="col">비고</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row"><input type="checkbox" id="check0" name="check"/><label for="check0"></label></th>
+                                <td>1</td>
+                                <td>홍길동</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><input type="checkbox" id="check1" name="check"/><label for="check1"></label></th>
+                                <td>2</td>
+                                <td>김충남</td>
+                                <td>4.15 국어 저장 완료</td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><input type="checkbox" id="check2" name="check"/><label for="check2"></label></th>
+                                <td>3</td>
+                                <td>서산인</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><input type="checkbox" id="check3" name="check"/><label for="check3"></label></th>
+                                <td>4</td>
+                                <td>정아산</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><input type="checkbox" id="check4" name="check"/><label for="check4"></label></th>
+                                <td>5</td>
+                                <td>이충호</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><input type="checkbox" id="check5" name="check"/><label for="check5"></label></th>
+                                <td>6</td>
+                                <td>박당진</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><input type="checkbox" id="check6" name="check"/><label for="check6"></label></th>
+                                <td>7</td>
+                                <td>김대전</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><input type="checkbox" id="check7" name="check"/><label for="check7"></label></th>
+                                <td>8</td>
+                                <td>이일남</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><input type="checkbox" id="check8" name="check"/><label for="check8"></label></th>
+                                <td>9</td>
+                                <td>박충남</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><input type="checkbox" id="check9" name="check"/><label for="check9"></label></th>
+                                <td>10</td>
+                                <td>홍이동</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><input type="checkbox" id="check10" name="check"/><label for="check10"></label></th>
+                                <td>11</td>
+                                <td>김일남</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><input type="checkbox" id="check10" name="check"/><label for="check10"></label></th>
+                                <td>12</td>
+                                <td>홍삼동</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><input type="checkbox" id="check10" name="check"/><label for="check10"></label></th>
+                                <td>13</td>
+                                <td>홍사동</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><input type="checkbox" id="check10" name="check"/><label for="check10"></label></th>
+                                <td>14</td>
+                                <td>홍오동</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><input type="checkbox" id="check10" name="check"/><label for="check10"></label></th>
+                                <td>15</td>
+                                <td>홍육동</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><input type="checkbox" id="check10" name="check"/><label for="check10"></label></th>
+                                <td>16</td>
+                                <td>김칠남</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><input type="checkbox" id="check10" name="check"/><label for="check10"></label></th>
+                                <td>17</td>
+                                <td>김팔남</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><input type="checkbox" id="check10" name="check"/><label for="check10"></label></th>
+                                <td>18</td>
+                                <td>홍구동</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><input type="checkbox" id="check10" name="check"/><label for="check10"></label></th>
+                                <td>19</td>
+                                <td>김구남</td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <th scope="row"><input type="checkbox" id="check10" name="check"/><label for="check10"></label></th>
+                                <td>20</td>
+                                <td>김일남</td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
 

@@ -8,11 +8,20 @@
 
     <link rel="stylesheet" href="/css/common.css">
     <link rel="stylesheet" href="/css/question.css">
+        <link rel="stylesheet" href="/css/question_ind.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
     <script type="text/javascript" src="/js/include.js"></script>
     <script type="text/javascript" src="/js/contents.js"></script>
+
+    <!-- <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({            
+            tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}            
+        });
+    </script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async></script>
+    수식관련 스크립트 현재 사용X -->
 </head>
 
 <body>
@@ -21,97 +30,22 @@
 <div id="question_header"></div>
 <!--[include]HEADER :: End -->
 
-<div id="question" class="question">
+
     <div class="q_content">
         <h4 class="q_tit">
             <em class="question_number">1번</em>
-            <span class="txt">가방의 수에 따른 국어책의 수와 수학책의 수를 나눗셈으로 비교하려고 합니다. 알맞은 말을 고르세요.</span> 
+            <div class="txt">가방의 수에 따른 국어책의 수와 수학책의 수를 나눗셈으로 비교하려고 합니다. 알맞은 말을 고르세요.</div> 
         </h4>
         <div class="q_layout">
-            <!--q_wrap 안에 아무것도 없을때 hidden 클래스 추가하여 css로 숨김처리 함, 
-            띄어쓰기 엔터 탭 등 공백이 들어갔을때도 적용되었는데 데이터 입력을 위한 개발언어를 추가했을땐 어떨지 모르겠습니다.
-            실작업시 제이쿼리 수정 필요할 수 있습니다. (주석 안됨 확인)-->
             <div class="q_wrap">
                
-            </div>
+            </div><!--예문-->
             <div class="a_wrap">
-                <div class="bgBox poster">
-                    <div class="bgCont">
-                        <div class="txt_group">
-                            <strong class="sub_tt">&lt;조선 후기 미술 특별전 안내&gt;</strong>
-                            <p>우리 미술관에서는 김홍도, 신윤복 등 조선 후기 유명 화가들의 그림을 통해 그 당시 사람들의 생활 모습을 엿볼 수 있는 특별전을 마련하였습니다. 많은 참여 바랍니다.</p>
-                            <ul class="list_1st">
-                                <li>전시기간 : 20△△년 △월 △일 ~ △월 △일</li>
-                                <li>장소 : 1층 특별 전시실</li>
-                            </ul>
-                        </div>
-                        <ul class="hsradioWrap type3">
-                            <li>
-                                <input type="radio" name="poster" id="posterexm1">
-                                <label for="posterexm1">
-                                    <div class="cardBox photo magazine flex-col">
-                                        <div class="photoBox">
-                                            <img src="../images/q_common/poster_eximg1.png">
-                                        </div>
-                                        <p><span class="bullet circle">1</span>&nbsp;논갈이</p>
-                                    </div>
-                                </label>
-                            </li>
-                            <li>
-                                <input type="radio" name="poster" id="posterexm2">
-                                <label for="posterexm2">
-                                    <div class="cardBox photo magazine flex-col">
-                                        <div class="photoBox">
-                                            <img src="../images/q_common/poster_eximg2.png">
-                                        </div>
-                                        <p><span class="bullet circle">2</span>&nbsp;초충도</p>
-                                    </div>
-                                </label>
-                            </li>
-                            <li>
-                                <input type="radio" name="poster" id="posterexm3">
-                                <label for="posterexm3">
-                                    <div class="cardBox photo magazine flex-col">
-                                        <div class="photoBox">
-                                            <img src="../images/q_common/poster_eximg3.png">
-                                        </div>
-                                        <p><span class="bullet circle">3</span>&nbsp;행주대첩도</p>
-                                    </div>
-                                </label>
-                            </li>
-                            <li>
-                                <input type="radio" name="poster" id="posterexm4">
-                                <label for="posterexm4">
-                                    <div class="cardBox photo magazine flex-col">
-                                        <div class="photoBox">
-                                            <img src="../images/q_common/poster_eximg4.png">
-                                        </div>
-                                        <p><span class="bullet circle">4</span>&nbsp;정약용 초상화</p>
-                                    </div>
-                                </label>
-                            </li>
-                            <li>
-                                <input type="radio" name="poster" id="posterexm5">
-                                <label for="posterexm5">
-                                    <div class="cardBox photo magazine flex-col">
-                                        <div class="photoBox">
-                                            <img src="../images/q_common/poster_eximg5.png">
-                                        </div>
-                                        <p><span class="bullet circle">5</span>&nbsp;수산리 고분 벽화</p>
-                                    </div>
-                                </label>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+
+            </div><!--보기-->
         </div>
     </div>
-</div>
 
-<!--[include]FOOTER :: Start -->
-<div id="question_footer"></div>
-<!--[include]FOOTER :: End -->    
 
 <!--제출팝업 :: 미답변 있을때-->
 <div class="modal modal-popup question_modal" id="popup_opne">

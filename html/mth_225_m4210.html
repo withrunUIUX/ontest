@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>온평가 진행중</title>
+
+        <link rel="stylesheet" href="/css/common.css">
+        <link rel="stylesheet" href="/css/question.css">
+        <link rel="stylesheet" href="/css/question_ind.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+        <script type="text/javascript" src="/js/include.js"></script>
+        <script type="text/javascript" src="/js/contents.js"></script>
+    </head>
+
+<body>
+
+<!--[include]HEADER :: Start -->
+<div id="question_header"></div>
+<!--[include]HEADER :: End -->
+
+
+    <div class="q_content" id="mth_225_m4210"><!--작업코드-->
+        <h4 class="q_tit">
+            <em class="question_number">1번</em>
+            <span class="txt">학생들의 혈액형을 조사한 자료를 표로 나타내었습니다. 빈칸에 들어갈 학생 수를 혈액형과 이어보세요.</span><!--문제-->
+        </h4>
+        <div class="q_layout">
+            <div class="q_wrap">
+                <div class="examBox">
+                    <table class="tbl_basic type3 center">
+                        <caption>개요</caption>
+                        <colgroup>
+                            <col style="width:16%">
+                            <col style="width:16%">
+                            <col style="width:2%">
+                            <col style="width:16%">
+                            <col style="width:16%">
+                            <col style="width:2%">
+                            <col style="width:16%">
+                            <col style="width:16%">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="col">이름</th>
+                                <th scope="col">혈액형</th>
+                                <th scope="col"></th>
+                                <th scope="col">이름</th>
+                                <th scope="col">혈액형</th>
+                                <th scope="col"></th>
+                                <th scope="col">이름</th>
+                                <th scope="col">혈액형</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>우연</th>
+                                <td>O형</td>
+                                <td></td>
+                                <th>영욱</th>
+                                <td>B형</td>
+                                <td></td>
+                                <th>용민</th>
+                                <td>A형</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <th>은채</th>
+                                <td>A형</td>
+                                <td></td>
+                                <th>민서</th>
+                                <td>AB형</td>
+                                <td></td>
+                                <th>수현</th>
+                                <td>A형</td>
+                            </tr>
+                        </tbody>
+                        <tbody>
+                            <tr>
+                                <th>화진</th>
+                                <td>B형</td>
+                                <td></td>
+                                <th>진세</th>
+                                <td>O형</td>
+                                <td></td>
+                                <th>지혜</th>
+                                <td>O형</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br>
+
+                    <table class="tbl_basic type3 center">
+                        <p class="fs_13"><혈액형별 학생 수></p>
+                        <caption>개요</caption>
+                        <colgroup>
+                            <col style="width:16%">
+                            <col style="width:16%">
+                            <col style="width:16%">
+                            <col style="width:16%">
+                            <col style="width:16%">
+                            <col style="width:16%">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="col">혈액형</th>
+                                <th scope="col">A형</th>
+                                <th scope="col">B형</th>
+                                <th scope="col">O형</th>
+                                <th scope="col">AB형</th>
+                                <th scope="col">합계</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">학생 수(명)</th>
+                                <td></td>
+                                <td></td>
+                                <td>3</td>
+                                <td></td>
+                                <td>9</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div><!--예문-->
+
+            <div class="a_wrap">
+                <div class="lineWrap">
+                        <div class="field left">
+                            <ul class="linkList">
+                                <li data-name="a1">
+                                    <div class="linkCon">
+                                      <span class="square">A형</span>
+                                      <button class="unlink"></button>
+                                      <span class="bullet circle sm">1</span>
+                                    </div>
+                                    <i class="dot dot_r"></i>
+                                </li>
+                                <li data-name="a2">
+                                    <div class="linkCon">
+                                      <span class="square">B형</span>
+                                      <button class="unlink"></button>
+                                      <span class="bullet circle sm">2</span>
+                                    </div>
+                                    <i class="dot dot_r"></i>
+                                </li>
+                                <li data-name="a3">
+                                    <div class="linkCon">
+                                      <span class="square">AB형</span>
+                                      <button class="unlink"></button>
+                                      <span class="bullet circle sm">3</span>
+                                    </div>
+                                    <i class="dot dot_r"></i>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="field canvasWrap">
+                            <canvas></canvas>
+                        </div>
+                        <div class="field right">
+                            <ul class="linkList">
+                                <li data-name="b1">
+                                    <i class="dot dot_l"></i>
+                                    <div class="linkCon">
+                                      <span class="bullet circle sm">ㄱ</span>
+                                      <span class="square">1</span>
+                                    </div>
+                                </li>
+                                <li data-name="b2">
+                                    <i class="dot dot_l"></i>
+                                    <div class="linkCon">
+                                      <span class="bullet circle sm">ㄴ</span>
+                                      <span class="square">2</span>
+                                    </div>
+                                </li>
+                                <li data-name="b3">
+                                    <i class="dot dot_l"></i>
+                                    <div class="linkCon">
+                                      <span class="bullet circle sm">ㄷ</span>
+                                      <span class="square">3</span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                </div>
+            </div><!--보기-->
+        </div>
+    </div>
+
+
+
+</body>
+</html>

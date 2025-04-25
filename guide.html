@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>온평가 > 학급관리</title>
+
+    <link rel="icon" type="image/png" href="../images/favicon/favicon-48x48.png" sizes="48x48" />
+    <link rel="icon" type="image/svg+xml" href="../images/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="../images/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="ontest" />
+
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/question.css">
+    <link rel="stylesheet" href="/css/question_ind.css">
+    <link rel="stylesheet" href="/css/contents.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script type="text/javascript" src="/js/include.js"></script>
+    <script type="text/javascript" src="/js/contents.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.10.2/lottie.min.js"></script>
+</head>
+
+
+<body>
+
+<div id="wrapper">
+<!--[include]HEADER :: Start -->
+<div id="header"></div>
+<!--[include]HEADER :: End -->
+
+<main id="container" class="sub">
+    <section id="content" class="guide_wrap">
+        <nav class="navBar_wap" id="navBar">
+            <ul>
+                <li><a href="#guide_box2">평가현황</a></li>
+                <li><a href="#guide_box3">학급관리</a></li>
+                <li><a href="#guide_box4">문제은행</a></li>
+                <li><a href="#guide_box5">출제내역</a></li>
+                <li><a href="#guide_box6">빅데이터</a></li>
+            </ul>
+        </nav>
+        <div class="guide_con">
+            <div class="guide_box num1" id="guide_box1">
+                <div class="title">
+                    <h2>
+                        <em>컴퓨터 기반</em>
+                        <span>문제은행</span>
+                        <span>시스템 (CBT)</span>
+                    </h2>
+                    <p>문제생성부터 자동채점, 성취 이력 관리까지 한 곳에서 간편하게<br>교사의 평가 업무를 손쉽게 돕는 온라인 평가시스템입니다.</p>
+                </div>
+
+                <div class="img_wrap">
+                    <img src="../images/contents/guide_obj2.svg" >
+                </div>
+            </div>
+
+            <div class="guide_box num2" id="guide_box2">
+                <div class="title">
+                    <h2>
+                        <small>우리 반 성취도 한눈에!</small>
+                        평가현황
+                    </h2>
+                    <p>학급별, 학생별 성적부터 회차별, <br>과목별 기록까지 한 곳에서 확인</p>
+                </div>
+                <div class="guide_img">
+                    <img src="../images/contents/guide_con4.png">
+                </div>
+            </div>
+
+            <div class="guide_box num3" id="guide_box3">
+                <div class="title">
+                    <h2>
+                        <small>우리반 정보 관리는 편하게</small>
+                        학급관리
+                    </h2>
+                    <p>학생 명단과 학급 정보를 손쉽게 <br>관리하여 평가 준비를 효율적으로!</p>
+                </div>
+                <div class="guide_img">
+                    <img src="../images/contents/guide_con1.png">
+                </div>
+            </div>
+
+            <div class="guide_box num4" id="guide_box4">
+                <div class="title">
+                    <h2>
+                        <small>필요한 문제를 손쉽게!</small>
+                        문제은행
+                    </h2>
+                    <p>교과와 단원에 맞는 <br>다양한 문제를 선택하고 바로 활용</p>
+                </div>
+                <div class="guide_img">
+                    <img src="../images/contents/guide_con3.png">
+                </div>
+            </div>
+
+            <div class="guide_box num5" id="guide_box5">
+                <div class="title">
+                    <h2>
+                        <small>출제 이력을 한눈에!</small>
+                        출제내역
+                    </h2>
+                    <p>생성한 문항 수정, 배포에서 <br>채점까지 한 곳에서 관리</p>
+                </div>
+                <div class="guide_img">
+                    <img src="../images/contents/guide_con2.png">
+                </div>  
+            </div>
+
+            <div class="guide_box num6" id="guide_box6">
+                <div class="title">
+                    <h2>
+                        <small>평가 결과 분석을 한눈에!</small>
+                        빅데이터
+                    </h2>
+                    <p>평가 결과를 바탕으로 <br>다양한 데이터 분석 결과 제공</p>
+                </div>
+                <div class="guide_img">
+                    <img src="../images/contents/guide_con6.png">
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <div class="floating">
+        <a href="#container" class="btn_top">상단위로 이동</a>
+    </div>
+
+</main>
+
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        //네비게이션 나타남
+        const navBar = document.getElementById("navBar");
+        const scrollThreshold = 700; // 스크롤 위치 기준(px)
+
+        window.addEventListener("scroll", function () {
+            // 현재 스크롤 위치를 확인
+            const scrollTop = window.scrollY || document.documentElement.scrollTop;
+            if (scrollTop >= scrollThreshold) {
+                navBar.classList.add("on");
+            } else {
+                navBar.classList.remove("on");
+            }
+        });
+
+        //콘텐츠 위치에 따라 네비게이션 on 클래스 추가
+        const navLinks = document.querySelectorAll("#navBar a");
+        const sections = document.querySelectorAll(".guide_box");
+        const offsetMargin = 0; // 감지 시작 위치를 보정하고 싶다면 이 값을 조정
+
+        // IntersectionObserver 옵션
+        const observerOptions = {
+            root: null, // 뷰포트 기준
+            rootMargin: `-${offsetMargin}px 0px -90% 0px`, // 위: 감지 시작 위치, 아래: 감지 종료 위치 (90% 뷰포트 하단 남김)
+            threshold: 0.1 // 섹션이 10% 이상 보일 때 감지
+        };
+
+        // IntersectionObserver 생성
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                const targetId = entry.target.id;
+
+                // 활성화 상태 업데이트
+                if (entry.isIntersecting) {
+                    navLinks.forEach((link) => {
+                        if (link.getAttribute("href") === `#${targetId}`) {
+                            link.classList.add("active");
+                        } else {
+                            link.classList.remove("active");
+                        }
+                    });
+                }
+            });
+        }, observerOptions);
+
+        // 각 섹션을 관찰
+        sections.forEach((section) => {
+            observer.observe(section);
+        });
+
+        // 부드러운 이동 처리
+        navLinks.forEach((link) => {
+            link.addEventListener("click", function (event) {
+                event.preventDefault(); // 기본 동작 막기
+                const targetId = link.getAttribute("href").substring(1);
+                const targetSection = document.getElementById(targetId);
+
+                if (targetSection) {
+                    window.scrollTo({
+                        top: targetSection.offsetTop - offsetMargin, // 감지 오차를 보정
+                        behavior: "smooth"
+                    });
+                }
+            });
+        });
+    });
+
+    // top_btn
+    $(function () {
+        // Floating
+        $.fn.floating = function(){
+            var $window = $(window),$target = $('.btn_top');
+                $window.scroll(function() {
+                    ($window.scrollTop() > 100) ? $target.addClass('show') : $target.removeClass('show');
+                });
+            $('.btn_top').on('click', function(e) {
+                e.preventDefault();
+                $('html, body').animate({scrollTop:0}, 300);
+            });
+        }
+        $.fn.floating();
+    });
+</script>
+
+</body>
+
+</html>
+
+
+

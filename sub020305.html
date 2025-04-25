@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="/css/common.css">
     <link rel="stylesheet" href="/css/question.css">
+        <link rel="stylesheet" href="/css/question_ind.css">
     <link rel="stylesheet" href="/css/contents.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -179,9 +180,11 @@
 //일시정지 버튼 이벤트
 $(".btn_group .stop").click(function(){
     $(this).parents(".connect_wrap").addClass("active");
+    $(this).parents(".connect_wrap").children(".connect_stat").children(".pause_pop_wrap").addClass("active");
 });
 $(".btn_group .start").click(function(){
     $(this).parents(".connect_wrap").removeClass("active");
+    $(this).parents(".connect_wrap").children(".connect_stat").children(".pause_pop_wrap").removeClass("active");
 });
 
 </script>

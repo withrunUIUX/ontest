@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>온평가 ADMIN</title>
+    
+        <link rel="stylesheet" href="/css/common.css">
+        <link rel="stylesheet" href="/css/question.css">
+        <link rel="stylesheet" href="/css/question_ind.css">
+        <!-- <link rel="stylesheet" href="/css/contents.css"> -->
+        <link rel="stylesheet" href="/css/cms.css">
+
+        <script type="text/javascript" src="/js/jquery-3.6.0.min.js"></script>
+        <script type="text/javascript" src="/js/jquery-latest.min.js"></script>
+
+        <script type="text/javascript" src="/js/contents.js"></script>
+    </head>
+
+<body>
+
+<div id="wrapper">
+
+<header id="header">
+    <div class="logo">
+        <a href="/"><span>온평가</span></a>
+    </div>
+    <nav>
+        <div class="gnb">
+            <ul class="gnb__depth1">
+                <li class="depth1-item">
+                    <a href="#"><i class="nicon ico6"></i>회원관리</a>
+                    <ul class="depth2">
+                        <li class="depth2__item"><a href="#">회원관리</a></li>
+                    </ul>
+                </li>
+                <li class="depth1-item">
+                    <a href="#"><i class="nicon ico1"></i>학교관리</a>
+                    <ul class="depth2">
+                        <li class="depth2__item"><a href="#">학교관리</a></li>
+                    </ul>
+                </li>
+                <li class="depth1-item">
+                    <a href="#" class="active"><i class="nicon ico2"></i>문항관리</a>
+                    <ul class="depth2">
+                        <li class="depth2__item"><a href="#" class="active">문항자료 관리</a></li>
+                        <li class="depth2__item"><a href="#">문항유형 관리</a></li>
+                        <li class="depth2__item"><a href="#">리포트 관리</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<main id="container" class="cms">
+    <section class="sub_header">
+        <div class="login_info">
+            <div class="info_item">
+                <i class="sicon ico1"></i><span class="name"><b>전체관리자</b></span>
+                <span class="time">(2024-07-19)</span>
+            </div>
+            <a href="#" class="logout">로그아웃</a>
+        </div>
+    </section>
+
+    <section id="content" class="edit">
+        <div class="cms_con_header">
+            <h2>문항자료 등록/수정 <small>자료를 등록(수정)합니다.</small></h2>
+            <div id="location">
+                <a href="#" class="item home"><span>홈</span></a>
+                <a href="#" class="item">문항관리</a>
+                <a href="#" class="item">문항자료 관리</a>
+                <a href="#" class="item">문항자료 등록/수정</a>
+            </div>
+        </div>
+
+        <div class="create_box line_box cms_box">
+            <div class="create__section num1">
+                <h3>기본정보</h3>
+                <div class="form_group">
+                    <strong>출력여부</strong>
+                    <div>
+                        <input type="checkbox" id="toggle" checked> 
+                        <label for="toggle" class="toggleSwitch"><span class="toggleButton"></span></label>
+                    </div>
+                </div>
+
+                <div class="form_group">
+                    <strong>학년 선택</strong>
+                    <ul class="form_item_box">
+                        <li>
+                            <div class="select_wrap">
+                                <select class="select" id="select1">
+                                    <option selected="">선택</option>
+                                    <option value="">6</option>
+                                    <option value="">5</option>
+                                    <option value="">2</option>
+                                </select>
+                                <label for="select1">학년</label>
+                            </div>
+                        </li>
+                        <li>
+                            <input type="text" class="form_input sm">
+                            <label>학기</label>
+                        </li>
+                        <li>
+                            <input type="text" class="form_input sm">
+                            <label>단원</label>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="form_group">
+                    <strong>과목 선택</strong>
+                    <ul class="form_item_box">
+                        <li>
+                            <input type="radio" id="subjectkey1" name="subject_radio">
+                            <label for="subjectkey1" class="box_btn">국어</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="subjectkey2" name="subject_radio">
+                            <label for="subjectkey2" class="box_btn">수학</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="subjectkey3" name="subject_radio">
+                            <label for="subjectkey3" class="box_btn">사회</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="subjectkey4" name="subject_radio">
+                            <label for="subjectkey4" class="box_btn">과학</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="subjectkey5" name="subject_radio">
+                            <label for="subjectkey5" class="box_btn">영어</label>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="form_group"> 
+                    <strong>출판사</strong>
+                    <ul class="form_item_box">
+                        <li>
+                            <input type="radio" id="publikey" name="publisher_radio">
+                            <label for="publikey">자체제작</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="publikey1" name="publisher_radio">
+                            <label for="publikey1">YBM 김</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="publikey2" name="publisher_radio">
+                            <label for="publikey2">YBM 최</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="publikey3" name="publisher_radio">
+                            <label for="publikey3">대교</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="publikey4" name="publisher_radio">
+                            <label for="publikey4">동아</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="publikey5" name="publisher_radio">
+                            <label for="publikey5">천재 함</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="publikey6" name="publisher_radio">
+                            <label for="publikey6">기타</label>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="form_group">
+                    <strong>문항정보</strong>
+                    <ul class="form_item_box">
+                        <li>
+                            <label>영역</label>
+                            <input type="text" class="form_input md">
+                        </li>
+                        <li>
+                            <label>맥락</label>
+                            <input type="text" class="form_input md">
+                        </li>
+                        <li>
+                            <label>역량</label>
+                            <input type="text" class="form_input md">
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="form_group">
+                    <strong>단원명</strong>
+                    <input type="text" class="form_input">
+                </div>
+
+                <div class="form_group">
+                    <strong>평가내용</strong>
+                    <input type="text" class="form_input">
+                </div>
+
+                <div class="form_group">
+                    <strong>성취기준</strong>
+                    <input type="text" class="form_input">
+                </div>
+
+                <div class="form_group">
+                    <strong>출제수준</strong>
+                    <ul class="form_item_box">
+                        <li>
+                            <input type="radio" id="level_radio1" name="level_radio">
+                            <label for="level_radio1">상</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="level_radio2" name="level_radio">
+                            <label for="level_radio2">중</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="level_radio3" name="level_radio">
+                            <label for="level_radio3">하</label>
+                        </li>
+                    </ul>
+                </div>
+            </div><!--//create__section 1-->
+
+            <div class="create__section num2">
+                <h3>문항내용</h3>
+                <div class="form_group">
+                    <strong>문항코드</strong>
+                    <input type="text" class="form_input md">
+                </div>
+                <div class="form_group">
+                    <strong>문항번호</strong>
+                    <ul class="form_item_box">
+                        <li><input type="text" class="form_input md"></li>
+                        <li><input type="text" class="form_input sm"><label>번</label></li>
+                    </ul>
+                </div>
+
+                <div class="form_group_wrap">
+                    <div class="form_group">
+                        <strong>문항자료</strong>
+                        <div class="filebox">
+                            <input type="file" id="file1"> <label for="file1" class="btn btn-ani btn-primary">파일추가</label> 
+                            <div class="file_list">
+                                <div class="file_item">
+                                    <span class="file_name">mth_213_t167_q2.mp3</span>
+                                    <div class="btn_group">
+                                        <a class="btn save">저장</a>
+                                        <a class="btn del">파일삭제</a>
+                                    </div>
+                                </div>
+                                <div class="file_item">
+                                    <span class="file_name">mth_213_t167_q3.mp3</span>
+                                    <div class="btn_group">
+                                        <a class="btn save">저장</a>
+                                        <a class="btn del">파일삭제</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="form_group">
+                    <strong>문제</strong>
+                    <input type="text" class="form_input">
+                </div>
+
+                <div class="form_group">
+                    <strong>출제유형</strong>
+                    <ul class="form_item_box">
+                        <li>
+                            <input type="radio" id="question_type1" name="question_type">
+                            <label for="question_type1">라디오</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="question_type2" name="question_type">
+                            <label for="question_type2">체크박스</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="question_type3" name="question_type">
+                            <label for="question_type3">단답형</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="question_type4" name="question_type">
+                            <label for="question_type4">핫스폿</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="question_type5" name="question_type">
+                            <label for="question_type5">끌어놓기</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="question_type6" name="question_type">
+                            <label for="question_type6">아래로펼치기</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="question_type7" name="question_type">
+                            <label for="question_type7">서술형</label>
+                        </li>
+                        <li>
+                            <input type="radio" id="question_type8" name="question_type">
+                            <label for="question_type8">짝연결하기</label>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="form_group flex-top">
+                    <strong>미리보기</strong>
+                    <div class="preview_wrap">
+                        <div class="preview_box">
+                            미리보기 텍스트가 나옵니다.
+                            미리보기 텍스트가 나옵니다.
+                            미리보기 텍스트가 나옵니다.
+                            미리보기 텍스트가 나옵니다.
+                        </div>
+                        <div class="preview_box">
+                            미리보기 이미지가 나옵니다.
+                            미리보기 이미지가 나옵니다.
+                            미리보기 이미지가 나옵니다.
+                            미리보기 이미지가 나옵니다.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form_group">
+                    <strong>정답</strong>
+                    <input type="text" class="form_input">
+                </div>
+
+            </div><!--//create__section 2-->
+
+            <div class="create__section num3">
+                <div class="form_group flex-top">
+                    <strong>해설</strong>
+                    <textarea></textarea>
+                </div>
+            </div>
+        </div>
+
+        <div class="btn_group">
+            <a href="/cms/edit_list.html" class="btn btn-ani btn-secondary lg">목록으로</a>
+            <button type="submit" class="btn btn-ani btn-primary lg">저장</button>
+        </div>
+
+    </section>
+</main>
+
+</div>
+
+
+<script>
+//예문 타입 선택
+$(document).ready(function(){
+    // 타입 아이템 숨김
+    $('.example_type_item').hide();
+    $('.editer_item').show();
+    $("input:radio[name=example_type]").click(function(){
+        if($("input[name=example_type]:checked").val() == "editer_item"){ //에디터 선택 시 에디터박스 나타남, 파일등록 숨김
+            $('.editer_item').show();
+            $('.file_item').hide();
+        }else if($("input[name=example_type]:checked").val() == "file_item"){ //파일등록 선택 시 에디터박스 나타남, 에디터 숨김
+            $('.editer_item').hide();
+            $('.file_item').show();
+        }else if($("input[name=example_type]:checked").val() == "none"){ //사용안함 선택 시 전부 숨김
+            $('.example_type_item').hide();
+        }
+    });
+});
+</script>
+
+</body>
+</html>

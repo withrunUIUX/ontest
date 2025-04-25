@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="/css/common.css">
     <link rel="stylesheet" href="/css/question.css">
+        <link rel="stylesheet" href="/css/question_ind.css">
     <link rel="stylesheet" href="/css/contents.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -291,7 +292,7 @@
                                     <a class="btn btn-ani btn-outline-secondary" href="#"><i class="ico ico-reset" aria-hidden="true"></i>초기화</a>
                                 </div>
                             </div>
-                            <table class="tbl_basic center table-hover test_info">
+                            <table class="tbl_basic center table-hover">
                                 <caption>평가문항정보</caption>
                                 <colgroup>
                                     <col style="width:5%">
@@ -1097,10 +1098,9 @@ $(".btnView").on("click", function() {
             labels: ['', '원본', '1차', '2차', '3차', '4차', '5차', '6차', '7차', '8차', '9차', '10차'], //맨앞에 0값
             datasets: [{
                 backgroundColor: 'rgb(133, 196, 255)',
-                borderWidth: 2,
+                borderWidth: 3,
                 borderColor: 'rgb(133, 196, 255)',
                 barThickness: 20,
-                borderRadius: 20,
                 data: [0, 20, 30, 20, 50, 40, 50, 90, 60, 80, 50, 55],
             }]
         },
@@ -1132,22 +1132,22 @@ $(".btnView").on("click", function() {
             labels: ['영어', '과학', '사회', '수학', '국어'],
             datasets: [{
                 backgroundColor: [
-                    'rgba(201, 133, 255, .3)',
-                    'rgba(66, 211, 177, .3)',
-                    'rgba(255, 174, 53, .3)',
-                    'rgba(230, 142, 171, .3)',
-                    'rgba(133, 196, 255, .3)',
+                    '#FFBC75',
+                    '#8EE481',
+                    '#FFDB67',
+                    '#FF7B6C',
+                    '#6F9EFF',
                 ],
                 borderColor:[
-                    'rgba(201, 133, 255, 1)',
-                    'rgba(66, 211, 177, 1)',
-                    'rgba(255, 174, 53, 1)',
-                    'rgba(230, 142, 171, 1)',
-                    'rgba(133, 196, 255, 1)',
+                   '#FFBC75',
+                    '#8EE481',
+                    '#FFDB67',
+                    '#FF7B6C',
+                    '#6F9EFF',
                 ],
                 borderWidth: 1,
-                barThickness: 20, //그래프 굵기
-                borderRadius: 20, // 그래프 둥글기
+                barThickness: 10, //그래프 굵기
+                borderRadius: 10, // 그래프 둥글기
                 data:[300, 400, 500, 785, 900],
             }]
         },
@@ -1214,10 +1214,9 @@ $(".btnView").on("click", function() {
             labels: ['', '원본', '1차', '2차', '3차', '4차', '5차', '6차', '7차', '8차', '9차', '10차'], //맨앞에 0값
             datasets: [{
                 backgroundColor: 'rgb(133, 196, 255)',
-                borderWidth: 2,
+                borderWidth: 3,
                 borderColor: 'rgb(133, 196, 255)',
                 barThickness: 20,
-                borderRadius: 20,
                 data: [0, 20, 30, 20, 50, 40, 50, 90, 60, 80, 50, 55],
             }]
         },
@@ -1249,22 +1248,22 @@ $(".btnView").on("click", function() {
             labels: ['영어', '과학', '사회', '수학', '국어'],
             datasets: [{
                 backgroundColor: [
-                    'rgba(201, 133, 255, .3)',
-                    'rgba(66, 211, 177, .3)',
-                    'rgba(255, 174, 53, .3)',
-                    'rgba(230, 142, 171, .3)',
-                    'rgba(133, 196, 255, .3)',
+                   '#FFBC75',
+                    '#8EE481',
+                    '#FFDB67',
+                    '#FF7B6C',
+                    '#6F9EFF',
                 ],
                 borderColor:[
-                    'rgba(201, 133, 255, 1)',
-                    'rgba(66, 211, 177, 1)',
-                    'rgba(255, 174, 53, 1)',
-                    'rgba(230, 142, 171, 1)',
-                    'rgba(133, 196, 255, 1)',
+                    '#FFBC75',
+                    '#8EE481',
+                    '#FFDB67',
+                    '#FF7B6C',
+                    '#6F9EFF',
                 ],
                 borderWidth: 1,
-                barThickness: 20, //그래프 굵기
-                borderRadius: 20, // 그래프 둥글기
+                barThickness: 10, //그래프 굵기
+                borderRadius: 10, // 그래프 둥글기
                 data:[300, 400, 500, 785, 900],
             }]
         },

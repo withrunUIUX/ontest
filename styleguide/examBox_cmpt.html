@@ -4,10 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>문항 컴포넌트</title>
+    <title>예문 컴포넌트</title>
+
+    <link rel="icon" type="image/png" href="../images/favicon/favicon-48x48.png" sizes="48x48" />
+    <link rel="icon" type="image/svg+xml" href="../images/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="../images/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="ontest" />
 
     <link rel="stylesheet" href="/css/common.css">
     <link rel="stylesheet" href="/css/question.css">
+    <link rel="stylesheet" href="/css/question_ind.css">
     <link rel="stylesheet" href="/css/contents.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -32,12 +39,12 @@
         <ul class="sgNavi_2depth">
             <li><a href="#exam1">단일요소 이미지</a></li>
             <li><a href="#exam2">단일요소 음성</a></li>
-            <li><a href="#exam3">단일요소 영상</a></li>
+            <!-- <li><a href="#exam3">단일요소 영상</a></li> -->
             <li><a href="#exam4">단일요소 영상 iframe</a></li>
             <li><a href="#exam5">동일요소 좌우</a></li>
             <li><a href="#exam6">다른요소 좌우</a></li>
             <li><a href="#exam7">다른요소 상하</a></li>
-            <li><a href="#exam8">텍스트 중앙</a></li>
+            <li><a href="#exam27">배경타입</a></li>
             <li><a href="#exam9">텍스트 flow</a></li>
             <li><a href="#exam10">리스트 블릿</a></li>
             <li><a href="#exam11">리스트 블릿X</a></li>
@@ -48,12 +55,17 @@
             <li><a href="#exam16">라인박스 type3</a></li>
             <li><a href="#exam17">문장형</a></li>
             <li><a href="#exam18">문장형 + 제목</a></li>
+            <li><a href="#exam18-1">문장형 중앙정렬</a></li>
+            <li><a href="#exam18-2">시형태</a></li>
             <li><a href="#exam19">문장형 밑줄</a></li>
+            <li><a href="#exam25">문장형 긴글</a></li>
+            <li><a href="#exam25-1">문장안에 박스</a></li>
             <li><a href="#exam20">테이블</a></li>
             <li><a href="#exam21">대본</a></li>
             <li><a href="#exam22">카드박스</a></li>
             <li><a href="#exam23">카드박스 조합</a></li>
             <li><a href="#exam24">수식</a></li>
+            <li><a href="#exam26">채팅</a></li>
         </ul>  
     </div>  
 
@@ -68,7 +80,7 @@
     <div class="q_wrap">
         <div class="examBox">
             <div class="imgBox">
-                <img src="/images/question/sci/sci_623_u1513_q1.png">
+                <img src="../images/question/sci/sci_623_u1513_q1.png">
             </div>
             <p class="annt txtRight">▪출처: 대한상공회의소, 2018</p>
         </div>
@@ -81,34 +93,32 @@
         <div class="examBox">
             <div class="adoBox">
                 <audio controls>
-                    <source src="/images/q_common/exam_audio.mp3" type="audio/mpeg">
+                    <source src="../audio/eng1_611_m122_q2.mp3" type="audio/mpeg">
                 </audio>
             </div>
         </div>
     </div>
 </div>
 
-<h2 id="exam3">단일 요소 한개 사용할때 <small>동영상, 선택 구간재생 시 파일명 뒤에 #t=시작,끝 초단위로 입력</small></h2>
+<!-- <h2 id="exam3">단일 요소 한개 사용할때 <small>동영상, 선택 구간재생 시 파일명 뒤에 #t=시작,끝 초단위로 입력</small></h2>
 <div class="stwrap q_layout">
     <div class="q_wrap">
         <div class="examBox">
             <div class="vodBox">
                 <video controls>
-                    <source src="/images/q_common/exam_video.mp4#t=01,10" type="video/mp4">
+                    <source src="../images/q_common/exam_video.mp4#t=01,10" type="video/mp4">
                 </video>
             </div>
         </div>
     </div>
-</div>
+</div> -->
 
-<h2 id="exam4">단일 요소 한개 사용할때 <small>동영상 iframe으로 가져올때, 선택 구간재생 시 주소 뒤에 ?start=시작&end=끝 초단위로 입력</small></h2>
+<h2 id="exam4">단일 요소 한개 사용할때 <small>동영상 iframe으로 가져올때, 선택 구간재생 시 주소 뒤에 ?start=시작&end=끝 초단위로 입력, <b style="color:red">소스코드 복붙 후 width, height값 지우고 사용하기</b></small></h2>
 <div class="stwrap q_layout">
     <div class="q_wrap">
         <div class="examBox">
             <div class="vodBox">
-                <iframe src="https://www.youtube.com/embed/gZSQ8aLErIA?start=05&end=10"  
-                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe src="https://www.youtube.com/embed/4fR1-OV6GBY" title="외신기자가 찍은 故 이한열 열사 모습 / SBS" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
             </div>
         </div>
     </div>
@@ -121,11 +131,11 @@
             <div class="imgBox">
                 <div class="lineBox type3">
                     <span class="bullet tit">보기</span> 
-                    <img src="/images/question/sci/sci_623_u1513_q1.png">
+                    <img src="../images/question/sci/sci_623_u1513_q1.png">
                </div>
                <div class="lineBox type3">
                     <span class="bullet tit">보기</span> 
-                    <img src="/images/question/sci/sci_623_u1513_q1.png">
+                    <img src="../images/question/sci/sci_623_u1513_q1.png">
                 </div>
             </div>
         </div>
@@ -137,7 +147,7 @@
     <div class="q_wrap">
         <div class="examBox">
             <div class="imgBox">
-                <img src="/images/q_common/examBox_eximg4.png">
+                <img src="../images/question/sci/sci_623_u1513_q1.png">
             </div>
         </div>
         <div class="examBox">
@@ -169,12 +179,35 @@
     </div>
 </div>
 
+<h2>다른 요소를 좌우, 중앙 정렬이 필요할때 <small>imgBox 안에 사용</small></h2>
+<div class="stwrap q_layout">
+    <div class="q_wrap">
+        <div class="examBox">
+            <div class="imgBox">
+                <div class="lineBox type2">
+                    <span class="bullet tit">보기</span>
+                    <div class="listBox">
+                        <ul class="listTxt">
+                            <li class="fs_15">3 × 8 = 24</li>
+                            <li class="fs_15">8 × 3 = 24</li>
+                        </ul>
+                    </div>
+                </div> 
+                <span class="icoarrow"></span>
+                <p class="fs_15">4 × 5 = 5 × <span class="blankBox sm"></span> = 20</p>
+            </div>
+        </div> 
+    </div>
+</div>
+
+
+
 <h2 id="exam7">다른 요소를 2개 이상 상하 <small>examBox 안에 사용한다.</small></h2>
 <div class="stwrap q_layout">
     <div class="q_wrap">
         <div class="examBox">
             <div class="imgBox">
-                <img src="/images/q_common/examBox_eximg4.png">
+                <img src="../images/question/sci/sci_623_u1513_q1.png">
             </div>
             <ul class="flowBox">
                 <li>손정등 빛이 공기 중에서 <span class="blankBox sm"><span class="bullet circle sm">ㄱ</span></span></li>
@@ -190,11 +223,11 @@
             <div class="imgBox">
                 <div class="lineBox type3">
                     <span class="bullet tit">실험 (가)</span> 
-                    <img src="/images/q_common/examBox_eximg5.png">
+                    <img src="../images/question/sci/sci_623_u1513_q1.png">
                </div>
                <div class="lineBox type3">
                     <span class="bullet tit">실험 (나)</span> 
-                    <img src="/images/q_common/examBox_eximg6.png">
+                    <img src="../images/question/sci/sci_623_u1513_q1.png">
                 </div>
             </div>
             <div class="lineBox type2">
@@ -210,19 +243,300 @@
     </div>
 </div>
 
-<h2 id="exam8">텍스트 <small>가운데 정렬</small></h2>
-<div class="stwrap q_layout">
-    <div class="q_wrap">
-        <div class="examBox">
-            <p class="center">
-                사과는 빨개<br>
-                빨가면 딸기<br>
-                딸기는 작아<br>
-                작으면 <span class="blankBox sm"></span>
-            </p>
+<h2 id="exam27">배경타입 <small>bgCon 안에 작성하면 됩니다. examBox부터 복사해서 사용</small></h2>
+<div class="stwrap">
+    <div class="q_layout">
+        <h3 id="bgStyle1">모니터</h3>
+        <div class="a_wrap">
+            <div class="examBox">
+                <div class="bgBox monitor">
+                    <div class="bgCont">
+                        <p>
+                            &nbsp;&nbsp;&nbsp;오늘은 즐거운 토요일이다. 토요일마다 아빠가 점심을 만들어 주시는데 내가 만들어달라는 음식은 다 만들어주시고 만들어주신 음식은 하나같이 
+                            <span class="blankBox sm"><span class="bullet circle sm">ㄱ</span></span> 그중에서 내가 제일 좋아하는 것은 
+                            <span class="blankBox sm"><span class="bullet circle sm">ㄴ</span></span> 이다. 계란, 햄, 밥으로 정말 맛있게 만들어 주시는데 가끔 내가 햄이나 계란을
+                            <span class="blankBox sm"><span class="bullet circle sm">ㄷ</span></span> 넣어달라고 하면 더 넣어서 만들어주신다. 오늘은 아빠가 어떤 음식을 만들어주실까? 벌써 기다려진다.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="q_layout">
+        <h3 id="bgStyle2">칠판</h3>
+        <div class="a_wrap">
+            <div class="examBox">
+                <div class="bgBox board">
+                    <div class="bgCont">
+                        <p>
+                            &nbsp;&nbsp;&nbsp;오늘은 즐거운 토요일이다. 토요일마다 아빠가 점심을 만들어 주시는데 내가 만들어달라는 음식은 다 만들어주시고 만들어주신 음식은 하나같이 
+                            <span class="blankBox sm"><span class="bullet circle sm">ㄱ</span></span> 그중에서 내가 제일 좋아하는 것은 
+                            <span class="blankBox sm"><span class="bullet circle sm">ㄴ</span></span> 이다. 계란, 햄, 밥으로 정말 맛있게 만들어 주시는데 가끔 내가 햄이나 계란을
+                            <span class="blankBox sm"><span class="bullet circle sm">ㄷ</span></span> 넣어달라고 하면 더 넣어서 만들어주신다. 오늘은 아빠가 어떤 음식을 만들어주실까? 벌써 기다려진다.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="q_layout">
+        <h3 id="bgStyle3">엽서, 편지</h3>
+        <div class="a_wrap flex-col fx_align_c gap40">
+            <div class="examBox">
+                <div class="bgBox post">
+                    <div class="bgCont">
+                        <p>
+                            &nbsp;&nbsp;&nbsp;오늘은 즐거운 토요일이다. 토요일마다 아빠가 점심을 만들어 주시는데 내가 만들어달라는 음식은 다 만들어주시고 만들어주신 음식은 하나같이 
+                            <span class="blankBox sm"><span class="bullet circle sm">ㄱ</span></span> 그중에서 내가 제일 좋아하는 것은 
+                            <span class="blankBox sm"><span class="bullet circle sm">ㄴ</span></span> 이다. 계란, 햄, 밥으로 정말 맛있게 만들어 주시는데 가끔 내가 햄이나 계란을
+                            <span class="blankBox sm"><span class="bullet circle sm">ㄷ</span></span> 넣어달라고 하면 더 넣어서 만들어주신다. 오늘은 아빠가 어떤 음식을 만들어주실까? 벌써 기다려진다.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="examBox">
+                <div class="bgBox post">
+                    <div class="bgCont col_2">
+                        <div>
+                            <p>안녕. 난 중국에 사는 웨이야.<br><u>①중국은 세계에서 가장 큰 나라야.</u> <u>②4개의 섬나라로 되어 있고</u> <u>③환태평양 조산대에 있어서 지진과 화산이 많이 일어나서</u> 늘 걱정이 많아.</p>
+                        </div>
+                        <div>
+                            <p><u>④우리나라는 한자를 사용해.</u> 세계에서 인구가 가장 많은 나라이고, 여러 가지 산업이 발달했어. 그런데 중국은 <u>⑤위도가 높아 냉대 기후가 널리 나타나니까 옷을 따뜻하게 입고와.</u></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="q_layout">
+        <h3 id="bgStyle3">편지2</h3>
+        <div class="a_wrap flex-col fx_align_c gap40">
+            <div class="examBox">
+                <div class="bgBox post2">
+                    <div class="bgCont">
+                        <p>
+                            &nbsp;&nbsp;&nbsp;지효에게<br>
+                            &nbsp;&nbsp;&nbsp;지효야, 안녕? 나 신우야. <br>
+                            &nbsp;&nbsp;&nbsp;지효야, 아까 내가 네 책상 옆에서 미역국을 엎질렀지? 너는 네 가방이 더러워져서 많이 속상했을 텐데 나에게 “괜찮아?”하면서 걱정을 해 주었어. 그리고 미역국 치우는 것을 도와주었어.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="q_layout">
+        <h3 id="bgStyle4">신문</h3>
+        <div class="a_wrap flex-col fx_align_c gap40">
+            <div class="examBox">
+                <div class="bgBox news">
+                    <div class="bgCont">
+                        <p>
+                            &nbsp;&nbsp;&nbsp;오늘은 즐거운 토요일이다. 토요일마다 아빠가 점심을 만들어 주시는데 내가 만들어달라는 음식은 다 만들어주시고 만들어주신 음식은 하나같이 
+                            <span class="blankBox sm"><span class="bullet circle sm">ㄱ</span></span> 그중에서 내가 제일 좋아하는 것은 
+                            <span class="blankBox sm"><span class="bullet circle sm">ㄴ</span></span> 이다. 계란, 햄, 밥으로 정말 맛있게 만들어 주시는데 가끔 내가 햄이나 계란을
+                            <span class="blankBox sm"><span class="bullet circle sm">ㄷ</span></span> 넣어달라고 하면 더 넣어서 만들어주신다. 오늘은 아빠가 어떤 음식을 만들어주실까? 벌써 기다려진다.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="q_layout">
+        <h3 id="bgStyle5">일기</h3>
+        <div class="a_wrap flex-col fx_align_c gap40">
+            <div class="examBox">
+                <div class="bgBox diary">
+                    <div class="bgCont">
+                        <p>
+                            &nbsp;&nbsp;&nbsp;오늘은 즐거운 토요일이다. 토요일마다 아빠가 점심을 만들어 주시는데 내가 만들어달라는 음식은 다 만들어주시고 만들어주신 음식은 하나같이 
+                            <span class="blankBox sm"><span class="bullet circle sm">ㄱ</span></span> 그중에서 내가 제일 좋아하는 것은 
+                            <span class="blankBox sm"><span class="bullet circle sm">ㄴ</span></span> 이다. 계란, 햄, 밥으로 정말 맛있게 만들어 주시는데 가끔 내가 햄이나 계란을
+                            <span class="blankBox sm"><span class="bullet circle sm">ㄷ</span></span> 넣어달라고 하면 더 넣어서 만들어주신다. 오늘은 아빠가 어떤 음식을 만들어주실까? 벌써 기다려진다.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="q_layout">
+        <h3 id="bgStyle6">책</h3>
+        <div class="a_wrap flex-col fx_align_c gap40">
+            <div class="examBox">
+                <div class="bgBox book">
+                    <div class="bgCont">
+                        <div class="dis_flex fx_valign_bw gap50">
+                            <div class="inner">
+                                <p>
+                                    &nbsp;&nbsp;&nbsp;오늘은 즐거운 토요일이다. 토요일마다 아빠가 점심을 만들어 주시는데 내가 만들어달라는 음식은 다 만들어주시고 만들어주신 음식은 하나같이 
+                                    <span class="blankBox sm"><span class="bullet circle sm">ㄱ</span></span> 그중에서 내가 제일 좋아하는 것은 
+                                    <span class="blankBox sm"><span class="bullet circle sm">ㄴ</span></span> 이다. 계란, 햄, 밥으로 정말 맛있게 만들어 주시는데 가끔 내가 햄이나 계란을
+                                    <span class="blankBox sm"><span class="bullet circle sm">ㄷ</span></span> 넣어달라고 하면 더 넣어서 만들어주신다. 오늘은 아빠가 어떤 음식을 만들어주실까? 벌써 기다려진다.
+                                </p>
+                            </div>
+                            <div class="inner">
+                                <p>
+                                    &nbsp;&nbsp;&nbsp;오늘은 즐거운 토요일이다. 토요일마다 아빠가 점심을 만들어 주시는데 내가 만들어달라는 음식은 다 만들어주시고 만들어주신 음식은 하나같이 
+                                    <span class="blankBox sm"><span class="bullet circle sm">ㄱ</span></span> 그중에서 내가 제일 좋아하는 것은 
+                                    <span class="blankBox sm"><span class="bullet circle sm">ㄴ</span></span> 이다. 계란, 햄, 밥으로 정말 맛있게 만들어 주시는데 가끔 내가 햄이나 계란을
+                                    <span class="blankBox sm"><span class="bullet circle sm">ㄷ</span></span> 넣어달라고 하면 더 넣어서 만들어주신다. 오늘은 아빠가 어떤 음식을 만들어주실까? 벌써 기다려진다.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="q_layout">
+        <h3 id="bgStyle7">노트</h3>
+        <div class="a_wrap flex-col fx_align_c gap40">
+            <div class="examBox">
+                <div class="bgBox note">
+                    <div class="bgCont">
+                        <p>
+                            &nbsp;&nbsp;&nbsp;오늘은 즐거운 토요일이다. 토요일마다 아빠가 점심을 만들어 주시는데 내가 만들어달라는 음식은 다 만들어주시고 만들어주신 음식은 하나같이 
+                            <span class="blankBox sm"><span class="bullet circle sm">ㄱ</span></span> 그중에서 내가 제일 좋아하는 것은 
+                            <span class="blankBox sm"><span class="bullet circle sm">ㄴ</span></span> 이다. 계란, 햄, 밥으로 정말 맛있게 만들어 주시는데 가끔 내가 햄이나 계란을
+                            <span class="blankBox sm"><span class="bullet circle sm">ㄷ</span></span> 넣어달라고 하면 더 넣어서 만들어주신다. 오늘은 아빠가 어떤 음식을 만들어주실까? 벌써 기다려진다.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="q_layout">
+        <h3 id="bgStyle8">리포트</h3>
+        <div class="a_wrap flex-col fx_align_c gap40">
+            <div class="examBox">
+                <div class="bgBox report">
+                    <div class="bgCont">
+                        <div class="txt_group">
+                            <strong class="sub_tt">&lt;실험 보고서&gt;</strong>
+                        </div>
+                        <table class="tbl_basic type3 center">
+                            <caption>개요</caption>
+                            <colgroup>
+                                <col style="width:20%">
+                                <col stylw="width:80%">
+                            </colgroup>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">탐구 문제</th>
+                                    <td class="td_left">초가 연소할 때 생기는 물질 알아보기</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">가설 세우기</th>
+                                    <td class="td_left"><span class="blankBox wp100"></span></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">실험 과정</th>
+                                    <td class="td_left">
+                                        1. 투명한 아크릴 통의 안쪽 벽면에 푸른색 염화 코발트 종이를 셀로판테이프로 붙입니다.<br>
+                                        2. 초에 붉을 붙이고 아크릴 통으로 덮습니다.<br>
+                                        3. 푸른색 염화 코발트 종이와 아크릴 통 속에 나타나는 변화를 관찰해 봅시다.<br>
+                                        <div class="imgBox">
+                                            <img src="../images/q_common/examBox_eximg15.png">
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="q_layout">
+        <h3 id="bgStyle9">핸드폰+대화창</h3>
+        <div class="a_wrap flex-col fx_align_c gap40">
+            <div class="examBox">
+                <div class="bgBox phone">
+                    <div class="bgCont">
+                        <ul class="chatBox type2">
+                            <li class="chat_item right">
+                                <span class="chat_img blue">나</span>
+                                <div class="bubble">
+                                    엄마, 나 큰일났어.
+                                </div> 
+                            </li>
+                            <li class="chat_item left">
+                                <span class="chat_img pink">엄마</span>
+                                <div class="bubble">
+                                    무슨일 있어?
+                                </div> 
+                            </li>
+                            <li class="chat_item right">
+                                <span class="chat_img blue">나</span>
+                                <div class="bubble">
+                                    오늘 리코더 실기 평가 있는 날인데, 깜빡하고 리코더를 집에 놓고 왔어.
+                                </div> 
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="q_layout">
+        <h3 id="bgStyle11">포스터</h3>
+        <div class="a_wrap flex-col fx_align_c gap40">
+            <div class="examBox">
+                <div class="bgBox poster">
+                    <div class="bgCont">
+                        <div class="txt_group">
+                            <strong class="sub_tt"><조선 후기 미술 특별전 안내></strong>
+                            <p>우리 미술관에서는 김홍도, 신윤복 등 조선 후기 유명 화가들의 그림을 통해 그 당시 사람들의 생활 모습을 엿볼 수 있는 특별전을 마련하였습니다. 많은 참여 바랍니다.</p>
+                            <ul class="list_1st">
+                                <li>전시기간 : 20△△년 △월 △일 ~ △월 △일</li>
+                                <li>장소 : 1층 특별 전시실</li>
+                            </ul>
+                        </div>
+                        <p>
+                            &nbsp;&nbsp;&nbsp;오늘은 즐거운 토요일이다. 토요일마다 아빠가 점심을 만들어 주시는데 내가 만들어달라는 음식은 다 만들어주시고 만들어주신 음식은 하나같이 
+                            <span class="blankBox sm"><span class="bullet circle sm">ㄱ</span></span> 그중에서 내가 제일 좋아하는 것은 
+                            <span class="blankBox sm"><span class="bullet circle sm">ㄴ</span></span> 이다. 계란, 햄, 밥으로 정말 맛있게 만들어 주시는데 가끔 내가 햄이나 계란을
+                            <span class="blankBox sm"><span class="bullet circle sm">ㄷ</span></span> 넣어달라고 하면 더 넣어서 만들어주신다. 오늘은 아빠가 어떤 음식을 만들어주실까? 벌써 기다려진다.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="q_layout">
+        <h3 id="bgStyle11">양피지, 종이 <small>(두루마리를 사용해야할때도 이 배경을 사용)</small></h3>
+        <div class="a_wrap flex-col fx_align_c gap40">
+            <div class="examBox">
+                <div class="bgBox paper">
+                    <div class="bgCont">
+                        <div class="txt_group">
+                            <strong class="sub_tt"><상소문></strong>
+                        </div>
+                        <p>
+                            &nbsp;&nbsp;&nbsp;오늘은 즐거운 토요일이다. 토요일마다 아빠가 점심을 만들어 주시는데 내가 만들어달라는 음식은 다 만들어주시고 만들어주신 음식은 하나같이 
+                            <span class="blankBox sm"><span class="bullet circle sm">ㄱ</span></span> 그중에서 내가 제일 좋아하는 것은 
+                            <span class="blankBox sm"><span class="bullet circle sm">ㄴ</span></span> 이다. 계란, 햄, 밥으로 정말 맛있게 만들어 주시는데 가끔 내가 햄이나 계란을
+                            <span class="blankBox sm"><span class="bullet circle sm">ㄷ</span></span> 넣어달라고 하면 더 넣어서 만들어주신다. 오늘은 아빠가 어떤 음식을 만들어주실까? 벌써 기다려진다.
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </div>
+
+
 
 <h2 id="exam9">텍스트 <small>flow</small></h2>
 <div class="stwrap q_layout">
@@ -236,6 +550,42 @@
         </div>
     </div>
 </div>
+<div class="stwrap q_layout">
+    <div class="q_wrap">
+        <div class="examBox">
+            <ul class="flowBox">
+                <li>오늘 할머니, 할아버지와 옥수수밭에 갔다.</li>
+                <li>오늘 할머니, 할아버지와 <span class="blankBox sm"></span> 옥수수밭에 갔다.</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="stwrap q_layout">
+    <div class="q_wrap">
+        <div class="examBox">
+            <p>
+                오늘 할머니, 할아버지와 옥수수밭에 갔다.<br>
+                <span class="icoarrow"></span>오늘 할머니, 할아버지와 <span class="blankBox sm"></span> 옥수수밭에 갔다.
+            </p>
+        </div>
+    </div>
+</div>
+<div class="stwrap q_layout">
+    <div class="q_wrap">
+        <div class="examBox">
+            <p class="txtCenter">
+                원님의 곳간에는 볏집 한 단만이 있었음<br>
+                <span class="icoarrow under"></span><br>
+                원님은 이승으로갈 수 없다고 생각하니 걱정이 됨<br>
+                <span class="icoarrow under"></span><br>
+                <span class="blankBox wp100"></span>
+            </p>
+        </div>
+    </div>
+</div>
+
+
+
 
 <h2 id="exam10">리스트 <small>블릿 스타일 적용</small></h2>
 <div class="stwrap q_layout">
@@ -356,6 +706,25 @@
         </div>
     </div>
 </div>
+<div class="stwrap q_layout">
+    <div class="q_wrap">
+        <div class="examBox">
+           <div class="lineBox type3">
+                <span class="bullet tit">보기</span>
+                <div class="poemBox">
+                    <p class="poemTxt">
+                        하나는 뭐니?<br>
+                        숟가락 하나<br>
+                        <br>
+                        둘은 뭐니<br>
+                        <span class="blankBox wp100 sm"></span>
+                    </p>
+                </div>
+           </div>
+        </div>
+    </div>
+</div>
+
 
 <h2 id="exam17">문장형 <small>빈칸</small></h2>
 <div class="stwrap q_layout">
@@ -386,13 +755,135 @@
     </div>
 </div>
 
+<h2 id="exam18-1">문장형 <small>중앙정렬</small></h2>
+<div class="stwrap q_layout">
+    <div class="q_wrap">
+        <div class="examBox">
+            <div class="poemBox">
+                <p class="poemTxt">
+                    울퉁불퉁 멋진 몸매에<br>
+                    빠알간 옷을 입고<br>
+                    새콤달콤 향내 풍기는<br> 
+                    …<br>
+                    나는야 주스 될 거야<br>
+                    나는야 케첩 될 거야<br>
+                    나는야 춤을 출 거야
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="stwrap q_layout">
+    <div class="q_wrap">
+        <div class="examBox">
+            <p><span class="nametag sm">귀여운</span> ▸ 아주 귀여운 강아지가 멍멍 짖는다.</p>
+        </div>
+    </div>
+</div>
+
+<h2 id="exam18-2">시형태 <small></small></h2>
+<div class="stwrap q_layout">
+    <div class="q_wrap">
+        <div class="examBox">
+            <div class="poemBox">
+                <div class="txt_group">
+                    <strong class="sub_tt">꽃</strong>
+                    <span class="txtRight">정여민</span>
+                </div>
+                <p class="poemTxt">
+                    꽃이 얼굴을 내밀었다.<br>
+                    내가 먼저 본 줄 알았지만<br>
+                    봄이 쫓아가던 길목에서<br>
+                    내가 보아주기를 날마다 기다리고 있었다.<br>
+                    <br>
+                    내가 먼저 말 건 줄 알았지만<br>
+                    바람과 인사하고 햇살과 인사하며<br>
+                    날마다 내게 말을 걸고 있었다.<br>
+                    <br>
+                    내가 먼저 웃어 준 줄 알았지만<br>
+                    떨어질 꽃잎도 지켜 내며<br>
+                    나를 향해 더 많이 활짝 웃고 있었다.<br>
+                    <br>
+                    내가 더 나중에 보아서 미안하다.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="stwrap q_layout">
+    <div class="q_wrap">
+        <div class="examBox">
+            <div class="poemBox">
+                <div class="txt_group">
+                    <strong class="sub_tt">꽃</strong>
+                    <span class="txtRight">정여민</span>
+                </div>
+                <p class="poemTxt left">
+                    꽃이 얼굴을 내밀었다.<br>
+                    내가 먼저 본 줄 알았지만<br>
+                    봄이 쫓아가던 길목에서<br>
+                    내가 보아주기를 날마다 기다리고 있었다.<br>
+                    <br>
+                    내가 먼저 말 건 줄 알았지만<br>
+                    바람과 인사하고 햇살과 인사하며<br>
+                    날마다 내게 말을 걸고 있었다.<br>
+                    <br>
+                    내가 먼저 웃어 준 줄 알았지만<br>
+                    떨어질 꽃잎도 지켜 내며<br>
+                    나를 향해 더 많이 활짝 웃고 있었다.<br>
+                    <br>
+                    내가 더 나중에 보아서 미안하다.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="stwrap q_layout">
+    <div class="q_wrap">
+        <div class="examBox">
+            <div class="poemBox">
+                <div class="txt_group">
+                    <strong class="sub_tt">오늘</strong>
+                    <span class="txtRight">이준관</span>
+                </div>
+                <div class="poemTxt_gr">
+                    <p class="poemTxt left">
+                        나는 오늘이 좋아<br><br>
+
+                        오늘 아침 일찍 새들이<br>
+                        나를 깨워 주었고,<br>
+                        저것 봐!<br>
+                        오늘은 좋은 일이 많을 거야.<br>
+                        해가 함빡 웃잖아.<br><br>
+
+                        오늘 학교에서는<br>
+                        선생님 질문에<br>
+                        자신 있게 대답할 수 있을 거야.
+                    </p>
+                    <p class="poemTxt left">
+                        잎에서 절로 휘파람이 나오는<br>
+                        즐거운 오늘<br><br>
+
+                        안녕! 즐겁게 만날 친구도 많고<br>
+                        야호! 신나게 할 일도 많은<br><br>
+
+                        나는 오늘이 좋아.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
 <h2 id="exam19">문장형 <small>밑줄</small></h2>
 <div class="stwrap q_layout">
     <div class="q_wrap">
         <div class="examBox">
             <p>
-                &nbsp;&nbsp;&nbsp;우리나라 독도에는 <u>㉠멋진</u> 괭이갈매기가 삽니다. <u>㉡귀여운</u> 아기 괭이 갈매기는 멋진 어미 괭이갈매기를 부릅니다.
-                 어미 괭이갈매기는 <u>㉢먹이</u>를 물고 <u>㉣뒤뚱뒤뚱</u> 아기 괭이갈매기에게 갑니다. 아기 괭이갈매기가 <u>㉤반갑게</u> 맞이합니다.
+                &nbsp;&nbsp;&nbsp;우리나라 독도에는 <u><span class="bullet circle sm">ㄱ</span>멋진</u> 괭이갈매기가 삽니다. <u><span class="bullet circle sm">ㄴ</span>귀여운</u> 아기 괭이 갈매기는 멋진 어미 괭이갈매기를 부릅니다.
+                 어미 괭이갈매기는 <u><span class="bullet circle sm">ㄷ</span>먹이</u>를 물고 <u><span class="bullet circle sm">ㄹ</span>뒤뚱뒤뚱</u> 아기 괭이갈매기에게 갑니다. 아기 괭이갈매기가 <u><span class="bullet circle sm">ㅁ</span>반갑게</u> 맞이합니다.
             </p>
         </div>
     </div>
@@ -434,7 +925,7 @@
     </div>
 </div>
 
-<h2 id="exam24">문장형 <small>긴글</small></h2>
+<h2 id="exam25">문장형 <small>긴글</small></h2>
 <div class="stwrap q_layout">
     <div class="q_wrap">
         <div class="examBox">
@@ -499,6 +990,40 @@
     </div>
 </div>
 
+<h2 id="exam25-1">문장형 <small>문장 안에 박스</small></h2>
+<div class="stwrap q_layout">
+    <div class="q_wrap">
+        <div class="examBox fx_align_l">
+            <p>
+                &nbsp;&nbsp;&nbsp;두꺼비가 말했어요.<br>
+                &nbsp;&nbsp;&nbsp;“개구리야, 너는 왜 자꾸만 창밖을 내다보니?”<br>
+                &nbsp;&nbsp;&nbsp;“응, 편지를 기다리고 있거든.”<br>
+                &nbsp;&nbsp;&nbsp;“편지가 올 리 없잖아.”<br>
+                &nbsp;&nbsp;&nbsp;그러자 개구리가 이렇게 말했어요.<br>
+                &nbsp;&nbsp;&nbsp;“아니야, 분명히 편지가 올 거야. 내가 너한테 편지를 보냈거든.”<br>
+                &nbsp;&nbsp;&nbsp;“네가 편지를 보냈다고? 뭐라고 썼는데?”
+            </p>
+            <div class="lineBox sm mauto">
+                <p>
+                    안녕, 두꺼비야.<br>
+                    네가 나의 가장 친한 친구인 게 기뻐.<br>
+                    너의 가장 친한 친구 개구리가.<br>
+                </p>
+           </div>
+           <p>
+                &nbsp;&nbsp;&nbsp;“이렇게 썼어.”<br>
+                &nbsp;&nbsp;&nbsp;두꺼비가 말했어요.<br>
+                &nbsp;&nbsp;&nbsp;“와, 정말로 멋진 편지다.”<br>
+                &nbsp;&nbsp;&nbsp;그다음에 개구리와 두꺼비는 편지를 기다리러 현관 앞으로 나갔어요.
+           </p>
+        </div>
+    </div>
+</div>
+
+
+
+
+
 
 <h2 id="exam20">테이블 <small></small></h2>
 <div class="stwrap q_layout">
@@ -532,6 +1057,46 @@
         </div>
     </div>
 </div>
+
+<div class="stwrap q_layout">
+    <div class="q_wrap">
+        <div class="examBox">
+            <table class="tbl_basic type3 center">
+                <caption>개요</caption>
+                <colgroup>
+                    <col style="width:30%">
+                    <col style="width:30%">
+                    <col style="width:30%"> 
+                </colgroup> 
+                <tbody>
+                    <tr class="tr_bg">
+                        <th colspan="3">마음을 나누는 글을 쓰는 상황</th>
+                    </tr>
+                    <tr>
+                        <td colspan="3">이웃을 도우려고 나눔 장터를 열려고 함</td>
+                    </tr>
+                    <tr class="tr_bg">
+                        <th scope="col">나누려는 마음</th>
+                        <th scope="col">읽을 사람</th>
+                        <th scope="col">글을 전하는 방법</th>
+                    </tr>
+                    <tr>
+                        <td><span class="blankBox wp100"><span class="bullet circle">ㄱ</span></span></td>
+                        <td>학교 친구들</td>
+                        <td><span class="blankBox wp100"><span class="bullet circle">ㄴ</span></span></td>
+                    </tr>
+                    <tr class="tr_bg">
+                        <th colspan="3">글을 쓰는 목적</th>
+                    </tr>
+                    <tr>
+                        <td colspan="3">친구들과 이웃을 돕기 위해 나눔 장터를 알리는 글을 씀</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
 <div class="stwrap q_layout">
     <div class="q_wrap">
         <div class="examBox">
@@ -547,15 +1112,15 @@
                     <tr>
                         <th scope="row">실험장면</th>
                         <td>
-                            <img src="/images/q_common/examBox_eximg1.png"/>
+                            <img src="../images/q_common/examBox_eximg1.png"/>
                             <p>석회수에 가까이 가져갔을때</p>
                         </td>
                         <td>
-                            <img src="/images/q_common/examBox_eximg2.png"/>
+                            <img src="../images/q_common/examBox_eximg2.png"/>
                             <p>촛불에 가까이 가져갔을 때</p>
                         </td>
                         <td>
-                            <img src="/images/q_common/examBox_eximg3.png"/>
+                            <img src="../images/q_common/examBox_eximg3.png"/>
                             <p>향불에 가까기 가져갔을 때</p>
                         </td>
                     </tr>
@@ -638,7 +1203,7 @@
                                     2. 초에 붉을 붙이고 아크릴 통으로 덮습니다.<br>
                                     3. 푸른색 염화 코발트 종이와 아크릴 통 속에 나타나는 변화를 관찰해 봅시다.<br>
                                     <div class="imgBox">
-                                        <img src="/images/q_common/examBox_eximg15.png">
+                                        <img src="../images/q_common/examBox_eximg15.png">
                                     </div>
                                 </td>
                             </tr>
@@ -702,7 +1267,7 @@
                     <col stylw="width:70%"/>
                 </colgroup>
                 <tbody>
-                    <tr>
+                    <tr class="tr_bg">
                         <th scope="row" colspan="2">여행 기간과 장소</th>
                     </tr>
                     <tr>
@@ -713,7 +1278,7 @@
                         <th scope="row">여행 장소</th>
                         <td class="td_left"><span class="blankBox sm wp100"><span class="bullet circle sm">ㄴ</span></span></td>
                     </tr>
-                    <tr>
+                    <tr class="tr_bg">
                         <th scope="row" colspan="2">같이 가고 싶은 사람과 준비할 일</th>
                     </tr>
                     <tr>
@@ -724,13 +1289,13 @@
                         <th scope="row">준비할 일</th>
                         <td class="td_left"><span class="blankBox sm wp100"><span class="bullet circle sm">ㄹ</span></span></td>
                     </tr>
-                    <tr>
+                    <tr class="tr_bg">
                         <th scope="row" colspan="2">여행 일정</th>
                     </tr>
                     <tr>
                         <td class="td_left" colspan="2"><span class="blankBox sm wp100"><span class="bullet circle sm">ㅁ</span></span></td>
                     </tr>
-                    <tr>
+                    <tr class="tr_bg">
                         <th scope="row" colspan="2">여행 비용</th>
                     </tr>
                     <tr>
@@ -914,7 +1479,7 @@
                 <li>
                     <div class="cardBox photo flex-col">
                         <div class="photoBox">
-                            <img src="/images/q_common/examBox_eximg7.png">
+                            <img src="../images/q_common/examBox_eximg7.png">
                         </div>
                         <p><span class="bullet circle">1</span>&nbsp;전지</p>
                     </div>
@@ -922,7 +1487,7 @@
                 <li>
                     <div class="cardBox photo flex-col">
                         <div class="photoBox">
-                            <img src="/images/q_common/examBox_eximg8.png">
+                            <img src="../images/q_common/examBox_eximg8.png">
                         </div>
                         <p><span class="bullet circle">2</span>&nbsp;철 클립</p>
                     </div>
@@ -930,7 +1495,7 @@
                 <li>
                     <div class="cardBox photo flex-col">
                         <div class="photoBox">
-                            <img src="/images/q_common/examBox_eximg9.png">
+                            <img src="../images/q_common/examBox_eximg9.png">
                         </div>
                         <p><span class="bullet circle">3</span>&nbsp;면장갑</p>
                     </div>
@@ -938,7 +1503,7 @@
                 <li>
                     <div class="cardBox photo flex-col">
                         <div class="photoBox">
-                            <img src="/images/q_common/examBox_eximg10.png">
+                            <img src="../images/q_common/examBox_eximg10.png">
                         </div>
                         <p><span class="bullet circle">4</span>&nbsp;빵 끈</p>
                     </div>
@@ -946,7 +1511,7 @@
                 <li>
                     <div class="cardBox photo flex-col">
                         <div class="photoBox">
-                            <img src="/images/q_common/examBox_eximg11.png">
+                            <img src="../images/q_common/examBox_eximg11.png">
                         </div>
                         <p><span class="bullet circle">5</span>&nbsp;스위치</p>
                     </div>
@@ -964,25 +1529,25 @@
                 <li>
                     <div class="cardBox photo flex-col">
                         <div class="photoBox">
-                            <img src="/images/q_common/examBox_eximg12.png">
+                            <img src="../images/q_common/examBox_eximg12.png">
                         </div>
-                        <p>물이 <span class="blankBox"></span> 하다!</p>
+                        <p>물이 <span class="blankBox sm"></span> 하다!</p>
                     </div>
                 </li>
                 <li>
                     <div class="cardBox photo flex-col">
                         <div class="photoBox">
-                            <img src="/images/q_common/examBox_eximg13.png">
+                            <img src="../images/q_common/examBox_eximg13.png">
                         </div>
-                        <p>국물이 <span class="blankBox"></span> 하다!</p>
+                        <p>국물이 <span class="blankBox sm"></span> 하다!</p>
                     </div>
                 </li>
                 <li>
                     <div class="cardBox photo flex-col">
                         <div class="photoBox">
-                            <img src="/images/q_common/examBox_eximg14.png">
+                            <img src="../images/q_common/examBox_eximg14.png">
                         </div>
-                        <p>목소리가 <span class="blankBox"></span> 하다!</p>
+                        <p>목소리가 <span class="blankBox sm"></span> 하다!</p>
                     </div>
                 </li>
             </ul>
@@ -998,18 +1563,102 @@
         </div>
     </div>
 </div>
+<div class="stwrap q_layout">
+    <div class="q_wrap">
+        <div class="examBox">
+            <ul class="cardBox_flow">
+                <li>
+                    <div class="cardBox photo flex-col">
+                        <div class="photoBox">
+                            <img src="../images/q_common/examBox_eximg12.png">
+                        </div>
+                        <p>물이 <span class="blankBox sm"></span> 하다!</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="cardBox photo flex-col">
+                        <div class="photoBox">
+                            <img src="../images/q_common/examBox_eximg13.png">
+                        </div>
+                        <p>국물이 <span class="blankBox sm"></span> 하다!</p>
+                    </div>
+                </li>
+                <li>
+                    <div class="cardBox photo flex-col">
+                        <div class="photoBox">
+                            <img src="../images/q_common/examBox_eximg14.png">
+                        </div>
+                        <p>목소리가 <span class="blankBox sm"></span> 하다!</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
 
 <h2 id="exam24">수식 <small>수학에서 사용 수학기호 또는 수식, 숫자만 사용할때 // 해당 컴포넌트로도 작업이 안될 경우 이미지 처리</small></h2>
 <div class="stwrap q_layout">
     <div class="q_wrap">
         <div class="examBox">
             <div class="mathTxt">
-                54-338=50-38+4<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=12+4=16
+                54-338=50-38+4
             </div>
         </div>
     </div>
 </div>
+<div class="stwrap q_layout">
+    <div class="q_wrap">
+        <div class="mathTxt dis_flex gap10">
+            <span>54 - 38</span>
+            <ul>
+                <li>= 50 - 38 + 4</li>
+                <li>= 12 + 4 = 16</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<h2 id="exam26">채팅 <small></small></h2>
+<div class="stwrap q_layout">
+    <div class="q_wrap">
+        <div class="examBox">
+            <div class="bgBox phone">
+                <div class="bgCont">
+                    <ul class="chatBox type2">
+                        <li class="chat_item right">
+                            <span class="chat_img blue">나</span>
+                            <div class="bubble">
+                                엄마, 나 큰일났어.
+                            </div> 
+                        </li>
+                        <li class="chat_item left">
+                            <span class="chat_img pink">엄마</span>
+                            <div class="bubble">
+                                무슨일 있어?
+                            </div> 
+                        </li>
+                        <li class="chat_item right">
+                            <span class="chat_img blue">나</span>
+                            <div class="bubble">
+                                오늘 리코더 실기 평가 있는 날인데, 깜빡하고 리코더를 집에 놓고 왔어.
+                            </div> 
+                        </li>
+                        <li class="chat_item left">
+                            <span class="chat_img pink">엄마</span>
+                            <div class="bubble">
+                                <span class="blankBox sm long"></span> 요새 자주 잊어버리네, 정신 차리고 살아야지.
+                            </div> 
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 
 
 </section>

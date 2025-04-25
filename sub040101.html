@@ -9,6 +9,7 @@
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="/css/common.css">
     <link rel="stylesheet" href="/css/question.css">
+        <link rel="stylesheet" href="/css/question_ind.css">
     <link rel="stylesheet" href="/css/contents.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -190,21 +191,28 @@
                         <!-- 회차별 탭 -->
                         <div class="tab-body" id="tab2">
                             <a href="#" onclick="modalOpen('modal-share');" class="btn btn-ani btn-outline-secondary btn_share"><i class="sicon ico_share"></i>공유하기</a>
+                            <a href="#" onclick="modalOpen('modal-share-all');" class="btn btn-ani btn-outline-secondary btn_share_all"><i class="sicon ico_share"></i>일괄공유</a>
                             <div class="tabin">
                                 <div class="tabtop">
+                                    <div>
+                                        <select id="episode" class="tab-select">
+                                            <option value="5" label="5"></option>
+                                            <option value="4" label="4"></option>
+                                            <option value="3" label="3"></option>
+                                            <option value="2" label="2"></option>
+                                            <option value="1" label="1"></option>
+                                        </select>
+                                        <label for="episode">회차</label>
+                                    </div>
                                     <div class="tabin-header">
-                                        <button rel="tabin10" class="active">10</button>
-                                        <button rel="tabin9">9</button>
-                                        <button rel="tabin8">8</button>
-                                        <button rel="tabin7">7</button>
-                                        <button rel="tabin6">6</button>
-                                        <button rel="tabin5">5</button>
-                                        <button rel="tabin4">4</button>
-                                        <span rel="tabin3" class="disable">3</span>
-                                        <button rel="tabin2">2</button>
-                                        <button rel="tabin1">1</button>
+                                        <button rel="tabin1" class="active">국어</button>
+                                        <button rel="tabin2">수학</button>
+                                        <button rel="tabin3">영어</button>
+                                        <button rel="tabin4">과학</button>
+                                        <button rel="tabin5">사회</button>
                                     </div>
                                 </div>
+
                                 <div class="tabin-body" id="tabin10" class="active">
                                     <div class="tabcon">
                                         <div class="tit_info">
@@ -578,13 +586,26 @@
                         <!-- 과목별 탭 -->
                         <div class="tab-body" id="tab3">
                             <div class="tabin">
-                                <div class="tabin-header">
-                                    <button rel="tabin3-1" class="active">국어</button>
-                                    <button rel="tabin3-2">수학</button>
-                                    <button rel="tabin3-3">사회</button>
-                                    <button rel="tabin3-4">과학</button>
-                                    <button rel="tabin3-5" onclick="modalOpen('modal-company');" >영어</button>
+                                <div class="tabtop">
+                                    <div>
+                                        <select id="episode" class="tab-select">
+                                            <option value="5" label="5"></option>
+                                            <option value="4" label="4"></option>
+                                            <option value="3" label="3"></option>
+                                            <option value="2" label="2"></option>
+                                            <option value="1" label="1"></option>
+                                        </select>
+                                        <label for="episode">회차</label>
+                                    </div>
+                                    <div class="tabin-header">
+                                        <button rel="tabin3-1" class="active">국어</button>
+                                        <button rel="tabin3-2">수학</button>
+                                        <button rel="tabin3-3">사회</button>
+                                        <button rel="tabin3-4">과학</button>
+                                        <button rel="tabin3-5" onclick="modalOpen('modal-company');" >영어</button>
+                                    </div>
                                 </div>
+
                                 <div class="tabin-body" id="tabin3-1" class="active">
                                     <div class="tabcon">
                                         <div class="tit_info">
@@ -599,12 +620,26 @@
                                             </ul>
                                         </div>
                                         <div class="text_info">
-                                            <div class="chart_item_con">
+                                            <!-- <div class="chart_item_con">
                                                 <div class="graph_wrap">
                                                     <canvas id="managerChart3_2"></canvas>
                                                 </div>
+                                            </div> -->
+                                            <div class="chart_item num5">
+                                                <div class="title_box">
+                                                    <strong class="subtitle"><i class="hico2 hico8"></i>단원별 정답률</strong>
+                                                    <div class="tooltip_wrap">
+                                                        <a class="tooltip"><i class="sicon ico_info">정보</i></a>
+                                                        <div class="tooltip_box"><p>단원별 학생 정답률과 지역 평균 정답률을 나타냅니다.</p></div>
+                                                    </div>
+                                                </div>
+                                                <div class="chart_item_con">
+                                                    <div class="graph_wrap">
+                                                        <canvas id="managerChart3_2"></canvas>
+                                                    </div>
+                                                </div>
                                             </div>
-
+                                            
                                             <div class="title_box">
                                                 <strong class="subtitle">평가 문항정보</strong>
                                             </div>
@@ -710,6 +745,188 @@
 </div>
 <!--//공유하기 팝업-->
 
+
+<!--일괄공유 팝업-->
+<div class="modal type2 modal-popup answerPop" id="modal-share-all">
+    <div class="modal-background is-click-disabled"></div>
+    <div class="modal-content">
+        <button type="button" class="modal-close bn_close bk" onclick="modalClose('modal-share-all');">닫기</button>
+        <div class="popup-wrap">
+            <div class="con-head">
+                <h3>전체 학생 평가기록 공유</h3>
+                <p class="description">공유하기 <em class="btn btn-ani btn-primary sm">복사</em> 버튼 클릭 시 <span>공유주소와 접속 비밀번호</span>가 복사됩니다.</p>
+            </div>
+            <div class="con-wrap">
+                <div class="share-all-list">
+                    <table class="tbl_basic center table-hover">
+                        <caption>개요</caption>
+                        <colgroup>
+                            <col style="width:7%">
+                            <col style="width:7%">
+                            <col style="width:7%">
+                            <col style="width:auto">
+                            <col style="width:14%">
+                        </colgroup>
+                        <thead>
+                            <tr>
+                                <th scope="col">학년</th>
+                                <th scope="col">반</th>
+                                <th scope="col">번호</th>
+                                <th scope="col" class="th_deep">공유주소</th>
+                                <th scope="col" class="th_deep">공유하기</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">5</th>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>https://main--stalwart-axolotl-86516a.netlify.app/sub040102</td>
+                                <td> <a href="/sub040102.html" target="_blank" class="btn btn-ani btn-primary sm">복사</a></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">5</th>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>https://main--stalwart-axolotl-86516a.netlify.app/sub040102</td>
+                                <td> <a href="/sub040102.html" target="_blank" class="btn btn-ani btn-primary sm">복사</a></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">5</th>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>https://main--stalwart-axolotl-86516a.netlify.app/sub040102</td>
+                                <td> <a href="/sub040102.html" target="_blank" class="btn btn-ani btn-primary sm">복사</a></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">5</th>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>https://main--stalwart-axolotl-86516a.netlify.app/sub040102</td>
+                                <td> <a href="/sub040102.html" target="_blank" class="btn btn-ani btn-primary sm">복사</a></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">5</th>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>https://main--stalwart-axolotl-86516a.netlify.app/sub040102</td>
+                                <td> <a href="/sub040102.html" target="_blank" class="btn btn-ani btn-primary sm">복사</a></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">5</th>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>https://main--stalwart-axolotl-86516a.netlify.app/sub040102</td>
+                                <td> <a href="/sub040102.html" target="_blank" class="btn btn-ani btn-primary sm">복사</a></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">5</th>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>https://main--stalwart-axolotl-86516a.netlify.app/sub040102</td>
+                                <td> <a href="/sub040102.html" target="_blank" class="btn btn-ani btn-primary sm">복사</a></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">5</th>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>https://main--stalwart-axolotl-86516a.netlify.app/sub040102</td>
+                                <td> <a href="/sub040102.html" target="_blank" class="btn btn-ani btn-primary sm">복사</a></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">5</th>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>https://main--stalwart-axolotl-86516a.netlify.app/sub040102</td>
+                                <td> <a href="/sub040102.html" target="_blank" class="btn btn-ani btn-primary sm">복사</a></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">5</th>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>https://main--stalwart-axolotl-86516a.netlify.app/sub040102</td>
+                                <td> <a href="/sub040102.html" target="_blank" class="btn btn-ani btn-primary sm">복사</a></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">5</th>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>https://main--stalwart-axolotl-86516a.netlify.app/sub040102</td>
+                                <td> <a href="/sub040102.html" target="_blank" class="btn btn-ani btn-primary sm">복사</a></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">5</th>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>https://main--stalwart-axolotl-86516a.netlify.app/sub040102</td>
+                                <td> <a href="/sub040102.html" target="_blank" class="btn btn-ani btn-primary sm">복사</a></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">5</th>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>https://main--stalwart-axolotl-86516a.netlify.app/sub040102</td>
+                                <td> <a href="/sub040102.html" target="_blank" class="btn btn-ani btn-primary sm">복사</a></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">5</th>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>https://main--stalwart-axolotl-86516a.netlify.app/sub040102</td>
+                                <td> <a href="/sub040102.html" target="_blank" class="btn btn-ani btn-primary sm">복사</a></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">5</th>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>https://main--stalwart-axolotl-86516a.netlify.app/sub040102</td>
+                                <td> <a href="/sub040102.html" target="_blank" class="btn btn-ani btn-primary sm">복사</a></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">5</th>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>https://main--stalwart-axolotl-86516a.netlify.app/sub040102</td>
+                                <td> <a href="/sub040102.html" target="_blank" class="btn btn-ani btn-primary sm">복사</a></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">5</th>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>https://main--stalwart-axolotl-86516a.netlify.app/sub040102</td>
+                                <td> <a href="/sub040102.html" target="_blank" class="btn btn-ani btn-primary sm">복사</a></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">5</th>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>https://main--stalwart-axolotl-86516a.netlify.app/sub040102</td>
+                                <td> <a href="/sub040102.html" target="_blank" class="btn btn-ani btn-primary sm">복사</a></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">5</th>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>https://main--stalwart-axolotl-86516a.netlify.app/sub040102</td>
+                                <td> <a href="/sub040102.html" target="_blank" class="btn btn-ani btn-primary sm">복사</a></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">5</th>
+                                <td>1</td>
+                                <td>1</td>
+                                <td>https://main--stalwart-axolotl-86516a.netlify.app/sub040102</td>
+                                <td> <a href="/sub040102.html" target="_blank" class="btn btn-ani btn-primary sm">복사</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--//일괄공유 팝업-->
+
+
 <!--출판사선택 팝업-->
 <div class="modal type2 modal-popup" id="modal-company">
     <div class="modal-background is-click-disabled"></div>
@@ -805,10 +1022,9 @@ $(".btnView").on("click", function() {
             labels: ['', '원본', '1차', '2차', '3차', '4차', '5차', '6차', '7차', '8차', '9차', '10차'], //맨앞에 0값
             datasets: [{
                 backgroundColor: 'rgb(133, 196, 255)',
-                borderWidth: 2,
+                borderWidth: 3,
                 borderColor: 'rgb(133, 196, 255)',
                 barThickness: 20,
-                borderRadius: 20,
                 data: [0, 20, 30, 20, 50, 40, 50, 90, 60, 80, 50, 55],
             }]
         },
@@ -840,22 +1056,22 @@ $(".btnView").on("click", function() {
             labels: ['영어', '과학', '사회', '수학', '국어'],
             datasets: [{
                 backgroundColor: [
-                    'rgba(201, 133, 255, .3)',
-                    'rgba(66, 211, 177, .3)',
-                    'rgba(255, 174, 53, .3)',
-                    'rgba(230, 142, 171, .3)',
-                    'rgba(133, 196, 255, .3)',
+                    '#FFBC75',
+                    '#8EE481',
+                    '#FFDB67',
+                    '#FF7B6C',
+                    '#6F9EFF',
                 ],
                 borderColor:[
-                    'rgba(201, 133, 255, 1)',
-                    'rgba(66, 211, 177, 1)',
-                    'rgba(255, 174, 53, 1)',
-                    'rgba(230, 142, 171, 1)',
-                    'rgba(133, 196, 255, 1)',
+                    '#FFBC75',
+                    '#8EE481',
+                    '#FFDB67',
+                    '#FF7B6C',
+                    '#6F9EFF',
                 ],
                 borderWidth: 1,
-                barThickness: 20, //그래프 굵기
-                borderRadius: 20, // 그래프 둥글기
+                barThickness: 10, //그래프 굵기
+                borderRadius: 10, // 그래프 둥글기
                 data:[300, 400, 500, 785, 900],
             }]
         },
@@ -920,22 +1136,22 @@ $(".btnView").on("click", function() {
             labels: ['영어', '과학', '사회', '수학', '국어'],
             datasets: [{
                 backgroundColor: [
-                    'rgba(201, 133, 255, .3)',
-                    'rgba(66, 211, 177, .3)',
-                    'rgba(255, 174, 53, .3)',
-                    'rgba(230, 142, 171, .3)',
-                    'rgba(133, 196, 255, .3)',
+                    '#FFBC75',
+                    '#8EE481',
+                    '#FFDB67',
+                    '#FF7B6C',
+                    '#6F9EFF',
                 ],
                 borderColor:[
-                    'rgba(201, 133, 255, 1)',
-                    'rgba(66, 211, 177, 1)',
-                    'rgba(255, 174, 53, 1)',
-                    'rgba(230, 142, 171, 1)',
-                    'rgba(133, 196, 255, 1)',
+                    '#FFBC75',
+                    '#8EE481',
+                    '#FFDB67',
+                    '#FF7B6C',
+                    '#6F9EFF',
                 ],
                 borderWidth: 1,
-                barThickness: 20, //그래프 굵기
-                borderRadius: 20, // 그래프 둥글기
+                barThickness: 10, //그래프 굵기
+                borderRadius: 10, // 그래프 둥글기
                 data:[300, 400, 500, 785, 900],
             }]
         },

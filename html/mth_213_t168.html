@@ -8,6 +8,7 @@
     
         <link rel="stylesheet" href="/css/common.css">
         <link rel="stylesheet" href="/css/question.css">
+        <link rel="stylesheet" href="/css/question_ind.css">
     
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     
@@ -21,7 +22,7 @@
 <div id="question_header"></div>
 <!--[include]HEADER :: End -->
 
-<div id="question" class="question">
+
     <div class="q_content" id="mth_213_t168">
         <h4 class="q_tit">
             <em class="question_number">1번</em>
@@ -30,9 +31,12 @@
         <div class="q_layout">
             <div class="q_wrap">
                 <div class="examBox">
-                    <div class="mathTxt">
-                        54-338=50-38+4<br>
-                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=12+4=16
+                    <div class="mathTxt dis_flex gap10">
+                        <span>54 - 38</span>
+                        <ul>
+                            <li>= 50 - 38 + 4</li>
+                            <li>= 12 + 4 = 16</li>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -41,22 +45,18 @@
                     <li>
                         <input type="radio" name="mth_213_t168_a" id="mth_213_t168_a1">
                         <label for="mth_213_t168_a1">태율</label>
-                        <span>54에서 30을 먼저 빼고 을 더 뺀 거야.</span>
+                        <span>54에서 30을 먼저 빼고 8을 더 뺀 거야.</span>
                     </li>
                     <li>
                         <input type="radio" name="mth_213_t168_a" id="mth_213_t168_a2">
                         <label for="mth_213_t168_a2">서연</label>
-                        <span>54를 50과 4로 가른 후 에서 을 빼고 를 더한 거지.</span>
+                        <span>54를 50과 4로 가른 후 50에서 38을 빼고 4를 더한 거지.</span>
                     </li>
                 </ul>
             </div>
         </div>
     </div>
-</div>
 
-<!--[include]FOOTER :: Start -->
-<div id="question_footer"></div>
-<!--[include]FOOTER :: End -->    
 
 
 </body>

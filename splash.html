@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>온평가</title>
+
+    <link rel="icon" type="image/png" href="../images/favicon/favicon-48x48.png" sizes="48x48" />
+    <link rel="icon" type="image/svg+xml" href="../images/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="../images/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="ontest" />
+
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/main.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.10.2/lottie.min.js"></script>
+</head>
+
+
+<body>
+
+<div class="splash">
+    <div id="splash_lottie" class="lottie"></div>
+    <div class="txt_wrap">
+        <h2>
+            <strong><em>잠시후</em>, 평가를 시작합니다.</strong>
+            <small>단원 평가 페이지로 이동 중입니다.</small>
+        </h2>
+        <div class="logo">온평가</div>
+    </div>
+    <script>
+        var animation1 = bodymovin.loadAnimation({ 
+            container: document.getElementById('splash_lottie'),
+            path: '../images/contents/splash_obj.json',
+            renderer: 'svg',
+            loop: true,
+            autoplay: true,
+        });
+    </script>
+</div>
+
+
+</body>
+
+</html>
+
+
+

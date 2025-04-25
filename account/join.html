@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>온평가 > 회원가입</title>
+
+    <link rel="icon" type="image/png" href="../images/favicon/favicon-48x48.png" sizes="48x48" />
+    <link rel="icon" type="image/svg+xml" href="../images/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="../images/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="ontest" />
+
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/question.css">
+    <link rel="stylesheet" href="/css/contents.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/contents.js"></script>
+</head>
+
+
+<body>
+
+<div id="wrapper">
+
+
+<main id="container" class="sub account">
+
+    <section id="content" class="acct_wrap">
+        <div class="acct_header">
+            <a href="/index.html" class="logo"><i class="ico_logo type1">온평가</i></a>
+    
+            <div class="sub_title">
+                <h1>회원 정보입력</h1>
+                <p>
+                    아래 필수 항목을 모두 입력하신 후 회원가입을 클릭하시면 가입이 완료됩니다.<br>
+                    이후 인증서로 로그인이 가능합니다.
+                </p>
+            </div>
+    
+            <ul class="process">
+                <li class="item end">
+                    <span class="circle">1</span>
+                    <em>약관동의</em>
+                </li>
+                <li class="item end">
+                    <span class="circle">2</span>
+                    <em>본인인증</em>
+                </li>
+                <li class="item ing">
+                    <span class="circle">3</span>
+                    <em>정보입력</em>
+                </li>
+            </ul>
+        </div>
+
+        <div class="acct_cont">
+            <div class="acct_con_item">
+                <span class="description"><i class="agicon"></i>필수입력사항</span>
+                <div class="lineBox joinForm">
+                    <div class="joinForm_section">
+                        <h3>기본정보</h3>
+                        <div class="form_group">
+                            <label class="formTit">아이디</label>
+                            <div class="form_item_box">
+                                <input type="text" class="form_input wd22px" placeholder="아이디 입력(5자 이상)">
+                                <button class="btn btn-ani btn-quaternary">중복확인</button>
+                                <span class="description">영문소문자 사용</span>
+                                <span class="alarm txError">이미 사용중인 아이디입니다.</span>
+                                <!-- <span class="alarm txComplete">사용 가능한 아이디 입니다.</span> -->
+                            </div>
+                        </div>
+                        <div class="form_group">
+                            <label class="formTit">비밀번호</label>
+                            <div class="form_item_box">
+                                <input type="password" class="form_input wd26px" placeholder="비밀번호 입력(8자 이상)">
+                                <span class="description">문자, 숫자, 특수문자 포함</span>
+                            </div>
+                        </div>
+                        <div class="form_group">
+                            <label class="formTit">비밀번호 확인</label>
+                            <div class="form_item_box">
+                                <input type="password" class="form_input wd26px" placeholder="비밀번호 재입력">
+                                <span class="alarm txError">비밀번호가 일치하지 않습니다.</span>
+                            </div>
+                        </div>
+                        <div class="form_group">
+                            <label class="formTit">이름</label>
+                            <div class="form_item_box">
+                                <input type="text" class="form_input wd20px" placeholder="이름을 입력해주세요.">
+                            </div>
+                        </div>
+                        <div class="form_group">
+                            <label class="formTit">이메일</label>
+                            <div class="form_item_box">
+                                <input type="text" class="form_input wd28px" placeholder="이메일 주소">
+                                <b>@</b>
+                                <input type="text" class="form_input wd18px">
+                                <select class="select wd19px">
+                                    <option selected>직접입력</option>
+                                    <option value="">korea.kr</option>
+                                    <option value="">cne.go.kr</option>
+                                    <option value="">naver.com</option>
+                                    <option value="">gmail.com</option>
+                                    <option value="">hanmail.net</option>
+                              </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="joinForm_section">
+                        <h3>소속정보</h3>
+                        <div class="form_group">
+                            <label class="formTit">학년</label>
+                            <div class="form_item_box">
+                                <select class="select wd10px">
+                                    <option selected>선택</option>
+                                    <option value="">6</option>
+                                    <option value="">5</option>
+                                    <option value="">4</option>
+                                    <option value="">3</option>
+                                    <option value="">2</option>
+                                    <option value="">1</option>
+                              </select>
+                              <span>학년</span>
+                            </div>
+                        </div>
+                        <div class="form_group">
+                            <label class="formTit">반</label>
+                            <div class="form_item_box">
+                                <input type="text" class="form_input wd10px">
+                                <span>반</span>
+                            </div>
+                        </div>
+                        <div class="form_group school_select">
+                            <label class="formTit">학교</label>
+                            <div class="form_item_box">
+                                <div class="inner">
+                                    <input type="text" class="form_input wd28px" placeholder="학교명 입력">
+                                    <span class="alarm description">검색 결과에서 소속학교를 선택하세요.</span>
+                                </div>
+                                <div class="school_list_wrap">
+                                    <div class="school_list">
+                                        <div class="item">
+                                            <span class="schoolName">천안중앙고등학교부설방송통신고등학교</span>
+                                            <span class="schoolAddr">충청남도 천안시 서북구 성거읍 소댕이3길 606-21</span>
+                                        </div>
+                                        <div class="item">
+                                            <span class="schoolName">홍성여자중학교부설방송통신중학교</span>
+                                            <span class="schoolAddr"></span>
+                                        </div>
+                                        <div class="item">
+                                            <span class="schoolName">성남초등학교</span>
+                                            <span class="schoolAddr">충청남도 천안시 동남구 성남면 대흥신덕길 95</span>
+                                        </div>
+                                        <div class="item">
+                                            <span class="schoolName">천안부영초등학교</span>
+                                            <span class="schoolAddr">충청남도 천안시 동남구 목천읍 삼성5길 22-14</span>
+                                        </div>
+                                        <div class="item">
+                                            <span class="schoolName">천안인애학교</span>
+                                            <span class="schoolAddr">충청남도 천안시 서북구 성거읍 봉구로 229</span>
+                                        </div>
+                                        <div class="item">
+                                            <span class="schoolName">결성초등학교</span>
+                                            <span class="schoolAddr">충청남도 홍성군 결성면 홍남서로738번길 30</span>
+                                        </div>
+                                        <div class="item">
+                                            <span class="schoolName">광덕초등학교</span>
+                                            <span class="schoolAddr">충청남도 천안시 동남구 광덕면 신흥리3길 36</span>
+                                        </div>
+                                        <div class="item">
+                                            <span class="schoolName">천안늘해랑학교</span>
+                                            <span class="schoolAddr">충청남도 천안시 동남구 병천면 유관순길 86</span>
+                                        </div>
+                                        <div class="item">
+                                            <span class="schoolName">천안중앙고등학교부설방송통신고등학교</span>
+                                            <span class="schoolAddr">충청남도 천안시 서북구 성거읍 소댕이3길 606-21</span>
+                                        </div>
+                                        <div class="item">
+                                            <span class="schoolName">천안늘해랑학교</span>
+                                            <span class="schoolAddr">충청남도 천안시 동남구 병천면 유관순길 86</span>
+                                        </div>
+                                        <div class="item">
+                                            <span class="schoolName">천안부영초등학교</span>
+                                            <span class="schoolAddr">충청남도 천안시 동남구 목천읍 삼성5길 22-14</span>
+                                        </div>
+                                        <div class="item">
+                                            <span class="schoolName">천안부영초등학교</span>
+                                            <span class="schoolAddr">충청남도 천안시 동남구 목천읍 삼성5길 22-14</span>
+                                        </div>
+                                        <div class="item">
+                                            <span class="schoolName">천안인애학교</span>
+                                            <span class="schoolAddr">충청남도 천안시 서북구 성거읍 봉구로 229</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="btn_group">
+                <a class="btn btn-ani btn-secondary lg" href="/index.html">취소</a>
+                <a class="btn btn-ani btn-primary lg" href="#none" onclick="modalOpen('pop_joinComplete');">회원가입</a>
+            </div>
+        </div>
+        
+        <div class="acct_footer">
+            <p class="footer_copy">COPYRIGHT© 2024 충청남도교육청교육과정평가정보원. ALL RIGHTS RESERVED.</p>
+        </div>
+    </section>
+
+    <!--회원가입 완료-->
+    <div class="modal modal-popup" id="pop_joinComplete">
+        <div class="modal-background is-click-disabled"></div>
+        <div class="modal-content">
+            <div class="popup-wrap">
+                <div class="con-wrap">
+                    <div class="obj"></div>
+                    <div class="txt_con">
+                        <h3>회원가입 완료</h3>
+                        <p>지금 바로 온평가를 시작하세요.</p>
+                    </div>
+                    <div class="btn_group">
+                        <a href="/index.html" class="btn btn-ani btn-primary lg">확인</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!--//회원가입 완료-->
+
+
+</main>
+
+
+</div>
+
+
+</body>
+
+</html>
+
+
+

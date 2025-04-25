@@ -4,11 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>온평가 > 학급관리</title>
+
+    <link rel="icon" type="image/png" href="../images/favicon/favicon-48x48.png" sizes="48x48" />
+    <link rel="icon" type="image/svg+xml" href="../images/favicon/favicon.svg" />
+    <link rel="shortcut icon" href="../images/favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/favicon/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-title" content="ontest" />
 
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <link rel="stylesheet" href="/css/common.css">
     <link rel="stylesheet" href="/css/question.css">
+    <link rel="stylesheet" href="/css/question_ind.css">
     <link rel="stylesheet" href="/css/contents.css">
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -32,7 +40,7 @@
         <div class="login_info">
             <div class="info_item">
                 <i class="sicon ico1"></i><span class="name"><b>김평가</b>선생님</span>
-                <span class="scoolname">충남초등학교</span>
+                <span class="scoolname">충남초등학교</span>               
             </div>
             <a href="#" class="logout">로그아웃</a>
         </div>
@@ -43,11 +51,64 @@
             <a href="#" class="item">생성하기</a>
         </div>
 
-        <div class="sub_title">
-            <h1>학급관리</h1>
-            <p>학급정보를 관리합니다.</p>
+        <div class="sub_title_wrap">
+            <div class="sub_title">
+                <h1>학급관리</h1>
+                <p>학급정보를 관리합니다.</p>
+            </div>
+
+            <div class="select_class">
+                <a href="#none" class="btn btn-ani btn-outline-primary"  onclick="modalOpen('pop_addClass');"><i class="icon ico_plus">더하기</i>학급추가</a>
+                <div class="select_wrap">
+                    <select class="select">
+                        <option selected="">6학년 1반(2024)</option>
+                        <option value="">6학년 2반(2024)</option>
+                        <option value="">6학년 3반(2024)</option>
+                        <option value="">6학년 4반(2024)</option>
+                        <option value="">6학년 5반(2024)</option>
+                  </select>
+                </div>
+                <div class="select_wrap">
+                    <select class="select">
+                        <option selected="">1</option>
+                        <option value="">2</option>
+                  </select>
+                  <label>학기</label>
+                </div>
+            </div>
         </div>
+        
     </section><!--//sub_header-->
+
+    <!--학급추가팝업-->
+    <div class="modal modal-popup" id="pop_addClass">
+        <div class="modal-background is-click-disabled"></div>
+        <div class="modal-content">
+            <button type="button" class="modal-close bn_close bk" onclick="modalClose('pop_addClass');">닫기</button>
+            <div class="popup-wrap">
+                <div class="con-head">
+                    <h3>학급추가</h3>
+                    <p>추가하고자 하는 학급의 학년과 반을 입력해주세요.</p>
+                </div>
+                <div class="con-wrap">
+                    <div class="form_group_wrap">
+                        <div class="form_group">
+                            <strong>학년</strong>
+                            <input type="text" class="form_input" placeholder="학년을 입력해주세요.">
+                        </div>
+                        <div class="form_group">
+                            <strong>반</strong>
+                            <input type="text" class="form_input" placeholder="반을 입력해주세요.">
+                        </div>
+                    </div>
+                    <div class="btn_group">
+                        <a href="/sub0101.html" class="btn btn-ani btn-primary">등록</a>
+                        <a onclick="modalClose('pop_addClass');" class="btn btn-ani btn-secondary">취소</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!--//학급추가팝업-->
 
     <section id="content" class="class_wrap">
         <div class="layout">
@@ -97,10 +158,11 @@
                     <strong class="subtitle">
                         <i class="hico hico3">학생목록</i>
                         학생목록
+                        <span class="description">※개인정보보호를 위하여 학생 실명은 기입하지마시오.</span>
                     </strong>
                     <dvi class="btn_group">
                         <button type="submit" class="btn btn-ani btn-quaternary"><i class="sicon ico3"></i>선택삭제</button>
-                        <button type="submit" class="btn btn-ani btn-secondary"><i class="sicon ico2"></i>취소</button>
+                        <button type="submit" class="btn btn-ani btn-secondary"><i class="sicon ico11"></i>취소</button>
                         <button type="submit" class="btn btn-ani btn-primary"><i class="sicon ico2"></i>저장</button>
                     </dvi>
                 </div>
@@ -124,12 +186,12 @@
                                 <th scope="col">반</th>
                                 <th scope="col">번호</th>
                                 <th scope="col">이름</th>
-                                <th scope="col">비고</th>
+                                <th scope="col">응시현황</th>
                                 <th scope="col">삭제</th>
                             </tr>
                         </thead>
                         <tbody>
-                            <tr>
+                            <tr class="std_delete">
                                 <th scope="row"><input type="checkbox" id="check0" name="check"/><label for="check0"></label></th>
                                 <td>5</td>
                                 <td>1</td>
@@ -313,8 +375,127 @@
                     </table>  
                 </div>
             </div>
-            <div class="info_wrap">
-                <!-- <div class="class_code_wrap line_box">
+
+            <div class="class_history_wrap">
+                <div class="class_history line_box">
+                    <div class="title_box">
+                        <div class="select_wrap">
+                            <label for="select3">출제이력</label>
+                            <select class="select no-line" id="select3">
+                                <option selected>국어</option>
+                                <option value="">수학</option>
+                                <option value="">사회</option>
+                                <option value="">과학</option>
+                                <option value="">영어</option>
+                            </select>
+                        </div>
+                        <div class="select_wrap">
+                            <select class="select">
+                                <option selected>2024년 4월 15일</option>
+                                <option value="">2024년 4월 15일</option>
+                                <option value="">2024년 4월 15일</option>
+                                <option value="">2024년 4월 15일</option>
+                                <option value="">2024년 4월 15일</option>
+                                <option value="">2024년 4월 15일</option>
+                                <option value="">2024년 4월 15일</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="histor_book_wrap">
+                        <div class="histor_book kor">
+                        <ul>
+                                <li><strong>5-1</strong></li>
+                                <li>5학년 1학기</li>
+                                <li><i class="state tx">1단원</i></li>
+                        </ul>
+                        </div>
+                        <a class="btn btn-ani btn-outline-primary" href="/sub020302.html">보기</a>
+                    </div>
+                </div>
+                <div class="histor_list">
+                    <a class="expand_btn">
+                        <strong>
+                            참여학생 목록
+                            <span><b>19명</b> / 20명</span>
+                        </strong>
+                        <i class="icon arr_m"></i>
+                    </a>
+                    <div class="expand_box">
+                        <div class="table_wrap">
+                            <table class="tbl_basic type3 center">
+                                <caption>학생 목록</caption>
+                                <colgroup>
+                                    <col style="width:10%">
+                                    <col style="width:20%">
+                                    <col style="width:30%">
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">번호</th>
+                                        <th scope="col">이름</th>
+                                        <th scope="col">비고</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>홍길동</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>홍길동</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>홍길동</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>홍길동</td>
+                                        <td>결시</td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td>홍길동</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>7</td>
+                                        <td>홍길동</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>8</td>
+                                        <td>홍길동</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>9</td>
+                                        <td>홍길동</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>10</td>
+                                        <td>홍길동</td>
+                                        <td></td>
+                                    </tr>
+                                    <tr>
+                                        <td>11</td>
+                                        <td>홍길동</td>
+                                        <td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>   
+            </div>
+            
+            <!-- <div class="info_wrap">
+                <div class="class_code_wrap line_box">
                     <div class="class_code_box">
                         <span><b>학급코드</b>※학급코드는 숫자 / 알파벳을 포함한 1~6글자로 생성합니다.</span>
                         <input type="text" class="class_code" value="a54321">
@@ -323,128 +504,12 @@
                         <button type="button" class="btn btn-ani btn-secondary"><i class="micon ico3"></i>자동생성</button>
                         <button type="button" class="btn btn-ani btn-primary"><i class="micon ico4"></i>입력완료</button>
                     </div>
-                </div> -->
-             
-                <div class="class_history_wrap">
-                    <div class="class_history line_box">
-                        <div class="title_box">
-                            <div class="select_wrap">
-                                <label for="select3">출제이력</label>
-                                <select class="select no-line" id="select3">
-                                    <option selected>국어</option>
-                                    <option value="">수학</option>
-                                    <option value="">사회</option>
-                                    <option value="">과학</option>
-                                    <option value="">영어</option>
-                                </select>
-                            </div>
-                            <div class="select_wrap">
-                                <select class="select">
-                                    <option selected>2024년 4월 15일</option>
-                                    <option value="">2024년 4월 15일</option>
-                                    <option value="">2024년 4월 15일</option>
-                                    <option value="">2024년 4월 15일</option>
-                                    <option value="">2024년 4월 15일</option>
-                                    <option value="">2024년 4월 15일</option>
-                                    <option value="">2024년 4월 15일</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="histor_book_wrap">
-                            <div class="histor_book">
-                            <ul>
-                                    <li><strong>5-1</strong></li>
-                                    <li>5학년 1학기</li>
-                                    <li><i class="state tx">1단원</i></li>
-                            </ul>
-                            </div>
-                            <a class="btn btn-ani btn-outline-primary" href="/sub020302.html">보기</a>
-                        </div>
-                    </div>
-                    <div class="histor_list">
-                        <a class="expand_btn">
-                            <strong>
-                                참여학생 목록
-                                <span><b>19명</b> / 20명</span>
-                            </strong>
-                            <i class="icon arr_m"></i>
-                        </a>
-                        <div class="expand_box">
-                            <div class="table_wrap">
-                                <table class="tbl_basic type3 center">
-                                    <caption>학생 목록</caption>
-                                    <colgroup>
-                                        <col style="width:10%">
-                                        <col style="width:20%">
-                                        <col style="width:30%">
-                                    </colgroup>
-                                    <thead>
-                                        <tr>
-                                            <th scope="col">번호</th>
-                                            <th scope="col">이름</th>
-                                            <th scope="col">비고</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>1</td>
-                                            <td>홍길동</td>
-                                            <td></td>
-                                        </tr>
-                                        <tr>
-                                            <td>2</td>
-                                            <td>홍길동</td>
-                                            <td></td>
-                                        </tr>
-                                        <tr>
-                                            <td>4</td>
-                                            <td>홍길동</td>
-                                            <td></td>
-                                        </tr>
-                                        <tr>
-                                            <td>5</td>
-                                            <td>홍길동</td>
-                                            <td>결시</td>
-                                        </tr>
-                                        <tr>
-                                            <td>6</td>
-                                            <td>홍길동</td>
-                                            <td></td>
-                                        </tr>
-                                        <tr>
-                                            <td>7</td>
-                                            <td>홍길동</td>
-                                            <td></td>
-                                        </tr>
-                                        <tr>
-                                            <td>8</td>
-                                            <td>홍길동</td>
-                                            <td></td>
-                                        </tr>
-                                        <tr>
-                                            <td>9</td>
-                                            <td>홍길동</td>
-                                            <td></td>
-                                        </tr>
-                                        <tr>
-                                            <td>10</td>
-                                            <td>홍길동</td>
-                                            <td></td>
-                                        </tr>
-                                        <tr>
-                                            <td>11</td>
-                                            <td>홍길동</td>
-                                            <td></td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
-                    </div>   
                 </div>
-            </div>
+            </div> -->
         </div>
     </section>
+
+
 
 <!--[include]HEADER :: Start -->
 <div id="footer"></div>

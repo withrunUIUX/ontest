@@ -1,50 +1,148 @@
 <!--HEADER :: Start -->
-<header>
-    <div class="logo">
-        <a href="/"><span>온평가</span></a>
-    </div>
-    <nav>
-        <div class="gnb">
-            <ul class="gnb__depth1">
-                <li class="depth1-item">
-                    <a href="/sub0101.html" class="active"><i class="nicon ico1"></i>학급관리</a>
-                    <ul class="depth2">
-                        <li class="depth2__item"><a href="/sub0101.html">학급정보</a></li>
-                    </ul>
-                </li>
-                <li class="depth1-item">
-                    <a href="/sub0203.html" class="active"><i class="nicon ico5"></i>출제내역</a>
-                    <ul class="depth2">
-                        <li class="depth2__item"><a href="/sub0203.html">출제내역</a></li>
-                    </ul>
-                </li>
-                <li class="depth1-item">
-                    <a href="/sub0201.html" class="active"><i class="nicon ico2"></i>문제은행</a>
-                    <ul class="depth2">
-                        <li class="depth2__item"><a href="/sub0201.html" class="active">생성하기</a></li>
-                    </ul>
-                </li>
-                <li class="depth1-item">
-                    <a href="/sub0301.html" class="active"><i class="nicon ico3"></i>AI출제</a>
-                    <ul class="depth2">
-                        <li class="depth2__item"><a href="/sub0301.html">생성하기</a></li>
-                    </ul>
-                </li>
-                <li class="depth1-item">
-                    <a href="/sub0401.html" class="active"><i class="nicon ico4"></i>통계</a>
-                    <ul class="depth2">
-                        <li class="depth2__item"><a href="/sub0401.html">학급통계</a></li>
-                        <li class="depth2__item"><a href="/sub040101.html">학생별 통계</a></li>
-                    </ul>
-                </li>
-                <li class="depth1-item">
-                    <a href="/sub0501.html" class="active"><i class="nicon ico4"></i>관리자통계</a>
-                </li>
+<div class="logo">
+    <a href="/guide.html"><span>온평가</span></a>
+</div>
+<div class="gnb">
+    <ul class="gnb__depth1">
+        <li class="depth1-item">
+            <a href="/sub0101.html"><i class="nicon ico1"></i>학급관리</a>
+            <ul class="depth2">
+                <li class="depth2__item"><a href="/sub0101.html">학급정보</a></li>
             </ul>
-        </div>
-    </nav>
-</header>
+        </li>
+        <li class="depth1-item">
+            <a href="/sub0203.html"><i class="nicon ico5"></i>출제내역</a>
+            <ul class="depth2">
+                <li class="depth2__item"><a href="/sub0203.html">출제내역</a></li>
+            </ul>
+        </li>
+        <li class="depth1-item">
+            <a href="/sub0201.html"><i class="nicon ico2"></i>문제은행</a>
+            <ul class="depth2">
+                <li class="depth2__item"><a href="/sub0201.html">생성하기</a></li>
+            </ul>
+        </li>
+        <li class="depth1-item">
+            <a href="/sub0301.html" ><i class="nicon ico3"></i>AI출제</a>
+            <ul class="depth2">
+                <li class="depth2__item"><a href="/sub0301.html">생성하기</a></li>
+                <li class="depth2__item"><a href="/sub0302.html">AI데이터활용</a></li>
+            </ul>
+        </li>
+        <li class="depth1-item">
+            <a href="/sub0401.html"><i class="nicon ico4"></i>통계</a>
+            <ul class="depth2">
+                <li class="depth2__item"><a href="/sub0401.html">학급통계</a></li>
+                <li class="depth2__item"><a href="/sub040101.html">학생별 통계</a></li>
+            </ul>
+        </li>
+        <li class="depth1-item">
+            <a href="/sub0501.html"><i class="nicon ico4"></i>관리자통계</a>
+        </li>
+    </ul>
+</div>
 <!--HEADER :: End -->
 
-
+<script>   
+    function gnb_open(index1,index2){
+        var param = $(".gnb");
+        var btn = $("#gnb_btn");
+        var dur = 300; // 애니메이션 진행 속도
+        var meth = "easeOutExpo"; // 애니메이션 진행 타입
+        var index1 = index1;
+        var index2 = index2;
+        var n = index1;
+        var w = param.outerWidth(true);
+        var data = false;
+    
+        param.find(".depth2").hide();
+    
+        var _open = function(){
+            $("html,body").css({"overflow":"hidden","height":$(window).height()});
+            param.show().css({opacity:1,height:$(window).height()}).animate({right:0});
+    
+            if(!isNaN(index1)){
+                param.stop(true,true).delay(dur/2).animate({scrollTop:param.find(".depth1-item > a").eq(index1).offset().top},dur,meth);
+    
+                var tobj2 = param.find(".depth1-item > a").eq(index1).next().find(">li").eq(index2);
+                tobj2.children().addClass("active");
+            }
+    
+            data = true;
+        };
+    
+        var _close = function(){
+            $("html,body").removeAttr("style");
+            param.stop(true,true).css({opacity:1,height:$(window).height()}).animate({scrollTop:0,right: -w},0,meth);
+        };
+    
+        btn.on("touchend click",function(event){
+            _open();
+            
+            $(window).resize(function(){
+                _close();
+            });
+    
+            event.preventDefault();
+        });
+    
+        param.find("a").on("click",function(event){
+            if(param.is(":animated") && param.find(":animated").size()){ return false; }
+        });
+    
+        // 터치 아웃 영역
+        $(".gnb__close").on("touchend click",function(event){
+            _close();
+        });
+    
+        // 로딩시 트리메뉴 컨트롤
+        if(!isNaN(index1)){
+            if(index1==5){
+                param.find(".depth1-item > a").eq(index1).addClass("active");
+            } else {
+                param.find(".depth1-item > a").not(index1).removeClass("active").next().stop(true,true).delay(500).slideUp(500);
+                param.find(".depth1-item > a").eq(index1).addClass("active").next().stop(true,true).slideDown(500);
+                var tobj2 = param.find(".depth1-item > a").eq(index1).next().find(">li").eq(index2);
+                tobj2.children().addClass("is-active");
+            }
+        }
+    
+        param.find(".depth1-item > a").on("click",function(event){
+            $(".depth1-item > a").removeClass("is-active");
+            $(this).addClass("is-active");
+            var t = $(this);
+            var n = $(this).parent().index();
+    
+            if(t.next().attr("class").match("depth2")){
+                if($(this).next().css("display") == "block"){
+                    param.find(".depth1-item > a").not(n).removeClass("active").next().stop(true,true).delay(150).slideUp(150);
+                }
+                
+                if($(this).next().css("display") == "none"){
+                    param.find(".depth1-item > a").not(n).removeClass("active").next().stop(true,true).delay(150).slideUp(150);
+                    param.find(".depth1-item > a").eq(n).addClass("active").next().stop(true,true).slideDown(150);
+                }
+                event.preventDefault();
+            }
+        });
+    }
+    
+    const segment1 = ['onchaeum','precision','####','support','record','student'];
+    const seg1 = "";
+    const seg2 = "";
+    let index1 = segment1.indexOf(seg1);
+    if(index1==-1) index1 = "main";
+    if(index1==1){
+        if(seg2=='cause' || seg2=='result_cause'){
+            index1 = 2;
+        }
+    }
+    let index2 = 0;
+    if(seg2=='notice' || seg2=='result_level' || seg2=='result_cause' || seg2=='lookup' || (seg1=='record' && seg2=='history')) index2 = 1;
+    if(seg2=='faq') index2 = 2;
+    
+    $(document).ready(function(){
+        gnb_open(index1,index2);
+    })
+    </script>
 

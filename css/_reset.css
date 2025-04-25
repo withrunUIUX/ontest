@@ -48,7 +48,8 @@ em, i{
 img {
 	max-width:100%;
 	border:0;
-	-webkit-tap-highlight-color:rgba(0,0,0,0)
+	-webkit-tap-highlight-color:rgba(0,0,0,0);
+	vertical-align: middle !important;
 }
 h1,h2,h3,h4,h5,h6 {
 	font-weight:normal;
@@ -86,6 +87,6 @@ form label,form input,form span,form img,form em,form a {
 form fieldset,legend,form input {
 	border:0
 }
-a {text-decoration: none;color:var(--c_gray_90);}
+a {text-decoration:none;color:var(--gray_100);cursor: pointer;}
 button {border: 0;background: none; cursor: pointer;}
 i,em{font-style:normal;}
