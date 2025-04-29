@@ -113,3 +113,30 @@ $(document).ready(function(){
 });
 
 
+document.addEventListener('DOMContentLoaded', function () {
+    const navLinks = document.querySelectorAll('.sgNavi_2depth a[href^="#"]');
+    const sections = Array.from(navLinks).map(link => {
+    const id = link.getAttribute('href').slice(1);
+    return document.getElementById(id);
+    });
+
+    function activateLink() {
+    let currentActive = null;
+
+    sections.forEach((section, index) => {
+        if (!section) return;
+        const rect = section.getBoundingClientRect();
+        if (rect.top <= 100 && rect.bottom > 0) {
+        currentActive = navLinks[index];
+        }
+    });
+
+    navLinks.forEach(link => link.classList.remove('active'));
+    if (currentActive) {
+        currentActive.classList.add('active');
+    }
+    }
+
+    window.addEventListener('scroll', activateLink);
+    activateLink();
+});
