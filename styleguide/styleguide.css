@@ -27,7 +27,7 @@ small {font-weight:500;}
 
 .sgNavi_2depth_wrap {display:flex;flex-direction:column;height:100vh;padding:2rem 1rem;background:var(--blue_120);}
 .sgNavi_2depth_wrap > strong {margin-bottom:1rem;font-weight:600;color:var(--blue_50);}
-.sgNavi_2depth {display:flex;flex-direction:column;gap:.2rem;height:calc(100vh - 17rem);overflow-y:scroll;}
+.sgNavi_2depth {display:flex;flex-direction:column;gap:.2rem;height:calc(100vh - 18rem);overflow-y:scroll;}
 .sgNavi_2depth::-webkit-scrollbar {width:6px;}
 .sgNavi_2depth::-webkit-scrollbar-thumb {border-radius:6px;background:rgba(255, 255, 255, .15);}
 .sgNavi_2depth > li {display:inline-flex;flex-direction:column;}
