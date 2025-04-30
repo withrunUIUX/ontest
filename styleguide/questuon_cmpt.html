@@ -29,15 +29,15 @@
 
 <div class="sgNavi_wrap">
     <ul class="sgNavi">
-        <li><a href="../styleguide/styleguide.html" class="">스타일가이드</a></li>
+        <!-- <li><a href="../styleguide/styleguide.html" class="">스타일가이드</a></li> -->
         <li> <a href="../styleguide/questuon_cmpt.html" class="on">문항 컴포넌트</a></li>
-        <li><a href="../styleguide/examBox_cmpt.html" class="">예문 컴포넌트</a></li>
+        <!-- <li><a href="../styleguide/examBox_cmpt.html" class="">예문 컴포넌트</a></li> -->
     </ul>
 
     <div class="sgNavi_2depth_wrap">
-        <strong>문항컴포넌트</strong>
+        <!-- <strong>문항컴포넌트</strong> -->
         <ul class="sgNavi_2depth">
-            <li><a href="#bullet">bullet(꾸밈요소)</a></li>
+            <!-- <li><a href="#bullet">bullet(꾸밈요소)</a></li>
             <li><a href="#arrow">화살표(꾸밈요소)</a></li>
             <li><a href="#mathsymbol">수학기호(꾸밈요소)</a></li>
             <li><a href="#blankBox">빈칸박스(꾸밈요소)</a></li>
@@ -51,7 +51,7 @@
             <li><a href="#bgStyle">배경타입</a></li>
             <li><a href="#cardBox">카드박스</a></li>
             <li><a href="#inputWrap">input</a></li>
-            <li><a href="#fraction">분수형태</a></li>
+            <li><a href="#fraction">분수형태</a></li> -->
             <li><a href="#radioWrap">라디오</a></li>
             <li><a href="#radioWrapT2" title="보기 가로 정렬, 짧은 보기">라디오 type2</a></li>
             <li><a href="#radioWrapT3" title="구분 정렬">라디오 type3</a></li>
@@ -140,7 +140,7 @@
 </div>
 
 <section>
-
+<!-- 
 <h2 id="bullet">bullet</h2>
 <div class="stwrap">
     <span class="bullet tit">보기1</span>
@@ -1087,7 +1087,11 @@
             </div>
         </div>     
     </div>
-</div>
+</div> -->
+
+
+
+
 
 <h2 id="radioWrap">라디오 <small>보기가 긴 형태일때</small></h2>
 <div class="stwrap">
@@ -2586,10 +2590,13 @@
     </div>
 </div>
 
-<h2 id="inputWrapT1">단답형 <small></small></h2>
+<h2 id="inputWrapT1">단답형 <small>입력칸 1개만</small></h2>
 <div class="stwrap">
-    <div class="inputWrap">
+    <!-- <div class="inputWrap">
         비 4 : 7에서 4는&nbsp;<input type="text" class="inputBox big">&nbsp;이고, 7은&nbsp;<input type="text" class="inputBox big">
+    </div> -->
+    <div class="inputWrap">
+        <input type="text" class="inputBox big">
     </div>
 </div>
 
@@ -5446,37 +5453,6 @@
 
 
 
-
-<!-- 
-<script>
-document.addEventListener('DOMContentLoaded', function () {
-    const navLinks = document.querySelectorAll('.sgNavi_2depth a[href^="#"]');
-    const sections = Array.from(navLinks).map(link => {
-    const id = link.getAttribute('href').slice(1);
-    return document.getElementById(id);
-    });
-
-    function activateLink() {
-    let currentActive = null;
-
-    sections.forEach((section, index) => {
-        if (!section) return;
-        const rect = section.getBoundingClientRect();
-        if (rect.top <= 100 && rect.bottom > 0) {
-        currentActive = navLinks[index];
-        }
-    });
-
-    navLinks.forEach(link => link.classList.remove('active'));
-    if (currentActive) {
-        currentActive.classList.add('active');
-    }
-    }
-
-    window.addEventListener('scroll', activateLink);
-    activateLink();
-});
-</script> -->
 
 
 
