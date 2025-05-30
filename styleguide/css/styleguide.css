@@ -43,3 +43,39 @@ small {font-weight:500;}
 .stwrap_inner {display:flex;gap:1rem;}
 .stwrap_inner * {position:static;}
 
+
+
+/* 아코디언 */
+.accordion {
+  width:100%;
+}
+
+.accordion-header {
+  width: 100%;
+  padding: 1rem 1.5rem;
+  background: var(--blue_20);
+  border: none;
+  text-align: left;
+  font-size:1rem;
+  font-weight: 700;
+  cursor: pointer;
+  outline: none;
+  transition: background 0.3s;
+  font-family: var(--f_ptd);
+}
+
+.accordion-header:hover {
+  background:var(--blue_30);
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+  padding:0;
+  background: #fafafa;
+}
+
+.accordion-content p {
+  margin: 16px 0;
+}

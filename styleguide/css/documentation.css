@@ -1,0 +1,125 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+.fa{font-family:'FontAwesome' !important;}
+html,body{height:100%;min-height:100%;}
+html{-webkit-font-size-adjust:none;} 
+ol,ul,li{list-style:none}
+body{background-color:#fff;font-size:14px;}
+
+/*
+.example-typography{position: relative;padding-left:260px;}
+.example-typography .heading-note, 
+.example-typography .text-note {display: block;width: 260px;position: absolute;left: 0;font-size: 13px;line-height: 13px;color: #AAB2BD;font-weight: 400;}
+*/
+body{position: relative;}
+#header{position:fixed;top:0;padding:0;width:100%;background-color:#fff;z-index:9999;}
+#ui-logo{display:block;margin:0;padding:0;border:none;text-align:center;background:none;}
+#ui-logo *{margin:0;padding:0;}
+#ui-logo a{display:inline-block;color:#090909;font-size:30px;line-height:30px;font-family:'aritadm', sans-serif;}
+#ui-logo a *{vertical-align:middle}
+#ui-logo a .logo{display:inline-block;overflow:hidden;position:relative;top:-3px;width:80px;height:80px;background:url(/images/ham/logo.jpg) no-repeat;background-size:cover;}
+.menu{position:relative;margin-top:10px;border-top:1px solid #ddd;border-bottom:1px solid #ddd;text-align:center}
+.menu a{display:inline-block;position:relative;padding:15px 32px;color:#000;font-family:'aritadm';font-size:16px;line-height:20px;}
+.menu a.ov{color:#ee402e}
+.menu a:before{display:block;content:" ";position:absolute;top:50%;left:0;margin-top:-2px;width:4px;height:4px;background-color:#000;}
+.menu a.first:before{display:none;}
+
+.navbar{background-color:#32404e}
+#container{position:relative;margin:150px auto 0;max-width:1600px;}
+
+#content-container{padding-bottom:100px}/*padding:0 !important*/
+
+#docs-menu{width:250px;}
+#docs-menu.affix-top{position:fixed;top:150px;}
+#docs-menu.affix{position:fixed;top:150px;}
+#docs-menu a{display:block;padding:10px;color:#666;font-weight:300;transition:color .2s}
+#docs-menu > ul > li > a{color:#666;}
+#docs-menu > .nav > li{border:1px solid transparent}
+#docs-menu > .nav > .active{border-right:3px solid #2657ae;}
+#docs-menu a:focus{background-color:transparent;}
+#docs-menu a:hover{background-color:transparent;color:#333;transition:color .2s}
+#docs-menu .active > a{color:#333;font-weight:bold;}
+#docs-menu .list-sub{max-height:0;margin-bottom:0;padding-left:30px;overflow:hidden;transition:max-height .5s;}
+#docs-menu > .nav > .in .list-sub,
+#docs-menu > .nav > .active .list-sub{max-height:500px;transition:max-height .5s;}
+#docs-menu .list-sub a{padding:5px;font-size:1em;font-weight:300}
+#docs-header{padding:30px;}
+#docs-header h1{padding-left:235px}
+.docs-content{max-width:1290px;width:100%;padding:30px 0 0 60px;background-color:#fff;margin-left:250px}
+.docs-section{margin-bottom:175px;}
+
+.docs-spy{font-size:40px;color:#343A40;line-height:40px;font-family: 'Bebas Neue', sans-serif;letter-spacing:2px}
+
+.fol-child{padding-left:30px !important}
+.fol-child2{padding-left:60px !important}
+.divider{margin-bottom:100px;}
+.prettyprint .tag{border:0;border-radius:0;background-color:transparent;font-size:inherit;padding:0}
+
+.styleguide_box,
+.guide_box{padding:40px;border:1px solid #ddd;}
+.box{float:left;padding:0 5px;width:35%;}
+.box.ex{width:15%}
+.box .styleguide_box,
+.box .guide_box{padding:13px 7px;}
+.rowbox{margin-top:20px;}
+.rowbox:after {content:"";display:block;visibility:hidden;clear:both;}
+
+h1{color:#282a2e;font-size:30px;line-height:40px;}
+.midtt {display: block;margin: 40px 0 10px;color:#212529;font-size:20px;font-weight:800;font-family:'NanumSquareNeo';}
+
+.group{display:flex;margin-bottom:80px;}
+.group .gr_tit{width:200px;font-weight:bold;text-transform:uppercase;}
+.group .wrap{display:flex;gap:40px;width:calc(100% - 200px);}
+.group .wrap .grap{display:flex;flex-direction:column;align-items:center;gap:10px;width:110px;}
+.group.wrap-sm .wrap .grap{width:56px;}
+.group.wrap-md .wrap .grap{width:100px;}
+/*.group .wrap .grap i{display:block;border-radius:100px;box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.10);}*/
+.group .wrap .grap .cir_lg{display:block;border-radius:100px;box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.10);width:80px;height:80px;}
+.group .wrap .grap .cir_sm{display:block;border-radius:100px;box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.10);width:50px;height:50px;}
+.group .wrap .grap span{display:flex;flex-direction:column;align-items:center;font-size:14px;}
+.group .wrap .grap span span{color:#ccc;font-size:12px;}
+
+.group .wrap.heading{flex-direction:column;gap:40px;}
+.group .wrap.heading .grap{flex-direction:row;align-items:center;width:100%;}
+.group .wrap.heading .grap .tit{display:flex;width:100px;}
+.group .wrap.heading .grap .tit b{margin-right:4px;font-size:12px;line-height:1}
+.group .wrap.heading .grap .tit span{font-size:12px;color:#495057;line-height:1;font-weight: 100}
+.group .wrap.heading .grap h2,
+.group .wrap.heading .grap h3,
+.group .wrap.heading .grap h4,
+.group .wrap.heading .grap h5,
+.group .wrap.heading .grap h6{margin:0;}
+
+.group .wrap.body{flex-direction:column;gap:20px;}
+.group .wrap.body .grap{flex-direction:row;align-items:flex-start;width:100%;}
+.group .wrap.body .grap .tit{display:flex;flex-direction:column;align-items:flex-start;gap:4px;width:100px;}
+.group .wrap.body .grap .tit b{width:20px;font-size:12px;line-height:1}
+.group .wrap.body .grap .tit span{font-size:12px;color:#495057;line-height:1;font-weight: 100}
+.group .wrap.body .grap p{width:calc(100% - 100px);}
+.group .wrap.body .grap ul{flex-direction:column;}
+
+.group.wide .wrap.heading .grap{flex-direction:column;align-items:flex-start;}
+.group.wide .wrap.heading .grap .tit{width:100%;}
+
+
+@media (max-width:1024px){
+	#docs-menu.affix-top,
+	#docs-menu.affix{top:142px;}
+	#docs-menu{width:100%;box-shadow:0 2px 2px 0px rgba(0,0,0,.2);background:#fff;z-index:999}
+	#docs-menu .nav{display:flex;}
+	#docs-menu .nav .list-sub{padding-left:0;}
+	.docs-content{padding:30px 60px 0 60px;margin-left:0;}
+	.group{flex-direction:column;}
+	.group .wrap{width:100%;flex-wrap:wrap;}
+}
+
+
+/*icon*/
+.style_icon_box .group  {margin:0;}
+.style_icon_box .group .wrap {width:100%; padding:58px; background: var(--c_gray_5);}
+.style_icon_box .group .wrap.type2 {background:#fff;}
+.style_icon_box .group .wrap.type2 .grap {justify-content:space-between;}
+.style_icon_box .group .wrap.type2 .grap .ico_link,
+.style_icon_box .group .wrap.type2 .grap .ico_file {position:static;}
+
