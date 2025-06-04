@@ -140,3 +140,15 @@ document.addEventListener('DOMContentLoaded', function () {
     window.addEventListener('scroll', activateLink);
     activateLink();
 });
+
+//탑버튼 숨김/나타남
+$(function() {
+	$(window).scroll(function() { 
+		if ($(this).scrollTop() > 200) { 
+			$('.btn_top').fadeIn(); } 
+		else { $('.btn_top').fadeOut(); }
+	}); 
+	$(".btn_top").click(function() { 
+	$('html, body').animate({ scrollTop : 0  }, 300); 
+	return false; });
+});
