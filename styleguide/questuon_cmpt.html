@@ -3441,6 +3441,39 @@
         </table>
     </div>
 </div>
+<div class="accordion">
+  <div class="accordion-item">
+    <button class="accordion-header">HTML 보기</button>
+    <div class="accordion-content">
+<pre class="prettyprint linenums">
+&lt;div class="inputWrap type2">
+    &lt;table class="tbl_basic type3 center">
+        &lt;caption>개요&lt;/caption>
+        &lt;colgroup>
+            &lt;col style="width:30%">
+            &lt;col style="width:30%">
+            &lt;col style="width:30%">
+        &lt;/colgroup>
+        &lt;thead>
+            &lt;tr>
+                &lt;th scope="col">원&lt;/th>
+                &lt;th scope="col">삼각형&lt;/th>
+                &lt;th scope="col">사각형&lt;/th>
+            &lt;/tr>
+        &lt;/thead>
+        &lt;tbody>
+            &lt;tr>
+                &lt;td>&lt;span class="bullet circle blue">1&lt;/span> &lt;input type="text" class="inputBox big">&lt;/td>
+                &lt;td>&lt;span class="bullet circle blue">2&lt;/span> &lt;input type="text" class="inputBox big">&lt;/td>
+                &lt;td>&lt;span class="bullet circle blue">3&lt;/span> &lt;input type="text" class="inputBox big">&lt;/td>
+            &lt;/tr>
+        &lt;/tbody>
+    &lt;/table>
+&lt;/div>
+</pre>
+    </div>
+  </div>
+</div>
 
 <h2 id="inputWrapT3">단답형 type3 <small>숫자카드 + 수학기호 표시</small></h2>
 <div class="stwrap">
@@ -3475,6 +3508,45 @@
         <span class="numcard_arr vertic gobhagi"></span>
     </div>
 </div>
+<div class="accordion">
+  <div class="accordion-item">
+    <button class="accordion-header">HTML 보기</button>
+    <div class="accordion-content">
+<pre class="prettyprint linenums">
+&lt;div class="inputWrap type3 numcard_box">
+    &lt;span class="numcard_arr horizon plus">&lt;/span>
+    &lt;span class="numcard_arr vertic obelus">&lt;/span>
+    &lt;ul class="numcard_tr">
+        &lt;li class="numcard_th">26&lt;/li>
+        &lt;li class="numcard_th">35&lt;/li>
+        &lt;li class="numcard_td">&lt;input type="text" class="inputBox sm">&lt;/li>
+    &lt;/ul>
+    &lt;ul class="numcard_tr">
+        &lt;li class="numcard_th">17&lt;/li>
+        &lt;li class="numcard_th">47&lt;/li>
+        &lt;li class="numcard_td">&lt;input type="text" class="inputBox sm">&lt;/li>
+    &lt;/ul>
+    &lt;ul class="numcard_tr">
+        &lt;li class="numcard_td">&lt;input type="text" class="inputBox sm">&lt;/li>
+        &lt;li class="numcard_td">&lt;input type="text" class="inputBox sm">&lt;/li>
+    &lt;/ul>
+&lt;/div>
+&lt;div class="stwrap_inner" style="flex-direction:column;">
+    &lt;span class="numcard_arr horizon plus">&lt;/span>
+    &lt;span class="numcard_arr horizon minus">&lt;/span>
+    &lt;span class="numcard_arr horizon obelus">&lt;/span>
+    &lt;span class="numcard_arr horizon gobhagi">&lt;/span>
+&lt;/div>
+&lt;div class="stwrap_inner">
+    &lt;span class="numcard_arr vertic plus">&lt;/span>
+    &lt;span class="numcard_arr vertic minus">&lt;/span>
+    &lt;span class="numcard_arr vertic obelus">&lt;/span>
+    &lt;span class="numcard_arr vertic gobhagi">&lt;/span>
+&lt;/div>
+</pre>
+    </div>
+  </div>
+</div>
 
 <h2 id="inputWrapT4">단답형 type4 <small>분수형태</small></h2>
 <div class="stwrap">
@@ -3494,6 +3566,31 @@
             </div>
         </div>
     </div>
+</div>
+<div class="accordion">
+  <div class="accordion-item">
+    <button class="accordion-header">HTML 보기</button>
+    <div class="accordion-content">
+<pre class="prettyprint linenums">
+&lt;div class="inputWrap type4">
+    &lt;div class="fraction">
+        &lt;input type="text" class="inputBox sm">
+        &lt;span class="line">&lt;/span>
+        &lt;input type="text" class="inputBox sm">
+    &lt;/div>
+    또는
+    &lt;div class="fraction type2">
+        &lt;input type="text" class="inputBox sm">
+        &lt;div class="fraction">
+            &lt;input type="text" class="inputBox sm">
+            &lt;span class="line">&lt;/span>
+            &lt;input type="text" class="inputBox sm">
+        &lt;/div>
+    &lt;/div>
+&lt;/div>
+</pre>
+    </div>
+  </div>
 </div>
 
 <h2 id="inputWrapT5">단답형 type5 <small>숫자카드</small></h2>
@@ -3536,6 +3633,52 @@
         </ul>
     </div>
 </div>
+<div class="accordion">
+  <div class="accordion-item">
+    <button class="accordion-header">HTML 보기</button>
+    <div class="accordion-content">
+<pre class="prettyprint linenums">
+&lt;div class="inputWrap type5 numcard_box">
+    &lt;ul class="numcard_tr">
+        &lt;li class="numcard_th mathsymbol mathsymbol1">&lt;/li>
+        &lt;li class="numcard_th">3&lt;/li>
+        &lt;li class="numcard_th">4&lt;/li>
+        &lt;li class="numcard_th">5&lt;/li>
+        &lt;li class="numcard_th">6&lt;/li>
+    &lt;/ul>
+    &lt;ul class="numcard_tr">
+        &lt;li class="numcard_th">4&lt;/li>
+        &lt;li class="numcard_td">&lt;/li>
+        &lt;li class="numcard_td">&lt;/li>
+        &lt;li class="numcard_td">20&lt;/li>
+        &lt;li class="numcard_td">&lt;/li>
+    &lt;/ul>
+    &lt;ul class="numcard_tr">
+        &lt;li class="numcard_th">5&lt;/li>
+        &lt;li class="numcard_td">15&lt;/li>
+        &lt;li class="numcard_td">&lt;/li>
+        &lt;li class="numcard_td">&lt;/li>
+        &lt;li class="numcard_td">30&lt;/li>
+    &lt;/ul>
+    &lt;ul class="numcard_tr">
+        &lt;li class="numcard_th">6&lt;/li>
+        &lt;li class="numcard_td">&lt;/li>
+        &lt;li class="numcard_td">&lt;/li>
+        &lt;li class="numcard_td">&lt;/li>
+        &lt;li class="numcard_td">36&lt;/li>
+    &lt;/ul>
+    &lt;ul class="numcard_tr">
+        &lt;li class="numcard_th">7&lt;/li>
+        &lt;li class="numcard_td">21&lt;/li>
+        &lt;li class="numcard_td">&lt;/li>
+        &lt;li class="numcard_td">&lt;input type="text" class="inputBox sm">&lt;/li>
+        &lt;li class="numcard_td">&lt;/li>
+    &lt;/ul>
+&lt;/div>
+</pre>
+    </div>
+  </div>
+</div>
 
 <h2 id="inputWrapT6">단답형 type6 <small>ㄱ~ㅁ 순서대로 입력</small></h2>
 <div class="stwrap">
@@ -3550,6 +3693,25 @@
        <li><span class="bullet circle blue">ㅇ</span><input type="text" class="inputBox big"></li>
     </ul>
 </div>
+<div class="accordion">
+  <div class="accordion-item">
+    <button class="accordion-header">HTML 보기</button>
+    <div class="accordion-content">
+<pre class="prettyprint linenums">
+&lt;ul class="inputWrap type6">
+    &lt;li>&lt;span class="bullet circle blue">ㄱ&lt;/span>&lt;input type="text" class="inputBox big">&lt;/li>
+    &lt;li>&lt;span class="bullet circle blue">ㄴ&lt;/span>&lt;input type="text" class="inputBox big">&lt;/li>
+    &lt;li>&lt;span class="bullet circle blue">ㄷ&lt;/span>&lt;input type="text" class="inputBox big">&lt;/li>
+    &lt;li>&lt;span class="bullet circle blue">ㄹ&lt;/span>&lt;input type="text" class="inputBox big">&lt;/li>
+    &lt;li>&lt;span class="bullet circle blue">ㅁ&lt;/span>&lt;input type="text" class="inputBox big">&lt;/li>
+    &lt;li>&lt;span class="bullet circle blue">ㅂ&lt;/span>&lt;input type="text" class="inputBox big">&lt;/li>
+    &lt;li>&lt;span class="bullet circle blue">ㅅ&lt;/span>&lt;input type="text" class="inputBox big">&lt;/li>
+    &lt;li>&lt;span class="bullet circle blue">ㅇ&lt;/span>&lt;input type="text" class="inputBox big">&lt;/li>
+&lt;/ul>
+</pre>
+    </div>
+  </div>
+</div>
 
 <h2 id="inputWrapT7">단답형 type7 <small>문장형</small></h2>
 <div class="stwrap">
@@ -3561,12 +3723,40 @@
         운동은 생명을 소중하게 생각하는 생명 운동인 동시에 바르고 아름다운 언어를 사용해 생각과 행동을 바꾸자는 사이버 공간에서의 정신 문화 운동입니다. 
     </div>
 </div>
+<div class="accordion">
+  <div class="accordion-item">
+    <button class="accordion-header">HTML 보기</button>
+    <div class="accordion-content">
+<pre class="prettyprint linenums">
+&lt;div class="inputWrap type7">
+    &lt;input type="text" class="inputBox big">
+    운동은 사이버 공간에서 악의적인 댓글(악플) 때문에 고통받는 사람들에게 용기와 희망을 주는 댓글을 먼저 달아 주자는 운동입니다. 이 운동은 근거 없는 악의적인 댓글이 사람들에게 얼마나 큰 고통과 피해를 주는지 깨닫게 하고 아름다운 인터넷 문화, 아름다운 사회를 가꾸어 나가는 것이 목적입니다. 
+    &lt;br>
+    &lt;input type="text" class="inputBox big">
+    운동은 생명을 소중하게 생각하는 생명 운동인 동시에 바르고 아름다운 언어를 사용해 생각과 행동을 바꾸자는 사이버 공간에서의 정신 문화 운동입니다. 
+&lt;/div>
+</pre>
+    </div>
+  </div>
+</div>
 
 <h2 id="inputWrapT8">단답형 type8 <small>원형 input, 수학에서 사용</small></h2>
 <div class="stwrap">
     <div class="inputWrap type8">
        <div>1♣9</div><input type="text" class="inputBox circle"><div>7♣4</div>
     </div>
+</div>
+<div class="accordion">
+  <div class="accordion-item">
+    <button class="accordion-header">HTML 보기</button>
+    <div class="accordion-content">
+<pre class="prettyprint linenums">
+&lt;div class="inputWrap type8">
+    &lt;div>1♣9&lt;/div>&lt;input type="text" class="inputBox circle">&lt;div>7♣4&lt;/div>
+&lt;/div>
+</pre>
+    </div>
+  </div>
 </div>
 
 <h2 id="inputWrapT9">단답형 type9 <small>그룹형</small></h2>
@@ -3602,6 +3792,45 @@
         </li>
     </ul>
 </div>
+<div class="accordion">
+  <div class="accordion-item">
+    <button class="accordion-header">HTML 보기</button>
+    <div class="accordion-content">
+<pre class="prettyprint linenums">
+&lt;ul class="inputWrap type9">
+    &lt;li>
+        &lt;span class="bullet circle">1&lt;/span>
+        &lt;img src="../images/q_common/intpu_eximg1.png">
+        &lt;ul>
+            &lt;li>
+                &lt;span class="bullet tit">쓰기&lt;/span>
+                &lt;input type="text" class="inputBox md">
+            &lt;/li>
+            &lt;li>
+                &lt;span class="bullet tit">읽기&lt;/span>
+                &lt;input type="text" class="inputBox">
+            &lt;/li>
+        &lt;/ul>
+    &lt;/li>
+    &lt;li>
+        &lt;span class="bullet circle">2&lt;/span>
+        &lt;img src="../images/q_common/intpu_eximg2.png">
+        &lt;ul>
+            &lt;li>
+                &lt;span class="bullet tit">쓰기&lt;/span>
+                &lt;input type="text" class="inputBox md">
+            &lt;/li>
+            &lt;li>
+                &lt;span class="bullet tit">읽기&lt;/span>
+                &lt;input type="text" class="inputBox">
+            &lt;/li>
+        &lt;/ul>
+    &lt;/li>
+&lt;/ul>
+</pre>
+    </div>
+  </div>
+</div>
 
 <h2 id="inputWrapT10">답답형 type10 <small>리스트</small></h2>
 <div class="stwrap">
@@ -3631,6 +3860,41 @@
             <p>알았다. 2019년 독도 방문객 수는 정확하게 <input type="text" class="inputBox md">명이구나.</p>
         </li>
     </ul>
+</div>
+<div class="accordion">
+  <div class="accordion-item">
+    <button class="accordion-header">HTML 보기</button>
+    <div class="accordion-content">
+<pre class="prettyprint linenums">
+&lt;ul class="inputWrap type10">
+    &lt;li>
+        &lt;span class="nametag sm">소희&lt;/span>
+        &lt;p>2019년 독도 방문객 수는 일의 자리에서 버림하여 122730명이야.&lt;/p>
+    &lt;/li>
+    &lt;li>
+        &lt;span class="nametag sm">준수&lt;/span>
+        &lt;p>일의 자리에서 반올림하면?&lt;/p>
+    &lt;/li>
+    &lt;li>
+        &lt;span class="nametag sm">소희&lt;/span>
+        &lt;p>그래도 122730명이야.&lt;/p>
+    &lt;/li>
+    &lt;li>
+        &lt;span class="nametag sm">준수&lt;/span>
+        &lt;p>아하! 혹시 일의 자리 수가 3보다 커?&lt;/p>
+    &lt;/li>
+    &lt;li>
+        &lt;span class="nametag sm">소희&lt;/span>
+        &lt;p>응.&lt;/p>
+    &lt;/li>
+    &lt;li>
+        &lt;span class="nametag sm">준수&lt;/span>
+        &lt;p>알았다. 2019년 독도 방문객 수는 정확하게 &lt;input type="text" class="inputBox md">명이구나.&lt;/p>
+    &lt;/li>
+&lt;/ul>
+</pre>
+    </div>
+  </div>
 </div>
 
 
