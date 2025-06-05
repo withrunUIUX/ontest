@@ -5286,6 +5286,21 @@
         </div>
     </div>
 </div>
+<div class="accordion">
+  <div class="accordion-item">
+    <button class="accordion-header">HTML 보기</button>
+    <div class="accordion-content">
+      <pre class="prettyprint linenums">
+        &lt;div class="txareWrap">
+            &lt;div class="item">
+                &lt;strong>요약&lt;/strong>
+                &lt;textarea placeholder="답안을 작성하세요.">&lt;/textarea>
+            &lt;/div>
+        &lt;/div>
+      </pre>
+    </div>
+  </div>
+</div>
 
 <h2 id="txareWrapT2">서술형 type2 <small>요약 2개 이상 쓸때</small></h2>
 <div class="stwrap">
@@ -5299,6 +5314,25 @@
             <textarea placeholder="답안을 작성하세요."></textarea>
         </div>
     </div>
+</div>
+<div class="accordion">
+  <div class="accordion-item">
+    <button class="accordion-header">HTML 보기</button>
+    <div class="accordion-content">
+      <pre class="prettyprint linenums">
+        &lt;div class="txareWrap type2">
+            &lt;div class="item">
+                &lt;strong>요약&lt;/strong>
+                &lt;textarea placeholder="답안을 작성하세요.">&lt;/textarea>
+            &lt;/div>
+            &lt;div class="item">
+                &lt;strong>요약&lt;/strong>
+                &lt;textarea placeholder="답안을 작성하세요.">&lt;/textarea>
+            &lt;/div>
+        &lt;/div>
+      </pre>
+    </div>
+  </div>
 </div>
 
 <h2 id="txareWrapT3">서술형 type3 <small>테이블형</small></h2>
@@ -5324,6 +5358,35 @@
         </li>
     </ul>
 </div>
+<div class="accordion">
+  <div class="accordion-item">
+    <button class="accordion-header">HTML 보기</button>
+    <div class="accordion-content">
+      <pre class="prettyprint linenums">
+        &lt;ul class="txareWrap type3">
+            &lt;li class="item">
+                &lt;strong>기행문을 쓸 장소&lt;/strong>
+                &lt;div class="inner">
+                    &lt;textarea placeholder="답안을 작성하세요.">&lt;/textarea>
+                &lt;/div>
+            &lt;/li>
+            &lt;li class="item">
+                &lt;strong>그 장소를 고른 까닭&lt;/strong>
+                &lt;div class="inner">
+                    &lt;textarea placeholder="답안을 작성하세요.">&lt;/textarea>
+                &lt;/div>
+            &lt;/li>
+            &lt;li class="item">
+                &lt;strong>읽을 사람&lt;/strong>
+                &lt;div class="inner">
+                    &lt;p>우리반 친구들&lt;/p>
+                &lt;/div>
+            &lt;/li>
+        &lt;/ul>
+      </pre>
+    </div>
+  </div>
+</div>
 
 <h2 id="dragWrapT1">끌어놓기 <small></small></h2>
 <div class="stwrap">
@@ -5346,6 +5409,34 @@
         </div>
     </div>
 </div>
+<div class="accordion">
+  <div class="accordion-item">
+    <button class="accordion-header">HTML 보기</button>
+    <div class="accordion-content">
+      <pre class="prettyprint linenums">
+        &lt;div class="dragWrap">
+            &lt;div class="dragBtnBox">
+                &lt;div class="draggable" id="dragWrapT1_drag_0">넓은&lt;/div>
+                &lt;div class="draggable" id="dragWrapT1_drag_1">깊은&lt;/div>
+                &lt;div class="draggable" id="dragWrapT1_drag_2">엄청&lt;/div>
+                &lt;div class="draggable" id="dragWrapT1_drag_3">예쁜&lt;/div>
+                &lt;div class="draggable" id="dragWrapT1_drag_4">옹기종기&lt;/div>
+                &lt;div class="draggable" id="dragWrapT1_drag_5">주렁주렁&lt;/div>
+            &lt;/div>
+            &lt;div class="dragAnswerBox">
+                &lt;div class="dragitem">
+                    &lt;span class="bullet circle">ㄱ&lt;/span>
+                    &lt;div class="draginput" id="dragWrapT1_drop_0">&lt;/div>
+                    &lt;span class="bullet circle">ㄴ&lt;/span>
+                    &lt;div class="draginput" id="dragWrapT1_drop_1">&lt;/div>
+                &lt;/div>
+            &lt;/div>
+        &lt;/div>
+      </pre>
+    </div>
+  </div>
+</div>
+
 <div class="stwrap">
     <div class="dragWrap">
         <div class="dragBtnBox">
@@ -5360,6 +5451,28 @@
             </div>
         </div>
     </div>
+</div>
+<div class="accordion">
+  <div class="accordion-item">
+    <button class="accordion-header">HTML 보기</button>
+    <div class="accordion-content">
+      <pre class="prettyprint linenums">
+        &lt;div class="dragWrap">
+            &lt;div class="dragBtnBox">
+                &lt;div class="draggable" id="dragWrapT1_1_drag_0">&#x2228;&lt;/div>
+                &lt;div class="draggable" id="dragWrapT1_1_drag_1">&#x2A54;&lt;/div>
+            &lt;/div>
+            &lt;div class="dragAnswerBox">
+                &lt;div class="dragitem left">
+                    동생이 색연필을 빌려 달래요.&lt;div class="draginput sm" id="dragWrapT1_1_drop_0">&lt;/div>&lt;br>
+                    "싫어, &lt;div class="draginput sm" id="dragWrapT1_1_drop_1">&lt;/div> 네 것도 있잖아."&lt;div class="draginput sm" id="dragWrapT1_1_drop_2">&lt;/div>&lt;br>
+                    "그래? &lt;div class="draginput sm" id="dragWrapT1_1_drop_3">&lt;/div> 그럼 이제부터 언니한테 내 인형 안 빌려줄 거야."
+                &lt;/div>
+            &lt;/div>
+        &lt;/div>
+      </pre>
+    </div>
+  </div>
 </div>
 
 <h2 id="dragWrapT2">끌어놓기 type2 <small>이미지 위에 끌어놓기</small></h2>
@@ -5386,6 +5499,37 @@
             </div>
         </div>
     </div>
+</div>
+<div class="accordion">
+  <div class="accordion-item">
+    <button class="accordion-header">HTML 보기</button>
+    <div class="accordion-content">
+      <pre class="prettyprint linenums">
+        &lt;div class="dragWrap type2">
+            &lt;div class="dragBtnBox">
+                &lt;div class="draggable" id="dragWrapT2_drag_0">공원&lt;/div>
+                &lt;div class="draggable" id="dragWrapT2_drag_1">경찰서&lt;/div>
+                &lt;div class="draggable" id="dragWrapT2_drag_2">도서관&lt;/div>
+                &lt;div class="draggable" id="dragWrapT2_drag_3">우체국&lt;/div>
+                &lt;div class="draggable" id="dragWrapT2_drag_4">학교&lt;/div>
+                &lt;div class="draggable" id="dragWrapT2_drag_5">병원&lt;/div>
+            &lt;/div>
+            &lt;div class="dragAnswerBox">
+                &lt;div class="dragitem">
+                    &lt;div class="draginput_group">
+                        &lt;div class="draginput" id="dragWrapT2_drop_0" style="width:15%;top:17%;left:27%;">&lt;/div>
+                        &lt;div class="draginput" id="dragWrapT2_drop_1" style="width:15%;top:17%;left:79%;">&lt;/div>
+                        &lt;div class="draginput" id="dragWrapT2_drop_2" style="width:15%;top:38%;left:6%;">&lt;/div>
+                        &lt;div class="draginput" id="dragWrapT2_drop_3" style="width:15%;top:48%;left:57%;">&lt;/div>
+                        &lt;div class="draginput" id="dragWrapT2_drop_4" style="width:15%;top:68%;left:28%;">&lt;/div>
+                    &lt;/div>
+                    &lt;img src="../images/q_common/drage_t2_ex_img2.png">
+                &lt;/div>
+            &lt;/div>
+        &lt;/div>
+      </pre>
+    </div>
+  </div>
 </div>
 
 <h2>끌어놓기 type2 <small>이미지 위에 끌어놓기, 중복으로 끌어놓기 할때는 draginput에 many 클래스 추가</small></h2>
@@ -5436,6 +5580,60 @@
         </div>
     </div>
 </div>
+<div class="accordion">
+  <div class="accordion-item">
+    <button class="accordion-header">HTML 보기</button>
+    <div class="accordion-content">
+      <pre class="prettyprint linenums">
+        &lt;div class="dragWrap type2">
+            &lt;div class="dragBtnBox">
+                &lt;div class="draggable" id="dragWrapT2_1_drag_0">
+                    &lt;div class="cardBox photo flex-col">
+                        &lt;div class="photoBox">
+                            &lt;img src="../images/question/soc/soc_522_t467_a1.png">
+                        &lt;/div>
+                        &lt;p>① 국군, 연합군의 평양 철수에 따른 피난민 행렬&lt;/p>
+                    &lt;/div>
+                &lt;/div>
+                &lt;div class="draggable" id="dragWrapT2_1_drag_1"> 
+                    &lt;div class="cardBox photo flex-col">
+                        &lt;div class="photoBox">
+                            &lt;img src="../images/question/soc/soc_522_t467_a2.png">
+                        &lt;/div>
+                        &lt;p>② 국군 평양 입성 환영 대회&lt;/p>
+                    &lt;/div>
+                &lt;/div>
+                &lt;div class="draggable" id="dragWrapT2_1_drag_2"> 
+                    &lt;div class="cardBox photo flex-col">
+                        &lt;div class="photoBox">
+                            &lt;img src="../images/question/soc/soc_522_t467_a3.png">
+                        &lt;/div>
+                        &lt;p>③ 정전 협정 체결&lt;/p>
+                    &lt;/div>
+                &lt;/div>
+                &lt;div class="draggable" id="dragWrapT2_1_drag_3"> 
+                    &lt;div class="cardBox photo flex-col">
+                        &lt;div class="photoBox">
+                            &lt;img src="../images/question/soc/soc_522_t467_a4.png">
+                        &lt;/div>
+                        &lt;p>④ 부산 부근에서 대치하는 군인들&lt;/p>
+                    &lt;/div>
+                &lt;/div>
+            &lt;/div>
+            &lt;div class="dragAnswerBox">
+                &lt;div class="dragitem">
+                    &lt;div class="draginput_group">
+                        &lt;div class="draginput many" id="dragWrapT2_1_drop_0" style="width: 46%;height: 26rem;top: 13%;left: 2%;">&lt;/div>
+                        &lt;div class="draginput many" id="dragWrapT2_1_drop_1" style="width: 46%;height: 26rem;top: 13%;left: 52%;">&lt;/div>
+                    &lt;/div>
+                    &lt;img src="../images/question/soc/soc_522_t467_a5.png">
+                &lt;/div>
+            &lt;/div>
+        &lt;/div>
+      </pre>
+    </div>
+  </div>
+</div>
 
 <h2>끌어놓기 type2 <small>이미지 위에 끌어놓기, 투명 input, draginput에 bg_trans를 추가</small></h2>
 <div class="stwrap">
@@ -5454,10 +5652,29 @@
         </div>
     </div>
 </div>
-
-
-
-
+<div class="accordion">
+  <div class="accordion-item">
+    <button class="accordion-header">HTML 보기</button>
+    <div class="accordion-content">
+      <pre class="prettyprint linenums">
+        &lt;div class="dragWrap type2">
+            &lt;div class="dragBtnBox">
+                &lt;div class="draggable" id="dragWrapT2_2_drag_0">&lt;img src="../images/question/mth/mth_523_m236_02_a1.png">&lt;/div>
+                &lt;div class="draggable" id="dragWrapT2_2_drag_1">&lt;img src="../images/question/mth/mth_523_m236_02_a2.png">&lt;/div>
+            &lt;/div>
+            &lt;div class="dragAnswerBox">
+                &lt;div class="dragitem">
+                    &lt;div class="draginput_group">
+                        &lt;div class="draginput bg_trans" id="dragWrapT2_2_drop_0" style="width:50%;top:-3px;left:49%;height:12.8rem;">&lt;/div>
+                    &lt;/div>
+                    &lt;img src="../images/question/mth/mth_523_m236_02_a3.png">
+                &lt;/div>
+            &lt;/div>
+        &lt;/div>
+      </pre>
+    </div>
+  </div>
+</div>
 
 <h2 id="dragWrapT3">끌어놓기 type3 <small>OX 퀴즈</small></h2>
 <div class="stwrap">
@@ -5482,6 +5699,35 @@
         </div>
     </div>
 </div>
+<div class="accordion">
+  <div class="accordion-item">
+    <button class="accordion-header">HTML 보기</button>
+    <div class="accordion-content">
+      <pre class="prettyprint linenums">
+        &lt;div class="dragWrap type3">
+            &lt;div class="dragBtnBox">
+                &lt;div class="draggable" id="dragWrapT3_drag_0">&lt;img src="../images/q_common/img_o.svg">&lt;/div>
+                &lt;div class="draggable" id="dragWrapT3_drag_1">&lt;img src="../images/q_common/img_x.svg">&lt;/div>
+            &lt;/div>
+            &lt;div class="dragAnswerBox">
+                &lt;div class="dragitem">
+                    &lt;span class="caption">&lt;span class="bullet circle">1&lt;/span>나는 친구랑 사이좋게 지낸다.&lt;/span>
+                    &lt;div class="draginput big" id="dragWrapT3_drop_0">&lt;/div>
+                &lt;/div>
+                &lt;div class="dragitem">
+                    &lt;span class="caption">&lt;span class="bullet circle">2&lt;/span>나는 다른 사람을 배려하며 말한다.&lt;/span>
+                    &lt;div class="draginput big" id="dragWrapT3_drop_1">&lt;/div>
+                &lt;/div>
+                &lt;div class="dragitem">
+                    &lt;span class="caption">&lt;span class="bullet circle">3&lt;/span>나는 자주 줄임말을 사용한다.&lt;/span>
+                    &lt;div class="draginput big" id="dragWrapT3_drop_2">&lt;/div>
+                &lt;/div>
+            &lt;/div>
+        &lt;/div>
+      </pre>
+    </div>
+  </div>
+</div>
 
 <h2 id="dragWrapT4">끌어놓기 type4 <small>시계 돌리기, 시간 맞추기</small></h2>
 <div class="stwrap">
@@ -5495,6 +5741,24 @@
         </div>
     </div>
     <script type="text/javascript" src="/js/clock.js"></script><!--끌어넣기 typy4(시계 돌리기) 스크립트, 컨텐츠 아래에 있어야 작동 / question_footer에 옮김.-->
+</div>
+<div class="accordion">
+  <div class="accordion-item">
+    <button class="accordion-header">HTML 보기</button>
+    <div class="accordion-content">
+      <pre class="prettyprint linenums">
+        &lt;div class="dragWrap type4">
+            &lt;div class="clock" id="clock">
+                &lt;div class="hand hour" id="hour-hand">시간&lt;/div>
+                &lt;div class="hand minute" id="minute-hand">분&lt;/div>
+                &lt;div class="hand second" id="second-hand">초&lt;/div>
+                &lt;div class="clockDot">&lt;/div>
+                &lt;div class="clock_bg">&lt;img src="../images/q_common/clock_bg_ex.png" onselectstart="return false" ondragstart="return false">&lt;/div>
+            &lt;/div>
+        &lt;/div>
+      </pre>
+    </div>
+  </div>
 </div>
 
 <h2 id="dragWrapT5">끌어놓기 type5 <small>테이블</small></h2>
@@ -5549,6 +5813,65 @@
         </div>
     </div>
 </div>
+<div class="accordion">
+  <div class="accordion-item">
+    <button class="accordion-header">HTML 보기</button>
+    <div class="accordion-content">
+      <pre class="prettyprint linenums">
+        &lt;div class="dragWrap type5">
+            &lt;div class="dragBtnBox">
+                &lt;div class="draggable" id="dragWrapT5_drag_0">자원순환&lt;/div>
+                &lt;div class="draggable" id="dragWrapT5_drag_1">에너지 절약&lt;/div>
+                &lt;div class="draggable" id="dragWrapT5_drag_2">친환경 소비&lt;/div>
+                &lt;div class="draggable" id="dragWrapT5_drag_3">친환경 이동&lt;/div>
+                &lt;div class="draggable" id="dragWrapT5_drag_4">흡수원 보호&lt;/div>
+            &lt;/div>
+            &lt;div class="dragAnswerBox">
+                &lt;ul class="dragtable">
+                    &lt;li class="dragtable_tr">
+                        &lt;div class="dragtable_th">탄소중립&lt;/div>
+                        &lt;div class="dragtable_td">
+                            대기 중 온실가스 농도 증가를 막기 위해 인간 활돌에 의해 배출하는 탄소량과 흡수, 제거하는 탄소량을 같게 함으로써 실질적인 탄소 배출량을 ‘0’으로 만드는 것
+                        &lt;/div>
+                    &lt;/li>
+                    &lt;li class="dragtable_tr">
+                        &lt;div class="dragtable_th">&lt;div class="draginput" id="dragWrapT5_drop_0">&lt;/div>&lt;/div>
+                        &lt;div class="dragtable_td">
+                            냉장고 적정용량 유지하지, 접기밥솥 보온 기능 사용 줄이기, 물은 받아서 사용하기, 텔레비전 시청 시간 줄이기
+                        &lt;/div>
+                    &lt;/li>
+                    &lt;li class="dragtable_tr">
+                        &lt;div class="dragtable_th">&lt;div class="draginput" id="dragWrapT5_drop_1">&lt;/div>&lt;/div>
+                        &lt;div class="dragtable_td">
+                            음식물 쓰레기 줄이기, 저탄소 제품 구매하기, 과대포장 제품 안사기
+                        &lt;/div>
+                    &lt;/li>
+                    &lt;li class="dragtable_tr">
+                        &lt;div class="dragtable_th">&lt;div class="draginput" id="dragWrapT5_drop_2">&lt;/div>&lt;/div>
+                        &lt;div class="dragtable_td">
+                            대중교통 이용하기, 가까운 거리는 걷거나 자전거 이용하기
+                        &lt;/div>
+                    &lt;/li>
+                    &lt;li class="dragtable_tr">
+                        &lt;div class="dragtable_th">&lt;div class="draginput" id="dragWrapT5_drop_3">&lt;/div>&lt;/div>
+                        &lt;div class="dragtable_td">
+                            물티슈 덜 쓰기, 다회용 컵 사용하기
+                        &lt;/div>
+                    &lt;/li>
+                    &lt;li class="dragtable_tr">
+                        &lt;div class="dragtable_th">&lt;div class="draginput" id="dragWrapT5_drop_4">&lt;/div>&lt;/div>
+                        &lt;div class="dragtable_td">
+                            나무 심기 운동에 참여하기, 탄소흡수원의 중요성 알고 보호하기
+                        &lt;/div>
+                    &lt;/li>
+                &lt;/ul>
+            &lt;/div>
+        &lt;/div>
+      </pre>
+    </div>
+  </div>
+</div>
+
 <div class="stwrap">
     <div class="dragWrap type5">
         <div class="dragBtnBox">
@@ -5576,6 +5899,40 @@
         </div>
     </div>
 </div>
+<div class="accordion">
+  <div class="accordion-item">
+    <button class="accordion-header">HTML 보기</button>
+    <div class="accordion-content">
+      <pre class="prettyprint linenums">
+        &lt;div class="dragWrap type5">
+            &lt;div class="dragBtnBox">
+                &lt;div class="draggable" id="dragWrapT5_1_drag_0">&lt;span class="bullet circle sm">ㄱ&lt;/span> 저희 모둠은 쓰레기가 마구 버려지는 것을 바꾸고자 공원을 관리하는 곳에 찾아가 공원에 쓰레기를 더 설치해달라고 제안하였습니다. 우리도 지구를 위해 쓰레기를 버리지 않도록 앞으로 노력하는 학생들이 됩시다.&lt;/div>
+                &lt;div class="draggable" id="dragWrapT5_1_drag_1">&lt;span class="bullet circle sm">ㄴ&lt;/span> 우리 별님 모둠에서는 쓰레기를 버리는 사례를 조사했습니다. 발표 제목은 「지구를 위해 쓰레기를 버리지 맙시다!」입니다.&lt;/div>
+                &lt;div class="draggable" id="dragWrapT5_1_drag_2">&lt;span class="bullet circle sm">ㄷ&lt;/span> 우선 저희는 주변에 있는 공공장소에 가서 사람들이 얼마나 쓰레기를 많이 버리는지 관찰하기로 하였습니다. 저희가 관찰한 장소는 학교 옆에 있는 공원이었습니다. 저희가 3일 동안 관찰한 결과 사람들이 바닥에 쓰레기를 버리는 장면을 30회 이상 보았습니다. 하루에 10회 이상 바닥에 쓰레기를 버리는 것을 보고 저희는 큰 충격을 받았습니다.&lt;/div>
+            &lt;/div>
+            &lt;div class="dragAnswerBox">
+                &lt;ul class="dragtable">
+                    &lt;li class="dragtable_tr">
+                        &lt;div class="dragtable_th">이 글을 읽고 무엇을 할 것인가?&lt;/div>
+                        &lt;div class="dragtable_td">
+                            대기 중 온실가스 농도 증가를 막기 위해 인간 활돌에 의해 배출하는 탄소량과 흡수, 제거하는 탄소량을 같게 함으로써 실질적인 탄소 배출량을 ‘0’으로 만드는 것
+                        &lt;/div>
+                    &lt;/li>
+                    &lt;li class="dragtable_tr">
+                        &lt;div class="dragtable_th">이 글에서 필요한 내용&lt;/div>
+                        &lt;div class="dragtable_td">
+                            &lt;div class="draginput" id="dragWrapT5_1_drop_0">&lt;/div>은 우리 고유의 도가지 기술이다.&lt;br>
+                            고려가 도가지를 만드는&lt;div class="draginput" id="dragWrapT5_1_drop_1">&lt;/div>이 아주 뛰어났다.&lt;br>
+                            고려시대에 비색 청자와 상감 청자를 다른 나라로&lt;div class="draginput" id="dragWrapT5_1_drop_2">&lt;/div>했다.
+                        &lt;/div>
+                    &lt;/li>
+                &lt;/ul>
+            &lt;/div>
+        &lt;/div>
+      </pre>
+    </div>
+  </div>
+</div>
 
 <h2 id="dragWrapT6">끌어놓기 type6 <small>중복으로 끌어놓기</small></h2>
 <div class="stwrap">
@@ -5602,6 +5959,38 @@
         </div>
     </div>
 </div>
+<div class="accordion">
+  <div class="accordion-item">
+    <button class="accordion-header">HTML 보기</button>
+    <div class="accordion-content">
+      <pre class="prettyprint linenums">
+        &lt;div class="dragWrap type6">
+            &lt;div class="dragBtnBox">
+                &lt;div class="draggable" id="dragWrapT6_drag_0">사냥&lt;/div>
+                &lt;div class="draggable" id="dragWrapT6_drag_1">꾼&lt;/div>
+                &lt;div class="draggable" id="dragWrapT6_drag_2">장난&lt;/div>
+                &lt;div class="draggable" id="dragWrapT6_drag_3">꾸러기&lt;/div>
+                &lt;div class="draggable" id="dragWrapT6_drag_4">새&lt;/div>
+                &lt;div class="draggable" id="dragWrapT6_drag_5">파랗다&lt;/div>
+            &lt;/div>
+            &lt;div class="dragAnswerBox">
+                &lt;div class="dragitem">
+                    &lt;span class="bullet tit ">뜻을 더해 주는 말&lt;/span>
+                    &lt;div class="draginput many" id="dragWrapT6_drop_0">
+                    &lt;/div>
+                &lt;/div>
+                &lt;div class="dragitem">
+                    &lt;span class="bullet tit ">뜻이 있는 낱말&lt;/span>
+                    &lt;div class="draginput many" id="dragWrapT6_drop_1">
+                    &lt;/div>
+                &lt;/div>
+            &lt;/div>
+        &lt;/div>
+      </pre>
+    </div>
+  </div>
+</div>
+
 <div class="stwrap">
     <div class="dragWrap type6">
         <span class="caption"><img src="../images/q_common/agg1.png"> 10개, <img src="../images/q_common/agg2.png"> 100개</span>
@@ -5628,6 +6017,40 @@
             </div>
         </div>
     </div>
+</div>
+<div class="accordion">
+  <div class="accordion-item">
+    <button class="accordion-header">HTML 보기</button>
+    <div class="accordion-content">
+      <pre class="prettyprint linenums">
+        &lt;div class="dragWrap type6">
+            &lt;span class="caption">&lt;img src="../images/q_common/agg1.png"> 10개, &lt;img src="../images/q_common/agg2.png"> 100개&lt;/span>
+            &lt;div class="dragBtnBox">
+                &lt;div class="draggable" id="dragWrapT6_1_drag_0">&lt;img src="../images/q_common/agg1.png">&lt;/div>
+                &lt;div class="draggable" id="dragWrapT6_1_drag_1">&lt;img src="../images/q_common/agg2.png">&lt;/div>
+            &lt;/div>
+            &lt;div class="dragAnswerBox">
+                &lt;div class="dragitem">
+                    &lt;span class="bullet circle">가&lt;/span>
+                    &lt;div class="draginput many" id="dragWrapT6_1_drop_0">&lt;/div>
+                &lt;/div>
+                &lt;div class="dragitem">
+                    &lt;span class="bullet circle">나&lt;/span>
+                    &lt;div class="draginput many" id="dragWrapT6_1_drop_1">&lt;/div>
+                &lt;/div>
+                &lt;div class="dragitem">
+                    &lt;span class="bullet circle">다&lt;/span>
+                    &lt;div class="draginput many" id="dragWrapT6_1_drop_2">&lt;/div>
+                &lt;/div>
+                &lt;div class="dragitem">
+                    &lt;span class="bullet circle">라&lt;/span>
+                    &lt;div class="draginput many" id="dragWrapT6_1_drop_3">&lt;/div>
+                &lt;/div>
+            &lt;/div>
+        &lt;/div>
+      </pre>
+    </div>
+  </div>
 </div>
 
 <h2 id="dragWrapT7">끌어놓기 type7 <small>벤다이어그램</small></h2>
@@ -5662,6 +6085,44 @@
         </div>
     </div>
 </div>
+<div class="accordion">
+  <div class="accordion-item">
+    <button class="accordion-header">HTML 보기</button>
+    <div class="accordion-content">
+      <pre class="prettyprint linenums">
+        &lt;div class="dragWrap type7">
+            &lt;div class="dragBtnBox">
+                &lt;div class="draggable" id="dragWrapT7_drag_0">유교 문화의 영향을 받았다.&lt;/div>
+                &lt;div class="draggable" id="dragWrapT7_drag_1">현재 통일 국가를 이루었다.&lt;/div>
+                &lt;div class="draggable" id="dragWrapT7_drag_2">민족 전쟁을 치룬 분단의 역사가 있다.&lt;/div>
+                &lt;div class="draggable" id="dragWrapT7_drag_3">분단국가로 남아 현재 휴전국 상태이다.&lt;/div>
+            &lt;/div>
+            &lt;div class="dragAnswerBox">
+                &lt;div class="diagram">
+                    &lt;div class="dragitem">
+                        &lt;span class="bullet tit">우리나라&lt;/span>
+                        &lt;div class="draginput many" id="dragWrapT7_drop_0">
+                            일본의 식민 지배를 받았다.
+                        &lt;/div>
+                    &lt;/div>
+                    &lt;div class="dragitem">
+                        &lt;div class="draginput many" id="dragWrapT7_drop_1">
+                            다른 나라에 의해 식민 지배를 받았다.
+                        &lt;/div>
+                    &lt;/div>
+                    &lt;div class="dragitem">
+                        &lt;span class="bullet tit">베트남&lt;/span>
+                        &lt;div class="draginput many" id="dragWrapT7_drop_2">
+                            프랑스의 식민 지배를 받았다.
+                        &lt;/div>
+                    &lt;/div>
+                &lt;/div>
+            &lt;/div>
+        &lt;/div>
+      </pre>
+    </div>
+  </div>
+</div>
 
 <h2 id="dragWrapT8">끌어놓기 type8 <small>순서대로 끌어놓기</small></h2>
 <div class="stwrap">
@@ -5695,6 +6156,45 @@
             </div>
         </div>
     </div>
+</div>
+<div class="accordion">
+  <div class="accordion-item">
+    <button class="accordion-header">HTML 보기</button>
+    <div class="accordion-content">
+      <pre class="prettyprint linenums">
+        &lt;div class="dragWrap type8">
+            &lt;div class="dragBtnBox">
+                &lt;div class="draggable" id="dragWrapT8_drag_0">주제&lt;/div>
+                &lt;div class="draggable" id="dragWrapT8_drag_1">내용&lt;/div>
+                &lt;div class="draggable" id="dragWrapT8_drag_2">자료&lt;/div>
+                &lt;div class="draggable" id="dragWrapT8_drag_3">방법&lt;/div>
+            &lt;/div>
+            &lt;div class="dragAnswerBox">
+                &lt;div class="dragflow">
+                    &lt;div class="dragitem">
+                        모둠 친구들이 함께 설명할 &lt;div class="draginput" id="dragWrapT8_drop_0">&lt;/div> 정하기
+                    &lt;/div>
+                    &lt;div class="dragitem">
+                        주제와 관련된 &lt;div class="draginput" id="dragWrapT8_drop_1">&lt;/div> 함께 찾기
+                    &lt;/div>
+                    &lt;div class="dragitem">
+                        설명하고 싶은 &lt;div class="draginput" id="dragWrapT8_drop_2">&lt;/div> 정하기
+                    &lt;/div>
+                    &lt;div class="dragitem">
+                        알맞은 설명 &lt;div class="draginput" id="dragWrapT8_drop_3">&lt;/div> 정하기
+                    &lt;/div>
+                    &lt;div class="dragitem">
+                        내용 정리하기
+                    &lt;/div>
+                    &lt;div class="dragitem">
+                        내용과 자료에 따라 설명하는 글쓰기
+                    &lt;/div>
+                &lt;/div>
+            &lt;/div>
+        &lt;/div>
+      </pre>
+    </div>
+  </div>
 </div>
 
 <h2 id="dragWrapT9">끌어놓기 type9 <small>문장부호 맞추기 // type10 > type9 수정</small></h2>
@@ -5750,6 +6250,65 @@
         </div>
     </div>
 </div>
+<div class="accordion">
+  <div class="accordion-item">
+    <button class="accordion-header">HTML 보기</button>
+    <div class="accordion-content">
+      <pre class="prettyprint linenums">
+        &lt;div class="dragWrap type9">
+            &lt;div class="dragBtnBox">
+                &lt;div class="draggable" id="dragWrapT9_drag_0">&lt;img src="../images/q_common/drage_t10_ex_btn1.png">&lt;/div>
+                &lt;div class="draggable" id="dragWrapT9_drag_1">&lt;img src="../images/q_common/drage_t10_ex_btn2.png">&lt;/div>
+                &lt;div class="draggable" id="dragWrapT9_drag_2">&lt;img src="../images/q_common/drage_t10_ex_btn3.png">&lt;/div>
+                &lt;div class="draggable" id="dragWrapT9_drag_3">&lt;img src="../images/q_common/drage_t10_ex_btn4.png">&lt;/div>
+                &lt;div class="draggable" id="dragWrapT9_drag_4">&lt;img src="../images/q_common/drage_t10_ex_btn5.png">&lt;/div>
+                &lt;div class="draggable" id="dragWrapT9_drag_5">&lt;img src="../images/q_common/drage_t10_ex_btn6.png">&lt;/div>
+                &lt;div class="draggable" id="dragWrapT9_drag_6">&lt;img src="../images/q_common/drage_t10_ex_btn7.png">&lt;/div>
+            &lt;/div>
+            &lt;div class="dragAnswerBox">
+                &lt;div class="dragitem">
+                    &lt;span class="caption">&lt;span class="bullet tit ">상황 1&lt;/span>방학이 끝나고 친구 시우를 만나서 인사를 나누었다.&lt;/span>
+                    &lt;ul class="dragmark_group">
+                        &lt;li>&lt;div class="draginput" id="dragWrapT9_drop_0">&lt;/div>&lt;/li>
+                        &lt;li>시&lt;/li>
+                        &lt;li>우&lt;/li>
+                        &lt;li>야&lt;/li>
+                        &lt;li>&lt;div class="draginput" id="dragWrapT9_drop_1">&lt;/div>&lt;/li>
+                        &lt;li>잘&lt;/li>
+                        &lt;li>&lt;/li>
+                        &lt;li>지&lt;/li>
+                        &lt;li>냈&lt;/li>
+                        &lt;li>니&lt;/li>
+                        &lt;li>&lt;div class="draginput" id="dragWrapT9_drop_2">&lt;/div>&lt;/li>
+                        &lt;li>&lt;div class="draginput" id="dragWrapT9_drop_3">&lt;/div>&lt;/li>
+                    &lt;/ul>
+                &lt;/div>
+                &lt;div class="dragitem">
+                    &lt;span class="caption">&lt;span class="bullet tit ">상황 2&lt;/span>심청전 책을 읽고 마음 속으로 이런 생각이 들었다.&lt;/span>
+                    &lt;ul class="dragmark_group">
+                        &lt;li>&lt;div class="draginput" id="dragWrapT9_drop_4">&lt;/div>&lt;/li>
+                        &lt;li>심&lt;/li>
+                        &lt;li>청&lt;/li>
+                        &lt;li>이&lt;/li>
+                        &lt;li>는&lt;/li>
+                        &lt;li>&lt;/li>
+                        &lt;li>정&lt;/li>
+                        &lt;li>말&lt;/li>
+                        &lt;li>&lt;/li>
+                        &lt;li>착&lt;/li>
+                        &lt;li>하&lt;/li>
+                        &lt;li>구&lt;/li>
+                        &lt;li>나&lt;/li>
+                        &lt;li>&lt;div class="draginput" id="dragWrapT9_drop_5">&lt;/div>&lt;/li>
+                        &lt;li>&lt;div class="draginput" id="dragWrapT9_drop_6">&lt;/div>&lt;/li>
+                    &lt;/ul>
+                &lt;/div>
+            &lt;/div>
+        &lt;/div>
+      </pre>
+    </div>
+  </div>
+</div>
 
 <h2 id="dragWrapT10">끌어놓기 type10 <small>핸드폰 + 대화형 //  type 11 > type10으로 수정</small></h2>
 <div class="stwrap">
@@ -5804,6 +6363,66 @@
         </div>
     </div>
 </div>
+<div class="accordion">
+  <div class="accordion-item">
+    <button class="accordion-header">HTML 보기</button>
+    <div class="accordion-content">
+      <pre class="prettyprint linenums">
+        &lt;div class="dragWrap type10">
+            &lt;div class="dragBtnBox">
+                &lt;div class="draggable" id="dragWrapT10_drag_0">뭘 그런 걸로 화를 내니? 너 지금 너무 예민한 것 같아.&lt;/div>
+                &lt;div class="draggable" id="dragWrapT10_drag_1">그런 말을 들었구나. 이번 기회에 살을 빼는 건 어떨까?&lt;/div>
+            &lt;/div>
+            &lt;div class="dragAnswerBox">
+                &lt;div class="bgBox phone">
+                    &lt;div class="bgCont">
+                        &lt;ul class="chatBox type2">
+                            &lt;li class="chat_item left">
+                                &lt;span class="chat_img blue female1">&lt;/span>
+                                &lt;div class="bubble">
+                                    서현아! 피아노 학원은 잘 다녀왔어?
+                                &lt;/div>
+                            &lt;/li>
+                            &lt;li class="chat_item right">
+                                &lt;span class="chat_img pink female2">&lt;/span>
+                                &lt;div class="bubble">
+                                    어 혜진아, 방금 집에 도착 했어. 근데 갑자기 무슨 일이야?
+                                &lt;/div> 
+                            &lt;/li>
+                            &lt;li class="chat_item left">
+                                &lt;span class="chat_img blue female1">&lt;/span>
+                                &lt;div class="bubble">
+                                    오늘 내가 속상한 일이 있어서...
+                                &lt;/div>
+                            &lt;/li>
+                            &lt;li class="chat_item right">
+                                &lt;span class="chat_img pink female2">&lt;/span>
+                                &lt;div class="bubble">
+                                    왜? 무슨 일 있었어?
+                                &lt;/div> 
+                            &lt;/li>
+                            &lt;li class="chat_item left">
+                                &lt;span class="chat_img blue female1">&lt;/span>
+                                &lt;div class="bubble">
+                                    쉬는 시간에 우리 반 남자애들이 나보고 뚱뚱하다고 막 놀리는거야...
+                                &lt;/div>
+                            &lt;/li>
+                            &lt;li class="chat_item right">
+                                &lt;span class="chat_img pink female2">&lt;/span>
+                                &lt;div class="bubble">
+                                    &lt;div class="draginput" id="dragWrapT10_drop_0">&lt;/div>
+                                &lt;/div> 
+                            &lt;/li>
+                        &lt;/ul>
+                    &lt;/div>
+                &lt;/div>
+            &lt;/div>
+        &lt;/div>
+      </pre>
+    </div>
+  </div>
+</div>
+
 <div class="stwrap">
     <div class="dragWrap type10">
         <div class="dragBtnBox">
@@ -5872,6 +6491,81 @@
         </div>
     </div>
 </div>
+<div class="accordion">
+  <div class="accordion-item">
+    <button class="accordion-header">HTML 보기</button>
+    <div class="accordion-content">
+      <pre class="prettyprint linenums">
+        &lt;div class="dragWrap type10">
+            &lt;div class="dragBtnBox">
+                &lt;div class="draggable" id="dragWrapT10_1_drag_0">(_ _*)&lt;/div>
+                &lt;div class="draggable" id="dragWrapT10_1_drag_1">^0^&lt;/div>
+                &lt;div class="draggable" id="dragWrapT10_1_drag_2">∋.∈&lt;/div>
+                &lt;div class="draggable" id="dragWrapT10_1_drag_3">ㅠ_ㅠ&lt;/div>
+                &lt;div class="draggable" id="dragWrapT10_1_drag_4">@.@&lt;/div>
+            &lt;/div>
+            &lt;div class="dragAnswerBox">
+                &lt;div class="bgBox phone">
+                    &lt;div class="bgCont">
+                        &lt;ul class="chatBox type2">
+                            &lt;li class="chat_item left">
+                                &lt;span class="chat_img blue female1">&lt;/span>
+                                &lt;div class="bubble">
+                                    서영아, 약속 취소해서 미안해. ㅠ_ㅠ 갑자기 배가 너무 아파서 갈 수 없었어.
+                                &lt;/div>
+                            &lt;/li>
+                            &lt;li class="chat_item right">
+                                &lt;span class="chat_img pink female2">&lt;/span>
+                                &lt;div class="bubble">
+                                    괜찮아!
+                                &lt;/div> 
+                            &lt;/li>
+                            &lt;li class="chat_item left">
+                                &lt;span class="chat_img blue female1">&lt;/span>
+                                &lt;div class="bubble">
+                                    공원에서 너무 오랫동안 기다렸지? 정말 미안해. ㅠ_ㅠ
+                                &lt;/div>
+                            &lt;/li>
+                            &lt;li class="chat_item right">
+                                &lt;span class="chat_img pink female2">&lt;/span>
+                                &lt;div class="bubble">
+                                    많이 기다리지 않았어. 괜찮아.
+                                &lt;/div> 
+                            &lt;/li>
+                            &lt;li class="chat_item left">
+                                &lt;span class="chat_img blue female1">&lt;/span>
+                                &lt;div class="bubble">
+                                    서영아, 많이 화났어? (◉.◉;;) 
+                                &lt;/div>
+                            &lt;/li>
+                            &lt;li class="chat_item right">
+                                &lt;span class="chat_img pink female2">&lt;/span>
+                                &lt;div class="bubble">
+                                    아니, 왜?
+                                &lt;/div> 
+                            &lt;/li>
+                            &lt;li class="chat_item left">
+                                &lt;span class="chat_img blue female1">&lt;/span>
+                                &lt;div class="bubble">
+                                    그림말을 안 넣으니 많이 화난 것 같아서…….
+                                &lt;/div>
+                            &lt;/li>
+                            &lt;li class="chat_item right">
+                                &lt;span class="chat_img pink female2">&lt;/span>
+                                &lt;div class="bubble">
+                                    화 안 났어. 진짜 괜찮아. ^-^;; 주말에 우리 만나서 재미있게 놀자.
+                                    &lt;div class="draginput" id="dragWrapT10_1_drop_0">&lt;/div>
+                                &lt;/div> 
+                            &lt;/li>
+                        &lt;/ul>
+                    &lt;/div>
+                &lt;/div>
+            &lt;/div>
+        &lt;/div>
+      </pre>
+    </div>
+  </div>
+</div>
 
 <h2 id="dragWrapT11">끌어놓기 type11 <small>카드박스  // type12 > type11로 수정</small></h2>
 <div class="stwrap">
@@ -5939,6 +6633,79 @@
         </div>
     </div>
 </div>
+<div class="accordion">
+  <div class="accordion-item">
+    <button class="accordion-header">HTML 보기</button>
+    <div class="accordion-content">
+      <pre class="prettyprint linenums">
+        &lt;div class="dragWrap type11">
+            &lt;div class="dragBtnBox">
+                &lt;div class="draggable" id="dragWrapT11_drag_0">
+                    &lt;div class="dargcard">
+                        &lt;img src="../images/q_common/drag_t12ex1.png">
+                        궁궐에서 그림을 그리거나 외국 사신을 맞이하며 통역을 담당하기도 했다.
+                    &lt;/div>
+                &lt;/div>
+                &lt;div class="draggable" id="dragWrapT11_drag_1">
+                    &lt;div class="dargcard">
+                        &lt;img src="../images/q_common/drag_t12ex2.png">
+                        관리가 되거나 유교의 가르침이 담긴 책을 공부하고 지역의 선비들과 여러 가지 주제로 토론하기도 했다.
+                    &lt;/div>
+                &lt;/div>
+                &lt;div class="draggable" id="dragWrapT11_drag_2">
+                    &lt;div class="dargcard">
+                        &lt;img src="../images/q_common/drag_t12ex3.png">
+                        나라와 개인의 재산으로 여겨져 양반의 집이나 관공서에서 허드렛일이나 물건을 만드는 일을 하기도 했다.
+                    &lt;/div>
+                &lt;/div>
+                &lt;div class="draggable" id="dragWrapT11_drag_3">
+                    &lt;div class="dargcard">
+                        &lt;img src="../images/q_common/drag_t12ex4.png">
+                        대부분 농사를 지으며 나라에 큰 공사나 일이 있을 때 불려 가기도 했으며 나라에 세금을 내기도 했다.
+                    &lt;/div>
+                &lt;/div>
+            &lt;/div>
+            &lt;div class="dragAnswerBox">
+                &lt;ul class="dragtable">
+                    &lt;li class="dragtable_tr">
+                        &lt;div class="dragtable_th">양반&lt;/div>
+                        &lt;div class="dragtable_td">
+                            &lt;div class="draginput" id="dragWrapT11_drop_0">
+                                &lt;div class="draggable" id="dragWrapT11_drag_0">
+                                    &lt;div class="dargcard">
+                                        &lt;img src="../images/q_common/drag_t12ex1.png">
+                                        궁궐에서 그림을 그리거나 외국 사신을 맞이하며 통역을 담당하기도 했다.
+                                    &lt;/div>
+                                &lt;/div>
+                            &lt;/div>
+                        &lt;/div>
+                    &lt;/li>
+                    &lt;li class="dragtable_tr">
+                        &lt;div class="dragtable_th">중인&lt;/div>
+                        &lt;div class="dragtable_td">
+                            &lt;div class="draginput" id="dragWrapT11_drop_1">&lt;/div>
+                        &lt;/div>
+                    &lt;/li>
+                    &lt;li class="dragtable_tr">
+                        &lt;div class="dragtable_th">상민&lt;/div>
+                        &lt;div class="dragtable_td">
+                            &lt;div class="draginput" id="dragWrapT11_drop_2">&lt;/div>
+                        &lt;/div>
+                    &lt;/li>
+                    &lt;li class="dragtable_tr">
+                        &lt;div class="dragtable_th">천민&lt;/div>
+                        &lt;div class="dragtable_td">
+                            &lt;div class="draginput" id="dragWrapT11_drop_3">&lt;/div>
+                        &lt;/div>
+                    &lt;/li>
+                &lt;/ul>
+            &lt;/div>
+        &lt;/div>
+      </pre>
+    </div>
+  </div>
+</div>
+
 <div class="stwrap">
     <div class="bgBox book">
         <div class="bgCont">
@@ -6004,6 +6771,78 @@
         </div>
     </div>
 </div>
+<div class="accordion">
+  <div class="accordion-item">
+    <button class="accordion-header">HTML 보기</button>
+    <div class="accordion-content">
+      <pre class="prettyprint linenums">
+        &lt;div class="bgBox book">
+            &lt;div class="bgCont">
+                &lt;div class="dragWrap type11">
+                    &lt;strong class="sub_tt">&lt;기본권 보장 사례&gt;&lt;/strong>
+                    &lt;div class="dragBtnBox">
+                        &lt;div class="draggable" id="dragWrapT11_1_drag_0">
+                            &lt;div class="dargcard">
+                                내가 원하는 직업을 선택할 수 있습니다.
+                            &lt;/div>
+                        &lt;/div>
+                        &lt;div class="draggable" id="dragWrapT11_1_drag_1">
+                            &lt;div class="dargcard">
+                                만 18세가 되어 처음으로 투표를 했습니다.
+                            &lt;/div>
+                        &lt;/div>
+                        &lt;div class="draggable" id="dragWrapT11_1_drag_2">
+                            &lt;div class="dargcard">
+                                위생이 불량한 음식점을 단속해 달라고 구청에 요청했습니다.
+                            &lt;/div>
+                        &lt;/div>
+                        &lt;div class="draggable" id="dragWrapT11_1_drag_3">
+                            &lt;div class="dargcard">
+                                질병으로 움직임이 불편해 국가에서 운영하는 방문 간호 혜택을 받았습니다.
+                            &lt;/div>
+                        &lt;/div>
+                    &lt;/div>
+                    &lt;div class="dragAnswerBox">
+                        &lt;ul class="dragtable">
+                            &lt;li class="dragtable_tr">
+                                &lt;div class="dragtable_th">사회권&lt;/div>
+                                &lt;div class="dragtable_td">
+                                    &lt;div class="draginput" id="dragWrapT11_1_drop_0">
+                                        &lt;div class="draggable" id="dragWrapT11_1_drag_0">
+                                            &lt;div class="dargcard">
+                                                내가 원하는 직업을 선택할 수 있습니다.
+                                            &lt;/div>
+                                        &lt;/div>
+                                    &lt;/div>
+                                &lt;/div>
+                            &lt;/li>
+                            &lt;li class="dragtable_tr">
+                                &lt;div class="dragtable_th">자유권&lt;/div>
+                                &lt;div class="dragtable_td">
+                                    &lt;div class="draginput" id="dragWrapT11_1_drop_1">&lt;/div>
+                                &lt;/div>
+                            &lt;/li>
+                            &lt;li class="dragtable_tr">
+                                &lt;div class="dragtable_th">참정권&lt;/div>
+                                &lt;div class="dragtable_td">
+                                    &lt;div class="draginput" id="dragWrapT11_1_drop_2">&lt;/div>
+                                &lt;/div>
+                            &lt;/li>
+                            &lt;li class="dragtable_tr">
+                                &lt;div class="dragtable_th">청구권&lt;/div>
+                                &lt;div class="dragtable_td">
+                                    &lt;div class="draginput" id="dragWrapT11_1_drop_3">&lt;/div>
+                                &lt;/div>
+                            &lt;/li>
+                        &lt;/ul>
+                    &lt;/div>
+                &lt;/div>
+            &lt;/div>
+        &lt;/div>
+      </pre>
+    </div>
+  </div>
+</div>
 
 <h2 id="dragWrapT12">끌어놓기 type12 <small>리스트</small></h2>
 <div class="stwrap">
@@ -6030,6 +6869,38 @@
             </div>
         </div>
     </div>
+</div>
+<div class="accordion">
+  <div class="accordion-item">
+    <button class="accordion-header">HTML 보기</button>
+    <div class="accordion-content">
+      <pre class="prettyprint linenums">
+        &lt;div class="dragWrap type12">
+            &lt;div class="dragBtnBox">
+                &lt;div class="draggable" id="dragWrapT12_drag_0">베껴 쓰기&lt;/div>
+                &lt;div class="draggable" id="dragWrapT12_drag_1">읽으면서 기록하기&lt;/div>
+                &lt;div class="draggable" id="dragWrapT12_drag_2">여러 번 반복해 읽고 쓰기&lt;/div>
+                &lt;div class="draggable" id="dragWrapT12_drag_3">대상과 감정을 상상하며 읽기&lt;/div>
+                &lt;div class="draggable" id="dragWrapT12_drag_4">글과 관련된 곳에 직접 가 보기&lt;/div>
+            &lt;/div>
+            &lt;div class="dragAnswerBox">
+                &lt;div class="dragitem">
+                    &lt;span class="caption">&lt;span class="bullet circle">1&lt;/span>&lt;span>세종 대왕은 같은 책을 백 번 읽고 백 번 쓰면 책 내용을 잊지 않는다고 했다.&lt;/span>&lt;/span>
+                    &lt;div class="draginput wp30" id="dragWrapT12_drop_0">&lt;/div>
+                &lt;/div>
+                &lt;div class="dragitem">
+                    &lt;span class="caption">&lt;span class="bullet circle">2&lt;/span>&lt;span>어린이날을 만든 아동 문학가 방정환은 어린이가 글을 읽은 다음에는 반드시 관련한 곳에 직접 가 봐야 한다고 했다. 글 내용을 오랫동안 기억하려면 직접 겪어 보라고 했다.&lt;/span>&lt;/span>
+                    &lt;div class="draginput wp30" id="dragWrapT12_drop_1">&lt;/div>
+                &lt;/div>
+                &lt;div class="dragitem">
+                    &lt;span class="caption">&lt;span class="bullet circle">3&lt;/span>&lt;span>정약용은 읽다가 생각나는 것이 있으면 바로 적을 수 있어야 한다고 했다. 의심했던 부분에 대한 답을 얻게 되면 즉시 적어 두었다. 질문과 기록을 중시하는 자발적이고 적극적인 독서법이다.&lt;/span>&lt;/span>
+                    &lt;div class="draginput wp30" id="dragWrapT12_drop_2">&lt;/div>
+                &lt;/div>
+            &lt;/div>
+        &lt;/div>
+      </pre>
+    </div>
+  </div>
 </div>
 
 <h2 id="dragWrapT13">끌어놓기 type13 <small>기본테이블</small></h2>
@@ -6074,6 +6945,55 @@
             </table>
         </div>
     </div>
+</div>
+<div class="accordion">
+  <div class="accordion-item">
+    <button class="accordion-header">HTML 보기</button>
+    <div class="accordion-content">
+      <pre class="prettyprint linenums">
+        &lt;div class="dragWrap type13">
+            &lt;div class="dragBtnBox">
+                &lt;div class="draggable" id="dragWrapT13_drag_0">마음&lt;/div>
+                &lt;div class="draggable" id="dragWrapT13_drag_1">사건&lt;/div>
+            &lt;/div>
+            &lt;div class="dragAnswerBox">
+                &lt;table class="tbl_basic type3 center">
+                    &lt;caption>개요&lt;/caption>
+                    &lt;colgroup>
+                        &lt;col style="width:50%">
+                        &lt;col style="width:50%">
+                    &lt;/colgroup>
+                    &lt;thead>
+                        &lt;tr>
+                            &lt;th scope="col">신우의 글&lt;/th>
+                            &lt;th scope="col">고려할 점&lt;/th>
+                        &lt;/tr>
+                    &lt;/thead>
+                    &lt;tbody>
+                        &lt;tr>
+                            &lt;td class="td_left">점심시간에 미역국을 엎질러 친구 가방이 더러워진 일&lt;/td>
+                            &lt;td class="td_left">일어난 &lt;div class="draginput" id="dragWrapT13_drop_0">&lt;/div>을 떠올린다.&lt;/td>
+                        &lt;/tr>
+                        &lt;tr>
+                            &lt;td class="td_left">
+                                -너무 당황해서 친구에게 미안하다는 말을 못 함.&lt;br>
+                                -친구가 오히려 걱정해주어서 감동받음.
+                            &lt;/td>
+                            &lt;td class="td_left">
+                                일어난 사건에 대한 자신의 행동이나 생각을 떠올린다.
+                            &lt;/td>
+                        &lt;/tr>
+                        &lt;tr>
+                            &lt;td class="td_left">미안한 마음, 고마운 마음&lt;/td>
+                            &lt;td class="td_left">나누려는 &lt;div class="draginput" id="dragWrapT13_drop_1">&lt;/div>을 생각한다.&lt;/td>
+                        &lt;/tr>
+                    &lt;/tbody>
+                &lt;/table>
+            &lt;/div>
+        &lt;/div>
+      </pre>
+    </div>
+  </div>
 </div>
 
 
