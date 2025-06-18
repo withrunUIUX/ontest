@@ -609,9 +609,11 @@ input[type="chekbox"] + .cardWrap:before {display:none;}
 .hsradioWrap input[type="checkbox"] + label.fs_15 {padding:8px 16px}
 .hsradioWrap input[type="radio"] + label.fs_20,
 .hsradioWrap input[type="checkbox"] + label.fs_20 {padding:12px 20px}
-/* 핫스폿 type4, type5, type7, type10, type11, type12, type14, type15 등 박스형태의 버튼을 사용하지 않을때 lable에 noBox 클래스 추가*/
-.hsradioWrap input[type="radio"] + label.noBox {display:inline;padding:0;border:none;border-radius:0;background:transparent;}
-.hsradioWrap input[type="radio"] + label.noBox::before {display:none;}
+/* 핫스폿 박스형태의 버튼을 사용하지 않을때 lable에 noBox 클래스 추가*/
+.hsradioWrap input[type="radio"] + label.noBox,
+.hsradioWrap input[type="checkbox"] + label.noBox {display:inline;padding:0;border:none;border-radius:0;background:transparent;}
+.hsradioWrap input[type="radio"] + label.noBox::before,
+.hsradioWrap input[type="checkbox"] + label.noBox::before {display:none;}
 /* 핫스폿 type2 리스트형 */
 .hsradioWrap.type2 {display:flex;justify-content:flex-start;flex-direction:column;gap:.5rem;text-align:left;}
 .hsradioWrap.type2 li {display:flex;align-items:center;gap:.5rem;}
@@ -743,6 +745,10 @@ input[type="chekbox"] + .cardWrap:before {display:none;}
 .hsradioWrap.type26 .btn_group .btn_item {position:absolute;}
 .hsradioWrap.type26 input[type="checkbox"] + label {position:absolute;width:100%;height:100%;border:none;background:transparent;font-size:0;text-indent:-999px;}
 .hsradioWrap.type26 > img {max-width:950px;}
+/* 핫스폿 type27 :: 카드안에서 다중선택 */
+.hsradioWrap.type27 {display:flex;flex-direction:column;gap:1rem;}
+.hsradioWrap.type27 .cardBox {display:flex;align-items:center;gap:1rem;width:800px;}
+.hsradioWrap.type27 .cardBox > p {line-height:1.5;}
 
 /*///서술형///*/
 .txareWrap {width:100%;}
