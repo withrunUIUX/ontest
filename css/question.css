@@ -585,6 +585,27 @@ input[type="chekbox"] + .cardWrap:before {display:none;}
 /* 단답형 type10 :: 리스트*/
 .inputWrap.type10 {display:flex;flex-direction:column;gap:.5rem;}
 .inputWrap.type10 li {display:flex;align-items:center;gap:1rem;}
+/* 단답형 type11 :: 수학계산*/
+.inputWrap.type11 {}
+.calc_box {display:flex;flex-direction:column;font-size:1.6rem;}
+.calc_box .inputBox {width:100%;padding:.4rem;height:initial;margin:0;line-height:1;font-size:1.4rem;font-weight:500;}
+.calc_box li {display:flex;}
+.calc_box li > div {width: 4rem;padding: .1rem;height: 45px;display: inline-flex;justify-content: center;align-items: center;border-right: 1px dashed var(--gray_50);}
+.calc_box li > div:first-child {border-left: 1px dashed var(--gray_50);}
+.calc_box li.last-line {margin-top: .2rem;padding-top: .2rem;border-top: .1rem solid var(--gray_90);}
+.calc_box li.first-line {font-size:1.1rem;}
+.calc_box li.first-line .inputBox {width:80%;font-size:1.1rem;padding:.4rem;}
+
+.calc_box.cate2 li {gap: 0.4rem;}
+.calc_box.cate2 li > div {border: none;width: 6rem;}
+.calc_box.cate2 li > div:first-child {width: 3rem}
+
+.calc_box.cate3 li {gap: 0.4rem;}
+.calc_box.cate3 li > div {border: none;}
+.calc_box.cate3 li > div:first-child {width: 3rem}
+.calc_box.cate3 li.last-line div {width: 100%;max-width: 12rem;padding-left: 3rem;}
+
+
 
 /*///핫스폿///*/
 .hsradioWrap {position:relative;font-size:1.1rem;color:var(--gray_100);font-weight:500;line-height:2;}
