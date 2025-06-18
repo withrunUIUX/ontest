@@ -609,7 +609,7 @@ input[type="chekbox"] + .cardWrap:before {display:none;}
 .hsradioWrap input[type="checkbox"] + label.fs_15 {padding:8px 16px}
 .hsradioWrap input[type="radio"] + label.fs_20,
 .hsradioWrap input[type="checkbox"] + label.fs_20 {padding:12px 20px}
-/* 핫스폿 type4, type5, type7, type10, type11, type12, type14, type15 등 박스형태의 버튼을 사용하지 않을때 lable에 noBox 클래스 추가*/
+/* 핫스폿 박스형태의 버튼을 사용하지 않을때 lable에 noBox 클래스 추가*/
 .hsradioWrap input[type="radio"] + label.noBox,
 .hsradioWrap input[type="checkbox"] + label.noBox {display:inline;padding:0;border:none;border-radius:0;background:transparent;}
 .hsradioWrap input[type="radio"] + label.noBox::before,
