@@ -590,21 +590,22 @@ input[type="chekbox"] + .cardWrap:before {display:none;}
 .calc_box {display:flex;flex-direction:column;font-size:1.6rem;}
 .calc_box .inputBox {width:100%;padding:.4rem;height:initial;margin:0;line-height:1;font-size:1.4rem;font-weight:500;}
 .calc_box li {display:flex;}
-.calc_box li > div {width: 4rem;padding: .1rem;height: 45px;display: inline-flex;justify-content: center;align-items: center;border-right: 1px dashed var(--gray_50);}
+.calc_box li > div {position: relative;width: 4rem;padding: .1rem;height: 45px;display: inline-flex;justify-content: center;align-items: center;border-right: 1px dashed var(--gray_50);}
 .calc_box li > div:first-child {border-left: 1px dashed var(--gray_50);}
 .calc_box li.last-line {margin-top: .2rem;padding-top: .2rem;border-top: .1rem solid var(--gray_90);}
 .calc_box li.first-line {font-size:1.1rem;}
 .calc_box li.first-line .inputBox {width:80%;font-size:1.1rem;padding:.4rem;}
 
-.calc_box.cate2 li {gap: 0.4rem;}
-.calc_box.cate2 li > div {border: none;width: 6rem;}
-.calc_box.cate2 li > div:first-child {width: 3rem}
+.calc_box.calc2 li {gap: 0.4rem;}
+.calc_box.calc2 li > div {border: none;width: 6rem;}
+.calc_box.calc2 li > div:first-child {width: 3rem}
 
-.calc_box.cate3 li {gap: 0.4rem;}
-.calc_box.cate3 li > div {border: none;}
-.calc_box.cate3 li > div:first-child {width: 3rem}
-.calc_box.cate3 li.last-line div {width: 100%;max-width: 12rem;padding-left: 3rem;}
+.calc_box.calc3 li {gap: 0.4rem;}
+.calc_box.calc3 li > div {border: none;}
+.calc_box.calc3 li > div:first-child {width: 3rem}
+.calc_box.calc3 li.last-line div {width: 100%;max-width: 12rem;padding-left: 3rem;}
 
+.calc_box .calc-down::before {position: absolute;content: '/';font-size: 2.4rem;font-weight: 100;line-height: 1;top: 2px;color: var(--coral_60);}
 
 
 /*///핫스폿///*/
@@ -765,7 +766,7 @@ input[type="chekbox"] + .cardWrap:before {display:none;}
 .hsradioWrap.type26 .btn_group {position:absolute;width:100%;height:100%;margin:0;}
 .hsradioWrap.type26 .btn_group .btn_item {position:absolute;}
 .hsradioWrap.type26 input[type="checkbox"] + label {position:absolute;width:100%;height:100%;border:none;background:transparent;font-size:0;text-indent:-999px;}
-.hsradioWrap.type26 > img {max-width:950px;}
+.hsradioWrap.type26 > img {max-width:950px;width:100%;}
 /* 핫스폿 type27 :: 카드안에서 다중선택 */
 .hsradioWrap.type27 {display:flex;flex-direction:column;gap:1rem;}
 .hsradioWrap.type27 .cardBox {display:flex;align-items:center;gap:1rem;width:800px;}

@@ -86,6 +86,7 @@
             <li><a href="#inputWrapT8" title="원형 input">단답형 type8</a></li>
             <li><a href="#inputWrapT9" title="그룹형">단답형 type9</a></li>
             <li><a href="#inputWrapT10" title="리스트">단답형 type10</a></li>
+            <li><a href="#inputWrapT11" title="수학계산">단답형 type11</a></li>
             <li><a href="#hsradioWrap">핫스폿</a></li>
             <li><a href="#hsradioWrapT2" title="이름 선택">핫스폿 type2</a></li>
             <li><a href="#hsradioWrapT3" title="카드형태">핫스폿 type3</a></li>
@@ -5466,7 +5467,7 @@
         </li>
         <li>
             <div></div>
-            <div>3</div>
+            <div class="calc-down">3</div>
             <div>5</div>
             <div>6</div>
         </li>
@@ -5486,33 +5487,119 @@
     <ul class="inputWrap type11 calc_box">
         <li class="first-line">
             <div></div>
-            <div>1</div>
-            <div>1</div>
+            <div>6</div>
+            <div>10</div>
             <div></div>
         </li>
         <li>
             <div></div>
-            <div>3</div>
-            <div>5</div>
-            <div>6</div>
+            <div class="calc-down">7</div>
+            <div>4</div>
+            <div>9</div>
         </li>
         <li>
             <div>+</div>
-            <div>4</div>
+            <div>5</div>
             <div>8</div>
-            <div>9</div>
+            <div>6</div>
         </li>
         <li class="last-line">
             <div></div>
-            <div>8</div>
             <div><input type="text" class="inputBox"></div>
-            <div>5</div>
+            <div><input type="text" class="inputBox"></div>
+            <div>3</div>
         </li>
     </ul>
 </div>
-<h3>수학계산 cate2</h3>
+<div class="accordion">
+  <div class="accordion-item">
+    <button class="accordion-header">HTML 보기</button>
+    <div class="accordion-content">
+<pre class="prettyprint linenums">
+&lt;!--첫번째-->
+&lt;ul class="inputWrap type11 calc_box">
+    &lt;li>
+        &lt;div>&lt;/div>
+        &lt;div>5&lt;/div>
+        &lt;div>9&lt;/div>
+        &lt;div>9&lt;/div>
+    &lt;/li>
+    &lt;li>
+        &lt;div>+&lt;/div>
+        &lt;div>3&lt;/div>
+        &lt;div>&lt;input type="text" class="inputBox">&lt;/div>
+        &lt;div>9&lt;/div>
+    &lt;/li>
+    &lt;li class="last-line">
+        &lt;div>&lt;/div>
+        &lt;div>&lt;input type="text" class="inputBox">&lt;/div>
+        &lt;div>4&lt;/div>
+        &lt;div>&lt;input type="text" class="inputBox">&lt;/div>
+    &lt;/li>
+&lt;/ul>
+
+&lt;!--두번째-->
+&lt;ul class="inputWrap type11 calc_box">
+    &lt;li class="first-line">
+        &lt;div>&lt;/div>
+        &lt;div>&lt;input type="text" class="inputBox">&lt;/div>
+        &lt;div>&lt;input type="text" class="inputBox">&lt;/div>
+        &lt;div>&lt;/div>
+    &lt;/li>
+    &lt;li>
+        &lt;div>&lt;/div>
+        &lt;div class="calc-down">3&lt;/div>
+        &lt;div>5&lt;/div>
+        &lt;div>6&lt;/div>
+    &lt;/li>
+    &lt;li>
+        &lt;div>+&lt;/div>
+        &lt;div>4&lt;/div>
+        &lt;div>8&lt;/div>
+        &lt;div>9&lt;/div>
+    &lt;/li>
+    &lt;li class="last-line">
+        &lt;div>&lt;/div>
+        &lt;div>8&lt;/div>
+        &lt;div>&lt;input type="text" class="inputBox">&lt;/div>
+        &lt;div>5&lt;/div>
+    &lt;/li>
+&lt;/ul>
+
+&lt;!--세번째-->
+&lt;ul class="inputWrap type11 calc_box">
+    &lt;li class="first-line">
+        &lt;div>&lt;/div>
+        &lt;div>6&lt;/div>
+        &lt;div>10&lt;/div>
+        &lt;div>&lt;/div>
+    &lt;/li>
+    &lt;li>
+        &lt;div>&lt;/div>
+        &lt;div class="calc-down">7&lt;/div>
+        &lt;div>4&lt;/div>
+        &lt;div>9&lt;/div>
+    &lt;/li>
+    &lt;li>
+        &lt;div>+&lt;/div>
+        &lt;div>5&lt;/div>
+        &lt;div>8&lt;/div>
+        &lt;div>6&lt;/div>
+    &lt;/li>
+    &lt;li class="last-line">
+        &lt;div>&lt;/div>
+        &lt;div>&lt;input type="text" class="inputBox">&lt;/div>
+        &lt;div>&lt;input type="text" class="inputBox">&lt;/div>
+        &lt;div>3&lt;/div>
+    &lt;/li>
+&lt;/ul>
+</pre>
+    </div>
+  </div>
+</div>
+<h3 class="mt_20">단답형 type11 수학계산2</h3>
 <div class="stwrap">
-    <ul class="inputWrap type11 calc_box cate2">
+    <ul class="inputWrap type11 calc_box calc2">
         <li>
             <div></div>
             <div>31분</div>
@@ -5530,9 +5617,38 @@
         </li>
     </ul> 
 </div>
-<h3>수학계산 cate3</h3>
+<div class="accordion">
+  <div class="accordion-item">
+    <button class="accordion-header">HTML 보기</button>
+    <div class="accordion-content">
+<pre class="prettyprint linenums">
+&lt;ul class="inputWrap type11 calc_box calc2">
+    &lt;li>
+        &lt;div>&lt;/div>
+        &lt;div>31분&lt;/div>
+        &lt;div>25초&lt;/div>
+    &lt;/li>
+    &lt;li>
+        &lt;div>+&lt;/div>
+        &lt;div>16분&lt;/div>
+        &lt;div>50초&lt;/div>
+    &lt;/li>
+    &lt;li class="last-line">
+        &lt;div>&lt;/div>
+        &lt;div>&lt;input type="text" class="inputBox">분&lt;/div>
+        &lt;div>&lt;input type="text" class="inputBox">초&lt;/div>
+    &lt;/li>
+&lt;/ul> 
+</pre>
+    </div>
+  </div>
+</div>
+
+
+
+<h3 class="mt_20">단답형 type11 수학계산3</h3>
 <div class="stwrap">
-    <ul class="inputWrap type11 calc_box cate3">
+    <ul class="inputWrap type11 calc_box calc3">
         <li>
             <div></div>
             <div>4</div>
@@ -5548,6 +5664,33 @@
         </li>
     </ul> 
 </div>
+<div class="accordion">
+  <div class="accordion-item">
+    <button class="accordion-header">HTML 보기</button>
+    <div class="accordion-content">
+<pre class="prettyprint linenums">
+&lt;ul class="inputWrap type11 calc_box calc3">
+    &lt;li>
+        &lt;div>&lt;/div>
+        &lt;div>4&lt;/div>
+        &lt;div>0&lt;/div>
+    &lt;/li>
+    &lt;li>
+        &lt;div>+&lt;/div>
+        &lt;div>&lt;/div>
+        &lt;div>2&lt;/div>
+    &lt;/li>
+    &lt;li class="last-line">
+        &lt;div>&lt;input type="text" class="inputBox">&lt;/div>
+    &lt;/li>
+&lt;/ul> 
+</pre>
+    </div>
+  </div>
+</div>
+
+
+
 
 
 <h2 id="hsradioWrap">핫스폿</h2>
@@ -7094,21 +7237,46 @@
     </div>
   </div>
 </div>
+<h3 class="mt_20">핫스폿 type19 이모티콘</h3>
+<div class="stwrap">
+    <div class="hsradioWrap type19">
+        <input type="radio" name="hsradioexamT19_1" id="hsradioexamT19_1_1">
+        <label for="hsradioexamT19_1_1"><img src="../images/q_common/img_o2.svg"></label>
+        <input type="radio" name="hsradioexamT19_1" id="hsradioexamT19_1_2">
+        <label for="hsradioexamT19_1_2"><img src="../images/q_common/img_x2.svg"></label>
+    </div>
+</div>
+<div class="accordion">
+  <div class="accordion-item">
+    <button class="accordion-header">HTML 보기</button>
+    <div class="accordion-content">
+<pre class="prettyprint linenums">
+&lt;div class="hsradioWrap type19">
+    &lt;input type="radio" name="hsradioexamT19_1" id="hsradioexamT19_1_1">
+    &lt;label for="hsradioexamT19_1_1">&lt;img src="../images/q_common/img_o2.svg">&lt;/label>
+    &lt;input type="radio" name="hsradioexamT19_1" id="hsradioexamT19_1_2">
+    &lt;label for="hsradioexamT19_1_2">&lt;img src="../images/q_common/img_x2.svg">&lt;/label>
+&lt;/div>
+</pre>
+    </div>
+  </div>
+</div>
+
 
 <h2 id="hsradioWrapT20">핫스폿 type20 <small>o,x 그룹형</small></h2>
 <div class="stwrap">
     <div class="hsradioWrap type20">
         <div>
-            <input type="radio" name="hsradioexamT20_1" id="hsradioexamT20_1">
-            <label for="hsradioexamT20_1"><img src="../images/q_common/img_o.svg"></label>
-            <input type="radio" name="hsradioexamT20_1" id="hsradioexamT20_2">
-            <label for="hsradioexamT20_2"><img src="../images/q_common/img_x.svg"></label>
+            <input type="radio" name="hsradioexamT20_1" id="hsradioexamT20_1_1">
+            <label for="hsradioexamT20_1_1"><img src="../images/q_common/img_o.svg"></label>
+            <input type="radio" name="hsradioexamT20_1" id="hsradioexamT20_1_2">
+            <label for="hsradioexamT20_1_2"><img src="../images/q_common/img_x.svg"></label>
         </div>
         <div>
-            <input type="radio" name="hsradioexamT20_2" id="hsradioexamT20_3">
-            <label for="hsradioexamT20_3"><img src="../images/q_common/img_o.svg"></label>
-            <input type="radio" name="hsradioexamT20_2" id="hsradioexamT20_4">
-            <label for="hsradioexamT20_4"><img src="../images/q_common/img_x.svg"></label>
+            <input type="radio" name="hsradioexamT20_2" id="hsradioexamT20_2_1">
+            <label for="hsradioexamT20_2_1"><img src="../images/q_common/img_o.svg"></label>
+            <input type="radio" name="hsradioexamT20_2" id="hsradioexamT20_2_2">
+            <label for="hsradioexamT20_2_2"><img src="../images/q_common/img_x.svg"></label>
         </div>
     </div>
 </div>
@@ -7119,22 +7287,65 @@
 <pre class="prettyprint linenums">
 &lt;div class="hsradioWrap type20">
     &lt;div>
-        &lt;input type="radio" name="hsradioexamT20_1" id="hsradioexamT20_1">
-        &lt;label for="hsradioexamT20_1">&lt;img src="../images/q_common/img_o.svg">&lt;/label>
-        &lt;input type="radio" name="hsradioexamT20_1" id="hsradioexamT20_2">
-        &lt;label for="hsradioexamT20_2">&lt;img src="../images/q_common/img_x.svg">&lt;/label>
+        &lt;input type="radio" name="hsradioexamT20_1" id="hsradioexamT20_1_1">
+        &lt;label for="hsradioexamT20_1_1">&lt;img src="../images/q_common/img_o.svg">&lt;/label>
+        &lt;input type="radio" name="hsradioexamT20_1" id="hsradioexamT20_1_2">
+        &lt;label for="hsradioexamT20_1_2">&lt;img src="../images/q_common/img_x.svg">&lt;/label>
     &lt;/div>
     &lt;div>
-        &lt;input type="radio" name="hsradioexamT20_2" id="hsradioexamT20_3">
-        &lt;label for="hsradioexamT20_3">&lt;img src="../images/q_common/img_o.svg">&lt;/label>
-        &lt;input type="radio" name="hsradioexamT20_2" id="hsradioexamT20_4">
-        &lt;label for="hsradioexamT20_4">&lt;img src="../images/q_common/img_x.svg">&lt;/label>
+        &lt;input type="radio" name="hsradioexamT20_2" id="hsradioexamT20_2_1">
+        &lt;label for="hsradioexamT20_2_1">&lt;img src="../images/q_common/img_o.svg">&lt;/label>
+        &lt;input type="radio" name="hsradioexamT20_2" id="hsradioexamT20_2_2">
+        &lt;label for="hsradioexamT20_2_2">&lt;img src="../images/q_common/img_x.svg">&lt;/label>
     &lt;/div>
 &lt;/div>
 </pre>
     </div>
   </div>
 </div>
+
+<h3 class="mt_20">핫스폿 type20 이모티콘</h3>
+<div class="stwrap">
+    <div class="hsradioWrap type20">
+        <div>
+            <input type="radio" name="hsradioexamT20_3" id="hsradioexamT20_3_1">
+            <label for="hsradioexamT20_3_1"><img src="../images/q_common/img_o2.svg"></label>
+            <input type="radio" name="hsradioexamT20_3" id="hsradioexamT20_3_2">
+            <label for="hsradioexamT20_3_2"><img src="../images/q_common/img_x2.svg"></label>
+        </div>
+        <div>
+            <input type="radio" name="hsradioexamT20_4" id="hsradioexamT20_4_1">
+            <label for="hsradioexamT20_4_1"><img src="../images/q_common/img_o2.svg"></label>
+            <input type="radio" name="hsradioexamT20_4" id="hsradioexamT20_4_2">
+            <label for="hsradioexamT20_4_2"><img src="../images/q_common/img_x2.svg"></label>
+        </div>
+    </div>
+</div>
+<div class="accordion">
+  <div class="accordion-item">
+    <button class="accordion-header">HTML 보기</button>
+    <div class="accordion-content">
+<pre class="prettyprint linenums">
+&lt;div class="hsradioWrap type20">
+    &lt;div>
+        &lt;input type="radio" name="hsradioexamT20_3" id="hsradioexamT20_3_1">
+        &lt;label for="hsradioexamT20_3_1">&lt;img src="../images/q_common/img_o2.svg">&lt;/label>
+        &lt;input type="radio" name="hsradioexamT20_3" id="hsradioexamT20_3_2">
+        &lt;label for="hsradioexamT20_3_2">&lt;img src="../images/q_common/img_x2.svg">&lt;/label>
+    &lt;/div>
+    &lt;div>
+        &lt;input type="radio" name="hsradioexamT20_4" id="hsradioexamT20_4_1">
+        &lt;label for="hsradioexamT20_4_1">&lt;img src="../images/q_common/img_o2.svg">&lt;/label>
+        &lt;input type="radio" name="hsradioexamT20_4" id="hsradioexamT20_4_2">
+        &lt;label for="hsradioexamT20_4_2">&lt;img src="../images/q_common/img_x2.svg">&lt;/label>
+    &lt;/div>
+&lt;/div>
+</pre>
+    </div>
+  </div>
+</div>
+
+
 
 <h2 id="hsradioWrapT21">핫스폿 type21 <small>다중선택 카드형태</small></h2>
 <div class="stwrap">
