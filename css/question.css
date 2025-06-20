@@ -356,7 +356,7 @@ label img {vertical-align:middle;}
 .poemBox .poemTxt_gr {display:flex;gap:1rem;}
 
 /* 분수형태 */
-.fraction {display:inline-flex;flex-direction:column;align-items:center;gap:.2rem;margin:.3rem;line-height:1;font-size:1.1rem;vertical-align:middle;}
+.fraction {display:inline-flex;flex-direction:column;align-items:center;gap:.2rem;margin:.3rem;line-height:1 !important;font-size:1.1rem;vertical-align:middle;}
 .fraction > .line {width:100%;height:1px;background-color:var(--gray_100);}
 .fraction.type2 {display:flex;flex-direction:row;align-items:center;}
 
