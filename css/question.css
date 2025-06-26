@@ -607,6 +607,7 @@ input[type="chekbox"] + .cardWrap:before {display:none;}
 
 .calc_box .calc-down::before {position: absolute;content: '/';font-size: 2.4rem;font-weight: 100;line-height: 1;top: 2px;color: var(--coral_60);}
 
+.calc_box .calc_abs {position:absolute;right:-9.5rem;font-size:1.2rem;display:block;width:9rem;text-align:left;color:var(--gray_80);}
 
 /*///핫스폿///*/
 .hsradioWrap {position:relative;font-size:1.1rem;color:var(--gray_100);font-weight:500;line-height:2;}
