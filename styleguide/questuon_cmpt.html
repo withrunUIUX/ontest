@@ -5438,6 +5438,23 @@
 
 <h2 id="inputWrapT11">단답형 type11 <small>수학 계산</small></h2>
 <div class="stwrap">
+     <ul class="inputWrap type11 calc_box">
+        <li>
+            <div></div>
+            <div>4</div>
+            <div>0</div>
+        </li>
+        <li>
+            <div>+</div>
+            <div>6</div>
+            <div>2</div>
+        </li>
+        <li class="last-line">
+            <div><input type="text" class="inputBox"></div>
+            <div><input type="text" class="inputBox"></div>
+            <div><input type="text" class="inputBox"></div>
+        </li>
+    </ul>     
     <ul class="inputWrap type11 calc_box">
         <li>
             <div></div>
@@ -5510,6 +5527,40 @@
             <div>3</div>
         </li>
     </ul>
+    <ul class="inputWrap type11 calc_box">
+        <li>
+            <div></div>
+            <div>1</div>
+            <div>3</div>
+            <div>2</div>
+        </li>
+        <li>
+            <div>×</div>
+            <div></div>
+            <div>6</div>
+            <div>4</div>
+        </li>
+        <li class="last-line">
+            <div></div>
+            <div><input type="text" class="inputBox"></div>
+            <div><input type="text" class="inputBox"></div>
+            <div><input type="text" class="inputBox"></div>
+            <span class="calc_abs">← 132 × 4</span>
+        </li>
+        <li>
+            <div><input type="text" class="inputBox"></div>
+            <div><input type="text" class="inputBox"></div>
+            <div><input type="text" class="inputBox"></div>
+            <div><input type="text" class="inputBox"></div>
+            <span class="calc_abs">← 132 × 60</span>
+        </li>
+        <li class="last-line">
+            <div><input type="text" class="inputBox"></div>
+            <div><input type="text" class="inputBox"></div>
+            <div><input type="text" class="inputBox"></div>
+            <div><input type="text" class="inputBox"></div>
+        </li>
+    </ul>       
 </div>
 <div class="accordion">
   <div class="accordion-item">
@@ -5517,6 +5568,25 @@
     <div class="accordion-content">
 <pre class="prettyprint linenums">
 &lt;!--첫번째-->
+ &lt;ul class="inputWrap type11 calc_box">
+    &lt;li>
+        &lt;div>&lt;/div>
+        &lt;div>4&lt;/div>
+        &lt;div>0&lt;/div>
+    &lt;/li>
+    &lt;li>
+        &lt;div>+&lt;/div>
+        &lt;div>6&lt;/div>
+        &lt;div>2&lt;/div>
+    &lt;/li>
+    &lt;li class="last-line">
+        &lt;div>&lt;input type="text" class="inputBox">&lt;/div>
+        &lt;div>&lt;input type="text" class="inputBox">&lt;/div>
+        &lt;div>&lt;input type="text" class="inputBox">&lt;/div>
+    &lt;/li>
+&lt;/ul>  
+
+&lt;!--두번째-->
 &lt;ul class="inputWrap type11 calc_box">
     &lt;li>
         &lt;div>&lt;/div>
@@ -5538,7 +5608,7 @@
     &lt;/li>
 &lt;/ul>
 
-&lt;!--두번째-->
+&lt;!--세번째-->
 &lt;ul class="inputWrap type11 calc_box">
     &lt;li class="first-line">
         &lt;div>&lt;/div>
@@ -5566,7 +5636,7 @@
     &lt;/li>
 &lt;/ul>
 
-&lt;!--세번째-->
+&lt;!--네번째-->
 &lt;ul class="inputWrap type11 calc_box">
     &lt;li class="first-line">
         &lt;div>&lt;/div>
@@ -5593,6 +5663,42 @@
         &lt;div>3&lt;/div>
     &lt;/li>
 &lt;/ul>
+
+&lt;!--다섯번째-->
+&lt;ul class="inputWrap type11 calc_box">
+    &lt;li>
+        &lt;div>&lt;/div>
+        &lt;div>1&lt;/div>
+        &lt;div>3&lt;/div>
+        &lt;div>2&lt;/div>
+    &lt;/li>
+    &lt;li>
+        &lt;div>×&lt;/div>
+        &lt;div>&lt;/div>
+        &lt;div>6&lt;/div>
+        &lt;div>4&lt;/div>
+    &lt;/li>
+    &lt;li class="last-line">
+        &lt;div>&lt;/div>
+        &lt;div>&lt;input type="text" class="inputBox">&lt;/div>
+        &lt;div>&lt;input type="text" class="inputBox">&lt;/div>
+        &lt;div>&lt;input type="text" class="inputBox">&lt;/div>
+        &lt;span class="calc_abs">← 132 × 4&lt;/span>
+    &lt;/li>
+    &lt;li>
+        &lt;div>&lt;input type="text" class="inputBox">&lt;/div>
+        &lt;div>&lt;input type="text" class="inputBox">&lt;/div>
+        &lt;div>&lt;input type="text" class="inputBox">&lt;/div>
+        &lt;div>&lt;input type="text" class="inputBox">&lt;/div>
+        &lt;span class="calc_abs">← 132 × 60&lt;/span>
+    &lt;/li>
+    &lt;li class="last-line">
+        &lt;div>&lt;input type="text" class="inputBox">&lt;/div>
+        &lt;div>&lt;input type="text" class="inputBox">&lt;/div>
+        &lt;div>&lt;input type="text" class="inputBox">&lt;/div>
+        &lt;div>&lt;input type="text" class="inputBox">&lt;/div>
+    &lt;/li>
+&lt;/ul>
 </pre>
     </div>
   </div>
@@ -5609,6 +5715,23 @@
             <div>+</div>
             <div>16분</div>
             <div>50초</div>
+        </li>
+        <li class="last-line">
+            <div></div>
+            <div><input type="text" class="inputBox">분</div>
+            <div><input type="text" class="inputBox">초</div>
+        </li>
+    </ul>
+    <ul class="inputWrap type11 calc_box calc2">
+        <li>
+            <div></div>
+            <div>5분</div>
+            <div>5초</div>
+        </li>
+        <li>
+            <div>+</div>
+            <div>1분</div>
+            <div>1초</div>
         </li>
         <li class="last-line">
             <div></div>
@@ -7697,27 +7820,27 @@
 &lt;div class="hsradioWrap type26">
     &lt;div class="btn_group">
         &lt;div class="btn_item num1" style="left: 9%;top: 6%;width:6rem;height: 18rem;">
-            &lt;input type="checkbox" name="hsradioexamT26" id="hsradioexamT26_1">
-            &lt;label for="hsradioexamT26_1">1번&lt;/label>
+            &lt;input type="checkbox" name="kor_312_u43102_a" id="kor_312_u43102_a1">
+            &lt;label for="kor_312_u43102_a1">1번&lt;/label>
         &lt;/div>
         &lt;div class="btn_item num2" style="left: 26%;top: 1%;width:6rem;height: 13rem;">
-            &lt;input type="checkbox" name="hsradioexamT26" id="hsradioexamT26_2">
-            &lt;label for="hsradioexamT26_2">2번&lt;/label>
+            &lt;input type="checkbox" name="kor_312_u43102_a" id="kor_312_u43102_a2">
+            &lt;label for="kor_312_u43102_a2">2번&lt;/label>
         &lt;/div>
         &lt;div class="btn_item num3" style="left: 44%;top: 24%;width: 11rem;height: 5rem;">
-            &lt;input type="checkbox" name="hsradioexamT26" id="hsradioexamT26_3">
-            &lt;label for="hsradioexamT26_3">3번&lt;/label>
+            &lt;input type="checkbox" name="kor_312_u43102_a" id="kor_312_u43102_a3">
+            &lt;label for="kor_312_u43102_a3">3번&lt;/label>
         &lt;/div>
         &lt;div class="btn_item num4" style="left: 37%;top: 43%;width: 9rem;height: 6rem;">
-            &lt;input type="checkbox" name="hsradioexamT26" id="hsradioexamT26_4">
-            &lt;label for="hsradioexamT26_4">4번&lt;/label>
+            &lt;input type="checkbox" name="kor_312_u43102_a" id="kor_312_u43102_a4">
+            &lt;label for="kor_312_u43102_a4">4번&lt;/label>
         &lt;/div>
         &lt;div class="btn_item num4" style="left: 72%;top: 31%;width: 10rem;height: 10rem;">
-            &lt;input type="checkbox" name="hsradioexamT26" id="hsradioexamT26_5">
-            &lt;label for="hsradioexamT26_5">5번&lt;/label>
+            &lt;input type="checkbox" name="kor_312_u43102_a" id="kor_312_u43102_a5">
+            &lt;label for="kor_312_u43102_a5">5번&lt;/label>
         &lt;/div>
     &lt;/div>
-    &lt;img src="/images/question/과목/hstype26_eximg.png">
+    &lt;img src="/images/question/과목/kor_312_u43102_a1.png">
 &lt;/div>
 </pre>
     </div>
