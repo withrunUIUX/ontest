@@ -204,6 +204,8 @@ label img {vertical-align:middle;}
 .chat_img.male6 {background-image:url(../images/q_common/male4.png);}
 .chat_img.female6 {background-image:url(../images/q_common/female4.png);}
 
+.chat_img.sm {width:44px;height:44px;padding:0;font-size:.85rem;background-size:contain;}
+
 /* 채팅 */
 .bubble {position:relative;max-width:760px;padding:1rem;border-radius:3px;border:1px solid var(--gray_100);color:var(--gray_100);font-size:1.1rem;font-weight:500;background:#fff;}
 .bubble::before {content:'';position:absolute;left:-1.36rem;top:1rem;transform:rotate(90deg);display:inline-block;width:29px;height:21px;background:url(../images/q_common/bubble_tail.svg) 50% no-repeat;background-size:100%;}
@@ -1093,7 +1095,7 @@ input[type="chekbox"] + .cardWrap:before {display:none;}
 .flowBox li:last-child::after {display:none}
 
 .scriptBox {max-width:950px;}
-.scriptBox li {display:flex;gap:.5rem;margin:.5rem 0;align-items: center;}
+.scriptBox li {display:flex;gap:.5rem;margin:.5rem 0;}
 .scriptBox li > .nametag {min-width:90px;}
 .scriptBox li > p {width:calc(100% - 90px);margin-top:4px;font-weight:400;text-align:left;word-break:keep-all;}
 .scriptBox li > p:has(.blankBox),
