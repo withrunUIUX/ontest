@@ -185,7 +185,7 @@ label img {vertical-align:middle;}
 .square.big {min-width:80px;height:80px;}
 .square:has(.bullet) .bullet {top:initial}
 .nametag {display:inline-flex;align-items:center;justify-content:center;line-height:1;min-width:80px;height:42px;margin:.2rem 0;padding:0 1rem;border-radius:3px;border: 1px solid var(--gray_40);font-size:1.1rem;font-weight:600;color:var(--gray_90) !important;background:var(--gray_20);vertical-align:middle;}
-.nametag.sm {min-width:60px;height:38px;padding:0 .5rem;font-size:1rem;}
+.nametag.sm {min-width:60px !important;height:38px;padding:0 .5rem;font-size:1rem;}
 
 /* 채팅 프로필 */
 .chat_img {overflow:hidden;display:inline-flex;justify-content:center;align-items:center;width:60px;height:60px;border-radius:60px;font-size:.9rem;font-weight:700;color:var(--gray_90);background-position:50%;background-repeat:no-repeat;}
@@ -203,6 +203,8 @@ label img {vertical-align:middle;}
 .chat_img.female3 {background-image:url(../images/q_common/female3.png);}
 .chat_img.male6 {background-image:url(../images/q_common/male4.png);}
 .chat_img.female6 {background-image:url(../images/q_common/female4.png);}
+
+.chat_img.sm {width:44px;height:44px;padding:0;font-size:.85rem;background-size:contain;}
 
 /* 채팅 */
 .bubble {position:relative;max-width:760px;padding:1rem;border-radius:3px;border:1px solid var(--gray_100);color:var(--gray_100);font-size:1.1rem;font-weight:500;background:#fff;}
@@ -393,6 +395,7 @@ input[type="chekbox"] + .cardWrap:before {display:none;}
 .radioWrap {display:flex;flex-direction:column;gap:.5rem 1rem;width:100%;font-size:1.1rem;color:var(--gray_100);text-align: left;}
 .radioWrap label *,
 .radioWrap input[type="radio"] + label {color:var(--gray_100);font-size:1.1rem;font-weight:500;}
+.radioWrap input[type="radio"] + label {width:100%;}
 .radioWrap input[type="radio"]:checked + label,
 .radioWrap input[type="radio"]:checked + label * {color:var(--blue_100) !important;border-color:var(--blue_100);font-weight:600;letter-spacing:.02px;}
 .radioWrap input[type="radio"]:checked + label .bullet {color:#fff !important;box-shadow:0 0 0 0.1rem rgba(49, 87, 221, 0.3);background-color:var(--blue_100);}
@@ -467,7 +470,7 @@ input[type="chekbox"] + .cardWrap:before {display:none;}
 .checkWrap {display:flex;flex-direction:column;gap:.5rem 1rem;width:100%;font-size:1.1rem;color:var(--gray_100);line-height:2;text-align: left;}
 .checkWrap label *,
 .checkWrap li {line-height:1.5;}
-.checkWrap input[type="checkbox"] + label {color:var(--gray_100);font-size:1.1rem;font-weight:500;}
+.checkWrap input[type="checkbox"] + label {color:var(--gray_100);font-size:1.1rem;font-weight:500;width:100%;}
 .checkWrap input[type="checkbox"] + label {padding-left:22px;}
 .checkWrap input[type="checkbox"] + label::before {position:absolute;transform:translateY(-55%);}
 .checkWrap input[type="checkbox"]:checked + label,
