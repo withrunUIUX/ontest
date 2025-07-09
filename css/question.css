@@ -184,8 +184,8 @@ label img {vertical-align:middle;}
 .square.sm {min-width:60px;height:38px;padding:0 .5rem;font-size:1rem;}
 .square.big {min-width:80px;height:80px;}
 .square:has(.bullet) .bullet {top:initial}
-.nametag {display:inline-flex;align-items:center;justify-content:center;line-height:1;min-width:80px;height:42px;margin:.2rem 0;padding:0 1rem;border-radius:3px;border: 1px solid var(--gray_40);font-size:1.1rem;font-weight:600;color:var(--gray_90) !important;background:var(--gray_20);vertical-align:middle;}
-.nametag.sm {min-width:60px !important;height:38px;padding:0 .5rem;font-size:1rem;}
+.nametag {display:inline-flex;align-items:center;justify-content:center;line-height:1;width:80px;height:42px;margin:.2rem 0;padding:0 1rem;border-radius:3px;border: 1px solid var(--gray_40);font-size:1.1rem;font-weight:600;color:var(--gray_90) !important;background:var(--gray_20);vertical-align:middle;}
+.nametag.sm {width:60px !important;height:38px;padding:0 .5rem;font-size:1rem;}
 
 /* 채팅 프로필 */
 .chat_img {overflow:hidden;display:inline-flex;justify-content:center;align-items:center;width:60px;height:60px;border-radius:60px;font-size:.9rem;font-weight:700;color:var(--gray_90);background-position:50%;background-repeat:no-repeat;}
@@ -233,7 +233,7 @@ label img {vertical-align:middle;}
 .bgBox::before, .bgBox::after {content:'';display:inline-block;width:100%;min-height:6px;background-position:50%;background-repeat:no-repeat;pointer-events:none;}
 .bgBox .bgCont {position:relative;display:flex;flex-direction:column;align-items:center;gap:1rem;padding:1rem 2rem;background-repeat:repeat-y;background-position:50%;}
 .bgBox .bgCont > * {z-index:2;}
-.bgBox .col_2 {display:flex !important;flex-direction:row;gap:4rem;}
+.bgBox .col_2 {display:flex;flex-direction:row;gap:4rem;}
 .bgBox .col_2 > div {position:relative;width:50%;}
 .bgBox .col_2 > div:nth-child(1)::after {content:'';position:absolute;top:0;right:-2rem;display:inline-block;width:1px;height:100%;background-color:var(--gray_60);mix-blend-mode:multiply;opacity:.3;}
 .bgBox .bgCont > .sub_tt {margin:0}
@@ -1095,9 +1095,8 @@ input[type="chekbox"] + .cardWrap:before {display:none;}
 .flowBox li:last-child::after {display:none}
 
 .scriptBox {max-width:950px;}
-.scriptBox li {display:flex;gap:.5rem;margin:.5rem 0;}
-.scriptBox li > .nametag {min-width:90px;}
-.scriptBox li > p {width:calc(100% - 90px);margin-top:4px;font-weight:400;text-align:left;word-break:keep-all;}
+.scriptBox li {display:flex;gap:.5rem;margin:.5rem 0;width:100%;}
+.scriptBox li > p {width:100%;margin-top:4px;font-weight:400;text-align:left;word-break:keep-all;}
 .scriptBox li > p:has(.blankBox),
 .scriptBox li > p:has(.square),
 .scriptBox li > p:has(img) {margin:0;}
