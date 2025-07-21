@@ -214,9 +214,11 @@ label img {vertical-align:middle;}
 .bubble.under::before {top:initial;bottom:-1.1rem;left:45%;transform:initial;}
 .chatBox {display:flex;flex-direction:column;gap:.4rem;}
 .chatBox .chat_item {display:flex;gap:1rem;}
+.chatBox .chat_item .bubble {max-width:calc(100% - 60px);}
 .chatBox.type2 .chat_item.left {padding-right:72px;}
 .chatBox.type2 .chat_item.right {flex-direction:row-reverse;padding-left:72px;}
 .chatBox.type2 .chat_item.right .bubble::before {left:initial;right:-1.36rem;transform:rotate(-90deg);}
+.chatBox.type2 .chat_item .bubble {max-width:calc(100% - 132px);}
 .chatBox .chat_item label {margin:0;padding:0 !important;}
 
 /* 문항 안에 사용하는 제목 */
@@ -615,7 +617,7 @@ input[type="chekbox"] + .cardWrap:before {display:none;}
 /*///핫스폿///*/
 .hsradioWrap {position:relative;font-size:1.1rem;color:var(--gray_100);font-weight:500;line-height:2;}
 .hsradioWrap > div {font-size:1.1rem;color:var(--gray_100);font-weight:500;line-height:2;}
-.hsradioWrap label * {color:var(--gray_100);font-size:1.1rem;font-weight:500;}
+.hsradioWrap label * {color:var(--gray_100);font-size:1.1rem;font-weight:500;max-width:initial}
 .hsradioWrap label strong {font-weight:700;}
 .hsradioWrap input[type="radio"] + label {margin:.2rem;padding:6px 12px;border:.1rem solid var(--gray_40);border-radius:.3rem;color:var(--gray_100);text-align:center;font-size:1.1rem;font-weight:500;background:var(--gray_10);}
 .hsradioWrap input[type="radio"] + label::before {display:none;}
