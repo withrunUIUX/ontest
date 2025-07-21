@@ -6359,6 +6359,36 @@
 </div>
 
 
+<h2 id="inputWrapT12">단답형 type12 <small>수학 제곱 - 동일한 형태에만 사용합니다. 폰트크기 통일을 위함, math-sup사이즈 md, big으로 제어 최대 100,000,000표현 이 이상일 경우 인라인으로 가로값 제어</small></h2>
+<div class="stwrap">
+    <div class="inputWrap type12">
+        세포의 개수 : 
+        <input type="text" class="inputBox sm">
+        <input type="text" class="inputBox math-sup">
+    </div>
+
+    <div class="inputWrap type12">
+        세포의 개수 : 
+        <input type="text" class="inputBox sm">
+        <input type="text" class="inputBox math-sup md">
+    </div>
+
+    <div class="inputWrap type12">
+        세포의 개수 : 
+        <input type="text" class="inputBox sm">
+        <input type="text" class="inputBox math-sup big">
+    </div>
+
+    <div class="inputWrap type12">
+        세포의 개수 : 
+        <input type="text" class="inputBox sm">
+        <input type="text" class="inputBox math-sup" style="width:15rem;">
+    </div>
+</div>
+
+
+
+
 
 
 
@@ -8531,10 +8561,6 @@
   </div>
 </div>
 
-
-
-
-
 <h2 id="hsradioWrapT29">핫스폿 type29 <small>말풍선 안에서 문장 다중선택</small></h2>
 <div class="stwrap">
     <div class="hsradioWrap type29">
@@ -8598,6 +8624,317 @@
   </div>
 </div>
 
+<h2 id="hsradioWrapT30">핫스폿 type30 <small>문장형 다중선택</small></h2>
+<div class="stwrap">
+    <div class="hsradioWrap type30">
+        <input type="checkbox" name="hsradioexamT30" id="hsradioexamT30_1">
+        <label for="hsradioexamT30_1" class="noBox"><u><span class="bullet circle sm">1</span>의사 결정을 할 때 모든 사람의 의견이 일치하기는 어렵다.</u></label>
+        &nbsp;다수결의 원칙은&nbsp;
+        <input type="checkbox" name="hsradioexamT30" id="hsradioexamT30_2">
+        <label for="hsradioexamT30_2" class="noBox"><u><span class="bullet circle sm">2</span>다수의 의견이 소수의 의견보다 항상 옳기 때문에 다수의 의견을 따르는 방법이다.</u></label>
+        <input type="checkbox" name="hsradioexamT30" id="hsradioexamT30_3">
+        <label for="hsradioexamT30_3" class="noBox"><u><span class="bullet circle sm">3</span>다수결 원칙을 사용하면 의견을 빠르고 쉽게 결정할 수 있으며,</u></label>&nbsp;
+        <input type="checkbox" name="hsradioexamT30" id="hsradioexamT30_4">
+        <label for="hsradioexamT30_4" class="noBox"><u><span class="bullet circle sm">4</span>많은 사람의 의견을 따라 결정을 한 것이라서 불만이 상대적으로 적다.</u></label>
+        &nbsp;하지만 다수결의 원칙으로 결정을 하더라도&nbsp;
+        <input type="checkbox" name="hsradioexamT30" id="hsradioexamT30_5">
+        <label for="hsradioexamT30_5" class="noBox"><u><span class="bullet circle sm">5</span>소수의 의견도 존중해야 한다.</u></label>
+    </div>
+</div>
+<div class="accordion">
+  <div class="accordion-item">
+    <button class="accordion-header">HTML 보기</button>
+    <div class="accordion-content">
+<pre class="prettyprint linenums">
+&lt;div class="hsradioWrap type30">
+    &lt;input type="checkbox" name="문항코드_a" id="문항코드_a1">
+    &lt;label for="문항코드_a1" class="noBox">&lt;u>&lt;span class="bullet circle sm">1&lt;/span>의사 결정을 할 때 모든 사람의 의견이 일치하기는 어렵다.&lt;/u>&lt;/label>
+    &nbsp;다수결의 원칙은&nbsp;
+    &lt;input type="checkbox" name="문항코드_a" id="문항코드_a2">
+    &lt;label for="문항코드_a2" class="noBox">&lt;u>&lt;span class="bullet circle sm">2&lt;/span>다수의 의견이 소수의 의견보다 항상 옳기 때문에 다수의 의견을 따르는 방법이다.&lt;/u>&lt;/label>
+    &lt;input type="checkbox" name="문항코드_a" id="문항코드_a3">
+    &lt;label for="문항코드_a3" class="noBox">&lt;u>&lt;span class="bullet circle sm">3&lt;/span>다수결 원칙을 사용하면 의견을 빠르고 쉽게 결정할 수 있으며,&lt;/u>&lt;/label>&nbsp;
+    &lt;input type="checkbox" name="문항코드_a" id="문항코드_a4">
+    &lt;label for="문항코드_a4" class="noBox">&lt;u>&lt;span class="bullet circle sm">4&lt;/span>많은 사람의 의견을 따라 결정을 한 것이라서 불만이 상대적으로 적다.&lt;/u>&lt;/label>
+    &nbsp;하지만 다수결의 원칙으로 결정을 하더라도&nbsp;
+    &lt;input type="checkbox" name="문항코드_a" id="문항코드_a5">
+    &lt;label for="문항코드_a5" class="noBox">&lt;u>&lt;span class="bullet circle sm">5&lt;/span>소수의 의견도 존중해야 한다.&lt;/u>&lt;/label>
+&lt;/div>
+</pre>
+    </div>
+  </div>
+</div>
+
+<h2 id="hsradioWrapT31">핫스폿 type31 <small>숫자카드 다중선택 //sun, sat 클래스는 달력 표현할때만 사용</small></h2>
+<div class="stwrap">
+    <div class="hsradioWrap type31 numcard_box">
+        <ul class="numcard_tr">
+            <li class="numcard_th mathsymbol mathsymbol3"></li>
+            <li class="numcard_th">5</li>
+            <li class="numcard_th">6</li>
+            <li class="numcard_th">7</li>
+            <li class="numcard_th">8</li>
+        </ul>
+        <ul class="numcard_tr">
+            <li class="numcard_th">5</li>
+            <li class="numcard_td">
+                <input type="checkbox" name="hsradioexamT31" id="hsradioexamT31_1">
+                <label for="hsradioexamT31_1" class="noBox">25</label>
+            </li>
+            <li class="numcard_td">
+                <input type="checkbox" name="hsradioexamT31" id="hsradioexamT31_2">
+                <label for="hsradioexamT31_2" class="noBox">30</label>
+            </li>
+            <li class="numcard_td">
+                <input type="checkbox" name="hsradioexamT31" id="hsradioexamT31_3">
+                <label for="hsradioexamT31_3" class="noBox">34</label>
+            </li>
+            <li class="numcard_td">
+                <input type="checkbox" name="hsradioexamT31" id="hsradioexamT31_4">
+                <label for="hsradioexamT31_4" class="noBox">40</label>
+            </li>
+        </ul>
+        <ul class="numcard_tr">
+            <li class="numcard_th">6</li>
+            <li class="numcard_td">
+                <input type="checkbox" name="hsradioexamT31" id="hsradioexamT31_5">
+                <label for="hsradioexamT31_5" class="noBox">30</label>
+            </li>
+            <li class="numcard_td">
+                <input type="checkbox" name="hsradioexamT31" id="hsradioexamT31_6">
+                <label for="hsradioexamT31_6" class="noBox">36</label>
+            </li>
+            <li class="numcard_td">
+                <input type="checkbox" name="hsradioexamT31" id="hsradioexamT31_7">
+                <label for="hsradioexamT31_7" class="noBox">42</label>
+            </li>
+            <li class="numcard_td">
+                <input type="checkbox" name="hsradioexamT31" id="hsradioexamT31_8">
+                <label for="hsradioexamT31_8" class="noBox">48</label>
+            </li>
+        </ul>
+        <ul class="numcard_tr">
+            <li class="numcard_th">7</li>
+            <li class="numcard_td">
+                <input type="checkbox" name="hsradioexamT31" id="hsradioexamT31_9">
+                <label for="hsradioexamT31_9" class="noBox">35</label>
+            </li>
+            <li class="numcard_td">
+                <input type="checkbox" name="hsradioexamT31" id="hsradioexamT31_10">
+                <label for="hsradioexamT31_10" class="noBox">42</label>
+            </li>
+            <li class="numcard_td">
+                <input type="checkbox" name="hsradioexamT31" id="hsradioexamT31_11">
+                <label for="hsradioexamT31_11" class="noBox">49</label>
+            </li>
+            <li class="numcard_td">
+                <input type="checkbox" name="hsradioexamT31" id="hsradioexamT31_12">
+                <label for="hsradioexamT31_12" class="noBox">56</label>
+            </li>
+        </ul>
+        <ul class="numcard_tr">
+            <li class="numcard_th">8</li>
+            <li class="numcard_td">
+                <input type="checkbox" name="hsradioexamT31" id="hsradioexamT31_13">
+                <label for="hsradioexamT31_13" class="noBox">40</label>
+            </li>
+            <li class="numcard_td">
+                <input type="checkbox" name="hsradioexamT31" id="hsradioexamT31_14">
+                <label for="hsradioexamT31_14" class="noBox">48</label>
+            </li>
+            <li class="numcard_td">
+                <input type="checkbox" name="hsradioexamT31" id="hsradioexamT31_15">
+                <label for="hsradioexamT31_15" class="noBox">56</label>
+            </li>
+            <li class="numcard_td">
+                <input type="checkbox" name="hsradioexamT31" id="hsradioexamT31_16">
+                <label for="hsradioexamT31_16" class="noBox">64</label>
+            </li>
+        </ul>
+    </div>
+
+    <div class="hsradioWrap type31 numcard_box">
+        <ul class="numcard_tr">
+            <li class="numcard_td">
+                <input type="checkbox" name="hsradioexamT31_1" id="hsradioexamT31_1_1">
+                <label for="hsradioexamT31_1_1" class="noBox">4</label>
+            </li>
+            <li class="numcard_td">
+                <input type="checkbox" name="hsradioexamT31_1" id="hsradioexamT31_1_2">
+                <label for="hsradioexamT31_1_2" class="noBox">11</label>
+            </li>
+            <li class="numcard_td">
+                <input type="checkbox" name="hsradioexamT31_1" id="hsradioexamT31_1_3">
+                <label for="hsradioexamT31_1_3" class="noBox">2</label>
+            </li>
+            <li class="numcard_td">
+                <input type="checkbox" name="hsradioexamT31_1" id="hsradioexamT31_1_4">
+                <label for="hsradioexamT31_1_4" class="noBox">23</label>
+            </li>
+        </ul>
+        <ul class="numcard_tr">
+            <li class="numcard_td">
+                <input type="checkbox" name="hsradioexamT31_1" id="hsradioexamT31_1_5">
+                <label for="hsradioexamT31_1_5" class="noBox">18</label>
+            </li>
+            <li class="numcard_td">
+                <input type="checkbox" name="hsradioexamT31_1" id="hsradioexamT31_1_6">
+                <label for="hsradioexamT31_1_6" class="noBox">3</label>
+            </li>
+            <li class="numcard_td">
+                <input type="checkbox" name="hsradioexamT31_1" id="hsradioexamT31_1_7">
+                <label for="hsradioexamT31_1_7" class="noBox">45</label>
+            </li>
+            <li class="numcard_td">
+                <input type="checkbox" name="hsradioexamT31_1" id="hsradioexamT31_1_8">
+                <label for="hsradioexamT31_1_8" class="noBox">3</label>
+            </li>
+        </ul>
+        <ul class="numcard_tr">
+            <li class="numcard_td">
+                <input type="checkbox" name="hsradioexamT31_1" id="hsradioexamT31_1_9">
+                <label for="hsradioexamT31_1_9" class="noBox">22</label>
+            </li>
+            <li class="numcard_td">
+                <input type="checkbox" name="hsradioexamT31_1" id="hsradioexamT31_1_10">
+                <label for="hsradioexamT31_1_10" class="noBox">19</label>
+            </li>
+            <li class="numcard_td">
+                <input type="checkbox" name="hsradioexamT31_1" id="hsradioexamT31_1_11">
+                <label for="hsradioexamT31_1_11" class="noBox">1</label>
+            </li>
+            <li class="numcard_td">
+                <input type="checkbox" name="hsradioexamT31_1" id="hsradioexamT31_1_12">
+                <label for="hsradioexamT31_1_12" class="noBox">13</label>
+            </li>
+        </ul>
+        <ul class="numcard_tr">
+            <li class="numcard_td">
+                <input type="checkbox" name="hsradioexamT31_1" id="hsradioexamT31_1_13">
+                <label for="hsradioexamT31_1_13" class="noBox">14</label>
+            </li>
+            <li class="numcard_td">
+                <input type="checkbox" name="hsradioexamT31_1" id="hsradioexamT31_1_14">
+                <label for="hsradioexamT31_1_14" class="noBox">8</label>
+            </li>
+            <li class="numcard_td">
+                <input type="checkbox" name="hsradioexamT31_1" id="hsradioexamT31_1_15">
+                <label for="hsradioexamT31_1_15" class="noBox">10</label>
+            </li>
+            <li class="numcard_td">
+                <input type="checkbox" name="hsradioexamT31_1" id="hsradioexamT31_1_16">
+                <label for="hsradioexamT31_1_16" class="noBox">31</label>
+            </li>
+        </ul>
+    </div>
+
+    <div class="hsradioWrap type31 numcard_box">
+        <ul class="numcard_tr">
+            <li class="numcard_th">일</li>
+            <li class="numcard_th">월</li>
+            <li class="numcard_th">화</li>
+            <li class="numcard_th">수</li>
+            <li class="numcard_th">목</li>
+            <li class="numcard_th">금</li>
+            <li class="numcard_th">토</li>
+        </ul>
+        <ul class="numcard_tr">
+            <li class="numcard_td sun"></li>
+            <li class="numcard_td"></li>
+            <li class="numcard_td">
+                <input type="checkbox" name="hsradioexamT31_2" id="hsradioexamT31_2_1">
+                <label for="hsradioexamT31_2_1" class="noBox">1</label>
+            </li>
+            <li class="numcard_td">
+                <input type="checkbox" name="hsradioexamT31_2" id="hsradioexamT31_2_2">
+                <label for="hsradioexamT31_2_2" class="noBox">2</label>
+            </li>
+            <li class="numcard_td">
+                <input type="checkbox" name="hsradioexamT31_2" id="hsradioexamT31_2_3">
+                <label for="hsradioexamT31_2_3" class="noBox">3</label>
+            </li>
+            <li class="numcard_td">
+                <input type="checkbox" name="hsradioexamT31_2" id="hsradioexamT31_2_4">
+                <label for="hsradioexamT31_2_4" class="noBox">4</label>
+            </li>
+            <li class="numcard_td sat">
+                <input type="checkbox" name="hsradioexamT31_2" id="hsradioexamT31_2_5">
+                <label for="hsradioexamT31_2_5" class="noBox">5</label>
+            </li>
+        </ul>
+        <ul class="numcard_tr">
+            <li class="numcard_td sun">
+                <input type="checkbox" name="hsradioexamT31_2" id="hsradioexamT31_2_6">
+                <label for="hsradioexamT31_2_6" class="noBox">6</label>
+            </li>
+            <li class="numcard_td">
+                <input type="checkbox" name="hsradioexamT31_2" id="hsradioexamT31_2_7">
+                <label for="hsradioexamT31_2_7" class="noBox">7</label>
+            </li>
+            <li class="numcard_td">
+                <input type="checkbox" name="hsradioexamT31_2" id="hsradioexamT31_2_8">
+                <label for="hsradioexamT31_2_8" class="noBox">8</label>
+            </li>
+            <li class="numcard_td">
+                <input type="checkbox" name="hsradioexamT31_2" id="hsradioexamT31_2_9">
+                <label for="hsradioexamT31_2_9" class="noBox">9</label>
+            </li>
+            <li class="numcard_td">
+                <input type="checkbox" name="hsradioexamT31_2" id="hsradioexamT31_2_10">
+                <label for="hsradioexamT31_2_10" class="noBox">10</label>
+            </li> 
+            <li class="numcard_td">
+                <input type="checkbox" name="hsradioexamT31_2" id="hsradioexamT31_2_11">
+                <label for="hsradioexamT31_2_11" class="noBox">11</label>
+            </li>
+            <li class="numcard_td sat">
+                <input type="checkbox" name="hsradioexamT31_2" id="hsradioexamT31_2_12">
+                <label for="hsradioexamT31_2_12" class="noBox">12</label>
+            </li>            
+        </ul>
+        <ul class="numcard_tr">
+            <li class="numcard_td sun">
+                <input type="checkbox" name="hsradioexamT31_2" id="hsradioexamT31_2_13">
+                <label for="hsradioexamT31_2_13" class="noBox">13</label>
+            </li>
+            <li class="numcard_td">
+                <input type="checkbox" name="hsradioexamT31_2" id="hsradioexamT31_2_14">
+                <label for="hsradioexamT31_2_14" class="noBox">14</label>
+            </li>
+            <li class="numcard_td">
+                <input type="checkbox" name="hsradioexamT31_2" id="hsradioexamT31_2_15">
+                <label for="hsradioexamT31_2_15" class="noBox">15</label>
+            </li>
+            <li class="numcard_td">
+                <input type="checkbox" name="hsradioexamT31_2" id="hsradioexamT31_2_16">
+                <label for="hsradioexamT31_2_16" class="noBox">16</label>
+            </li>
+            <li class="numcard_td">
+                <input type="checkbox" name="hsradioexamT31_2" id="hsradioexamT31_2_17">
+                <label for="hsradioexamT31_2_17" class="noBox">17</label>
+            </li>
+            <li class="numcard_td">
+                <input type="checkbox" name="hsradioexamT31_2" id="hsradioexamT31_2_18">
+                <label for="hsradioexamT31_2_18" class="noBox">18</label>
+            </li>
+            <li class="numcard_td sat">
+                <input type="checkbox" name="hsradioexamT31_2" id="hsradioexamT31_2_19">
+                <label for="hsradioexamT31_2_19" class="noBox">19</label>
+            </li>
+        </ul>
+    </div>
+    
+</div>
+<div class="accordion">
+  <div class="accordion-item">
+    <button class="accordion-header">HTML 보기</button>
+    <div class="accordion-content">
+<pre class="prettyprint linenums">
+
+</pre>
+    </div>
+  </div>
+</div>
 
 
 <h2 id="txareWrapT1">서술형 <small></small></h2>
@@ -10343,6 +10680,213 @@
   </div>
 </div>
 
+<h2 id="dragWrapT14">끌어놓기 type14 <small>투명테이블</small></h2>
+<div class="stwrap">
+    <div class="dragWrap type14">
+        <div class="dragBtnBox">
+            <div class="draggable" id="dragWrapT14_drag_0">군-</div>
+            <div class="draggable" id="dragWrapT14_drag_1">맨-</div>
+            <div class="draggable" id="dragWrapT14_drag_2">한-</div>
+            <div class="draggable" id="dragWrapT14_drag_3">낯-</div>
+            <div class="draggable" id="dragWrapT14_drag_4">햇-</div>
+        </div>
+        <div class="dragAnswerBox">
+            <table class="tbl_basic trans center">
+                <colgroup>
+                    <col style="width:40%">
+                    <col style="width:10%">
+                    <col style="width:50%">
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <td rowspan="3"><div class="draginput sm" id="dragWrapT14_drop_0"></div></td>
+                        <td rowspan="3" class="fs_13">+</td>
+                        <td><span class="square">말</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="square">말</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="square">침</span></td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="tbl_basic trans center">
+                <colgroup>
+                    <col style="width:40%">
+                    <col style="width:10%">
+                    <col style="width:50%">
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <td rowspan="3"><div class="draginput sm" id="dragWrapT14_drop_1"></div></td>
+                        <td rowspan="3" class="fs_13">+</td>
+                        <td><span class="square">손</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="square">발</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="square">밥</span></td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="tbl_basic trans center">
+                <colgroup>
+                    <col style="width:40%">
+                    <col style="width:10%">
+                    <col style="width:50%">
+                </colgroup>
+                <tbody>
+                    <tr>
+                        <td rowspan="3"><div class="draginput sm" id="dragWrapT14_drop_2"></div></td>
+                        <td rowspan="3" class="fs_13">+</td>
+                        <td><span class="square">빛</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="square">설다</span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="square">익다</span></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+
+
+
+<h2 id="dragWrapT15">끌어놓기 type15 <small>수학 제곱 - fs 클래스 사용 금지// 동일한 형태에만 사용. 폰트크기 통일성을 위함, draginput math-sup에 md, big이 사이즈 클래스가 있지만 디자인적 표현일뿐 클래스 없이도 draginput에 draggable이 들어가면 가로값이 auto됨</small></h2>
+<div class="stwrap">
+    <div class="dragWrap type15">
+        <div class="dragBtnBox">
+            <div class="draggable" id="dragWrapT15_drag_0">2</div>
+            <div class="draggable" id="dragWrapT15_drag_1">3</div>
+            <div class="draggable" id="dragWrapT15_drag_2">5</div>
+            <div class="draggable" id="dragWrapT15_drag_3">7</div>
+        </div>
+        <div class="dragAnswerBox">
+            2<div class="draginput math-sup" id="dragWrapT15_drop_0"></div> × <div class="draginput sm" id="dragWrapT15_drop_1"></div>
+        </div>
+    </div>
+
+    <div class="dragWrap type15">
+        <div class="dragBtnBox">
+            <div class="draggable" id="dragWrapT15_drag_0">2</div>
+            <div class="draggable" id="dragWrapT15_drag_1">3</div>
+            <div class="draggable" id="dragWrapT15_drag_2">5</div>
+            <div class="draggable" id="dragWrapT15_drag_3">7</div>
+        </div>
+        <div class="dragAnswerBox">
+            2<div class="draginput math-sup" id="dragWrapT15_drop_0"><div class="draggable" id="dragWrapT15_drag_3">1000000</div></div> × <div class="draginput sm" id="dragWrapT15_drop_1"> <div class="draggable" id="dragWrapT15_drag_3">7</div></div><sup>2</sup>
+        </div>
+    </div>
+
+    <div class="dragWrap type15">
+        <div class="dragBtnBox">
+            <div class="draggable" id="dragWrapT15_drag_0">2</div>
+            <div class="draggable" id="dragWrapT15_drag_1">3</div>
+            <div class="draggable" id="dragWrapT15_drag_2">5</div>
+            <div class="draggable" id="dragWrapT15_drag_3">7</div>
+        </div>
+        <div class="dragAnswerBox">
+            2<div class="draginput math-sup md" id="dragWrapT15_drop_0"></div> × <div class="draginput sm" id="dragWrapT15_drop_1"></div><sup>2</sup>
+        </div>
+    </div>
+
+    <div class="dragWrap type15">
+        <div class="dragBtnBox">
+            <div class="draggable" id="dragWrapT15_drag_0">100</div>
+            <div class="draggable" id="dragWrapT15_drag_1">1000</div>
+            <div class="draggable" id="dragWrapT15_drag_2">10000</div>
+            <div class="draggable" id="dragWrapT15_drag_3">100000</div>
+        </div>
+        <div class="dragAnswerBox">
+            2<div class="draginput math-sup big" id="dragWrapT15_drop_0"><div class="draggable" id="dragWrapT15_drag_3">100000</div></div> × <div class="draginput sm" id="dragWrapT15_drop_1"></div><sup>2</sup>
+        </div>
+    </div>
+</div>
+
+
+<h2 id="dragWrapT16">끌어놓기 type16 <small>분수형태, fs 클래스 사용 금지 // 폰트크기를 위해 동일한 형태에만 사용합니다.</small></h2>
+<div class="stwrap">
+    <div class="dragWrap type16">
+        <div class="dragBtnBox">
+            <div class="draggable" id="dragWrapT16_drag_0">64</div>
+            <div class="draggable" id="dragWrapT16_drag_1">256</div>
+        </div>
+        <div class="dragAnswerBox">
+            <div class="dragitem fraction">
+                <div class="draginput_group">
+                    <div class="draginput sm" id="dragWrapT16_drop_0"><div class="draggable" id="dragWrapT16_drag_3">256</div></div>
+                </div>
+                <div class="draginput_group">
+                    <div class="draginput sm" id="dragWrapT16_drop_1"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="dragWrap type16">
+        <div class="dragBtnBox">
+            <div class="draggable" id="dragWrapT16_drag_0">3</div>
+            <div class="draggable" id="dragWrapT16_drag_1">256</div>
+        </div>
+        <div class="dragAnswerBox">
+            부피 : 
+            <div class="dragitem fraction">
+                <div class="draginput_group">
+                    <div class="draginput sm" id="dragWrapT16_drop_0"></div>
+                </div>
+                <div class="draginput_group">
+                    <div class="draginput sm" id="dragWrapT16_drop_1"></div>
+                </div>
+            </div>
+            π cm³
+        </div>
+    </div>
+
+    <div class="dragWrap type16">
+        <div class="dragBtnBox">
+            <div class="draggable" id="dragWrapT16_drag_0">64</div>
+            <div class="draggable" id="dragWrapT16_drag_1">128</div>
+            <div class="draggable" id="dragWrapT16_drag_2">256</div>
+        </div>
+        <div class="dragAnswerBox">
+            <div class="dragitem fraction">
+                <div class="draginput_group">
+                    <div class="draginput sm" id="dragWrapT16_drop_0"></div> x + <div class="draginput sm" id="dragWrapT16_drop_1"></div> y
+                </div>
+                <div class="draginput_group">
+                    <div class="draginput sm" id="dragWrapT16_drop_2"></div>
+                </div>
+            </div>
+            =
+            <div class="draginput sm" id="dragWrapT16_drop_3"></div>
+        </div>
+    </div>
+
+    <div class="dragWrap type16">
+        <div class="dragBtnBox">
+            <div class="draggable" id="dragWrapT16_drag_0">pq</div>
+            <div class="draggable" id="dragWrapT16_drag_1">qr</div>
+        </div>
+        <div class="dragAnswerBox">
+            <img src="../images/q_common/test-img-15.png"> =
+            <div class="dragitem fraction">
+                <div class="draginput_group">
+                    <div class="draginput sm" id="dragWrapT16_drop_0"></div>
+                </div>
+                <div class="draginput_group">
+                    <div class="draginput sm" id="dragWrapT16_drop_1"></div>
+                </div>
+            </div>
+        </div>
+    </div>  
+</div>
+
 
 
 <h2 id="seletWrapT1">아래로펼치기 <small></small></h2>
@@ -10921,6 +11465,84 @@
     </div>
   </div>
 </div>
+
+<h2 id="seletWrapT7">아래로펼치기 type7 <small>분수형태, 이미지일 경우 사용할 수 없음(기술공학 또는 타입 변경). 텍스트만 가능 // 일반형태랑 분수형태랑 같이 있을때도 타입7로 분류</small></h2>
+<div class="stwrap">
+    <div class="seletWrap type7">
+        정답 : 
+        <div class="fraction">
+            <select class="select">
+                <option selected>선택</option>
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+                <option value="">5</option>
+                <option value="">6</option>
+                <option value="">7</option>
+                <option value="">8</option>
+                <option value="">9</option>
+            </select>
+             <select class="select">
+                <option selected>선택</option>
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+                <option value="">5</option>
+                <option value="">6</option>
+                <option value="">7</option>
+                <option value="">8</option>
+                <option value="">9</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="seletWrap type7">
+        a=
+        <select class="select">
+            <option selected>선택</option>
+            <option value="">1</option>
+            <option value="">2</option>
+            <option value="">3</option>
+            <option value="">4</option>
+            <option value="">5</option>
+            <option value="">6</option>
+            <option value="">7</option>
+            <option value="">8</option>
+            <option value="">9</option>
+        </select>
+        ,
+        x =
+        <div class="fraction">
+            <select class="select">
+                <option selected>선택</option>
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+                <option value="">5</option>
+                <option value="">6</option>
+                <option value="">7</option>
+                <option value="">8</option>
+                <option value="">9</option>
+            </select>
+             <select class="select">
+                <option selected>선택</option>
+                <option value="">1</option>
+                <option value="">2</option>
+                <option value="">3</option>
+                <option value="">4</option>
+                <option value="">5</option>
+                <option value="">6</option>
+                <option value="">7</option>
+                <option value="">8</option>
+                <option value="">9</option>
+            </select>
+        </div>
+    </div>    
+</div>
+
 
 
 <h2 id="lineWrapT1">짝연결하기 <small></small></h2>
