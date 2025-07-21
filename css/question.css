@@ -176,19 +176,19 @@ input[type="radio"] {border-radius: 0;border: none;background: 0 0;-webkit-appea
 .icoarrow.under {transform:rotate(90deg);}
 
 /* 빈칸 */
-.blankBox {display:inline-flex;align-items:center;justify-content:center;width:80px;height:42px;margin:.2rem 0;padding:0 .5rem;border-radius:3px;border:2px dashed var(--gray_60);font-size:1.1rem;font-weight:600;color:var(--gray_80);background:var(--gray_20);vertical-align:middle;}/*빈칸표시*/
-.blankBox.sm {width:60px;height:34px;margin:.3rem 0;padding:0 .5rem;font-size:1rem;}
+.blankBox {display:inline-flex;align-items:center;justify-content:center;width:80px;height:42px;margin:.2rem 0;padding:0 .5rem;border-radius:3px;border:2px dashed var(--gray_60);font-size:clamp(14px, 1vw, 1rem);font-weight:600;color:var(--gray_80);background:var(--gray_20);vertical-align:middle;}/*빈칸표시*/
+.blankBox.sm {width:60px;height:34px;margin:.3rem 0;padding:0 .5rem;}
 .blankBox.long {width:180px;}
 .blankBox > .bullet,
 .blankBox > .bullet.sm {top:initial;margin:0;}
 
 /* 텍스트박스 */
-.square {display:inline-flex;align-items:center;justify-content:center;line-height:1;min-width:80px;height:42px;margin:.2rem 0;padding:0 1rem;border-radius:3px;border:2px solid var(--gray_60);font-size:1.1rem;font-weight:600;color:var(--gray_90);background:#fff;vertical-align:middle;}
-.square.sm {min-width:60px;height:38px;padding:0 .5rem;font-size:1rem;}
+.square {display:inline-flex;align-items:center;justify-content:center;line-height:1;min-width:80px;height:42px;margin:.2rem 0;padding:0 1rem;border-radius:3px;border:2px solid var(--gray_60);font-size:clamp(14px, 1vw, 1rem);font-weight:600;color:var(--gray_90);background:#fff;vertical-align:middle;}
+.square.sm {min-width:60px;height:38px;padding:0 .5rem;}
 .square.big {min-width:80px;height:80px;}
 .square:has(.bullet) .bullet {top:initial}
-.nametag {display:inline-flex;align-items:center;justify-content:center;line-height:1;width:80px;height:42px;margin:.2rem 0;padding:0 1rem;border-radius:3px;border: 1px solid var(--gray_40);font-size:1.1rem;font-weight:600;color:var(--gray_90) !important;background:var(--gray_20);vertical-align:middle;}
-.nametag.sm {width:60px !important;height:38px;padding:0 .5rem;font-size:1rem;}
+.nametag {display:inline-flex;align-items:center;justify-content:center;line-height:1;width:80px;height:42px;margin:.2rem 0;padding:0 1rem;border-radius:3px;border: 1px solid var(--gray_40);font-size:clamp(14px, 1vw, 1rem);font-weight:600;color:var(--gray_90) !important;background:var(--gray_20);vertical-align:middle;}
+.nametag.sm {width:60px !important;height:38px;padding:0 .5rem;}
 
 /* 채팅 프로필 */
 .chat_img {overflow:hidden;display:inline-flex;justify-content:center;align-items:center;width:60px;height:60px;border-radius:60px;font-size:.9rem;font-weight:700;color:var(--gray_90);background-position:50%;background-repeat:no-repeat;}
@@ -1151,14 +1151,14 @@ input[type="chekbox"] + .cardWrap:before {display:none;}
 .flowBox li::after {content:'';display:inline-block;width:28px;height:28px;background:url(../images/q_common/flow_arr.svg) 50% no-repeat;}
 .flowBox li:last-child::after {display:none}
 
-.scriptBox {max-width:950px;}
+.scriptBox {max-width:950px;width:100%;}
 .scriptBox li {display:flex;gap:.5rem;margin:.5rem 0;width:100%;}
-.scriptBox li > p {width:100%;margin-top:4px;font-weight:400;text-align:left;word-break:keep-all;}
+.scriptBox li > p {width:auto;margin-top:4px;font-weight:400;text-align:left;word-break:keep-all;}
 .scriptBox li > p:has(.blankBox),
 .scriptBox li > p:has(.square),
 .scriptBox li > p:has(img) {margin:0;}
 .scriptBox .blankBox {height:36px;margin:2px;}
-.scriptBox .nametag {margin:0;}
+.scriptBox .nametag {width:auto !important;min-width:60px;max-width:140px;margin:0;padding:0 .5rem;}
 
 .cardBox_group {display:flex;gap:1rem;}
 .cardBox_group > li {width:25%;}
