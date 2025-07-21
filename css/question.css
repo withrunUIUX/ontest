@@ -475,10 +475,11 @@ input[type="chekbox"] + .cardWrap:before {display:none;}
 .radioWrap.type10 input[type="radio"] + label::before {display:none;}
 
 /*///체크박스///*/
-.checkWrap {display:flex;flex-direction:column;gap:.5rem 1rem;width:100%;font-size:1.1rem;color:var(--gray_100);line-height:2;text-align: left;}
+.checkWrap {display:flex;flex-direction:column;gap:.5rem 1rem;width:100%;font-size:clamp(14px, 1vw, 1rem);color:var(--gray_100);line-height:2;text-align: left;}
 .checkWrap label *,
 .checkWrap li {line-height:1.5;}
-.checkWrap input[type="checkbox"] + label {width:100%;color:var(--gray_100);font-size:1.1rem;font-weight:500;padding-left:22px;}
+.checkWrap input[type="checkbox"] + label {color:var(--gray_100);font-size:clamp(14px, 1vw, 1rem);font-weight:500;width:100%;}
+.checkWrap input[type="checkbox"] + label {padding-left:22px;}
 .checkWrap input[type="checkbox"] + label:has(img) {max-width:360px;max-height:360px;}
 .checkWrap input[type="checkbox"] + label:has(img) img {width: 100%;height: 100%;}
 .checkWrap input[type="checkbox"] + label::before {position:absolute;transform:translateY(-55%);}
@@ -982,14 +983,13 @@ input[type="chekbox"] + .cardWrap:before {display:none;}
 /* 끌어놓기 type13 :: 기본테이블 */
 .dragWrap.type13 {}
 .dragWrap.type13 .dragAnswerBox {width:100%;}
-.dragWrap.type13 .tbl_basic thead tr th {font-size:1.1rem;}
-.dragWrap.type13 .tbl_basic tbody tr td {font-size:1.1rem;font-weight:500;color:var(--gray_90);}
+.dragWrap.type13 .tbl_basic.type3 thead tr th {font-size:1.1rem;}
+.dragWrap.type13 .tbl_basic.type3 tbody tr td {font-size:1.1rem;font-weight:500;color:var(--gray_90);}
 /* 끌어놓기 type14 :: 투명테이블 */
 .dragWrap.type14 {}
 .dragWrap.type14 .dragAnswerBox {display:flex;gap:1rem;}
 .dragWrap.type14 .tbl_basic {margin: 0;}
 .dragWrap.type14 .tbl_basic.trans tbody tr td {padding:2px;border:none;}
-
 /* 끌어놓기 type15 :: 수학 제곱 */
 .dragWrap.type15 {}
 .dragWrap.type15 .dragAnswerBox {font-size:1.3rem;}
