@@ -776,7 +776,7 @@ input[type="chekbox"] + .cardWrap:before {display:none;}
 .hsradioWrap.type24 input[type="checkbox"] + label::before {width:80px;height:80px;}
 .hsradioWrap.type24 input[type="checkbox"]:checked + label .bubble::before {background-image:url(../images/q_common/bubble_tail_on.svg);}
 .hsradioWrap.type24 .chatBox {width:100%;}
-.hsradioWrap.type24 .chatBox .chat_item label {width:calc(100% - 60px);}
+.hsradioWrap.type24 .chatBox .chat_item label {max-width:calc(100% - 60px);}
 /* 핫스폿 type25 :: 순차적으로 다중선택, 투명버튼 */
 .hsradioWrap.type25 .btn_group {position:absolute;width:100%;height:100%;margin:0;}
 .hsradioWrap.type25 .btn_group .btn_item {position:absolute;}

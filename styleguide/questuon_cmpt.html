@@ -87,6 +87,7 @@
             <li><a href="#inputWrapT9" title="그룹형">단답형 type9</a></li>
             <li><a href="#inputWrapT10" title="리스트">단답형 type10</a></li>
             <li><a href="#inputWrapT11" title="수학계산">단답형 type11</a></li>
+            <li><a href="#inputWrapT12" title="수학제곱">단답형 type12</a></li>
             <li><a href="#hsradioWrap">핫스폿</a></li>
             <li><a href="#hsradioWrapT2" title="이름 선택">핫스폿 type2</a></li>
             <li><a href="#hsradioWrapT3" title="카드형태">핫스폿 type3</a></li>
@@ -116,6 +117,8 @@
             <li><a href="#hsradioWrapT27" title="카드형 안에서 다중선택">핫스폿 type27</a></li>
             <li><a href="#hsradioWrapT28" title="말풍선 안에서 문장 선택">핫스폿 type28</a></li>
             <li><a href="#hsradioWrapT29" title="말풍선 안에서 문장 다중선택">핫스폿 type29</a></li>
+            <li><a href="#hsradioWrapT30" title="문장형 다중선택">핫스폿 type30</a></li>
+            <li><a href="#hsradioWrapT31" title="숫자카드 다중선택">핫스폿 type31</a></li>
             <li><a href="#txareWrapT1">서술형</a></li>
             <li><a href="#txareWrapT2" title="2개 이상">서술형 type2</a></li>
             <li><a href="#txareWrapT3" title="테이블">서술형 type3</a></li>
@@ -132,12 +135,16 @@
             <li><a href="#dragWrapT11" title="카드박스">끌어놓기 type11</a></li>
             <li><a href="#dragWrapT12" title="리스트">끌어놓기 type12</a></li>
             <li><a href="#dragWrapT13" title="기본테이블">끌어놓기 type13</a></li>
+            <li><a href="#dragWrapT14" title="투명테이블">끌어놓기 type14</a></li>
+            <li><a href="#dragWrapT15" title="수학제곱">끌어놓기 type15</a></li>
+            <li><a href="#dragWrapT16" title="분수형태">끌어놓기 type16</a></li>
             <li><a href="#seletWrapT1">아래로펼치기</a></li>
             <li><a href="#seletWrapT2" title="순서대로">아래로펼치기 type2</a></li>
             <li><a href="#seletWrapT3" title="디자인 테이블">아래로펼치기 type3</a></li>
             <li><a href="#seletWrapT4" title="기본 테이블">아래로펼치기 type4</a></li>
             <li><a href="#seletWrapT5" title="대화형">아래로펼치기 type5</a></li>
             <li><a href="#seletWrapT6" title="보고서">아래로펼치기 type6</a></li>
+            <li><a href="#seletWrapT7" title="분수형태">아래로펼치기 type7</a></li>
             <li><a href="#lineWrapT1">짝연결하기</a></li>
             <li><a href="#lineWrapT2" title="선긋기 3개">짝연결하기 type2</a></li>
             <li><a href="#lineWrapT3" title="그룹형">짝연결하기 type3</a></li>
@@ -6359,7 +6366,7 @@
 </div>
 
 
-<h2 id="inputWrapT12">단답형 type12 <small>수학 제곱 - 동일한 형태에만 사용합니다. 폰트크기 통일을 위함, math-sup사이즈 md, big으로 제어 최대 100,000,000표현 이 이상일 경우 인라인으로 가로값 제어</small></h2>
+<h2 id="inputWrapT12">단답형 type12 <small>수학 제곱 - 동일한 형태에만 사용합니다. 폰트크기 통일을 위함, math-sup사이즈 md, big으로 제어 최대 100,000,000표현, 더 길 경우 인라인으로 가로값 제어</small></h2>
 <div class="stwrap">
     <div class="inputWrap type12">
         세포의 개수 : 
@@ -6385,7 +6392,42 @@
         <input type="text" class="inputBox math-sup" style="width:15rem;">
     </div>
 </div>
+<div class="accordion">
+  <div class="accordion-item">
+    <button class="accordion-header">HTML 보기</button>
+    <div class="accordion-content">
+<pre class="prettyprint linenums">
+&lt;!--math-sup 기본-->
+&lt;div class="inputWrap type12">
+    세포의 개수 : 
+    &lt;input type="text" class="inputBox sm">
+    &lt;input type="text" class="inputBox math-sup">
+&lt;/div>
 
+&lt;!--math-sup 중간크기-->
+&lt;div class="inputWrap type12">
+    세포의 개수 : 
+    &lt;input type="text" class="inputBox sm">
+    &lt;input type="text" class="inputBox math-sup md">
+&lt;/div>
+
+&lt;!--math-sup 롱사이즈-->
+&lt;div class="inputWrap type12">
+    세포의 개수 : 
+    &lt;input type="text" class="inputBox sm">
+    &lt;input type="text" class="inputBox math-sup big">
+&lt;/div>
+
+&lt;!--math-sup 직접제어-->
+&lt;div class="inputWrap type12">
+    세포의 개수 : 
+    &lt;input type="text" class="inputBox sm">
+    &lt;input type="text" class="inputBox math-sup" style="width:15rem;">
+&lt;/div>
+</pre>
+    </div>
+  </div>
+</div>
 
 
 
@@ -8923,14 +8965,271 @@
             </li>
         </ul>
     </div>
-    
 </div>
 <div class="accordion">
   <div class="accordion-item">
     <button class="accordion-header">HTML 보기</button>
     <div class="accordion-content">
 <pre class="prettyprint linenums">
+&lt;!--숫자카드 기본-->
+&lt;div class="hsradioWrap type31 numcard_box">
+    &lt;ul class="numcard_tr">
+        &lt;li class="numcard_th mathsymbol mathsymbol3">&lt;/li>
+        &lt;li class="numcard_th">5&lt;/li>
+        &lt;li class="numcard_th">6&lt;/li>
+        &lt;li class="numcard_th">7&lt;/li>
+        &lt;li class="numcard_th">8&lt;/li>
+    &lt;/ul>
+    &lt;ul class="numcard_tr">
+        &lt;li class="numcard_th">5&lt;/li>
+        &lt;li class="numcard_td">
+            &lt;input type="checkbox" name="문항코드_a" id="문항코드_a">
+            &lt;label for="문항코드_a" class="noBox">25&lt;/label>
+        &lt;/li>
+        &lt;li class="numcard_td">
+            &lt;input type="checkbox" name="문항코드_a" id="문항코드_a">
+            &lt;label for="문항코드_a" class="noBox">30&lt;/label>
+        &lt;/li>
+        &lt;li class="numcard_td">
+            &lt;input type="checkbox" name="문항코드_a" id="문항코드_a3">
+            &lt;label for="문항코드_a3" class="noBox">34&lt;/label>
+        &lt;/li>
+        &lt;li class="numcard_td">
+            &lt;input type="checkbox" name="문항코드_a" id="문항코드_a4">
+            &lt;label for="문항코드_a4" class="noBox">40&lt;/label>
+        &lt;/li>
+    &lt;/ul>
+    &lt;ul class="numcard_tr">
+        &lt;li class="numcard_th">6&lt;/li>
+        &lt;li class="numcard_td">
+            &lt;input type="checkbox" name="문항코드_a" id="문항코드_a5">
+            &lt;label for="문항코드_a5" class="noBox">30&lt;/label>
+        &lt;/li>
+        &lt;li class="numcard_td">
+            &lt;input type="checkbox" name="문항코드_a" id="문항코드_a6">
+            &lt;label for="문항코드_a6" class="noBox">36&lt;/label>
+        &lt;/li>
+        &lt;li class="numcard_td">
+            &lt;input type="checkbox" name="문항코드_a" id="문항코드_a7">
+            &lt;label for="문항코드_a7" class="noBox">42&lt;/label>
+        &lt;/li>
+        &lt;li class="numcard_td">
+            &lt;input type="checkbox" name="문항코드_a" id="문항코드_a8">
+            &lt;label for="문항코드_a8" class="noBox">48&lt;/label>
+        &lt;/li>
+    &lt;/ul>
+    &lt;ul class="numcard_tr">
+        &lt;li class="numcard_th">7&lt;/li>
+        &lt;li class="numcard_td">
+            &lt;input type="checkbox" name="문항코드_a" id="문항코드_a9">
+            &lt;label for="문항코드_a9" class="noBox">35&lt;/label>
+        &lt;/li>
+        &lt;li class="numcard_td">
+            &lt;input type="checkbox" name="문항코드_a" id="문항코드_a0">
+            &lt;label for="문항코드_a0" class="noBox">42&lt;/label>
+        &lt;/li>
+        &lt;li class="numcard_td">
+            &lt;input type="checkbox" name="문항코드_a" id="문항코드_a1">
+            &lt;label for="문항코드_a1" class="noBox">49&lt;/label>
+        &lt;/li>
+        &lt;li class="numcard_td">
+            &lt;input type="checkbox" name="문항코드_a" id="문항코드_a">
+            &lt;label for="문항코드_a" class="noBox">56&lt;/label>
+        &lt;/li>
+    &lt;/ul>
+    &lt;ul class="numcard_tr">
+        &lt;li class="numcard_th">8&lt;/li>
+        &lt;li class="numcard_td">
+            &lt;input type="checkbox" name="문항코드_a" id="문항코드_a3">
+            &lt;label for="문항코드_a3" class="noBox">40&lt;/label>
+        &lt;/li>
+        &lt;li class="numcard_td">
+            &lt;input type="checkbox" name="문항코드_a" id="문항코드_a4">
+            &lt;label for="문항코드_a4" class="noBox">48&lt;/label>
+        &lt;/li>
+        &lt;li class="numcard_td">
+            &lt;input type="checkbox" name="문항코드_a" id="문항코드_a5">
+            &lt;label for="문항코드_a5" class="noBox">56&lt;/label>
+        &lt;/li>
+        &lt;li class="numcard_td">
+            &lt;input type="checkbox" name="문항코드_a" id="문항코드_a6">
+            &lt;label for="문항코드_a6" class="noBox">64&lt;/label>
+        &lt;/li>
+    &lt;/ul>
+&lt;/div>
 
+&lt;!--th이 없는 숫자카드-->
+&lt;div class="hsradioWrap type31 numcard_box">
+    &lt;ul class="numcard_tr">
+        &lt;li class="numcard_td">
+            &lt;input type="checkbox" name="문항코드_a" id="문항코드_a1">
+            &lt;label for="문항코드_a1" class="noBox">4&lt;/label>
+        &lt;/li>
+        &lt;li class="numcard_td">
+            &lt;input type="checkbox" name="문항코드_a" id="문항코드_a">
+            &lt;label for="문항코드_a" class="noBox">11&lt;/label>
+        &lt;/li>
+        &lt;li class="numcard_td">
+            &lt;input type="checkbox" name="문항코드_a" id="문항코드_a3">
+            &lt;label for="문항코드_a3" class="noBox">2&lt;/label>
+        &lt;/li>
+        &lt;li class="numcard_td">
+            &lt;input type="checkbox" name="문항코드_a" id="문항코드_a4">
+            &lt;label for="문항코드_a4" class="noBox">23&lt;/label>
+        &lt;/li>
+    &lt;/ul>
+    &lt;ul class="numcard_tr">
+        &lt;li class="numcard_td">
+            &lt;input type="checkbox" name="문항코드_a" id="문항코드_a5">
+            &lt;label for="문항코드_a5" class="noBox">18&lt;/label>
+        &lt;/li>
+        &lt;li class="numcard_td">
+            &lt;input type="checkbox" name="문항코드_a" id="문항코드_a6">
+            &lt;label for="문항코드_a6" class="noBox">3&lt;/label>
+        &lt;/li>
+        &lt;li class="numcard_td">
+            &lt;input type="checkbox" name="문항코드_a" id="문항코드_a7">
+            &lt;label for="문항코드_a7" class="noBox">45&lt;/label>
+        &lt;/li>
+        &lt;li class="numcard_td">
+            &lt;input type="checkbox" name="문항코드_a" id="문항코드_a8">
+            &lt;label for="문항코드_a8" class="noBox">3&lt;/label>
+        &lt;/li>
+    &lt;/ul>
+    &lt;ul class="numcard_tr">
+        &lt;li class="numcard_td">
+            &lt;input type="checkbox" name="문항코드_a" id="문항코드_a9">
+            &lt;label for="문항코드_a9" class="noBox">22&lt;/label>
+        &lt;/li>
+        &lt;li class="numcard_td">
+            &lt;input type="checkbox" name="문항코드_a" id="문항코드_a10">
+            &lt;label for="문항코드_a10" class="noBox">19&lt;/label>
+        &lt;/li>
+        &lt;li class="numcard_td">
+            &lt;input type="checkbox" name="문항코드_a" id="문항코드_a11">
+            &lt;label for="문항코드_a11" class="noBox">1&lt;/label>
+        &lt;/li>
+        &lt;li class="numcard_td">
+            &lt;input type="checkbox" name="문항코드_a" id="문항코드_a12">
+            &lt;label for="문항코드_a12" class="noBox">13&lt;/label>
+        &lt;/li>
+    &lt;/ul>
+    &lt;ul class="numcard_tr">
+        &lt;li class="numcard_td">
+            &lt;input type="checkbox" name="문항코드_a" id="문항코드_a13">
+            &lt;label for="문항코드_a13" class="noBox">14&lt;/label>
+        &lt;/li>
+        &lt;li class="numcard_td">
+            &lt;input type="checkbox" name="문항코드_a" id="문항코드_a14">
+            &lt;label for="문항코드_a14" class="noBox">8&lt;/label>
+        &lt;/li>
+        &lt;li class="numcard_td">
+            &lt;input type="checkbox" name="문항코드_a" id="문항코드_a15">
+            &lt;label for="문항코드_a15" class="noBox">10&lt;/label>
+        &lt;/li>
+        &lt;li class="numcard_td">
+            &lt;input type="checkbox" name="문항코드_a" id="문항코드_a16">
+            &lt;label for="문항코드_a16" class="noBox">31&lt;/label>
+        &lt;/li>
+    &lt;/ul>
+&lt;/div>
+
+&lt;!--응용형:: 달력-->
+&lt;div class="hsradioWrap type31 numcard_box">
+    &lt;ul class="numcard_tr">
+        &lt;li class="numcard_th">일&lt;/li>
+        &lt;li class="numcard_th">월&lt;/li>
+        &lt;li class="numcard_th">화&lt;/li>
+        &lt;li class="numcard_th">수&lt;/li>
+        &lt;li class="numcard_th">목&lt;/li>
+        &lt;li class="numcard_th">금&lt;/li>
+        &lt;li class="numcard_th">토&lt;/li>
+    &lt;/ul>
+    &lt;ul class="numcard_tr">
+        &lt;li class="numcard_td sun">&lt;/li>
+        &lt;li class="numcard_td">&lt;/li>
+        &lt;li class="numcard_td">
+            &lt;input type="checkbox" name="문항코드_a" id="문항코드_a1">
+            &lt;label for="문항코드_a1" class="noBox">1&lt;/label>
+        &lt;/li>
+        &lt;li class="numcard_td">
+            &lt;input type="checkbox" name="문항코드_a" id="문항코드_a2">
+            &lt;label for="문항코드_a2" class="noBox">2&lt;/label>
+        &lt;/li>
+        &lt;li class="numcard_td">
+            &lt;input type="checkbox" name="문항코드_a" id="문항코드_a3">
+            &lt;label for="문항코드_a3" class="noBox">3&lt;/label>
+        &lt;/li>
+        &lt;li class="numcard_td">
+            &lt;input type="checkbox" name="문항코드_a" id="문항코드_a4">
+            &lt;label for="문항코드_a4" class="noBox">4&lt;/label>
+        &lt;/li>
+        &lt;li class="numcard_td sat">
+            &lt;input type="checkbox" name="문항코드_a" id="문항코드_a5">
+            &lt;label for="문항코드_a5" class="noBox">5&lt;/label>
+        &lt;/li>
+    &lt;/ul>
+    &lt;ul class="numcard_tr">
+        &lt;li class="numcard_td sun">
+            &lt;input type="checkbox" name="문항코드_a" id="문항코드_a6">
+            &lt;label for="문항코드_a6" class="noBox">6&lt;/label>
+        &lt;/li>
+        &lt;li class="numcard_td">
+            &lt;input type="checkbox" name="문항코드_a" id="문항코드_a7">
+            &lt;label for="문항코드_a7" class="noBox">7&lt;/label>
+        &lt;/li>
+        &lt;li class="numcard_td">
+            &lt;input type="checkbox" name="문항코드_a" id="문항코드_a8">
+            &lt;label for="문항코드_a8" class="noBox">8&lt;/label>
+        &lt;/li>
+        &lt;li class="numcard_td">
+            &lt;input type="checkbox" name="문항코드_a" id="문항코드_a9">
+            &lt;label for="문항코드_a9" class="noBox">9&lt;/label>
+        &lt;/li>
+        &lt;li class="numcard_td">
+            &lt;input type="checkbox" name="문항코드_a" id="문항코드_a10">
+            &lt;label for="문항코드_a10" class="noBox">10&lt;/label>
+        &lt;/li> 
+        &lt;li class="numcard_td">
+            &lt;input type="checkbox" name="문항코드_a" id="문항코드_a11">
+            &lt;label for="문항코드_a11" class="noBox">11&lt;/label>
+        &lt;/li>
+        &lt;li class="numcard_td sat">
+            &lt;input type="checkbox" name="문항코드_a" id="문항코드_a12">
+            &lt;label for="문항코드_a12" class="noBox">12&lt;/label>
+        &lt;/li>            
+    &lt;/ul>
+    &lt;ul class="numcard_tr">
+        &lt;li class="numcard_td sun">
+            &lt;input type="checkbox" name="문항코드_a" id="문항코드_a13">
+            &lt;label for="문항코드_a13" class="noBox">13&lt;/label>
+        &lt;/li>
+        &lt;li class="numcard_td">
+            &lt;input type="checkbox" name="문항코드_a" id="문항코드_a14">
+            &lt;label for="문항코드_a14" class="noBox">14&lt;/label>
+        &lt;/li>
+        &lt;li class="numcard_td">
+            &lt;input type="checkbox" name="문항코드_a" id="문항코드_a15">
+            &lt;label for="문항코드_a15" class="noBox">15&lt;/label>
+        &lt;/li>
+        &lt;li class="numcard_td">
+            &lt;input type="checkbox" name="문항코드_a" id="문항코드_a16">
+            &lt;label for="문항코드_a16" class="noBox">16&lt;/label>
+        &lt;/li>
+        &lt;li class="numcard_td">
+            &lt;input type="checkbox" name="문항코드_a" id="문항코드_a17">
+            &lt;label for="문항코드_a17" class="noBox">17&lt;/label>
+        &lt;/li>
+        &lt;li class="numcard_td">
+            &lt;input type="checkbox" name="문항코드_a" id="문항코드_a18">
+            &lt;label for="문항코드_a18" class="noBox">18&lt;/label>
+        &lt;/li>
+        &lt;li class="numcard_td sat">
+            &lt;input type="checkbox" name="문항코드_a" id="문항코드_a19">
+            &lt;label for="문항코드_a19" class="noBox">19&lt;/label>
+        &lt;/li>
+    &lt;/ul>
+&lt;/div>
 </pre>
     </div>
   </div>
@@ -10754,6 +11053,86 @@
         </div>
     </div>
 </div>
+<div class="accordion">
+  <div class="accordion-item">
+    <button class="accordion-header">HTML 보기</button>
+    <div class="accordion-content">
+<pre class="prettyprint linenums">
+&lt;div class="dragWrap type14">
+    &lt;div class="dragBtnBox">
+        &lt;div class="draggable" id="dragWrapT14_drag_0">군-&lt;/div>
+        &lt;div class="draggable" id="dragWrapT14_drag_1">맨-&lt;/div>
+        &lt;div class="draggable" id="dragWrapT14_drag_2">한-&lt;/div>
+        &lt;div class="draggable" id="dragWrapT14_drag_3">낯-&lt;/div>
+        &lt;div class="draggable" id="dragWrapT14_drag_4">햇-&lt;/div>
+    &lt;/div>
+    &lt;div class="dragAnswerBox">
+        &lt;table class="tbl_basic trans center">
+            &lt;colgroup>
+                &lt;col style="width:40%">
+                &lt;col style="width:10%">
+                &lt;col style="width:50%">
+            &lt;/colgroup>
+            &lt;tbody>
+                &lt;tr>
+                    &lt;td rowspan="3">&lt;div class="draginput sm" id="dragWrapT14_drop_0">&lt;/div>&lt;/td>
+                    &lt;td rowspan="3" class="fs_13">+&lt;/td>
+                    &lt;td>&lt;span class="square">말&lt;/span>&lt;/td>
+                &lt;/tr>
+                &lt;tr>
+                    &lt;td>&lt;span class="square">말&lt;/span>&lt;/td>
+                &lt;/tr>
+                &lt;tr>
+                    &lt;td>&lt;span class="square">침&lt;/span>&lt;/td>
+                &lt;/tr>
+            &lt;/tbody>
+        &lt;/table>
+        &lt;table class="tbl_basic trans center">
+            &lt;colgroup>
+                &lt;col style="width:40%">
+                &lt;col style="width:10%">
+                &lt;col style="width:50%">
+            &lt;/colgroup>
+            &lt;tbody>
+                &lt;tr>
+                    &lt;td rowspan="3">&lt;div class="draginput sm" id="dragWrapT14_drop_1">&lt;/div>&lt;/td>
+                    &lt;td rowspan="3" class="fs_13">+&lt;/td>
+                    &lt;td>&lt;span class="square">손&lt;/span>&lt;/td>
+                &lt;/tr>
+                &lt;tr>
+                    &lt;td>&lt;span class="square">발&lt;/span>&lt;/td>
+                &lt;/tr>
+                &lt;tr>
+                    &lt;td>&lt;span class="square">밥&lt;/span>&lt;/td>
+                &lt;/tr>
+            &lt;/tbody>
+        &lt;/table>
+        &lt;table class="tbl_basic trans center">
+            &lt;colgroup>
+                &lt;col style="width:40%">
+                &lt;col style="width:10%">
+                &lt;col style="width:50%">
+            &lt;/colgroup>
+            &lt;tbody>
+                &lt;tr>
+                    &lt;td rowspan="3">&lt;div class="draginput sm" id="dragWrapT14_drop_2">&lt;/div>&lt;/td>
+                    &lt;td rowspan="3" class="fs_13">+&lt;/td>
+                    &lt;td>&lt;span class="square">빛&lt;/span>&lt;/td>
+                &lt;/tr>
+                &lt;tr>
+                    &lt;td>&lt;span class="square">설다&lt;/span>&lt;/td>
+                &lt;/tr>
+                &lt;tr>
+                    &lt;td>&lt;span class="square">익다&lt;/span>&lt;/td>
+                &lt;/tr>
+            &lt;/tbody>
+        &lt;/table>
+    &lt;/div>
+&lt;/div>
+</pre>
+    </div>
+  </div>
+</div>
 
 
 
@@ -10765,7 +11144,6 @@
             <div class="draggable" id="dragWrapT15_drag_0">2</div>
             <div class="draggable" id="dragWrapT15_drag_1">3</div>
             <div class="draggable" id="dragWrapT15_drag_2">5</div>
-            <div class="draggable" id="dragWrapT15_drag_3">7</div>
         </div>
         <div class="dragAnswerBox">
             2<div class="draginput math-sup" id="dragWrapT15_drop_0"></div> × <div class="draginput sm" id="dragWrapT15_drop_1"></div>
@@ -10777,10 +11155,9 @@
             <div class="draggable" id="dragWrapT15_drag_0">2</div>
             <div class="draggable" id="dragWrapT15_drag_1">3</div>
             <div class="draggable" id="dragWrapT15_drag_2">5</div>
-            <div class="draggable" id="dragWrapT15_drag_3">7</div>
         </div>
         <div class="dragAnswerBox">
-            2<div class="draginput math-sup" id="dragWrapT15_drop_0"><div class="draggable" id="dragWrapT15_drag_3">1000000</div></div> × <div class="draginput sm" id="dragWrapT15_drop_1"> <div class="draggable" id="dragWrapT15_drag_3">7</div></div><sup>2</sup>
+            2<div class="draginput math-sup" id="dragWrapT15_drop_0"></div> × <div class="draginput sm" id="dragWrapT15_drop_1"></div><sup>2</sup>
         </div>
     </div>
 
@@ -10789,7 +11166,6 @@
             <div class="draggable" id="dragWrapT15_drag_0">2</div>
             <div class="draggable" id="dragWrapT15_drag_1">3</div>
             <div class="draggable" id="dragWrapT15_drag_2">5</div>
-            <div class="draggable" id="dragWrapT15_drag_3">7</div>
         </div>
         <div class="dragAnswerBox">
             2<div class="draginput math-sup md" id="dragWrapT15_drop_0"></div> × <div class="draginput sm" id="dragWrapT15_drop_1"></div><sup>2</sup>
@@ -10800,14 +11176,70 @@
         <div class="dragBtnBox">
             <div class="draggable" id="dragWrapT15_drag_0">100</div>
             <div class="draggable" id="dragWrapT15_drag_1">1000</div>
-            <div class="draggable" id="dragWrapT15_drag_2">10000</div>
-            <div class="draggable" id="dragWrapT15_drag_3">100000</div>
+            <div class="draggable" id="dragWrapT15_drag_2">100000</div>
         </div>
         <div class="dragAnswerBox">
-            2<div class="draginput math-sup big" id="dragWrapT15_drop_0"><div class="draggable" id="dragWrapT15_drag_3">100000</div></div> × <div class="draginput sm" id="dragWrapT15_drop_1"></div><sup>2</sup>
+            2<div class="draginput math-sup big" id="dragWrapT15_drop_0"></div> × <div class="draginput sm" id="dragWrapT15_drop_1"></div><sup>2</sup>
         </div>
     </div>
 </div>
+<div class="accordion">
+  <div class="accordion-item">
+    <button class="accordion-header">HTML 보기</button>
+    <div class="accordion-content">
+<pre class="prettyprint linenums">
+&lt;!--math-sup 기본-->
+&lt;div class="dragWrap type15">
+    &lt;div class="dragBtnBox">
+        &lt;div class="draggable" id="dragWrapT15_drag_0">2&lt;/div>
+        &lt;div class="draggable" id="dragWrapT15_drag_1">3&lt;/div>
+        &lt;div class="draggable" id="dragWrapT15_drag_2">5&lt;/div>
+    &lt;/div>
+    &lt;div class="dragAnswerBox">
+        2&lt;div class="draginput math-sup" id="dragWrapT15_drop_0">&lt;/div> × &lt;div class="draginput sm" id="dragWrapT15_drop_1">&lt;/div>
+    &lt;/div>
+&lt;/div>
+
+&lt;!--sup 사용-->
+&lt;div class="dragWrap type15">
+    &lt;div class="dragBtnBox">
+        &lt;div class="draggable" id="dragWrapT15_drag_0">2&lt;/div>
+        &lt;div class="draggable" id="dragWrapT15_drag_1">3&lt;/div>
+        &lt;div class="draggable" id="dragWrapT15_drag_2">5&lt;/div>
+    &lt;/div>
+    &lt;div class="dragAnswerBox">
+        2&lt;div class="draginput math-sup" id="dragWrapT15_drop_0">&lt;/div> × &lt;div class="draginput sm" id="dragWrapT15_drop_1">&lt;/div>&lt;sup>2&lt;/sup>
+    &lt;/div>
+&lt;/div>
+
+&lt;!--math-sup 중간사이즈-->
+&lt;div class="dragWrap type15">
+    &lt;div class="dragBtnBox">
+        &lt;div class="draggable" id="dragWrapT15_drag_0">2&lt;/div>
+        &lt;div class="draggable" id="dragWrapT15_drag_1">3&lt;/div>
+        &lt;div class="draggable" id="dragWrapT15_drag_2">5&lt;/div>
+    &lt;/div>
+    &lt;div class="dragAnswerBox">
+        2&lt;div class="draginput math-sup md" id="dragWrapT15_drop_0">&lt;/div> × &lt;div class="draginput sm" id="dragWrapT15_drop_1">&lt;/div>&lt;sup>2&lt;/sup>
+    &lt;/div>
+&lt;/div>
+
+&lt;!--math-sup 긴 사이즈-->
+&lt;div class="dragWrap type15">
+    &lt;div class="dragBtnBox">
+        &lt;div class="draggable" id="dragWrapT15_drag_0">100&lt;/div>
+        &lt;div class="draggable" id="dragWrapT15_drag_1">1000&lt;/div>
+        &lt;div class="draggable" id="dragWrapT15_drag_2">100000&lt;/div>
+    &lt;/div>
+    &lt;div class="dragAnswerBox">
+        2&lt;div class="draginput math-sup big" id="dragWrapT15_drop_0">&lt;/div> × &lt;div class="draginput sm" id="dragWrapT15_drop_1">&lt;/div>&lt;sup>2&lt;/sup>
+    &lt;/div>
+&lt;/div>
+</pre>
+    </div>
+  </div>
+</div>
+
 
 
 <h2 id="dragWrapT16">끌어놓기 type16 <small>분수형태, fs 클래스 사용 금지 // 폰트크기를 위해 동일한 형태에만 사용합니다.</small></h2>
@@ -10820,7 +11252,7 @@
         <div class="dragAnswerBox">
             <div class="dragitem fraction">
                 <div class="draginput_group">
-                    <div class="draginput sm" id="dragWrapT16_drop_0"><div class="draggable" id="dragWrapT16_drag_3">256</div></div>
+                    <div class="draginput sm" id="dragWrapT16_drop_0"></div>
                 </div>
                 <div class="draginput_group">
                     <div class="draginput sm" id="dragWrapT16_drop_1"></div>
@@ -10886,6 +11318,93 @@
         </div>
     </div>  
 </div>
+<div class="accordion">
+  <div class="accordion-item">
+    <button class="accordion-header">HTML 보기</button>
+    <div class="accordion-content">
+<pre class="prettyprint linenums">
+&lt;!--분수형태 기본-->
+&lt;div class="dragWrap type16">
+    &lt;div class="dragBtnBox">
+        &lt;div class="draggable" id="dragWrapT16_drag_0">64&lt;/div>
+        &lt;div class="draggable" id="dragWrapT16_drag_1">256&lt;/div>
+    &lt;/div>
+    &lt;div class="dragAnswerBox">
+        &lt;div class="dragitem fraction">
+            &lt;div class="draginput_group">
+                &lt;div class="draginput sm" id="dragWrapT16_drop_0">&lt;/div>
+            &lt;/div>
+            &lt;div class="draginput_group">
+                &lt;div class="draginput sm" id="dragWrapT16_drop_1">&lt;/div>
+            &lt;/div>
+        &lt;/div>
+    &lt;/div>
+&lt;/div>
+
+&lt;!--텍스트 혼용-->
+&lt;div class="dragWrap type16">
+    &lt;div class="dragBtnBox">
+        &lt;div class="draggable" id="dragWrapT16_drag_0">3&lt;/div>
+        &lt;div class="draggable" id="dragWrapT16_drag_1">256&lt;/div>
+    &lt;/div>
+    &lt;div class="dragAnswerBox">
+        부피 : 
+        &lt;div class="dragitem fraction">
+            &lt;div class="draginput_group">
+                &lt;div class="draginput sm" id="dragWrapT16_drop_0">&lt;/div>
+            &lt;/div>
+            &lt;div class="draginput_group">
+                &lt;div class="draginput sm" id="dragWrapT16_drop_1">&lt;/div>
+            &lt;/div>
+        &lt;/div>
+        π cm³
+    &lt;/div>
+&lt;/div>
+
+&lt;!--분자, 분모에 2개 이상 끌어놓기, 또는 텍스트 혼용-->
+&lt;div class="dragWrap type16">
+    &lt;div class="dragBtnBox">
+        &lt;div class="draggable" id="dragWrapT16_drag_0">64&lt;/div>
+        &lt;div class="draggable" id="dragWrapT16_drag_1">128&lt;/div>
+        &lt;div class="draggable" id="dragWrapT16_drag_2">256&lt;/div>
+    &lt;/div>
+    &lt;div class="dragAnswerBox">
+        &lt;div class="dragitem fraction">
+            &lt;div class="draginput_group">
+                &lt;div class="draginput sm" id="dragWrapT16_drop_0">&lt;/div> x + &lt;div class="draginput sm" id="dragWrapT16_drop_1">&lt;/div> y
+            &lt;/div>
+            &lt;div class="draginput_group">
+                &lt;div class="draginput sm" id="dragWrapT16_drop_2">&lt;/div>
+            &lt;/div>
+        &lt;/div>
+        =
+        &lt;div class="draginput sm" id="dragWrapT16_drop_3">&lt;/div>
+    &lt;/div>
+&lt;/div>
+
+&lt;!--이미지 혼용-->
+&lt;div class="dragWrap type16">
+    &lt;div class="dragBtnBox">
+        &lt;div class="draggable" id="dragWrapT16_drag_0">pq&lt;/div>
+        &lt;div class="draggable" id="dragWrapT16_drag_1">qr&lt;/div>
+    &lt;/div>
+    &lt;div class="dragAnswerBox">
+        &lt;img src="/images/questuon/과목/문항번호_a1.png"> =
+        &lt;div class="dragitem fraction">
+            &lt;div class="draginput_group">
+                &lt;div class="draginput sm" id="dragWrapT16_drop_0">&lt;/div>
+            &lt;/div>
+            &lt;div class="draginput_group">
+                &lt;div class="draginput sm" id="dragWrapT16_drop_1">&lt;/div>
+            &lt;/div>
+        &lt;/div>
+    &lt;/div>
+&lt;/div>  
+</pre>
+    </div>
+  </div>
+</div>
+
 
 
 
@@ -11542,6 +12061,93 @@
         </div>
     </div>    
 </div>
+<div class="accordion">
+  <div class="accordion-item">
+    <button class="accordion-header">HTML 보기</button>
+    <div class="accordion-content">
+<pre class="prettyprint linenums">
+&lt;!--분수형태 기본-->
+&lt;div class="seletWrap type7">
+    정답 : 
+    &lt;div class="fraction">
+        &lt;select class="select">
+            &lt;option selected>선택&lt;/option>
+            &lt;option value="">1&lt;/option>
+            &lt;option value="">2&lt;/option>
+            &lt;option value="">3&lt;/option>
+            &lt;option value="">4&lt;/option>
+            &lt;option value="">5&lt;/option>
+            &lt;option value="">6&lt;/option>
+            &lt;option value="">7&lt;/option>
+            &lt;option value="">8&lt;/option>
+            &lt;option value="">9&lt;/option>
+        &lt;/select>
+         &lt;select class="select">
+            &lt;option selected>선택&lt;/option>
+            &lt;option value="">1&lt;/option>
+            &lt;option value="">2&lt;/option>
+            &lt;option value="">3&lt;/option>
+            &lt;option value="">4&lt;/option>
+            &lt;option value="">5&lt;/option>
+            &lt;option value="">6&lt;/option>
+            &lt;option value="">7&lt;/option>
+            &lt;option value="">8&lt;/option>
+            &lt;option value="">9&lt;/option>
+        &lt;/select>
+    &lt;/div>
+&lt;/div>
+
+&lt;!--분수형태와 기본타입 혼용-->
+&lt;div class="seletWrap type7">
+    a=
+    &lt;select class="select">
+        &lt;option selected>선택&lt;/option>
+        &lt;option value="">1&lt;/option>
+        &lt;option value="">2&lt;/option>
+        &lt;option value="">3&lt;/option>
+        &lt;option value="">4&lt;/option>
+        &lt;option value="">5&lt;/option>
+        &lt;option value="">6&lt;/option>
+        &lt;option value="">7&lt;/option>
+        &lt;option value="">8&lt;/option>
+        &lt;option value="">9&lt;/option>
+    &lt;/select>
+    ,
+    x =
+    &lt;div class="fraction">
+        &lt;select class="select">
+            &lt;option selected>선택&lt;/option>
+            &lt;option value="">1&lt;/option>
+            &lt;option value="">2&lt;/option>
+            &lt;option value="">3&lt;/option>
+            &lt;option value="">4&lt;/option>
+            &lt;option value="">5&lt;/option>
+            &lt;option value="">6&lt;/option>
+            &lt;option value="">7&lt;/option>
+            &lt;option value="">8&lt;/option>
+            &lt;option value="">9&lt;/option>
+        &lt;/select>
+         &lt;select class="select">
+            &lt;option selected>선택&lt;/option>
+            &lt;option value="">1&lt;/option>
+            &lt;option value="">2&lt;/option>
+            &lt;option value="">3&lt;/option>
+            &lt;option value="">4&lt;/option>
+            &lt;option value="">5&lt;/option>
+            &lt;option value="">6&lt;/option>
+            &lt;option value="">7&lt;/option>
+            &lt;option value="">8&lt;/option>
+            &lt;option value="">9&lt;/option>
+        &lt;/select>
+    &lt;/div>
+&lt;/div>
+</pre>
+    </div>
+  </div>
+</div>
+
+
+
 
 
 
