@@ -1207,7 +1207,7 @@ input[type="chekbox"] + .cardWrap:before {display:none;}
 .longTxt {max-width:950px;}
 .longTxt .sub_tt {margin-bottom:1rem;}
 
-.mathTxt {font-size:2.2rem;font-weight:700;line-height:1.5;}
+.mathTxt {font-size:clamp(14px, 1vw, 1.6rem);font-weight:600;line-height:1.5;}
 
 
 /*///////////////////////////////////////////////////////////////*/
