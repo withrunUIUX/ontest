@@ -1153,7 +1153,7 @@ input[type="chekbox"] + .cardWrap:before {display:none;}
 
 .scriptBox {max-width:950px;width:100%;}
 .scriptBox li {display:flex;gap:.5rem;margin:.5rem 0;width:100%;}
-.scriptBox li > p {width:auto;margin-top:4px;font-weight:400;text-align:left;word-break:keep-all;}
+.scriptBox li > p {width:auto;max-width:90%;margin-top:4px;font-weight:400;text-align:left;word-break:keep-all;}
 .scriptBox li > p:has(.blankBox),
 .scriptBox li > p:has(.square),
 .scriptBox li > p:has(img) {margin:0;}
