@@ -398,12 +398,12 @@ input[type="chekbox"] + .cardWrap:before {display:none;}
 .mathsymbol.mathsymbol4::before {background-image:url(../images/q_common/mathsymbol_4.svg);}
 
 /*///라디오///*/
-.radioWrap {display:flex;flex-direction:column;gap:.5rem 1rem;width:100%;font-size:1.1rem;color:var(--gray_100);text-align: left;}
+.radioWrap {display:flex;flex-direction:column;gap:.5rem 1rem;width:100%;font-size:clamp(14px, 1vw, 1rem);color:var(--gray_100);text-align: left;}
 .radioWrap label *,
-.radioWrap input[type="radio"] + label {color:var(--gray_100);font-size:1.1rem;font-weight:500;}
+.radioWrap input[type="radio"] + label {color:var(--gray_100);font-size:clamp(14px, 1vw, 1rem);font-weight:500;}
 .radioWrap input[type="radio"] + label {width:100%;}
 .radioWrap input[type="radio"] + label:has(img) {max-width:360px;max-height: 360px;}
-.radioWrap input[type="radio"] + label:has(img) img {width: 100%;height: 100%;}
+.radioWrap input[type="radio"] + label:has(img) img {width:fit-content;height:fit-content;}
 .radioWrap input[type="radio"]:checked + label,
 .radioWrap input[type="radio"]:checked + label * {color:var(--blue_100) !important;border-color:var(--blue_100);font-weight:600;letter-spacing:.02px;}
 .radioWrap input[type="radio"]:checked + label .bullet {color:#fff !important;box-shadow:0 0 0 0.1rem rgba(49, 87, 221, 0.3);background-color:var(--blue_100);}
@@ -482,7 +482,7 @@ input[type="chekbox"] + .cardWrap:before {display:none;}
 .checkWrap input[type="checkbox"] + label {color:var(--gray_100);font-size:clamp(14px, 1vw, 1rem);font-weight:500;width:100%;}
 .checkWrap input[type="checkbox"] + label {padding-left:22px;}
 .checkWrap input[type="checkbox"] + label:has(img) {max-width:360px;max-height:360px;}
-.checkWrap input[type="checkbox"] + label:has(img) img {width: 100%;height: 100%;}
+.checkWrap input[type="checkbox"] + label:has(img) img {width:fit-content;height:fit-content;}
 .checkWrap input[type="checkbox"] + label::before {position:absolute;transform:translateY(-55%);}
 .checkWrap input[type="checkbox"]:checked + label,
 .checkWrap input[type="checkbox"]:checked + label * {color:var(--blue_100) !important;border-color:var(--blue_100);font-weight:600;letter-spacing:.02px;}
@@ -492,7 +492,7 @@ input[type="chekbox"] + .cardWrap:before {display:none;}
 .checkWrap.type2 {flex-direction:row;justify-content:center;flex-wrap:wrap;gap:1rem;}
 .checkWrap.type2 input[type="checkbox"] + label:has(img) {width:100%;padding:24px 0 0 0;;margin:0; }
 .checkWrap.type2 input[type="checkbox"] + label:has(img)::before {top:10px;left:50%;transform:translateY(-55%) translateX(-50%);}
-.checkWrap.type2 input[type="checkbox"] + label:has(img) img {width:100%;border-radius:6px;}
+.checkWrap.type2 input[type="checkbox"] + label:has(img) img {border-radius:6px;}
 .checkWrap.type2 input[type="checkbox"]:checked + label:has(img) img {box-shadow:0 0 0 0.2rem rgba(49, 87, 221, 0.2);}
 /* .checkWrap.type2:has(img) > li {max-width:360px;}
 .checkWrap.type2:has(img) > li:first-child:nth-last-child(1) {width:100%;}
