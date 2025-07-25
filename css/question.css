@@ -632,6 +632,7 @@ input[type="chekbox"] + .cardWrap:before {display:none;}
 .hsradioWrap > div {font-size:1.1rem;color:var(--gray_100);font-weight:500;line-height:2;}
 .hsradioWrap label * {color:var(--gray_100);font-size:1.1rem;font-weight:500;max-width:initial}
 .hsradioWrap label strong {font-weight:700;}
+.hsradioWrap input + label:has(img) img {mix-blend-mode:multiply;}
 .hsradioWrap input[type="radio"] + label {margin:.2rem;padding:6px 12px;border:.1rem solid var(--gray_40);border-radius:.3rem;color:var(--gray_100);text-align:center;font-size:1.1rem;font-weight:500;background:var(--gray_10);}
 .hsradioWrap input[type="radio"] + label::before {display:none;}
 .hsradioWrap input[type="radio"]:checked + label {border-color:var(--blue_100);color:var(--blue_100);background-color:var(--blue_20);}
