@@ -1074,6 +1074,8 @@ input[type="chekbox"] + .cardWrap:before {display:none;}
 .field li .linkCon .FL-tt {display:inline-block;max-width:600px;word-break:keep-all;width:calc(100% - 50px);}
 .field li .linkCon .FL-tt:has(.cardBox) {width:initial;}
 .field li .linkCon .FL-tt > img {max-width:calc(100% - 25px);}
+.field li .linkCon .FL-tt > .bullet,
+.field li .linkCon .FL-tt > .bullet.sm {display:inline-block;border:none;background:transparent;width:initial;height:initial;font-weight:500;font-size:18px !important;margin:0;vertical-align:baseline;}
 .field li .linkCon .bullet,
 .field li .linkCon .bullet.sm {top:initial}
 .field.left li {justify-content:flex-end;}
