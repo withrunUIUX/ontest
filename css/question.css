@@ -955,9 +955,6 @@ input[type="chekbox"] + .cardWrap:before {display:none;}
 .dragWrap.type9 .dragAnswerBox .dragmark_group li .draginput {width:100%;height:100%;min-width:initial;min-height:initial;border:none;border-radius:0;margin:0 !important;padding:0;background-color:initial;}
 /* 끌어놓기 type10 :: 핸드폰+대화형 */
 .dragWrap.type10 .bubble .draginput {min-width:6rem;margin:0 !important;}
-.dragWrap.type10 .chatBox.type2 .chat_item {padding:0}
-.dragWrap.type10 .chatBox.type2 .chat_item .bubble {max-width:calc(100% - 159px);}
-
 /* 끌어놓기 type11 :: 카드박스 */
 .dragWrap.type11 {gap:1rem;max-width:1200px;}
 .dragWrap.type11 .dragBtnBox {gap:.2rem;}
