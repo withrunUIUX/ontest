@@ -862,7 +862,7 @@ input[type="chekbox"] + .cardWrap:before {display:none;}
 .hsradioWrap.type21 input[type="checkbox"] + label {width:100%;height:100%;padding:0;border:none;border-radius:0;background:transparent;}
 .hsradioWrap.type21 input[type="checkbox"]:checked + label::before {width:100px;height:94px;}
 .hsradioWrap.type21 input[type="checkbox"] + label p {line-height:1.5;}
-.hsradioWrap.type21 input[type="checkbox"] + label .cardBox {max-width:260px;height:100%;}
+.hsradioWrap.type21 input[type="checkbox"] + label .cardBox {height:100%;} /*max-width:260px;*/
 .hsradioWrap.type21 > li:first-child:nth-last-child(1) {width:100%;}
 .hsradioWrap.type21 > li:first-child:nth-last-child(2),
 .hsradioWrap.type21 > li:first-child:nth-last-child(2) ~ li {max-width: calc(100% / 2 - .1rem);}
