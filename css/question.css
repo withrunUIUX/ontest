@@ -373,7 +373,7 @@ input[type="radio"] + .cardWrap:before,
 input[type="chekbox"] + .cardWrap:before {display:none;}
 .cardBox {display:flex;justify-content:center;gap:.5rem .2rem;padding:18px;border:1px solid var(--gray_50);border-radius:6px;background-color:#fff;}
 .cardBox:has(.fraction) {justify-content:center;gap:.5rem !important;}
-.cardBox > p {flex:1;font-size:clamp(14px, 1vw, 1rem);color:var(--gray_100);line-height:1.5;margin-top:4px;}
+.cardBox > p {flex:0;font-size:clamp(14px, 1vw, 1rem);color:var(--gray_100);line-height:1.5;margin-top:4px;}
 .cardBox.photo {flex-wrap:wrap;align-items:center;gap:.8rem;padding:14px;}
 .cardBox.photo p {margin:0}
 .cardBox.photo.flex-col p {text-align:center;}
@@ -383,6 +383,16 @@ input[type="chekbox"] + .cardWrap:before {display:none;}
 .cardBox.magazine .magazine_tt {font-weight:700;text-align:center;font-size:clamp(14px, 1vw, 1rem);}
 .cardBox.magazine .inner {display:flex;gap:.6rem;}
 .cardBox.magazine .inner p {flex:1;overflow:hidden;height:82px;line-height:1.5;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;text-overflow:ellipsis;word-break:break-all;font-size:clamp(14px, 1vw, 1rem);color:var(--gray_100);}
+
+.cardBox.photo.flex-col {justify-content:space-between;}
+.cardBox.photo.flex-col .photoBox {flex:1;}
+.cardBox.photo.flex-col .photoBox img {max-height:320px;}
+.cardBox.photo.flex-col p {flex: .1;}
+
+.cardBox.photo.flex-col2 {flex-direction:column;justify-content:space-between;}
+.cardBox.photo.flex-col2 .photoBox {flex:2;}
+.cardBox.photo.flex-col2 .photoBox img {max-height:320px;}
+.cardBox.photo.flex-col2 p {flex:.5;}
 
 /* 숫자카드 */
 .numcard_box {display:flex;flex-direction:column;gap:.2rem;}
@@ -405,6 +415,8 @@ input[type="chekbox"] + .cardWrap:before {display:none;}
 .radioWrap input[type="radio"] + label {width:100%;}
 .radioWrap input[type="radio"] + label:has(img) {max-width:360px;max-height: 360px;}
 .radioWrap input[type="radio"] + label:has(img) img {width:fit-content;height:fit-content;}
+.radioWrap input[type="radio"] + label:has(.cardBox) {max-width:initial;max-height:initial}
+.radioWrap input[type="radio"] + label:has(.cardBox) img {width:100%;height:100%;}
 .radioWrap input[type="radio"]:checked + label,
 .radioWrap input[type="radio"]:checked + label * {color:var(--blue_100) !important;border-color:var(--blue_100);font-weight:600;letter-spacing:.02px;}
 .radioWrap input[type="radio"]:checked + label .bullet {color:#fff !important;box-shadow:0 0 0 0.1rem rgba(49, 87, 221, 0.3);background-color:var(--blue_100);}
@@ -435,7 +447,7 @@ input[type="chekbox"] + .cardWrap:before {display:none;}
 .radioWrap.type5 input[type="radio"] + label .cardBox {height:100%;}
 .radioWrap.type5 > li:first-child:nth-last-child(1) {width:100%;}
 .radioWrap.type5 > li:first-child:nth-last-child(2),
-.radioWrap.type5 > li:first-child:nth-last-child(2) ~ li {max-width: calc(100% / 2 - .5rem);}
+.radioWrap.type5 > li:first-child:nth-last-child(2) ~ li {max-width: calc(100% / 2 - .1rem);}
 .radioWrap.type5 > li:first-child:nth-last-child(3),
 .radioWrap.type5 > li:first-child:nth-last-child(3) ~ li {max-width: calc(100% / 3 - .5rem);}
 .radioWrap.type5 > li:first-child:nth-last-child(4),
@@ -515,6 +527,8 @@ input[type="chekbox"] + .cardWrap:before {display:none;}
 .checkWrap input[type="checkbox"] + label {padding-left:22px;}
 .checkWrap input[type="checkbox"] + label:has(img) {max-width:360px;max-height:360px;}
 .checkWrap input[type="checkbox"] + label:has(img) img {width:fit-content;height:fit-content;}
+.checkWrap input[type="checkbox"] + label:has(.cardBox) {max-width:initial;max-height:initial;}
+.checkWrap input[type="checkbox"] + label:has(.cardBox) img {width:100%;height:100%;}
 .checkWrap input[type="checkbox"] + label::before {position:absolute;transform:translateY(-55%);}
 .checkWrap input[type="checkbox"]:checked + label,
 .checkWrap input[type="checkbox"]:checked + label * {color:var(--blue_100) !important;border-color:var(--blue_100);font-weight:600;letter-spacing:.02px;}
@@ -532,7 +546,7 @@ input[type="chekbox"] + .cardWrap:before {display:none;}
 .checkWrap.type4 input[type="checkbox"] + label:before {position:static;transform:initial;}
 .checkWrap.type4 > li:first-child:nth-last-child(1) {width:100%;}
 .checkWrap.type4 > li:first-child:nth-last-child(2),
-.checkWrap.type4 > li:first-child:nth-last-child(2) ~ li {max-width: calc(100% / 2 - .5rem);}
+.checkWrap.type4 > li:first-child:nth-last-child(2) ~ li {max-width: calc(100% / 2 - .1rem);}
 .checkWrap.type4 > li:first-child:nth-last-child(3),
 .checkWrap.type4 > li:first-child:nth-last-child(3) ~ li {max-width: calc(100% / 3 - .5rem);}
 .checkWrap.type4 > li:first-child:nth-last-child(4),
@@ -713,7 +727,7 @@ input[type="chekbox"] + .cardWrap:before {display:none;}
 .hsradioWrap.type3 input[type="radio"] + label .cardBox {height:100%;}
 .hsradioWrap.type3 > li:first-child:nth-last-child(1) {width:100%;}
 .hsradioWrap.type3 > li:first-child:nth-last-child(2),
-.hsradioWrap.type3 > li:first-child:nth-last-child(2) ~ li {max-width: calc(100% / 2 - .5rem);}
+.hsradioWrap.type3 > li:first-child:nth-last-child(2) ~ li {max-width: calc(100% / 2 - .1rem);}
 .hsradioWrap.type3 > li:first-child:nth-last-child(3),
 .hsradioWrap.type3 > li:first-child:nth-last-child(3) ~ li {max-width: calc(100% / 3 - .5rem);}
 .hsradioWrap.type3 > li:first-child:nth-last-child(4),
@@ -851,7 +865,7 @@ input[type="chekbox"] + .cardWrap:before {display:none;}
 .hsradioWrap.type21 input[type="checkbox"] + label .cardBox {max-width:260px;height:100%;}
 .hsradioWrap.type21 > li:first-child:nth-last-child(1) {width:100%;}
 .hsradioWrap.type21 > li:first-child:nth-last-child(2),
-.hsradioWrap.type21 > li:first-child:nth-last-child(2) ~ li {max-width: calc(100% / 2 - .5rem);}
+.hsradioWrap.type21 > li:first-child:nth-last-child(2) ~ li {max-width: calc(100% / 2 - .1rem);}
 .hsradioWrap.type21 > li:first-child:nth-last-child(3),
 .hsradioWrap.type21 > li:first-child:nth-last-child(3) ~ li {max-width: calc(100% / 3 - .5rem);}
 .hsradioWrap.type21 > li:first-child:nth-last-child(4),
@@ -995,7 +1009,7 @@ input[type="chekbox"] + .cardWrap:before {display:none;}
 .dragWrap.type2 .draginput.bg_trans {min-width:initial;border:none;background:transparent;}
 .dragWrap.type2 .dragBtnBox:has(.cardBox) > div:first-child:nth-last-child(1) {width:100%;}
 .dragWrap.type2 .dragBtnBox:has(.cardBox) > div:first-child:nth-last-child(2),
-.dragWrap.type2 .dragBtnBox:has(.cardBox) > div:first-child:nth-last-child(2) ~ div {max-width: calc(100% / 2 - .5rem);}
+.dragWrap.type2 .dragBtnBox:has(.cardBox) > div:first-child:nth-last-child(2) ~ div {max-width: calc(100% / 2 - .1rem);}
 .dragWrap.type2 .dragBtnBox:has(.cardBox) > div:first-child:nth-last-child(3),
 .dragWrap.type2 .dragBtnBox:has(.cardBox) > div:first-child:nth-last-child(3) ~ div {max-width: calc(100% / 3 - .5rem);}
 .dragWrap.type2 .dragBtnBox:has(.cardBox) > div:first-child:nth-last-child(4),
@@ -1117,7 +1131,7 @@ input[type="chekbox"] + .cardWrap:before {display:none;}
 .dragWrap.type11 .dragBtnBox {gap:.2rem;}
 .dragWrap.type11 .dragBtnBox > div:first-child:nth-last-child(1) {width:100%;}
 .dragWrap.type11 .dragBtnBox > div:first-child:nth-last-child(2),
-.dragWrap.type11 .dragBtnBox > div:first-child:nth-last-child(2) ~ div {max-width: calc(100% / 2 - .5rem);}
+.dragWrap.type11 .dragBtnBox > div:first-child:nth-last-child(2) ~ div {max-width: calc(100% / 2 - .1rem);}
 .dragWrap.type11 .dragBtnBox > div:first-child:nth-last-child(3),
 .dragWrap.type11 .dragBtnBox > div:first-child:nth-last-child(3) ~ div {max-width: calc(100% / 3 - .5rem);}
 .dragWrap.type11 .dragBtnBox > div:first-child:nth-last-child(4),
