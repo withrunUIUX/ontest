@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+/*///////////////////////////////////////////////////////////////*/
+/*//////////////////////에디터 이후 문항////////////////////////*/
+/*//////////////////////////////////////////////////////////////*/
+
+
+.q_content.editor {}
+
+
+.q_content.editor .cardBox .bullet.circle.sm {top:0;font-size:14px !important;margin:0;line-height:1.3;}
+.q_content.editor .cardBox.photo.flex-col {justify-content:flex-start;}
+.q_content.editor .cardBox.photo.flex-col .photoBox, 
+.q_content.editor .cardBox.photo.flex-col p {flex: initial;}
