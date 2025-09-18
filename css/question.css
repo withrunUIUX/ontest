@@ -1343,8 +1343,9 @@ input[type="chekbox"] + .cardWrap:before {display:none;}
 .lineBox.sm > * {line-height:1.5 !important;}
 
 .imgBox {display:flex;gap:1rem;justify-content:center;align-items:center;}
+.imgBox img {width:fit-content;height:fit-content;max-width:1050px;max-height:600px;}
+.imgBox img:first-of-type:last-of-type {max-width:950px;max-height:400px;}
 .imgBox .lineBox > .bullet {border:.1rem solid var(--gray_90);color:var(--gray_90);background-color:var(--gray_20);}
-.imgBox img {max-height:360px;}
 .examBox table .imgBox {margin:1rem 0}
 
 .listBox {margin:0 auto;padding-left:20px;}
