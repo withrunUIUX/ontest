@@ -4,16 +4,34 @@
 /*//////////////////////에디터 이후 문항////////////////////////*/
 /*//////////////////////////////////////////////////////////////*/
 
-
 .q_content.editor {}
 
-/* 빈칸, 글상자 */
-.q_content.editor .blankBox {display:inline-flex;align-items:center;justify-content:center;width:auto;height:auto;min-width:48px;min-height:32px;margin:.1rem 0;padding:.4rem .6rem;border-radius:3px;border:1px dashed var(--gray_50);font-weight:400;color:var(--gray_100);background:var(--gray_20);vertical-align:middle;line-height:1.3;}
+.q_content.editor .q_wrap,
+.q_content.editor .q_wrap .imgBox {flex-wrap:wrap;}
+.q_content.editor .q_wrap img {width:fit-content;height:fit-content;max-width:100%;max-height:400px;}
+.q_content.editor .q_wrap img:first-of-type:last-of-type {width:fit-content;height:fit-content;max-width:100%;max-height:460px;}
+.q_content.editor .q_wrap p:has(.blankBox) {line-height:1.5;}
+
+/* 빈칸 */
+.q_content.editor .blankBox {display:inline-flex;align-items:center;justify-content:center;width:auto;height:auto;min-width:48px;min-height:32px;margin:.1rem 0;padding:.3rem .6rem;border-radius:3px;font-weight:400;color:var(--gray_100);background:var(--gray_20);vertical-align:middle;line-height:1.3;}
 .q_content.editor .blankBox .bullet.circle.sm {width:20px;height:20px;font-size:14px !important;}
 
-/*카드박스*/
+/* 글상자-빈칸 활용- */
+.q_content.editor .blankBox.textBox {padding:1rem 1.6rem;margin:.2rem;border-width:1px;border-radius:8px;line-height:1.5;text-align:initial;border-color:var(--blue_40);background:var(--blue_10);}
+
+/* 카드박스 */
 .q_content.editor .cardBox .bullet.circle.sm {top:0;font-size:14px !important;margin:0;line-height:1.3;}
 .q_content.editor .cardBox.photo.flex-col {justify-content:flex-start;}
 .q_content.editor .cardBox.photo.flex-col .photoBox, 
-.q_content.editor .cardBox.photo.flex-col p {flex: initial;}
+.q_content.editor .cardBox.photo.flex-col p {flex:initial;}
+
+/* 체크박스 TYPE4 */
+.q_content.editor .checkWrap.type4 {gap:1rem;}
+.q_content.editor .checkWrap.type4 input[type="checkbox"] + label:before {display:none;}
+.q_content.editor .checkWrap.type4 input[type="checkbox"] + label .cardBox {height:100%;}
+.q_content.editor .checkWrap.type4 input[type="checkbox"] + label .cardBox .photoBox {min-height:initial;max-height:initial;}
+
+/* 끌어놓기 */
+.q_content.editor .dragBtnBox::before,
+.q_content.editor .dragBtnBox.tit1::before {content:'보기';}
 
