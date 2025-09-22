@@ -178,7 +178,7 @@ input[type="radio"] {border-radius: 0;border: none;background: 0 0;-webkit-appea
 /* 빈칸 */
 .blankBox {display:inline-flex;align-items:center;justify-content:center;width:80px;height:42px;margin:.2rem 0;padding:0 .5rem;border-radius:3px;border:2px dashed var(--gray_60);font-size:clamp(14px, 1vw, 1rem);font-weight:600;color:var(--gray_80);background:var(--gray_20);vertical-align:middle;}/*빈칸표시*/
 .blankBox.sm {width:60px;height:34px;margin:.3rem 0;padding:0 .5rem;}
-.blankBox.long {width:180px;}
+.blankBox.long {width:180px !important;}
 .blankBox > .bullet,
 .blankBox > .bullet.sm {top:initial;margin:0;}
 

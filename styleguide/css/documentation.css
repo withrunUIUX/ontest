@@ -68,7 +68,7 @@ body{position: relative;}
 h1{color:#282a2e;font-size:30px;line-height:40px;}
 .midtt {display: block;margin: 40px 0 10px;color:#212529;font-size:20px;font-weight:800;font-family:'NanumSquareNeo';}
 
-.group{display:flex;margin-bottom:80px;}
+/* .group{display:flex;margin-bottom:80px;} */
 .group .gr_tit{width:200px;font-weight:bold;text-transform:uppercase;}
 .group .wrap{display:flex;gap:40px;width:calc(100% - 200px);}
 .group .wrap .grap{display:flex;flex-direction:column;align-items:center;gap:10px;width:110px;}
