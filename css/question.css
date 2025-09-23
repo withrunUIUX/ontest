@@ -969,14 +969,16 @@ input[type="chekbox"] + .cardWrap:before {display:none;}
 .dragBtnBox::before {overflow:hidden;content:'끌어놓으세요.';position:absolute;top:-1.2rem;display:inline-block;padding:.6rem 1rem;border-radius:60px;color:var(--gray_120);font-size:1rem;font-weight:700;background:var(--gray_30);}
 .dragBtnBox.tit1::before {content:'보기';}
 .dragAnswerBox {position:relative;}
+.dragAnswerBox:has(table) {width:100%;}
 .dragAnswerBox .dragitem {text-align:center;font-size:clamp(14px, 1vw, 1rem);font-weight:500;color:var(--gray_90);line-height:2;}
 .dragAnswerBox .dragitem.left {text-align:left !important;}
 .dragAnswerBox .dragitem img {vertical-align:middle;}
 /* 끌어놓기 보기 버튼 */
 .draggable {display:inline-block;line-height:1.5;min-width:40px;min-height:40px;margin:.1rem;padding:6px 12px;border:.1rem solid var(--gray_40);border-radius:.3rem;text-align:left;color:var(--gray_100);font-size:clamp(14px, 1vw, 1rem);font-weight:500;background-color:var(--gray_10);transition:var(--ani_time);cursor:pointer;}
-.draggable:has(img) {display:inline-flex;min-height:40px;padding:0;border-radius:0;overflow:hidden;background:transparent;}
+.draggable:has(img) {display:inline-flex;flex-direction:column;align-items:center;min-height:40px;overflow:hidden;}
+.draggable:has(img + p) {padding:6px;background:transparent;}
 .draggable:has(.bullet) .bullet {top:initial}
-.draggable > img {width:100%;object-fit:contain;}
+.draggable img {width:100%;object-fit:contain;mix-blend-mode:darken;}
 .draggable:hover,
 .draggable:active,
 .draggable.dragging {border-color:var(--blue_100);color:var(--blue_100);background-color:var(--blue_20);}
@@ -987,6 +989,49 @@ input[type="chekbox"] + .cardWrap:before {display:none;}
 .draggable:has(.dargcard).dragging {border-color:var(--blue_100);}
 .dargcard {display:flex;flex-direction:column;justify-content:center;gap:1rem;height:100%;font-size:1rem;text-align:left;}
 .dargcard:has(img) {justify-content: flex-start;}
+/* 끌어놓기 공통 */
+.dragWrap .dragBtnBox:has(img) > div:first-child:nth-last-child(1) {width:100%;}
+.dragWrap .dragBtnBox:has(img) > div:first-child:nth-last-child(2),
+.dragWrap .dragBtnBox:has(img) > div:first-child:nth-last-child(2) ~ div {max-width: calc(100% / 2 - 1rem);}
+.dragWrap .dragBtnBox:has(img) > div:first-child:nth-last-child(3),
+.dragWrap .dragBtnBox:has(img) > div:first-child:nth-last-child(3) ~ div {max-width: calc(100% / 3 - 1rem);}
+.dragWrap .dragBtnBox:has(img) > div:first-child:nth-last-child(4),
+.dragWrap .dragBtnBox:has(img) > div:first-child:nth-last-child(4) ~ div {max-width: calc(100% / 4 - 1rem);}
+.dragWrap .dragBtnBox:has(img) > div:first-child:nth-last-child(5),
+.dragWrap .dragBtnBox:has(img) > div:first-child:nth-last-child(5) ~ div {max-width: calc(100% / 5 - 1rem);}
+.dragWrap .dragBtnBox:has(img) > div:first-child:nth-last-child(6),
+.dragWrap .dragBtnBox:has(img) > div:first-child:nth-last-child(6) ~ div {max-width: calc(100% / 6 - 1rem);}
+.dragWrap .dragBtnBox.col_auto:has(img) > div:first-child:nth-last-child(1) {max-width:100%;width:auto;}
+.dragWrap .dragBtnBox.col_auto:has(img) > div:first-child:nth-last-child(2),
+.dragWrap .dragBtnBox.col_auto:has(img) > div:first-child:nth-last-child(2) ~ div {max-width:100%;width:auto;}
+.dragWrap .dragBtnBox.col_auto:has(img) > div:first-child:nth-last-child(3),
+.dragWrap .dragBtnBox.col_auto:has(img) > div:first-child:nth-last-child(3) ~ div {max-width:100%;width:auto;}
+.dragWrap .dragBtnBox.col_auto:has(img) > div:first-child:nth-last-child(4),
+.dragWrap .dragBtnBox.col_auto:has(img) > div:first-child:nth-last-child(4) ~ div {max-width:100%;width:auto;}
+.dragWrap .dragBtnBox.col_auto:has(img) > div:first-child:nth-last-child(5),
+.dragWrap .dragBtnBox.col_auto:has(img) > div:first-child:nth-last-child(5) ~ div {max-width:100%;width:auto;}
+.dragWrap .dragBtnBox.col_auto:has(img) > div:first-child:nth-last-child(6),
+.dragWrap .dragBtnBox.col_auto:has(img) > div:first-child:nth-last-child(6) ~ div {max-width:100%;width:auto;}
+.dragWrap .dragBtnBox.col_2:has(img) > div:first-child:nth-last-child(4),
+.dragWrap .dragBtnBox.col_2:has(img) > div:first-child:nth-last-child(4) ~ div {max-width: calc(50% - 1rem);width:50%;}
+.dragWrap .dragBtnBox.col_2:has(img) > div:first-child:nth-last-child(5),
+.dragWrap .dragBtnBox.col_2:has(img) > div:first-child:nth-last-child(5) ~ div {max-width: calc(33% - 1rem);width:33%;}
+.dragWrap .dragBtnBox.col_2:has(img) > div:first-child:nth-last-child(6),
+.dragWrap .dragBtnBox.col_2:has(img) > div:first-child:nth-last-child(6) ~ div {max-width: calc(30% - 1rem);width:30%;}
+.dragWrap .dragBtnBox.col_1:has(img) {flex-direction: column;}
+.dragWrap .dragBtnBox.col_1:has(img) > div:first-child:nth-last-child(1) {max-width:100%;width:100%;}
+.dragWrap .dragBtnBox.col_1:has(img) > div:first-child:nth-last-child(2),
+.dragWrap .dragBtnBox.col_1:has(img) > div:first-child:nth-last-child(2) ~ div {max-width:100%;width:100%;}
+.dragWrap .dragBtnBox.col_1:has(img) > div:first-child:nth-last-child(3),
+.dragWrap .dragBtnBox.col_1:has(img) > div:first-child:nth-last-child(3) ~ div {max-width:100%;width:100%;}
+.dragWrap .dragBtnBox.col_1:has(img) > div:first-child:nth-last-child(4),
+.dragWrap .dragBtnBox.col_1:has(img) > div:first-child:nth-last-child(4) ~ div {max-width:100%;width:100%;}
+.dragWrap .dragBtnBox.col_1:has(img) > div:first-child:nth-last-child(5),
+.dragWrap .dragBtnBox.col_1:has(img) > div:first-child:nth-last-child(5) ~ div {max-width:100%;width:100%;}
+.dragWrap .dragBtnBox.col_1:has(img) > div:first-child:nth-last-child(6),
+.dragWrap .dragBtnBox.col_1:has(img) > div:first-child:nth-last-child(6) ~ div {max-width:100%;width:100%;}
+.dragWrap .draginput:has(.draggable),
+.dragWrap .draginput:has(div) {width:auto;height:auto;}
 /* 끌어놓기 답변 박스 */
 .draginput {display:inline-flex;justify-content:center;align-items:center;min-width:8rem;min-height:42px;margin:.2rem !important;padding:.6rem;border-radius:0.3em;border:1px solid var(--gray_40);text-align:center;background-color:#fff;vertical-align:middle;transition:var(--ani_time);}
 .draginput.sm {min-width:4rem;}
@@ -1224,6 +1269,8 @@ input[type="chekbox"] + .cardWrap:before {display:none;}
 .dragWrap.type16 .draginput {min-width: initial;width:3.5rem;}
 .dragWrap.type16 .dragAnswerBox .draginput:has(.draggable),
 .dragWrap.type16 .dragAnswerBox .draginput:has(div) {width: auto;}
+
+
 /*///아래로펼치기///*/
 .seletWrap {font-size:clamp(14px, 1vw, 1rem);font-weight:500;color:var(--gray_100);line-height:2;}
 /* 아래로펼치기 type2 :: 순서대로 선택 */
